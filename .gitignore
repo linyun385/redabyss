@@ -36,6 +36,8 @@ node_modules/
 # ---- 工具截图（tools 下的调试截图，不入库）----
 tools/*.png
 tools/*.jpg
+# 一次性任务脚本的归档区（磁盘保留，不入库）
+tools/_archive/
 
 # ---- 备份快照（体积大、可重新生成；整理时归到各自 _backups/）----
 web/_backups/
