@@ -12,7 +12,7 @@
   2) 族 prompt = 代表成员（族内首个）的 qwen 提示词——即真实出图 prompt，R2 复用语义；
   3) 族 id：foe/card 用 foe_family_<代表成员id 去前缀>，event 用 evt_<eventId>（A6 规则）。
 
-产出：data/art_families.json（覆盖 100%）+ docs/ART_FAMILIES.md
+产出：data/art_families.json（覆盖 100%）+ docs/art/ART_FAMILIES.md
 """
 import json
 import os

@@ -86,7 +86,7 @@ grep 会被它淹没，注意区分它是数据不是代码。
 | 来源 | 怎么拿 |
 |---|---|
 | 实际文件 | `web/sfx/*.wav` 目录列表（27 个） |
-| 定义清单 | `docs/SFX_LIST.md` 里的 code 表 |
+| 定义清单 | `docs/audio/SFX_LIST.md` 里的 code 表 |
 | 代码引用 | `index.html` 里所有 `playSfx('...')` 和 `RedAbyssAmbience(...)` 调用 |
 
 产出三类：

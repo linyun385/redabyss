@@ -27,8 +27,8 @@
 - 证据：`playSfx(` 共 **26 处调用**，去重后 **18 个不同 code**（15 个字面量 + `index.html:6928` 三元式派生 card.play.attack/skill/power）。战斗起止、出牌（含代价叠加）、受击/格挡/击杀、共振/凝视、Boss 阶段、切世、彩蛋、通关、死亡、界面 8 处点击均已接线。
 - 缺口：清单里的 `state.energy_empty` 在当前 `index.html` **0 处引用**。T41 notes（TASK_DONE:276）声明接了"能量空"，T53 notes（TASK_DONE:403）也证明当时点击处理器里有这行——后续重构中丢失，属**回归**。见 S1。
 
-### A4 `docs/SFX_LIST.md` 存在、按类别组织 — 已覆盖
-- 证据：`docs/SFX_LIST.md` 存在，5 类主表（卡牌 4 / 战斗 5 / 状态 3 / 界面 3 / 特殊 5 = **20 个 code**）+ 氛围音设计表（ambience.depth1–8）。
+### A4 `docs/audio/SFX_LIST.md` 存在、按类别组织 — 已覆盖
+- 证据：`docs/audio/SFX_LIST.md` 存在，5 类主表（卡牌 4 / 战斗 5 / 状态 3 / 界面 3 / 特殊 5 = **20 个 code**）+ 氛围音设计表（ambience.depth1–8）。
 - 备注：TASK_DONE T41 notes 写「21 个 code」，主表实数 20（4+5+3+3+5），计数差 1，疑为笔误。见 S4。
 
 ### A5 类别最低覆盖 — 部分
@@ -96,6 +96,6 @@
 
 ## 4. 本轮操作记录
 
-- 读取：tasks/T32.md、tasks/T41.md（diff）、docs/SFX_LIST.md、web/sfx/README.txt、TASK_DONE.md 相关段、web/index.html 定向检索。
+- 读取：tasks/T32.md、tasks/T41.md（diff）、docs/audio/SFX_LIST.md、web/sfx/README.txt、TASK_DONE.md 相关段、web/index.html 定向检索。
 - 检索命令均为只读 grep/find/ls；`node tools/check_web.js` 为只读校验。
-- 写入：仅本文档 `docs/SFX_T32.md`。web/、engine/ 零改动。
+- 写入：仅本文档 `docs/audio/SFX_T32.md`。web/、engine/ 零改动。

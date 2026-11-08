@@ -13,7 +13,7 @@
   4) **标记不合格**（写 art/_rework.json）—— 标记的会进「重生成队列」，
      夜间脚本 tools/night_gen.py 下一轮优先重跑这些 id
 
-判定标准（docs/ART_DIRECTION_V2.md）：不看文字，3 秒内能否认出“这是什么东西”。
+判定标准（docs/art/ART_DIRECTION_V2.md）：不看文字，3 秒内能否认出“这是什么东西”。
 """
 import base64
 import json

@@ -1,6 +1,6 @@
 # 交接：素材美术方向与提示词工程（2026-11-01 21:10）
 
-> 断点式交接。重启后先读这份，再看 `docs/ART_PROMPT_WORKBOOK.md`（工作手册）和 `docs/ART_PROMPT_SPEC.md`（规范）。
+> 断点式交接。重启后先读这份，再看 `docs/art/ART_PROMPT_WORKBOOK.md`（工作手册）和 `docs/art/ART_PROMPT_SPEC.md`（规范）。
 
 ## 一、今天定下来的方向（已被用户认可，不要再改）
 
@@ -19,8 +19,8 @@
 
 | 文件 | 说明 |
 |---|---|
-| `docs/ART_PROMPT_SPEC.md` | 规范：三档抽象度、复用规则 R1–R6、倒吊/红光两章、反面清单、风格段、校验规则 |
-| `docs/ART_PROMPT_WORKBOOK.md` | 骨架 ×4、异化词库（A10/C10/B5，中英对照）、**30 条样板（英文 + 中文翻译）** |
+| `docs/art/ART_PROMPT_SPEC.md` | 规范：三档抽象度、复用规则 R1–R6、倒吊/红光两章、反面清单、风格段、校验规则 |
+| `docs/art/ART_PROMPT_WORKBOOK.md` | 骨架 ×4、异化词库（A10/C10/B5，中英对照）、**30 条样板（英文 + 中文翻译）** |
 | `tools/check_prompts.js` | 机械校验：抽象词/素描词/图鉴排版/画面文字/异化标记/倒吊/底光/名词数/成员数 —— 现 28/28 通过 |
 | `data/art_families.json` | **20 族草稿（旧版风格，需按新规范重写）** |
 | `tools/art_studio.py` | 审图工作台 http://127.0.0.1:8770 ：分类筛选 / 只看已标记 / 图文对照 / 标记不合格（带原因）/ 重生成 / 上传替换 |

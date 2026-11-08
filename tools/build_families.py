@@ -23,7 +23,7 @@ KEY = json.loads((WS / 'tools' / 'free_llm_keys.json').read_text(encoding='utf-8
 URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
 MODEL = 'qwen-max'
 
-# ---- 提示词规范（docs/ART_PROMPT_SPEC.md 第一至七节的浓缩版）----
+# ---- 提示词规范（docs/art/ART_PROMPT_SPEC.md 第一至七节的浓缩版）----
 RULES = """你在为一款「地底红光」题材的卡牌 Roguelike 写**中文生图提示词**，供阿里万相模型出图。
 世界设定只有一条铁律：「倒吊和红光」—— 红光从地底深处往上打，生物把取食/生殖器官长在身体最下面，
 倾向从顶上垂下来。

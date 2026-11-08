@@ -7,7 +7,7 @@
 | 文件 | 取什么 |
 |---|---|
 | `docs/design/_VFX_PLAN_1106.md` | 整体设计、四层模型、为什么这么分层 |
-| `docs/ART_PROMPT_SPEC.md` | 世界观的两条硬规则（倒吊 / 红光自下而上），动效配色要服它 |
+| `docs/art/ART_PROMPT_SPEC.md` | 世界观的两条硬规则（倒吊 / 红光自下而上），动效配色要服它 |
 | `docs/GLOSSARY.md` | 五脉的正确中文写法 |
 
 ## 二、产出物（只有这两个）

@@ -2,7 +2,7 @@
 
 > 配额来源：`docs/CONTENT_PLAN.md` §3.1（口径 B）。新增 33 只已落地 `enemies/all.json`（id 连续续编、带 `eco` 字段），自检脚本 `tools/_t61_check.js`：签名 33/33 唯一、与现有 80 只零撞车、跨生态普通怪零同签名、3 只抽样用真实引擎开战均正常出手。
 > 意图只用引擎已有词汇：attack（times/pierce/mirror/drain_discard）/ defend / buff / debuff（steal/gift/weak/poison/burn）——未发明新字段，未改战斗结算。
-> 文案按 `docs/STYLE_SAMPLES.md`：敌人 flavor 一律「它」视角观察句、短句、不解释、无感叹号。
+> 文案按 `docs/art/STYLE_SAMPLES.md`：敌人 flavor 一律「它」视角观察句、短句、不解释、无感叹号。
 
 ---
 

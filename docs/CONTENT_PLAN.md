@@ -2,7 +2,7 @@
 
 > **口径已定（2026-10-30 18:50 用户拍板）：走口径 B —— 复用 + 带修饰。** 本文档把拍板结果落成可执行的配额表，交给 T58（绑定表）/ T61（敌人）/ T62（事件）/ T63（遗物卡牌）/ T64（文风）照着生产。
 > 本文所有数字由 `tools/content_gap.js` 产出，逐项可在 `tools/content_gap.json` 找到对应字段（引用格式：`json路径`）。
-> 生态枚举 8 种、带 8 条，定义来自 `tools/mapgen_spec.json` v1.3 与 `docs/MAPGEN_DESIGN.md` §0.1（eco_surface…eco_nexus ↔ D1…D8 一一对应）。
+> 生态枚举 8 种、带 8 条，定义来自 `tools/mapgen_spec.json` v1.3 与 `docs/mapgen/MAPGEN_DESIGN.md` §0.1（eco_surface…eco_nexus ↔ D1…D8 一一对应）。
 
 ---
 

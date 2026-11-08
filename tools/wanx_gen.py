@@ -72,7 +72,7 @@ def gen_one(job):
         'model': MODEL,
         'input': {'prompt': job['prompt']},
         # prompt_extend=False：默认的改写器会把主体改写成泛化洞穴/管道
-        # （实测：第一批「一整片嗜热菌落」被改写成了管道钟乳）。见 docs/ART_PROMPT_SPEC.md 第六节。
+        # （实测：第一批「一整片嗜热菌落」被改写成了管道钟乳）。见 docs/art/ART_PROMPT_SPEC.md 第六节。
         'parameters': {'size': job.get('size', '1024*1024'), 'n': 1,
                        'prompt_extend': job.get('prompt_extend', False)},
     }, {'X-DashScope-Async': 'enable'})

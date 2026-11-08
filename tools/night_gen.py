@@ -65,7 +65,7 @@ def load_families(only=None):
     if not FAMILIES.exists():
         raise SystemExit('缺 data/art_families.json（T79 产出）。先做族表：\n'
                          '  · 三类对象分「形态族」，每族一条 prompt，跨类别不复用\n'
-                         '  · 参考 docs/ART_DIRECTION_V2.md 的 R1–R6')
+                         '  · 参考 docs/art/ART_DIRECTION_V2.md 的 R1–R6')
     data = json.loads(FAMILIES.read_text(encoding='utf-8'))
     order = ['foe', 'event', 'card']
     jobs = []

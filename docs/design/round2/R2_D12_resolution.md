@@ -5,7 +5,7 @@
 | # | 冲突 | 执行方案 | 验证命令 | 影响面 |
 |---|---|---|---|---|
 | 1 | 共鸣→共振（glossary 自身） | 改 docs/GLOSSARY.md 第 11 行：「共鸣」→「共振」，「共振值／回响值」→「共振值」 | grep -c 共鸣 docs/GLOSSARY.md 期望 0 | 无代码引用 glossary.md——零风险 |
-| 2 | DLC_CANGMIN.md 文件名误导 | 保留文件名（改名会破外链），在文件头部加注「本文件讲的是苍民（cangmin），文件名中的 CANGMIN 为历史遗留」 | grep -c CANGMIN docs/DLC_CANGMIN.md | 无风险 |
+| 2 | DLC_CANGMIN.md 文件名误导 | 保留文件名（改名会破外链），在文件头部加注「本文件讲的是苍民（cangmin），文件名中的 CANGMIN 为历史遗留」 | grep -c CANGMIN docs/dlc/DLC_CANGMIN.md | 无风险 |
 | 3 | 266 vs 267 | 在 docs/content/README.md 的卡数行加注「267（含 shared 1 张）」 | 重跑导出脚本确认 | content/ 的四份卡表需重导 |
 | 4 | layer vs band | 不改（双轨保留） | — | — |
 | 5 | 苍民 vs 疯先知 | 在 GLOSSARY.md 加对照行：「苍民（种族）→ 疯先知（职业）」 | grep 苍民 docs/GLOSSARY.md | 无风险 |

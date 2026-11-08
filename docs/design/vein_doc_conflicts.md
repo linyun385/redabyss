@@ -41,7 +41,7 @@
 
 ### C6 · DLC 协议卡提案 ≠ 实装卡
 
-- **位置**：`docs/DLC_ANMIN.md` 行 131
+- **位置**：`docs/dlc/DLC_ANMIN.md` 行 131
 - **原文**：「`《协议：静默段》`——本场共振不再上涨，但每回合开始失去 1 生命；`《协议：优先级翻转》`——敌人意图全部延后一回合执行，但它们获得 +3 攻击」
 - **与哪条冲突**：实装卡是 `anm_0020` 静默段（6 挡+共振锁定，无失血）与 `anm_0021` 协议：优先级翻转（4 挡+抽 1，无敌方加攻）——提案文本与 shipped 数据完全不同。DLC 文档读起来像现行设定，实为 T18 时代提案。
 
@@ -62,7 +62,7 @@
 | 文档 | 为什么排除 |
 |---|---|
 | `docs/GLOSSARY.md` §2 五脉 | 唯一写法与现行一致（光/水/热/震/矿） |
-| `docs/LAYERS.md`、`docs/MAPGEN_DESIGN.md` | 层规则（no_light/dry/bright/震脉清晰）是引擎现行事实，与 §2.1 不在同一个层面 |
+| `docs/LAYERS.md`、`docs/mapgen/MAPGEN_DESIGN.md` | 层规则（no_light/dry/bright/震脉清晰）是引擎现行事实，与 §2.1 不在同一个层面 |
 | `docs/design/master/03_ENGINE.md` | T350 之后写的，双脉 5 张、连携改写方向都与 T400 一致 |
 | `docs/design/DESIGN_TODO.md:77` | 脉连携描述的是现行引擎（veinChainBonus），非旧定义 |
 | `T335_PRUNE.md`、`recycle/`、`T340_DELETE_OPS.md`、`T321_REDUNDANCY.md` | 历史处置记录，里面的旧 id 是**故意**列的（它们列的就是被删的卡），不是错误引用 |

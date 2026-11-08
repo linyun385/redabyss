@@ -2,7 +2,7 @@
 
 > 配额与口径：`docs/CONTENT_PLAN.md`（口径 B）。本任务新增 **10 条**事件（T60 盘出的缺口只在两个薄生态）：eco_surface +5（D1 批次）、eco_nexus +5（D8 批次），其余六个生态的事件配额由现有池满足（各 11 条，见 §3）。
 > 落地：`events/all.json`（总数 72→82），每条带 `eco` 生态标签与 `bands` 适用带（母本带 ±1，口径 B）。效果只用引擎已支持字段（heal/damage/gaze/gold/maxhp/card_reward/relic）；自检 `tools/_t62_check.js`：绑定可达 / 效果合法 / RAW 已同步 / 无说明书腔。
-> 文案按 `docs/STYLE_SAMPLES.md`：现象不解释，数值走 UI，result_text 写后果的**质感**不写流水账。选项结构沿用现有池：每个选项有可见代价 + 不可见后果，每条事件至少一个**「看起来更划算但更危险」**的陷阱项（下表标 ⚠）。
+> 文案按 `docs/art/STYLE_SAMPLES.md`：现象不解释，数值走 UI，result_text 写后果的**质感**不写流水账。选项结构沿用现有池：每个选项有可见代价 + 不可见后果，每条事件至少一个**「看起来更划算但更危险」**的陷阱项（下表标 ⚠）。
 
 ---
 

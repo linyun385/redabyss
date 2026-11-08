@@ -847,7 +847,7 @@
   {
    "t": 249,
    "title": "写 ART_PIPELINE.md",
-   "deliver": "`docs/ART_PIPELINE.md`"
+   "deliver": "`docs/art/ART_PIPELINE.md`"
   },
   {
    "t": 250,
@@ -1002,7 +1002,7 @@
   {
    "t": 280,
    "title": "素材三方对账",
-   "deliver": "`docs/ART_RECONCILE.md` + `tools/_art_reconcile.py`"
+   "deliver": "`docs/art/ART_RECONCILE.md` + `tools/_art_reconcile.py`"
   },
   {
    "t": 281,
@@ -1051,7 +1051,7 @@
   },
   {
    "task_id": "T42",
-   "message": "[T42] 先读 docs/STYLE_ART.md（密教模拟器风：木刻版画、棕褐+暗红、老化纸面，prompt 必须用它给的通用前缀/后缀/固定负面词），再读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T42.md 并严格照做。本环境 ComfyUI 尚未就绪，第 0 步视觉自检照做、第一步探测照跑，探测不过就停下写 TASK_DONE，不许自己重装。做完追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+   "message": "[T42] 先读 docs/art/STYLE_ART.md（密教模拟器风：木刻版画、棕褐+暗红、老化纸面，prompt 必须用它给的通用前缀/后缀/固定负面词），再读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T42.md 并严格照做。本环境 ComfyUI 尚未就绪，第 0 步视觉自检照做、第一步探测照跑，探测不过就停下写 TASK_DONE，不许自己重装。做完追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
   },
   {
    "task_id": "T43",
@@ -1059,7 +1059,7 @@
   },
   {
    "task_id": "T44",
-   "message": "[T44] 最后一棒：读 docs/STYLE_ART.md 和 docs/HANDOFF_D2.md（第5条层深度色），再读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T44.md 并严格照做。要点：密教风材质与层深度换色要组合适配，做 3 个候选方案 + 12 张对比截图 + 可切换开关，默认 off=现状，不许自己拍板当成品。做完跑三检查器并重跑打包，追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+   "message": "[T44] 最后一棒：读 docs/art/STYLE_ART.md 和 docs/HANDOFF_D2.md（第5条层深度色），再读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T44.md 并严格照做。要点：密教风材质与层深度换色要组合适配，做 3 个候选方案 + 12 张对比截图 + 可切换开关，默认 off=现状，不许自己拍板当成品。做完跑三检查器并重跑打包，追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
   },
   {
    "task_id": "T45",
@@ -1095,51 +1095,51 @@
   },
   {
    "task_id": "T54",
-   "message": "[T54] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T54.md 并严格照做。地图生成框架设计：数据模型、五步流程、不变量、参数表、伪代码（只写设计不写代码）。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+   "message": "[T54] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T54.md 并严格照做。地图生成框架设计：数据模型、五步流程、不变量、参数表、伪代码（只写设计不写代码）。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/mapgen/MAPGEN_BRIEF.md）。"
   },
   {
    "task_id": "T55",
-   "message": "[T55] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T55.md 并严格照做。地图生成器原型：tools/mapgen.js 纯算法 + 200 seed 断言 + 可视化调试图。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+   "message": "[T55] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T55.md 并严格照做。地图生成器原型：tools/mapgen.js 纯算法 + 200 seed 断言 + 可视化调试图。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/mapgen/MAPGEN_BRIEF.md）。"
   },
   {
    "task_id": "T56",
-   "message": "[T56] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T56.md 并严格照做。小图与总图 UI：常驻小图 + 可开总图，可见性在数据层裁剪。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+   "message": "[T56] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T56.md 并严格照做。小图与总图 UI：常驻小图 + 可开总图，可见性在数据层裁剪。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/mapgen/MAPGEN_BRIEF.md）。"
   },
   {
    "task_id": "T57",
-   "message": "[T57] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T57.md 并严格照做。死路救援 + 路线推进：迷雾、另寻一路、代价二选一、最终 BOSS 结算。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+   "message": "[T57] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T57.md 并严格照做。死路救援 + 路线推进：迷雾、另寻一路、代价二选一、最终 BOSS 结算。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/mapgen/MAPGEN_BRIEF.md）。"
   },
   {
    "task_id": "T60",
-   "message": "[T60] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T60.md 并严格照做。内容缺口盘点与配额方案：算清「生态×深度带×类型」要多少条，给口径A/B两种总量与推荐。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+   "message": "[T60] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T60.md 并严格照做。内容缺口盘点与配额方案：算清「生态×深度带×类型」要多少条，给口径A/B两种总量与推荐。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/mapgen/MAPGEN_BRIEF.md，文风见 docs/art/STYLE_SAMPLES.md。"
   },
   {
    "task_id": "T58",
-   "message": "[T58] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T58.md 并严格照做。生态 × 深度内容绑定表：data/mapgen_bindings.json + 校验脚本 + 接线。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+   "message": "[T58] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T58.md 并严格照做。生态 × 深度内容绑定表：data/mapgen_bindings.json + 校验脚本 + 接线。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/mapgen/MAPGEN_BRIEF.md）。"
   },
   {
    "task_id": "T59",
-   "message": "[T59] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T59.md 并严格照做。地图生成回归：500 局模拟，可通关率/死路率/配额校准/性能。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+   "message": "[T59] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T59.md 并严格照做。地图生成回归：500 局模拟，可通关率/死路率/配额校准/性能。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/mapgen/MAPGEN_BRIEF.md）。"
   },
   {
    "task_id": "T61",
-   "message": "[T61] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T61.md 并严格照做。生态敌人设计与落地：每生态普通/精英/BOSS 候选按配额生产，意图循环去重。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+   "message": "[T61] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T61.md 并严格照做。生态敌人设计与落地：每生态普通/精英/BOSS 候选按配额生产，意图循环去重。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/mapgen/MAPGEN_BRIEF.md，文风见 docs/art/STYLE_SAMPLES.md。"
   },
   {
    "task_id": "T62",
-   "message": "[T62] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T62.md 并严格照做。生态事件设计与落地：每生态母题不同，选项带代价陷阱，效果走引擎已有动作。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+   "message": "[T62] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T62.md 并严格照做。生态事件设计与落地：每生态母题不同，选项带代价陷阱，效果走引擎已有动作。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/mapgen/MAPGEN_BRIEF.md，文风见 docs/art/STYLE_SAMPLES.md。"
   },
   {
    "task_id": "T63",
-   "message": "[T63] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T63.md 并严格照做。生态遗物 + 专属卡牌：每生态按配额生产，含 3 组 combo 与超模比值自检。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+   "message": "[T63] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T63.md 并严格照做。生态遗物 + 专属卡牌：每生态按配额生产，含 3 组 combo 与超模比值自检。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/mapgen/MAPGEN_BRIEF.md，文风见 docs/art/STYLE_SAMPLES.md。"
   },
   {
    "task_id": "T64",
-   "message": "[T64] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T64.md 并严格照做。文风统一与去重：text_lint 脚本 + GLOSSARY 术语规范 + 修一轮说明书腔。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+   "message": "[T64] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T64.md 并严格照做。文风统一与去重：text_lint 脚本 + GLOSSARY 术语规范 + 修一轮说明书腔。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/mapgen/MAPGEN_BRIEF.md，文风见 docs/art/STYLE_SAMPLES.md。"
   },
   {
    "task_id": "T65",
-   "message": "[T65] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T65.md 并严格照做。内容接入与全量回归：绑定表补全 + 500 局地图模拟 + 四职业胜率对比 + 问题清单。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+   "message": "[T65] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T65.md 并严格照做。内容接入与全量回归：绑定表补全 + 500 局地图模拟 + 四职业胜率对比 + 问题清单。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/mapgen/MAPGEN_BRIEF.md，文风见 docs/art/STYLE_SAMPLES.md。"
   },
   {
    "task_id": "T66",
@@ -1191,15 +1191,15 @@
   },
   {
    "task_id": "T80",
-   "message": "[T80] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T80.md 并严格照做。生图提速：640×936 单张从 422 秒压到 ≤60 秒（VAE fp16/force_upcast、缓存 embeds）。先读 docs/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
+   "message": "[T80] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T80.md 并严格照做。生图提速：640×936 单张从 422 秒压到 ≤60 秒（VAE fp16/force_upcast、缓存 embeds）。先读 docs/art/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
   },
   {
    "task_id": "T79",
-   "message": "[T79] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T79.md 并严格照做。形态族划分与逐族提示词：三类不混用、族内成员≤3、覆盖 145怪/266卡/102事件。先读 docs/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
+   "message": "[T79] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T79.md 并严格照做。形态族划分与逐族提示词：三类不混用、族内成员≤3、覆盖 145怪/266卡/102事件。先读 docs/art/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
   },
   {
    "task_id": "T81",
-   "message": "[T81] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T81.md 并严格照做。按族批量生成 + 接入：id→族→图 映射改造、闸门、抽样、三检查器。先读 docs/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
+   "message": "[T81] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T81.md 并严格照做。按族批量生成 + 接入：id→族→图 映射改造、闸门、抽样、三检查器。先读 docs/art/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
   }
  ]
 }

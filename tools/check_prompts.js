@@ -1,4 +1,4 @@
-﻿// 提示词机械校验（规则见 docs/ART_PROMPT_WORKBOOK.md §四）
+﻿// 提示词机械校验（规则见 docs/art/ART_PROMPT_WORKBOOK.md §四）
 'use strict';
 const fs = require('fs');
 const path = require('path');

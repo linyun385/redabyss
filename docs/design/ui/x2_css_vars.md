@@ -1,6 +1,6 @@
 # X2 · CSS 变量清点
 
-> 任务书：`tasks/HY4_batch2.md` §X2。审计对象 `web/index.html`（9258 行，2026-11-06 快照）样式块 `:6–:829`（全文仅 1 个 `<style>` 标签），另核 `tools/check_contrast.js`、`docs/UI_CONTRAST.md`、`docs/ART_STYLE_MATRIX.md` 作孤儿变量旁证。
+> 任务书：`tasks/HY4_batch2.md` §X2。审计对象 `web/index.html`（9258 行，2026-11-06 快照）样式块 `:6–:829`（全文仅 1 个 `<style>` 标签），另核 `tools/check_contrast.js`、`docs/UI_CONTRAST.md`、`docs/art/ART_STYLE_MATRIX.md` 作孤儿变量旁证。
 > 方法：**按源码正则逐行枚举**，未开浏览器。行号 `:N` 指 `web/index.html`；外部文件用 `文件名:N`。
 > `:6401` 的 `const RAW = "…"`（184653 字符）是卡牌数据，本篇未从该行取任何数值。
 > 口径：`var()` 引用按**出现次数**计（同一行出现 2 次算 2 次）；定义按 `--x:` 声明**位置**计；「选择器」取该 `var()` 所在规则的选择器，`@keyframes` 内的记为 `@keyframes 名 / 帧`。
@@ -161,7 +161,7 @@
 |---|---|
 | 定义 | `:532 :root { --grain-opacity: .55 }`（全项目仅此 1 处定义） |
 | CSS `var()` 引用 | **0 次**（`:6–:829` 全文 0 次；`web/*.html` 与 JS 亦 0 次） |
-| 旁证 | `docs/ART_STYLE_MATRIX.md:16` 把它列为 C 主题「纸纹/暗角」的实现变量 |
+| 旁证 | `docs/art/ART_STYLE_MATRIX.md:16` 把它列为 C 主题「纸纹/暗角」的实现变量 |
 | 代码事实 | C 主题 body 背景在 `:597–605` 用 3 条硬编码 `rgba(...)` 渐变（`radial-gradient` + 2 条 `repeating-linear-gradient`），**没有引用 `var(--grain-opacity)`**；`:605` 只写 `background-blend-mode: normal` |
 
 → 定义与文档一致、与实际实现不一致；变量值 `.55` 不参与任何计算。

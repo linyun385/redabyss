@@ -16,7 +16,7 @@
 | T38 | 只修明显坏卡：听地神脉搏 凝视 5→3（唯一数值改动）；special retain 四张牌引擎不生效的真 bug（beginTurn 修复 + 断言）；cardDesc 补 heal/共振-/保留 渲染（19 张卡卡面补全）；sim.js 补每卡使用率统计；docs/BALANCE_V3.md |
 | T39 | docs/BUILDS.md 12 条互斥 build；8 个卡牌组合彩蛋（金色微闪+横幅+日志）；死亡结算"这一局最值得说的事"；通关结算显示稀有卡/岔路/凝视含义 |
 | T40 | 开场三行字；6 条一次性提示（localStorage，只前 3 场战斗）；死因提示 4 种；? 面板补「代价」行（198 字） |
-| T41 | playSfx 音效钩子 + __SFX_LOG 对账 + __SFX_MUTED 静音入口；21 个语义化 code 清单（docs/SFX_LIST.md，每条带"不要什么"）；setLayerAmbience 挂进 applyLayerTheme（空实现）；**未生成任何音频** |
+| T41 | playSfx 音效钩子 + __SFX_LOG 对账 + __SFX_MUTED 静音入口；21 个语义化 code 清单（docs/audio/SFX_LIST.md，每条带"不要什么"）；setLayerAmbience 挂进 applyLayerTheme（空实现）；**未生成任何音频** |
 | T42 | 视觉自检（能读图）；gen_art.py --probe：3/4 OK，**ComfyUI 服务未启动 → 按任务书停下**，未生图 |
 | T43 | 体量/加载/内存/双分辨率实测；README 重写（4 职业+来历）；清理 29 张调试截图；docs/DELIVERY.md + 本文件 |
 | T44 | （紧随其后：密教风材质候选方案 + 对比截图 + 开关，默认 off） |

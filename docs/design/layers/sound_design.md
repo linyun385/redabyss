@@ -1,7 +1,7 @@
 # 八层声音设计
 
 > 2026-11-06 夜班 · 第二轮方向 5（换角度：第一轮 scene_depth1-8 写的是「会听见什么」的文学面，本轮是**声音规格**——每一层该挂哪些已有的 wav、怎么混、缺什么）。
-> 权威依据：`docs/SFX_LIST.md`（T41 钩子清单，含每条的「不要什么」）、引擎音频系统（`RedAbyssSFX` / `RedAbyssAmbience` / `opts.gain` 单次音量、ambience 循环 + 进场 1.5s 渐入）。
+> 权威依据：`docs/audio/SFX_LIST.md`（T41 钩子清单，含每条的「不要什么」）、引擎音频系统（`RedAbyssSFX` / `RedAbyssAmbience` / `opts.gain` 单次音量、ambience 循环 + 进场 1.5s 渐入）。
 > 现状缺口先记两条：①切层时旧 ambience 是**硬切**（`ambSrc.stop()`），没有淡出—— eight 层的渐变设计在现状下做不了，见第六节；②wav 对账已清：`web/sfx/` 实数 **27 个音频**（19 钩子 + 8 氛围，另有 1 个 README.txt 被 ls 误计入），与 `SFX_LIST` 的 19 钩子**完全一致**；不一致的只有代码注释「28 个（20 音效 + 8 氛围）」——注释多算 1，无实际缺文件。
 > 本文件只写设计，不动代码。所有 gain/闪避建议是**定性方向**，具体数值归引擎侧。
 

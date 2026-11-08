@@ -89,7 +89,7 @@
 **输入**：
 - `web/index.html`（找所有 `playSfx(` 调用点）
 - `web/sfx/` 目录（实际有哪些 wav）
-- `docs/SFX_LIST.md`（定义清单 + 末尾有实现记录）
+- `docs/audio/SFX_LIST.md`（定义清单 + 末尾有实现记录）
 
 **产出**：`docs/design/ui/09_sfx_touchpoints.md`
 

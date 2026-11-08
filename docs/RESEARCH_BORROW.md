@@ -103,7 +103,7 @@
 ### 机制 2：卡牌即叙事（牌面就是一段话，术语零解释）
 - 它做什么：每张牌的描述按文学文本写，不解释任何术语，读不懂是设计的一部分。【原文】
 - 为什么有效：术语的不可解性制造世界质感，玩家用拼图的方式学会世界。
-- 本项目现状：T13 已把 260 条卡/敌/事件文本按 `docs/STYLE_SAMPLES.md` 全量重写，禁用词扫描过关。
+- 本项目现状：T13 已把 260 条卡/敌/事件文本按 `docs/art/STYLE_SAMPLES.md` 全量重写，禁用词扫描过关。
 - 建议：**采纳（已具备，维持）**。对照确认——这条是红渊的立身之本，后续任何新卡文案继续走 STYLE_SAMPLES 自检三问。
 - 来源：https://www.gamedeveloper.com/design/why-the-i-cultist-simulator-i-devs-built-their-lovecraftian-game-on-a-house-of-cards
 

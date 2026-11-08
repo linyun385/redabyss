@@ -1,5 +1,5 @@
 /* T55 地图生成器原型 —— 纯算法，无 DOM 依赖，node 与浏览器皆可跑。
-   设计来源：docs/MAPGEN_DESIGN.md（T54 产出）；参数默认值与 tools/mapgen_spec.json 保持同步
+   设计来源：docs/mapgen/MAPGEN_DESIGN.md（T54 产出）；参数默认值与 tools/mapgen_spec.json 保持同步
    （tools/mapgen_test.js 内置同步断言）。
    本文件不接游戏：不改 web/、engine/、layers/、cards/ 等任何数据文件。
    确定性：全程使用内置 mulberry32 PRNG，禁用 Math.random——同 seed + 同参数 → 完全相同的 Region。 */

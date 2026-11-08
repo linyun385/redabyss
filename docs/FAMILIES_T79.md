@@ -13,7 +13,7 @@
 | 事件 | 102 | **82**（`event_*`，kind=evt）|
 | 合计 | 513 | **461** |
 
-- 任务书的 145/266/102 来自 `docs/ART_DIRECTION_V2.md` §四的旧"一对象一图"表，与现目录不符；**校验器一律按 art_catalog.json 实际条数断言**。
+- 任务书的 145/266/102 来自 `docs/art/ART_DIRECTION_V2.md` §四的旧"一对象一图"表，与现目录不符；**校验器一律按 art_catalog.json 实际条数断言**。
 - 类目键名：目录里事件的 kind 记作 `evt`，族表里的类目键记作 `event`；校验器已做等价映射（不算跨类别冲突）。
 
 ## 二、验收点清单与判定
@@ -61,7 +61,7 @@ event        82        4     4.9%      4           1.00        4      1
 
 1. **覆盖缺口（主缺口）**：缺 441 个对象的族归属 —— foe 缺 103、card 缺 260、event 缺 78。
 2. **族数缺口**：按验收带需 foe 60–90 族（现 10，还差 ≥50）、card 100–150 族（现 6，还差 ≥94）、event 92–112 族（现 4，还差 ≥78，即一事件一族补齐）。
-3. **交付物 3 缺失**：`docs/ART_FAMILIES.md`（族表文档：族名/成员/提示词/为什么算同族）不存在。
+3. **交付物 3 缺失**：`docs/art/ART_FAMILIES.md`（族表文档：族名/成员/提示词/为什么算同族）不存在。
 4. **登记缺失**：TASK_DONE.md 无 T79 条目（含 T79 要求的「先读文档取到什么」一句）。
 5. **多成员族为零**：R1–R6 的复用规则实际未被演练，`check_families.js` 的 A4（共享形态关键词）目前空转。
 
@@ -69,9 +69,9 @@ event        82        4     4.9%      4           1.00        4      1
 
 1. **可复用的底稿**：`data/zh_prompts_full.json` 已有全部 461 对象的中文 prompt（359 个族）。逐对象 prompt 语义可用，但**族划分不可沿用**：它按功能/系列归组，11 个族超 3 上限（工具卡 17、协议卡 10、震语卡牌 9、文书 7、潜水者技能/震语族/震语系列各 6、鱼类/火母系列/潜水者攻击各 5、矿道事件 4），且把 4 个事件并成"矿道事件"族，违反 R2/R3/R4 与"一事件一族"。
 2. **按形态重新归族**：foe 按"同目/同材质/同功能"（R3），命名/形态差异大必须拆族（R4）；card 按物件形态归（检查单/枪/绳/仪/罐…）；event 严格一事件一族（族 id `evt_<eventId>`）。
-3. **逐族英文 prompt** 按 `docs/ART_PROMPT_SPEC.md` §三模板（对象段 → 姿态段 → 风格段），每条带 1–2 个异化标记（材料替代/工艺寄生/器官错位）+ 倒吊/红光语块，禁 `a symbol of / abstract embodiment / minimal emblem`。
+3. **逐族英文 prompt** 按 `docs/art/ART_PROMPT_SPEC.md` §三模板（对象段 → 姿态段 → 风格段），每条带 1–2 个异化标记（材料替代/工艺寄生/器官错位）+ 倒吊/红光语块，禁 `a symbol of / abstract embodiment / minimal emblem`。
 4. 每改一轮跑 `node tools/check_families.js`，A1–A6 全 PASS（退出码 0）再交付。
-5. 交付时补 `docs/ART_FAMILIES.md` 并在 TASK_DONE.md 登记 T79。
+5. 交付时补 `docs/art/ART_FAMILIES.md` 并在 TASK_DONE.md 登记 T79。
 
 ## 附录：现有 20 族样张清单（data/art_families.json，未改动）
 

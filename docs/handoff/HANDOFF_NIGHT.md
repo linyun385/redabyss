@@ -32,8 +32,8 @@ T1–T26 全部完成：
 7. 内容重心居中（地图/卡牌/敌人/手牌/日志）
 
 ### 今天新建的文档
-- `docs/STYLE_SAMPLES.md` —— 密教模拟器文风样本 + 12 条特征（第一人称、半文半白）
-- `docs/STYLE_ART.md` —— 美术风格规范（木刻版画）+ SDXL 提示词模板
+- `docs/art/STYLE_SAMPLES.md` —— 密教模拟器文风样本 + 12 条特征（第一人称、半文半白）
+- `docs/art/STYLE_ART.md` —— 美术风格规范（木刻版画）+ SDXL 提示词模板
 - `docs/HANDOFF_D2.md` —— 白天改动记录
 
 ## 三、今晚的活（任务包已全部写好）

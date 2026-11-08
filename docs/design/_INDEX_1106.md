@@ -15,7 +15,7 @@
 | 附属卡设计（2026-11-06 夜班） | docs/design/anmin_minions/00_README.md | 8 文件入口 |
 | 敌人全量 roster 与战斗台词 | docs/design/enemies/_roster_full.tmp.md + battle_lines.md | 113 只 |
 | 数值曲线 | docs/design/curves/curve_report.md + parts_economy.md | 脚本 tools/_curve_audit_1106.py、tools/_parts_economy_1106.py |
-| 音效钩子 | docs/SFX_LIST.md（docs 根，不在 design/ 下） | 19 钩子 + 8 氛围 |
+| 音效钩子 | docs/audio/SFX_LIST.md（docs 根，不在 design/ 下） | 19 钩子 + 8 氛围 |
 | 术语一致性 | docs/design/glossary_audit.md | 15 条 + 排除项 |
 | 矛盾追踪（本夜班版） | docs/design/_CONFLICTS_1106.md | 旧账见 _CONFLICTS.md / old_doc_conflicts.md |
 | 引导文案 | docs/design/tutorial/first_3_battles.md |  |

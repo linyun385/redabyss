@@ -16,7 +16,7 @@ import numpy as np
 sys.stdout.reconfigure(encoding='utf-8')
 SFX = Path(__file__).resolve().parents[1] / 'web' / 'sfx'
 
-# 每条音的方向预期（来自 docs/SFX_LIST.md），用来判断频谱是否跑偏
+# 每条音的方向预期（来自 docs/audio/SFX_LIST.md），用来判断频谱是否跑偏
 EXPECT = {
     'card.play.attack': ('金属短促', 'mid'),
     'card.play.skill': ('闷响石头', 'lo'),

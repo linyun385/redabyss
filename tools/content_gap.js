@@ -28,7 +28,7 @@ const QUOTA_A = { enemyNormal: 2, enemyElite: 1, enemyBoss: 1, event: 1, relic: 
 /* 文本量估算（字/条）：任务书 80–150 字区间内按类型取值 */
 const CHARS = { enemy: 100, event: 150, relic: 80, card: 80 };
 
-/* 归属规则（脚本口径，与 docs/MAPGEN_DESIGN.md §0.1 一致）：
+/* 归属规则（脚本口径，与 docs/mapgen/MAPGEN_DESIGN.md §0.1 一致）：
    - 敌人/事件：数据自带 layer 字段 → layer = 生态母本带
    - 遗物/卡牌：无 layer，按 veins 含生态主脉亲和归属；一个条目多脉时向每个亲和生态重复计数（共享计数）
    - 无脉亲和生态（eco_surface / eco_nexus）：按「素品」口径归 无脉 条目（veins 为空） */

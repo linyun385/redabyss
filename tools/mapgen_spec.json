@@ -1,8 +1,8 @@
 {
  "version": "1.7",
  "task": "T54",
- "doc": "docs/MAPGEN_DESIGN.md",
- "brief": "docs/MAPGEN_BRIEF.md",
+ "doc": "docs/mapgen/MAPGEN_DESIGN.md",
+ "brief": "docs/mapgen/MAPGEN_BRIEF.md",
  "note": "地图生成参数唯一来源（T54 落盘）。后续任务从这里读参数，不要各写一份。依据标注：requirement=需求原文/任务书，existing=既有设定，assumption=设计假设（可调）。",
  "grid": {
   "w": {

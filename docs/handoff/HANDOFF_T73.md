@@ -1,6 +1,6 @@
 # HANDOFF_T73.md — 会话交接文档（2026-10-31，T72+T73 完成后）
 
-> **给新会话的 opener**：读这份文档 + `game/TASK_DONE.md` 最后 10 条 + `game/docs/MAPGEN_DESIGN.md`，然后你就可以接手了。
+> **给新会话的 opener**：读这份文档 + `game/TASK_DONE.md` 最后 10 条 + `game/docs/mapgen/MAPGEN_DESIGN.md`，然后你就可以接手了。
 > **绝对不要重做的事**：本文档「已完成」列表里的每一项都有 TASK_DONE 记录和检查器通过证据。
 
 ## 一、项目当前状态（一句话）
@@ -11,13 +11,13 @@
 
 | 任务 | 状态 | 产出位置 |
 |---|---|---|
-| T54 设计文档 | ✅ | docs/MAPGEN_DESIGN.md（含 I1–I17 不变量） |
+| T54 设计文档 | ✅ | docs/mapgen/MAPGEN_DESIGN.md（含 I1–I17 不变量） |
 | T55 生成器 | ✅ | tools/mapgen.js（↑已内联进 index.html）+ mapgen_test.js（200 seed）+ mapgen_debug.html |
 | T56 小图/总图 | ✅ | web/index.html T56-MAP-MODULE 段（默认新地图；?map=old 回退） |
 | T57 玩法接入 | ✅ | 推进/死路救援/跨带 BOSS/结局，全在 T56-MAP-MODULE 段 |
 | T60 配额盘点 | ✅ | tools/content_gap.js + content_gap.json + docs/CONTENT_PLAN.md |
 | T58 绑定表 | ✅ | data/mapgen_bindings.json + tools/check_bindings.js（256/256 满格） |
-| T59 回归 | ✅ | tools/mapgen_sim.js + docs/MAPGEN_REPORT.md |
+| T59 回归 | ✅ | tools/mapgen_sim.js + docs/mapgen/MAPGEN_REPORT.md |
 | T61 敌人 | ✅ | enemies/all.json +33（eco 标签）+ docs/ECO_ENEMIES.md |
 | T62 事件 | ✅ | events/all.json +10（eco+bands 标签）+ docs/ECO_EVENTS.md |
 | T63 遗物卡牌 | ✅ | relics/all.json +1 / cards +6 + docs/ECO_RELIC_CARD.md |

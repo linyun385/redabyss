@@ -16,7 +16,7 @@ python tools/prompt_lint.py --full --out data/lint_full_prompts.json # 整条口
 python tools/rule_coverage.py                                        # 汇总表 -> data/rule_coverage.json
 ```
 
-`rule_coverage.py` 无时间戳无随机，同输入两次运行逐字节一致（2026-11-04 已验证 diff 为空）。词表来源与键名沿用 `tools/prompt_lint.py`（species=SPEC§VIII / appliance=规则IX / mech=SPEC§六禁词 / en_bad=§四英文禁词，见 docs/ART_PIPELINE.md「prompt_lint 词表」节）。
+`rule_coverage.py` 无时间戳无随机，同输入两次运行逐字节一致（2026-11-04 已验证 diff 为空）。词表来源与键名沿用 `tools/prompt_lint.py`（species=SPEC§VIII / appliance=规则IX / mech=SPEC§六禁词 / en_bad=§四英文禁词，见 docs/art/ART_PIPELINE.md「prompt_lint 词表」节）。
 
 ## 按规则
 
@@ -45,9 +45,9 @@ IX 残留词分布：灯 53、显示 15、屏 9、按钮 6、表盘 3、喇叭 2
 ## 口径注记（三条，防止误读）
 
 1. **覆盖率按主体段**（「洞底是一整片深红的光」前半，prompt_lint 的缺省口径）——这是 rewrite 的作业范围。整条口径下 mech 会 100% 命中，因为固定尾部工艺段含「字」（对应英文负面词 no text），那是风格段本身，不算违规（[tools/prompt_lint.py:25] 的 MARKER 切分逻辑）。
-2. **规则名映射**：任务书说的 X（事件「牌/文字/纸类/设备」重写，[docs/ART_PROMPT_SPEC.md:200] 的执行记录）在词表体系里落在 `mech` 键；`appliance` 是第一轮翻车源新增的 IX 词表；两者是不同词表，本表分开统计。
+2. **规则名映射**：任务书说的 X（事件「牌/文字/纸类/设备」重写，[docs/art/ART_PROMPT_SPEC.md:200] 的执行记录）在词表体系里落在 `mech` 键；`appliance` 是第一轮翻车源新增的 IX 词表；两者是不同词表，本表分开统计。
 3. **rewrite 清单**（147 条，data/rewrite/_targets.json）当时只覆盖 dive/trem/event 的目标段；anm/cng/foe 从未进入——这是第 4 条结论「执行缺口」的出处，不是 lint 或重写的失败。
 
 ## 与既有基线的关系
 
-docs/ART_PIPELINE.md「夜班基线数字」记 lint 主体段命中 133（rewrite 前口径）；本次用当前 `data/zh_prompts_full.json` 重跑 lint 仍为 133 条/24 词项——即**现有残留与重写前的记录完全同集**：rewrite 确实消除了它目标内的词（dive/trem/event 的 appliance 残留均为改写文本中新出现或遗留的非目标词），而 anm/cng/foe 段从未被处理。换句话说：当前 133 条残留 = 105 条从未重写（anm 36 + cng 34 + enemy 12 + 与清单相交部分）+ 28 条重写后仍带非目标词的存量，处理顺序应先做前者。
+docs/art/ART_PIPELINE.md「夜班基线数字」记 lint 主体段命中 133（rewrite 前口径）；本次用当前 `data/zh_prompts_full.json` 重跑 lint 仍为 133 条/24 词项——即**现有残留与重写前的记录完全同集**：rewrite 确实消除了它目标内的词（dive/trem/event 的 appliance 残留均为改写文本中新出现或遗留的非目标词），而 anm/cng/foe 段从未被处理。换句话说：当前 133 条残留 = 105 条从未重写（anm 36 + cng 34 + enemy 12 + 与清单相交部分）+ 28 条重写后仍带非目标词的存量，处理顺序应先做前者。

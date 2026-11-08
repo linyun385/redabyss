@@ -12,7 +12,7 @@ v1 → v2 改了什么（用户原话在括号里）：
   3. 「入梦应该是惊醒、快速入梦，现在太长了」→ world_switch 从 1100ms 重做成 420ms
   4. 「通关结算太低沉，基本听不见」→ victory 基频 44 → 80Hz + 强谐波
 
-设计依据：docs/SFX_LIST.md
+设计依据：docs/audio/SFX_LIST.md
 用法：python tools/sfx_synth_full.py
 """
 import sys

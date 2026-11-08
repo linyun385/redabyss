@@ -19,8 +19,8 @@
 | 事件 | 68 | 基础 48 / 黯民 10 / 苍民 10 |
 | 层 | 8 | 56 个地图节点（岔路图，含商店/营火/精英/Boss） |
 | 彩蛋 | 8 | docs/EASTER_EGGS.md |
-| 音效钩子 | 21 | docs/SFX_LIST.md（未含音频） |
-| 材质主题 | 3+off | 可切换开关，**默认 off=现状**；A 已作废（层色丢失）、B/C 通过硬指标；见 docs/ART_STYLE_MATRIX.md 与 docs/artstyle/ 12 张对照截图 |
+| 音效钩子 | 21 | docs/audio/SFX_LIST.md（未含音频） |
+| 材质主题 | 3+off | 可切换开关，**默认 off=现状**；A 已作废（层色丢失）、B/C 通过硬指标；见 docs/art/ART_STYLE_MATRIX.md 与 docs/artstyle/ 12 张对照截图 |
 
 ## 已验证
 

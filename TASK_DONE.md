@@ -132,7 +132,7 @@
 
 ## T17 完成
 - status: done
-- output: docs/DLC_ANMIN.md（黯民 DLC 设定包）
+- output: docs/dlc/DLC_ANMIN.md（黯民 DLC 设定包）
 - check: 汉字约 4300+（含标点超 6000 字符）；红渊.md 引用 11 处并注明出处章节；玩法规格含能做/不能做清单；结尾含「未采用的方向」7 条
 - notes: 事实全部取自红渊.md（任务书指定的 红渊·世界观扩充.md 不存在，已在文档头部注明，目录中的 世界观.txt 为源法体系设定、无黯民内容，未采用）。核心判断：第 9 层不做 D9 主线、做通关后「回响」支线短局（理由：D8 叙事句号 + 黯星在"天上"且黯民靠夜游进入红渊 + 复用现有系统成本最低）。玩法主打「回收」（零件/改装/拆解/威胁等级只涨不跌），可选机制「协议」做一张全局不可撤销规则卡。新职业维护者 76 血，三流派：工程/协议/苦役。
 
@@ -159,13 +159,13 @@
 
 ## T21 完成
 - status: done
-- output: docs/DLC_ANMIN_VERIFY.md（黯民 DLC 验收报告，按 T21 规定结构）
+- output: docs/dlc/DLC_ANMIN_VERIFY.md（黯民 DLC 验收报告，按 T21 规定结构）
 - check: 三检查器全绿；内容量全达标；三局浏览器实测 0 报错
 - notes: 三局结果——改造流死于 D5、拆解流死于 D3（拆 5 次、威胁报文实锤、反噬成立）、协议流死于 D3（未自然抽到协议卡，横幅正确保持隐藏）。差异是否成立：成立——黯民的决策发生在"消耗时"且每次消耗抬高全局风险，与下潜者（获得时）、震语者（失去时）符号相反，行为证据是拆解流确实因反噬走得更近。发现并记录问题 4 个（事件金币未做零件视觉转换、协议卡实测未命中、静默段入口未完整复现、Boss 阶段文本未实测触发），均已写入验收报告，未隐瞒。
 
 ## T22 完成
 - status: done
-- output: docs/DLC_CANGMIN.md（苍民 DLC 设定包）
+- output: docs/dlc/DLC_CANGMIN.md（苍民 DLC 设定包）
 - check: 汉字约 5100；引用 12 处并注明部分（第九部分/第十二部分/纪元三、四、五等）；玩法规格含能做/不能做；结尾「未采用的方向」7 条
 - notes: 职业名取疯先知（第九部分·六），双世界机制（醒 30/梦 60、清醒度、梦死反噬 50%、牌组隔离）。三流派按三神体系（巨神/光父/火母）各 15 张=清醒 7+梦 8，神秘学四支做四张稀有梦牌。第 10 层判断：不做物理苍垣层，苍民主战场是"梦境红渊"本身（夜游是他们唯一的下潜方式），另做 3 层倒影短局「伊格的痛苦」通关后解锁——理由：苍民肉体不在红渊，物理第 10 层会作废夜游规则。DLC 时代背景扩展：红渊被帝星捕获后 L4 投射部分复苏，一千三百年后第一批疯先知重新入梦（标注为扩展）。修复一处原典口径：一岁=游父绕昴宿 50 天（第十四部分），与纪元四"50 天周期"一致。
 
@@ -199,7 +199,7 @@
 
 ## T26 完成
 - status: done
-- output: docs/DLC_CANGMIN_VERIFY.md（苍民 DLC 验收报告，按 T26 规定结构）
+- output: docs/dlc/DLC_CANGMIN_VERIFY.md（苍民 DLC 验收报告，按 T26 规定结构）
 - check: 三检查器全绿；三局浏览器实测（梦栖/频繁切世/纯清醒）0 报错
 - notes: 三局结果——梦栖死于 D2（入梦 3 次、0 强制醒）、频繁切世死于 D2（切 2 次）、纯清醒死于 D2（0 切世）；清醒侧确实撑不住、必须入梦的设计信号成立。四职业横向对比成立（核心决策：获得时/失去时/消耗时/在世界间切换，两两不同；黯民与苍民的区分是账面累积 vs 身份切换，附行为证据与同质化预警建议）。发现并记录问题 4 个 + 边界声明 4 条。至此 T17-T26 十个任务全部完成。
 
@@ -273,7 +273,7 @@
 
 ## T41 完成（音效架构：只留钩子，不生成音频）
 - status: done
-- output: web/index.html（playSfx(code, opts) 接口 + __SFX_LOG 收集 + __SFX_MUTED 静音开关入口 + setLayerAmbience(depth) 空实现并挂进 applyLayerTheme；原有 sfx() 全部迁移为语义化 code，新增受击/击杀/格挡/共振/凝视/能量空/界面/Boss 阶段/切世共 10 处调用点）、docs/SFX_LIST.md（21 个 code 分类清单，每条带「不要什么」+ 8 层氛围音设计表）
+- output: web/index.html（playSfx(code, opts) 接口 + __SFX_LOG 收集 + __SFX_MUTED 静音开关入口 + setLayerAmbience(depth) 空实现并挂进 applyLayerTheme；原有 sfx() 全部迁移为语义化 code，新增受击/击杀/格挡/共振/凝视/能量空/界面/Boss 阶段/切世共 10 处调用点）、docs/audio/SFX_LIST.md（21 个 code 分类清单，每条带「不要什么」+ 8 层氛围音设计表）
 - check: node tools/pack_check.js all →「全部通过（5 个警告）」；node tools/test_engine.js →「全部通过」；node tools/check_web.js →「全部通过（0 个警告）」
 - notes: code 共 21 个，分 5 类——卡牌（card.play.attack/skill/power/cost）、战斗（combat.start/enemy.hit/combat.hurt/combat.block/combat.kill）、状态（state.resonance/state.gaze/state.energy_empty）、界面（ui.click/ui.open/ui.close）、特殊（special.boss_phase/world_switch/egg/victory/death），另有 ambience.depth1–8 占位（setLayerAmbience 写入 __SFX_LOG 的记录）。card.play 按牌类型三选一 + 代价牌额外叠加 card.play.cost（清单里写明是"叠一层"）。
   实测：浏览器开 __SFX_LOG 打一场战斗，收集到 ui.click×2 / combat.start / card.play.attack / enemy.hit / combat.hurt，全部在 SFX_LIST.md 内，无未定义 code；ambience.depth1 在进入地图时由 applyLayerTheme → setLayerAmbience 写入（首版漏挂 applyLayerTheme，复测前补上——这正是任务书点名的接法）。
@@ -281,7 +281,7 @@
 
 ## T42 完成（素材管线：按任务书在第 1 步停下）
 - status: done（按任务书规定的停止点收尾——探测不过即停，未生图）
-- output: 无代码/素材产出。执行了第 -1 步（读 docs/STYLE_ART.md 全文）、第 0 步（视觉自检）、第一步（gen_art.py --probe）
+- output: 无代码/素材产出。执行了第 -1 步（读 docs/art/STYLE_ART.md 全文）、第 0 步（视觉自检）、第一步（gen_art.py --probe）
 - check: 不适用（未到生图与 --check 阶段）；三检查器在本任务未动任何游戏文件，最近一次结果 pack_check「全部通过（5 个警告）」/ test_engine「全部通过」/ check_web「全部通过（0 个警告）」
 - notes: 视觉自检——tools/ref/ 为空且用户不在（自主作业），改用 tools/ 下已有截图（_bottom.png）做能力验证：能准确读出内容（ZCode 客户端输入区截图：继续。消息、GLM-5.3-Flash 模型选择器、完全访问标签）、主色调（深灰底/白字/橙色强调）、风格判断（现代扁平软件 UI，非版画）——三问全部答上，判定【有视觉输入能力】（这是我看到的，不是推断）。后续若生图，STYLE_ART.md 第五节三条验收可由我执行，存疑项仍标存疑。
   环境探测结果（4 项中 3 项 OK）：ComfyUI 目录 D:\ComfyUI OK；torch 2.6.0+cu124，CUDA True（RTX 4060 Laptop）；模型 sd_xl_base_1.0.safetensors 6.46 GB 在位；**ComfyUI 服务：未启动**。
@@ -299,7 +299,7 @@
 
 ## T44 完成（材质候选方案 × 层深度色，默认 off）
 - status: done（三候选交付，默认 off，未拍板——按任务书不由 GLM 定成品）
-- output: web/index.html（CSS 主题层：`html[data-theme="A|B|C|off"]` 三候选一开关 + applyLayerTheme 增写 `--layer-bg` 原始层色一行；未动 engine/数据/DOM 结构）、docs/ART_STYLE_MATRIX.md（变量表 + 硬指标数字 + 结论）、docs/artstyle/（12 张对照截图 AB_<场景>_<方案>.png）、README/DELIVERY 补切换说明
+- output: web/index.html（CSS 主题层：`html[data-theme="A|B|C|off"]` 三候选一开关 + applyLayerTheme 增写 `--layer-bg` 原始层色一行；未动 engine/数据/DOM 结构）、docs/art/ART_STYLE_MATRIX.md（变量表 + 硬指标数字 + 结论）、docs/artstyle/（12 张对照截图 AB_<场景>_<方案>.png）、README/DELIVERY 补切换说明
 - check: node tools/pack_check.js all →「全部通过（5 个警告）」；node tools/test_engine.js →「全部通过」；node tools/check_web.js →「全部通过（0 个警告）」
 - notes: 切换方法一行——控制台执行 `document.documentElement.dataset.theme = 'B'`（或 'C'/'off'，off 可直接删除该属性），默认 off=现状。三方案只动 CSS 变量层与覆盖样式，无外部资源（纸纹/暗角用 CSS 渐变画在 body 背景层，内容之下不压字——首版用 ::after 覆盖层会压暗角落文字，已重做并重拍 C 组截图）。
   硬指标（python 脚本算的 ΔE76 与 WCAG 对比度，非目测）：**A 全纸底作废**——28 对层色最小 ΔE 1.4 < 5，层色信息丢失（纸底占比须 ≤~32% 才能保住可区分性，那就不是纸底了）；次要对比度 2.95 也差 0.05。**B 暗底贴纸、C 层色+纸纹保留**——层色 min ΔE 7.4 不变、卡面/日志正文对比度 10.21、次要 4.68、图案区边界 ΔE 5.6（比现状 2.7 更清晰）、递进（最亮 D1/最暗 D5/最红 D8）不变。A 主题下 10 张手牌实测：无整页滚动条、按钮在视口内。
@@ -362,7 +362,7 @@
 
 ## T50 完成（素材降级：纯 CSS / SVG 卡面质感）
 - status: done
-- output: web/index.html（①卡面图案区按脉的 6 组 CSS 渐变底纹（appendArt 加 v-<脉> 类，0 新节点）；②敌人图案区层级剪影 SVG（eye/door/snake 三档构图，内联 symbol 精灵 + <use>）；③遗物徽记 SVG（12 几何 symbol × 6 旋角，relicBadge 稳定散列），替换 HUD 遗物行与 relicrow 两处纯文字）；docs/ART_FALLBACK.md（画法/类名/真图替换点）；docs/artstyle/ 5 张截图（SVG_cards_off/B/C、SVG_enemy、SVG_relics，1440×900）
+- output: web/index.html（①卡面图案区按脉的 6 组 CSS 渐变底纹（appendArt 加 v-<脉> 类，0 新节点）；②敌人图案区层级剪影 SVG（eye/door/snake 三档构图，内联 symbol 精灵 + <use>）；③遗物徽记 SVG（12 几何 symbol × 6 旋角，relicBadge 稳定散列），替换 HUD 遗物行与 relicrow 两处纯文字）；docs/art/ART_FALLBACK.md（画法/类名/真图替换点）；docs/artstyle/ 5 张截图（SVG_cards_off/B/C、SVG_enemy、SVG_relics，1440×900）
 - check: node tools/check_web.js →「全部通过（0 个警告）」（无 img / 无 background-image:url / 无外部资源）；node tools/pack_check.js all →「全部通过（5 个警告）」；node tools/test_engine.js →「全部通过」
 - notes: 做了三处质感——卡面底纹按脉 6 组（tremor 交叉排线是唯一真版画技法结构，其余五组是氛围近似，ART_FALLBACK.md 有逐组标注）；敌人剪影按 tier 三档构图（普通=眼 22px / 精英=门+圆环 28px / Boss=蛇+双线框 34px，全部 currentColor 描边随主题换色）；遗物徽记 12 symbol × 6 旋角 = 72 视觉变体，id 稳定散列（同一遗物永远同一徽记）。主题兼容：纹理线色走 --art-line（off 浅线深底 / B、C 墨线纸底），三主题截图各一张为证。
   性能实测：DOMContentLoaded 69ms；选职业点击到渲染完成 8ms（performance.now）；常驻新增节点 < 60（上限 200）；10 张手牌无整页滚动条、结束回合按钮在视口内（截图即 10 张手牌状态）。
@@ -423,7 +423,7 @@
 
 ## T54 完成（地图生成框架设计）
 - status: done
-- output: docs/MAPGEN_DESIGN.md（10 节：映射表 / 数据模型 / 五步流程 / 12 条不变量 / 可见性 / 死路救援 / 参数表 / 伪代码 / 运行时跨带 BOSS 接口 / 下游消费表 / 边界声明）；tools/mapgen_spec.json（参数唯一机读来源，node -e JSON.parse 通过）。未写任何游戏代码，web/、engine/、cards/、layers/ 零改动。
+- output: docs/mapgen/MAPGEN_DESIGN.md（10 节：映射表 / 数据模型 / 五步流程 / 12 条不变量 / 可见性 / 死路救援 / 参数表 / 伪代码 / 运行时跨带 BOSS 接口 / 下游消费表 / 边界声明）；tools/mapgen_spec.json（参数唯一机读来源，node -e JSON.parse 通过）。未写任何游戏代码，web/、engine/、cards/、layers/ 零改动。
 - check: node -e "JSON.parse(...mapgen_spec.json)" → ok；node tools/pack_check.js all →「全部通过（5 个警告）」；node tools/test_engine.js →「全部通过」；node tools/check_web.js →「全部通过（0 个警告）」
 - notes: **生态枚举映射**（8 种，与八层一一对应，D1/D8 为非生物生态不推翻设定）：eco_surface↔D1 死寂壳层(no_light)、eco_cold↔D2 沉积冷洞(tremor/dim)、eco_arid↔D3 泉眼干旱区(water/dry)、eco_sea↔D4 红蕨空洞海(light/bright)、eco_vent↔D5 热泉裂带(heat/heat_tick)、eco_rad↔D6 辐射荒漠(mineral/rad_tick)、eco_core↔D7 核心高热区(heat/burn_hand)、eco_nexus↔D8 核心回路(time_loop)。**节点类型映射**：需求五类 = combat/elite/random/shop/event，既有 campfire 并入 random 的落点分布（.45/.40/.15，假设）；boss 只在运行时出现，finalBoss 生成期唯一。
   **7 个关键参数默认值**：聚合度 κ=0.7、最小生态块 18 格、每生态连通分量 ≤2、同类型最小距离 D=2 格、边长 k=4、跨带 BOSS p0=0.5/decay=0.6/floor=0.1（首跨恒 BOSS，p(k)=max(floor, p0·decay^(k−2))）、重试上限 20。band=f(y) 公式写死：band = 8 − min(7, floor((h−1−y)/bandRows))，h=48 时每带 6 行。
@@ -475,7 +475,7 @@
 
 ## T59 完成（地图生成回归 500 局）
 - status: done
-- output: tools/mapgen_sim.js（端到端模拟：直接调用 tools/mapgen.js 生成器 + 与 T57 web 模块同一套运行时规则——跨带 BOSS 判定/救援落点/贪心未访问优先，无近似复刻；--runs 参数化）；tools/mapgen_sim.json（500 局全量数据 + summary）；docs/MAPGEN_REPORT.md（五指标表 + 配额校准 + 性能 + 已知取舍）。只测量，游戏代码零改动。
+- output: tools/mapgen_sim.js（端到端模拟：直接调用 tools/mapgen.js 生成器 + 与 T57 web 模块同一套运行时规则——跨带 BOSS 判定/救援落点/贪心未访问优先，无近似复刻；--runs 参数化）；tools/mapgen_sim.json（500 局全量数据 + summary）；docs/mapgen/MAPGEN_REPORT.md（五指标表 + 配额校准 + 性能 + 已知取舍）。只测量，游戏代码零改动。
 - check: node tools/mapgen_sim.js --runs 500 →「可通关率: 100.0%（500/500）」耗时 2,192ms（预算 5 分钟）；报告数字与 JSON 抽查 11/11 一致；node tools/pack_check.js all →「全部通过（5 个警告）」；node tools/test_engine.js →「全部通过」；node tools/check_web.js →「全部通过（0 个警告）」
 - notes: **五指标**：①可通关率 100%（500/500，failSeeds 空）；②死路率 0.00/局（500 局全零救援）；③步数 19.8/局（15–26，66 格图自然走 ~20 格）；④BOSS 战 3.31/局（分布 {2:101,3:210,4:133,5:47,6:9}，与理论期望 Σp(k)+1 = 2.288+1 = 3.288 吻合；跨带恒 7 次/局）；⑤每带停留 D1 2.70 / D2–D7 2.41–2.49 / D8 3.36。**配额校准**：类型到访率 combat 25.4% / elite 24.1% / random 26.1% / shop 23.0% / event 27.3%——类型间最大偏差 4.3pp，无超 25% 偏差 → 配额比例不需要调参；带维度 D1 +116% / D8 +92% 超 25% 阈值但属起点/终局的结构性必经（非配额问题），报告建议不改（要拉平中段可加 D4–D7 配额，纯改 spec.quota 不动代码）。**性能**：100 图 379ms、500 局 2.19s。
   诚实记录：自然死路率 0——贪心随机走法在 out-deg 1–3 + I9 每边界可跨 + 随机选边下几乎总有未访问出路，500 局没触发一次救援；救援功能本身非死代码（T57 三条强制死路实测 + 本次内嵌自证：强制死路场景 rescueTargets 恒非空，n0 两出边全标已触发 → 3 个落点）；若设计想让救援常触发，调低 node.maxInDeg 或 edge.extraBranchOdds 即可（本次不动——零卡死是安全侧）。BOSS 期望值验证了运行时判定公式的正确性（3.31 ≈ 3.288，差值是 500 局方差）。
@@ -522,7 +522,7 @@
 
 ## T66 完成（素材生产管线与样张送审）
 - status: done（样张 10 张已出，等用户点头后才做 T67——未经确认不动工）
-- output: tools/art_manifest.json（79 条素材清单：48 卡面 B + 24 敌人 B + 4 立绘 C + 3 结局 A，按 T60 口径 B 的 8 生态，命名 eco/<eco>/<序号>_<英文短名>.webp，samples 字段=本任务 10 张）；tools/gen_art_batch.py（diffusers 批量：断点续跑/失败重试 1 次记 art_failed.json/耗时与显存记 art_run.json，--only 子集）；tools/art_similarity.py（版权闸门：dHash 64bit vs 43 张参考图只读比对，阈值 hamming ≤6 写死，依据在脚本头注释）；docs/ART_PROMPTS_V2.md（B/C/A 三套可复制模板 + 负面词 + 三条反面例子，含 T44 的「风格前缀吃对象」坑）；art/ 下 10 张样张 webp + art/_previews/ 10 张 PNG 预览（供快速过目）。ComfyUI 未碰（前置事实：torch 冲突不许修）。
+- output: tools/art_manifest.json（79 条素材清单：48 卡面 B + 24 敌人 B + 4 立绘 C + 3 结局 A，按 T60 口径 B 的 8 生态，命名 eco/<eco>/<序号>_<英文短名>.webp，samples 字段=本任务 10 张）；tools/gen_art_batch.py（diffusers 批量：断点续跑/失败重试 1 次记 art_failed.json/耗时与显存记 art_run.json，--only 子集）；tools/art_similarity.py（版权闸门：dHash 64bit vs 43 张参考图只读比对，阈值 hamming ≤6 写死，依据在脚本头注释）；docs/art/ART_PROMPTS_V2.md（B/C/A 三套可复制模板 + 负面词 + 三条反面例子，含 T44 的「风格前缀吃对象」坑）；art/ 下 10 张样张 webp + art/_previews/ 10 张 PNG 预览（供快速过目）。ComfyUI 未碰（前置事实：torch 冲突不许修）。
 - check: 10 张样张全部生成成功（art_run.json：attempt 全 1，零失败）；版权闸门 python tools/art_similarity.py →「命中(过近) 0 / 10，exit=0」（最低汉明距离 12，阈值 6 的 2 倍）；node tools/pack_check.js all →「全部通过（5 个警告）」；node tools/test_engine.js →「全部通过」；node tools/check_web.js →「全部通过（0 个警告）」（本任务未动 web/ 数据；art/ 为新增素材目录不入包）。
 - notes: **样张清单与路径**（B×4）：art/eco/eco_cold/001_snow_buried_mossback_she.webp（黑底苔背壳+雪晶，B 语言标杆）、art/eco/eco_sea/001_hanging_red_fern_frond.webp、art/eco/eco_surface/010_sealed_diver_suit_shell.webp、art/eco/eco_vent/010_tube_worm_plume.webp；（C×4）：art/class/diver.webp、class/tremor.webp、class/anmin.webp、class/cangmin.webp（职业立绘，扁平三色）；（A×2）：art/ending/ending_watched.webp（潜水员跪坐机械前独光——ending_watched 长审）、ending_averted.webp（背身离场）。**耗时与显存（art_run.json 实测）**：均值 ~528s/张（8.8 分钟）、VRAM 峰值 10.1–10.6GB——与任务书前置事实「768×1152/20 步 ≈60 秒/张」**不符**，实测慢 ~9 倍；怀疑主因 VAE 被 upcast 到 fp32（diffusers 0.42 警告可证）+ expandable_segments 平台不支持；本任务只记录不修（性能调优留 T67 前置，10 张/批在过夜跑的前提下可接受）。**闸门**：43 张参考图全量比对（比任务书的 25 张更严），0 命中——最低 12（ending_averted vs Madrugad），构图相似但未到「背下来」的程度。
   prompt 模板定稿：B=「minimal emblem on flat black background: {对象}, few tiny white sparks, grainy risograph…」、C=「flat minimal illustration on off-white paper…」、A=塔罗框+独光；三条反面例子在 ART_PROMPTS_V2.md §4（风格前缀吃对象/语言混用/负面漏 border——B 语言约三成图会长塔罗框，样张里 001_snow_buried 已出现细边框，实测负面词需要再加重，见边界声明）。
@@ -545,7 +545,7 @@
 
 ## T67 完成（素材全量接入 + 体积与回归）
 - status: done
-- output: web/index.html 四处查表接线（appendArt 卡面 / .eart 敌人 / .portrait 职业立绘 / showVictory 结局插画，全部走 window.ART 常量表 data URI，查不到回落 T50 符号方案——遗物图标维持 SVG 徽记不用生图）；tools/art_embed.py（长边 ≤512 + 类型体积帽 30/20/60/120KB + quality 82→78 + 降尺寸阶梯 512→448→384→341→320→300，幂等注入 ART 表）；tools/check_web.js 两处修订（允许 data: URI、新增外链素材引用检查、占位扫描排除 base64 数据体）+ 注入外链探针实测「三红」证据；docs/ART_DELIVERY.md（接入方式/体积表/替换流程/主题兼容）。本任务嵌入 T66 的 10 张样张（降采样后 282KB raw / 376KB base64）；其余 69 张由 T69 批量生成后重跑 art_embed.py 刷新。
+- output: web/index.html 四处查表接线（appendArt 卡面 / .eart 敌人 / .portrait 职业立绘 / showVictory 结局插画，全部走 window.ART 常量表 data URI，查不到回落 T50 符号方案——遗物图标维持 SVG 徽记不用生图）；tools/art_embed.py（长边 ≤512 + 类型体积帽 30/20/60/120KB + quality 82→78 + 降尺寸阶梯 512→448→384→341→320→300，幂等注入 ART 表）；tools/check_web.js 两处修订（允许 data: URI、新增外链素材引用检查、占位扫描排除 base64 数据体）+ 注入外链探针实测「三红」证据；docs/art/ART_DELIVERY.md（接入方式/体积表/替换流程/主题兼容）。本任务嵌入 T66 的 10 张样张（降采样后 282KB raw / 376KB base64）；其余 69 张由 T69 批量生成后重跑 art_embed.py 刷新。
 - check: node tools/check_web.js →「全部通过（0 个警告）」且 background-image 全 data: 内联；**外链仍会红的证据**：注入 https 图片引用后实测三连 FAIL（CSS 远程资源 / 外链素材引用（http 图片）/ <img> 标签），还原后复绿；体积：index.html 955,625 B，素材增量 ≈418KB（≤1.6MB 预算 ✓），单图最大 45.7KB（立绘，帽 60）；浏览器实测：选人立绘 4/4、战斗敌图（管廊苔毯→surface 批次图）、手牌 2/10 光脉卡带蕨叶面（其余回落符号——面图仅嵌 2 张，T69 后全量）、结局插画上屏（背身+塔罗框图，修掉 endId0 笔误）；10 手牌+小图+右侧信息区同屏：无滚动条、结束回合在视口内；三主题截图 docs/artstyle/preview/final_off|B|C.png；相似度闸门：嵌入图源即 T66 过闸样张（复跑 0 命中）。
 - notes: **接入派生规则**（cardArtId/foeId）：主脉→生态 face、素卡按职业语域、敌人 layer→母本生态+id 哈希取 3 选 1——不需要给 260 张卡/113 只怪补 art 字段（数据零改动），派生确定性可复现；turned 结局复用 walked 画面（manifest 只有 3 张结局，任务书口径）。**检查器改动的边界**：放宽的只有「data: 内联」一种形态；新增的外链素材规则比改前更严；占位扫描排除 base64 数据体是精度修正（50 万字符 base64 概率性含 xxx 三连，非人工占位）——三处修订全部带注释理由。
   过程中修的 3 个真 bug：①ART 注入用 const 不挂 window → 四处查表全落空（改 window.ART）；②showVictory 插入块三目假分支笔误 endId → 非 turned 结局必抛 ReferenceError、结算页空白（onerror 捕获定位）；③占位检测对 base64 误报（精度修正非放宽）。
@@ -568,7 +568,7 @@
 
 ## T72 完成（生态混合重定：一层一个环境 → 每带 2–4 种）
 - status: done
-- output: tools/mapgen_spec.json v1.5（weight.home 0.45/adjacentEach 0.20 取代 0.72；ruleModulation 7 条层规则调制表（no_light×light 0.5 为用户示例，dim/dry/bright/heat_tick/rad_tick/burn_hand 为假设档）+ ruleByBand 数据镜像 layers.json；bandMix 参数组：每带生态数 2–4 / 最大占比 0.60 / 相邻交集 ≥1 / 带内连通块 ≤3 / 最小块 12）；tools/mapgen.js（buildWeightTable 新公式+调制+归一；growEcos 后处理多遍收敛：碎片合并 / 带内连通块上限 / 边界衔舌 2×6 / 份额修剪 / 灭门复活，单次泛洪分组优化 24→8ms/图；retry.max 20→40）；tools/check_ecomix.js（500 图验收器 + 5 张 SVG 色块图）；docs/MAPGEN_DESIGN.md §2/§3 同步。**不动素材内联架构**（window.ART 相对路径版原样）。
+- output: tools/mapgen_spec.json v1.5（weight.home 0.45/adjacentEach 0.20 取代 0.72；ruleModulation 7 条层规则调制表（no_light×light 0.5 为用户示例，dim/dry/bright/heat_tick/rad_tick/burn_hand 为假设档）+ ruleByBand 数据镜像 layers.json；bandMix 参数组：每带生态数 2–4 / 最大占比 0.60 / 相邻交集 ≥1 / 带内连通块 ≤3 / 最小块 12）；tools/mapgen.js（buildWeightTable 新公式+调制+归一；growEcos 后处理多遍收敛：碎片合并 / 带内连通块上限 / 边界衔舌 2×6 / 份额修剪 / 灭门复活，单次泛洪分组优化 24→8ms/图；retry.max 20→40）；tools/check_ecomix.js（500 图验收器 + 5 张 SVG 色块图）；docs/mapgen/MAPGEN_DESIGN.md §2/§3 同步。**不动素材内联架构**（window.ART 相对路径版原样）。
 - check: node tools/check_ecomix.js --runs 500 → **①每带生态数∈[2,4] 违例 0 ✓ ②最大占比≤60% 违例 0 ✓ ③相邻带交集≥1 违例 0 ✓ ④带内连通块 95 分位 = 2（≤3 ✓）⑤最小块 = 12（≥12 ✓）**+ 色块图 5 张 art/ecomix/sample_seed{1,42,777,1234,2024}.svg；node tools/mapgen_test.js → 200 seed 全断言通过（spec 同步断言更新至 v1.5 权重/bandMix）；三检查器全绿；mapgen_sim 300 局可通关率 100%。
 - notes: 实测带级画像（10 seed 抽样）：每带 2–4 种、最大占比 37–60%——D5 4 种 42%、D3 4 种 48%、单生态带全部消失。**参数调整的依据链**：主场 0.72→0.45 与邻带 0.20 各自独立（n=1 顶格 0.25）是用户拍板的 0.40–0.50/0.15–0.25 区间中值；层规则调制 7 条里 no_light×0.5 是用户示例、其余 6 条（dim 0.75/dry 0.6/bright 1.25/heat 1.1/rad 1.05/burn 1.1）是按层语义定的假设档；retry 20→40 是数学补救（新约束下单 attempt 成功率 ~27%，0.73²⁰≈0.3% 的种子级失败在 500 张里必现——实测确实漏了 1 个 seed）。
   过程中修的 3 个真问题：①生态被合并**灭门**（eco.missing）——加灭门复活（最后一块不并入邻居、改从邻居圈地补足 12 格）+ assertAlive 哨兵（5 个变异点，灭门立刻变可捕错误）；②单带占比 >60% 残留——份额修剪 pass（切 12 格连通块给次生态）；③性能回退 24ms/图（T55 的 2s/100 图线被破）——mergeSmallAndCap 改单次泛洪分组，回到 8.3ms/图。
@@ -596,7 +596,7 @@
 
 ## T74 完成（生成性能回归 / 深度节奏 / 小图挡标题 三件修复）
 - status: done
-- output: ①tools/mapgen.js 性能与结构修复——band8 收束改「末槽位行 ±4 + 其余 ±6」并配额 36→30（原全带 ±4 把 35 节点压 9 列超容，grow.leaf 占失败 ~94% → 整图重试）、纵向间距 ≥2→≥1（T74 允许项）、fbInDegCap 6→10、O(N²) 扫描全改索引（hasDownPotential 行扫+槽位短路/verticalOk byCell/sameTypeOk band|type 桶/跨带+fb+分叉边界窗/validate I8 I17 分桶/出度表）、byCell+interiorUsed 字符串键→y*w+x 整数索引（Array/Uint8Array）、pathClear Bresenham 去分配内联、loadBindings 进程缓存、生态后处理收敛（shareTrim 带内循环切到达标+轮上限 30、mergeSmallAndCap 批量、scanGroups 带内真连通分量修正、终检一次分桶+floodCells、泛洪 NB 邻接表）、位移表按 dy 预分桶、startX 随网格宽取中；②节奏——grid 14×64→20×96（带高 12）+ 配额 ×1.5 摊开（总节点 161→240），步数 32.3→46.3（40–53，落回原线 40–70）、D2–D7 3.8–4.0→5.56–5.78（过原线 4.5）、D1/D8 6.33/7.10、BOSS 3.25、通关 100%（500 局）；③小图——#mm-dock 固定右缘 top96/right8/宽 clamp(…380)（720 下 371×331，底缘不压手牌），删除地图选择态自动居中，放大改为显式交互：点地图区→centered+背板，×/Esc/点背板三法收起（实测全过），renderMiniMap 窗口行数自适应（格子<10px 只显当前带，T71 尺寸线全保：选择态 17.8×17.5px/Ø14.6/13px，战斗态 17.8×12.7/Ø10.6/11px）；④spec v1.7（grid w20 h96、minPatchArea 8+镜像 bandMix.minPatch、verticalSpacing minRows 1、配额表、band8 note、changelog）+ _t56_wire 重注入；⑤tools/mapgen_test.js 增加重试断言（均值≤6/最大≤40）+ verticalSpacing 同步断言 + 出度统计 O(N×E)→O(N+E)；tools/mapgen_sim.js 新增 --assert 验收模式（步数≥36/D2–D7≥4.2/通关100%）；tools/check_ecomix.js ⑤ 阈值改读 spec（单一来源，T74 允许 12→8）；docs/MAPGEN_PERF_RHYTHM.md（前后对比表/根因/取舍）+ docs/shots_t74/ 截图 2 张（选择态 dock top96 不遮标题、战斗态 10 手牌+右上小图）。
+- output: ①tools/mapgen.js 性能与结构修复——band8 收束改「末槽位行 ±4 + 其余 ±6」并配额 36→30（原全带 ±4 把 35 节点压 9 列超容，grow.leaf 占失败 ~94% → 整图重试）、纵向间距 ≥2→≥1（T74 允许项）、fbInDegCap 6→10、O(N²) 扫描全改索引（hasDownPotential 行扫+槽位短路/verticalOk byCell/sameTypeOk band|type 桶/跨带+fb+分叉边界窗/validate I8 I17 分桶/出度表）、byCell+interiorUsed 字符串键→y*w+x 整数索引（Array/Uint8Array）、pathClear Bresenham 去分配内联、loadBindings 进程缓存、生态后处理收敛（shareTrim 带内循环切到达标+轮上限 30、mergeSmallAndCap 批量、scanGroups 带内真连通分量修正、终检一次分桶+floodCells、泛洪 NB 邻接表）、位移表按 dy 预分桶、startX 随网格宽取中；②节奏——grid 14×64→20×96（带高 12）+ 配额 ×1.5 摊开（总节点 161→240），步数 32.3→46.3（40–53，落回原线 40–70）、D2–D7 3.8–4.0→5.56–5.78（过原线 4.5）、D1/D8 6.33/7.10、BOSS 3.25、通关 100%（500 局）；③小图——#mm-dock 固定右缘 top96/right8/宽 clamp(…380)（720 下 371×331，底缘不压手牌），删除地图选择态自动居中，放大改为显式交互：点地图区→centered+背板，×/Esc/点背板三法收起（实测全过），renderMiniMap 窗口行数自适应（格子<10px 只显当前带，T71 尺寸线全保：选择态 17.8×17.5px/Ø14.6/13px，战斗态 17.8×12.7/Ø10.6/11px）；④spec v1.7（grid w20 h96、minPatchArea 8+镜像 bandMix.minPatch、verticalSpacing minRows 1、配额表、band8 note、changelog）+ _t56_wire 重注入；⑤tools/mapgen_test.js 增加重试断言（均值≤6/最大≤40）+ verticalSpacing 同步断言 + 出度统计 O(N×E)→O(N+E)；tools/mapgen_sim.js 新增 --assert 验收模式（步数≥36/D2–D7≥4.2/通关100%）；tools/check_ecomix.js ⑤ 阈值改读 spec（单一来源，T74 允许 12→8）；docs/mapgen/MAPGEN_PERF_RHYTHM.md（前后对比表/根因/取舍）+ docs/shots_t74/ 截图 2 张（选择态 dock top96 不遮标题、战斗态 10 手牌+右上小图）。
 - check: node tools/mapgen_test.js → exit=0「200/200 ✓ / 重试 3.38 次（max 17）✓ / 100 图 1695ms <2s ✓ / 确定性 ✓ / spec 同步 ✓」；node tools/mapgen_sim.js --runs 500 --assert → exit=0「步数 46.3（40–53）/ 每带 D1=6.33 D2–D7=5.56–5.78 D8=7.10 / 通关 100%（500/500）/ BOSS 3.25 / 救援 0 次/局」；node tools/check_web.js → 全部通过（0 警告）；node tools/test_engine.js → 全部通过；node tools/pack_check.js all → 全部通过（5 个警告）；node tools/check_bindings.js → 256/256；node tools/check_ecomix.js --runs 100 → T72 验收全过（⑤ 阈值跟随 spec=8）；node tools/check_palette.js → 全过；浏览器实测（IAB 1280×720，mapseed=1234）：选择态 dockPos={top:96, rightGap:8, width:371, centered:false} 且标题「第 1 深度带 地表死寂区」完整可见（截图 01），战斗态 10 手牌+右上小图+行程列表同屏 pageScrollbar=false（截图 02），小图放大 620×547+背板、Esc/×/点背板三法收起实测、cellsScan clean=true、总图新自然尺寸 520×2320 可滚动可关闭。
 - notes: **边界声明**：①节奏两条 spec 原线（stepsPerRun 40–70 / bandVisitsMin 4.5）实测直接达标，未启用任务书允许的 36–50 备用线、未降任何验收目标；②check_ecomix ⑤ 的「≥12 格」硬编码改为读 spec.ecoGrowth.minPatchArea——这是 T74 明确允许的参数下移（12→8），阈值单一来源化是配套工程，不是放水；③band8 配额 30 不到 ×1.5（漏斗容量约束，spec note 注明），D8 到访反升（5.49→7.10）；④fbInDegCap=10 只影响图结构入口数，游戏玩法无消费；⑤纵向间距 ≥1 后 I17 实际不再约束（同格由 I1 管），校验保留防将来回调参数时静默失效；⑥救援 0 次/局（500 局零触发）——与 T59 记录一致（结构自然死路 0），救援代码非死代码（T57 三条强制死路实测在案）；⑦本次 mapgen.js 改动为性能与参数层，生成算法语义（配额下限/不变量 I1–I17/绑定表优先）零变化，200 seed validate 全绿背书；⑧spec JSON 又一次整文件 round-trip（缩进 1+CRLF），数据语义零变化。
 
@@ -648,7 +648,7 @@
   （拉取卡住，已终止），拿到后走 `--vae` 切换，**切换后必须验证 std>3**。
 - 对批量的影响：280 族图按 110s/张 ≈ 8.5 小时（若 fp16-safe VAE 生效可降到 ~4.7 小时）。
 - check: `node tools/check_web.js` 0 警告 / `node tools/test_engine.js` 全过 / `gen_art_diffusers.py` 语法 ok；
-  汇总数字落盘 `tools/art_perf.json`，说明文档 `docs/ART_PERF.md`
+  汇总数字落盘 `tools/art_perf.json`，说明文档 `docs/art/ART_PERF.md`
 - notes/边界：所有数字来自本机 RTX 4060 Laptop 8GB + torch 2.6.0+cu124 + diffusers 0.42.1；
   首图含预热（模型加载 18s），稳态值取第 2 张；未测 CUDA graphs / TensorRT 等激进路线。
 
@@ -971,9 +971,9 @@
 
 ## T249 写 ART_PIPELINE.md：流水线总文档
 - status: done
-- output: docs/ART_PIPELINE.md（追加「素材流水线总入口」章节，原文未删改，旧版留档 .bak）
+- output: docs/art/ART_PIPELINE.md（追加「素材流水线总入口」章节，原文未删改，旧版留档 .bak）
 - check: 154 行；含全景图/脚本速查表/复跑示例/口径说明/夜班基线数字（125/461、147 rewrite、214 jobs、109 雷同对）
-- notes: 决策——docs/ART_PIPELINE.md 已有 10-30 的本地生图管线内容，按「不许删、改前留 .bak」规则改为追加章节 + docs/ART_PIPELINE.md.bak 留档。
+- notes: 决策——docs/art/ART_PIPELINE.md 已有 10-30 的本地生图管线内容，按「不许删、改前留 .bak」规则改为追加章节 + docs/art/ART_PIPELINE.md.bak 留档。
 
 ## T250 补做 T27 战斗顺滑（可测量）：docs/FEEL.md + tools/_feel_check.js
 - status: done（补做口径：测量+落档，代码零改动）
@@ -1005,9 +1005,9 @@
 - check: node tools/check_web.js 全过（0 警告）；? 速查面板条目正文 198 字（≤200）
 - notes: 补做决策——已覆盖：6 条首次提示（onceHint+localStorage）、4 句死因提示、4 条禁令；未覆盖：开场三行引导（T40 交付过，T78 重构选择屏时「删三留一」误删，属回归——补三行建议文案已写入文档）；两处小瑕疵（能量提示仅拖拽路径、共振/共鸣术语混用）记录留白天拍板。
 
-## T255 补做 T32 音效架构：docs/SFX_T32.md
+## T255 补做 T32 音效架构：docs/audio/SFX_T32.md
 - status: done（补做口径：只读审计+落档，代码零改动）
-- output: docs/SFX_T32.md（12 验收点：已覆盖 8 / 部分 3 / 未覆盖 1，证据行号对账表+6 条最小补齐建议）
+- output: docs/audio/SFX_T32.md（12 验收点：已覆盖 8 / 部分 3 / 未覆盖 1，证据行号对账表+6 条最小补齐建议）
 - check: node tools/check_web.js 全过（0 警告，自包含无外链）；web/ 无音频文件（web/sfx/ 仅 README.txt）——「不许生成音频」红线成立
 - notes: 补做决策——关键发现：T32 与 T41 是同任务两稿，实按 T41 执行（TASK_DONE:274），齿轮/静音/音量条要求在 T41 稿中删除；缺口 S1（state.energy_empty 清单有代码 0 引用，重构回归）等 6 条建议留白天拍板；SFX_LIST.md 20 code 分 5 类 + ambience.depth1–8。
 
@@ -1025,7 +1025,7 @@
 
 ## T258 补做 T68（任务书本夜补写）：素材接线体检
 - status: done
-- output: tasks/T68.md（补写任务书）+ tools/_audit_art_links.py（可重跑对账脚本）+ docs/ART_LINK_AUDIT.md
+- output: tasks/T68.md（补写任务书）+ tools/_audit_art_links.py（可重跑对账脚本）+ docs/art/ART_LINK_AUDIT.md
 - check: python tools/_audit_art_links.py → catalog 461 / 文件 607 webp（=461 新+79 旧命名+67 未登记旧稿）/ index.html ART 表 79；断链 0（catalog↔文件、ART 表↔文件双向），断链率 0/540；node tools/check_web.js 0 警告
 - notes: 按任务书要求注明「任务书为本夜补写」，格式照 T80.md；遗留只记录不清理：67 个未登记旧命名文件（*_zh* 系列+anm_0011.old）与 6 张无字面引用卡（dive/trem_0081–0083 登记漂移候选）；宽判口径（任一现行 web 文本字面出现即算引用）写入报告防误报。
 
@@ -1119,13 +1119,13 @@
 
 ## T79 完成
 - status: done
-- output: data/art_families.json（452 族/461 全覆盖）+ tools/check_families.js（既有，验证通过）+ tools/fill_families.py（新增，可复算）+ docs/ART_FAMILIES.md（145KB 族表）
+- output: data/art_families.json（452 族/461 全覆盖）+ tools/check_families.js（既有，验证通过）+ tools/fill_families.py（新增，可复算）+ docs/art/ART_FAMILIES.md（145KB 族表）
 - check: node tools/check_families.js → PASS（A1 覆盖 100%、A2 跨类别 0、A3 ≤3、A4 共享关键词、A5 prompt 质量、A6 命名全过）
 - notes: 增量补全 432 族（既有 20 族原样保留，原始定义从 docs/FAMILIES_T79.md 表格无损重建）；族 prompt 取自 qwen 实际出图提示词（zh_prompts_full.json）的代表成员——复用即「这张图服务 ≤3 个同形对象」；族数 foe108/card262 超任务书参考区间（60-90/100-150），原因：A4 形态关键词启发式 + R4 拆族优先于凑数，宁多族不硬凑同形——需人工拍板时按「质检通过的复用>族数指标」取舍。
 
 ## T68 完成（既有产出验证 + 重跑）
 - status: done
-- output: docs/ART_LINK_AUDIT.md + tools/_audit_art_links.py（均已存在，本夜重跑刷新报告）
+- output: docs/art/ART_LINK_AUDIT.md + tools/_audit_art_links.py（均已存在，本夜重跑刷新报告）
 - check: python tools/_audit_art_links.py exit 0（catalog 461 / 文件 610 / ART 表 552，断链 18=3.3%）；node tools/check_web.js 0 警告
 - notes: 断链 18 条全部是「开局基础牌 9 个 sym_* 值路径错位」一类——运行时有回落（T67），非空卡面事故；多余未登记 67 个 webp 已列清单；本任务零改动，符合「只读体检」。
 
@@ -2629,7 +2629,7 @@ notes: 停。等新任务。全部产出在 docs/design/ui/ 下（10/11/12 三�
 
 - status: done
 - output: docs/design/layers/sound_design.md
-- check: 先核引擎音频系统实况（RedAbyssSFX/RedAbyssAmbience/opts.gain 透传/ambience 循环+1.5s 渐入/切层硬切无淡出 @7871-7945 行）与权威清单 docs/SFX_LIST.md（18 钩子+8 氛围，每条带「不要什么」）；八层每层给 ambience 指定、时刻→code 映射、定性混音方向、签名瞬间、一条「不要」；缺口清单 6 条按性价比排序（切层淡出/战斗闪避/签名音/受击分型/交易音/对账）
+- check: 先核引擎音频系统实况（RedAbyssSFX/RedAbyssAmbience/opts.gain 透传/ambience 循环+1.5s 渐入/切层硬切无淡出 @7871-7945 行）与权威清单 docs/audio/SFX_LIST.md（18 钩子+8 氛围，每条带「不要什么」）；八层每层给 ambience 指定、时刻→code 映射、定性混音方向、签名瞬间、一条「不要」；缺口清单 6 条按性价比排序（切层淡出/战斗闪避/签名音/受击分型/交易音/对账）
 - notes: 两个现状发现——①切层硬切无淡出（八层渐变失效的最大单点）；②wav 计数三方不一致（代码注释 28 / SFX_LIST 26 / ls 28 / find 27），列为对账缺口而非猜测具体差集；「不要」全部沿用 SFX_LIST 纪律并逐层加了反向约束；本文件与 scene_depth 文学面互为表里不重复；音频内容未听过（按文件名与清单描述推断气质，已标未验证）
 
 ## 更正：R4 记录里的 wav 计数（当天自查）
@@ -2736,3 +2736,39 @@ notes: 停。等新任务。全部产出在 docs/design/ui/ 下（10/11/12 三�
 - output: docs/design/_SELFAUDIT_1106.md / _DECISIONS_1106.md / _DELIVERY_1106.md / docs/design/anmin_minions/08_impl_risks.md / tools/_delivery_check_1106.py
 - check: 自审 15 条 = 成立12/不成立2（curve_report 汇总算术、07 篇 +18 净额与料斗手牌上限坍缩——均已当场修正源文档）/无法验证1；交付核对 49/49 零缺失（与全历史层 401 条审计双层互证）；决策清单 14 条只建议不结论；6 张风险卡全部依据已核引擎行为
 - notes: 本夜班总计——TASK_DONE 追加 30 条（405→413 区间含并发会话条目不计），产出 51 个文件（文档 47 + 脚本 4），禁区（web/engine/cards）全程零触碰（mtime 01:38 未变）；下一位从 _NEWCOMER_PATH.md 开始、按 _DECISIONS_1106.md 的 P0 三条拍板，是最高效的接手路径
+
+
+## 白班队列 T1 完成（下潜者 8 张 · 拍板后终稿规格）
+
+- status: done
+- output: docs/design/_SPEC_dive_final.md
+- check: 依据 _DECISIONS_1108.md A6~A12 七条拍板逐张落进规格（0083 夹0 / 0084 cardCost动态 / 0085 有几张打几张+不递归+快照 / 0086 抽牌堆随机+满手不取+复制件清_locked / 0087 本场+覆盖 / 0088 不放回+单体 / 0090 第一层不算）；全部行号为 11-08 09:12 版当轮核对值（9675 行版）；文末汇总 10 条引擎缺口带现行号锚点
+- notes: 唯一遗留空档——0086 弃牌堆侧的选取方式 A9 只拍板了抽牌堆，规格里留了空行待补；u_0017~0021 按 A14 已出范围
+
+## 白班队列 T2 完成（零件经济重算）
+
+- status: done
+- output: docs/design/_ECON_after_drop.md
+- check: 掉落新规按 L6224-6231 固定 1/3/5 重算；一局骨架从 layers/layers.json 8 层×4 行实数提取（强制 boss×4、精英≥2）；普通战 1~2 只按 pickEnemies L9230 的 35/65 实测比例；一局收入区间 179~1043、典型约 574，每步带假设标注（A 行为假设 B 路径 C 参数 D 牌速）
+- notes: 两个结构性事实——boss 节点奖励 50~80（L7501，不受本轮下调影响）占典型局约 34% 成最大单一来源，被下调的击杀侧只占约 10%；boss 掉落算不算「每场稳定获取」仍是 _DECISIONS 未决项，照录未判
+
+## 白班队列 T3 完成（引擎行号刷新表）
+
+- status: done
+- output: docs/design/_IMPL_lines_1108.md
+- check: 对 _IMPL_draft_cards.md 全部引用行号逐条锚点重核（137 个锚点脚本实测）；漂移规律定案：L5393-6114 不动 / mech_grow 块+1（内容改累加 L6115-6120）/ 掉落块+1（内容改固定 1/3/5，L6224-6231）/ 至 L6629 累计+2 / upgradeCard 区重写+4 / 自 RAW 起全量+6；所有行为描述仍成立，变更三处已标注新行为
+- notes: 两条区间推算未单独锚点核对（7592、8446）已按红线标「未确认」；_IMPL 原文档未做回改（红线 2：不改已有文件），以本表为准
+
+## 白班队列 T6 完成（事件池盘点）
+
+- status: done
+- output: docs/design/_EVENTS_AUDIT.md
+- check: 事件总数 102（通用 82 + 黯民 10 + 苍民 10），与引擎 RAW 同步已核（数组 events/anminEvents/cngEvents，紧凑计数 82 对上）；102 事件全量 3 选项共 306 个，result 键 7 种全部有引擎消费点（chooseEventOption L7734-7764）；全量 102 行事实表入文档；签名聚类 57 种、38 种仅 1 次、最高 6 连
+- notes: 两个意外事实——requires.vein_min 门槛引擎已实装（L7720-7727）但全池 0 个选项使用；遗物奖励选项全池仅 1 个（event_d2_11）
+
+## 白班队列 T7 完成（遗物池盘点）
+
+- status: done
+- output: docs/design/_RELICS_AUDIT.md
+- check: 遗物 107（通用 77 + 黯民 15 + 苍民 15，稀有度分布逐池列出）；effect_code 只有 6 种 action、无任何经济类；mod 键 6 种全部带引擎消费行号；与零件经济直接挂钩 0 件，间接通道 = 拆解（3 零件换遗物+威胁，L6563-6572）与 cost_redirect/vein_cost（5+2 件）
+- notes: 三个结构性事实照录——黯民专属遗物日常局不可获取（pickRelics L7551 只在 isEcho 并入）；商店只认 run.gold（L7192）而黯民金币收入为 0，商店实质买不了（含遗物）；8 件遗物与现有卡同名、relic_74 名字「茧上剥落的」存疑

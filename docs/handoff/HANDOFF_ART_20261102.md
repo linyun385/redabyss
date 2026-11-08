@@ -1,6 +1,6 @@
 # 交接：百炼接管素材生产（2026-11-02 10:25）
 
-> 上下文水位高，这份是落盘快照。恢复后先读这份，再看 `docs/ART_BAILIAN.md` 与 `docs/ART_PROMPT_SPEC.md`。
+> 上下文水位高，这份是落盘快照。恢复后先读这份，再看 `docs/art/ART_BAILIAN.md` 与 `docs/art/ART_PROMPT_SPEC.md`。
 
 ## 一、已确认可用（实测）
 

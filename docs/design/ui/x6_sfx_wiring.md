@@ -12,7 +12,7 @@
 | 来源 | 怎么拿 | 本次实测命令/依据 | 结果 |
 |---|---|---|---|
 | 实际文件 | `web/sfx/*.wav` 完整目录列表 | `ls -1 "…/web/sfx"/*.wav` + bash 循环逐个计数（`wav_total=27`），再用 `ls -1 …/*.wav \| wc -l` 复核得 27 | 27 个 wav，另有 1 个非 wav 条目 `web/sfx/README.txt`（目录共 28 条） |
-| 定义清单 | `docs/SFX_LIST.md` 里的 code 表 | 表体行 `grep -nE '^\|' docs/SFX_LIST.md` | 音效 19（:10-48，含 `enemy.hit` :20）+ 氛围 8（:56-63）= 27 个 code |
+| 定义清单 | `docs/audio/SFX_LIST.md` 里的 code 表 | 表体行 `grep -nE '^\|' docs/audio/SFX_LIST.md` | 音效 19（:10-48，含 `enemy.hit` :20）+ 氛围 8（:56-63）= 27 个 code |
 | 代码引用 | `web/index.html` 里所有 `playSfx('...')` 与 `RedAbyssAmbience(...)` | `grep -n "playSfx\s*("`、`grep -n "RedAbyssAmbience|setLayerAmbience|ambience.depth|__SFX_LOG"`、全量字面量校验 `grep -nE "'(card\|combat\|state\|ui\|special\|ambience)\.[a-z_.]+'"` | 24 个 `playSfx` 调用点、18 个唯一字面量 code、1 处 `RedAbyssAmbience(depth)` 动态调用 |
 
 **快照**：`web/index.html` 当前 `wc -l` = **9489 行**（`web/index.html` 全文）。`09_sfx_touchpoints.md` 记录的是 **9165 行旧快照**（`docs/design/ui/09_sfx_touchpoints.md:151`），两者行号不同；**本文全部行号以当前 9489 行快照实测为准**，不沿用 09 文档里的行号。
@@ -32,9 +32,9 @@
 |---|---|---|---|
 | 1 | wav 总数 | **27** | `web/sfx/*.wav` 脚本逐个计数 `wav_total=27`；`ls -1 …/*.wav \| wc -l` = 27；完整列表见 §0 |
 | 2 | `web/sfx/` 目录总条目（含非 wav） | **28** | `ls -1 "…/web/sfx" \| wc -l` = 28 = 27 wav + 1 `README.txt` |
-| 3 | 定义 code 数（SFX_LIST） | **27** | `docs/SFX_LIST.md` 表体：音效 19（:10-13、:19-23、:29-31、:37-38、:44-48）+ 氛围 8（:56-63） |
-| 3a | ├ 音效 code | **19** | `docs/SFX_LIST.md:10-48`；19 = 4 卡牌 + 5 战斗 + 3 状态 + 2 界面 + 5 特殊 |
-| 3b | └ 氛围 code | **8** | `docs/SFX_LIST.md:56-63`（depth1–depth8） |
+| 3 | 定义 code 数（SFX_LIST） | **27** | `docs/audio/SFX_LIST.md` 表体：音效 19（:10-13、:19-23、:29-31、:37-38、:44-48）+ 氛围 8（:56-63） |
+| 3a | ├ 音效 code | **19** | `docs/audio/SFX_LIST.md:10-48`；19 = 4 卡牌 + 5 战斗 + 3 状态 + 2 界面 + 5 特殊 |
+| 3b | └ 氛围 code | **8** | `docs/audio/SFX_LIST.md:56-63`（depth1–depth8） |
 | 4 | `playSfx` 调用点总数（去重定义/注释） | **24** | `web/index.html` 行号：`:6846, :7123, :7150, :7160, :7205, :7206, :7256, :7347, :7675, :7742, :8039, :8045, :8087, :8105, :8158, :8167, :8187, :8589, :8600, :8985, :9226, :9349, :9384, :9391`；`:7856` 为函数定义、`:7853` 为注释，均不计入 |
 | 5 | `playSfx` 字面量字符串出现次数 | **26** | 24 个调用点中 `:7205` 为三目含 3 个字面量、其余 23 个各 1 个 → 23 + 3 = 26；行号同 #4 |
 | 6 | `playSfx` 唯一 code 字面量（去重） | **18** | 19 个音效 code 减去 `state.energy_empty`（无 playSfx 调用）= 18；清单见 §2「源码字面量 ✅」的 18 行 |
@@ -43,7 +43,7 @@
 | 9 | 动态拼接 / 变量参数点（氛围 code、文件名、URL、播放参数） | **5** | `web/index.html:7863`（拼 code）、`:7896`（拼 URL）、`:7906`（变量 code）、`:7927`（拼文件名）、`:7864`（变量 depth 调用）；§4.1 B 表另列入口 `:6775`、3 处守卫 `:7921/:7925/:7926`、预载 `:7947/:7949-7953`，均不计入此 5 个拼接点 |
 | 10 | 孤儿音 | **1** | §3.1；`state.energy_empty`（`web/sfx/state.energy_empty.wav` 存在，无 playSfx 调用） |
 | 11 | 缺文件 | **0** | §3.2；18 个调用 code + 动态 depth1–8 对应 wav 全部存在（脚本实测 27 全在） |
-| 12 | 未定义 | **0** | §3.3；18 个调用 code 全部在 `docs/SFX_LIST.md:10-48`，动态 depth1–8 在 `:56-63` |
+| 12 | 未定义 | **0** | §3.3；18 个调用 code 全部在 `docs/audio/SFX_LIST.md:10-48`，动态 depth1–8 在 `:56-63` |
 
 **口径说明（防混淆）**：#4「调用点」= 代码里 `playSfx(...)` 出现次数（不含定义/注释）；#6「唯一 code 字面量」= 这些调用里出现的不同字符串；#7 预载数组是 `load()` 的 fetch 清单，只下载不播放，**不计入调用、也不视为运行时触发**。三者分母不同，不可互换。
 
@@ -51,37 +51,37 @@
 
 ## 2 · 三方完整对照表（27 个 code，每个 code 一行）
 
-列约定：`wav` = `web/sfx/<code>.wav` 是否存在（✅/❌，依据 §0 脚本）；`定义` = `docs/SFX_LIST.md` 是否有该 code（✅ 附行号）；`源码字面量` = `web/index.html` 是否有 `playSfx('<code>')` 字面量（✅ 附行号 / ❌）；`调用点行号` = 逐个列出并标注调用形态。**每格均填写，无空格。**
+列约定：`wav` = `web/sfx/<code>.wav` 是否存在（✅/❌，依据 §0 脚本）；`定义` = `docs/audio/SFX_LIST.md` 是否有该 code（✅ 附行号）；`源码字面量` = `web/index.html` 是否有 `playSfx('<code>')` 字面量（✅ 附行号 / ❌）；`调用点行号` = 逐个列出并标注调用形态。**每格均填写，无空格。**
 
 | # | code | wav | 定义 | 源码字面量 | 调用点行号（含调用形态标注） |
 |---|---|---|---|---|---|
-| 1 | card.play.attack | ✅ | ✅ `docs/SFX_LIST.md:10` | ✅ `:7205` | `:7205`（**三目第 1 分支**，`card.type==='attack'` 时取此值；同表达式另 2 分支见 #2/#3） |
-| 2 | card.play.skill | ✅ | ✅ `docs/SFX_LIST.md:11` | ✅ `:7205` | `:7205`（**三目第 3 分支**，兜底 `else`） |
-| 3 | card.play.power | ✅ | ✅ `docs/SFX_LIST.md:12` | ✅ `:7205` | `:7205`（**三目第 2 分支**，`card.type==='power'` 时取此值） |
-| 4 | card.play.cost | ✅ | ✅ `docs/SFX_LIST.md:13` | ✅ `:7206` | `:7206`（**条件分支内**，`if (card.cost_type && card.cost_type!=='none')`） |
-| 5 | combat.start | ✅ | ✅ `docs/SFX_LIST.md:19` | ✅ `:7123` | `:7123`（`startCombat` 内直接调用） |
-| 6 | enemy.hit | ✅ | ✅ `docs/SFX_LIST.md:20` | ✅ `:8167` | `:8167`（**条件分支 + `enqueueAnim` 回调内**，`if (!e.dead && prev.hps[e.idx] > e.hp)`） |
-| 7 | combat.hurt | ✅ | ✅ `docs/SFX_LIST.md:21` | ✅ `:8039` | `:8039`（**条件分支内**，`if (run.hp < prev.hp)`，`web/index.html:8035`） |
-| 8 | combat.block | ✅ | ✅ `docs/SFX_LIST.md:22` | ✅ `:8045` | `:8045`（**条件分支内**，`if (C.block > (prev.block\|\|0) && bi)`，`web/index.html:8044`） |
-| 9 | combat.kill | ✅ | ✅ `docs/SFX_LIST.md:23` | ✅ `:8158` | `:8158`（**条件分支内**，`if (e.dead && prev.dead && prev.dead[e.idx]===false)`） |
-| 10 | state.resonance | ✅ | ✅ `docs/SFX_LIST.md:29` | ✅ `:8105` | `:8105`（**条件分支内**，`if (C.resonanceFired > prev.resFired \|\| C.resonance>=30)`，`web/index.html:8104`） |
-| 11 | state.gaze | ✅ | ✅ `docs/SFX_LIST.md:30` | ✅ `:8087` | `:8087`（**条件分支内**，`if (run.gaze > prev.gaze)`） |
-| 12 | state.energy_empty | ✅ | ✅ `docs/SFX_LIST.md:31` | ❌ 无 | **无 `playSfx` 调用**；仅 `web/index.html:7951` 出现在预载数组（load 字面量，非播放）→ 孤儿音，见 §3.1 |
-| 13 | ui.click | ✅ | ✅ `docs/SFX_LIST.md:37` | ✅ 多处 | `:6846`（`resolveNode`）、`:8589`、`:8600`、`:8985`、`:9226`、`:9349`、`:9384`、`:9391`（**均为事件监听/键盘回调内直接字面量**，共 8 处） |
-| 14 | ui.page | ✅ | ✅ `docs/SFX_LIST.md:38` | ✅ `:7160` | `:7160`（`#btn-help` click 回调内直接字面量） |
-| 15 | special.boss_phase | ✅ | ✅ `docs/SFX_LIST.md:44` | ✅ `:8187` | `:8187`（**双层条件分支内**：`if (e.phases && !e.dead)` + `if (prev.phaseIdx… !== e.phaseIdx && e.phaseIdx>0)`，`web/index.html:8177`、`:8184`） |
-| 16 | special.world_switch | ✅ | ✅ `docs/SFX_LIST.md:45` | ✅ `:7150` | `:7150`（`#btn-world` click 回调；**前置守卫** `if (!C \|\| C.over \|\| run.classId!=='cangmin') return;` 在 `web/index.html:7148`） |
-| 17 | special.egg | ✅ | ✅ `docs/SFX_LIST.md:46` | ✅ `:7256` | `:7256`（彩蛋函数内直接调用） |
-| 18 | special.victory | ✅ | ✅ `docs/SFX_LIST.md:47` | ✅ `:7347`、`:7742` | `:7347`（胜利分支，位于 `if (C.result!=='win'){showGameOver();return;}` 之后，`web/index.html:7346`）、`:7742`（`showVictory` 内）；共 2 处 |
-| 19 | special.death | ✅ | ✅ `docs/SFX_LIST.md:48` | ✅ `:7675` | `:7675`（`showGameOver` 内直接调用） |
-| 20 | ambience.depth1 | ✅ | ✅ `docs/SFX_LIST.md:56` | ❌ 无 | **无 `playSfx` 字面量**；动态路径：`web/index.html:6775` `setLayerAmbience(d)` → `:7864` `RedAbyssAmbience(depth)` → `:7927` `load('ambience.depth'+depth)`（depth=1）；日志 `:7863` |
-| 21 | ambience.depth2 | ✅ | ✅ `docs/SFX_LIST.md:57` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=2（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
-| 22 | ambience.depth3 | ✅ | ✅ `docs/SFX_LIST.md:58` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=3（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
-| 23 | ambience.depth4 | ✅ | ✅ `docs/SFX_LIST.md:59` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=4（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
-| 24 | ambience.depth5 | ✅ | ✅ `docs/SFX_LIST.md:60` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=5（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
-| 25 | ambience.depth6 | ✅ | ✅ `docs/SFX_LIST.md:61` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=6（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
-| 26 | ambience.depth7 | ✅ | ✅ `docs/SFX_LIST.md:62` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=7（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
-| 27 | ambience.depth8 | ✅ | ✅ `docs/SFX_LIST.md:63` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=8（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
+| 1 | card.play.attack | ✅ | ✅ `docs/audio/SFX_LIST.md:10` | ✅ `:7205` | `:7205`（**三目第 1 分支**，`card.type==='attack'` 时取此值；同表达式另 2 分支见 #2/#3） |
+| 2 | card.play.skill | ✅ | ✅ `docs/audio/SFX_LIST.md:11` | ✅ `:7205` | `:7205`（**三目第 3 分支**，兜底 `else`） |
+| 3 | card.play.power | ✅ | ✅ `docs/audio/SFX_LIST.md:12` | ✅ `:7205` | `:7205`（**三目第 2 分支**，`card.type==='power'` 时取此值） |
+| 4 | card.play.cost | ✅ | ✅ `docs/audio/SFX_LIST.md:13` | ✅ `:7206` | `:7206`（**条件分支内**，`if (card.cost_type && card.cost_type!=='none')`） |
+| 5 | combat.start | ✅ | ✅ `docs/audio/SFX_LIST.md:19` | ✅ `:7123` | `:7123`（`startCombat` 内直接调用） |
+| 6 | enemy.hit | ✅ | ✅ `docs/audio/SFX_LIST.md:20` | ✅ `:8167` | `:8167`（**条件分支 + `enqueueAnim` 回调内**，`if (!e.dead && prev.hps[e.idx] > e.hp)`） |
+| 7 | combat.hurt | ✅ | ✅ `docs/audio/SFX_LIST.md:21` | ✅ `:8039` | `:8039`（**条件分支内**，`if (run.hp < prev.hp)`，`web/index.html:8035`） |
+| 8 | combat.block | ✅ | ✅ `docs/audio/SFX_LIST.md:22` | ✅ `:8045` | `:8045`（**条件分支内**，`if (C.block > (prev.block\|\|0) && bi)`，`web/index.html:8044`） |
+| 9 | combat.kill | ✅ | ✅ `docs/audio/SFX_LIST.md:23` | ✅ `:8158` | `:8158`（**条件分支内**，`if (e.dead && prev.dead && prev.dead[e.idx]===false)`） |
+| 10 | state.resonance | ✅ | ✅ `docs/audio/SFX_LIST.md:29` | ✅ `:8105` | `:8105`（**条件分支内**，`if (C.resonanceFired > prev.resFired \|\| C.resonance>=30)`，`web/index.html:8104`） |
+| 11 | state.gaze | ✅ | ✅ `docs/audio/SFX_LIST.md:30` | ✅ `:8087` | `:8087`（**条件分支内**，`if (run.gaze > prev.gaze)`） |
+| 12 | state.energy_empty | ✅ | ✅ `docs/audio/SFX_LIST.md:31` | ❌ 无 | **无 `playSfx` 调用**；仅 `web/index.html:7951` 出现在预载数组（load 字面量，非播放）→ 孤儿音，见 §3.1 |
+| 13 | ui.click | ✅ | ✅ `docs/audio/SFX_LIST.md:37` | ✅ 多处 | `:6846`（`resolveNode`）、`:8589`、`:8600`、`:8985`、`:9226`、`:9349`、`:9384`、`:9391`（**均为事件监听/键盘回调内直接字面量**，共 8 处） |
+| 14 | ui.page | ✅ | ✅ `docs/audio/SFX_LIST.md:38` | ✅ `:7160` | `:7160`（`#btn-help` click 回调内直接字面量） |
+| 15 | special.boss_phase | ✅ | ✅ `docs/audio/SFX_LIST.md:44` | ✅ `:8187` | `:8187`（**双层条件分支内**：`if (e.phases && !e.dead)` + `if (prev.phaseIdx… !== e.phaseIdx && e.phaseIdx>0)`，`web/index.html:8177`、`:8184`） |
+| 16 | special.world_switch | ✅ | ✅ `docs/audio/SFX_LIST.md:45` | ✅ `:7150` | `:7150`（`#btn-world` click 回调；**前置守卫** `if (!C \|\| C.over \|\| run.classId!=='cangmin') return;` 在 `web/index.html:7148`） |
+| 17 | special.egg | ✅ | ✅ `docs/audio/SFX_LIST.md:46` | ✅ `:7256` | `:7256`（彩蛋函数内直接调用） |
+| 18 | special.victory | ✅ | ✅ `docs/audio/SFX_LIST.md:47` | ✅ `:7347`、`:7742` | `:7347`（胜利分支，位于 `if (C.result!=='win'){showGameOver();return;}` 之后，`web/index.html:7346`）、`:7742`（`showVictory` 内）；共 2 处 |
+| 19 | special.death | ✅ | ✅ `docs/audio/SFX_LIST.md:48` | ✅ `:7675` | `:7675`（`showGameOver` 内直接调用） |
+| 20 | ambience.depth1 | ✅ | ✅ `docs/audio/SFX_LIST.md:56` | ❌ 无 | **无 `playSfx` 字面量**；动态路径：`web/index.html:6775` `setLayerAmbience(d)` → `:7864` `RedAbyssAmbience(depth)` → `:7927` `load('ambience.depth'+depth)`（depth=1）；日志 `:7863` |
+| 21 | ambience.depth2 | ✅ | ✅ `docs/audio/SFX_LIST.md:57` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=2（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
+| 22 | ambience.depth3 | ✅ | ✅ `docs/audio/SFX_LIST.md:58` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=3（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
+| 23 | ambience.depth4 | ✅ | ✅ `docs/audio/SFX_LIST.md:59` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=4（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
+| 24 | ambience.depth5 | ✅ | ✅ `docs/audio/SFX_LIST.md:60` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=5（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
+| 25 | ambience.depth6 | ✅ | ✅ `docs/audio/SFX_LIST.md:61` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=6（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
+| 26 | ambience.depth7 | ✅ | ✅ `docs/audio/SFX_LIST.md:62` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=7（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
+| 27 | ambience.depth8 | ✅ | ✅ `docs/audio/SFX_LIST.md:63` | ❌ 无 | **无 `playSfx` 字面量**；动态路径同 #20，depth=8（`:6775` → `:7864` → `:7927`；日志 `:7863`） |
 
 **对照表口径小结**：27 行 wav 全 ✅、27 行定义全 ✅；「源码字面量 ✅」= 18 行（#1-11、#13-19）、「❌」= 9 行（#12 `state.energy_empty` + #20-27 氛围 8 层）。氛围 8 层**不是**孤儿音（有动态拼接 `load` 路径），详见 §3.1 与 §4。
 
@@ -95,7 +95,7 @@
 
 | # | code | wav | 定义 | 源码调用情况 | 结论依据 |
 |---|---|---|---|---|---|
-| 1 | `state.energy_empty` | ✅ `web/sfx/state.energy_empty.wav` | ✅ `docs/SFX_LIST.md:31` | 无任何 `playSfx('state.energy_empty')`；`web/index.html:7951` 仅在预载数组 `list` 里作为 `load()` 参数出现（预载下载文件，**不播放**） | 全量字面量校验 `grep -nE "'(card\|combat\|state\|ui\|special\|ambience)\.[a-z_.]+'"` 无任何调用行含该 code 作 `playSfx` 参数；`09_sfx_touchpoints.md:23`、`:71-77` 同判为孤儿音 |
+| 1 | `state.energy_empty` | ✅ `web/sfx/state.energy_empty.wav` | ✅ `docs/audio/SFX_LIST.md:31` | 无任何 `playSfx('state.energy_empty')`；`web/index.html:7951` 仅在预载数组 `list` 里作为 `load()` 参数出现（预载下载文件，**不播放**） | 全量字面量校验 `grep -nE "'(card\|combat\|state\|ui\|special\|ambience)\.[a-z_.]+'"` 无任何调用行含该 code 作 `playSfx` 参数；`09_sfx_touchpoints.md:23`、`:71-77` 同判为孤儿音 |
 
 **不列入孤儿音的边界情形**：
 - 氛围 8 层（#20-27）：源码无 `playSfx` 字面量，但 `web/index.html:7927` `load('ambience.depth'+depth)` 在运行时 `depth=1..8` 会加载对应 wav，属于**动态拼接调用路径**，不是「没人调用」。运行时是否真的触发另见 §4（未验证）。
@@ -115,11 +115,11 @@
 
 | 核对对象 | 数量 | 是否在 SFX_LIST | 依据 |
 |---|---|---|---|
-| 18 个 `playSfx` 唯一 code 字面量 | 18 | 全部 ✅ | `docs/SFX_LIST.md:10-48`（19 音效 code 内） |
-| 动态 `ambience.depthN`（depth=1..8） | 8 | 全部 ✅ | `docs/SFX_LIST.md:56-63`（氛围表） |
+| 18 个 `playSfx` 唯一 code 字面量 | 18 | 全部 ✅ | `docs/audio/SFX_LIST.md:10-48`（19 音效 code 内） |
+| 动态 `ambience.depthN`（depth=1..8） | 8 | 全部 ✅ | `docs/audio/SFX_LIST.md:56-63`（氛围表） |
 | `RedAbyssAmbience(depth)` 转发 | 1 处调用 | 参数经 `'ambience.depth'+depth` 落到已定义 code | `web/index.html:7863`、`:7864`、`:7927` |
 
-**结论：0 条（无）。** 代码里出现的每一个 code 字面量、以及动态拼接可能产生的 `ambience.depth1..8`，都能在 `docs/SFX_LIST.md` 找到定义；未发现任何「调用了但清单没写」的 code。
+**结论：0 条（无）。** 代码里出现的每一个 code 字面量、以及动态拼接可能产生的 `ambience.depth1..8`，都能在 `docs/audio/SFX_LIST.md` 找到定义；未发现任何「调用了但清单没写」的 code。
 
 ---
 
@@ -203,7 +203,7 @@
 | # | 冲突 | 实测事实 | 依据 |
 |---|---|---|---|
 | 1 | `09_sfx_touchpoints.md:79-85`（C2-2）称「ui.click / ui.page 无 wav 文件、播放器静默失败」 | **残留错误**：两个 wav 都存在 | 本次脚本 `ui.click.wav = EXISTS`、`ui.page.wav = EXISTS`；且 `09_sfx_touchpoints.md:60` 更正声明已推翻该说法，但 C2-2 正文未同步 |
-| 2 | `web/index.html:7873` 注释写「音频文件：web/sfx/<code>.wav，**28 个（20 音效 + 8 氛围）**」 | 实测 **27 个（19 音效 + 8 氛围）** | 脚本计数 `wav_total=27`；`docs/SFX_LIST.md:71`、`:78`（v2 把 `ui.open/close` 合并成 `ui.page`，音效由 20 减为 19）与 `tasks/HY4_batch2.md:88`（27 个）均与 27 一致 → 注释为过时数字 |
+| 2 | `web/index.html:7873` 注释写「音频文件：web/sfx/<code>.wav，**28 个（20 音效 + 8 氛围）**」 | 实测 **27 个（19 音效 + 8 氛围）** | 脚本计数 `wav_total=27`；`docs/audio/SFX_LIST.md:71`、`:78`（v2 把 `ui.open/close` 合并成 `ui.page`，音效由 20 减为 19）与 `tasks/HY4_batch2.md:88`（27 个）均与 27 一致 → 注释为过时数字 |
 | 3 | `09_sfx_touchpoints.md:151` 记 `index.html` 为 **9165 行快照** | 当前 `wc -l` = **9489 行** | 本次 `wc -l < web/index.html`；故 09 文档里的行号（如 `:6983`、`:6624`）与当前快照（`:7205`、`:6846`）不同，本文一律用当前实测行号 |
 | 4 | `09_sfx_touchpoints.md:49` 汇总「正常 11 / 孤儿 4」 | 本文静态口径「孤儿 1 / 缺文件 0 / 未定义 0」 | 口径差异见 §4.3；本文按 `tasks/HY4_batch2.md:93-95` 的**静态**定义（有文件没人调 / 调了没文件 / 调了没定义）判定，不沿用运行时触发分类 |
 
@@ -211,9 +211,9 @@
 
 ## 边界声明
 
-- **我没开浏览器**：本文全部结论都是 `web/index.html`（9489 行快照）、`docs/SFX_LIST.md`、`web/sfx/` 磁盘文件清单三者的**静态对照**，不是运行时实测，不是实际播放了什么声音。
+- **我没开浏览器**：本文全部结论都是 `web/index.html`（9489 行快照）、`docs/audio/SFX_LIST.md`、`web/sfx/` 磁盘文件清单三者的**静态对照**，不是运行时实测，不是实际播放了什么声音。
 - **源码字面量 ≠ 运行时触发**：§2 只记录「源码里写了什么字符串」；§4 把所有三目 / 条件分支 / 守卫 / 动态拼接 / 事件回调逐点标注，凡是静态无法确证执行的，一律写「未验证：原因 = 未开浏览器，仅静态对照」。§4.3 引用的 13 个运行时 code 是 09 文档记录的历史实测，本次无法复核，不作为本次结论。
 - **代码有、运行时不保证**：条件分支守卫（如 `web/index.html:7148`、`:7921`、`:7925`、`:7926`）、`AudioContext` 解锁（`:7872`、`:7947`）、`fetch` 成败（`:7896`）都可能导致「写了但未生效」；按 `tasks/HY4_batch2.md:112` 的规矩，这类一律标「代码有、运行时不保证」。CSS 优先级打架同理：写了也未必生效，本文不涉及 CSS 渲染结论。
-- **wav 的「存在」**仅指文件在磁盘上（`web/sfx/`），不验证音频内容是否与 `docs/SFX_LIST.md` 描述匹配（`09_sfx_touchpoints.md:153` 同口径）。
+- **wav 的「存在」**仅指文件在磁盘上（`web/sfx/`），不验证音频内容是否与 `docs/audio/SFX_LIST.md` 描述匹配（`09_sfx_touchpoints.md:153` 同口径）。
 - **只读约束**：本次未修改 `web/`、`engine/`、`cards/*.json`，未写 `_HY4_PROGRESS.md`（主代理统一追加），只新建本文件 `docs/design/ui/x6_sfx_wiring.md`。
 - **数字复核**：§1 每个数字均指回行号或脚本；§2 27 行对照表每格均填写、无空格；无法复核的运行时触发一律「未验证：原因」，未使用「看起来」「感觉」等表述。

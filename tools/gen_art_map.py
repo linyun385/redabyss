@@ -11,8 +11,8 @@
   结局  end_ending_<endingId>
 
 输出：
-  docs/ART_MAP.md   人读（按类别分组，图 → 使用者列表）
-  docs/ART_MAP.csv  机读（id,kind,eco,users,file,prompt）
+  docs/art/ART_MAP.md   人读（按类别分组，图 → 使用者列表）
+  docs/art/ART_MAP.csv  机读（id,kind,eco,users,file,prompt）
 """
 import csv
 import glob

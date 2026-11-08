@@ -83,18 +83,18 @@
 
 ### 15. ComfyUI 就绪后的真图接入
 - 依据：T42 停在探测（服务未启动）；T36/T50 已把三个替换点全部留好（.art 内联背景样式开关、eart innerHTML、relicBadge）。
-- 落点：按 `docs/ART_FALLBACK.md` 第五节三处替换；提示词用 STYLE_ART.md 的前缀/后缀/负面词。
-- 依据文档：docs/ART_FALLBACK.md、TASK_DONE T42。
+- 落点：按 `docs/art/ART_FALLBACK.md` 第五节三处替换；提示词用 STYLE_ART.md 的前缀/后缀/负面词。
+- 依据文档：docs/art/ART_FALLBACK.md、TASK_DONE T42。
 
 ### 16. 敌人个体剪影
 - 依据：T50 的剪影是 tier 级三档（眼/门/蛇），88 个敌人共用——个体化需要 88 张剪影。
 - 落点：enemies JSON 加 art 字段 + eart 渲染分支（同卡面接口）。
-- 依据文档：docs/ART_FALLBACK.md 边界声明。
+- 依据文档：docs/art/ART_FALLBACK.md 边界声明。
 
 ### 17. 商店遗物徽记补齐
 - 依据：T50 做了 HUD 与 relicrow 两处，商店遗物商品（.shopitem）还是纯文字——三处缺一。
 - 落点：showShop 的遗物条目加 `relicBadge(r.id)`。
-- 依据文档：docs/ART_FALLBACK.md 边界声明。
+- 依据文档：docs/art/ART_FALLBACK.md 边界声明。
 
 ## 四、叙事（hooks 已埋在文本里）
 
