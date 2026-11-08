@@ -1,0 +1,52 @@
+<!doctype html><meta charset="utf-8">
+<style>html,body{margin:0;background:#111}#f{width:1280px;height:720px;border:0;display:block}</style>
+<iframe id="f" src="index.html?mapseed=777"></iframe>
+<script>
+const R = {};
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+function dump(){ document.title = 'R:' + JSON.stringify(R); }
+async function main(){
+  const f = document.getElementById('f');
+  await new Promise(r => f.addEventListener('load', r, {once:true}));
+  const d = f.contentDocument, w = f.contentWindow;
+  // 选职业
+  let picked = false;
+  for (const el of d.querySelectorAll('[data-class]')) { el.click(); picked = true; break; }
+  R.picked = picked;
+  await sleep(1000);
+  const dock = d.querySelector('#mm-dock');
+  R.dock = dock ? dock.getBoundingClientRect().toJSON() : null;
+  const body = d.querySelector('#mm-body');
+  R.body = body ? body.getBoundingClientRect().toJSON() : null;
+  const rows = d.querySelector('#mm-log-rows');
+  R.logRows = rows ? rows.children.length : -1;
+  R.logText = rows ? rows.textContent.replace(/\s+/g,' ').slice(0,200) : '';
+  // 节点文本
+  const nodes = [...d.querySelectorAll('#mm-body [data-nid]')];
+  R.nodeCount = nodes.length;
+  R.nodeGlyphs = nodes.slice(0, 30).map(n => (n.textContent||'').trim()).join(' ');
+  R.forbidden = '战事随商英'.split('').filter(c => R.nodeGlyphs.includes(c));
+  // 打开总图
+  const fullBtn = [...d.querySelectorAll('button')].find(b => (b.textContent||'').includes('总图'));
+  R.fullBtn = !!fullBtn;
+  if (fullBtn) { fullBtn.click(); await sleep(700); }
+  const full = d.querySelector('#mm-fulllayer, #mm-full, .mm-full-layer');
+  R.fullLayer = full ? true : Object.keys(d.querySelectorAll('*')).length;
+  const scroller = full ? (full.querySelector('[data-mm-scroll], .mm-scroll, div') || full) : null;
+  if (scroller) {
+    R.scroll = { h: scroller.scrollHeight, ch: scroller.clientHeight, top0: scroller.scrollTop };
+    scroller.scrollTop = 400;
+    await sleep(120);
+    R.scroll.top1 = scroller.scrollTop;
+  }
+  // 缩放按钮
+  const zin = [...d.querySelectorAll('button')].find(b => (b.textContent||'').trim() === '+');
+  const zout = [...d.querySelectorAll('button')].find(b => (b.textContent||'').trim() === '−');
+  R.zoomBtns = { in: !!zin, out: !!zout };
+  if (zin) { for (let i=0;i<4;i++){ zin.click(); await sleep(80); } }
+  const svg = d.querySelector('#mm-fulllayer svg, .mm-full-layer svg');
+  R.svgAfterZoom = svg ? svg.getBoundingClientRect().toJSON() : null;
+  dump();
+}
+main().catch(e => { R.err = String(e); dump(); });
+</script>

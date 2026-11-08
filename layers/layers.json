@@ -1,0 +1,356 @@
+{
+  "layers": [
+    {
+      "id": 1,
+      "name": "地表死寂区",
+      "nodes": [
+        "combat",
+        "combat",
+        "combat",
+        "event",
+        "event",
+        "combat",
+        "combat"
+      ],
+      "rows": [
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "event"
+          }
+        ],
+        [
+          {
+            "type": "event"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "combat"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "外层冷洞",
+      "nodes": [
+        "combat",
+        "event",
+        "elite",
+        "combat",
+        "shop",
+        "combat",
+        "combat"
+      ],
+      "rows": [
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "event"
+          }
+        ],
+        [
+          {
+            "type": "elite"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "shop"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "combat"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "name": "干旱空洞区",
+      "nodes": [
+        "event",
+        "combat",
+        "elite",
+        "combat",
+        "combat",
+        "shop",
+        "elite"
+      ],
+      "rows": [
+        [
+          {
+            "type": "event"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "elite"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "shop"
+          }
+        ],
+        [
+          {
+            "type": "elite"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 4,
+      "name": "稳定空洞海",
+      "nodes": [
+        "combat",
+        "event",
+        "elite",
+        "combat",
+        "campfire",
+        "combat",
+        "boss"
+      ],
+      "rows": [
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "event"
+          }
+        ],
+        [
+          {
+            "type": "elite"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "campfire"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "boss"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 5,
+      "name": "热泉裂带",
+      "nodes": [
+        "event",
+        "combat",
+        "combat",
+        "elite",
+        "campfire",
+        "combat",
+        "boss"
+      ],
+      "rows": [
+        [
+          {
+            "type": "event"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "elite"
+          }
+        ],
+        [
+          {
+            "type": "campfire"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "boss"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 6,
+      "name": "辐射矿石区",
+      "nodes": [
+        "combat",
+        "elite",
+        "event",
+        "combat",
+        "shop",
+        "event",
+        "elite"
+      ],
+      "rows": [
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "elite"
+          }
+        ],
+        [
+          {
+            "type": "event"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "shop"
+          },
+          {
+            "type": "event"
+          }
+        ],
+        [
+          {
+            "type": "elite"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 7,
+      "name": "核心高热区",
+      "nodes": [
+        "campfire",
+        "event",
+        "combat",
+        "elite",
+        "event",
+        "combat",
+        "boss"
+      ],
+      "rows": [
+        [
+          {
+            "type": "campfire"
+          },
+          {
+            "type": "event"
+          }
+        ],
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "elite"
+          }
+        ],
+        [
+          {
+            "type": "event"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "boss"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 8,
+      "name": "红渊核心",
+      "nodes": [
+        "campfire",
+        "event",
+        "combat",
+        "elite",
+        "event",
+        "combat",
+        "boss"
+      ],
+      "rows": [
+        [
+          {
+            "type": "campfire"
+          },
+          {
+            "type": "event"
+          }
+        ],
+        [
+          {
+            "type": "combat"
+          },
+          {
+            "type": "elite"
+          }
+        ],
+        [
+          {
+            "type": "event"
+          },
+          {
+            "type": "combat"
+          }
+        ],
+        [
+          {
+            "type": "boss"
+          }
+        ]
+      ]
+    }
+  ]
+}

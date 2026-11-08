@@ -1,0 +1,247 @@
+{
+ "generatedAt": "2026-11-05T15:30:22.013Z",
+ "checks": [
+  {
+   "name": "D1 正文",
+   "fg": "#f0ece6",
+   "bg": "#39434e",
+   "ratio": 8.55,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D2 正文",
+   "fg": "#e6e0d8",
+   "bg": "#2a323a",
+   "ratio": 9.91,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D3 正文",
+   "fg": "#dcd4cc",
+   "bg": "#1c2228",
+   "ratio": 10.95,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D4 正文",
+   "fg": "#cfc7c0",
+   "bg": "#0d1013",
+   "ratio": 11.43,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D5 正文",
+   "fg": "#d8c8c0",
+   "bg": "#1a0b0e",
+   "ratio": 11.79,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D6 正文",
+   "fg": "#e2c4bb",
+   "bg": "#2b0a10",
+   "ratio": 11.14,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D7 正文",
+   "fg": "#eec0b6",
+   "bg": "#420a12",
+   "ratio": 10.01,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D8 正文",
+   "fg": "#ffc9bd",
+   "bg": "#64101a",
+   "ratio": 8.79,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "D1 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#39434e",
+   "ratio": 3.68,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D2 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#2a323a",
+   "ratio": 4.76,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D3 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#1c2228",
+   "ratio": 5.88,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D4 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#0d1013",
+   "ratio": 6.99,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D5 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#1a0b0e",
+   "ratio": 7,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D6 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#2b0a10",
+   "ratio": 6.67,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D7 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#420a12",
+   "ratio": 5.99,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D8 次要(--dim)",
+   "fg": "#a89a90",
+   "bg": "#64101a",
+   "ratio": 4.72,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D1 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#39434e",
+   "ratio": 3.22,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D2 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#2a323a",
+   "ratio": 4.16,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D3 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#1c2228",
+   "ratio": 5.13,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D4 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#0d1013",
+   "ratio": 6.1,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D5 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#1a0b0e",
+   "ratio": 6.12,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D6 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#2b0a10",
+   "ratio": 5.82,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D7 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#420a12",
+   "ratio": 5.23,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "D8 强调(--red-hi)",
+   "fg": "#e2705f",
+   "bg": "#64101a",
+   "ratio": 4.12,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  },
+  {
+   "name": "纸面正文(--ink vs --paper)",
+   "fg": "#2b2118",
+   "bg": "#d9cfbe",
+   "ratio": 10.21,
+   "level": "body",
+   "limit": 4.5,
+   "pass": true
+  },
+  {
+   "name": "纸面次要(--ink-dim #6b5334 vs --paper)",
+   "fg": "#6b5334",
+   "bg": "#d9cfbe",
+   "ratio": 4.68,
+   "level": "secondary",
+   "limit": 3,
+   "pass": true
+  }
+ ],
+ "fails": 0,
+ "summary": {
+  "worstBody": 8.55,
+  "worstDim": 3.68,
+  "worstRed": 3.22,
+  "paperBody": 10.21,
+  "paperSecondary": 4.68
+ }
+}

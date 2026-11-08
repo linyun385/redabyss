@@ -1,0 +1,567 @@
+{
+ "entries": [
+  {
+   "id": "face_eco_surface_1",
+   "src": "art/eco/eco_surface/001_dormant_spore_pod.webp",
+   "kb": 26.5,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_surface_2",
+   "src": "art/eco/eco_surface/002_sealed_airlock_hatch.webp",
+   "kb": 30.0,
+   "cap": 30,
+   "edge": 448,
+   "q": 82
+  },
+  {
+   "id": "face_eco_surface_3",
+   "src": "art/eco/eco_surface/003_numbered_flag_pole.webp",
+   "kb": 7.4,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_surface_4",
+   "src": "art/eco/eco_surface/004_sun_bleached_cracked_tub.webp",
+   "kb": 29.0,
+   "cap": 30,
+   "edge": 512,
+   "q": 78
+  },
+  {
+   "id": "face_eco_surface_5",
+   "src": "art/eco/eco_surface/005_empty_suit_shell.webp",
+   "kb": 26.9,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_surface_6",
+   "src": "art/eco/eco_surface/006_bone_dry_water_cistern.webp",
+   "kb": 28.6,
+   "cap": 30,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_surface_1",
+   "src": "art/eco/eco_surface/010_sealed_diver_suit_shell.webp",
+   "kb": 20.0,
+   "cap": 20,
+   "edge": 448,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_surface_2",
+   "src": "art/eco/eco_surface/011_broadcast_horn_speaker.webp",
+   "kb": 19.1,
+   "cap": 20,
+   "edge": 384,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_surface_3",
+   "src": "art/eco/eco_surface/012_heavy_airlock_gate.webp",
+   "kb": 18.3,
+   "cap": 20,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_cold_1",
+   "src": "art/eco/eco_cold/001_snow_buried_mossback_she.webp",
+   "kb": 27.1,
+   "cap": 30,
+   "edge": 384,
+   "q": 82
+  },
+  {
+   "id": "face_eco_cold_2",
+   "src": "art/eco/eco_cold/002_worm_eaten_wall_calendar.webp",
+   "kb": 29.9,
+   "cap": 30,
+   "edge": 448,
+   "q": 82
+  },
+  {
+   "id": "face_eco_cold_3",
+   "src": "art/eco/eco_cold/003_coiled_hibernating_amphi.webp",
+   "kb": 29.8,
+   "cap": 30,
+   "edge": 341,
+   "q": 82
+  },
+  {
+   "id": "face_eco_cold_4",
+   "src": "art/eco/eco_cold/004_slow_sediment_drift.webp",
+   "kb": 28.7,
+   "cap": 30,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "face_eco_cold_5",
+   "src": "art/eco/eco_cold/005_frost_grey_eel_skull.webp",
+   "kb": 16.9,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_cold_6",
+   "src": "art/eco/eco_cold/006_frozen_ledger_book.webp",
+   "kb": 29.5,
+   "cap": 30,
+   "edge": 512,
+   "q": 78
+  },
+  {
+   "id": "foe_eco_cold_1",
+   "src": "art/eco/eco_cold/010_mossback_turtle_shell.webp",
+   "kb": 19.9,
+   "cap": 20,
+   "edge": 300,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_cold_2",
+   "src": "art/eco/eco_cold/011_worm_eaten_stone_tablet.webp",
+   "kb": 19.0,
+   "cap": 20,
+   "edge": 448,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_cold_3",
+   "src": "art/eco/eco_cold/012_coiled_frost_eel.webp",
+   "kb": 19.5,
+   "cap": 20,
+   "edge": 300,
+   "q": 80
+  },
+  {
+   "id": "face_eco_arid_1",
+   "src": "art/eco/eco_arid/001_single_falling_water_dro.webp",
+   "kb": 25.6,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_arid_2",
+   "src": "art/eco/eco_arid/002_cryptobiotic_tardigrade.webp",
+   "kb": 29.5,
+   "cap": 30,
+   "edge": 341,
+   "q": 82
+  },
+  {
+   "id": "face_eco_arid_3",
+   "src": "art/eco/eco_arid/003_dry_spring_mouth.webp",
+   "kb": 8.6,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_arid_4",
+   "src": "art/eco/eco_arid/004_cracked_mud_ledger.webp",
+   "kb": 28.6,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_arid_5",
+   "src": "art/eco/eco_arid/005_drought_fish_gill.webp",
+   "kb": 23.7,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_arid_6",
+   "src": "art/eco/eco_arid/006_water_right_seal_stamp.webp",
+   "kb": 28.7,
+   "cap": 30,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_arid_1",
+   "src": "art/eco/eco_arid/010_water_tally_ledger.webp",
+   "kb": 17.6,
+   "cap": 20,
+   "edge": 384,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_arid_2",
+   "src": "art/eco/eco_arid/011_hollow_dry_husk.webp",
+   "kb": 19.2,
+   "cap": 20,
+   "edge": 320,
+   "q": 78
+  },
+  {
+   "id": "foe_eco_arid_3",
+   "src": "art/eco/eco_arid/012_spring_seal_stamp.webp",
+   "kb": 19.6,
+   "cap": 20,
+   "edge": 384,
+   "q": 78
+  },
+  {
+   "id": "face_eco_sea_1",
+   "src": "art/eco/eco_sea/001_hanging_red_fern_frond.webp",
+   "kb": 28.9,
+   "cap": 30,
+   "edge": 384,
+   "q": 80
+  },
+  {
+   "id": "face_eco_sea_2",
+   "src": "art/eco/eco_sea/002_shadow_under_algae_blank.webp",
+   "kb": 28.8,
+   "cap": 30,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "face_eco_sea_3",
+   "src": "art/eco/eco_sea/003_filter_feeler_swarm.webp",
+   "kb": 26.4,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_sea_4",
+   "src": "art/eco/eco_sea/004_ambush_fish_eye.webp",
+   "kb": 27.1,
+   "cap": 30,
+   "edge": 384,
+   "q": 82
+  },
+  {
+   "id": "face_eco_sea_5",
+   "src": "art/eco/eco_sea/005_drifting_spore_lantern.webp",
+   "kb": 16.7,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_sea_6",
+   "src": "art/eco/eco_sea/006_sunken_corridor_lamp.webp",
+   "kb": 16.4,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_sea_1",
+   "src": "art/eco/eco_sea/010_ambush_fish_eye.webp",
+   "kb": 19.2,
+   "cap": 20,
+   "edge": 320,
+   "q": 78
+  },
+  {
+   "id": "foe_eco_sea_2",
+   "src": "art/eco/eco_sea/011_filter_feeler_swarm.webp",
+   "kb": 19.7,
+   "cap": 20,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_sea_3",
+   "src": "art/eco/eco_sea/012_hanging_fern_shadow.webp",
+   "kb": 20.0,
+   "cap": 20,
+   "edge": 384,
+   "q": 78
+  },
+  {
+   "id": "face_eco_vent_1",
+   "src": "art/eco/eco_vent/001_black_sulfur_mound_tower.webp",
+   "kb": 29.2,
+   "cap": 30,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "face_eco_vent_2",
+   "src": "art/eco/eco_vent/002_tube_worm_feather_plume.webp",
+   "kb": 15.9,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_vent_3",
+   "src": "art/eco/eco_vent/003_boiling_vent_mouth.webp",
+   "kb": 28.5,
+   "cap": 30,
+   "edge": 448,
+   "q": 80
+  },
+  {
+   "id": "face_eco_vent_4",
+   "src": "art/eco/eco_vent/004_dented_soup_ladle.webp",
+   "kb": 18.0,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_vent_5",
+   "src": "art/eco/eco_vent/005_ring_of_heat_haze.webp",
+   "kb": 26.7,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_vent_6",
+   "src": "art/eco/eco_vent/006_small_geyser_cone.webp",
+   "kb": 6.9,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_vent_1",
+   "src": "art/eco/eco_vent/010_tube_worm_plume.webp",
+   "kb": 19.8,
+   "cap": 20,
+   "edge": 300,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_vent_2",
+   "src": "art/eco/eco_vent/011_dented_soup_ladle.webp",
+   "kb": 10.5,
+   "cap": 20,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_vent_3",
+   "src": "art/eco/eco_vent/012_black_sulfur_tower.webp",
+   "kb": 19.6,
+   "cap": 20,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_rad_1",
+   "src": "art/eco/eco_rad/001_stack_of_lead_scaled_she.webp",
+   "kb": 27.7,
+   "cap": 30,
+   "edge": 384,
+   "q": 82
+  },
+  {
+   "id": "face_eco_rad_2",
+   "src": "art/eco/eco_rad/002_glowing_burial_urn.webp",
+   "kb": 18.5,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_rad_3",
+   "src": "art/eco/eco_rad/003_cracked_gauge_dial.webp",
+   "kb": 25.9,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_rad_4",
+   "src": "art/eco/eco_rad/004_feverish_mold_colony.webp",
+   "kb": 28.4,
+   "cap": 30,
+   "edge": 448,
+   "q": 82
+  },
+  {
+   "id": "face_eco_rad_5",
+   "src": "art/eco/eco_rad/005_hoarded_shell_pile.webp",
+   "kb": 29.1,
+   "cap": 30,
+   "edge": 448,
+   "q": 80
+  },
+  {
+   "id": "face_eco_rad_6",
+   "src": "art/eco/eco_rad/006_scorched_hollow_bone.webp",
+   "kb": 29.3,
+   "cap": 30,
+   "edge": 448,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_rad_1",
+   "src": "art/eco/eco_rad/010_lead_scaled_shell.webp",
+   "kb": 15.2,
+   "cap": 20,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_rad_2",
+   "src": "art/eco/eco_rad/011_glowing_burial_urn.webp",
+   "kb": 18.8,
+   "cap": 20,
+   "edge": 341,
+   "q": 80
+  },
+  {
+   "id": "foe_eco_rad_3",
+   "src": "art/eco/eco_rad/012_feverish_mold_patch.webp",
+   "kb": 19.1,
+   "cap": 20,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_core_1",
+   "src": "art/eco/eco_core/001_tri_color_bacterial_mat.webp",
+   "kb": 28.8,
+   "cap": 30,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "face_eco_core_2",
+   "src": "art/eco/eco_core/002_supercritical_water_sac.webp",
+   "kb": 29.5,
+   "cap": 30,
+   "edge": 512,
+   "q": 80
+  },
+  {
+   "id": "face_eco_core_3",
+   "src": "art/eco/eco_core/003_slow_moving_shadow.webp",
+   "kb": 12.2,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_core_4",
+   "src": "art/eco/eco_core/004_heat_blistered_alloy_pip.webp",
+   "kb": 25.1,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_core_5",
+   "src": "art/eco/eco_core/005_golden_filament_tangle.webp",
+   "kb": 25.7,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "face_eco_core_6",
+   "src": "art/eco/eco_core/006_boiling_mineral_vein.webp",
+   "kb": 21.8,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_core_1",
+   "src": "art/eco/eco_core/010_tri_color_mat.webp",
+   "kb": 19.5,
+   "cap": 20,
+   "edge": 448,
+   "q": 82
+  },
+  {
+   "id": "foe_eco_core_2",
+   "src": "art/eco/eco_core/011_slow_shadow_figure.webp",
+   "kb": 19.2,
+   "cap": 20,
+   "edge": 384,
+   "q": 78
+  },
+  {
+   "id": "foe_eco_core_3",
+   "src": "art/eco/eco_core/012_swelling_water_sac.webp",
+   "kb": 18.8,
+   "cap": 20,
+   "edge": 341,
+   "q": 82
+  },
+  {
+   "id": "face_eco_nexus_1",
+   "src": "art/eco/eco_nexus/001_single_corridor_lamp.webp",
+   "kb": 15.6,
+   "cap": 30,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "class_diver",
+   "src": "art/class/diver.webp",
+   "kb": 25.7,
+   "cap": 60,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "class_tremor",
+   "src": "art/class/tremor.webp",
+   "kb": 36.2,
+   "cap": 60,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "class_anmin",
+   "src": "art/class/anmin.webp",
+   "kb": 22.4,
+   "cap": 60,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "class_cangmin",
+   "src": "art/class/cangmin.webp",
+   "kb": 45.7,
+   "cap": 60,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "end_ending_watched",
+   "src": "art/ending/ending_watched.webp",
+   "kb": 26.7,
+   "cap": 120,
+   "edge": 512,
+   "q": 82
+  },
+  {
+   "id": "end_ending_averted",
+   "src": "art/ending/ending_averted.webp",
+   "kb": 29.1,
+   "cap": 120,
+   "edge": 512,
+   "q": 82
+  }
+ ],
+ "total_raw_kb": 1619.6,
+ "total_b64_kb": 2161.2,
+ "over": []
+}

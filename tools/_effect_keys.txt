@@ -1,0 +1,36 @@
+=== effect 顶层键 ===
+target                219   样例: "self"
+special                71   样例: [{"code": "burn", "value": 3, "turns": 2}]
+block                  68   样例: 4
+damage                 59   样例: 9
+hits                   59   样例: 1
+draw                   55   样例: 1
+resonance_gain         26   样例: 2
+heal                   21   样例: 7
+gaze_cost              15   样例: 3
+resonance_cost          7   样例: 5
+resonance_drain         5   样例: 5
+gaze_gain               2   样例: 1
+
+=== special code ===
+regenerate               16   样例: {"code": "regenerate", "value": 3}
+strength                 13   样例: {"code": "strength", "value": 2}
+burn                     10   样例: {"code": "burn", "value": 3, "turns": 2}
+dexterity                10   样例: {"code": "dexterity", "value": 2}
+resonance_lock            5   样例: {"code": "resonance_lock"}
+retain                    5   样例: {"code": "retain"}
+thorns                    3   样例: {"code": "thorns", "value": 4}
+weak                      3   样例: {"code": "weak", "turns": 2}
+exhaust                   3   样例: {"code": "exhaust"}
+gaze_reduce               3   样例: {"code": "gaze_reduce", "value": 2}
+frail                     2   样例: {"code": "frail", "value": 1}
+poison                    1   样例: {"code": "poison", "v": 4}
+rule_bypass               1   样例: {"code": "rule_bypass"}
+resonance_gain            1   样例: {"code": "resonance_gain", "value": 3}
+delete_random             1   样例: {"code": "delete_random"}
+
+=== upgrade 顶层键 ===
+name_suffix       216
+effect            216
+flavor_add        216
+cost_type           3

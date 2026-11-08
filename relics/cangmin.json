@@ -1,0 +1,270 @@
+[
+  {
+    "id": "cngrelic_01",
+    "name": "伊格的碎片",
+    "rarity": "uncommon",
+    "veins": [
+      "heat"
+    ],
+    "effect_text": "每场战斗开始时，凝视 +2。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "gaze",
+        "value": 2
+      }
+    ],
+    "flavor": "碎片是红的，摸着是温的。它离开火母一千三百年，还是温的。"
+  },
+  {
+    "id": "cngrelic_02",
+    "name": "母亲的祷文",
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "effect_text": "每回合开始时，回复 1 点生命。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "heal",
+        "value": 1
+      }
+    ],
+    "flavor": "祷文只有三句。第三句念完人会睡，睡的人都说没梦见。"
+  },
+  {
+    "id": "cngrelic_03",
+    "name": "地下学院的讲义",
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每场战斗开始时，抽 1 张牌。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "draw",
+        "value": 1
+      }
+    ],
+    "flavor": "讲义第一页是呼吸法。十三代人练会了呼吸，第十四代开始练第二页。"
+  },
+  {
+    "id": "cngrelic_04",
+    "name": "猎巫者的绳",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "每场战斗开始时，获得 3 点格挡。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 3
+      }
+    ],
+    "flavor": "绳上没有血。猎巫人后来改行了，绳留作纪念。"
+  },
+  {
+    "id": "cngrelic_05",
+    "name": "守夜人的座垫",
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每场战斗开始时，获得 2 点格挡。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 2
+      }
+    ],
+    "flavor": "座垫磨穿的形状是一个人盘腿的样子。全城最体面的磨损。"
+  },
+  {
+    "id": "cngrelic_06",
+    "name": "三体历残卷",
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每回合开始时，共振 +2。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "resonance",
+        "value": 2
+      }
+    ],
+    "flavor": "残卷记着三个天体。有两个还准。"
+  },
+  {
+    "id": "cngrelic_07",
+    "name": "火母的小像",
+    "rarity": "common",
+    "veins": [
+      "heat"
+    ],
+    "effect_text": "每场战斗开始时，回复 2 点生命。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "heal",
+        "value": 2
+      }
+    ],
+    "flavor": "捏得不像。但认她的人看一眼就知道是谁。"
+  },
+  {
+    "id": "cngrelic_08",
+    "name": "忆盐袋",
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "effect_text": "每回合开始时，共振 +2。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "resonance",
+        "value": 2
+      }
+    ],
+    "flavor": "袋口的盐少得很快。没人承认在偷吃。"
+  },
+  {
+    "id": "cngrelic_09",
+    "name": "影语者的耳饰",
+    "rarity": "uncommon",
+    "veins": [
+      "tremor"
+    ],
+    "effect_text": "每场战斗开始时，凝视 +1，抽 1 张牌。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "gaze",
+        "value": 1
+      },
+      {
+        "trigger": "combat_start",
+        "action": "draw",
+        "value": 1
+      }
+    ],
+    "flavor": "耳饰会震。震的节奏和穹顶之影的台词同源。"
+  },
+  {
+    "id": "cngrelic_10",
+    "name": "猎巫密册（残）",
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "回合结束时，格挡只记下一半；每场战斗开始时，格挡 +3。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 3
+      }
+    ],
+    "mod": {
+      "keep_block": true
+    },
+    "flavor": "密册记着被烧的人最后喊的地名。地名一个比一个深。"
+  },
+  {
+    "id": "cngrelic_11",
+    "name": "光父星图",
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每回合开始时，抽 1 张牌。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "draw",
+        "value": 1
+      }
+    ],
+    "flavor": "星图上昴宿画在最中间。画图的人把最准时的话事者摆在正位。"
+  },
+  {
+    "id": "cngrelic_12",
+    "name": "倒扣的圣杯",
+    "rarity": "rare",
+    "veins": [
+      "water"
+    ],
+    "effect_text": "每场战斗开始时，回复 4 点生命。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "heal",
+        "value": 4
+      }
+    ],
+    "flavor": "杯倒扣着，谁也不敢翻开。翻开的先例都成了故事的开头。"
+  },
+  {
+    "id": "cngrelic_13",
+    "name": "最后一页梦记",
+    "rarity": "rare",
+    "veins": [
+      "tremor"
+    ],
+    "effect_text": "每场战斗开始时，抽 1 张牌，凝视 +1。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "draw",
+        "value": 1
+      },
+      {
+        "trigger": "combat_start",
+        "action": "gaze",
+        "value": 1
+      }
+    ],
+    "flavor": "梦记最后一句：梦的入口在醒的出口旁边。字迹越来越轻。"
+  },
+  {
+    "id": "cngrelic_14",
+    "name": "晨昏带贝壳",
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "effect_text": "每场战斗开始时，获得 2 点格挡。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 2
+      }
+    ],
+    "flavor": "贝壳里有一层灰。灰是火母的红藻碎的，一千三百年没褪色。"
+  },
+  {
+    "id": "cngrelic_15",
+    "name": "不醒者的睫毛",
+    "rarity": "uncommon",
+    "veins": [
+      "tremor"
+    ],
+    "effect_text": "每场战斗开始时，凝视 +2。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "gaze",
+        "value": 2
+      }
+    ],
+    "flavor": "从他眼睛上取下的。取的时候他没醒，睫毛颤了一下。"
+  }
+]

@@ -1,0 +1,211 @@
+{
+ "meta": {
+  "scanned": 193,
+  "names": 8
+ },
+ "items": [
+  {
+   "正名": "凝视",
+   "别名": "gaze",
+   "出现次数": 291,
+   "文件": [
+    "docs\\BALANCE_V3.md",
+    "docs\\DECK_AUDIT.md",
+    "docs\\ECO_EVENTS.md",
+    "docs\\ECO_RELIC_CARD.md",
+    "docs\\ENDINGS.md",
+    "docs\\FEEL.md",
+    "docs\\FIX_T34.md",
+    "docs\\GLOSSARY.md"
+   ]
+  },
+  {
+   "正名": "苍民",
+   "别名": "疯先知",
+   "出现次数": 241,
+   "文件": [
+    "docs\\ART_FAMILIES.md",
+    "docs\\ART_MAP.md",
+    "docs\\BUILDS.md",
+    "docs\\DELIVERY.md",
+    "docs\\DLC_CANGMIN.md",
+    "docs\\DLC_CANGMIN_VERIFY.md",
+    "docs\\ECON_CURVE.md",
+    "docs\\FINAL_MANIFEST.md"
+   ]
+  },
+  {
+   "正名": "共振",
+   "别名": "resonance",
+   "出现次数": 216,
+   "文件": [
+    "docs\\BALANCE_V3.md",
+    "docs\\DECK_AUDIT.md",
+    "docs\\ECO_RELIC_CARD.md",
+    "docs\\GLOSSARY.md",
+    "docs\\ONBOARD_T31.md",
+    "docs\\SFX_LIST.md",
+    "docs\\SFX_T32.md",
+    "docs\\content\\README.md"
+   ]
+  },
+  {
+   "正名": "共振",
+   "别名": "共鸣",
+   "出现次数": 209,
+   "文件": [
+    "docs\\A11Y_PERF.md",
+    "docs\\ART_PROMPT_SPEC.md",
+    "docs\\BUILDS.md",
+    "docs\\DELIVERY.md",
+    "docs\\ECO_RELIC_CARD.md",
+    "docs\\FIX_T34.md",
+    "docs\\GLOSSARY.md",
+    "docs\\HANDOFF_D2.md"
+   ]
+  },
+  {
+   "正名": "震语者",
+   "别名": "tremor",
+   "出现次数": 162,
+   "文件": [
+    "docs\\ART_DELIVERY.md",
+    "docs\\ART_FALLBACK.md",
+    "docs\\ART_FAMILIES.md",
+    "docs\\ART_LINK_AUDIT.md",
+    "docs\\ART_MAP.md",
+    "docs\\ART_PROMPT_WORKBOOK.md",
+    "docs\\ART_STUDIO.md",
+    "docs\\BALANCE_T29.md"
+   ]
+  },
+  {
+   "正名": "维护者",
+   "别名": "黯民",
+   "出现次数": 150,
+   "文件": [
+    "docs\\BALANCE.md",
+    "docs\\BALANCE_T29.md",
+    "docs\\BALANCE_V3.md",
+    "docs\\BUILDS.md",
+    "docs\\CARD_AUDIT.md",
+    "docs\\CONTENT_PLAN.md",
+    "docs\\CONTENT_REGRESSION.md",
+    "docs\\DELIVERY.md"
+   ]
+  },
+  {
+   "正名": "下潜者",
+   "别名": "diver",
+   "出现次数": 149,
+   "文件": [
+    "docs\\ART_DELIVERY.md",
+    "docs\\ART_LINK_AUDIT.md",
+    "docs\\ART_MAP.md",
+    "docs\\BALANCE.md",
+    "docs\\BALANCE_T29.md",
+    "docs\\BALANCE_V3.md",
+    "docs\\CARD_AUDIT.md",
+    "docs\\COMPLETION_AUDIT.md"
+   ]
+  },
+  {
+   "正名": "维护者",
+   "别名": "anmin",
+   "出现次数": 117,
+   "文件": [
+    "docs\\ART_DELIVERY.md",
+    "docs\\ART_LINK_AUDIT.md",
+    "docs\\ART_MAP.md",
+    "docs\\BALANCE_T29.md",
+    "docs\\CARD_AUDIT.md",
+    "docs\\COMPLETION_AUDIT.md",
+    "docs\\CONTENT_PLAN.md",
+    "docs\\CONTENT_REGRESSION.md"
+   ]
+  },
+  {
+   "正名": "层",
+   "别名": "band",
+   "出现次数": 100,
+   "文件": [
+    "docs\\ART_PROMPT_WORKBOOK.md",
+    "docs\\CONTENT_PLAN.md",
+    "docs\\CONTENT_REGRESSION.md",
+    "docs\\ECO_ENEMIES.md",
+    "docs\\ECO_EVENTS.md",
+    "docs\\GLOSSARY.md",
+    "docs\\HANDOFF_T73.md",
+    "docs\\MAPGEN_DESIGN.md"
+   ]
+  },
+  {
+   "正名": "苍民",
+   "别名": "cangmin",
+   "出现次数": 87,
+   "文件": [
+    "docs\\ART_DELIVERY.md",
+    "docs\\ART_MAP.md",
+    "docs\\BALANCE_T29.md",
+    "docs\\CARD_AUDIT.md",
+    "docs\\COMPLETION_AUDIT.md",
+    "docs\\CONTENT_REGRESSION.md",
+    "docs\\DECK_AUDIT.md",
+    "docs\\DLC_CANGMIN_VERIFY.md"
+   ]
+  },
+  {
+   "正名": "层",
+   "别名": "深度带",
+   "出现次数": 17,
+   "文件": [
+    "docs\\BACKTRACK_AND_VISIBILITY.md",
+    "docs\\CONTENT_PLAN.md",
+    "docs\\GLOSSARY.md",
+    "docs\\HANDOFF_T73.md",
+    "docs\\MAPGEN_BRIEF.md",
+    "docs\\MAPGEN_PERF_RHYTHM.md",
+    "docs\\MAP_UI_V2.md",
+    "docs\\START_SCREEN.md"
+   ]
+  },
+  {
+   "正名": "震语者",
+   "别名": "深渊震语者",
+   "出现次数": 5,
+   "文件": [
+    "docs\\design\\glossary_check.md",
+    "docs\\design\\round2\\R2_D12_resolution.md"
+   ]
+  },
+  {
+   "正名": "凝视",
+   "别名": "被看的痕迹",
+   "出现次数": 4,
+   "文件": [
+    "docs\\design\\glossary_check.md",
+    "docs\\design\\event\\D7_EVENT_BRANCHES.md",
+    "docs\\design\\patch\\02_cangmin_gaze.md",
+    "docs\\design\\round2\\R3_D9_ending_universal.md"
+   ]
+  },
+  {
+   "正名": "通用牌",
+   "别名": "无色牌",
+   "出现次数": 4,
+   "文件": [
+    "docs\\design\\glossary_check.md",
+    "docs\\design\\round2\\R2_D12_resolution.md",
+    "docs\\design\\stream\\T331_UNIVERSAL_POOL.md"
+   ]
+  },
+  {
+   "正名": "通用牌",
+   "别名": "shared 卡",
+   "出现次数": 1,
+   "文件": [
+    "docs\\design\\round2\\R2_D12_resolution.md"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+停一下，先纠正你上一批 09_sfx_touchpoints.md 里的一处事实错误，再继续做 A 件。
+
+【错误】
+你写「哑 wav 2 个：ui.click / ui.page 被调但 wav 不存在」——不成立。
+
+我实测（现在，web/sfx/ 目录）：
+  ui.click.wav          6218 字节  ✅ 存在
+  ui.page.wav          30032 字节  ✅ 存在
+8 个抽查的 wav 全部存在，目录里一共 27 个（19 音效 + 8 氛围）。
+
+【正确的对照结果】
+
+代码里 playSfx 实际调用的 code 只有这 13 个：
+  card.play.cost, combat.block, combat.hurt, combat.kill, combat.start,
+  enemy.hit, special.death, special.egg, special.victory,
+  state.gaze, state.resonance, ui.click, ui.page
+
+所以真正的孤儿音是 6 个（不是 1 个）——wav 做了但代码里没人调：
+  card.play.attack
+  card.play.skill
+  card.play.power
+  state.energy_empty
+  special.boss_phase
+  special.world_switch
+
+缺文件的情况：0 个。
+
+【请做】
+1. 先改正 09_sfx_touchpoints.md 的对照表（孤儿音 6 个、缺文件 0 个）
+2. 再按修正后的结论做 10_sfx_wiring_spec.md
+3. 顺带确认一下：你上一批是用什么方法判断「wav 不存在」的？如果那个方法有系统性错误，说明一下，免得后面再错
+
+另外提醒：你说「正常 16 音效 + 8 氛围 = 24」，但 19 + 8 = 27，16 这个数也对不上。
+一起核对清楚再往下走。

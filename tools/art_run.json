@@ -1,0 +1,873 @@
+{
+ "runs": {
+  "foe_eco_surface_1": {
+   "ms": 522808,
+   "vram_mb": 10136,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/010_sealed_diver_suit_shell.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "face_eco_cold_1": {
+   "ms": 525605,
+   "vram_mb": 10135,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/001_snow_buried_mossback_she.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "face_eco_sea_1": {
+   "ms": 469755,
+   "vram_mb": 10136,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/001_hanging_red_fern_frond.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "foe_eco_vent_1": {
+   "ms": 534836,
+   "vram_mb": 10136,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/010_tube_worm_plume.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "class_diver": {
+   "ms": 535298,
+   "vram_mb": 10135,
+   "attempt": 1,
+   "out": "art/class/diver.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "class_tremor": {
+   "ms": 494050,
+   "vram_mb": 10136,
+   "attempt": 1,
+   "out": "art/class/tremor.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "class_anmin": {
+   "ms": 525685,
+   "vram_mb": 10136,
+   "attempt": 1,
+   "out": "art/class/anmin.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "class_cangmin": {
+   "ms": 528017,
+   "vram_mb": 10136,
+   "attempt": 1,
+   "out": "art/class/cangmin.webp",
+   "steps": 20,
+   "size": [
+    768,
+    1152
+   ]
+  },
+  "end_ending_watched": {
+   "ms": 621567,
+   "vram_mb": 10601,
+   "attempt": 1,
+   "out": "art/ending/ending_watched.webp",
+   "steps": 20,
+   "size": [
+    832,
+    1216
+   ]
+  },
+  "end_ending_averted": {
+   "ms": 609481,
+   "vram_mb": 10601,
+   "attempt": 1,
+   "out": "art/ending/ending_averted.webp",
+   "steps": 20,
+   "size": [
+    832,
+    1216
+   ]
+  },
+  "face_eco_surface_1": {
+   "ms": 408840,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/001_dormant_spore_pod.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_surface_2": {
+   "ms": 376690,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/002_sealed_airlock_hatch.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_surface_3": {
+   "ms": 364818,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/003_numbered_flag_pole.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_surface_4": {
+   "ms": 388565,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/004_sun_bleached_cracked_tub.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_surface_5": {
+   "ms": 419246,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/005_empty_suit_shell.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_surface_6": {
+   "ms": 379842,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/006_bone_dry_water_cistern.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_surface_2": {
+   "ms": 370234,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/011_broadcast_horn_speaker.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_surface_3": {
+   "ms": 312347,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_surface/012_heavy_airlock_gate.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_cold_2": {
+   "ms": 364770,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/002_worm_eaten_wall_calendar.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_cold_3": {
+   "ms": 356922,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/003_coiled_hibernating_amphi.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_cold_4": {
+   "ms": 335378,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/004_slow_sediment_drift.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_cold_5": {
+   "ms": 210929,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/005_frost_grey_eel_skull.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_cold_6": {
+   "ms": 244796,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/006_frozen_ledger_book.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_cold_1": {
+   "ms": 155962,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/010_mossback_turtle_shell.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_cold_2": {
+   "ms": 185581,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/011_worm_eaten_stone_tablet.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_cold_3": {
+   "ms": 222276,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_cold/012_coiled_frost_eel.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_arid_1": {
+   "ms": 242260,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/001_single_falling_water_dro.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_arid_2": {
+   "ms": 248789,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/002_cryptobiotic_tardigrade.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_arid_3": {
+   "ms": 257517,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/003_dry_spring_mouth.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_arid_4": {
+   "ms": 357081,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/004_cracked_mud_ledger.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_arid_5": {
+   "ms": 394196,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/005_drought_fish_gill.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_arid_6": {
+   "ms": 290825,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/006_water_right_seal_stamp.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_arid_1": {
+   "ms": 361073,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/010_water_tally_ledger.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_arid_2": {
+   "ms": 381009,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/011_hollow_dry_husk.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_arid_3": {
+   "ms": 263093,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_arid/012_spring_seal_stamp.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_sea_2": {
+   "ms": 218673,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/002_shadow_under_algae_blank.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_sea_3": {
+   "ms": 205411,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/003_filter_feeler_swarm.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_sea_4": {
+   "ms": 208918,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/004_ambush_fish_eye.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_sea_5": {
+   "ms": 183441,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/005_drifting_spore_lantern.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_sea_6": {
+   "ms": 229148,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/006_sunken_corridor_lamp.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_sea_1": {
+   "ms": 209385,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/010_ambush_fish_eye.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_sea_2": {
+   "ms": 168372,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/011_filter_feeler_swarm.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_sea_3": {
+   "ms": 212799,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_sea/012_hanging_fern_shadow.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_vent_1": {
+   "ms": 195599,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/001_black_sulfur_mound_tower.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_vent_2": {
+   "ms": 242434,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/002_tube_worm_feather_plume.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_vent_3": {
+   "ms": 180188,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/003_boiling_vent_mouth.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_vent_4": {
+   "ms": 238368,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/004_dented_soup_ladle.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_vent_5": {
+   "ms": 238633,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/005_ring_of_heat_haze.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_vent_6": {
+   "ms": 246911,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/006_small_geyser_cone.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_vent_2": {
+   "ms": 192135,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/011_dented_soup_ladle.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_vent_3": {
+   "ms": 140167,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_vent/012_black_sulfur_tower.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_rad_1": {
+   "ms": 167252,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/001_stack_of_lead_scaled_she.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_rad_2": {
+   "ms": 151683,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/002_glowing_burial_urn.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_rad_3": {
+   "ms": 174025,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/003_cracked_gauge_dial.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_rad_4": {
+   "ms": 162533,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/004_feverish_mold_colony.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_rad_5": {
+   "ms": 171360,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/005_hoarded_shell_pile.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_rad_6": {
+   "ms": 131177,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/006_scorched_hollow_bone.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_rad_1": {
+   "ms": 168790,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/010_lead_scaled_shell.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_rad_2": {
+   "ms": 164585,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/011_glowing_burial_urn.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_rad_3": {
+   "ms": 128042,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_rad/012_feverish_mold_patch.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_core_1": {
+   "ms": 107477,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/001_tri_color_bacterial_mat.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_core_2": {
+   "ms": 165935,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/002_supercritical_water_sac.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_core_3": {
+   "ms": 114851,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/003_slow_moving_shadow.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_core_4": {
+   "ms": 144875,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/004_heat_blistered_alloy_pip.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_core_5": {
+   "ms": 154637,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/005_golden_filament_tangle.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_core_6": {
+   "ms": 162136,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_core/006_boiling_mineral_vein.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_core_1": {
+   "ms": 149707,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/010_tri_color_mat.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_core_2": {
+   "ms": 154049,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/011_slow_shadow_figure.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_core_3": {
+   "ms": 158605,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_core/012_swelling_water_sac.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_nexus_1": {
+   "ms": 201973,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/001_single_corridor_lamp.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_nexus_2": {
+   "ms": 203063,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/002_duty_roster_page.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_nexus_3": {
+   "ms": 252804,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/003_chained_signature_quill.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_nexus_4": {
+   "ms": 269630,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/004_resonator_hum_wave.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_nexus_5": {
+   "ms": 321662,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/005_nailed_notice_board.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "face_eco_nexus_6": {
+   "ms": 320969,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/006_wall_of_white_noise.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_nexus_1": {
+   "ms": 341808,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/010_corridor_lamp.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_nexus_2": {
+   "ms": 321718,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/011_chained_quill.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "foe_eco_nexus_3": {
+   "ms": 315024,
+   "vram_mb": 9093,
+   "attempt": 1,
+   "out": "art/eco/eco_nexus/012_nailed_notice_board.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  },
+  "end_ending_walked": {
+   "ms": 321528,
+   "vram_mb": 9094,
+   "attempt": 1,
+   "out": "art/ending/ending_walked.webp",
+   "steps": 20,
+   "size": [
+    640,
+    936
+   ]
+  }
+ }
+}

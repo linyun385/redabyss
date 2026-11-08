@@ -1,0 +1,1643 @@
+{
+ "meta": {
+  "tool": "tools/prompt_lint.py",
+  "src": "data\\zh_prompts_full.json",
+  "scope": "主体段（洞底是一整片深红的光 之前）",
+  "scanned": 461,
+  "flagged": 133,
+  "wordlists": "mech=SPEC§六禁词; appliance=电器名词; species=SPEC§VIII物种名; en_bad=SPEC§四英文禁词"
+ },
+ "items": [
+  {
+   "id": "enemy_d2_01",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_04",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "机器"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_e4",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_b2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "appliance",
+     "word": "喇叭"
+    },
+    {
+     "rule": "appliance",
+     "word": "电线"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "anm_0002",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    }
+   ]
+  },
+  {
+   "id": "anm_0003",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "开关"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    }
+   ]
+  },
+  {
+   "id": "anm_0006",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    }
+   ]
+  },
+  {
+   "id": "anm_0008",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0009",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "屏幕"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0010",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "anm_0013",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪器"
+    },
+    {
+     "rule": "mech",
+     "word": "屏幕"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0014",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0015",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    }
+   ]
+  },
+  {
+   "id": "anm_0017",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0018",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0019",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0020",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0022",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0023",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0024",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0028",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0029",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪器"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    },
+    {
+     "rule": "appliance",
+     "word": "表盘"
+    }
+   ]
+  },
+  {
+   "id": "anm_0031",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0032",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "面板"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "anm_0033",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0034",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0035",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0037",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0038",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0039",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0040",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0041",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0042",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0043",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0044",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0045",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0046",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "anm_0047",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0048",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0049",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0001",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "铭文"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0002",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0003",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0004",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0005",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0006",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0007",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0008",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0009",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0010",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0011",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0012",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0013",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0014",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0021",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0023",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    }
+   ]
+  },
+  {
+   "id": "cng_0028",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    }
+   ]
+  },
+  {
+   "id": "cng_0031",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0032",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0033",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪器"
+    }
+   ]
+  },
+  {
+   "id": "cng_0035",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    }
+   ]
+  },
+  {
+   "id": "cng_0036",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0037",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0038",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    },
+    {
+     "rule": "appliance",
+     "word": "喇叭"
+    }
+   ]
+  },
+  {
+   "id": "cng_0039",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "开关"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0040",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0041",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    }
+   ]
+  },
+  {
+   "id": "cng_0042",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "cng_0044",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "cng_0045",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    }
+   ]
+  },
+  {
+   "id": "cng_0046",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    }
+   ]
+  },
+  {
+   "id": "cng_0047",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0049",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "cng_0050",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0001",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0003",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0004",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "species",
+     "word": "苔藓"
+    }
+   ]
+  },
+  {
+   "id": "dive_0006",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0007",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0011",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0015",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0016",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0019",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0025",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0041",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "dive_0046",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "面板"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0050",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0055",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0057",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0061",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "电线"
+    }
+   ]
+  },
+  {
+   "id": "dive_0065",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "电缆"
+    }
+   ]
+  },
+  {
+   "id": "dive_0080",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "断路"
+    }
+   ]
+  },
+  {
+   "id": "trem_0010",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0012",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    }
+   ]
+  },
+  {
+   "id": "trem_0013",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0015",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "trem_0020",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0022",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0024",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0032",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0061",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0063",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0064",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0069",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "开关"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_7",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "appliance",
+     "word": "表盘"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_8",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_1",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_9",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_10",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_9",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_10",
+   "hits": [
+    {
+     "rule": "species",
+     "word": "蕨"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_11",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_9",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    },
+    {
+     "rule": "appliance",
+     "word": "表盘"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "设备"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_1",
+   "hits": [
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  }
+ ],
+ "summary": [
+  {
+   "rule": "appliance",
+   "word": "灯",
+   "count": 53
+  },
+  {
+   "rule": "mech",
+   "word": "字",
+   "count": 38
+  },
+  {
+   "rule": "mech",
+   "word": "编号",
+   "count": 34
+  },
+  {
+   "rule": "appliance",
+   "word": "显示",
+   "count": 15
+  },
+  {
+   "rule": "mech",
+   "word": "标签",
+   "count": 13
+  },
+  {
+   "rule": "mech",
+   "word": "装置",
+   "count": 10
+  },
+  {
+   "rule": "appliance",
+   "word": "屏",
+   "count": 9
+  },
+  {
+   "rule": "appliance",
+   "word": "按钮",
+   "count": 6
+  },
+  {
+   "rule": "mech",
+   "word": "刻度",
+   "count": 5
+  },
+  {
+   "rule": "mech",
+   "word": "仪表",
+   "count": 4
+  },
+  {
+   "rule": "mech",
+   "word": "开关",
+   "count": 3
+  },
+  {
+   "rule": "mech",
+   "word": "仪器",
+   "count": 3
+  },
+  {
+   "rule": "appliance",
+   "word": "表盘",
+   "count": 3
+  },
+  {
+   "rule": "appliance",
+   "word": "喇叭",
+   "count": 2
+  },
+  {
+   "rule": "appliance",
+   "word": "电线",
+   "count": 2
+  },
+  {
+   "rule": "mech",
+   "word": "屏幕",
+   "count": 2
+  },
+  {
+   "rule": "mech",
+   "word": "面板",
+   "count": 2
+  },
+  {
+   "rule": "mech",
+   "word": "机器",
+   "count": 1
+  },
+  {
+   "rule": "mech",
+   "word": "铭文",
+   "count": 1
+  },
+  {
+   "rule": "species",
+   "word": "苔藓",
+   "count": 1
+  },
+  {
+   "rule": "appliance",
+   "word": "电缆",
+   "count": 1
+  },
+  {
+   "rule": "appliance",
+   "word": "断路",
+   "count": 1
+  },
+  {
+   "rule": "species",
+   "word": "蕨",
+   "count": 1
+  },
+  {
+   "rule": "mech",
+   "word": "设备",
+   "count": 1
+  }
+ ]
+}

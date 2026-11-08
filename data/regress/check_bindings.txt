@@ -1,0 +1,27 @@
+=== T58 绑定表校验 ===
+
+  ok    生态枚举与 mapgen_spec.json 一致（8 种）
+  ok    eco_surface 深带 6–8 均有自己的 boss 候选（enemy_d1_b1, enemy_d1_b2）
+  ok    eco_cold 深带 6–8 均有自己的 boss 候选（enemy_d2_b1, enemy_d2_b2）
+  ok    eco_arid 深带 6–8 均有自己的 boss 候选（enemy_d3_b1, enemy_d3_b2）
+  ok    eco_sea 深带 6–8 均有自己的 boss 候选（enemy_d4_06, enemy_d4_b1）
+  ok    eco_vent 深带 6–8 均有自己的 boss 候选（enemy_d5_06, enemy_d5_b1）
+  ok    eco_rad 深带 6–8 均有自己的 boss 候选（enemy_d6_b1, enemy_d6_b2）
+  ok    eco_core 深带 6–8 均有自己的 boss 候选（enemy_d7_06, enemy_d7_b1）
+  ok    eco_nexus 深带 6–8 均有自己的 boss 候选（enemy_d8_01, enemy_d8_b1）
+  ok    boss 池跨生态零共用
+
+── 覆盖率（每格池大小；要求 敌≥3 精≥1 boss≥1 事件≥1）──
+生态\带         b1        b2        b3        b4        b5        b6        b7        b8        
+eco_surface    e8/l4/B2/v8  e8/l4/B2/v8  e8/l4/B2/v8  e8/l4/B2/v8  e8/l4/B2/v8  e8/l4/B2/v8  e8/l4/B2/v8  e8/l4/B2/v8  
+eco_cold       e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  
+eco_arid       e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  
+eco_sea        e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  
+eco_vent       e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  
+eco_rad        e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  
+eco_core       e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  e8/l4/B2/v11  
+eco_nexus      e8/l5/B2/v8  e8/l5/B2/v8  e8/l5/B2/v8  e8/l5/B2/v8  e8/l5/B2/v8  e8/l5/B2/v8  e8/l5/B2/v8  e8/l5/B2/v8  
+
+填充率：256/256 格类型达标（敌≥3 精≥1 boss≥1 事件≥1）
+
+全部达标。

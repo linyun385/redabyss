@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>红渊 · 试玩打分</title>
+<style>
+  :root{
+    --bg:#0a0506; --panel:#140b0c; --line:#2b1a1b;
+    --red:#8b1a1a; --red-hi:#e2705f; --text:#d8cfc9; --dim:#8d7f78;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:ui-monospace,Consolas,"Microsoft YaHei",monospace;
+    font-size:15px; line-height:1.6; padding:24px 14px 80px;
+  }
+  .wrap{max-width:780px;margin:0 auto}
+  h1{font-size:20px;font-weight:400;letter-spacing:.08em;margin-bottom:6px}
+  .sub{color:var(--dim);font-size:13px;margin-bottom:22px;line-height:1.7}
+  .sub b{color:var(--red-hi);font-weight:400}
+  section{border-top:1px solid var(--line);padding:18px 0 6px}
+  h2{font-size:14px;color:var(--red-hi);font-weight:400;letter-spacing:.1em;margin-bottom:4px}
+  .hint{color:var(--dim);font-size:12px;margin-bottom:12px}
+  .q{padding:11px 0;border-bottom:1px solid #1c1112}
+  .q:last-child{border-bottom:0}
+  .qlabel{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
+  .qno{color:var(--red-hi);font-size:12px;min-width:26px;padding-top:3px}
+  .qtext{flex:1}
+  .scale{display:flex;gap:6px;padding-left:36px;flex-wrap:wrap;align-items:center}
+  .scale input{position:absolute;opacity:0;width:0;height:0}
+  .scale label{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:38px;height:32px;border:1px solid var(--line);border-radius:3px;
+    color:var(--dim);font-size:13px;cursor:pointer;user-select:none;
+    transition:background .12s,border-color .12s,color .12s;
+  }
+  .scale label:hover{border-color:var(--red);color:var(--text)}
+  .scale input:checked + label{background:var(--red);border-color:var(--red);color:#fff}
+  .scale .na{font-size:12px;color:var(--dim);margin-left:4px}
+  .anchor{font-size:12px;color:var(--dim);padding-left:36px;margin-top:5px;min-height:18px}
+  .anchor b{color:var(--text);font-weight:400}
+  input[type=text],textarea{
+    width:100%;background:#0f0809;border:1px solid var(--line);border-radius:3px;
+    color:var(--text);font-family:inherit;font-size:14px;padding:9px 10px;margin-top:6px;
+  }
+  input[type=text]:focus,textarea:focus{outline:none;border-color:var(--red)}
+  textarea{resize:vertical;min-height:64px}
+  .row{display:flex;gap:12px;flex-wrap:wrap}
+  .row > div{flex:1;min-width:180px}
+  .fl{font-size:13px;color:var(--dim);margin-top:14px}
+  .openq{padding:14px 0;border-bottom:1px solid #1c1112}
+  .openq:last-child{border-bottom:0}
+  .openq .qlabel{margin-bottom:0}
+  button{
+    background:var(--red);color:#fff;border:0;border-radius:3px;
+    padding:12px 22px;font-family:inherit;font-size:14px;cursor:pointer;letter-spacing:.06em;
+  }
+  button:hover{background:#a32020}
+  button.ghost{background:transparent;border:1px solid var(--line);color:var(--dim)}
+  .bar{position:fixed;left:0;right:0;bottom:0;background:#0d0708;border-top:1px solid var(--line);
+       padding:12px 14px;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap}
+  .bar .cnt{font-size:12px;color:var(--dim)}
+  #out{display:none;margin-top:20px;border:1px solid var(--line);border-radius:4px;padding:14px;background:#0d0708}
+  #out h3{font-size:13px;color:var(--red-hi);font-weight:400;margin-bottom:8px}
+  #outTxt{width:100%;height:260px;font-size:12px;line-height:1.5;background:#080405;border:1px solid var(--line);color:var(--text);padding:10px;border-radius:3px}
+  .ok{color:var(--red-hi);font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>红渊 · 试玩打分</h1>
+  <p class="sub">
+    先完整玩一局（输赢都行，20–40 分钟），<b>玩的时候别管这张表</b>。玩完凭记忆填 —— 记住的才是真的。<br>
+    每项 1–5 分，<b>鼠标停在分数上能看到每一分长什么样</b>。没有锚点的打分最后都是满屏 3 分，那不是数据。<br>
+    填完点底下的按钮，把生成的那段字发回来就行。你的答案只存在这台机器上，不会发到任何地方。
+  </p>
+
+  <section>
+    <h2>开填之前</h2>
+    <div class="row">
+      <div>
+        <div class="fl">你怎么称呼</div>
+        <input type="text" id="who" placeholder="随便写个名字">
+      </div>
+      <div>
+        <div class="fl">玩的哪个职业</div>
+        <input type="text" id="cls" placeholder="记不住就写「不知道」">
+      </div>
+      <div>
+        <div class="fl">一局多久（分钟）</div>
+        <input type="text" id="dur" placeholder="大约就行">
+      </div>
+    </div>
+  </section>
+
+  <div id="form"></div>
+
+  <section>
+    <h2>G · 四句话（这段最值钱，别空着）</h2>
+    <div class="hint">分数会互相抵消，一句话不会。想到什么写什么，说难听的话也没关系。</div>
+    <div id="opens"></div>
+  </section>
+
+  <div id="out">
+    <h3>把下面这段发回来</h3>
+    <textarea id="outTxt" readonly></textarea>
+    <p style="margin-top:10px"><button onclick="copyOut()">复制</button><span id="copied" class="ok"></span></p>
+  </div>
+</div>
+
+<div class="bar">
+  <span class="cnt" id="cnt">0 / 20 已填</span>
+  <button onclick="gen()">填好了，生成结果</button>
+  <button class="ghost" onclick="resetAll()">清空重填</button>
+</div>
+
+<script>
+const SCALES = [
+  {g:'A · 开局（头五分钟）', hint:'没人教你，第一眼和头五分钟的感受。',
+   items:[
+    {id:'A1', q:'没人教你，你知道自己要干什么吗', a:['完全懵，不知道点哪','','大概懂，是试出来的','','一眼就明白该做什么']},
+    {id:'A2', q:'头五分钟有「想再点一下」的冲动吗', a:['没有，在等它结束','','还行，可以继续','','停不下来，想看看下一张牌']},
+    {id:'A3', q:'第一眼画面', a:['难看，或者像半成品','','能看，没什么感觉','','有风格，想截图给别人看']}
+   ]},
+  {g:'B · 选择（卡牌游戏的核心）', hint:'有庆幸、有后悔，才说明选择真的产生了后果。两条都低 = 你的决定不影响结果。',
+   items:[
+    {id:'B1', q:'每回合你真的有得选吗（还是只有一个能打）', a:['没得选，随便打','','有时要挑一下','','经常要在两个都不错之间权衡']},
+    {id:'B2', q:'有没有「我这一步选对了」的时刻', a:['没有','','一两次','','好几次，事后还想得起是哪一步']},
+    {id:'B3', q:'有没有「我早该用那张牌」的后悔', a:['没有','','一两次','','好几次']}
+   ]},
+  {g:'C · 手感', hint:'动作有没有重量。',
+   items:[
+    {id:'C1', q:'打出一张牌，有没有「打出去」的感觉', a:['跟点了没反应差不多','','有变化，但干巴','','有分量，好几次因为手感想再打一张']},
+    {id:'C2', q:'敌人打你的时候有没有紧迫感', a:['完全无感，只看到数字变了','','知道掉血了','','心里一紧，会想「糟了」']},
+    {id:'C3', q:'动画、数字、声音是不是同一刻发生', a:['明显错位，怪怪的','','基本同步','','完全同步，分不出是哪个在动'], na:'现在没声音，这项可以先不填'},
+    {id:'C4', q:'点了不该点的（比如打不出的牌），系统反应清楚吗', a:['没反应，不知道为啥','','有提示但要找一下','','立刻就知道为什么不行']}
+   ]},
+  {g:'D · 节奏', hint:'', items:[
+    {id:'D1', q:'一局打完，想不想马上开第二局', a:['不想，够了','','可以，但不急','','想，立刻点重开']},
+    {id:'D2', q:'中途有没有「怎么还没完」的时刻', a:['好几次，很拖','','一两次','','没有，一直有事在做']},
+    {id:'D3', q:'难度（这条 3 分最好，不是越高越好）', a:['太简单，没挑战','偏软','刚好，紧但能过','偏硬','太难，想放弃']}
+   ]},
+  {g:'E · 变化（要玩三局以上才能填）', hint:'没玩够三局就留空。',
+   items:[
+    {id:'E1', q:'三局下来，牌 / 敌人 / 事件重复得多吗', a:['大量重复，像同一局','','有些眼熟','','几乎每次都是新的']},
+    {id:'E2', q:'有没有「这局跟上局不一样」的感觉', a:['差不多，一条路','','有点区别','','完全不同的路子']}
+   ]},
+  {g:'F · 世界', hint:'', items:[
+    {id:'F1', q:'你感觉得到「东西都倒吊着、红光从下面升起来」这个世界吗', a:['完全没感觉','','提了一句','','很明显，画面和文字都在讲这件事']},
+    {id:'F2', q:'文字出不出戏', a:['像机器写的，或像说明书','','还行','','有味道，有几个句子想抄下来']}
+   ]}
+];
+
+const OPENS = [
+  {id:'G1', q:'最想让我们改的一件事（就一件，最大的那个）', ph:'比如：牌太多看不过来 / 打到后面很拖 / 看不懂某张牌在干什么'},
+  {id:'G2', q:'最不想让我们动的一件事（觉得最对的地方）', ph:'比如：某个敌人的设计 / 某段文字 / 界面的样子'},
+  {id:'G3', q:'你会怎么跟朋友介绍它（一句话，别修饰）', ph:'说不出话也是答案 —— 直接写「说不出」'},
+  {id:'G4', q:'还想再玩吗？为什么', ph:'想 / 不想 / 换个职业再试'}
+];
+
+const KEY = 'redabyss.scorecard.v1';
+const $ = s => document.querySelector(s);
+
+function el(tag, cls, txt){ const e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e; }
+
+function build(){
+  const form = $('#form');
+  SCALES.forEach(sec=>{
+    const s = el('section');
+    s.appendChild(el('h2', null, sec.g));
+    if(sec.hint) s.appendChild(el('div','hint',sec.hint));
+    sec.items.forEach(it=>{
+      const q = el('div','q');
+      const lab = el('div','qlabel');
+      lab.appendChild(el('span','qno',it.id));
+      lab.appendChild(el('span','qtext',it.q));
+      q.appendChild(lab);
+      const sc = el('div','scale');
+      for(let v=1; v<=5; v++){
+        const rid = 'r_'+it.id+'_'+v;
+        const inp = document.createElement('input');
+        inp.type='radio'; inp.name=it.id; inp.value=v; inp.id=rid;
+        inp.addEventListener('change', ()=>{ save(); updCnt(); setAnchor(it); });
+        const l = document.createElement('label');
+        l.setAttribute('for', rid); l.textContent = v;
+        l.addEventListener('mouseenter', ()=>{ $('#an_'+it.id).innerHTML = it.a[v-1] ? `<b>${v} 分</b> — ${it.a[v-1]}` : ''; });
+        l.addEventListener('mouseleave', ()=>{ setAnchor(it); });
+        sc.appendChild(inp); sc.appendChild(l);
+      }
+      if(it.na) sc.appendChild(el('span','na',it.na));
+      q.appendChild(sc);
+      const an = el('div','anchor'); an.id = 'an_'+it.id;
+      q.appendChild(an);
+      s.appendChild(q);
+    });
+    form.appendChild(s);
+  });
+
+  const ops = $('#opens');
+  OPENS.forEach(o=>{
+    const d = el('div','openq');
+    const lab = el('div','qlabel');
+    lab.appendChild(el('span','qno',o.id));
+    lab.appendChild(el('span','qtext',o.q));
+    d.appendChild(lab);
+    const ta = document.createElement('textarea');
+    ta.id = o.id; ta.placeholder = o.ph;
+    ta.addEventListener('input', save);
+    d.appendChild(ta);
+    ops.appendChild(d);
+  });
+}
+
+function setAnchor(it){
+  const on = document.querySelector(`input[name="${it.id}"]:checked`);
+  const an = $('#an_'+it.id); if(!an) return;
+  an.innerHTML = on && it.a[on.value-1] ? `<b>${on.value} 分</b> — ${it.a[on.value-1]}` : '';
+}
+
+function allItems(){ return SCALES.flatMap(s=>s.items); }
+
+function updCnt(){
+  let n=0; allItems().forEach(it=>{ if(document.querySelector(`input[name="${it.id}"]:checked`)) n++; });
+  $('#cnt').textContent = `${n} / ${allItems().length} 已填`;
+}
+
+function save(){
+  const d = {who:$('#who').value, cls:$('#cls').value, dur:$('#dur').value, s:{}, o:{}};
+  allItems().forEach(it=>{ const on=document.querySelector(`input[name="${it.id}"]:checked`); if(on) d.s[it.id]=+on.value; });
+  OPENS.forEach(o=>{ d.o[o.id] = $('#'+o.id).value; });
+  localStorage.setItem(KEY, JSON.stringify(d));
+}
+
+function load(){
+  let d; try{ d = JSON.parse(localStorage.getItem(KEY)); }catch(e){ return; }
+  if(!d) return;
+  $('#who').value=d.who||''; $('#cls').value=d.cls||''; $('#dur').value=d.dur||'';
+  allItems().forEach(it=>{ if(d.s && d.s[it.id]){ const r=document.querySelector(`input[name="${it.id}"][value="${d.s[it.id]}"]`); if(r){r.checked=true; setAnchor(it);} } });
+  OPENS.forEach(o=>{ if(d.o && d.o[o.id]!=null) $('#'+o.id).value=d.o[o.id]; });
+  updCnt();
+}
+
+function gen(){
+  const L=[];
+  L.push('=== 红渊试玩反馈 ===');
+  L.push(`评分人：${$('#who').value||'(未填)'}`);
+  L.push(`职业：${$('#cls').value||'(未填)'}　时长：${$('#dur').value||'?'} 分钟`);
+  L.push(`时间：${new Date().toLocaleString('zh-CN')}`);
+  L.push('---');
+  SCALES.forEach(sec=>{
+    L.push(sec.g);
+    sec.items.forEach(it=>{
+      const on=document.querySelector(`input[name="${it.id}"]:checked`);
+      const v = on ? on.value : '未填';
+      const note = (on && it.a[on.value-1]) ? `（${it.a[on.value-1]}）` : '';
+      L.push(`${it.id} ${v}${note}`);
+    });
+    L.push('');
+  });
+  L.push('G · 开放');
+  OPENS.forEach(o=>{ L.push(`${o.id} ${$('#'+o.id).value.trim()||'(空)'}`); });
+  const txt = L.join('\n');
+  const box = $('#out');
+  box.style.display='block';
+  $('#outTxt').value = txt;
+  $('#copied').textContent='';
+  box.scrollIntoView({behavior:'smooth'});
+  save();
+  return txt;
+}
+
+function copyOut(){
+  const t = $('#outTxt');
+  t.select();
+  const done = ()=> $('#copied').textContent = '已复制，粘贴发给我们就行';
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t.value).then(done).catch(()=>{ document.execCommand('copy'); done(); });
+  } else { document.execCommand('copy'); done(); }
+}
+
+function resetAll(){
+  if(!confirm('清空所有答案？')) return;
+  localStorage.removeItem(KEY);
+  location.reload();
+}
+
+build(); load(); updCnt();
+['who','cls','dur'].forEach(id=>$('#'+id).addEventListener('input', save));
+</script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>红渊 · 音效试听（全 28）</title>
+<style>
+  body { background:#141110; color:#d8cfc9; font:15px/1.6 -apple-system,"Microsoft YaHei",sans-serif;
+         margin:0; padding:36px 24px 80px; }
+  h1 { font-size:20px; font-weight:500; letter-spacing:2px; color:#e2705f; margin:0 0 6px; }
+  p.sub { color:#a89a90; margin:0 0 22px; font-size:13px; }
+  h2 { font-size:13px; font-weight:600; letter-spacing:1px; color:#a89a90;
+       margin:30px 0 12px; border-bottom:1px solid #2c2622; padding-bottom:6px; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; }
+  button { background:#e7dfcc; color:#2b2118; border:1px solid #2b2118; border-radius:3px;
+           padding:10px 14px; font:13px/1.35 inherit; cursor:pointer; min-width:200px; text-align:left; }
+  button:hover { background:#f2ead8; }
+  button:active { transform:translateY(1px); }
+  button b { display:block; font-weight:600; margin-bottom:3px; }
+  button span { font-size:11px; color:#5a4d3e; }
+  button.amb { background:#3a3129; color:#d8cfc9; border-color:#5a4d3e; }
+  button.amb:hover { background:#4a3f34; }
+  button.amb span { color:#a89a90; }
+  button.on { background:#e2705f; color:#1c1410; border-color:#e2705f; }
+  .bar { position:fixed; left:0; right:0; bottom:0; background:#1c1815; border-top:1px solid #2c2622;
+         padding:10px 24px; display:flex; gap:18px; align-items:center; font-size:13px; }
+  .bar input[type=range] { width:180px; }
+  .note { border-left:2px solid #6b5334; padding-left:14px; color:#a89a90; font-size:13px; margin-top:28px; }
+  code { color:#c46994; }
+  .tag { display:inline-block; font-size:11px; padding:1px 6px; border-radius:2px;
+         background:#2c2622; color:#a89a90; margin-left:6px; }
+</style>
+</head>
+<body>
+<h1>红渊 · 音效试听</h1>
+<p class="sub">
+  共 28 个：20 个音效 + 8 层氛围。<b>氛围音点一下开始循环，再点一下停</b>（同一时间只放一层）。<br>
+  按 <code>docs/SFX_LIST.md</code> 的描述合成。听完告诉我四选一：太闷 / 太尖 / 太假 / 方向对。
+</p>
+
+<div id="groups"></div>
+
+<div class="note">
+  这是合成音，不是采样音。好处是改一个数字就能重出，不用重新找素材。<br>
+  我听不到声音，只验过频谱（频段分布对不对、循环接缝有没有跳）。所以「好不好听」只能靠你的耳朵。<br>
+  <span class="tag">重要</span> 氛围音是循环的，接缝做了交叉淡化，理论上听不出起点。
+</div>
+
+<div class="bar">
+  <span>音量</span>
+  <input type="range" id="vol" min="0" max="100" value="70">
+  <span id="vollab">70%</span>
+  <label style="margin-left:6px"><input type="checkbox" id="mute"> 静音</label>
+  <span id="status" style="color:#a89a90; margin-left:auto"></span>
+</div>
+
+<script>
+const AC = window.AudioContext || window.webkitAudioContext;
+const ctx = new AC();
+const cache = {};
+
+const GROUPS = [
+  ['卡牌', [
+    ['card.play.attack', '打出攻击牌', '短促，有金属感'],
+    ['card.play.skill',  '打出技能牌', '闷响，像拍在石头上'],
+    ['card.play.power',  '打出能力牌', '低而长的持续感'],
+    ['card.play.cost',   '打出带代价的牌', '「东西被拿走」的抽离声'],
+  ]],
+  ['战斗', [
+    ['combat.start',  '进入战斗', '一下沉底的重音'],
+    ['enemy.hit',     '敌人受击', '闷击，带一点湿'],
+    ['combat.hurt',   '玩家受击', '比 enemy.hit 更钝，贴近耳侧'],
+    ['combat.block',  '获得格挡', '金属盾面轻震'],
+    ['combat.kill',   '敌人死亡', '塌落声，短'],
+  ]],
+  ['状态', [
+    ['state.resonance',    '共振跨阈值', '低频轰鸣，一拍'],
+    ['state.gaze',         '凝视 +1', '极短的沙沙声'],
+    ['state.energy_empty', '能量不够的牌', '空握的一声'],
+  ]],
+  ['界面', [
+    ['ui.click', '点地图节点 / 选职业', '轻石子相碰'],
+    ['ui.page',  '打开 / 合上面板', '纸页翻动'],
+  ]],
+  ['特殊', [
+    ['special.boss_phase',     'Boss 切换阶段', '一声很远的钟'],
+    ['special.world_switch',   '入梦 / 醒来', '水下浮上来 / 沉下去'],
+    ['special.egg',            '彩蛋触发', '一声轻笑规模的短音'],
+    ['special.victory',        '通关结算', '长而低的释放'],
+    ['special.death',          '死亡结算', '一口气呼尽'],
+  ]],
+  ['氛围（循环）', [
+    ['ambience.depth1', '1 地表死寂区', '远处的风、地表电台残响'],
+    ['ambience.depth2', '2 外层冷洞', '滴水、金属冷缩的咔声'],
+    ['ambience.depth3', '3 干旱空洞区', '干燥沙粒摩擦、岩层空腔回声'],
+    ['ambience.depth4', '4 稳定空洞海', '极低频嗡鸣、几乎听不见的合唱'],
+    ['ambience.depth5', '5 热泉裂带', '蒸汽、金属呻吟、远处泵机'],
+    ['ambience.depth6', '6 辐射矿石区', '电流嘶嘶、盖革计数器哒声'],
+    ['ambience.depth7', '7 核心高热区', '心跳般低频脉冲、烧灼声'],
+    ['ambience.depth8', '8 红渊核心', '血声、所有层回声叠在一起'],
+  ]],
+];
+
+const host = document.getElementById('groups');
+GROUPS.forEach(([title, items]) => {
+  const h = document.createElement('h2');
+  h.textContent = title;
+  host.appendChild(h);
+  const row = document.createElement('div');
+  row.className = 'row';
+  items.forEach(([code, desc, hint]) => {
+    const b = document.createElement('button');
+    const isAmb = code.startsWith('ambience.');
+    if (isAmb) b.className = 'amb';
+    b.innerHTML = '<b>' + code + '</b><span>' + desc + ' · ' + hint + '</span>';
+    b.onclick = () => isAmb ? toggleAmb(code, b) : play(code);
+    b.dataset.code = code;
+    row.appendChild(b);
+  });
+  host.appendChild(row);
+});
+
+// ---- 播放 ----
+let master = ctx.createGain();
+master.gain.value = 0.7;
+master.connect(ctx.destination);
+let muted = false;
+
+async function load(name) {
+  if (!cache[name]) {
+    const r = await fetch('sfx/' + name + '.wav');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    cache[name] = await ctx.decodeAudioData(await r.arrayBuffer());
+  }
+  return cache[name];
+}
+
+async function play(code) {
+  const st = document.getElementById('status');
+  try {
+    if (ctx.state === 'suspended') await ctx.resume();
+    const buf = await load(code);
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.connect(master);
+    src.start();
+    st.textContent = '播放：' + code;
+  } catch (e) {
+    st.textContent = '失败：' + e.message;
+    alert('播放失败：' + e.message + '\n（要用 http 打开，不能双击文件）');
+  }
+}
+
+// ---- 氛围循环（同一时间只放一层）----
+let ambSrc = null, ambCode = null;
+async function toggleAmb(code, btn) {
+  const st = document.getElementById('status');
+  if (ambCode === code) { stopAmb(); st.textContent = '停止：' + code; return; }
+  stopAmb();
+  try {
+    if (ctx.state === 'suspended') await ctx.resume();
+    const buf = await load(code);
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.loop = true;
+    src.connect(master);
+    src.start();
+    ambSrc = src; ambCode = code;
+    btn.classList.add('on');
+    st.textContent = '循环中：' + code;
+  } catch (e) {
+    st.textContent = '失败：' + e.message;
+  }
+}
+function stopAmb() {
+  if (ambSrc) { try { ambSrc.stop(); } catch (e) {} ambSrc = null; }
+  if (ambCode) {
+    const b = document.querySelector('button[data-code="' + ambCode + '"]');
+    if (b) b.classList.remove('on');
+    ambCode = null;
+  }
+}
+
+// ---- 音量 ----
+document.getElementById('vol').oninput = (e) => {
+  const v = e.target.value / 100;
+  document.getElementById('vollab').textContent = e.target.value + '%';
+  master.gain.value = muted ? 0 : v;
+};
+document.getElementById('mute').onchange = (e) => {
+  muted = e.target.checked;
+  master.gain.value = muted ? 0 : (document.getElementById('vol').value / 100);
+};
+</script>
+</body>
+</html>

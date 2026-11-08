@@ -1,0 +1,764 @@
+{
+ "meta": {
+  "task": "T64",
+  "entries": 538,
+  "rules": {
+   "mech": [
+    "你(获得|得到|失去)",
+    "(获得|得到)\\s*\\d+",
+    "造成\\s*\\d+\\s*点",
+    "增加\\s*\\d+\\s*点",
+    "恢复\\s*\\d+\\s*点",
+    "减少\\s*\\d+\\s*点",
+    "每回合(增加|获得|回复)",
+    "点(伤害|格挡|生命)"
+   ],
+   "transl": [
+    "的的",
+    "了了",
+    "地地",
+    "被[^。，；]{1,8}所[^。，；]{1,6}[，。]",
+    "作为一个"
+   ]
+  }
+ },
+ "counts": {
+  "total": 0,
+  "byKind": {},
+  "bySet": {}
+ },
+ "problems": [],
+ "imagery": {
+  "threshold": "集合内 >30% 条目含该名词则列出",
+  "counts": {
+   "眼": {
+    "count": 20,
+    "ratio": 0.037
+   },
+   "门": {
+    "count": 14,
+    "ratio": 0.026
+   },
+   "刀": {
+    "count": 0,
+    "ratio": 0
+   },
+   "杯": {
+    "count": 1,
+    "ratio": 0.002
+   },
+   "星": {
+    "count": 8,
+    "ratio": 0.015
+   },
+   "蛇": {
+    "count": 0,
+    "ratio": 0
+   },
+   "玫瑰": {
+    "count": 0,
+    "ratio": 0
+   },
+   "骷髅": {
+    "count": 0,
+    "ratio": 0
+   },
+   "手": {
+    "count": 56,
+    "ratio": 0.104
+   },
+   "骨": {
+    "count": 14,
+    "ratio": 0.026
+   },
+   "灰": {
+    "count": 21,
+    "ratio": 0.039
+   },
+   "灯": {
+    "count": 16,
+    "ratio": 0.03
+   },
+   "账": {
+    "count": 15,
+    "ratio": 0.028
+   },
+   "壳": {
+    "count": 17,
+    "ratio": 0.032
+   },
+   "水": {
+    "count": 50,
+    "ratio": 0.093
+   },
+   "火": {
+    "count": 27,
+    "ratio": 0.05
+   },
+   "历": {
+    "count": 14,
+    "ratio": 0.026
+   },
+   "印": {
+    "count": 8,
+    "ratio": 0.015
+   },
+   "苔": {
+    "count": 5,
+    "ratio": 0.009
+   },
+   "雪": {
+    "count": 2,
+    "ratio": 0.004
+   }
+  },
+  "hot": []
+ },
+ "names": {
+  "dupNames": [],
+  "familyNames": [
+   {
+    "set": "cards_diver",
+    "a": "dive_0009:聚能枪（双管）",
+    "b": "dive_0031:聚能枪（过热）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0009:聚能枪（双管）",
+    "b": "dive_0054:聚能枪（超载）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0009:聚能枪（双管）",
+    "b": "dive_0069:聚能枪（三管）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0022:硬矿钻（重型）",
+    "b": "dive_0049:硬矿钻（手持）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0026:震髓装药",
+    "b": "dive_0067:震髓残响"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0028:震频器（校准）",
+    "b": "dive_0041:震频器（并联）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0028:震频器（校准）",
+    "b": "dive_0051:震频器（微型）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0031:聚能枪（过热）",
+    "b": "dive_0054:聚能枪（超载）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0031:聚能枪（过热）",
+    "b": "dive_0069:聚能枪（三管）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0032:曜元（缓释）",
+    "b": "dive_0059:曜元（空腹）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0032:曜元（缓释）",
+    "b": "dive_0066:曜元（高浓）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0038:氧气再生器（满压）",
+    "b": "dive_0050:氧气再生器（便携）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0041:震频器（并联）",
+    "b": "dive_0051:震频器（微型）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0043:曜元（共振型）",
+    "b": "dive_0076:曜元（夜班型）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0054:聚能枪（超载）",
+    "b": "dive_0069:聚能枪（三管）"
+   },
+   {
+    "set": "cards_diver",
+    "a": "dive_0059:曜元（空腹）",
+    "b": "dive_0066:曜元（高浓）"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0003:震语：压息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0004:震语：回响"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0005:震语：双声"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0008:震语：问地"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0009:震语：断脉"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0010:震语：三震"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0013:震语：崩齿"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0017:震语：焚名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0023:震语：沸息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0024:震语：熔名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0027:震语：明目"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0030:震语：照骨"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0032:震语：引流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0034:震语：断流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0041:震语：淡忘"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0042:震语：断忆"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0046:震语：舍字"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0048:震语：连震"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0050:震语：传温"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0051:震语：润喉"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0052:震语：合鸣"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0053:震语：五声"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0055:震语：直视"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0056:震语：回望"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0061:震语：数息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0062:震语：叩问"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0070:震语：低语"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0071:震语：试井"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0072:震语：回礼"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0076:震语：双唱"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0001:震语：听骨",
+    "b": "trem_0080:震语：长夜"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0004:震语：回响"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0005:震语：双声"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0008:震语：问地"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0009:震语：断脉"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0010:震语：三震"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0013:震语：崩齿"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0017:震语：焚名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0023:震语：沸息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0024:震语：熔名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0027:震语：明目"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0030:震语：照骨"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0032:震语：引流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0034:震语：断流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0041:震语：淡忘"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0042:震语：断忆"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0046:震语：舍字"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0048:震语：连震"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0050:震语：传温"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0051:震语：润喉"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0052:震语：合鸣"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0053:震语：五声"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0055:震语：直视"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0056:震语：回望"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0061:震语：数息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0062:震语：叩问"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0070:震语：低语"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0071:震语：试井"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0072:震语：回礼"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0076:震语：双唱"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0003:震语：压息",
+    "b": "trem_0080:震语：长夜"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0005:震语：双声"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0008:震语：问地"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0009:震语：断脉"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0010:震语：三震"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0013:震语：崩齿"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0017:震语：焚名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0023:震语：沸息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0024:震语：熔名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0027:震语：明目"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0030:震语：照骨"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0032:震语：引流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0034:震语：断流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0041:震语：淡忘"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0042:震语：断忆"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0046:震语：舍字"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0048:震语：连震"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0050:震语：传温"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0051:震语：润喉"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0052:震语：合鸣"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0053:震语：五声"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0055:震语：直视"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0056:震语：回望"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0061:震语：数息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0062:震语：叩问"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0070:震语：低语"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0071:震语：试井"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0072:震语：回礼"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0076:震语：双唱"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0004:震语：回响",
+    "b": "trem_0080:震语：长夜"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0008:震语：问地"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0009:震语：断脉"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0010:震语：三震"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0013:震语：崩齿"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0017:震语：焚名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0023:震语：沸息"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0024:震语：熔名"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0027:震语：明目"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0030:震语：照骨"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0032:震语：引流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0034:震语：断流"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0041:震语：淡忘"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0042:震语：断忆"
+   },
+   {
+    "set": "cards_tremor",
+    "a": "trem_0005:震语：双声",
+    "b": "trem_0046:震语：舍字"
+   }
+  ],
+  "nearNames": [
+   {
+    "set": "cards_tremor",
+    "a": "trem_0018:静日",
+    "b": "trem_0020:静日触杖"
+   },
+   {
+    "set": "cards_cangmin",
+    "a": "cng_0037:影语",
+    "b": "cng_0040:墟语"
+   },
+   {
+    "set": "enemies",
+    "a": "enemy_d2_03:墟蟹",
+    "b": "enemy_d8_01:墟蛹"
+   },
+   {
+    "set": "enemies",
+    "a": "enemy_d2_03:墟蟹",
+    "b": "enemy_d8_06:墟腔"
+   },
+   {
+    "set": "enemies",
+    "a": "enemy_d4_01:红腔鱼",
+    "b": "enemy_d4_05:盲眼红腔鱼"
+   },
+   {
+    "set": "enemies",
+    "a": "enemy_d4_06:光蛭母",
+    "b": "enemy_d4_07:浮光水母"
+   },
+   {
+    "set": "enemies",
+    "a": "enemy_d5_03:硫塔菌",
+    "b": "enemy_d5_08:硫雾囊菌"
+   },
+   {
+    "set": "enemies",
+    "a": "enemy_d8_01:墟蛹",
+    "b": "enemy_d8_06:墟腔"
+   }
+  ]
+ }
+}

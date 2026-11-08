@@ -1,0 +1,19 @@
+ 5507 | function startCombat(run, enemyDefs) {
+ 5523 | buffs: {},                // strength / dexterity / thorns / regen ...
+ 5524 | debuffs: {},
+ 5591 | function beginTurn(C) {
+ 5660 | if (C.buffs.regen) healPlayer(C, C.buffs.regen);
+ 5859 | // 导致 strength/dexterity/regenerate/thorns/gaze_reduce 全部取默认值（力量 2 变 1 之类）。
+ 5869 | case 'regenerate': C.buffs.regen = (C.buffs.regen || 0) + (V !== undefined ? V : 2); break;
+ 6376 | startCombat: startCombat,
+ 6412 | if (['burn', 'poison', 'strength', 'dexterity', 'regenerate', 'thorns', 'gaze_reduce'].indexOf(s.code) >= 0) {
+ 6653 | startCombatFlow(picks);
+ 6891 | function startCombatFlow(defs) {
+ 6893 | C = RedAbyss.startCombat(run, defs);
+ 8131 | dexterity: '敏捷', regenerate: '再生', thorns: '荆棘', resonance_lock: '共振锁定',
+ 8790 | if (type === 'elite') { startCombatFlow(pickEnemies(B.elitePool, n.band, 'elite')); return; }
+ 8791 | if (type === 'boss' || type === 'finalBoss') { startCombatFlow(pickEnemies(B.bossPool, n.band, 'boss')); return; }
+ 8792 | startCombatFlow(pickEnemies(B.enemyPool, n.band, 'normal'));
+ 8862 | startCombatFlow(pickEnemies(B.enemyPool, n.band, 'normal', want));
+ 8868 | startCombatFlow(pickEnemies(B.elitePool, n.band, 'elite'));
+ 8874 | startCombatFlow(pickEnemies(B.bossPool, n.band, 'boss'));

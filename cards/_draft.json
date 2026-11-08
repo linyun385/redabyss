@@ -1,0 +1,531 @@
+{
+ "ops": [
+  {
+   "op": "edit",
+   "id": "dive_0058",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0058",
+    "name": "圣火武器（殉爆）",
+    "class": "diver",
+    "type": "attack",
+    "rarity": "rare",
+    "veins": [
+     "heat"
+    ],
+    "energy": 3,
+    "effect": {
+     "damage": 30,
+     "hits": 1,
+     "target": "all"
+    },
+    "cost_type": "lock",
+    "cost_text": "火漆烧穿了封皮。这一次没有人按住它。",
+    "flavor": "它想快点。你按住了它，又松开。",
+    "upgrade": {
+     "name_suffix": "·Ⅱ",
+     "effect": {
+      "damage": 42
+     },
+     "flavor_add": "这一次你先松的手。"
+    }
+   }
+  },
+  {
+   "op": "edit",
+   "id": "u_0007",
+   "cls": "shared",
+   "card": {
+    "id": "u_0007",
+    "name": "传声钢缆",
+    "class": "shared",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+     "light",
+     "tremor"
+    ],
+    "energy": 1,
+    "effect": {
+     "block": 5,
+     "draw": 1,
+     "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "一头接在灯上，一头接在岩层里。两边都以为对方在说话。",
+    "upgrade": {
+     "name_suffix": "·并联",
+     "effect": {
+      "block": 7,
+      "draw": 1
+     },
+     "flavor_add": "第二根缆是多余的。多余的东西最结实。"
+    }
+   }
+  },
+  {
+   "op": "add",
+   "id": "u_0017",
+   "cls": "shared",
+   "card": {
+    "id": "u_0017",
+    "name": "命运的旧日左轮",
+    "class": "shared",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+     "light"
+    ],
+    "energy": 1,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "他可能是坏的。",
+    "design_note": "进行一次判定，50%概率造成5点伤害，如果成功，再执行一次，最多4次",
+    "upgrade_note": "进行一次判定，50%概率造成6点伤害，如果成功，再执行一次，最多5次"
+   }
+  },
+  {
+   "op": "add",
+   "id": "u_0018",
+   "cls": "shared",
+   "card": {
+    "id": "u_0018",
+    "name": "追逐光",
+    "class": "shared",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [],
+    "energy": 0,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "窥见光的幻像",
+    "design_note": "恢复一点能量",
+    "upgrade_note": "恢复一点能量，抽一张牌"
+   }
+  },
+  {
+   "op": "add",
+   "id": "u_0019",
+   "cls": "shared",
+   "card": {
+    "id": "u_0019",
+    "name": "旧日的回响",
+    "class": "shared",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+     "light"
+    ],
+    "energy": 1,
+    "effect": {},
+    "cost_type": "custom",
+    "cost_text": "抓取过去，代价由未来支付",
+    "flavor": "",
+    "design_note": "从弃牌堆取回一张牌，如果取回的牌属性为光，则消耗减少1，代价：超忆，下回合开始能量减1",
+    "upgrade_note": "从弃牌堆取回一张牌，能量加1，如果取回的牌属性为光，则消耗减少1，代价：超忆，下回合开始能量减1"
+   }
+  },
+  {
+   "op": "add",
+   "id": "u_0020",
+   "cls": "shared",
+   "card": {
+    "id": "u_0020",
+    "name": "模仿手",
+    "class": "shared",
+    "type": "power",
+    "rarity": "special",
+    "veins": [],
+    "energy": 1,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "选择一个敌方的意图，实现其效果并指定对象释放",
+    "upgrade_note": ""
+   }
+  },
+  {
+   "op": "add",
+   "id": "u_0021",
+   "cls": "shared",
+   "card": {
+    "id": "u_0021",
+    "name": "可控地震",
+    "class": "shared",
+    "type": "attack",
+    "rarity": "common",
+    "veins": [],
+    "energy": 3,
+    "effect": {},
+    "cost_type": "custom",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "对所有敌人造成25点伤害，自己受到10点伤害",
+    "upgrade_note": ""
+   }
+  },
+  {
+   "op": "add",
+   "id": "anm_0051",
+   "cls": "anmin",
+   "card": {
+    "id": "anm_0051",
+    "name": "机械增生",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "uncommon",
+    "veins": [
+     "light"
+    ],
+    "energy": 0,
+    "effect": {},
+    "cost_type": "lock",
+    "cost_text": "",
+    "flavor": "像血肉一样膨胀",
+    "design_note": "打出后，本回合内你每使用一张牌，获得一点零件",
+    "upgrade_note": "能量+1，打出后，本回合内你每使用一张牌，获得一点零件",
+    "core": true,
+    "play_idea": "在单回合内尽可能的打出更多的牌，从而实现零件的高收益，然后配合把零件换成各项数值的牌，实现数值的膨胀"
+   }
+  },
+  {
+   "op": "add",
+   "id": "anm_0052",
+   "cls": "anmin",
+   "card": {
+    "id": "anm_0052",
+    "name": "子代理",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+     "mineral"
+    ],
+    "energy": 3,
+    "effect": {},
+    "cost_type": "vitality",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "消耗5零件，创造一个10血3攻的己方生物，其意图是每回合发动一次攻击，该生物优先承伤，登场后每回合额外消耗1点零件，增加5血，2攻。",
+    "upgrade_note": "消耗5零件，创造一个15血5攻的己方生物，其意图是每回合发动一次攻击，该生物优先承伤，登场后每回合额外消耗1点零件，增加6血，3攻。",
+    "core": true,
+    "play_idea": "在敌方不攻击回合使用，此后通过各种牌保证此卡的生存并增加其能力，最终造出一个高伤的高血的友方单位，在前期，也可以有效的当一张防止掉血的牌用"
+   }
+  },
+  {
+   "op": "add",
+   "id": "anm_0053",
+   "cls": "anmin",
+   "card": {
+    "id": "anm_0053",
+    "name": "悬浮体",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "uncommon",
+    "veins": [
+     "tremor"
+    ],
+    "energy": 1,
+    "effect": {},
+    "cost_type": "vitality",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "此卡无法受到加成，消耗3零件使用，每回合提供一种随机效果（回3血，造成3伤害，提供5点护盾，抽一张牌、获得一点能量等）",
+    "upgrade_note": "此卡无法受到加成，消耗1零件使用，每回合提供一种随机效果（回3血，造成3伤害，提供5点护盾，抽一张牌、获得一点能量等）",
+    "core": true,
+    "play_idea": "等回合不断使用此卡，使得单回合内获得大量的随机效果，达成不用出牌也能赢的局面"
+   }
+  },
+  {
+   "op": "add",
+   "id": "anm_0054",
+   "cls": "anmin",
+   "card": {
+    "id": "anm_0054",
+    "name": "武器试验",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+     "mineral"
+    ],
+    "energy": 1,
+    "effect": {},
+    "cost_type": "lock",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "损耗3点零件，造成3点伤害，增加一点永久力量",
+    "upgrade_note": "损耗3点零件，造成3点伤害，增加两点永久力量",
+    "core": true,
+    "play_idea": "尽可能早的把此卡加入牌库，通过不断的战斗，获得高额力量加成。"
+   }
+  },
+  {
+   "op": "add",
+   "id": "anm_0055",
+   "cls": "anmin",
+   "card": {
+    "id": "anm_0055",
+    "name": "有机质发电",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "common",
+    "veins": [
+     "heat"
+    ],
+    "energy": 3,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "他们称之为残忍，我们称之为高效。",
+    "design_note": "损耗5零件，使用后，敌方永久获得虚弱、脆弱，如果敌方使用攻击，则获得1能量，如果敌方使用防御，则额外抽一张牌（本场战斗永久）",
+    "upgrade_note": "损耗3零件，使用后，敌方永久获得虚弱、脆弱，如果敌方使用攻击，则获得1能量，如果敌方使用防御，则额外抽一张牌（本场战斗永久）",
+    "core": true,
+    "play_idea": "给敌方上duff，给自己加收益，从而使得自己打得更顺。"
+   }
+  },
+  {
+   "op": "add",
+   "id": "anm_0056",
+   "cls": "anmin",
+   "card": {
+    "id": "anm_0056",
+    "name": "重铸",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [],
+    "energy": 0,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "水",
+    "flavor": "",
+    "design_note": "消耗1零件，抽一张牌，获得1点能量",
+    "upgrade_note": "消耗1零件，抽两张牌，获得1点能量",
+    "core": true,
+    "play_idea": "简单的轮转核心，本质上是用零件换能量和抽牌"
+   }
+  },
+  {
+   "op": "add",
+   "id": "anm_0057",
+   "cls": "anmin",
+   "card": {
+    "id": "anm_0057",
+    "name": "更新换代",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+     "water"
+    ],
+    "energy": 1,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "抽一张牌，弃掉所有牌，获得牌数量的零件。",
+    "upgrade_note": "抽一张牌，加一点能量，弃掉所有牌，获得牌数量的零件。",
+    "core": true,
+    "play_idea": "在合适的回合弃牌，换取零件收益"
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0083",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0083",
+    "name": "帝星毁灭者",
+    "class": "diver",
+    "type": "attack",
+    "rarity": "common",
+    "veins": [
+     "light"
+    ],
+    "energy": 10,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "对全体敌方造成25点伤害，无视护甲，在手牌中时，你每使用一张牌，此卡能量消耗减1",
+    "upgrade_note": "对全体敌方造成40点伤害，无视护甲，在手牌中时，你每使用一张牌，此卡能量消耗减1",
+    "core": true,
+    "play_idea": "快速过牌，降低费用，让此卡能被打出（配合水牌轮转，或者震的随机性）"
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0084",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0084",
+    "name": "胆大妄为",
+    "class": "diver",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+     "light"
+    ],
+    "energy": 0,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "本回合所有手牌费减1，同时，每使用一张手牌，获得1凝视",
+    "upgrade_note": "抽一张牌，本回合所有手牌费减1，同时，每使用一张手牌，获得1凝视",
+    "core": true,
+    "play_idea": "让玩家再打出此牌后就必须考虑每次都更高效快速的解决战斗，以防止敌方凝视带来的增益"
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0085",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0085",
+    "name": "联合科技武器",
+    "class": "diver",
+    "type": "attack",
+    "rarity": "common",
+    "veins": [
+     "light"
+    ],
+    "energy": 1,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "此卡使用后触发本回合最后使用的3张攻击卡的效果",
+    "upgrade_note": "能量消耗减1，此卡使用后触发本回合最后使用的3张攻击卡的效果",
+    "core": true,
+    "play_idea": "让玩家叠强力攻击卡，一回合打出爆发"
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0086",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0086",
+    "name": "殖民者的补给",
+    "class": "diver",
+    "type": "power",
+    "rarity": "rare",
+    "veins": [
+     "water"
+    ],
+    "energy": 0,
+    "effect": {},
+    "cost_type": "lock",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "从弃牌堆加入一张卡到手牌，从抽牌堆加入一张卡到手牌，这两张卡消耗减1.",
+    "upgrade_note": "从弃牌堆加入一张卡到手牌，从抽牌堆加入一张卡到手牌，这两张卡消耗减1，复制一张自己洗入牌库（具有一次性属性）",
+    "core": true,
+    "play_idea": "简单的快速赚牌，实现单回合的高效运作"
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0087",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0087",
+    "name": "粘性火焰",
+    "class": "diver",
+    "type": "attack",
+    "rarity": "rare",
+    "veins": [
+     "heat"
+    ],
+    "energy": 0,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "造成2点灼烧，但这份灼烧永久存在。",
+    "upgrade_note": "造成4点灼烧，但这份灼烧永久存在。",
+    "core": true,
+    "play_idea": "打出此卡，构到敌方被烧死"
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0088",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0088",
+    "name": "古怪的帝国科学研究",
+    "class": "diver",
+    "type": "power",
+    "rarity": "rare",
+    "veins": [
+     "tremor"
+    ],
+    "energy": 2,
+    "effect": {},
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "在以下效果中选择2项触发（造成10点伤害，回复5血，抽一张牌，增加一点力量，获得3点能量）",
+    "upgrade_note": "在以下效果中选择3项触发（造成10点伤害，回复5血，抽一张牌，增加一点力量，获得3点能量）",
+    "core": true,
+    "play_idea": ""
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0089",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0089",
+    "name": "追逐地狱",
+    "class": "diver",
+    "type": "attack",
+    "rarity": "rare",
+    "veins": [
+     "mineral"
+    ],
+    "energy": 3,
+    "effect": {},
+    "cost_type": "mark",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "弃牌堆每有一张牌，力量+1，回复1血",
+    "upgrade_note": "弃牌堆每有一张牌，力量+1，",
+    "core": true,
+    "play_idea": "把牌组做厚，一次使用此卡获得高效增益。"
+   }
+  },
+  {
+   "op": "add",
+   "id": "dive_0090",
+   "cls": "diver",
+   "card": {
+    "id": "dive_0090",
+    "name": "研究者",
+    "class": "diver",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+     "mineral"
+    ],
+    "energy": 3,
+    "effect": {},
+    "cost_type": "lock",
+    "cost_text": "",
+    "flavor": "",
+    "design_note": "本场战斗回合开始额外+1能量，获得再生+5，本局游戏每到一个深度层则再生额外+1",
+    "upgrade_note": "本场战斗回合开始额外+1能量，抽一张牌，获得再生+5，本局游戏每到一个深度层则再生额外+1",
+    "core": true,
+    "play_idea": "在合适的时机打出，获得加成"
+   }
+  }
+ ],
+ "updated": "2026-11-08 00:03:57"
+}

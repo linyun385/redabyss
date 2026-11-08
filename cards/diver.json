@@ -1,0 +1,1639 @@
+[
+ {
+  "id": "dive_0001",
+  "name": "光导透镜（残）",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "vitality",
+  "cost_text": "你的手开始透光。",
+  "flavor": "镜片裂了一道。裂的那道看得更清楚。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 2
+   },
+   "flavor_add": "镜片换过了。它还认得你的眼睛。"
+  }
+ },
+ {
+  "id": "dive_0002",
+  "name": "聚能枪",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 10,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "填弹的时候它自己热了。这里没有火。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "damage": 14
+   },
+   "flavor_add": "你把撞针磨短了一点。它出膛更快。"
+  }
+ },
+ {
+  "id": "dive_0003",
+  "name": "曜元",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 2,
+   "target": "self",
+   "special": [
+    {
+     "code": "exhaust"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "药液是亮的。管壁上留着别人的指纹。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "draw": 2,
+    "special": []
+   },
+   "flavor_add": "药效过了还在。这一次它不走了。"
+  }
+ },
+ {
+  "id": "dive_0004",
+  "name": "光苔矿培植舱",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 8,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "绿光照在护板上。苔沿着铆钉排成长列，一列不落。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 12
+   },
+   "flavor_add": "你把舱壁的裂缝堵严了。绿色在里面越养越深。"
+  }
+ },
+ {
+  "id": "dive_0005",
+  "name": "氧气再生器",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "换下来的滤芯还温着。新的那只会哼另一支曲子。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "block": 7,
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "滤芯换成了新批次的。呼吸这件事被它包了。"
+  }
+ },
+ {
+  "id": "dive_0006",
+  "name": "渊光重工·工作灯",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 3,
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "灯照到哪里，哪里就算地面。照明范围写在合同附件里。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "block": 5
+   },
+   "flavor_add": "灯罩加固过。你的领土暂时不再收缩。"
+  }
+ },
+ {
+  "id": "dive_0007",
+  "name": "渊光重工·导光索",
+  "class": "diver",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "dexterity",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "红光在索上走得比人快。它从不回头。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "红光在索上排好了队。一个都不许插队。"
+  }
+ },
+ {
+  "id": "dive_0008",
+  "name": "红渊研究院·数据回传",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 2,
+   "target": "self"
+  },
+  "cost_type": "memory",
+  "cost_text": "回传清单把你的童年标成了冗余数据。",
+  "flavor": "传输条走完。你的童年少了一条巷子。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 3
+   },
+   "flavor_add": "清单被退回了一次。这次他们只抽走别人的东西。",
+   "cost_type": "none"
+  }
+ },
+ {
+  "id": "dive_0011",
+  "name": "辐射弹",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 10,
+   "hits": 1,
+   "target": "all",
+   "resonance_gain": 4,
+   "gaze_cost": 3
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "弹体上有三个签章。没有一个是收尾的。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "damage": 14
+   },
+   "flavor_add": "封条撕掉了。三个部门都假装没看见。"
+  }
+ },
+ {
+  "id": "dive_0012",
+  "name": "轨道炮支援",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 3,
+  "effect": {
+   "damage": 24,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "上面的人按了按钮。他们不需要看见你。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 34
+   },
+   "flavor_add": "弹着点画在你的影子上。这算为你申请的。"
+  }
+ },
+ {
+  "id": "dive_0013",
+  "name": "硬矿钻",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 0,
+  "effect": {
+   "damage": 5,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "钻头换过三次。你的骨头一次都没换过，还是原来的硬法。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "damage": 7
+   },
+   "flavor_add": "钻头换了新合金。还是比你的骨头年轻。"
+  }
+ },
+ {
+  "id": "dive_0014",
+  "name": "震髓探测器",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 1,
+   "resonance_gain": 2,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "探针收回来，尖上是暗红的。它有脉搏。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "resonance_gain": 3
+   },
+   "flavor_add": "探针磨尖了。带回来的东西更烫。"
+  }
+ },
+ {
+  "id": "dive_0015",
+  "name": "星髓矿业·爆破执照",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 12,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "lock",
+  "cost_text": "执照每层只批一次。",
+  "flavor": "第七章要求默哀十秒。你数到三就开始了。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "damage": 17
+   },
+   "flavor_add": "第七章被划掉重写过。哀悼改成了装填。"
+  }
+ },
+ {
+  "id": "dive_0016",
+  "name": "共振抑制仪",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 6,
+   "target": "self",
+   "special": [
+    {
+     "code": "resonance_lock"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "机器嗡了一声。有个东西退了一步。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 9
+   },
+   "flavor_add": "嗡声调低半度。退后一步的东西又退了一步。"
+  }
+ },
+ {
+  "id": "dive_0017",
+  "name": "星髓矿业·深地车",
+  "class": "diver",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "strength",
+     "value": 1
+    },
+    {
+     "code": "dexterity",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "仪表盘贴着一张孩子的画。画的是上面。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "仪表盘上的画换了。新的那张画的是车。"
+  }
+ },
+ {
+  "id": "dive_0018",
+  "name": "墟盐",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 9,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "mark",
+  "cost_text": "白色溶进红光里。有什么把它记下了。",
+  "flavor": "你按规程尝了一点。规程没说不能咽，你也没咽。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 13
+   },
+   "flavor_add": "盐压成了块。苦味停得更久，你不再计较。"
+  }
+ },
+ {
+  "id": "dive_0019",
+  "name": "抗共振司·锚桩",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "target": "self",
+   "special": [
+    {
+     "code": "thorns",
+     "value": 3
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "桩顶的灯转成红的。岩层忍住了。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 7
+   },
+   "flavor_add": "桩顶的灯换了常亮的。岩层习惯了。"
+  }
+ },
+ {
+  "id": "dive_0020",
+  "name": "黑曜采掘·加班条例",
+  "class": "diver",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "strength",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "vitality",
+  "cost_text": "合同第三十一条：身体属于公司。",
+  "flavor": "念到第三十一条，你的指甲透明了。没有人停下来。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "第三十一条加了附则。身体也属于加班。"
+  }
+ },
+ {
+  "id": "dive_0022",
+  "name": "硬矿钻（重型）",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 13,
+   "hits": 1,
+   "target": "single",
+   "special": [
+    {
+     "code": "frail",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "它啃硬矿的声音从牙根进来。你俩啃的是同一块。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "damage": 18,
+    "special": [
+     {
+      "code": "frail",
+      "turns": 3
+     }
+    ]
+   },
+   "flavor_add": "它啃东西的声音变了。你的牙先听出来的。"
+  }
+ },
+ {
+  "id": "dive_0023",
+  "name": "抗共振司·静默规程",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 2,
+  "effect": {
+   "block": 12,
+   "target": "self",
+   "special": [
+    {
+     "code": "resonance_lock"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "规程生效之后，心跳得先打报告。批下来的那部分才许响。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 17
+   },
+   "flavor_add": "规程补了附录。心跳也被批进了静默范围。"
+  }
+ },
+ {
+  "id": "dive_0024",
+  "name": "深红资源集团·钻探平台",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 3,
+  "effect": {
+   "damage": 10,
+   "hits": 3,
+   "target": "single",
+   "gaze_cost": 4
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "打桩声传到地表。有人在那儿听了一辈子。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 13
+   },
+   "flavor_add": "桩打得更密。地表的人以为地震变多了。"
+  }
+ },
+ {
+  "id": "dive_0025",
+  "name": "震频器",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 0,
+  "effect": {
+   "resonance_gain": 2,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "指针停在两个刻度之间。哪边都不是给你的。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "resonance_gain": 3
+   },
+   "flavor_add": "指针焊死在一个刻度上。那个刻度在下面。"
+  }
+ },
+ {
+  "id": "dive_0026",
+  "name": "震髓装药",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 14,
+   "hits": 1,
+   "target": "single",
+   "resonance_cost": 5
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "它把振动吃进去，再吐出来。吐出来的部分不认人。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "damage": 19
+   },
+   "flavor_add": "装药重新压过。吐出来的部分开始认人。"
+  }
+ },
+ {
+  "id": "dive_0028",
+  "name": "震频器（校准）",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "resonance_gain": 4,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "校准之后只指一个方向。向下。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "resonance_gain": 6
+   },
+   "flavor_add": "校准了两次。现在它只指向更下面。"
+  }
+ },
+ {
+  "id": "dive_0029",
+  "name": "红渊研究院·震谱仪",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "draw": 3,
+   "target": "self",
+   "resonance_cost": 8
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "谱线上有一段很规律的波。注释写着：设备干扰。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 4,
+    "resonance_cost": 6
+   },
+   "flavor_add": "那段波形进了附录。注释改成了：来源未知。"
+  }
+ },
+ {
+  "id": "dive_0030",
+  "name": "抗共振司·镇爆弹",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 3,
+  "effect": {
+   "damage": 10,
+   "hits": 1,
+   "target": "all",
+   "gaze_cost": 3,
+   "special": [
+    {
+     "code": "weak",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "lock",
+  "cost_text": "本层只批这一发。",
+  "flavor": "弹壳上印着守则。第一条：不要去听回声。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 14
+   },
+   "flavor_add": "守则加了第二条：回声也归它听。"
+  }
+ },
+ {
+  "id": "dive_0032",
+  "name": "曜元（缓释）",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 3
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "药效排在后半夜。排班表上没有后半夜。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "flavor_add": "排班表改了。后半夜归你了。"
+  }
+ },
+ {
+  "id": "dive_0033",
+  "name": "圣火武器",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 6,
+   "hits": 1,
+   "target": "single",
+   "special": [
+    {
+     "code": "burn",
+     "value": 3,
+     "turns": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "授权书上的火漆是真的火漆。它烧得很安静。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "damage": 8
+   },
+   "flavor_add": "火漆换了新的。授权在燃烧中续期。"
+  }
+ },
+ {
+  "id": "dive_0034",
+  "name": "反走私局·焚烧记录",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "energy": 2,
+  "effect": {
+   "target": "all",
+   "special": [
+    {
+     "code": "burn",
+     "value": 5,
+     "turns": 3
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "没收品烧起来的颜色不对。记录上写的是标准红。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "special": [
+     {
+      "code": "burn",
+      "value": 2,
+      "turns": 3
+     }
+    ]
+   },
+   "flavor_add": "记录改成了深红。这次没人反对。"
+  }
+ },
+ {
+  "id": "dive_0035",
+  "name": "深红资源集团·地热井口",
+  "class": "diver",
+  "type": "power",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "energy": 2,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "strength",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "井口的风往上吹。你在风里站了很久，没有出汗。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "风更急了。旧铁的味道里多了点新的。"
+  }
+ },
+ {
+  "id": "dive_0037",
+  "name": "红渊研究院·水样档案",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 1,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 3
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "编号靠后的水样没有检测人签名。纸是湿的。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "draw": 2
+   },
+   "flavor_add": "最后一页写上了名字。字迹不是你的。"
+  }
+ },
+ {
+  "id": "dive_0038",
+  "name": "氧气再生器（满压）",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "water"
+  ],
+  "energy": 2,
+  "effect": {
+   "block": 8,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 4
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "满压时机器会哼一支不成调的曲子。后来你也会哼了。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 12
+   },
+   "flavor_add": "曲子哼全了。后半段是你自己编的。"
+  }
+ },
+ {
+  "id": "dive_0039",
+  "name": "矿票",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "special",
+  "veins": [],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "票面编号比你的小。签字的人没有下来。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 2
+   },
+   "flavor_add": "票面重新印过。编号栏空着，等你填。"
+  }
+ },
+ {
+  "id": "dive_0042",
+  "name": "震髓探测器（阵列）",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "resonance_gain": 5,
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "十二根探针一起扎下去。岩层抖了一下，像被挠到痒处。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "resonance_gain": 7
+   },
+   "flavor_add": "第十三根探针是自己长出来的。"
+  }
+ },
+ {
+  "id": "dive_0044",
+  "name": "抗共振司·导波索",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "resonance_gain": 4,
+   "block": 5,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "索把振动引向你指定的地方。规程没写不能指向自己。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 7
+   },
+   "flavor_add": "索换了粗的。振动被你攥在手里。"
+  }
+ },
+ {
+  "id": "dive_0046",
+  "name": "星髓矿业·深部震源",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 36,
+   "hits": 1,
+   "target": "single",
+   "resonance_cost": 15
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "半条矿道的振动一次放完。放完之后，那里的安静有了重量。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 48
+   },
+   "flavor_add": "你攒了整整一层。放完之后，更下面安静了。"
+  }
+ },
+ {
+  "id": "dive_0047",
+  "name": "深红资源集团·谐振井",
+  "class": "diver",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "resonance_gain": 6,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "井打通了三层。下面传上来的东西，比报告里多。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "resonance_gain": 9
+   },
+   "flavor_add": "井又深了一层。传上来的东西学会了排队。"
+  }
+ },
+ {
+  "id": "dive_0050",
+  "name": "氧气再生器（便携）",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 0,
+  "effect": {
+   "block": 3,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "说明书写着：不保证供氧，只保证你还想呼吸。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 5
+   },
+   "flavor_add": "说明书换了一版：保证你还想呼吸。"
+  }
+ },
+ {
+  "id": "dive_0052",
+  "name": "光苔矿（盆栽）",
+  "class": "diver",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "dexterity",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "车里的位置给了它。它把叶子的方向调成了下面。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "车里的位置不够了。你把它抱在腿上。"
+  }
+ },
+ {
+  "id": "dive_0053",
+  "name": "渊光重工·备用电源",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 3,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "「真的不能用」怎么判断。条例没说。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "draw": 4
+   },
+   "flavor_add": "「真的不能用」的判例多了一条。你那条在内。"
+  }
+ },
+ {
+  "id": "dive_0054",
+  "name": "聚能枪（超载）",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 16,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "vitality",
+  "cost_text": "枪管红透了。你的指节比昨天更透明。",
+  "flavor": "后坐力从骨缝里进去。你的一部分也算弹药。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "damage": 22
+   },
+   "flavor_add": "指节透光的地方包了布。弹药还是要人来当。"
+  }
+ },
+ {
+  "id": "dive_0055",
+  "name": "辐射弹（裸装）",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 14,
+   "hits": 1,
+   "target": "all"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "去掉防护壳，装药多一半。运它的人走在最前面。",
+  "upgrade": {
+   "name_suffix": "·残",
+   "effect": {
+    "damage": 19
+   },
+   "flavor_add": "壳彻底拆了。走在最后的人也交了运费。"
+  }
+ },
+ {
+  "id": "dive_0056",
+  "name": "死亡合同（增补条款）",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 0,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "strength",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "vitality",
+  "cost_text": "附件第七页：乙方同意提前透支。",
+  "flavor": "签字栏下面还有一行小字。你没读。你签得很快。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "你读了那行小字。读完就背下来了。"
+  }
+ },
+ {
+  "id": "dive_0058",
+  "name": "圣火武器（殉爆）",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "energy": 3,
+  "effect": {
+   "damage": 30,
+   "hits": 1,
+   "target": "all"
+  },
+  "cost_type": "vitality",
+  "cost_text": "火漆烧穿了封皮。这一次没有人按住它。",
+  "flavor": "它想快点。你按住了它，又松开。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 42
+   },
+   "flavor_add": "这一次你先松的手。"
+  }
+ },
+ {
+  "id": "dive_0063",
+  "name": "抗共振司·静音瓦",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 2,
+  "effect": {
+   "block": 13,
+   "target": "self"
+  },
+  "cost_type": "lock",
+  "cost_text": "瓦片每层只批一片。",
+  "flavor": "瓦贴上墙的地方，回声绕道走。走之前顿了一下，像记路。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 18
+   },
+   "flavor_add": "贴了两层。绕道的回声迷路了。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0065",
+  "name": "渊光重工·接地缆",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "thorns",
+     "value": 4
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "碰到缆的人会替你疼一下。他们后来都不碰第二下。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "special": [
+     {
+      "code": "thorns",
+      "value": 2
+     }
+    ]
+   },
+   "flavor_add": "缆外皮磨亮了。替你疼的排起了队。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0066",
+  "name": "曜元（高浓）",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "heal": 6,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "药液挂在管壁上，挂了很久。你晃一晃，它慢慢让步。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "heal": 9
+   },
+   "flavor_add": "它还是不想走。你多等了一会。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0067",
+  "name": "震髓残响",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 7,
+   "hits": 1,
+   "target": "single",
+   "resonance_gain": 3
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "打出去的是声音的回执。原件在更下面。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 10
+   },
+   "flavor_add": "回执变成了原件。更下面没收件人。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0068",
+  "name": "深红资源集团·冷却协议",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 6,
+   "heal": 4,
+   "target": "self"
+  },
+  "cost_type": "vitality",
+  "cost_text": "附件第九页：降温期间不计入工龄。",
+  "flavor": "风从协议里吹出来。是凉的，也是批下来的。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "block": 9,
+    "heal": 6
+   },
+   "flavor_add": "不计入的工龄你不再计较。风更凉了。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0069",
+  "name": "聚能枪（三管）",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 7,
+   "hits": 3,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "三根管，零份许可证。它自己批的。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 10
+   },
+   "flavor_add": "第四根管长出来了。你没问。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0070",
+  "name": "回收员的账本",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "resonance_drain": 5,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "账本上的红字没人销。红光那一栏，欠着三笔。",
+  "upgrade": {
+   "name_suffix": "·旧",
+   "effect": {
+    "block": 7,
+    "resonance_drain": 7
+   },
+   "flavor_add": "旧账翻到了红光还不清的那一页。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0071",
+  "name": "渊光重工·灯序表",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "resonance_gain": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "表上排着每盏灯的名字。今晚轮到的两盏，一盏已经灭了。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 1,
+    "resonance_gain": 2
+   },
+   "flavor_add": "灭的那盏被人补了名。补名的人不是你。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0075",
+  "name": "深红资源集团·地契",
+  "type": "power",
+  "rarity": "rare",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 2,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "strength",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "lock",
+  "cost_text": "契书每层只生效一次。",
+  "flavor": "地契写着你站的地方归你。你往下挪，契纸跟着改。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "契纸背面加了一行。这层也归你，死后也一样。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0076",
+  "name": "曜元（夜班型）",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "heal": 4,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "夜班专供。药性跟着太阳走，这里没有太阳。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "heal": 6
+   },
+   "flavor_add": "配方改了。药性开始跟着你走。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0080",
+  "name": "渊光重工·断路闸",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 3,
+   "target": "self"
+  },
+  "cost_type": "lock",
+  "cost_text": "闸每层只拉一次。",
+  "flavor": "拉下闸，灯全灭。灭掉的那部分光去照别人了。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "draw": 4
+   },
+   "flavor_add": "第二次拉闸的时候，闸自己先动了。"
+  },
+  "class": "diver"
+ },
+ {
+  "id": "dive_0081",
+  "name": "气闸的规程",
+  "class": "diver",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [],
+  "energy": 0,
+  "effect": {
+   "block": 4,
+   "target": "self",
+   "special": [
+    {
+     "code": "retain"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "先合，再开，再合。规程留在手里，什么时候开，什么时候算数。"
+ },
+ {
+  "id": "dive_0082",
+  "name": "按规程应答",
+  "class": "diver",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [],
+  "energy": 1,
+  "effect": {
+   "damage": 9,
+   "hits": 1,
+   "target": "single",
+   "gaze_cost": 1
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "编号报得越标准，回音里的东西越清楚。红光也在听。"
+ }
+]

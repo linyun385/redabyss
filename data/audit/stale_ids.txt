@@ -1,0 +1,100 @@
+docs\ART_FAMILIES.md | 58 个失效卡id | anm_0005 anm_0034 anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041
+docs\ART_MAP.md | 58 个失效卡id | anm_0005 anm_0034 anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041
+docs\FINAL_MANIFEST.md | 58 个失效卡id | anm_0005 anm_0034 anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041
+docs\design\T321_REDUNDANCY.md | 58 个失效卡id | anm_0005 anm_0034 anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041
+docs\design\delivery\T340_DELETE_OPS.md | 58 个失效卡id | anm_0005 anm_0034 anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041
+docs\design\recycle\_DISPOSAL.md | 44 个失效卡id | anm_0005 anm_0034 dive_0010 dive_0021 dive_0027 dive_0036 dive_0040 dive_0041 dive_0048 dive_0049 dive_0051 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0079 dive_0083 trem_0007 trem_0008 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041 trem_0042 trem_0048 trem_0049 trem_0053 trem_0054 trem_0063 trem_0064 trem_0065 trem_0068 trem_0072 trem_0073 trem_0074
+docs\design\recycle\深井的回声.md | 38 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041 trem_0042 trem_0048 trem_0049 trem_0051 trem_0053 trem_0054 trem_0062 trem_0063 trem_0064 trem_0065 trem_0068 trem_0072 trem_0073 trem_0074 trem_0077 trem_0079 trem_0081 trem_0083 u_0004
+docs\design\recycle\散落的铅字.md | 37 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041 trem_0042 trem_0048 trem_0049 trem_0051 trem_0053 trem_0054 trem_0062 trem_0063 trem_0064 trem_0065 trem_0068 trem_0072 trem_0073 trem_0074 trem_0077 trem_0079 trem_0081 trem_0083
+docs\design\recycle\活水引泉.md | 37 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041 trem_0042 trem_0048 trem_0049 trem_0051 trem_0053 trem_0054 trem_0062 trem_0063 trem_0064 trem_0065 trem_0068 trem_0072 trem_0073 trem_0074 trem_0077 trem_0079 trem_0081 trem_0083
+docs\design\recycle\共鸣腔.md | 34 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0012 trem_0051 trem_0062 u_0014
+docs\design\recycle\减压舱.md | 34 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0012 trem_0051 trem_0062 u_0017
+docs\design\recycle\守夜人的钟.md | 34 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0012 trem_0051 trem_0062 u_0002
+docs\design\recycle\传声钢缆.md | 33 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0012 trem_0051 trem_0062
+docs\design\recycle\双芯灯管.md | 33 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0012 trem_0051 trem_0062
+docs\design\recycle\虹吸管.md | 33 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0012 trem_0051 trem_0062
+docs\design\recycle\风险合同.md | 33 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083 trem_0012 trem_0051 trem_0062
+docs\design\stream\T335_PRUNE.md | 31 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0010 dive_0027 dive_0031 dive_0036 dive_0040 dive_0043 dive_0045 dive_0049 dive_0057 dive_0059 dive_0062 dive_0072 dive_0074 dive_0077 dive_0078 dive_0079 trem_0012 trem_0021 trem_0041 trem_0051 trem_0062 trem_0063 trem_0065 trem_0077 trem_0079 trem_0081
+docs\content\cards_diver.md | 26 个失效卡id | dive_0009 dive_0010 dive_0021 dive_0027 dive_0031 dive_0036 dive_0040 dive_0041 dive_0043 dive_0045 dive_0048 dive_0049 dive_0051 dive_0057 dive_0059 dive_0060 dive_0061 dive_0062 dive_0064 dive_0072 dive_0073 dive_0074 dive_0077 dive_0078 dive_0079 dive_0083
+docs\content\cards_tremor.md | 26 个失效卡id | trem_0007 trem_0008 trem_0012 trem_0021 trem_0032 trem_0036 trem_0040 trem_0041 trem_0042 trem_0048 trem_0049 trem_0051 trem_0053 trem_0054 trem_0062 trem_0063 trem_0064 trem_0065 trem_0068 trem_0072 trem_0073 trem_0074 trem_0077 trem_0079 trem_0081 trem_0083
+docs\design\recycle\空的手.md | 17 个失效卡id | anm_0005 anm_0034 anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0012 trem_0051 trem_0062 u_0001
+docs\design\recycle\_INDEX.md | 15 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0012 trem_0051 trem_0062 trem_0065
+docs\design\recycle\借来的凝视.md | 15 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0012 trem_0051 trem_0062 u_0015
+docs\design\recycle\倒转圣痕.md | 14 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0012 trem_0051 trem_0062
+docs\design\recycle\越权的批文.md | 14 个失效卡id | anm_0038 cng_0022 cng_0029 cng_0031 dive_0009 dive_0031 dive_0043 dive_0045 dive_0057 dive_0077 dive_0078 trem_0012 trem_0051 trem_0062
+docs\design\stream\T332_MATRIX.md | 14 个失效卡id | anm_0038 dive_0010 dive_0021 dive_0036 dive_0040 dive_0057 dive_0059 dive_0060 dive_0064 trem_0021 trem_0040 trem_0042 trem_0065 trem_0073
+docs\design\stream\T330_STREAMS_TODAY.md | 12 个失效卡id | dive_0010 dive_0021 dive_0036 dive_0057 dive_0060 trem_0021 trem_0042 trem_0051 trem_0054 trem_0065 trem_0068 trem_0074
+docs\design\round2\R2_D3_post_prune.md | 9 个失效卡id | cng_0022 dive_0009 dive_0078 trem_0012 trem_0021 trem_0036 trem_0042 trem_0062 trem_0065
+docs\design\round2\R2_D4_copy_round2.md | 9 个失效卡id | dive_0036 dive_0045 dive_0049 dive_0057 dive_0061 dive_0078 dive_0079 trem_0062 trem_0065
+docs\design\delivery\T341_UNIVERSAL_JSON.md | 8 个失效卡id | trem_0081 u_0001 u_0002 u_0004 u_0005 u_0014 u_0015 u_0017
+docs\design\delivery\T343_ACCEPTANCE.md | 7 个失效卡id | anm_0034 cng_0029 cng_0031 dive_0009 dive_0049 trem_0008 trem_0021
+docs\design\round2\R3_D1_layer_matrix.md | 7 个失效卡id | u_0001 u_0002 u_0004 u_0005 u_0014 u_0015 u_0017
+docs\design\patch\12_diver_protocol.md | 6 个失效卡id | dive_0031 dive_0049 dive_0057 dive_0062 dive_0074 dive_0083
+docs\design\round2\R3_D7_event_universal.md | 6 个失效卡id | u_0001 u_0002 u_0004 u_0005 u_0014 u_0017
+docs\DUP_GROUPS.md | 5 个失效卡id | dive_0072 dive_0074 trem_0036 trem_0041 trem_0062
+docs\design\master\03_ENGINE.md | 5 个失效卡id | u_0001 u_0002 u_0005 u_0014 u_0017
+docs\design\universal\U06_06_feng_xian_he_tong.md | 5 个失效卡id | dive_0031 dive_0049 dive_0062 trem_0048 trem_0049
+docs\design\T320_MECHANISMS.md | 4 个失效卡id | dive_0021 dive_0083 trem_0081 trem_0083
+docs\design\combo\D8_COMBOS.md | 4 个失效卡id | cng_0022 dive_0021 dive_0031 dive_0036
+docs\design\delivery\T342_WEAK_PATHS.md | 4 个失效卡id | dive_0064 u_0002 u_0004 u_0015
+docs\design\round2\R3_D9_ending_universal.md | 4 个失效卡id | u_0001 u_0014 u_0015 u_0017
+docs\ART_LINK_AUDIT.md | 3 个失效卡id | dive_0083 trem_0081 trem_0083
+docs\CONTENT_REGRESSION.md | 3 个失效卡id | dive_0083 trem_0081 trem_0083
+docs\ECO_RELIC_CARD.md | 3 个失效卡id | dive_0083 trem_0081 trem_0083
+docs\VERIFY_NIGHT_20261103.md | 3 个失效卡id | dive_0049 trem_0051 trem_0053
+docs\content\cards_anmin.md | 3 个失效卡id | anm_0005 anm_0034 anm_0038
+docs\content\cards_cangmin.md | 3 个失效卡id | cng_0022 cng_0029 cng_0031
+docs\design\copy2\T340_D4_subtitles.md | 3 个失效卡id | anm_0038 trem_0062 trem_0065
+docs\design\master\00_INDEX.md | 3 个失效卡id | dive_0045 dive_0057 u_0015
+docs\design\patch\05_cangmin_resonance.md | 3 个失效卡id | dive_0041 dive_0051 trem_0049
+docs\design\universal\U01_01_kong_de_shou.md | 3 个失效卡id | dive_0049 trem_0048 u_0001
+docs\design\universal\U04_04_shen_jing_de_hui_sheng.md | 3 个失效卡id | dive_0049 trem_0048 u_0004
+docs\design\universal\U05_05_yu_zhi_de_yang.md | 3 个失效卡id | dive_0049 trem_0048 u_0005
+docs\design\universal\U14_14_gong_ming_qiang.md | 3 个失效卡id | dive_0045 trem_0021 u_0014
+docs\design\universal\U17_17_jian_ya_cang.md | 3 个失效卡id | dive_0057 trem_0021 u_0017
+docs\design\CONFLICTS.md | 2 个失效卡id | dive_0009 dive_0078
+docs\design\patch\01_diver_gaze.md | 2 个失效卡id | dive_0027 u_0015
+docs\design\patch\08_cangmin_burn.md | 2 个失效卡id | trem_0040 trem_0065
+docs\design\patch\10_diver_memory.md | 2 个失效卡id | dive_0048 dive_0064
+docs\design\patch\13_tremor_protocol.md | 2 个失效卡id | trem_0021 trem_0042
+docs\design\round2\R3_D4_art_prompts.md | 2 个失效卡id | u_0001 u_0017
+docs\design\universal\U03_03_hong_xi_guan.md | 2 个失效卡id | dive_0036 dive_0049
+docs\design\universal\U07_07_chuan_sheng_gang_lan.md | 2 个失效卡id | dive_0077 trem_0051
+docs\design\universal\U13_13_san_luo_de_qian_zi.md | 2 个失效卡id | dive_0009 dive_0049
+docs\lesson\04_DATA.md | 2 个失效卡id | dive_9999 trem_0081
+docs\ART_PROMPT_WORKBOOK.md | 1 个失效卡id | dive_0078
+docs\BALANCE_T29.md | 1 个失效卡id | dive_0021
+docs\BALANCE_V3.md | 1 个失效卡id | trem_0068
+docs\FUN_T30.md | 1 个失效卡id | trem_0049
+docs\HANDOFF_ART_20261102b.md | 1 个失效卡id | trem_0072
+docs\PERF.md | 1 个失效卡id | dive_0059
+docs\design\T322_MONOTONY.md | 1 个失效卡id | trem_0008
+docs\design\T323_RULES.md | 1 个失效卡id | dive_0073
+docs\design\_PROGRESS.md | 1 个失效卡id | trem_0081
+docs\design\ending\D9_ENDINGS_NG.md | 1 个失效卡id | u_0015
+docs\design\enemy\D6_THIRTY_SIX.md | 1 个失效卡id | u_0017
+docs\design\lore2\D4_illustrated_entries.md | 1 个失效卡id | trem_0065
+docs\design\master\01_CARDS.md | 1 个失效卡id | u_0001
+docs\design\master\02_STREAMS.md | 1 个失效卡id | u_0015
+docs\design\master\cards\card_02.md | 1 个失效卡id | dive_0009
+docs\design\master\cards\card_08.md | 1 个失效卡id | u_0017
+docs\design\master\cards\card_09.md | 1 个失效卡id | u_0014
+docs\design\master\cards\card_10.md | 1 个失效卡id | u_0005
+docs\design\master\cards\card_11.md | 1 个失效卡id | u_0002
+docs\design\master\cards\card_12.md | 1 个失效卡id | u_0001
+docs\design\patch\03_anmin_resonance.md | 1 个失效卡id | dive_0021
+docs\design\patch\04_tremor_regen.md | 1 个失效卡id | trem_0073
+docs\design\patch\06_diver_burn.md | 1 个失效卡id | trem_0065
+docs\design\patch\07_anmin_burn.md | 1 个失效卡id | trem_0065
+docs\design\round2\R2_D2_weak_path_experience.md | 1 个失效卡id | u_0015
+docs\design\round2\R3_D2_sim_verification.md | 1 个失效卡id | u_0015
+docs\design\round2\R3_D5_world_timeline.md | 1 个失效卡id | trem_0062
+docs\design\stream\T331_UNIVERSAL_POOL.md | 1 个失效卡id | dive_0064
+docs\design\stream\T333_EVENTS.md | 1 个失效卡id | dive_0010
+docs\design\universal\U02_02_shouye_ren_de_zhong.md | 1 个失效卡id | u_0002
+docs\design\universal\U08_08_hui_jin_ce_zhen_yi.md | 1 个失效卡id | trem_0065
+docs\design\universal\U11_11_huo_shui_yin_quan.md | 1 个失效卡id | trem_0040
+docs\design\universal\U12_12_shuang_xin_deng_guan.md | 1 个失效卡id | trem_0065
+docs\design\universal\U15_15_jie_lai_de_ning_shi.md | 1 个失效卡id | u_0015
+docs\lesson\00_MAP.md | 1 个失效卡id | dive_0010
+docs\lesson\02_SYNTAX_BASIC.md | 1 个失效卡id | dive_0010

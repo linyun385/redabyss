@@ -1,0 +1,24 @@
+{
+ "VEIN_CN_raw": " light: '光', water: '水', heat: '热', tremor: '震', mineral: '矿' ",
+ "cost_switch": "switch (card.cost_type) {\n      case 'memory':\n        deleteRandomCard(run, C.rng);\n        log(C, '「' + card.name + '」' + (card.cost_text || '某段记忆变薄了。'));\n        break;\n      case 'vitality':\n        run.maxHp = Math.max(1, run.maxHp - 1);\n        run.hp = Math.min(run.hp, run.maxHp);\n        log(C, '「' + card.name + '」皮肤更透明了一点。最大生命 -1。');\n        break;\n      case 'mark':\n        addGaze(run, 1);\n        log(C, '「' + card.name + '」有什么东西记下了你。凝视 +1。');\n        break;\n      case 'lock':\n        card._locked = true;\n        log(C, '「' + card.name + '」本层内无法再用了。');\n        break;\n    }\n  }\n\n  fu",
+ "kw_普通": [
+  " (let li = lastLine; li >= 0; li--) {     // '\\u0001' 前缀 = 警告行（层规则拦下的牌），单独红字，不参与普通行的样式判断     const raw = C.log[li];     const warn = raw.charCodeAt(0) === 1;   ",
+  "d(nz * 100) + '%';   }   function fmWheel(e) {     if (!e.ctrlKey) return;   // 普通滚轮 = 原生滚动；Ctrl+滚轮 = 以光标为锚缩放     e.preventDefault();     const box = e.currentT"
+ ],
+ "kw_精良": [],
+ "kw_稀有": [
+  ".stats.kills);   addStat(p, '事件', run.stats.events + ' 次');   // 通关结算的关键选择（T39）：稀有卡 / 岔路 / 凝视的含义   const rares = run.deck.filter(c => c.rarity === 'rare' || c.r",
+  "gaze <= 5 ? '（背身：它没有看全你）' : '（同行：它一路看着你走下来）'));   if (rares.length) addStat(p, '稀有卡', rares.map(c => c.name).join('、'));   if (run.stats.route && run.stats.rout"
+ ],
+ "kw_特殊": [
+  "gaze - e.gaze_reduce);     // 生命     if (e.heal) healPlayer(C, e.heal);      // 特殊效果     (e.special || []).forEach(sp => applySpecial(C, sp, targetIdx));   }   ",
+  "======   // 返回升级后的新卡对象，不修改原卡。upgrade.effect 的数值为最终值；   // special 为追加条目（空数组表示清空原特殊效果）；cost_type 可改写代价。   function upgradeCard(card) {     const up = card && car"
+ ],
+ "kw_攻击": [
+  "t || 0;     C.playedCount = 0;      // 玩家回合结束效果     if (C.buffs.thorns) { /* 在敌人攻击时结算 */ }      // 敌人行动     C.enemies.forEach(e => {       if (e.dead) return;  ",
+  "'（零件 -' + cost + '）。');     return { ok: true };   }   // 拆解：花 3 零件，威胁等级 +1（剩余敌人攻击永久 +1），战后结算 1 件随机遗物   function dismantle(C) {     if (C.run.classId !== 'anmin",
+  "C.run._relicReward = (C.run._relicReward || 0) + 1;     log(C, '威胁等级上调报文已送达。剩余单元攻击 +1。战后将有 1 件设备转入你的库存。');     return { ok: true };   }    // ============ 苍民：双世"
+ ],
+ "kw_技能": [],
+ "kw_能力": []
+}

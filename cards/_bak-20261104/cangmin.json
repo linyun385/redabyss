@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "cng_0001",
+    "name": "守夜",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 0,
+    "effect": {
+      "block": 4,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "不睡，梦就不会破。不睡，明天也不会来。两件事我选了一夜。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 6
+      },
+      "flavor_add": "第二夜守完了。第三夜的借口还没想好。"
+    }
+  },
+  {
+    "id": "cng_0002",
+    "name": "王国账簿",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "王国的账记到一千三百年前。后面是空白，空白也算账。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "draw": 2
+      },
+      "flavor_add": "空白页有人续了一行。字迹是新的。"
+    }
+  },
+  {
+    "id": "cng_0003",
+    "name": "巨神的欠条",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 6,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "巨神拿走了火母，欠我们一个天亮。欠条没有落款日期。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 9
+      },
+      "flavor_add": "利息开始计了。巨神没有还钱的意思。"
+    }
+  },
+  {
+    "id": "cng_0004",
+    "name": "灰藻汤",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 5,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "灰藻是酸的。酸是好事，酸说明海还认得旧配方。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 8
+      },
+      "flavor_add": "汤里多了一块红的。没人敢问是哪来的。"
+    }
+  },
+  {
+    "id": "cng_0005",
+    "name": "巡夜灯",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 5,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "灯照三步。三步之外交给神。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 7
+      },
+      "flavor_add": "灯芯换成了双的。神多收到了一份。"
+    }
+  },
+  {
+    "id": "cng_0006",
+    "name": "守夜人的表",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 0,
+    "effect": {
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "光父每五十天绕一圈。我的表每小时绕一圈。总得有一样是准的。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "draw": 2
+      },
+      "flavor_add": "表快了。快的那部分借给了梦。"
+    }
+  },
+  {
+    "id": "cng_0007",
+    "name": "星表检索",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 2,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "星表第一页画着火母。第一页翻得最烂。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "draw": 3
+      },
+      "flavor_add": "星表第二页开始没有火母。第二页很新。"
+    }
+  },
+  {
+    "id": "cng_0008",
+    "name": "历法之争",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 2,
+      "block": 4,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "两派为一息的长度打了十年。后来火母走了，架白吵了。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "block": 7
+      },
+      "flavor_add": "第十一年，两派合写了一份新历。第一个单位是：失踪。"
+    }
+  },
+  {
+    "id": "cng_0009",
+    "name": "光父的准点",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 8,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "光父今夜准时。巨神今夜准时。只有该回来的那位，不准时。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 11
+      },
+      "flavor_add": "准时的两位被念了一整夜。不准时的欠了一整夜。"
+    }
+  },
+  {
+    "id": "cng_0010",
+    "name": "忆盐",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "energy": 0,
+    "effect": {
+      "heal": 3,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "盐是灰的。梦是红的。嚼一口，账就记在火母那边。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "heal": 5
+      },
+      "flavor_add": "梦里出现了颜色。第一种是红，第二种没记住。"
+    }
+  },
+  {
+    "id": "cng_0011",
+    "name": "猎巫者的谎",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 7,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "猎巫人问我会不会飞。我说不会。他很高兴，多给了我半条鱼。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "block": 10
+      },
+      "flavor_add": "谎越撒越熟。半条鱼变成了整条。"
+    }
+  },
+  {
+    "id": "cng_0012",
+    "name": "母亲的祷文",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "rare",
+    "veins": [
+      "water"
+    ],
+    "energy": 0,
+    "effect": {
+      "heal": 6,
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "她念到第三句就睡着。我抄下来，念到第三句，也睡着了。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "heal": 9
+      },
+      "flavor_add": "第三句之后还有第四句。母亲没念过第四句。"
+    }
+  },
+  {
+    "id": "cng_0013",
+    "name": "灰藻供品",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 4,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "供品摆在熄灭的方向。第二天供品还在，火母没吃，我自己吃了。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "heal": 7
+      },
+      "flavor_add": "供品第二天少了一半。这次不是我。"
+    }
+  },
+  {
+    "id": "cng_0014",
+    "name": "伊格的方向",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 0,
+    "effect": {
+      "block": 3,
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "先找巨神的圆盘，再往左。火母的方向要用两步才能说清。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 5
+      },
+      "flavor_add": "现在只用一步。天上的东西也在挪。"
+    }
+  },
+  {
+    "id": "cng_0015",
+    "name": "守望席",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 9,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "这是全城最体面的位置。体面在石头上磨出了坑。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 12
+      },
+      "flavor_add": "坑又深了一点。体面是磨出来的。"
+    }
+  },
+  {
+    "id": "cng_0016",
+    "name": "火母历第一页",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 2,
+      "heal": 3,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "历法第一个单位是一息。观测对象没了，单位还在值班。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "heal": 5
+      },
+      "flavor_add": "第一页末尾添了一笔小字：一息，约等于一次想念。"
+    }
+  },
+  {
+    "id": "cng_0017",
+    "name": "地下学院讲义",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "special",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 2,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "第一页是呼吸法。我们练了十三代人，练会了呼吸。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "draw": 3
+      },
+      "flavor_add": "第二页开始出现批注。批注人是十三代人里最疯的那个。"
+    }
+  },
+  {
+    "id": "cng_0018",
+    "name": "巨神的凝视",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 13,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "在梦里，圆盘占四分之一的天。它看你的时候不用转身。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 18
+      },
+      "flavor_add": "凝视聚焦了。梦里第一次有了影子。"
+    }
+  },
+  {
+    "id": "cng_0019",
+    "name": "王权梦",
+    "class": "cangmin",
+    "type": "power",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 2,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "strength",
+          "value": 2
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "梦里我也是王。醒来王冠留在枕头上，是灰藻编的。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "strength",
+            "value": 1
+          }
+        ]
+      },
+      "flavor_add": "梦里加了冕。加冕词用的是祷文第三句。"
+    }
+  },
+  {
+    "id": "cng_0020",
+    "name": "城墙梦",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 2,
+    "effect": {
+      "block": 14,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "梦里我把城墙修完了。修了一半的那半也长齐了。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 19
+      },
+      "flavor_add": "城墙上加了塔。塔上有人，是我。"
+    }
+  },
+  {
+    "id": "cng_0021",
+    "name": "巨神的欠账",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 9,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "梦里我去讨债了。巨神的账房比醒着的城还大。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 13
+      },
+      "flavor_add": "讨回来一角。一角在天上，我举不动。"
+    }
+  },
+  {
+    "id": "cng_0022",
+    "name": "卫星轨道",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 8,
+      "hits": 2,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "我沿着轨道跑。跑一圈二十一晚，每一晚都撞上同一个敌人。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 11
+      },
+      "flavor_add": "轨道压低了。擦着它的头皮过。"
+    }
+  },
+  {
+    "id": "cng_0023",
+    "name": "潮汐锁",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 12,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "潮汐锁住的是脸的方向。梦里我把它锁在了敌人身上。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "block": 16
+      },
+      "flavor_add": "它挣了一下。锁环上多了一道它的爪痕。"
+    }
+  },
+  {
+    "id": "cng_0024",
+    "name": "暗盘俯瞰",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "special",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 10,
+      "hits": 1,
+      "target": "all"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "我从圆盘的高度往下看。梦里的一切都小，小到可以一次收拾。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 14
+      },
+      "flavor_add": "俯瞰的角度练熟了。梦里也开始有重力和疼。"
+    }
+  },
+  {
+    "id": "cng_0025",
+    "name": "沉默权柄",
+    "class": "cangmin",
+    "type": "power",
+    "dream": true,
+    "rarity": "special",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 2,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "thorns",
+          "value": 4
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "巨神一万年不说话。不说话的东西最吓人，也最硬。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "thorns",
+            "value": 2
+          }
+        ]
+      },
+      "flavor_add": "巨神在梦里开了口。只对我，只说了一个字。"
+    }
+  },
+  {
+    "id": "cng_0026",
+    "name": "光父的钟摆",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 7,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "钟摆左右摆。左边是昨天，右边是明天，中间是它砸下来的地方。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "damage": 10
+      },
+      "flavor_add": "摆幅加大了。昨天和明天都被砸中了。"
+    }
+  },
+  {
+    "id": "cng_0027",
+    "name": "红矮星风",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 8,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "光父吹过来的风是暗红的。风里全是别处的火。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "damage": 11
+      },
+      "flavor_add": "风里多了一缕熟悉的红。我追了两步。"
+    }
+  },
+  {
+    "id": "cng_0028",
+    "name": "五十日",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 10,
+      "target": "self",
+      "special": [
+        {
+          "code": "regenerate",
+          "value": 2
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "五十天一个周期。我在梦里把五十天过成五十个夜。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "block": 13
+      },
+      "flavor_add": "第五十夜，钟摆停了。停摆的那晚最安全。"
+    }
+  },
+  {
+    "id": "cng_0029",
+    "name": "耀斑记忆",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "heat"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 12,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "光父发脾气我见过一次。梦里它冲我发脾气。受宠若惊。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 16
+      },
+      "flavor_add": "第二次发脾气是冲着我的敌人。排位清楚了。"
+    }
+  },
+  {
+    "id": "cng_0030",
+    "name": "星光残照",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 9,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "星光很淡。淡光照见的东西，白天看不见。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "block": 12
+      },
+      "flavor_add": "残照里走过来一个人影。走得很熟。"
+    }
+  },
+  {
+    "id": "cng_0031",
+    "name": "光父的审判",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 16,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "审判准时开始。被告席空着，判给了在场所有的东西。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "damage": 21
+      },
+      "flavor_add": "判决书烧了。烧判决书的火比审判亮。"
+    }
+  },
+  {
+    "id": "cng_0032",
+    "name": "准时的心跳",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 7,
+      "heal": 3,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "梦里我的心跳和光父同步。第一次同步的时候我哭了，梦里不知道。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 5
+      },
+      "flavor_add": "同步稳定了。心跳和我，总有一个是假的。"
+    }
+  },
+  {
+    "id": "cng_0033",
+    "name": "昴宿低语",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 0,
+    "effect": {
+      "draw": 2,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "光父说话很轻。它说：你母亲那颗星，我认识。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "draw": 3
+      },
+      "flavor_add": "它认识的不止一颗。它认识整个走散的家。"
+    }
+  },
+  {
+    "id": "cng_0034",
+    "name": "火母的怀抱",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "heat"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 10,
+      "hits": 1,
+      "target": "single",
+      "special": [
+        {
+          "code": "burn",
+          "value": 3,
+          "turns": 3
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "抱住它的时候要忍住不哭。眼泪在梦里是助燃的。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 14
+      },
+      "flavor_add": "这次没忍住。烧得更旺了，怪我。"
+    }
+  },
+  {
+    "id": "cng_0035",
+    "name": "伊格的痛苦",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "heat"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 7,
+      "hits": 1,
+      "target": "all"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "她在梦里喊疼。我醒了，枕头是湿的，是红的。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 10
+      },
+      "flavor_add": "疼痛分了级。最重的那级，她替我承受。"
+    }
+  },
+  {
+    "id": "cng_0036",
+    "name": "归乡",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "heat"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 10,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "梦里往回走。走到一半想起，老家已经是别人的星球了。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "heal": 14
+      },
+      "flavor_add": "老家到了。门口坐着的影子站起来让我进。"
+    }
+  },
+  {
+    "id": "cng_0037",
+    "name": "影语",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "special",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 9,
+      "hits": 1,
+      "target": "single",
+      "special": [
+        {
+          "code": "weak",
+          "turns": 2
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "穹顶之影的话要倒着听。它说欢迎，意思是别走。",
+    "upgrade": {
+      "name_suffix": "·残",
+      "effect": {
+        "damage": 12
+      },
+      "flavor_add": "这次我正着回了话。它沉默的方式变了。"
+    }
+  },
+  {
+    "id": "cng_0038",
+    "name": "震喉",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "special",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 6,
+      "hits": 3,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "震喉的话不用听，站在声里就算读过。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 8
+      },
+      "flavor_add": "三声之后还有第四声。第四声是我的回音。"
+    }
+  },
+  {
+    "id": "cng_0039",
+    "name": "光导",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "special",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 8,
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "光蛭母把光分给你，也多要一点。利率面议。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 11
+      },
+      "flavor_add": "这次它多给了。多给的部分开始计息。"
+    }
+  },
+  {
+    "id": "cng_0040",
+    "name": "墟语",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 2,
+    "effect": {
+      "damage": 18,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "墟蛹的遗言很长。我在梦里只抄了伤害的部分。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 24
+      },
+      "flavor_add": "遗言抄完了。最后一句是给我所在的时代。"
+    }
+  },
+  {
+    "id": "cng_0041",
+    "name": "红藻花园",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": true,
+    "rarity": "uncommon",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 8,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "梦里红藻是活的。一千三百年了，它们在梦里没死过。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "heal": 12
+      },
+      "flavor_add": "花园扩建了。扩建的种子是我醒来后咳出来的。"
+    }
+  },
+  {
+    "id": "cng_0042",
+    "name": "火母的回应",
+    "class": "cangmin",
+    "type": "power",
+    "dream": true,
+    "rarity": "rare",
+    "veins": [
+      "heat"
+    ],
+    "energy": 2,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "regenerate",
+          "value": 3
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "我喊了火母一声。回应迟到了一千三百年，但押着韵。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "regenerate",
+            "value": 2
+          }
+        ]
+      },
+      "flavor_add": "回应开始带下文。下文是火母的字迹。"
+    }
+  },
+  {
+    "id": "cng_0043",
+    "name": "猎巫者的绳",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 7,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "绳打的是活结。猎巫人讲究效率，活结能重复用。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "block": 10
+      },
+      "flavor_add": "绳换了粗的。被捆的人开始反抗了。"
+    }
+  },
+  {
+    "id": "cng_0044",
+    "name": "三体历残卷",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "残卷记着三个天体的位置。有两个还准，一个在等。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "draw": 2
+      },
+      "flavor_add": "第三个位置有了新坐标。是有人后来补的。"
+    }
+  },
+  {
+    "id": "cng_0045",
+    "name": "晨昏带地图",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 5,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "晨昏带是唯一不冷不热的地方。地图上它细得像一根线。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 7
+      },
+      "flavor_add": "线上多了一个点。点是我今晚的落脚处。"
+    }
+  },
+  {
+    "id": "cng_0046",
+    "name": "火母的小像",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "heat"
+    ],
+    "energy": 0,
+    "effect": {
+      "heal": 3,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "小像拿红藻灰捏的。捏得不像。她走的时候我们也没看清。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 5
+      },
+      "flavor_add": "像重捏了一遍。捏得更不像了，但更像她。"
+    }
+  },
+  {
+    "id": "cng_0047",
+    "name": "不醒者的名单",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 2,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "名单上的人都在梦里没回来。名字之间画着线，像亲缘图。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "draw": 3
+      },
+      "flavor_add": "名单末尾空了一行。空行的墨迹是湿的。"
+    }
+  },
+  {
+    "id": "cng_0048",
+    "name": "猎巫巡逻·换防",
+    "class": "cangmin",
+    "type": "attack",
+    "dream": false,
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 9,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "巡逻队换防要查火把。火把照不了梦，他们不信。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 12
+      },
+      "flavor_add": "查完火把查了梦。我的梦很干净，干净得可疑。"
+    }
+  },
+  {
+    "id": "cng_0049",
+    "name": "岩洞集会",
+    "class": "cangmin",
+    "type": "skill",
+    "dream": false,
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 6,
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "集会议题：今晚谁守夜。全票通过：不是我。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 8
+      },
+      "flavor_add": "议题改了：今晚谁先睡。还是全票通过。"
+    }
+  },
+  {
+    "id": "cng_0050",
+    "name": "疯先知的笔记",
+    "class": "cangmin",
+    "type": "power",
+    "dream": false,
+    "rarity": "special",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "dexterity",
+          "value": 2
+        }
+      ]
+    },
+    "cost_type": "mark",
+    "cost_text": "笔记传抄时会顺手抄走读者的一段睡眠。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "dexterity",
+            "value": 1
+          }
+        ]
+      },
+      "flavor_add": "笔记传到我手里时多了个封套。封套里是一小撮灰，红的。"
+    },
+    "flavor": "笔记传到我手里时多了个封套。封套里是一小撮灰，红的。"
+  }
+]

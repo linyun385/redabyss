@@ -1,0 +1,278 @@
+/* 红渊 · 战斗动效层（MVP v0.1）
+ * 约定：只做视觉，不碰游戏逻辑；所有动画 ≤350ms；优先 transform/opacity。
+ * 强度：body.fx-low / fx-mid / fx-high 三档。
+ */
+
+/* ── 特效层容器：固定层，不随 render 重建 ── */
+#fx-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  overflow: hidden;
+  contain: layout style paint;
+}
+
+/* ── 通用：一个特效节点 ── */
+.fx {
+  position: fixed;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+/* ══════════ 血痕 ══════════ */
+.fx-scar {
+  transform-origin: center;
+  mix-blend-mode: screen;
+}
+.fx-scar svg {
+  display: block;
+  overflow: visible;
+}
+.fx-scar .ink {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.fx-scar .ink-under {
+  stroke: #6b0d13;
+  stroke-width: 7;
+  filter: blur(1.4px);
+  opacity: .92;
+}
+.fx-scar .ink-over {
+  stroke: var(--fx-scar, #e0393f);
+  stroke-width: 2.1;
+  opacity: 1;
+}
+.fx-scar .ink-under,
+.fx-scar .ink-over {
+  stroke-dasharray: 1 1;
+  animation: fx-draw 150ms cubic-bezier(.2,.8,.3,1) forwards;
+}
+@keyframes fx-draw {
+  from { stroke-dashoffset: 1; }
+  to   { stroke-dashoffset: 0; }
+}
+.fx-scar.leaving {
+  animation: fx-scar-out 190ms ease-out forwards;
+}
+@keyframes fx-scar-out {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ══════════ 伤害数字 ══════════ */
+.fx-num {
+  font: 700 22px/1 "Noto Serif SC", Georgia, serif;
+  text-shadow: 0 0 6px rgba(0,0,0,.9), 0 1px 0 #000;
+  transform: translate(-50%, -50%);
+  animation: fx-num-up 250ms cubic-bezier(.2,.7,.4,1) forwards;
+}
+.fx-num.dmg  { color: #ff5a52; }
+.fx-num.heal { color: #8fe07a; }
+.fx-num.blk  { color: #b9c6d0; }
+@keyframes fx-num-up {
+  0%   { opacity: 0; transform: translate(-50%,-50%) scale(.86); }
+  22%  { opacity: 1; transform: translate(-50%,-58%) scale(1.04); }
+  100% { opacity: 0; transform: translate(-50%,-115%) scale(1); }
+}
+
+/* ══════════ 命中震动 ══════════ */
+.fx-hit {
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  border: 1px solid rgba(255,90,82,.55);
+  box-shadow: inset 0 0 18px rgba(255,60,60,.28);
+  animation: fx-hit 90ms ease-out forwards;
+}
+@keyframes fx-hit {
+  0%   { opacity: .95; transform: translate(-50%,-50%) translate(0,0); }
+  35%  { transform: translate(-50%,-50%) translate(-3px,2px); }
+  70%  { transform: translate(-50%,-50%) translate(3px,-2px); }
+  100% { opacity: 0; transform: translate(-50%,-50%) translate(0,0); }
+}
+
+/* ══════════ 格挡碎裂 ══════════ */
+.fx-shard {
+  width: 8px; height: 8px;
+  background: linear-gradient(135deg, #dfe7ee, #7e8894);
+  border-radius: 1px;
+  transform: translate(-50%, -50%);
+  animation: fx-shard 200ms ease-out forwards;
+}
+@keyframes fx-shard {
+  0%   { opacity: 1; transform: translate(-50%,-50%) rotate(0) translate(0,0) scale(1); }
+  100% { opacity: 0; transform: translate(-50%,-50%) rotate(140deg)
+         translate(var(--dx, 0), var(--dy, -18px)) scale(.4); }
+}
+
+/* ══════════ 击杀 ══════════ */
+.fx-kill {
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255,235,235,.9), rgba(255,120,120,0) 70%);
+  animation: fx-kill 280ms ease-out forwards;
+}
+@keyframes fx-kill {
+  0%   { opacity: .9; transform: translate(-50%,-50%) scale(.7); }
+  30%  { opacity: .55; }
+  100% { opacity: 0; transform: translate(-50%,-50%) scale(1.15) translateY(12px); }
+}
+
+/* ══════════ 8 种状态 ══════════ */
+.fx-st {
+  width: 54px; height: 54px;
+  transform: translate(-50%, -50%);
+  animation-duration: 280ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* 灼烧：底部往上蹿的火 */
+.fx-st.burn {
+  background: radial-gradient(ellipse 40% 70% at 50% 100%,
+              rgba(255,150,40,.95), rgba(255,60,10,.35) 55%, transparent 75%);
+  animation-name: fx-stand-up;
+}
+/* 中毒：悬挂的绿滴 */
+.fx-st.poison {
+  background: radial-gradient(circle at 50% 30%,
+              rgba(120,220,110,.95), rgba(40,140,60,.45) 50%, transparent 72%);
+  animation-name: fx-stand-drop;
+}
+/* 虚弱：灰色裂纹 */
+.fx-st.weak {
+  background:
+    linear-gradient(115deg, transparent 46%, rgba(190,196,204,.9) 48%, transparent 51%),
+    linear-gradient(70deg,  transparent 52%, rgba(190,196,204,.7) 54%, transparent 57%);
+  animation-name: fx-stand-crack;
+}
+/* 易伤：壳体剥落 */
+.fx-st.frail {
+  background: radial-gradient(circle at 50% 50%,
+              rgba(210,200,190,.85) 12%, transparent 22%),
+              radial-gradient(circle at 34% 64%, rgba(200,190,175,.7) 9%, transparent 18%),
+              radial-gradient(circle at 66% 38%, rgba(200,190,175,.7) 8%, transparent 17%);
+  animation-name: fx-stand-fall;
+}
+/* 力量：金色扩散环 */
+.fx-st.strength {
+  background: radial-gradient(circle, transparent 46%, rgba(240,205,110,.95) 50%, transparent 56%);
+  animation-name: fx-stand-ring;
+}
+/* 敏捷：青色半圈 */
+.fx-st.dexterity {
+  background: conic-gradient(from 0deg,
+              transparent 0deg, rgba(120,225,205,.9) 70deg, transparent 150deg);
+  border-radius: 50%;
+  animation-name: fx-stand-spin;
+}
+/* 再生：血红搏动 */
+.fx-st.regenerate {
+  background: radial-gradient(circle, rgba(230,70,80,.85) 20%, rgba(150,20,30,.3) 55%, transparent 72%);
+  animation-name: fx-stand-beat;
+}
+/* 反伤：尖刺弹出 */
+.fx-st.thorns {
+  background:
+    conic-gradient(from 0deg,
+      transparent 0 8deg,   rgba(225,215,200,.9) 8deg 10deg,  transparent 10deg 36deg,
+      transparent 36deg 44deg, rgba(225,215,200,.9) 44deg 46deg, transparent 46deg 72deg,
+      transparent 72deg 80deg, rgba(225,215,200,.9) 80deg 82deg, transparent 82deg 108deg,
+      transparent 108deg 116deg, rgba(225,215,200,.9) 116deg 118deg, transparent 118deg 144deg,
+      transparent 144deg 152deg, rgba(225,215,200,.9) 152deg 154deg, transparent 154deg 180deg,
+      transparent 180deg 188deg, rgba(225,215,200,.9) 188deg 190deg, transparent 190deg 216deg,
+      transparent 216deg 224deg, rgba(225,215,200,.9) 224deg 226deg, transparent 226deg 252deg,
+      transparent 252deg 260deg, rgba(225,215,200,.9) 260deg 262deg, transparent 262deg 288deg,
+      transparent 288deg 296deg, rgba(225,215,200,.9) 296deg 298deg, transparent 298deg 324deg,
+      transparent 324deg 332deg, rgba(225,215,200,.9) 332deg 334deg, transparent 334deg 360deg);
+  border-radius: 50%;
+  animation-name: fx-stand-pop;
+}
+
+@keyframes fx-stand-up {
+  0%   { opacity: 0; transform: translate(-50%,-50%) scaleY(.55); }
+  25%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%,-90%) scaleY(1.15); }
+}
+@keyframes fx-stand-drop {
+  0%   { opacity: 0; transform: translate(-50%,-60%) scale(.7); }
+  25%  { opacity: 1; transform: translate(-50%,-50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%,-20%) scale(.9); }
+}
+@keyframes fx-stand-crack {
+  0%   { opacity: 0; transform: translate(-50%,-50%) scale(.6); }
+  30%  { opacity: .95; transform: translate(-50%,-50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%,-50%) scale(1.18); }
+}
+@keyframes fx-stand-fall {
+  0%   { opacity: .95; transform: translate(-50%,-50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%,-20%) scale(1.1); }
+}
+@keyframes fx-stand-ring {
+  0%   { opacity: 0; transform: translate(-50%,-50%) scale(.3); }
+  30%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%,-50%) scale(1.6); }
+}
+@keyframes fx-stand-spin {
+  0%   { opacity: 0; transform: translate(-50%,-50%) rotate(0) scale(.8); }
+  30%  { opacity: .95; }
+  100% { opacity: 0; transform: translate(-50%,-50%) rotate(180deg) scale(1.1); }
+}
+@keyframes fx-stand-beat {
+  0%   { opacity: 0; transform: translate(-50%,-50%) scale(.7); }
+  20%  { opacity: 1; transform: translate(-50%,-50%) scale(1.06); }
+  45%  { opacity: .7; transform: translate(-50%,-50%) scale(.94); }
+  70%  { opacity: 1; transform: translate(-50%,-50%) scale(1.04); }
+  100% { opacity: 0; transform: translate(-50%,-60%) scale(1); }
+}
+@keyframes fx-stand-pop {
+  0%   { opacity: 0; transform: translate(-50%,-50%) scale(.55) rotate(0); }
+  25%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%,-50%) scale(1.25) rotate(24deg); }
+}
+
+/* ══════════ 锁死红叉（作用在真实卡牌元素上） ══════════ */
+.card.locked {
+  filter: saturate(.32) brightness(.72);
+  cursor: not-allowed;
+}
+.card.locked .lock-x {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: inherit;
+}
+.card.locked .lock-x::before,
+.card.locked .lock-x::after {
+  content: '';
+  position: absolute;
+  left: -12%;
+  top: 50%;
+  width: 124%;
+  height: 5px;
+  background: linear-gradient(90deg,
+    transparent 0%, #7e1219 10%, #c0202a 34%, #e8474f 50%, #c0202a 66%, #7e1219 90%, transparent 100%);
+  box-shadow: 0 0 7px rgba(190,25,35,.85);
+  transform-origin: center;
+}
+.card.locked .lock-x::before { transform: rotate(31deg)  translateY(-1px); }
+.card.locked .lock-x::after  { transform: rotate(-33deg) translateY(1px); }
+
+/* ══════════ 强度档 ══════════ */
+body.fx-low .fx-scar .ink-over,
+body.fx-low .fx-scar .ink-under { animation-duration: 60ms; }
+body.fx-low .fx-scar.leaving    { animation-duration: 80ms; }
+body.fx-low .fx-hit,
+body.fx-low .fx-shard,
+body.fx-low .fx-st,
+body.fx-low .fx-kill { display: none !important; }
+
+body.fx-high .fx-scar .ink-under { stroke-width: 9; filter: blur(2px); }
+body.fx-high .fx-hit { animation-duration: 120ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-hit, .fx-shard, .fx-st, .fx-kill { display: none !important; }
+  .fx-num, .fx-scar .ink-under, .fx-scar .ink-over { animation-duration: 90ms !important; }
+}

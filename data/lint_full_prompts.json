@@ -1,0 +1,4975 @@
+{
+ "meta": {
+  "tool": "tools/prompt_lint.py",
+  "src": "data\\zh_prompts_full.json",
+  "scope": "full",
+  "scanned": 461,
+  "flagged": 461,
+  "wordlists": "mech=SPEC§六禁词; appliance=电器名词; species=SPEC§VIII物种名; en_bad=SPEC§四英文禁词"
+ },
+ "items": [
+  {
+   "id": "enemy_d1_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_01",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_02",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_03",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_04",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_05",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_e1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "机器"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_e2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_b1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_06",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_e4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d1_b2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "喇叭"
+    },
+    {
+     "rule": "appliance",
+     "word": "电线"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_09",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d2_b2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_09",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d3_b2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_09",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d4_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_09",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d5_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_09",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d6_b2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_09",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d7_e3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_07",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_08",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_09",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "enemy_d8_12",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0001",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0002",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0003",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "开关"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0004",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0005",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0006",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0007",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0008",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0009",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "屏幕"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0010",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "anm_0011",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0012",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0013",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪器"
+    },
+    {
+     "rule": "mech",
+     "word": "屏幕"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0014",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0015",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0016",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0017",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0018",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0019",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0020",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0021",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0022",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0023",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0024",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0025",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0026",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0027",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0028",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0029",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪器"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    },
+    {
+     "rule": "appliance",
+     "word": "表盘"
+    }
+   ]
+  },
+  {
+   "id": "anm_0030",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0031",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0032",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "面板"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "anm_0033",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0034",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0035",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0036",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0037",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0038",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0039",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0040",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0041",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0042",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0043",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0044",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0045",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0046",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0047",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "anm_0048",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "anm_0049",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "anm_0050",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0001",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "铭文"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0002",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0003",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0004",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0005",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0006",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0007",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0008",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0009",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0010",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0011",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0012",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0013",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0014",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0015",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0016",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0017",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0018",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0019",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0020",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0021",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0022",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0023",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0024",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0025",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0026",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0027",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0028",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0029",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0030",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0031",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0032",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0033",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪器"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0034",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0035",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0036",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0037",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0038",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    },
+    {
+     "rule": "appliance",
+     "word": "喇叭"
+    }
+   ]
+  },
+  {
+   "id": "cng_0039",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "开关"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0040",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0041",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0042",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "按钮"
+    }
+   ]
+  },
+  {
+   "id": "cng_0043",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0044",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0045",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0046",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "标签"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0047",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "cng_0048",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0049",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "cng_0050",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0001",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0002",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0003",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0004",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "species",
+     "word": "苔藓"
+    }
+   ]
+  },
+  {
+   "id": "dive_0005",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0006",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0007",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0008",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0009",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0010",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0011",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0012",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0013",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0014",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0015",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0016",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0017",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0018",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0019",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0020",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0021",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0022",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0023",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0024",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0025",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0026",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0027",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0028",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0029",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0030",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0031",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0032",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0033",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0034",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0035",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0036",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0037",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0038",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0039",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0040",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0041",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0042",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0043",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0044",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0045",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0046",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "装置"
+    },
+    {
+     "rule": "mech",
+     "word": "面板"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "dive_0047",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0048",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0049",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0050",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0051",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0052",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0053",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0054",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0055",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0056",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0057",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "屏"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "dive_0058",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0059",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0060",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0061",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "电线"
+    }
+   ]
+  },
+  {
+   "id": "dive_0062",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0063",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0064",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0065",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "电缆"
+    }
+   ]
+  },
+  {
+   "id": "dive_0066",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0067",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0068",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0069",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0070",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0071",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0072",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0073",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0074",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0075",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0076",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0077",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0078",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0079",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0080",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "断路"
+    }
+   ]
+  },
+  {
+   "id": "dive_0081",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0082",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "dive_0083",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0001",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0002",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0003",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0004",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0005",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0006",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0007",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0008",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0009",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0010",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0011",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0012",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0013",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0014",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0015",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "trem_0016",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0017",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0018",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0019",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0020",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0021",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0022",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0023",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0024",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0025",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0026",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0027",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0028",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0029",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0030",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0031",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0032",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0033",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0034",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0035",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0036",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0037",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0038",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0039",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0040",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0041",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0042",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0043",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0044",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0045",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0046",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0047",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0048",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0049",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0050",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0051",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0052",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0053",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0054",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0055",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0056",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0057",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0058",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0059",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0060",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0061",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0062",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0063",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0064",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "trem_0065",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0066",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0067",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0068",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0069",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "trem_0070",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0071",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0072",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0073",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0074",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0075",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0076",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0077",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0078",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0079",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0080",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0081",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0082",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "trem_0083",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "开关"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "显示"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "刻度"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "表盘"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_9",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_9",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d2_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_9",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d3_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_9",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "species",
+     "word": "蕨"
+    }
+   ]
+  },
+  {
+   "id": "event_d4_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d5_12",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_9",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d6_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "仪表"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "表盘"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_9",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_10",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "设备"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d7_11",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_1",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    },
+    {
+     "rule": "appliance",
+     "word": "灯"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_2",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_3",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d1_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_4",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_5",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_6",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_7",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "编号"
+    },
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  },
+  {
+   "id": "event_d8_8",
+   "hits": [
+    {
+     "rule": "mech",
+     "word": "字"
+    }
+   ]
+  }
+ ],
+ "summary": [
+  {
+   "rule": "mech",
+   "word": "字",
+   "count": 461
+  },
+  {
+   "rule": "appliance",
+   "word": "灯",
+   "count": 53
+  },
+  {
+   "rule": "mech",
+   "word": "编号",
+   "count": 34
+  },
+  {
+   "rule": "appliance",
+   "word": "显示",
+   "count": 15
+  },
+  {
+   "rule": "mech",
+   "word": "标签",
+   "count": 13
+  },
+  {
+   "rule": "mech",
+   "word": "装置",
+   "count": 10
+  },
+  {
+   "rule": "appliance",
+   "word": "屏",
+   "count": 9
+  },
+  {
+   "rule": "appliance",
+   "word": "按钮",
+   "count": 6
+  },
+  {
+   "rule": "mech",
+   "word": "刻度",
+   "count": 5
+  },
+  {
+   "rule": "mech",
+   "word": "仪表",
+   "count": 4
+  },
+  {
+   "rule": "mech",
+   "word": "开关",
+   "count": 3
+  },
+  {
+   "rule": "mech",
+   "word": "仪器",
+   "count": 3
+  },
+  {
+   "rule": "appliance",
+   "word": "表盘",
+   "count": 3
+  },
+  {
+   "rule": "appliance",
+   "word": "喇叭",
+   "count": 2
+  },
+  {
+   "rule": "appliance",
+   "word": "电线",
+   "count": 2
+  },
+  {
+   "rule": "mech",
+   "word": "屏幕",
+   "count": 2
+  },
+  {
+   "rule": "mech",
+   "word": "面板",
+   "count": 2
+  },
+  {
+   "rule": "mech",
+   "word": "机器",
+   "count": 1
+  },
+  {
+   "rule": "mech",
+   "word": "铭文",
+   "count": 1
+  },
+  {
+   "rule": "species",
+   "word": "苔藓",
+   "count": 1
+  },
+  {
+   "rule": "appliance",
+   "word": "电缆",
+   "count": 1
+  },
+  {
+   "rule": "appliance",
+   "word": "断路",
+   "count": 1
+  },
+  {
+   "rule": "species",
+   "word": "蕨",
+   "count": 1
+  },
+  {
+   "rule": "mech",
+   "word": "设备",
+   "count": 1
+  }
+ ]
+}

@@ -1,0 +1,2873 @@
+{
+ "meta": {
+  "task": "T77",
+  "formula": "(伤害 + 格挡×0.8 + 抽牌×3 + 能量×4 + 全体伤害×1.6 + 附加效果) / 费用当量（0费按0.5计）",
+  "valuation": "见 tools/card_power.js 头注释估值表",
+  "generatedAt": "2026-11-02T23:55:41.746Z"
+ },
+ "percentiles": {
+  "diver": {
+   "P50": 6.4,
+   "P75": 9,
+   "P90": 10.8,
+   "n": 83
+  },
+  "tremor": {
+   "P50": 6,
+   "P75": 9,
+   "P90": 10.5,
+   "n": 83
+  },
+  "anmin": {
+   "P50": 6.12,
+   "P75": 8,
+   "P90": 12,
+   "n": 50
+  },
+  "cangmin": {
+   "P50": 6.5,
+   "P75": 9,
+   "P90": 10,
+   "n": 50
+  }
+ },
+ "audit": {
+  "diver": {
+   "count": 12,
+   "P75": 9,
+   "maxPower": 9,
+   "overP75": [],
+   "blacklist": [],
+   "hasDef": true,
+   "mechKinds": [
+    "攻",
+    "防",
+    "抽",
+    "特殊"
+   ],
+   "countOk": true,
+   "mechOk": true,
+   "pass": true,
+   "rows": [
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "diver_sign",
+     "name": "死亡合同副本",
+     "power": 6,
+     "src": "engine.sign",
+     "mech": [
+      "抽"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "dive_0053",
+     "name": "渊光重工·备用电源",
+     "power": 9,
+     "src": "starter_extra",
+     "mech": [
+      "抽"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "dive_0019",
+     "name": "抗共振司·锚桩",
+     "power": 8.5,
+     "src": "starter_extra",
+     "mech": [
+      "防",
+      "特殊"
+     ],
+     "blacklist": [],
+     "r1": true
+    }
+   ]
+  },
+  "tremor": {
+   "count": 12,
+   "P75": 9,
+   "maxPower": 7,
+   "overP75": [],
+   "blacklist": [],
+   "hasDef": true,
+   "mechKinds": [
+    "攻",
+    "防",
+    "抽",
+    "特殊"
+   ],
+   "countOk": true,
+   "mechOk": true,
+   "pass": true,
+   "rows": [
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "tremor_sign",
+     "name": "静日触杖",
+     "power": 6,
+     "src": "engine.sign",
+     "mech": [
+      "抽"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "trem_0044",
+     "name": "相石·封忆",
+     "power": 2.25,
+     "src": "starter_extra",
+     "mech": [
+      "特殊"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "trem_0050",
+     "name": "震语：传温",
+     "power": 6,
+     "src": "starter_extra",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    }
+   ]
+  },
+  "anmin": {
+   "count": 12,
+   "P75": 8,
+   "maxPower": 8,
+   "overP75": [],
+   "blacklist": [],
+   "hasDef": true,
+   "mechKinds": [
+    "攻",
+    "防",
+    "抽",
+    "特殊"
+   ],
+   "countOk": true,
+   "mechOk": true,
+   "pass": true,
+   "rows": [
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_atk",
+     "name": "一击",
+     "power": 7,
+     "src": "engine.basic",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "basic_def",
+     "name": "缩起",
+     "power": 4,
+     "src": "engine.basic",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "anmin_sign",
+     "name": "登记工号牌",
+     "power": 6,
+     "src": "engine.sign",
+     "mech": [
+      "抽"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "anm_0006",
+     "name": "库存盘点",
+     "power": 8,
+     "src": "starter_extra",
+     "mech": [
+      "抽",
+      "特殊"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "anm_0042",
+     "name": "基因修复台",
+     "power": 7.2,
+     "src": "starter_extra",
+     "mech": [
+      "特殊"
+     ],
+     "blacklist": [],
+     "r1": true
+    }
+   ]
+  },
+  "cangmin": {
+   "count": 12,
+   "P75": 9,
+   "maxPower": 9,
+   "overP75": [],
+   "blacklist": [],
+   "hasDef": true,
+   "mechKinds": [
+    "攻",
+    "防",
+    "抽",
+    "特殊"
+   ],
+   "countOk": true,
+   "mechOk": true,
+   "pass": true,
+   "rows": [
+    {
+     "id": "cng_w_atk",
+     "name": "石矛",
+     "power": 5,
+     "src": "engine.cangmin",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_w_atk",
+     "name": "石矛",
+     "power": 5,
+     "src": "engine.cangmin",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_w_def",
+     "name": "缩进岩洞",
+     "power": 4,
+     "src": "engine.cangmin",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_w_def",
+     "name": "缩进岩洞",
+     "power": 4,
+     "src": "engine.cangmin",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_w_def",
+     "name": "缩进岩洞",
+     "power": 4,
+     "src": "engine.cangmin",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_d_atk",
+     "name": "火母的低语",
+     "power": 9,
+     "src": "engine.cangmin",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_d_atk",
+     "name": "火母的低语",
+     "power": 9,
+     "src": "engine.cangmin",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_d_atk",
+     "name": "火母的低语",
+     "power": 9,
+     "src": "engine.cangmin",
+     "mech": [
+      "攻"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_d_def",
+     "name": "火母的注视",
+     "power": 6.4,
+     "src": "engine.cangmin",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_d_def",
+     "name": "火母的注视",
+     "power": 6.4,
+     "src": "engine.cangmin",
+     "mech": [
+      "防"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_0016",
+     "name": "火母历第一页",
+     "power": 9,
+     "src": "starter_extra",
+     "mech": [
+      "抽",
+      "特殊"
+     ],
+     "blacklist": [],
+     "r1": true
+    },
+    {
+     "id": "cng_0032",
+     "name": "准时的心跳",
+     "power": 8.6,
+     "src": "starter_extra",
+     "mech": [
+      "防",
+      "特殊"
+     ],
+     "blacklist": [],
+     "r1": true
+    }
+   ]
+  }
+ },
+ "cards": {
+  "diver": [
+   {
+    "id": "dive_0001",
+    "name": "光导透镜（残）",
+    "power": 5.4,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0002",
+    "name": "聚能枪",
+    "power": 10,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0003",
+    "name": "曜元",
+    "power": 3,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0004",
+    "name": "光苔矿培植舱",
+    "power": 6.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "dive_0005",
+    "name": "氧气再生器",
+    "power": 7.2,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0006",
+    "name": "渊光重工·工作灯",
+    "power": 5.4,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0007",
+    "name": "渊光重工·导光索",
+    "power": 4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0008",
+    "name": "红渊研究院·数据回传",
+    "power": 5.4,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0009",
+    "name": "聚能枪（双管）",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0010",
+    "name": "聚变鱼雷",
+    "power": 9.6,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0011",
+    "name": "辐射弹",
+    "power": 9,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0012",
+    "name": "轨道炮支援",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0013",
+    "name": "硬矿钻",
+    "power": 10,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0014",
+    "name": "震髓探测器",
+    "power": 4,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0015",
+    "name": "星髓矿业·爆破执照",
+    "power": 10.8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0016",
+    "name": "共振抑制仪",
+    "power": 5.8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0017",
+    "name": "星髓矿业·深地车",
+    "power": 4.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0018",
+    "name": "墟盐",
+    "power": 9.36,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0019",
+    "name": "抗共振司·锚桩",
+    "power": 8.5,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0020",
+    "name": "黑曜采掘·加班条例",
+    "power": 4.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0021",
+    "name": "星髓矿业·定向爆破",
+    "power": 13,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0022",
+    "name": "硬矿钻（重型）",
+    "power": 7.25,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0023",
+    "name": "抗共振司·静默规程",
+    "power": 5.3,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0024",
+    "name": "深红资源集团·钻探平台",
+    "power": 10,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0025",
+    "name": "震频器",
+    "power": 2,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0026",
+    "name": "震髓装药",
+    "power": 14,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0027",
+    "name": "星髓矿业·钻杆",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0028",
+    "name": "震频器（校准）",
+    "power": 2,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0029",
+    "name": "红渊研究院·震谱仪",
+    "power": 4.5,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0030",
+    "name": "抗共振司·镇爆弹",
+    "power": 5.25,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0031",
+    "name": "聚能枪（过热）",
+    "power": 9.9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0032",
+    "name": "曜元（缓释）",
+    "power": 4.8,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0033",
+    "name": "圣火武器",
+    "power": 12,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0034",
+    "name": "反走私局·焚烧记录",
+    "power": 7.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0035",
+    "name": "深红资源集团·地热井口",
+    "power": 2.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0036",
+    "name": "红渊贸易局·净水配给",
+    "power": 8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0037",
+    "name": "红渊研究院·水样档案",
+    "power": 7.8,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0038",
+    "name": "氧气再生器（满压）",
+    "power": 6.4,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0039",
+    "name": "矿票",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0040",
+    "name": "重力训练舱",
+    "power": 2.25,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0041",
+    "name": "震频器（并联）",
+    "power": 3,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0042",
+    "name": "震髓探测器（阵列）",
+    "power": 5.5,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0043",
+    "name": "曜元（共振型）",
+    "power": 2,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0044",
+    "name": "抗共振司·导波索",
+    "power": 6,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0045",
+    "name": "红渊研究院·共振采样",
+    "power": 4.5,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0046",
+    "name": "星髓矿业·深部震源",
+    "power": 18,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0047",
+    "name": "深红资源集团·谐振井",
+    "power": 1.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0048",
+    "name": "矿票（回收藏）",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0049",
+    "name": "硬矿钻（手持）",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0050",
+    "name": "氧气再生器（便携）",
+    "power": 4.8,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "dive_0051",
+    "name": "震频器（微型）",
+    "power": 1,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0052",
+    "name": "光苔矿（盆栽）",
+    "power": 2,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0053",
+    "name": "渊光重工·备用电源",
+    "power": 9,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0054",
+    "name": "聚能枪（超载）",
+    "power": 14.4,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0055",
+    "name": "辐射弹（裸装）",
+    "power": 11.2,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0056",
+    "name": "死亡合同（增补条款）",
+    "power": 9,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0057",
+    "name": "重力训练舱（极限负重）",
+    "power": 6.75,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0058",
+    "name": "圣火武器（殉爆）",
+    "power": 14.4,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0059",
+    "name": "曜元（空腹）",
+    "power": 6.4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0060",
+    "name": "黑曜采掘·无氧班次",
+    "power": 1.8,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0061",
+    "name": "巡线灯",
+    "power": 6.2,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0062",
+    "name": "凿屑袋",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0063",
+    "name": "抗共振司·静音瓦",
+    "power": 4.68,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "dive_0064",
+    "name": "星髓矿业·矿脉图",
+    "power": 10.8,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0065",
+    "name": "渊光重工·接地缆",
+    "power": 6,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0066",
+    "name": "曜元（高浓）",
+    "power": 6,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0067",
+    "name": "震髓残响",
+    "power": 8.5,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0068",
+    "name": "深红资源集团·冷却协议",
+    "power": 7.92,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0069",
+    "name": "聚能枪（三管）",
+    "power": 10.5,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0070",
+    "name": "回收员的账本",
+    "power": 4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "dive_0071",
+    "name": "渊光重工·灯序表",
+    "power": 7,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0072",
+    "name": "星髓矿业·二号钻台",
+    "power": 10,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0073",
+    "name": "抗共振司·白噪机",
+    "power": 4.2,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0074",
+    "name": "黑曜采掘·计件工资",
+    "power": 7.2,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0075",
+    "name": "深红资源集团·地契",
+    "power": 2.25,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0076",
+    "name": "曜元（夜班型）",
+    "power": 5.6,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0077",
+    "name": "抗共振司·导波索（并联）",
+    "power": 4.7,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0078",
+    "name": "红渊研究院·频谱印章",
+    "power": 5.5,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0079",
+    "name": "红渊贸易局·苦水配给（双份）",
+    "power": 5.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "dive_0080",
+    "name": "渊光重工·断路闸",
+    "power": 8.1,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "dive_0081",
+    "name": "气闸的规程",
+    "power": 8.4,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "dive_0082",
+    "name": "按规程应答",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "dive_0083",
+    "name": "坠轨的清单",
+    "power": 5.4,
+    "mech": [
+     "抽"
+    ]
+   }
+  ],
+  "tremor": [
+   {
+    "id": "trem_0001",
+    "name": "震语：听骨",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0002",
+    "name": "听震",
+    "power": 3,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0003",
+    "name": "震语：压息",
+    "power": 5.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0004",
+    "name": "震语：回响",
+    "power": 12,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0005",
+    "name": "震语：双声",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0006",
+    "name": "震台石碑（拓片）",
+    "power": 4.5,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0007",
+    "name": "震语铃",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0008",
+    "name": "震语：问地",
+    "power": 13,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0009",
+    "name": "震语：断脉",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0010",
+    "name": "震语：三震",
+    "power": 13.5,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0011",
+    "name": "震台石碑",
+    "power": 3.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0012",
+    "name": "历法刻盘",
+    "power": 4.5,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0013",
+    "name": "震语：崩齿",
+    "power": 10,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0014",
+    "name": "听地神脉搏",
+    "power": 3,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0015",
+    "name": "触温",
+    "power": 12.8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0016",
+    "name": "喷息·热池边",
+    "power": 8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0017",
+    "name": "震语：焚名",
+    "power": 9.9,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0018",
+    "name": "静日",
+    "power": 7.4,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0019",
+    "name": "禁声日",
+    "power": 5.8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0020",
+    "name": "静日触杖",
+    "power": 4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0021",
+    "name": "埋骨礼",
+    "power": 5.04,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0022",
+    "name": "回归墟骨",
+    "power": 0.9,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0023",
+    "name": "震语：沸息",
+    "power": 12,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0024",
+    "name": "震语：熔名",
+    "power": 9,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0025",
+    "name": "观红",
+    "power": 9.2,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0026",
+    "name": "光导石",
+    "power": 5.4,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0027",
+    "name": "震语：明目",
+    "power": 5,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0028",
+    "name": "涌喉·光池倒影",
+    "power": 6.3,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0029",
+    "name": "观红（深相）",
+    "power": 5.2,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0030",
+    "name": "震语：照骨",
+    "power": 5.4,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0031",
+    "name": "尝水",
+    "power": 9.2,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0032",
+    "name": "震语：引流",
+    "power": 5.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0033",
+    "name": "涌喉·水契",
+    "power": 6.4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0034",
+    "name": "震语：断流",
+    "power": 7.75,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0035",
+    "name": "尝水（深井）",
+    "power": 5.5,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0036",
+    "name": "辨矿",
+    "power": 4,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0037",
+    "name": "相石·初刻",
+    "power": 4.05,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0038",
+    "name": "相石·满录",
+    "power": 4.5,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0039",
+    "name": "埋骨布",
+    "power": 5,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0040",
+    "name": "五脉符",
+    "power": 2.25,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0041",
+    "name": "震语：淡忘",
+    "power": 6.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0042",
+    "name": "震语：断忆",
+    "power": 10.8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0043",
+    "name": "静底·焚忆",
+    "power": 5.4,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0044",
+    "name": "相石·封忆",
+    "power": 2.25,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0045",
+    "name": "埋骨礼（合葬）",
+    "power": 6.48,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0046",
+    "name": "震语：舍字",
+    "power": 5.4,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0047",
+    "name": "震台石碑（残诵）",
+    "power": 1.8,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0048",
+    "name": "震语：连震",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0049",
+    "name": "三震（回声）",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0050",
+    "name": "震语：传温",
+    "power": 6,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0051",
+    "name": "震语：润喉",
+    "power": 9.2,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0052",
+    "name": "震语：合鸣",
+    "power": 6,
+    "mech": [
+     "攻",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0053",
+    "name": "震语：五声",
+    "power": 7,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0054",
+    "name": "光导石（串珠）",
+    "power": 6.2,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0055",
+    "name": "震语：直视",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0056",
+    "name": "震语：回望",
+    "power": 9,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0057",
+    "name": "相石·对视",
+    "power": 2.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0058",
+    "name": "静底·深阅",
+    "power": 4.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0059",
+    "name": "震台石碑（注视）",
+    "power": 7.2,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0060",
+    "name": "五脉符（逆位）",
+    "power": 9.6,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0061",
+    "name": "震语：数息",
+    "power": 6.8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0062",
+    "name": "震语：叩问",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0063",
+    "name": "涌喉·深潜",
+    "power": 5.76,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0064",
+    "name": "历法刻盘（补页）",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0065",
+    "name": "静底·灰烬",
+    "power": 12,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0066",
+    "name": "震语：回声定位",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0067",
+    "name": "五脉符（缺位）",
+    "power": 4.05,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0068",
+    "name": "埋骨布（裹身）",
+    "power": 5.8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0069",
+    "name": "震台石碑（新碑）",
+    "power": 8.25,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0070",
+    "name": "震语：低语",
+    "power": 1,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0071",
+    "name": "震语：试井",
+    "power": -4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0072",
+    "name": "震语：回礼",
+    "power": 9,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0073",
+    "name": "静底·翻灰",
+    "power": 5.6,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0074",
+    "name": "涌喉·潮契",
+    "power": 7.02,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0075",
+    "name": "历法刻盘（倒页）",
+    "power": 9,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0076",
+    "name": "震语：双唱",
+    "power": 6,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "trem_0077",
+    "name": "五脉符（浮位）",
+    "power": 4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0078",
+    "name": "观红（对影）",
+    "power": 15.2,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "trem_0079",
+    "name": "震台石碑（无字）",
+    "power": 6.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "trem_0080",
+    "name": "震语：长夜",
+    "power": 10.5,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0081",
+    "name": "值班交接",
+    "power": 4.5,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0082",
+    "name": "不许关闭",
+    "power": 6.2,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "trem_0083",
+    "name": "谐振的余音",
+    "power": 5,
+    "mech": [
+     "攻"
+    ]
+   }
+  ],
+  "anmin": [
+   {
+    "id": "anm_0001",
+    "name": "现场回收",
+    "power": 3.2,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0002",
+    "name": "扳手规程",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0003",
+    "name": "备用照明电池",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0004",
+    "name": "例检条款",
+    "power": 5.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0005",
+    "name": "焊缝补强",
+    "power": 4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0006",
+    "name": "库存盘点",
+    "power": 8,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0007",
+    "name": "调节螺栓",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0008",
+    "name": "报废清单",
+    "power": 3.2,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0009",
+    "name": "料仓取件",
+    "power": 12,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0010",
+    "name": "应急照明协议",
+    "power": 7.2,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0011",
+    "name": "焊接臂·民用型",
+    "power": 12,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0012",
+    "name": "维修凝胶",
+    "power": 7,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0013",
+    "name": "料径校准",
+    "power": 7,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0014",
+    "name": "巡逻体残骸",
+    "power": 12,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0015",
+    "name": "主控授权·工程线",
+    "power": 5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0016",
+    "name": "主控授权·安全线",
+    "power": 4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0017",
+    "name": "回收协议·总则",
+    "power": 6.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0018",
+    "name": "威胁等级·评估员",
+    "power": 12,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0019",
+    "name": "例检手套",
+    "power": 7.8,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0020",
+    "name": "协议：静默段",
+    "power": 5.8,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0021",
+    "name": "协议：优先级翻转",
+    "power": 6.2,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0022",
+    "name": "协议：保运行",
+    "power": 5.4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0023",
+    "name": "协议：信息隔离",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0024",
+    "name": "协议：库存封存",
+    "power": 5.76,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0025",
+    "name": "协议：终端确认",
+    "power": 10,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0026",
+    "name": "协议：最小代价原则",
+    "power": 9,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0027",
+    "name": "协议：静默段·延长",
+    "power": 6.12,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0028",
+    "name": "协议：注销",
+    "power": 12.6,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0029",
+    "name": "氧气核算",
+    "power": 5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0030",
+    "name": "运料车残骸",
+    "power": 7,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0031",
+    "name": "缓冲库存",
+    "power": 4.8,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0032",
+    "name": "闭环利用",
+    "power": 6,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0033",
+    "name": "血统册摘录",
+    "power": 3,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0034",
+    "name": "辐射防护衬层",
+    "power": 6.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0035",
+    "name": "超频保养",
+    "power": 4.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0036",
+    "name": "保运行批文",
+    "power": 7.2,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0037",
+    "name": "动用储备",
+    "power": 14.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0038",
+    "name": "运料井下坠",
+    "power": 11,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0039",
+    "name": "菌婪者组织样本",
+    "power": 7.5,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0040",
+    "name": "协议：例外条款",
+    "power": 4.8,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0041",
+    "name": "保运行优先级",
+    "power": 2.57,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0042",
+    "name": "基因修复台",
+    "power": 7.2,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0043",
+    "name": "静默段徵章",
+    "power": 9,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0044",
+    "name": "死者的工号牌",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0045",
+    "name": "读图纸的人",
+    "power": 3,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0046",
+    "name": "例检清单（残）",
+    "power": 4.8,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "anm_0047",
+    "name": "通风守卫·代班",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "anm_0048",
+    "name": "运输井规程",
+    "power": 5.5,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "anm_0049",
+    "name": "撤销程序残片",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "anm_0050",
+    "name": "主控密钥（烧毁）",
+    "power": 4.05,
+    "mech": [
+     "特殊"
+    ]
+   }
+  ],
+  "cangmin": [
+   {
+    "id": "cng_0001",
+    "name": "守夜",
+    "power": 6.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0002",
+    "name": "王国账簿",
+    "power": 3,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0003",
+    "name": "巨神的欠条",
+    "power": 4.8,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0004",
+    "name": "灰藻汤",
+    "power": 5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0005",
+    "name": "巡夜灯",
+    "power": 4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0006",
+    "name": "守夜人的表",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0007",
+    "name": "星表检索",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0008",
+    "name": "历法之争",
+    "power": 9.2,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0009",
+    "name": "光父的准点",
+    "power": 6.4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0010",
+    "name": "忆盐",
+    "power": 6,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0011",
+    "name": "猎巫者的谎",
+    "power": 5.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0012",
+    "name": "母亲的祷文",
+    "power": 18,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0013",
+    "name": "灰藻供品",
+    "power": 4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0014",
+    "name": "伊格的方向",
+    "power": 10.8,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0015",
+    "name": "守望席",
+    "power": 7.2,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0016",
+    "name": "火母历第一页",
+    "power": 9,
+    "mech": [
+     "抽",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0017",
+    "name": "地下学院讲义",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0018",
+    "name": "巨神的凝视",
+    "power": 6.5,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0019",
+    "name": "王权梦",
+    "power": 2.5,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0020",
+    "name": "城墙梦",
+    "power": 5.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0021",
+    "name": "巨神的欠账",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0022",
+    "name": "卫星轨道",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0023",
+    "name": "潮汐锁",
+    "power": 9.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0024",
+    "name": "暗盘俯瞰",
+    "power": 8,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0025",
+    "name": "沉默权柄",
+    "power": 3,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0026",
+    "name": "光父的钟摆",
+    "power": 7,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0027",
+    "name": "红矮星风",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0028",
+    "name": "五十日",
+    "power": 11.2,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0029",
+    "name": "耀斑记忆",
+    "power": 6,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0030",
+    "name": "星光残照",
+    "power": 7.2,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0031",
+    "name": "光父的审判",
+    "power": 8,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0032",
+    "name": "准时的心跳",
+    "power": 8.6,
+    "mech": [
+     "防",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0033",
+    "name": "昴宿低语",
+    "power": 12,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0034",
+    "name": "火母的怀抱",
+    "power": 9.5,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0035",
+    "name": "伊格的痛苦",
+    "power": 5.6,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0036",
+    "name": "归乡",
+    "power": 10,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0037",
+    "name": "影语",
+    "power": 10.5,
+    "mech": [
+     "攻",
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0038",
+    "name": "震喉",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0039",
+    "name": "光导",
+    "power": 9.4,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0040",
+    "name": "墟语",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0041",
+    "name": "红藻花园",
+    "power": 8,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0042",
+    "name": "火母的回应",
+    "power": 2.4,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0043",
+    "name": "猎巫者的绳",
+    "power": 5.6,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0044",
+    "name": "三体历残卷",
+    "power": 3,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0045",
+    "name": "晨昏带地图",
+    "power": 4,
+    "mech": [
+     "防"
+    ]
+   },
+   {
+    "id": "cng_0046",
+    "name": "火母的小像",
+    "power": 6,
+    "mech": [
+     "特殊"
+    ]
+   },
+   {
+    "id": "cng_0047",
+    "name": "不醒者的名单",
+    "power": 6,
+    "mech": [
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0048",
+    "name": "猎巫巡逻·换防",
+    "power": 9,
+    "mech": [
+     "攻"
+    ]
+   },
+   {
+    "id": "cng_0049",
+    "name": "岩洞集会",
+    "power": 7.8,
+    "mech": [
+     "防",
+     "抽"
+    ]
+   },
+   {
+    "id": "cng_0050",
+    "name": "疯先知的笔记",
+    "power": 3.6,
+    "mech": [
+     "特殊"
+    ]
+   }
+  ]
+ }
+}

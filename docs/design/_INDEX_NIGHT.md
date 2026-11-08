@@ -1,0 +1,164 @@
+# G01 · 夜班总索引（100 篇导航）
+
+> 覆盖：`docs/design/*.md` 94 篇 + `docs/design/what_it_fills/` 6 篇 = **100 篇**。
+> 组别：规格要求六组（脉象盘点/数据全表/文档对齐/深加工/方向池/兜底），实际加「存量文档」一组收容本夜之前已存在的 14 篇（它们不属于任何任务号，标「存量」）——这是对六组的必要扩展，不是新分类体系。
+> 生成：`python data/audit/gen_g01.py`（映射表内嵌）。每篇一行：文件 / 内容 / 回答什么问题 / 任务号。
+
+## 一、脉象盘点（主队列第一批 T401-T416 + T500/T503）
+
+| 文件 | 内容 | 回答什么问题 | 任务号 |
+|---|---|---|---|
+| [vein_audit_matrix.md](vein_audit_matrix.md) | 219 张全卡矩阵：脉/类型/费/稀有度/效果一句话/与谁重复 + RAW 比对 + 效果分布 + 跨角色撞配方 + 矛盾检查 + 覆盖缺口 + 收尾费用维度 | 每张卡现在是什么、和谁重复、标签对不对？ | T401/T402/T403/T404/T406/T412/收尾 |
+| [vein_cost_curve.md](vein_cost_curve.md) | 每条脉 0/1/2/3+ 费分布与平均费 | 哪条脉贵、哪条脉便宜？ | T407 |
+| [vein_effects_by_vein.md](vein_effects_by_vein.md) | 219 张按脉重组的效果全集（含导读） | 这条脉现在有什么牌、缺什么？ | T410 |
+| [vein_flavor_card.md](vein_flavor_card.md) | 五脉味道速查卡（审计用） | 写卡/审卡时脉的判据是什么？ | T405 |
+| [vein_no_vein_advice.md](vein_no_vein_advice.md) | 11 张无脉牌逐张归属建议 | 无脉牌该归哪条脉？ | T408 |
+| [vein_dup_review.md](vein_dup_review.md) | dup_check 21 条近似撞的人工复核（真撞 11/误报 10） | 哪些重复是真的？ | T409 |
+| [vein_special_mech_cards.md](vein_special_mech_cards.md) | lock/凝视/共振 9 个机制入口的逐卡清单 | 哪些卡用了特殊机制？ | T411 |
+| [vein_positive_examples.md](vein_positive_examples.md) | 每脉 4-5 张正例样本 + 反面对照 | 这条脉长什么样才算对？ | T413 |
+| [vein_doc_conflicts.md](vein_doc_conflicts.md) | 旧文档 vs §2.1 的 7 条冲突（C1-C7） | 旧文档哪些话已经错了？ | T415 |
+| [shared_pool_audit.md](shared_pool_audit.md) | 通用池 11 张逐张通用性审查 | 通用池有没有违反方案 C？ | T416 |
+| [card_intent_reverse.md](card_intent_reverse.md) | 219 张逐张设计意图反推 + 意图聚类统计 | 这张卡当初想解决什么问题？ | T500 |
+| [special_mech_dist.md](special_mech_dist.md) | 三特殊机制的使用分布与死机制候选 | lock/凝视/共振谁重谁轻？ | T503 |
+| [card_quickref.md](card_quickref.md) | 219 条 ≤30 字速查（去引擎括注） | 这张卡干什么，一句话？ | F11 |
+
+## 二、数据全表（主队列第二批 T440-T447 + T414/T504/T514）
+
+| 文件 | 内容 | 回答什么问题 | 任务号 |
+|---|---|---|---|
+| [enemy_table.md](enemy_table.md) | 145 只敌人逐只：血/攻/意图序列/phases/垫底机制 + 按层统计 | 这只敌人多强、怎么打？ | T440 |
+| [event_table.md](event_table.md) | 102 个事件逐个选项：veins 标签 + 结果翻译 | 每个事件给什么扣什么？ | T441 |
+| [relic_table.md](relic_table.md) | 107 件遗物逐件：来源/效果/偏向 + 三节统计 | 遗物池长什么样？ | T442 |
+| [layer_rules.md](layer_rules.md) | 8 层规则逐条引擎实现行号 + 层规则↔脉象加成对账 | 每层规则是怎么实现的、影响哪条脉？ | T443 |
+| [term_audit.md](term_audit.md) | 术语一致性核对：正名 vs 实际使用 7 条明细 | 同一个概念有几种叫法？ | T444 |
+| [banned_word_scan.md](banned_word_scan.md) | 卡面 flavor/cost_text 禁词扫描（零命中） | 卡面文案有没有违规词？ | T445 |
+| [numeric_outliers.md](numeric_outliers.md) | 同桶主数值离群 15 处 | 哪些卡数值偏离同类？ | T446 |
+| [dead_card_check.md](dead_card_check.md) | 空转卡 4 张 + 引擎键支持面对账 + core.js 过期发现 | 哪些卡的效果是空的？ | T447 |
+| [card_naming_guide.md](card_naming_guide.md) | 卡牌命名风格指南（模式分布+6 规则+5 避免） | 新卡怎么起名？ | T414 |
+| [all_numbers.md](all_numbers.md) | 游戏内全部关键数字清单（每项带文件+行号） | 这个数字是多少、在哪定义？ | T514 |
+| [rarity_dist.md](rarity_dist.md) | 稀有度分布 + 低稀强 29 处/高稀平 0 处 | 稀有度在按强度分吗？ | T504 |
+
+## 三、文档对齐（主队列第三批 T448-T453）
+
+| 文件 | 内容 | 回答什么问题 | 任务号 |
+|---|---|---|---|
+| [vein_writing_card.md](vein_writing_card.md) | 五脉写卡速查卡（每脉三行+一句话判据） | 写新卡时旁边放什么？ | T448 |
+| [class_pick_hint.md](class_pick_hint.md) | 四角色选择界面提示+简介（≤30/≤100 字） | 选人界面写什么？ | T449 |
+| [old_doc_conflicts.md](old_doc_conflicts.md) | T415 索引 + 角色味道冲突 5 条 + 整局永久审计 | 旧文档与角色定稿哪里冲突？ | T450 |
+| [tutorial_gaps.md](tutorial_gaps.md) | 引导缺口 12 条（含任务书六条的逐一核对） | 哪些机制没有文字解释？ | T451 |
+| [starter_deck_analysis.md](starter_deck_analysis.md) | 四角色初始 12 张分析 + 逐角色味道判断 | 初始卡组和角色味道对得上吗？ | T452 |
+| [enemy_power_curve.md](enemy_power_curve.md) | 逐层强度曲线 + 两段跳变判断（L2→L3 +70%） | 难度曲线哪里断崖？ | T453 |
+
+## 四、深加工（INBOX 01+02，T501-T513/T520-T534）
+
+| 文件 | 内容 | 回答什么问题 | 任务号 |
+|---|---|---|---|
+| [enemy_card_map.md](enemy_card_map.md) | 145 只敌人逐只：考什么/罚什么/该带的牌 | 这只敌人在考哪种打法？ | T501 |
+| [layer_theme.md](layer_theme.md) | 8 层主题一致性判定（层名/eco/敌人/事件四元组） | 每层在讲同一件事吗？ | T502 |
+| [event_info.md](event_info.md) | 306 个选项信息量三档分级 + 18 个全盲事件 | 玩家选之前能看出结果吗？ | T505 |
+| [decision_points.md](decision_points.md) | 四角色 1000 回合模拟决策广度 | 每回合有几个有意义的选择？ | T506 |
+| [first_run_flow.md](first_run_flow.md) | 前 3 层逐行推演 + 资源账 + 两个卡点 | 第一局会在哪卡住？ | T507 |
+| [card_readability.md](card_readability.md) | 卡面字数分布 + 最长 15 张分析 | 有没有长到不想读的卡？ | T508 |
+| [relic_mustpick.md](relic_mustpick.md) | 遗物必拿 21 件（收益差 ≥+1）+ 白赚件 50 件 | 哪些遗物拿了就赚？ | T509 |
+| [enemy_avoid.md](enemy_avoid.md) | 必躲敌人 18 只（期望承伤 ≥20 的普通敌） | 哪些敌人性价比极差？ | T510 |
+| [pool_3d.md](pool_3d.md) | 全池费用×类型×稀有度 18/27 格 + 空格单卡格 | 哪些组合玩家没得选？ | T511 |
+| [event_density.md](event_density.md) | 每层事件/商店/精发行密度（期望模型） | 多久遇到一次事件？ | T512 |
+| [natural_combos.md](natural_combos.md) | 16 组自然组合 + 三条断头协同（灼烧无兑现/frail 死） | 现有牌能凑出什么配合？ | T513 |
+| [first_5min.md](first_5min.md) | 四角色开局 5 分钟叙事脚本 | 每个角色的开局手感差在哪？ | T521 |
+| [intent_predictability.md](intent_predictability.md) | 意图可预测性（引擎全固定循环）+ 记忆负担分档 | 敌人意图能不能算？ | T522 |
+| [least_picked_20.md](least_picked_20.md) | 最没人拿的 20 张（严格占优判定） | 哪些卡有更好替代？ | T523 |
+| [event_rr.md](event_rr.md) | 事件选项风险收益比（不会选 1/必选 20） | 哪些选项玩家必选/必跳？ | T524 |
+| [relic_tier.md](relic_tier.md) | 遗物 S/A/B/C 分级（裸强度模型） | 遗物强度档位？ | T525 |
+| [healing_check.md](healing_check.md) | 回血手段全清单 + 一局恢复量估算 | 回复够不够？ | T527 |
+| [death_causes.md](death_causes.md) | 8 层逐层死法 + 最容易死层排名（L3） | 每层玩家怎么死？ | T528 |
+| [upgrade_coverage.md](upgrade_coverage.md) | 升级覆盖率 216/219 + 3 张缺口（全是无脉卡） | 哪些卡没升级？ | T530 |
+| [attack_rate.md](attack_rate.md) | 敌人攻击频率与期望承伤逐层表 | 敌人多久打一次、多疼？ | T531 |
+| [playtime_estimate.md](playtime_estimate.md) | 一局时长两档估算（25-30 / 60-75 分钟） | 一局玩多久？ | T533 |
+| [newbie_mistakes.md](newbie_mistakes.md) | 新手 10 个错误 + 提示落点 | 新手会在哪犯傻？ | T534 |
+| [redesign_notes.md](redesign_notes.md) | 219 张四类重设计建议（机制3/定位86/数值110/不改20） | 每张卡如果要改改哪里？ | T520 |
+
+## 五、方向池与 INBOX 03（D1-D14/F2-F12）
+
+| 文件 | 内容 | 回答什么问题 | 任务号 |
+|---|---|---|---|
+| [00_INDEX.md](00_INDEX.md) | D1 总索引：全池扎堆一览+三句判断 | 每张卡在补什么缺口？ | D1 |
+| [diver.md](diver.md) | 下潜者 57 张逐张缺口分类 | 同上 | D1 |
+| [tremor.md](tremor.md) | 震语者 57 张逐张缺口分类 | 同上 | D1 |
+| [anmin.md](anmin.md) | 维护者 47 张逐张缺口分类 | 同上 | D1 |
+| [cangmin.md](cangmin.md) | 疯先知 47 张逐张缺口分类 | 同上 | D1 |
+| [shared.md](shared.md) | 通用 11 张逐张缺口分类 | 同上 | D1 |
+| [bad_event_options.md](bad_event_options.md) | 同事件被支配选项 59 个 | 事件里哪些选项是坏选择？ | D2 |
+| [layer_composition.md](layer_composition.md) | 每层敌人池构成 + 重名审计（全名零重名） | 每层敌人池长什么样？ | D3 |
+| [relic_vein_fit.md](relic_vein_fit.md) | 107 件遗物对五脉的直接/间接/无关支持 | 哪条脉没有遗物支持？ | D4 |
+| [keyword_frequency.md](keyword_frequency.md) | effect 键与 special 码频次 + 死机制候选 | 哪些机制只有一张卡在用？ | D5 |
+| [text_length.md](text_length.md) | 卡面文字长度分布 + 最短/最长 10 张 | 卡面文字长短分布？ | D6 |
+| [scatter_plan.md](scatter_plan.md) | 散牌局四层支撑 + 脉惨度排名（热>震>水） | 体系没成型靠什么撑？ | D7 |
+| [intent_coverage.md](intent_coverage.md) | 意图种类覆盖分布 + 单意图敌 3 只 | 敌人意图种类够不够？ | D8 |
+| [inspiration_log.md](inspiration_log.md) | 设计溯源：StS 6 条/密教 4 条/点状 5 条/自有 5 条 | 哪些设计和别的游戏像？ | F8 |
+| [layer_literary.md](layer_literary.md) | 8 层文学判读（文体/意象/人称）+ 三条横跨观察 | 每层的文字像什么？ | F7 |
+| [orphan_cards.md](orphan_cards.md) | 孤儿卡交互图判定（严格零孤儿 + 机制轴单柱） | 哪些牌没有任何配合？ | D10 |
+| [event_vein_link.md](event_vein_link.md) | 脉×层事件矩阵（零缺席但量级差 2.6 倍） | 哪条脉在事件里供给不足？ | D9 |
+| [combat_pace.md](combat_pace.md) | 战斗节奏双口径粗估（前期 15/成型 36） | 一场战斗打几回合？ | D11 |
+| [game_terms_full.md](game_terms_full.md) | 46 个自造词四问表（要推吗/推得出吗） | 玩家能不能自己搞懂这些词？ | F10 |
+| [game_terms.md](game_terms.md) | 专有名词按玩家接触顺序 16 步表 | 玩家在第几步撞到哪个词？ | D12 |
+| [enemy_naming_guide.md](enemy_naming_guide.md) | 敌名五式分布 + 5 条规则 | 新敌人怎么起名？ | D13 |
+| [pool_thickness.md](pool_thickness.md) | 四角色三维厚度 + 薄位清单 | 角色池内哪里没得选？ | D14 |
+| [vein_curve.md](vein_curve.md) | 脉象等级成长推演（峰值 1-2，上限 5 摸不到） | 脉象等级一局能到几级？ | T526 |
+| [resource_curve.md](resource_curve.md) | 四资源逐层收支（三种失衡形态全是出口问题） | 资源收支平衡吗？ | T532 |
+| [deck_size.md](deck_size.md) | 卡组厚度：进牌 +12~18 vs 删牌 1~3 | 卡组会多肥？ | T529 |
+| [flavor_rewrite.md](flavor_rewrite.md) | 30 张最弱风味重写提案 | 哪些风味文本弱、怎么改？ | F3 |
+| [enemy_lore_rewrite.md](enemy_lore_rewrite.md) | 145 只敌人描述提案（boss 手写） | 敌人描述怎么写？ | F4 |
+| [event_rewrite.md](event_rewrite.md) | 10 个事件选项文本重写（带结果信号） | 事件选项怎么让玩家猜到结果？ | F5 |
+| [relic_lore.md](relic_lore.md) | 遗物风味审计 + 6 件来历补写 | 遗物文案缺什么？ | F6 |
+| [first_impression.md](first_impression.md) | 卡名第一印象测试（75 符/21 猜错/123 意象名） | 名字传达信息吗？ | F12 |
+| [term_unify_plan.md](term_unify_plan.md) | 术语统一 7 组方案（影响面实测） | 术语怎么统一、改多少处？ | F2 |
+| [_THIN_DOCS_AUDIT.md](_THIN_DOCS_AUDIT.md) | 170 篇 <100 行文档分类账（短≠薄弱） | 短文档要不要扩写？ | F9 |
+
+## 六、兜底与交叉合并（F1/_ 系 + 本批 G 系）
+
+| 文件 | 内容 | 回答什么问题 | 任务号 |
+|---|---|---|---|
+| [_CONFLICTS.md](_CONFLICTS.md) | 全局矛盾清单：事实矛盾 10 + 失效引用 6 组 + 术语 6 组 | 文档之间哪里打架？ | F1 |
+| [_DOC_CONFLICTS.md](_DOC_CONFLICTS.md) | 新产出互相矛盾交叉检查（真矛盾 7+留档 8+抽样 12 对） | 本夜产出之间哪里打架？ | G08 |
+| [_FINDINGS.md](_FINDINGS.md) | 六项关键发现复核（证据/影响面/严重度） | 本夜发现可信吗？ | G02 |
+| [_BUGS.md](_BUGS.md) | 可执行修复清单 8 条（P0×2 起步） | 明天先修什么？ | G14 |
+| [_TERMS_MERGED.md](_TERMS_MERGED.md) | 术语三合一终版表 + 六条执行清单 | 术语最终怎么定？ | G11 |
+| [_DOC_STRUCTURE.md](_DOC_STRUCTURE.md) | 12 子目录归档方案 + 112 篇逐篇归属 | 文档该怎么归？ | G12 |
+| [_READ_FIRST.md](_READ_FIRST.md) | 明天先看的 10 篇排序 | 早上从哪读起？ | G13 |
+| [_DEPTH_AUDIT.md](_DEPTH_AUDIT.md) | 114 篇深度统计 + 最薄 15 篇判定（零写草） | 哪些文档写草了？ | G15 |
+| [_CONCLUSIONS.md](_CONCLUSIONS.md) | 100 条结论按重要性排序 | 昨晚最重要的发现是什么？ | G07 |
+| [redesign_clusters.md](redesign_clusters.md) | 重设计建议聚类（根因归纳） | 219 条建议怎么归类？ | G09 |
+| [thin_spots_merged.md](thin_spots_merged.md) | 四份薄位清单合并总表 | 卡池的洞全在哪？ | G10 |
+| [vein_tag_review.md](vein_tag_review.md) | 219 张脉标签三档复审 | 每张卡的脉标签匹配吗？ | G03 |
+| [enemy_layer_fit.md](enemy_layer_fit.md) | 敌人与层匹配度审查 | 这层该出现这种敌人吗？ | G04 |
+| [engine_diff.md](engine_diff.md) | core.js vs web 内联副本差异全清单 | 两份引擎差在哪？ | G05 |
+| [experience_map.md](experience_map.md) | 玩家体验全时间线 + 断裂点 | 玩家从开局到结束经历什么？ | G06 |
+| [_INDEX_NIGHT.md](_INDEX_NIGHT.md) | 本文件：100 篇总索引 | 昨晚干了什么、在哪查？ | G01 |
+
+## 七、本夜之前已存在的文档（非本夜产出，供溯源）
+
+| 文件 | 内容 | 回答什么问题 | 任务号 |
+|---|---|---|---|
+| [CARD_EFFECTS_AUTO.md](CARD_EFFECTS_AUTO.md) | 全卡效果总表（card_desc 自动生成，2026-11-04 版） | 每张卡的引擎结算文案？ | 存量（tools/gen_card_effects.py） |
+| [CONFLICTS.md](CONFLICTS.md) | 旧版冲突记录（T3xx 时代） | 存量矛盾一览 | 存量 |
+| [DESIGN_TODO.md](DESIGN_TODO.md) | 设计待办（T-D 系列） | 还有什么没做？ | 存量 |
+| [DUP_VS_SHARED.md](DUP_VS_SHARED.md) | 通用×职业查重（dup_check.py 输出，本夜重跑过） | 通用牌撞了哪些职业牌？ | 存量（T402 引用） |
+| [T320_MECHANISMS.md](T320_MECHANISMS.md) | 机制盘点（T320） | 机制分布 | 存量 |
+| [T321_REDUNDANCY.md](T321_REDUNDANCY.md) | 冗余盘点（T321） | 哪些卡冗余 | 存量 |
+| [T322_MONOTONY.md](T322_MONOTONY.md) | 单调性分析（T322） | 打法会不会趋同 | 存量 |
+| [T323_RULES.md](T323_RULES.md) | 规则盘点（T323） | 层规则覆盖 | 存量 |
+| [T324_GAPS.md](T324_GAPS.md) | 缺口分析（T324） | 内容缺口 | 存量 |
+| [glossary_check.md](glossary_check.md) | 术语检查（T64 系） | 术语合规 | 存量 |
+| [_FIX_20261104_special_value.md](_FIX_20261104_special_value.md) | 2026-11-04 special value 归一化修复记录 | value/v 修复的来龙去脉 | 存量（G05/G02 证据源） |
+| [_NIGHT_REPORT_1104.md](_NIGHT_REPORT_1104.md) | 上一夜（11-04）报告 | 昨晚干了什么 | 存量 |
+| [_PROGRESS.md](_PROGRESS.md) | 旧进度文件 | 历史进度 | 存量 |
+| [_VERIFY_NIGHT.md](_VERIFY_NIGHT.md) | 旧验证记录 | 历史验证 | 存量 |
+
+## 快速路由
+
+- 想知道**昨晚干了什么** → 本文件 → _CONCLUSIONS.md（100 条结论）→ _READ_FIRST.md（先读 10 篇）
+- 想知道**卡的事** → vein_audit_matrix.md（总表）→ card_quickref.md（速查）→ card_intent_reverse.md（意图）
+- 想知道**敌人的事** → enemy_table.md（数据）→ enemy_card_map.md（考什么）→ death_causes.md（死法）
+- 想知道**明天修什么** → _BUGS.md → _FINDINGS.md（证据）
+- 想知道**术语怎么定** → _TERMS_MERGED.md → term_unify_plan.md
+- 想知道**文档哪份在哪** → 本文件（按组查）或 _DOC_STRUCTURE.md（未来目录方案）

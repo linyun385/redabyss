@@ -1,0 +1,3349 @@
+[
+ {
+  "id": "enemy_d1_01",
+  "name": "嗜热古菌",
+  "layer": 1,
+  "tier": "normal",
+  "hp": "8-10",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "它们贴在余温上。管道凉了三十年，它们还在等。"
+ },
+ {
+  "id": "enemy_d1_02",
+  "name": "腐生菌",
+  "layer": 1,
+  "tier": "normal",
+  "hp": "9-11",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "defend",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "灰白的膜盖在座椅上，按座椅的形状长的。"
+ },
+ {
+  "id": "enemy_d2_01",
+  "name": "冷洞食腐鳗",
+  "layer": 2,
+  "tier": "normal",
+  "hp": "14-19",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "它沿洞壁捡食碎屑。你掉落的装备它闻了闻，没要。"
+ },
+ {
+  "id": "enemy_d2_02",
+  "name": "冷洞青菌",
+  "layer": 2,
+  "tier": "normal",
+  "hp": "14-20",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "菌斑扩到你脚边要以年计。它不急。"
+ },
+ {
+  "id": "enemy_d2_03",
+  "name": "墟蟹",
+  "layer": 2,
+  "tier": "normal",
+  "hp": "16-21",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 3,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "它把矿票残角拖回缝里，拖得很郑重。"
+ },
+ {
+  "id": "enemy_d2_04",
+  "name": "休眠两栖类",
+  "layer": 2,
+  "tier": "normal",
+  "hp": "14-18",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "它睡在渗水线上。你踩进水，它醒了一半，另一半没动。"
+ },
+ {
+  "id": "enemy_d2_05",
+  "name": "噬骨菌群",
+  "layer": 2,
+  "tier": "elite",
+  "hp": "38-46",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "白骨上的缺口很整齐。缺口是从里面开始的。"
+ },
+ {
+  "id": "enemy_d3_01",
+  "name": "硬矿洞蛇",
+  "layer": 3,
+  "tier": "normal",
+  "hp": "24-30",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "它盘成矿脉的形状。你第二眼才认出它是活的。"
+ },
+ {
+  "id": "enemy_d3_02",
+  "name": "钻孔贝",
+  "layer": 3,
+  "tier": "normal",
+  "hp": "22-28",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "壳上的洞排成直线。下一条直线的位置和你的胸口平齐。"
+ },
+ {
+  "id": "enemy_d3_03",
+  "name": "干旱肺鱼",
+  "layer": 3,
+  "tier": "normal",
+  "hp": "26-32",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "它在干泥壳里等水。洞口朝着水的方向，摆了很多年。"
+ },
+ {
+  "id": "enemy_d3_04",
+  "name": "盲蛛",
+  "layer": 3,
+  "tier": "normal",
+  "hp": "22-26",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "它不动。影子挪过去，它恰好总在影子里。"
+ },
+ {
+  "id": "enemy_d3_05",
+  "name": "气腔洞鼹兽",
+  "layer": 3,
+  "tier": "elite",
+  "hp": "58-68",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "塌下来的方向是它挖的。挖的时候，这条路还没有人。"
+ },
+ {
+  "id": "enemy_d4_01",
+  "name": "红腔鱼",
+  "layer": 4,
+  "tier": "normal",
+  "hp": "26-32",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它悬在暗处不动。暗处少的那一块就是它。"
+ },
+ {
+  "id": "enemy_d4_02",
+  "name": "滤食鱼群",
+  "layer": 4,
+  "tier": "normal",
+  "hp": "24-30",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 4,
+    "times": 3
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它们绕你转了一圈。不是攻击，是在称重。"
+ },
+ {
+  "id": "enemy_d4_03",
+  "name": "垂光蕨",
+  "layer": 4,
+  "tier": "normal",
+  "hp": "28-34",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "你路过的时候，叶尖齐齐转向你。没有风。"
+ },
+ {
+  "id": "enemy_d4_04",
+  "name": "光池银鱼",
+  "layer": 4,
+  "tier": "normal",
+  "hp": "24-30",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "defend",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "一小群反光贴着水面走。最前面那条是空的。"
+ },
+ {
+  "id": "enemy_d4_05",
+  "name": "盲眼红腔鱼",
+  "layer": 4,
+  "tier": "elite",
+  "hp": "66-76",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 14
+   },
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 10
+   }
+  ],
+  "traits": [],
+  "flavor": "它没有眼。你进洞的时候，洞暗了一下。"
+ },
+ {
+  "id": "enemy_d4_06",
+  "name": "光蛭母",
+  "layer": 4,
+  "tier": "boss",
+  "hp": 120,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "defend",
+    "value": 10
+   },
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 18
+   }
+  ],
+  "traits": [],
+  "flavor": "它悬在气流里，薄得透光。你被从头到尾数过一遍。谁数的，没有对账。",
+  "phases": [
+   {
+    "hp_above": 0.66,
+    "log": "它把自己摊开在上升气流里。你数不清哪一层是它。",
+    "intent_pattern": [
+     {
+      "type": "debuff",
+      "status": "steal",
+      "value": 1
+     },
+     {
+      "type": "attack",
+      "value": 10
+     },
+     {
+      "type": "attack",
+      "value": 8
+     },
+     {
+      "type": "defend",
+      "value": 8
+     }
+    ]
+   },
+   {
+    "hp_above": 0.33,
+    "log": "它薄得透光。分你一点光，多收一点利息。",
+    "intent_pattern": [
+     {
+      "type": "buff",
+      "value": 5
+     },
+     {
+      "type": "debuff",
+      "status": "gift",
+      "value": 1
+     },
+     {
+      "type": "attack",
+      "value": 12
+     },
+     {
+      "type": "defend",
+      "value": 8
+     }
+    ]
+   },
+   {
+    "hp_above": 0,
+    "log": "它开始和你共用同一副手牌。听它的那一半越来越多。",
+    "intent_pattern": [
+     {
+      "type": "debuff",
+      "status": "steal",
+      "value": 1
+     },
+     {
+      "type": "attack",
+      "value": 14
+     },
+     {
+      "type": "debuff",
+      "status": "steal",
+      "value": 1
+     },
+     {
+      "type": "attack",
+      "value": 10,
+      "times": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d5_01",
+  "name": "热泉管虫",
+  "layer": 5,
+  "tier": "normal",
+  "hp": "28-34",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "触须开合的节奏和你的心跳对上了。你先停的。"
+ },
+ {
+  "id": "enemy_d5_02",
+  "name": "热泉螈",
+  "layer": 5,
+  "tier": "normal",
+  "hp": "26-32",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它泡在池里。你伸手进去，池水绕开你的手，先碰它。"
+ },
+ {
+  "id": "enemy_d5_03",
+  "name": "硫塔菌",
+  "layer": 5,
+  "tier": "normal",
+  "hp": "30-36",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "硫塔中空。风穿过去的时候，它用你的脚步打拍子。"
+ },
+ {
+  "id": "enemy_d5_04",
+  "name": "震鸣蟾",
+  "layer": 5,
+  "tier": "normal",
+  "hp": "26-31",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "它的叫声让你的牙发麻。收件人不是你。"
+ },
+ {
+  "id": "enemy_d5_05",
+  "name": "铁细菌膜母体",
+  "layer": 5,
+  "tier": "elite",
+  "hp": "58-66",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 11
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "整片浅滩在膜下呼吸。你踩过的地方陷得深一些。"
+ },
+ {
+  "id": "enemy_d5_06",
+  "name": "震喉",
+  "layer": 5,
+  "tier": "boss",
+  "hp": 96,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 10
+   },
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 15
+   },
+   {
+    "type": "defend",
+    "value": 9
+   }
+  ],
+  "traits": [],
+  "flavor": "管道骨骼缠成一团。中心空腔开合，吸的不是气。",
+  "phases": [
+   {
+    "hp_above": 0.66,
+    "log": "管道骨骼缠成一团，中心空腔在吸。吸的不是气。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 8,
+      "mirror": true
+     },
+     {
+      "type": "attack",
+      "value": 6
+     },
+     {
+      "type": "defend",
+      "value": 10
+     }
+    ]
+   },
+   {
+    "hp_above": 0.33,
+    "log": "空腔张开。你这一步还没落，它已经在数下一步。",
+    "intent_pattern": [
+     {
+      "type": "buff",
+      "value": 5
+     },
+     {
+      "type": "attack",
+      "value": 12,
+      "mirror": true
+     },
+     {
+      "type": "debuff",
+      "status": "weak",
+      "value": 2
+     }
+    ]
+   },
+   {
+    "hp_above": 0,
+    "log": "振动不走空气了。空气让开，骨头接手。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 9,
+      "pierce": true
+     },
+     {
+      "type": "attack",
+      "value": 9,
+      "pierce": true
+     },
+     {
+      "type": "attack",
+      "value": 16
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d6_01",
+  "name": "辐射合成菌",
+  "layer": 6,
+  "tier": "normal",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "辐射对它们是食物。你走过的那一段，特别肥。",
+  "hp": "34-42"
+ },
+ {
+  "id": "enemy_d6_02",
+  "name": "抗辐射甲壳类",
+  "layer": 6,
+  "tier": "normal",
+  "hp": "36-44",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 10
+   }
+  ],
+  "traits": [],
+  "flavor": "垢从壳缝里长出来，把辐射裹在里头。它走在剂量表外面。"
+ },
+ {
+  "id": "enemy_d6_03",
+  "name": "辐射金属鳞鳄",
+  "layer": 6,
+  "tier": "normal",
+  "hp": "38-46",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 10
+   },
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "鳞缝里漏红光。它爬过的地方，计数器响很久。"
+ },
+ {
+  "id": "enemy_d6_04",
+  "name": "锈蚀菌",
+  "layer": 6,
+  "tier": "normal",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "支撑柱的锈多了几道新指痕。进食声像翻书。",
+  "hp": "32-38"
+ },
+ {
+  "id": "enemy_d6_05",
+  "name": "辐射金属鳞鳄王",
+  "layer": 6,
+  "tier": "elite",
+  "hp": "68-74",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 10
+   },
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 9
+   }
+  ],
+  "traits": [],
+  "flavor": "它的领地按剂量划分。你进门那一步已经越界。"
+ },
+ {
+  "id": "enemy_d7_01",
+  "name": "旧光者残影",
+  "layer": 7,
+  "tier": "normal",
+  "hp": "26-30",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "它在重复一段旧对话。你的名字在里面，位置没变过。"
+ },
+ {
+  "id": "enemy_d7_02",
+  "name": "光柱蛇蜥",
+  "layer": 7,
+  "tier": "normal",
+  "hp": "26-30",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "光柱熄了。它还悬在原来的位置。"
+ },
+ {
+  "id": "enemy_d7_03",
+  "name": "震杆菌",
+  "layer": 7,
+  "tier": "normal",
+  "hp": "26-30",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "培养皿碎了，它们还在分裂。间隔很短，像赶时间。"
+ },
+ {
+  "id": "enemy_d7_04",
+  "name": "孢子群",
+  "layer": 7,
+  "tier": "normal",
+  "hp": "28-32",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 3,
+    "times": 3
+   },
+   {
+    "type": "defend",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "它们过境时红光暗一小会儿。刚好够你数错一步。"
+ },
+ {
+  "id": "enemy_d7_05",
+  "name": "震语苔丛",
+  "layer": 7,
+  "tier": "elite",
+  "hp": "52-58",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 9
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "整面墙的苔在念经。用的是你的步频。"
+ },
+ {
+  "id": "enemy_d7_06",
+  "name": "穹顶之影",
+  "layer": 7,
+  "tier": "boss",
+  "hp": 56,
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 11
+   }
+  ],
+  "traits": [],
+  "flavor": "倒挂的发光网。它不捕猎。它照明，然后等。",
+  "phases": [
+   {
+    "hp_above": 0.66,
+    "log": "倒挂的发光网。它不捕猎，它照明，然后等。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 6,
+      "pierce": true
+     },
+     {
+      "type": "defend",
+      "value": 12
+     }
+    ]
+   },
+   {
+    "hp_above": 0.33,
+    "log": "穹顶之影把你的每一步都记进光里。记满了。",
+    "intent_pattern": [
+     {
+      "type": "buff",
+      "value": 6
+     },
+     {
+      "type": "buff",
+      "value": 6
+     },
+     {
+      "type": "attack",
+      "value": 30
+     }
+    ]
+   },
+   {
+    "hp_above": 0,
+    "log": "一部分结构自己动了。那部分从来不是活物。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 10,
+      "times": 2,
+      "pierce": true
+     },
+     {
+      "type": "attack",
+      "value": 18
+     },
+     {
+      "type": "debuff",
+      "status": "weak",
+      "value": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d8_01",
+  "name": "墟蛹",
+  "layer": 8,
+  "tier": "boss",
+  "hp": 68,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 10
+   }
+  ],
+  "traits": [],
+  "flavor": "茧的表面在计算。算到你的部分，停了很久。",
+  "phases": [
+   {
+    "hp_above": 0.66,
+    "log": "茧的表面在计算。算到你的部分，停了很久。",
+    "intent_pattern": [
+     {
+      "type": "buff",
+      "value": 8
+     },
+     {
+      "type": "buff",
+      "value": 6
+     },
+     {
+      "type": "attack",
+      "value": 20
+     }
+    ]
+   },
+   {
+    "hp_above": 0.33,
+    "log": "墟蛹开始编织。你弃掉的牌成了它的丝。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 10,
+      "drain_discard": true
+     },
+     {
+      "type": "attack",
+      "value": 14
+     },
+     {
+      "type": "defend",
+      "value": 16
+     }
+    ]
+   },
+   {
+    "hp_above": 0,
+    "log": "茧开了。走出来的东西穿着你的装备，合身。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 10,
+      "times": 3,
+      "pierce": true
+     },
+     {
+      "type": "buff",
+      "value": 6
+     },
+     {
+      "type": "attack",
+      "value": 24
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d8_02",
+  "name": "墟尘行像",
+  "layer": 8,
+  "tier": "normal",
+  "hp": "34-40",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "defend",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "跟着茧的节拍走。没有人抬它，它自己在走。"
+ },
+ {
+  "id": "enemy_d8_03",
+  "name": "空壳旧光者",
+  "layer": 8,
+  "tier": "elite",
+  "hp": "58-66",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 9
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "防护服还在自动广播。里面的人已经不需要它了。"
+ },
+ {
+  "id": "enemy_d1_03",
+  "name": "隙居螨",
+  "layer": 1,
+  "tier": "normal",
+  "hp": "8-11",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "它们住在岩缝里。身子比缝薄一层，薄得刚好。"
+ },
+ {
+  "id": "enemy_d1_04",
+  "name": "管廊苔毯",
+  "layer": 1,
+  "tier": "normal",
+  "hp": "9-12",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "苔铺满了整条管廊。你踩过的地方，第二天是空的。"
+ },
+ {
+  "id": "enemy_d2_06",
+  "name": "沉屑鱼",
+  "layer": 2,
+  "tier": "normal",
+  "hp": "14-18",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "它们吃上层落下来的东西。你掉下去的时候，它们排好了次序。"
+ },
+ {
+  "id": "enemy_d2_07",
+  "name": "冷洞跳蛛",
+  "layer": 2,
+  "tier": "normal",
+  "hp": "13-17",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "它跳之前会看你一眼。落点从来不是你刚才站的地方。"
+ },
+ {
+  "id": "enemy_d3_06",
+  "name": "硬壳蜗",
+  "layer": 3,
+  "tier": "normal",
+  "hp": "20-26",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "壳上的年轮一圈套一圈。最宽的那圈里嵌着一枚牙。"
+ },
+ {
+  "id": "enemy_d3_07",
+  "name": "空腔蝠",
+  "layer": 3,
+  "tier": "normal",
+  "hp": "18-24",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "它们没有眼睛，靠回声画地图。地图上你是一个洞。"
+ },
+ {
+  "id": "enemy_d4_07",
+  "name": "浮光水母",
+  "layer": 4,
+  "tier": "normal",
+  "hp": "26-32",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它浮在光池上方。影子沉在水底，影子比你先到。"
+ },
+ {
+  "id": "enemy_d4_08",
+  "name": "光藓蠕虫",
+  "layer": 4,
+  "tier": "normal",
+  "hp": "24-30",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "它们啃光藓。啃过的地方亮一下，像谁在里面翻了个身。"
+ },
+ {
+  "id": "enemy_d5_07",
+  "name": "沸泥鳗",
+  "layer": 5,
+  "tier": "normal",
+  "hp": "30-36",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "泥是沸的，它不急。它在等泥替它把你的脚固定住。"
+ },
+ {
+  "id": "enemy_d5_08",
+  "name": "硫雾囊菌",
+  "layer": 5,
+  "tier": "normal",
+  "hp": "32-38",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "defend",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "囊一鼓一缩。缩的时候，你闻到的硫味会换一个方向。"
+ },
+ {
+  "id": "enemy_d6_06",
+  "name": "铅皮蛞蝓",
+  "layer": 6,
+  "tier": "normal",
+  "hp": "34-40",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "铅皮是它自己裹的。剂量表上没有这一栏。"
+ },
+ {
+  "id": "enemy_d6_07",
+  "name": "辐射藻垫",
+  "layer": 6,
+  "tier": "normal",
+  "hp": "36-42",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "藻垫过境的地方石头是暖的。暖得像有人刚躺过。"
+ },
+ {
+  "id": "enemy_d7_07",
+  "name": "无面记录员",
+  "layer": 7,
+  "tier": "normal",
+  "hp": "34-40",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "它记东西不用脸。你走近时，它把你的样子念了出来。"
+ },
+ {
+  "id": "enemy_d7_08",
+  "name": "静默歌者",
+  "layer": 7,
+  "tier": "normal",
+  "hp": "36-42",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "它张着嘴，不出声。歌在你牙齿里，你只是借住。"
+ },
+ {
+  "id": "enemy_d8_04",
+  "name": "茧丝虫",
+  "layer": 8,
+  "tier": "normal",
+  "hp": "36-42",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 9
+   },
+   {
+    "type": "defend",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "它们吐的丝和墟蛹的是一种。货源不明。"
+ },
+ {
+  "id": "enemy_d8_05",
+  "name": "墟影残片",
+  "layer": 8,
+  "tier": "elite",
+  "hp": "54-60",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 11
+   },
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 9
+   }
+  ],
+  "traits": [],
+  "flavor": "它是墟蛹掉下来的一角。掉下来之后自己动了很多年。"
+ },
+ {
+  "id": "enemy_d1_05",
+  "name": "管壁钟乳盐",
+  "layer": 1,
+  "tier": "normal",
+  "hp": "10-13",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "盐从管壁上倒着长。长到一定长度会断，断口是圆的。"
+ },
+ {
+  "id": "enemy_d8_06",
+  "name": "墟腔",
+  "layer": 8,
+  "tier": "elite",
+  "hp": "64-72",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 10
+   },
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 9
+   }
+  ],
+  "traits": [],
+  "flavor": "它有一个腔。腔里的声音不是它的，它只是借壳放着。"
+ },
+ {
+  "id": "enemy_d1_e1",
+  "name": "盐壳拾荒者",
+  "layer": 1,
+  "tier": "elite",
+  "hp": 30,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "buff",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "改到第三代的防护服，面甲上开了一条自己割的缝。它靠什么呼吸，没人问过。"
+ },
+ {
+  "id": "enemy_d1_e2",
+  "name": "孢子清道夫",
+  "layer": 1,
+  "tier": "elite",
+  "hp": 28,
+  "intent_pattern": [
+   {
+    "type": "debuff",
+    "status": "gift",
+    "value": 1
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "它扫拢孢子不是为杀谁。扫干净的地方，红渊就看不见了。"
+ },
+ {
+  "id": "enemy_d1_b1",
+  "name": "钟乳盐·塌落体",
+  "layer": 1,
+  "tier": "boss",
+  "hp": 46,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 9
+   }
+  ],
+  "traits": [],
+  "flavor": "钟乳盐长了几千年，长成了会自己塌下来的形状。",
+  "phases": [
+   {
+    "hp_above": 0.5,
+    "log": "盐壳簌簌地掉。它在换一个更重的形状。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 6
+     },
+     {
+      "type": "defend",
+      "value": 9
+     },
+     {
+      "type": "attack",
+      "value": 11
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d2_e1",
+  "name": "历虫",
+  "layer": 2,
+  "tier": "elite",
+  "hp": 42,
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 9
+   }
+  ],
+  "traits": [],
+  "flavor": "它以年为进食间隔，以历痕为巢。你打它的时候，它正在补一段旧历。"
+ },
+ {
+  "id": "enemy_d2_e2",
+  "name": "菌膜织者",
+  "layer": 2,
+  "tier": "elite",
+  "hp": 40,
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "debuff",
+    "status": "steal",
+    "value": 1
+   },
+   {
+    "type": "attack",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "冷洞的菌膜是它织的。织到密处，连你的手牌也归它安排。"
+ },
+ {
+  "id": "enemy_d2_b1",
+  "name": "历壁的守读者",
+  "layer": 2,
+  "tier": "boss",
+  "hp": 58,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 12
+   }
+  ],
+  "traits": [],
+  "flavor": "它守着历壁最老的一段。读它要几百年，它已经开始读了。",
+  "phases": [
+   {
+    "hp_above": 0.5,
+    "log": "它翻动了历壁上最深的一页。节奏变了。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 7
+     },
+     {
+      "type": "defend",
+      "value": 10
+     },
+     {
+      "type": "attack",
+      "value": 14
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d3_e1",
+  "name": "钻孔贝群",
+  "layer": 3,
+  "tier": "elite",
+  "hp": 52,
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 10
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "defend",
+    "value": 10
+   },
+   {
+    "type": "attack",
+    "value": 10
+   }
+  ],
+  "traits": [],
+  "flavor": "不是一只，是一片。它们钻了三代才钻成这个阵型。"
+ },
+ {
+  "id": "enemy_d3_e2",
+  "name": "旱螈伏兵",
+  "layer": 3,
+  "tier": "elite",
+  "hp": 48,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "buff",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 11
+   }
+  ],
+  "traits": [],
+  "flavor": "它在干缝里趴了整整一个水脉冲。你走到它面前，是它等的。"
+ },
+ {
+  "id": "enemy_d3_b1",
+  "name": "旱脉的封口者",
+  "layer": 3,
+  "tier": "boss",
+  "hp": 62,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 14
+   }
+  ],
+  "traits": [],
+  "flavor": "哪条水脉干了，它就把哪条脉口封上。封口的东西是它自己的壳。"
+ },
+ {
+  "id": "enemy_d4_e1",
+  "name": "藻毯伏击者",
+  "layer": 4,
+  "tier": "elite",
+  "hp": 60,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 9
+   },
+   {
+    "type": "buff",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 9
+   },
+   {
+    "type": "defend",
+    "value": 8
+   }
+  ],
+  "traits": [],
+  "flavor": "藻毯动了一下。不是水流。"
+ },
+ {
+  "id": "enemy_d4_e2",
+  "name": "红腔鱼·巡游种",
+  "layer": 4,
+  "tier": "elite",
+  "hp": 64,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 7,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 7,
+    "times": 2
+   },
+   {
+    "type": "buff",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "巡游种不吃伏击。它绕着你游，一圈比一圈小。"
+ },
+ {
+  "id": "enemy_d4_b1",
+  "name": "光蛭母·逆流",
+  "layer": 4,
+  "tier": "boss",
+  "hp": 130,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 10
+   },
+   {
+    "type": "defend",
+    "value": 10
+   },
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "debuff",
+    "status": "steal",
+    "value": 1
+   }
+  ],
+  "traits": [],
+  "flavor": "它逆着上升气流漂。被它照亮的东西会往下坠。",
+  "phases": [
+   {
+    "hp_above": 0.66,
+    "log": "它把自己摊开在逆流里。数不清哪一层是它。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 10
+     },
+     {
+      "type": "defend",
+      "value": 10
+     },
+     {
+      "type": "attack",
+      "value": 8
+     },
+     {
+      "type": "debuff",
+      "status": "steal",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "hp_above": 0.33,
+    "log": "它薄得透光，开始分你一点光——多收一点利息。",
+    "intent_pattern": [
+     {
+      "type": "buff",
+      "value": 5
+     },
+     {
+      "type": "attack",
+      "value": 12
+     },
+     {
+      "type": "debuff",
+      "status": "gift",
+      "value": 1
+     },
+     {
+      "type": "attack",
+      "value": 9
+     }
+    ]
+   },
+   {
+    "hp_above": 0,
+    "log": "逆流停了。它整片压下来。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 10,
+      "times": 2
+     },
+     {
+      "type": "attack",
+      "value": 8
+     },
+     {
+      "type": "buff",
+      "value": 6
+     },
+     {
+      "type": "attack",
+      "value": 14
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d5_e1",
+  "name": "喷息守卫",
+  "layer": 5,
+  "tier": "elite",
+  "hp": 62,
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 11
+   },
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 11
+   }
+  ],
+  "traits": [],
+  "flavor": "喷议会的门卫不收钱，只收节奏。踩不对点的人会被请出去。"
+ },
+ {
+  "id": "enemy_d5_e2",
+  "name": "硫沫赘生体",
+  "layer": 5,
+  "tier": "elite",
+  "hp": 60,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6,
+    "times": 2
+   },
+   {
+    "type": "buff",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 6,
+    "times": 2
+   },
+   {
+    "type": "attack",
+    "value": 9
+   }
+  ],
+  "traits": [],
+  "flavor": "它从一次大喷里长出来，身上还带着那个节奏。"
+ },
+ {
+  "id": "enemy_d5_b1",
+  "name": "震喉·空腔独奏",
+  "layer": 5,
+  "tier": "boss",
+  "hp": 110,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 6,
+    "drain_discard": true
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 12
+   }
+  ],
+  "traits": [],
+  "flavor": "它不广播别人的振动了。它只播自己的一段，翻来覆去。",
+  "phases": [
+   {
+    "hp_above": 0.5,
+    "log": "独奏进了副歌。它开始从你的弃牌里取音。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 9,
+      "drain_discard": true
+     },
+     {
+      "type": "attack",
+      "value": 10
+     },
+     {
+      "type": "attack",
+      "value": 13
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d6_e1",
+  "name": "辐射休眠孢子群",
+  "layer": 6,
+  "tier": "elite",
+  "hp": 72,
+  "intent_pattern": [
+   {
+    "type": "debuff",
+    "status": "steal",
+    "value": 1
+   },
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "buff",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "孢子不该聚成团。聚成团的孢子已经开始记东西了。"
+ },
+ {
+  "id": "enemy_d6_e2",
+  "name": "金属鳞鳄幼体",
+  "layer": 6,
+  "tier": "elite",
+  "hp": 76,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 13
+   },
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 13
+   }
+  ],
+  "traits": [],
+  "flavor": "王蜕下来的壳里孵出了它。它比王的壳更硬。"
+ },
+ {
+  "id": "enemy_d6_b1",
+  "name": "辐射金属鳞鳄王·蜕",
+  "layer": 6,
+  "tier": "boss",
+  "hp": 150,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 14
+   },
+   {
+    "type": "defend",
+    "value": 10
+   },
+   {
+    "type": "attack",
+    "value": 14
+   },
+   {
+    "type": "buff",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "王蜕了一次皮。蜕下来的那层也在爬。",
+  "phases": [
+   {
+    "hp_above": 0.4,
+    "log": "旧鳞一片片立起来。它不打算防了。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 16
+     },
+     {
+      "type": "attack",
+      "value": 12
+     },
+     {
+      "type": "defend",
+      "value": 12
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d7_e1",
+  "name": "烧手的灰烬",
+  "layer": 7,
+  "tier": "elite",
+  "hp": 88,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 15
+   },
+   {
+    "type": "buff",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 15
+   },
+   {
+    "type": "defend",
+    "value": 10
+   }
+  ],
+  "traits": [],
+  "flavor": "祭祀台上没烧尽的部分聚了起来。它烧你的手，和当年烧历书是同一个动作。"
+ },
+ {
+  "id": "enemy_d7_e2",
+  "name": "震台祭司",
+  "layer": 7,
+  "tier": "elite",
+  "hp": 84,
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 7
+   },
+   {
+    "type": "debuff",
+    "status": "steal",
+    "value": 1
+   },
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "attack",
+    "value": 10
+   }
+  ],
+  "traits": [],
+  "flavor": "它祭的已经不是地神。它祭的是自己即将成为的东西。"
+ },
+ {
+  "id": "enemy_d7_b1",
+  "name": "穹顶之影·网颤",
+  "layer": 7,
+  "tier": "boss",
+  "hp": 72,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "attack",
+    "value": 8,
+    "times": 2
+   },
+   {
+    "type": "debuff",
+    "status": "gift",
+    "value": 1
+   },
+   {
+    "type": "attack",
+    "value": 16
+   }
+  ],
+  "traits": [],
+  "flavor": "穹顶之影的一角垂到了核心区。网在颤，颤的是网住的还是网，分不清。",
+  "phases": [
+   {
+    "hp_above": 0.5,
+    "log": "网收紧了。颤动变成了抽搐。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 14
+     },
+     {
+      "type": "attack",
+      "value": 10,
+      "times": 2
+     },
+     {
+      "type": "attack",
+      "value": 18
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d8_e1",
+  "name": "循环的巡逻体",
+  "layer": 8,
+  "tier": "elite",
+  "hp": 98,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 16
+   },
+   {
+    "type": "defend",
+    "value": 12
+   },
+   {
+    "type": "attack",
+    "value": 16
+   },
+   {
+    "type": "buff",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它按八万年前的路线巡逻。路线上的东西换了几拨，路线没换。"
+ },
+ {
+  "id": "enemy_d8_e2",
+  "name": "墟影残片·重奏",
+  "layer": 8,
+  "tier": "elite",
+  "hp": 102,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 10,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 10
+   },
+   {
+    "type": "attack",
+    "value": 10,
+    "times": 2
+   },
+   {
+    "type": "buff",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "同一片残影，抄了两遍。两遍都认为自己是真的。"
+ },
+ {
+  "id": "enemy_d8_b1",
+  "name": "墟蛹·未完成",
+  "layer": 8,
+  "tier": "boss",
+  "hp": 200,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "defend",
+    "value": 10
+   },
+   {
+    "type": "attack",
+    "value": 12
+   },
+   {
+    "type": "debuff",
+    "status": "steal",
+    "value": 1
+   }
+  ],
+  "traits": [],
+  "flavor": "它比墟蛹小一圈，也新一层。有些程序还没算完，所以它还醒着。",
+  "phases": [
+   {
+    "hp_above": 0.33,
+    "log": "茧上的纹路亮了。它在核对什么东西——核对到你了。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 12
+     },
+     {
+      "type": "defend",
+      "value": 10
+     },
+     {
+      "type": "attack",
+      "value": 12
+     },
+     {
+      "type": "debuff",
+      "status": "steal",
+      "value": 1
+     }
+    ]
+   },
+   {
+    "hp_above": 0,
+    "log": "核算完毕。结果是一条旧的指令：清除外来模式。",
+    "intent_pattern": [
+     {
+      "type": "attack",
+      "value": 14,
+      "pierce": true
+     },
+     {
+      "type": "attack",
+      "value": 10
+     },
+     {
+      "type": "defend",
+      "value": 12
+     },
+     {
+      "type": "attack",
+      "value": 16,
+      "pierce": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "enemy_d1_06",
+  "name": "空服的壳",
+  "layer": 1,
+  "tier": "normal",
+  "eco": "eco_surface",
+  "hp": "9-11",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "防护服里早就没有人了。它照样按规程合拢，按规程张开。"
+ },
+ {
+  "id": "enemy_d1_07",
+  "name": "晒裂的软管",
+  "layer": 1,
+  "tier": "normal",
+  "eco": "eco_surface",
+  "hp": "8-10",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 1,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 2
+   }
+  ],
+  "traits": [],
+  "flavor": "管子裂着，漏出来的不是水。漏了五百年，还没漏完。"
+ },
+ {
+  "id": "enemy_d1_08",
+  "name": "记名的旗",
+  "layer": 1,
+  "tier": "normal",
+  "eco": "eco_surface",
+  "hp": "10-12",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 2
+   },
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "旗面只剩编号。风根本没有，它还是展开一次，收起一次。"
+ },
+ {
+  "id": "enemy_d1_e3",
+  "name": "气闸的守夜者",
+  "layer": 1,
+  "tier": "elite",
+  "eco": "eco_surface",
+  "hp": "27-31",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "debuff",
+    "status": "weak"
+   },
+   {
+    "type": "attack",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "它在等一个对不上暗号的人。等了这么久，暗号已经换过四版。"
+ },
+ {
+  "id": "enemy_d1_e4",
+  "name": "坠轨的投影",
+  "layer": 1,
+  "tier": "elite",
+  "eco": "eco_surface",
+  "hp": "25-29",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 3,
+    "mirror": true
+   },
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "轨道上的人按过按钮。投影把他们落下来的样子，一遍一遍演给你看。"
+ },
+ {
+  "id": "enemy_d1_b2",
+  "name": "静默号·最后一次广播",
+  "layer": 1,
+  "tier": "boss",
+  "eco": "eco_surface",
+  "hp": 60,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 4,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "debuff",
+    "status": "gift"
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "广播稿念到第三页。第三页之后是空白。它还在念。"
+ },
+ {
+  "id": "enemy_d2_08",
+  "name": "沉雪的苔背",
+  "layer": 2,
+  "tier": "normal",
+  "eco": "eco_cold",
+  "hp": "12-14",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "雪落在它背上，落了八万年。它不动，雪替它记年。"
+ },
+ {
+  "id": "enemy_d2_09",
+  "name": "历壁的蛀痕",
+  "layer": 2,
+  "tier": "normal",
+  "eco": "eco_cold",
+  "hp": "11-13",
+  "intent_pattern": [
+   {
+    "type": "debuff",
+    "status": "steal"
+   },
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "历上缺了一小段。缺的那段在它肚子里，还没有消化。"
+ },
+ {
+  "id": "enemy_d2_e3",
+  "name": "冷眠的守历者",
+  "layer": 2,
+  "tier": "elite",
+  "eco": "eco_cold",
+  "hp": "31-35",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "debuff",
+    "status": "burn"
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它守的历不许火。谁带了火来，它就把火塞回谁的胸口。"
+ },
+ {
+  "id": "enemy_d2_b2",
+  "name": "历的补写者",
+  "layer": 2,
+  "tier": "boss",
+  "eco": "eco_cold",
+  "hp": 66,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 5,
+    "drain_discard": true
+   },
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "历上空着的年份要补齐。它看见你带了多少过去，就补多少。"
+ },
+ {
+  "id": "enemy_d3_08",
+  "name": "滴水的账房",
+  "layer": 3,
+  "tier": "normal",
+  "eco": "eco_arid",
+  "hp": "12-14",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 3
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "它记账。一滴进，一滴出。你身上带的水，它已经记下了。"
+ },
+ {
+  "id": "enemy_d3_09",
+  "name": "隐生的缓步",
+  "layer": 3,
+  "tier": "normal",
+  "eco": "eco_arid",
+  "hp": "10-12",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 2
+   },
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "它死过很多次，每次都趁没人的时候活回来。这次它醒着。"
+ },
+ {
+  "id": "enemy_d3_e3",
+  "name": "抢路的干壳",
+  "layer": 3,
+  "tier": "elite",
+  "eco": "eco_arid",
+  "hp": "30-34",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "debuff",
+    "status": "poison"
+   }
+  ],
+  "traits": [],
+  "flavor": "水在这里有路权。它把自己的路，修进了你的喉咙。"
+ },
+ {
+  "id": "enemy_d3_b2",
+  "name": "泉权的丈量者",
+  "layer": 3,
+  "tier": "boss",
+  "eco": "eco_arid",
+  "hp": 64,
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "debuff",
+    "status": "gift"
+   },
+   {
+    "type": "buff",
+    "value": 2
+   },
+   {
+    "type": "attack",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它量过每一眼泉。轮到你的时候，它量的不是水。"
+ },
+ {
+  "id": "enemy_d4_09",
+  "name": "藻毯的影子",
+  "layer": 4,
+  "tier": "normal",
+  "eco": "eco_sea",
+  "hp": "14-16",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "影子先到，它后到。你看影子的那一眼，就是它等的全部。"
+ },
+ {
+  "id": "enemy_d4_10",
+  "name": "滤食的须群",
+  "layer": 4,
+  "tier": "normal",
+  "eco": "eco_sea",
+  "hp": "13-15",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 2,
+    "times": 3
+   },
+   {
+    "type": "defend",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 2,
+    "times": 2
+   }
+  ],
+  "traits": [],
+  "flavor": "它们不吃你。它们只是把你和水一起滤一遍，留下的都算渣。"
+ },
+ {
+  "id": "enemy_d4_e3",
+  "name": "红腔鱼的伏击手",
+  "layer": 4,
+  "tier": "elite",
+  "eco": "eco_sea",
+  "hp": "37-41",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "debuff",
+    "status": "weak"
+   }
+  ],
+  "traits": [],
+  "flavor": "它在暗处悬着，悬了很久。红光每闪一次，它近一段。"
+ },
+ {
+  "id": "enemy_d5_09",
+  "name": "硫菌丘的看火者",
+  "layer": 5,
+  "tier": "normal",
+  "eco": "eco_vent",
+  "hp": "15-17",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "它守着一口不开的泉。开泉的日子由不得它，也由不得你。"
+ },
+ {
+  "id": "enemy_d5_10",
+  "name": "喷发期的管虫",
+  "layer": 5,
+  "tier": "normal",
+  "eco": "eco_vent",
+  "hp": "14-16",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 3,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 3,
+    "times": 2
+   }
+  ],
+  "traits": [],
+  "flavor": "羽状触须张开的时候最好看。看完的人都这么说，说得很轻。"
+ },
+ {
+  "id": "enemy_d5_e3",
+  "name": "热议会的执汤者",
+  "layer": 5,
+  "tier": "elite",
+  "eco": "eco_vent",
+  "hp": "39-43",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "debuff",
+    "status": "burn"
+   },
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "debuff",
+    "status": "burn"
+   }
+  ],
+  "traits": [],
+  "flavor": "汤是用活水煨的。你进了汤锅的事，就是全城的事。"
+ },
+ {
+  "id": "enemy_d6_08",
+  "name": "重鳞的拾壳者",
+  "layer": 6,
+  "tier": "normal",
+  "eco": "eco_rad",
+  "hp": "16-18",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 4
+   }
+  ],
+  "traits": [],
+  "flavor": "它捡壳，一只一只码好。有的壳里还住着小东西，它也码。"
+ },
+ {
+  "id": "enemy_d6_09",
+  "name": "低烧的菌群",
+  "layer": 6,
+  "tier": "normal",
+  "eco": "eco_rad",
+  "hp": "15-17",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 2
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 4
+   },
+   {
+    "type": "attack",
+    "value": 4
+   },
+   {
+    "type": "defend",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "辐射是它的低烧。烧得越久，它越有精神。"
+ },
+ {
+  "id": "enemy_d6_e3",
+  "name": "铅鳞的收藏家",
+  "layer": 6,
+  "tier": "elite",
+  "eco": "eco_rad",
+  "hp": "41-45",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "debuff",
+    "status": "steal"
+   },
+   {
+    "type": "attack",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它收仪表，收屏蔽板，收到后来，收会走的东西。"
+ },
+ {
+  "id": "enemy_d6_b2",
+  "name": "地神骨灰坛的看守",
+  "layer": 6,
+  "tier": "boss",
+  "eco": "eco_rad",
+  "hp": 72,
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 9
+   },
+   {
+    "type": "attack",
+    "value": 5,
+    "times": 2
+   },
+   {
+    "type": "debuff",
+    "status": "gift"
+   },
+   {
+    "type": "buff",
+    "value": 3
+   }
+  ],
+  "traits": [],
+  "flavor": "坛子里的灰是地神剩下的。它守着，像守着一个还没凉透的名字。"
+ },
+ {
+  "id": "enemy_d7_09",
+  "name": "三色菌毯的须",
+  "layer": 7,
+  "tier": "normal",
+  "eco": "eco_core",
+  "hp": "18-20",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 5
+   },
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "黑红金三色按顺序烫人。它换色的间隔，比你的呼吸慢半口。"
+ },
+ {
+  "id": "enemy_d7_10",
+  "name": "慢半拍的影",
+  "layer": 7,
+  "tier": "normal",
+  "eco": "eco_core",
+  "hp": "17-19",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6,
+    "mirror": true
+   },
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "它打你的节奏，是你上一步的节奏。在这里，连影子都懒得自己动。"
+ },
+ {
+  "id": "enemy_d7_e3",
+  "name": "超临界的水囊",
+  "layer": 7,
+  "tier": "elite",
+  "eco": "eco_core",
+  "hp": "45-49",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 7
+   },
+   {
+    "type": "attack",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "囊里的水不在沸点以下。它鼓一下，走廊就暗一次。"
+ },
+ {
+  "id": "enemy_d8_07",
+  "name": "八万年前的班表",
+  "layer": 8,
+  "tier": "normal",
+  "eco": "eco_nexus",
+  "hp": "21-23",
+  "intent_pattern": [
+   {
+    "type": "buff",
+    "value": 3
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "班表上的名字都走光了。班表不认识走光，照常排班。"
+ },
+ {
+  "id": "enemy_d8_08",
+  "name": "签到簿的笔",
+  "layer": 8,
+  "tier": "normal",
+  "eco": "eco_nexus",
+  "hp": "18-20",
+  "intent_pattern": [
+   {
+    "type": "debuff",
+    "status": "steal"
+   },
+   {
+    "type": "attack",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "来的人都要签。笔不挑人，签什么都收，收走就不还。"
+ },
+ {
+  "id": "enemy_d8_09",
+  "name": "谐振的余音",
+  "layer": 8,
+  "tier": "normal",
+  "eco": "eco_nexus",
+  "hp": "20-22",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 5,
+    "times": 2
+   },
+   {
+    "type": "attack",
+    "value": 4,
+    "times": 2
+   }
+  ],
+  "traits": [],
+  "flavor": "声音停了以后还响着的那部分。它打的是你听到过的东西。"
+ },
+ {
+  "id": "enemy_d8_10",
+  "name": "不许关闭的告示",
+  "layer": 8,
+  "tier": "normal",
+  "eco": "eco_nexus",
+  "hp": "22-24",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 8
+   },
+   {
+    "type": "attack",
+    "value": 7
+   },
+   {
+    "type": "debuff",
+    "status": "gift"
+   },
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 7
+   }
+  ],
+  "traits": [],
+  "flavor": "告示钉死了，四种字写同一句话。你多看的那几眼，都是它要的。"
+ },
+ {
+  "id": "enemy_d8_11",
+  "name": "检修窗后的手",
+  "layer": 8,
+  "tier": "normal",
+  "eco": "eco_nexus",
+  "hp": "19-21",
+  "intent_pattern": [
+   {
+    "type": "attack",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 5,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 5
+   },
+   {
+    "type": "attack",
+    "value": 5
+   }
+  ],
+  "traits": [],
+  "flavor": "窗后有手在拨仪表。拨得很准。窗后没有人，这一点它不瞒你。"
+ },
+ {
+  "id": "enemy_d8_12",
+  "name": "走廊尽头的白噪音",
+  "layer": 8,
+  "tier": "normal",
+  "eco": "eco_nexus",
+  "hp": "21-23",
+  "intent_pattern": [
+   {
+    "type": "defend",
+    "value": 6
+   },
+   {
+    "type": "attack",
+    "value": 5,
+    "times": 2
+   },
+   {
+    "type": "attack",
+    "value": 5,
+    "times": 2
+   },
+   {
+    "type": "defend",
+    "value": 6
+   }
+  ],
+  "traits": [],
+  "flavor": "它没有形状。你听多久，它就有多久。"
+ }
+]

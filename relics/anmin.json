@@ -1,0 +1,270 @@
+[
+  {
+    "id": "anrelic_01",
+    "name": "权限卡·叁级",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "每场战斗开始时，获得 3 点格挡。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 3
+      }
+    ],
+    "flavor": "三级权限能开的门不多。够用的门都在里面。"
+  },
+  {
+    "id": "anrelic_02",
+    "name": "权限卡·贰级（缺角）",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "每场战斗开始时，抽 1 张牌。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "draw",
+        "value": 1
+      }
+    ],
+    "flavor": "缺的那一角是二级权限。缺角在转让时一起转给了你。"
+  },
+  {
+    "id": "anrelic_03",
+    "name": "未拆封的维修包",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "每回合开始时，回复 1 点生命。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "heal",
+        "value": 1
+      }
+    ],
+    "flavor": "封条完好。里面有什么，型号表说了算。"
+  },
+  {
+    "id": "anrelic_04",
+    "name": "死者的工号牌",
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每场战斗开始时，凝视 +1。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "gaze",
+        "value": 1
+      }
+    ],
+    "flavor": "工号还在发信号。收信号的设备全在下面。"
+  },
+  {
+    "id": "anrelic_05",
+    "name": "例检清单（完整版）",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "每场战斗开始时，获得 4 点格挡。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 4
+      }
+    ],
+    "flavor": "关键项一个不缺。缺的是能看懂关键项的人。"
+  },
+  {
+    "id": "anrelic_06",
+    "name": "静默段徽记",
+    "rarity": "uncommon",
+    "veins": [
+      "tremor"
+    ],
+    "effect_text": "每回合开始时，共振 +2。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "resonance",
+        "value": 2
+      }
+    ],
+    "flavor": "徵记授给撑过最长静默段的人。静默段还在继续。"
+  },
+  {
+    "id": "anrelic_07",
+    "name": "保运行批文（已签）",
+    "rarity": "uncommon",
+    "veins": [
+      "water"
+    ],
+    "effect_text": "每场战斗开始时，回复 3 点生命。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "heal",
+        "value": 3
+      }
+    ],
+    "flavor": "批复人栏有名字。名字属于一个没有编号的人。"
+  },
+  {
+    "id": "anrelic_08",
+    "name": "备件配给卡",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "每场战斗开始时，获得 2 点格挡。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 2
+      }
+    ],
+    "flavor": "每月配给一次。配给站五百年没开过门，卡还能刷。"
+  },
+  {
+    "id": "anrelic_09",
+    "name": "读图纸的手套",
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每场战斗开始时，抽 1 张牌，凝视 +1。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "draw",
+        "value": 1
+      },
+      {
+        "trigger": "combat_start",
+        "action": "gaze",
+        "value": 1
+      }
+    ],
+    "flavor": "戴上它，图纸上的字会排队站好。摘下之后你不敢再想。"
+  },
+  {
+    "id": "anrelic_10",
+    "name": "编号印章",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "每回合开始时，共振 +2。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "resonance",
+        "value": 2
+      }
+    ],
+    "flavor": "印下去的编号永久有效。印在活物上的也有效。"
+  },
+  {
+    "id": "anrelic_11",
+    "name": "封存册残页",
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "effect_text": "回合结束时，格挡封存一半；每场战斗开始时，格挡 +3。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "block",
+        "value": 3
+      }
+    ],
+    "mod": {
+      "keep_block": true
+    },
+    "flavor": "残页记着三件封存物。三件的封存原因栏都是空的。"
+  },
+  {
+    "id": "anrelic_12",
+    "name": "应急照明电池",
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每回合开始时，抽 1 张牌。",
+    "effect_code": [
+      {
+        "trigger": "turn_start",
+        "action": "draw",
+        "value": 1
+      }
+    ],
+    "flavor": "电池标注寿命两千年。标错了一个数量级，朝着好的方向。"
+  },
+  {
+    "id": "anrelic_13",
+    "name": "修复凝胶（过期）",
+    "rarity": "uncommon",
+    "veins": [
+      "water"
+    ],
+    "effect_text": "击杀敌人时回复 3 点生命。",
+    "effect_code": [
+      {
+        "trigger": "on_kill",
+        "action": "heal",
+        "value": 3
+      }
+    ],
+    "flavor": "过期之后凝胶学会了新用法。说明书没跟上它。"
+  },
+  {
+    "id": "anrelic_14",
+    "name": "血统册摘录",
+    "rarity": "rare",
+    "veins": [
+      "water"
+    ],
+    "effect_text": "每场战斗开始时，回复 4 点生命。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "heal",
+        "value": 4
+      }
+    ],
+    "flavor": "摘录只留了一行：待修，待修，待修。你的名字在下一行。"
+  },
+  {
+    "id": "anrelic_15",
+    "name": "主控密钥（烧毁）复刻件",
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "effect_text": "每场战斗开始时，抽 1 张牌，凝视 +1。",
+    "effect_code": [
+      {
+        "trigger": "combat_start",
+        "action": "draw",
+        "value": 1
+      },
+      {
+        "trigger": "combat_start",
+        "action": "gaze",
+        "value": 1
+      }
+    ],
+    "flavor": "复刻件没有权限。权限在原件烧掉的那半里。它假装不知道。"
+  }
+]

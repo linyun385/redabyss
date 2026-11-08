@@ -1,0 +1,1445 @@
+[
+ {
+  "id": "relic_01",
+  "name": "上一任的矿牌",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，抽 1 张牌。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 1
+   }
+  ],
+  "flavor": "牌号还看得清。名字被人用指甲抠掉了。"
+ },
+ {
+  "id": "relic_02",
+  "name": "被咬坏的氧气表",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每回合开始时，回复 1 点生命。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 1
+   }
+  ],
+  "flavor": "指针停在红色的一格。它停在这里很久了。"
+ },
+ {
+  "id": "relic_03",
+  "name": "半块墟盐",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，获得 3 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 3
+   }
+  ],
+  "flavor": "断口很新。另外半块被谁带去了更深的地方。"
+ },
+ {
+  "id": "relic_04",
+  "name": "光苔矿碎核",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "最大生命 +4。",
+  "effect_code": [
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": 4
+   }
+  ],
+  "flavor": "绿色还没有死透。你把它贴身放着，走路的时候刻意放轻。"
+ },
+ {
+  "id": "relic_05",
+  "name": "旧光者的门牌",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "击败敌人后，回复 2 点生命。",
+  "effect_code": [
+   {
+    "trigger": "on_kill",
+    "action": "heal",
+    "value": 2
+   }
+  ],
+  "flavor": "门牌上的姓氏还在。敲门的规矩你不懂，但你学得会。"
+ },
+ {
+  "id": "relic_06",
+  "name": "圣火残留",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 4 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 4
+   }
+  ],
+  "flavor": "灰烬里还有一点没凉透的红。你不确定该不该吹熄它。"
+ },
+ {
+  "id": "relic_07",
+  "name": "地文历残页",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "每回合开始时，共振额外 +1。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 1
+   }
+  ],
+  "flavor": "页脚的历法停在「塌」月。没有翻过去的痕迹。"
+ },
+ {
+  "id": "relic_08",
+  "name": "磨损的相石",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，抽 1 张牌，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 1
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "棱角被握圆了。它记得的手比你多。"
+ },
+ {
+  "id": "relic_09",
+  "name": "断裂的震髓",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "每回合开始时，共振额外 +2。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 2
+   }
+  ],
+  "flavor": "断口在轻轻地热。它还以为自己接着别的东西。"
+ },
+ {
+  "id": "relic_10",
+  "name": "静日触杖",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 8 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 8
+   }
+  ],
+  "flavor": "杖头磨得发亮。被握过的部分比没被握过的更红。"
+ },
+ {
+  "id": "relic_11",
+  "name": "共振抑制仪残件",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，获得 10 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 10
+   }
+  ],
+  "flavor": "外壳裂了，里面还在发出很低的嗡。嗡声替你挡了一部分。"
+ },
+ {
+  "id": "relic_12",
+  "name": "望渊台的观测记录",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，凝视 -2。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": -2
+   }
+  ],
+  "flavor": "记录只有上半段。下半段被撕掉的时候，纸还是湿的。"
+ },
+ {
+  "id": "relic_13",
+  "name": "第一降的船票",
+  "rarity": "uncommon",
+  "veins": [],
+  "effect_text": "最大生命 +10。",
+  "effect_code": [
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": 10
+   }
+  ],
+  "flavor": "票根打了孔。打孔的人不在名单上。"
+ },
+ {
+  "id": "relic_14",
+  "name": "埋骨布",
+  "rarity": "uncommon",
+  "veins": [],
+  "effect_text": "击败敌人后，回复 3 点生命。",
+  "effect_code": [
+   {
+    "trigger": "on_kill",
+    "action": "heal",
+    "value": 3
+   }
+  ],
+  "flavor": "布角绣着一个名字。针脚很密，像怕它跑掉。"
+ },
+ {
+  "id": "relic_15",
+  "name": "静日蜡封",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 6 点格挡，凝视 -1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 6
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": -1
+   }
+  ],
+  "flavor": "蜡上压着掌纹。压它的人想静很久，没能静够。"
+ },
+ {
+  "id": "relic_16",
+  "name": "光导透镜碎片",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，抽 2 张牌；最大生命 -4。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 2
+   },
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": -4
+   }
+  ],
+  "flavor": "碎片里的景象是倒的。你看久了，倒的也像真的。"
+ },
+ {
+  "id": "relic_17",
+  "name": "净化者的灰",
+  "rarity": "rare",
+  "veins": [],
+  "effect_text": "每场战斗开始时，凝视 -4；最大生命 -10。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": -4
+   },
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": -10
+   }
+  ],
+  "flavor": "灰很细。烧掉的东西里，包括一部分他自己。"
+ },
+ {
+  "id": "relic_18",
+  "name": "转化者的手记",
+  "rarity": "rare",
+  "veins": [],
+  "effect_text": "每回合多抽 1 张牌；每场战斗开始时，凝视 +2。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "draw",
+    "value": 1
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 2
+   }
+  ],
+  "flavor": "手记越往后字越大。最后一页只有一行：它在写字。"
+ },
+ {
+  "id": "relic_19",
+  "name": "五脉符",
+  "rarity": "rare",
+  "veins": [],
+  "effect_text": "每回合开始时，回复 1 点生命，共振额外 +1。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 1
+   },
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 1
+   }
+  ],
+  "flavor": "五道刻痕朝着五个方向。渊民的孩子出生那天每人领一枚，用途没有人说。"
+ },
+ {
+  "id": "relic_20",
+  "name": "记忆封瓶",
+  "rarity": "boss",
+  "veins": [],
+  "effect_text": "你的凝视不再提高敌人的伤害；每场战斗开始时，凝视 +3。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 3
+   }
+  ],
+  "flavor": "瓶塞是蜡封的。蜡上有一个牙印，很小。"
+ },
+ {
+  "id": "relic_21",
+  "name": "辐射弹（未爆）",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每回合开始时，共振额外 +2；最大生命 -6。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 2
+   },
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": -6
+   }
+  ],
+  "flavor": "它没炸。它只是一直在漏。"
+ },
+ {
+  "id": "relic_22",
+  "name": "黑曜采掘·工伤记录",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，抽 2 张牌，凝视 +2。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 2
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 2
+   }
+  ],
+  "flavor": "每一页都有一个名字。名字后面的数字越来越大。"
+ },
+ {
+  "id": "relic_23",
+  "name": "被圣火烧过的相石",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每回合开始时，共振额外 +3；最大生命 -8。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 3
+   },
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": -8
+   }
+  ],
+  "flavor": "裂纹里透红。它记得火，也想记得你。"
+ },
+ {
+  "id": "relic_24",
+  "name": "废弃的矿灯",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，抽 1 张牌，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 1
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "它还亮着。照的方向不对。"
+ },
+ {
+  "id": "relic_25",
+  "name": "涌喉·水契残页",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "你的水脉牌费用 -1（最低 0）；每场战斗开始时，获得 2 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 2
+   }
+  ],
+  "mod": {
+   "vein_cost": "water",
+   "vein_cost_delta": -1
+  },
+  "flavor": "残页上的条款还剩一半。没写的部分对你有利。"
+ },
+ {
+  "id": "relic_26",
+  "name": "五脉符（双刻）",
+  "rarity": "rare",
+  "veins": [],
+  "effect_text": "你的同脉连携加成 +1；每场战斗开始时，获得 2 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 2
+   }
+  ],
+  "mod": {
+   "chain_bonus": 1
+  },
+  "flavor": "同一道刻痕刻了两遍。第二遍更深。"
+ },
+ {
+  "id": "relic_27",
+  "name": "圣火残留（长明）",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 6 点格挡；回合结束时，格挡只熄一半。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 6
+   }
+  ],
+  "mod": {
+   "keep_block": true
+  },
+  "flavor": "火不灭。它替你守着的那部分也不灭。"
+ },
+ {
+  "id": "relic_28",
+  "name": "抗共振司·豁免批文",
+  "rarity": "rare",
+  "veins": [],
+  "effect_text": "你打出带代价的牌时，不再支付代价，改为凝视 +2（锁死类除外）；每场战斗开始时，获得 3 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 3
+   }
+  ],
+  "mod": {
+   "cost_redirect": "gaze"
+  },
+  "flavor": "红章盖在「不予批准」上。批文只有一页，效力却不止一页。"
+ },
+ {
+  "id": "relic_29",
+  "name": "光导石（棱镜）",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，获得 4 点格挡；光脉连携加成 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 4
+   }
+  ],
+  "mod": {
+   "chain_vein": "light",
+   "chain_bonus": 1
+  },
+  "flavor": "一束光进去，很多束出来。每一束都记得来路。"
+ },
+ {
+  "id": "relic_30",
+  "name": "红渊贸易局·水牌",
+  "rarity": "common",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "每场战斗开始时，抽 1 张牌；水脉连携加成 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 1
+   }
+  ],
+  "mod": {
+   "chain_vein": "water",
+   "chain_bonus": 1
+  },
+  "flavor": "水牌是旧的说法。牌面改了三次，水没改。"
+ },
+ {
+  "id": "relic_31",
+  "name": "圣火火漆",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 4 点格挡；热脉连携加成 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 4
+   }
+  ],
+  "mod": {
+   "chain_vein": "heat",
+   "chain_bonus": 1
+  },
+  "flavor": "漆是烫的。盖过漆的信不会被撤回。"
+ },
+ {
+  "id": "relic_32",
+  "name": "震语铃（铃舌）",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "每回合开始时，共振额外 +1；震脉连携加成 +1。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 1
+   }
+  ],
+  "mod": {
+   "chain_vein": "tremor",
+   "chain_bonus": 1
+  },
+  "flavor": "铃身丢了，铃舌还在。它照常工作。"
+ },
+ {
+  "id": "relic_33",
+  "name": "半块墟盐（磨粉）",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，获得 3 点格挡；矿脉连携加成 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 3
+   }
+  ],
+  "mod": {
+   "chain_vein": "mineral",
+   "chain_bonus": 1
+  },
+  "flavor": "磨成粉也没关系。成分不因为形状改变。"
+ },
+ {
+  "id": "relic_34",
+  "name": "墟盐晶簇",
+  "rarity": "boss",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每回合开始时，回复 2 点生命，共振额外 +2；每场战斗开始时，凝视 +2。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 2
+   },
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 2
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 2
+   }
+  ],
+  "flavor": "晶簇还在长。它选择在你身上长。"
+ },
+ {
+  "id": "relic_35",
+  "name": "第一降的船票（回程）",
+  "rarity": "boss",
+  "veins": [],
+  "effect_text": "最大生命 +20；每场战斗开始时，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": 20
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "回程票。没有人用它回来过。"
+ },
+ {
+  "id": "relic_36",
+  "name": "相石粉末",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "source": "event",
+  "effect_text": "每场战斗开始时，凝视 -2。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": -2
+   }
+  ],
+  "flavor": "磨成粉的石头。记的东西太多，只好分给别人。"
+ },
+ {
+  "id": "relic_37",
+  "name": "墟盐锭",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "source": "event",
+  "effect_text": "每场战斗开始时，获得 8 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 8
+   }
+  ],
+  "flavor": "压成锭的盐。压它的人想让它记住个形状。"
+ },
+ {
+  "id": "relic_38",
+  "name": "震髓丝线",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "source": "event",
+  "effect_text": "每回合开始时，回复 1 点生命。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 1
+   }
+  ],
+  "flavor": "丝线缝进过谁的伤口，不知道。线还在工作。"
+ },
+ {
+  "id": "relic_39",
+  "name": "半张地文历",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "source": "event",
+  "effect_text": "每场战斗开始时，抽 2 张牌；每回合开始时，共振额外 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 2
+   },
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 1
+   }
+  ],
+  "flavor": "另外半张的方向是往上。这一张只管往下。"
+ },
+ {
+  "id": "relic_40",
+  "name": "抗共振司·停职令",
+  "rarity": "uncommon",
+  "veins": [],
+  "effect_text": "每场战斗开始时，抽 2 张牌；最大生命 -4。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 2
+   },
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": -4
+   }
+  ],
+  "flavor": "停职期间下潜属于个人行为，后果自负。你把这句裁下来贴在了头盔里。"
+ },
+ {
+  "id": "relic_41",
+  "name": "磨穿的工牌",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，获得 2 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 2
+   }
+  ],
+  "flavor": "照片磨没了。工号还认得出来，是你前面的那一位。"
+ },
+ {
+  "id": "relic_42",
+  "name": "结了盐花的壶盖",
+  "rarity": "common",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "每回合开始时，回复 1 点生命。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 1
+   }
+  ],
+  "flavor": "盖子下面的水早喝完了。盐花还在接着长。"
+ },
+ {
+  "id": "relic_43",
+  "name": "一根不合群的导线",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，抽 1 张牌。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 1
+   }
+  ],
+  "flavor": "整束线都往左，它往右。查了三次，接线图没错。"
+ },
+ {
+  "id": "relic_44",
+  "name": "静日用的耳塞",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "每回合开始时，共振 +2。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 2
+   }
+  ],
+  "flavor": "静日专用。戴上之后，静日更静了。你数自己的心跳数到天亮。"
+ },
+ {
+  "id": "relic_45",
+  "name": "缺了指针的剂量笔",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，获得 3 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 3
+   }
+  ],
+  "flavor": "指针断了。断口旁边有人写了两个字：照旧。"
+ },
+ {
+  "id": "relic_46",
+  "name": "半截红粉笔",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "划过的地方亮一晚上。亮到后来，分不清是粉笔还是岩壁。"
+ },
+ {
+  "id": "relic_47",
+  "name": "一枚打不平的铆钉",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 2 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 2
+   }
+  ],
+  "flavor": "打歪了，没人返工。整块板子靠它旁边的兄弟撑着。"
+ },
+ {
+  "id": "relic_48",
+  "name": "对折的调岗通知",
+  "rarity": "common",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "每回合开始时，共振 +2。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 2
+   }
+  ],
+  "flavor": "对折两次刚好塞进胸袋。收件人那栏是空的。"
+ },
+ {
+  "id": "relic_49",
+  "name": "渊民的骨哨",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "每场战斗开始时，凝视 +2。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 2
+   }
+  ],
+  "flavor": "吹响它的音在很深的地方。你吹出来的那部分不算数。"
+ },
+ {
+  "id": "relic_50",
+  "name": "回收秤的秤砣",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "光脉牌费用 -1；每场战斗开始时，格挡 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 1
+   }
+  ],
+  "mod": {
+   "vein_cost": "light",
+   "vein_cost_delta": -1
+  },
+  "flavor": "砣上刻着准许的红线。光在它面前也要过秤。"
+ },
+ {
+  "id": "relic_51",
+  "name": "接错了的水管阀门",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "水脉牌费用 -1；每场战斗开始时，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "mod": {
+   "vein_cost": "water",
+   "vein_cost_delta": -1
+  },
+  "flavor": "接错之后冷水管出了热水。报告写了三次，三次都被喝掉了。"
+ },
+ {
+  "id": "relic_52",
+  "name": "热泉边的计时沙漏",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "热脉牌费用 -1；每场战斗开始时，格挡 +2。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 2
+   }
+  ],
+  "mod": {
+   "vein_cost": "heat",
+   "vein_cost_delta": -1
+  },
+  "flavor": "沙往上漏。翻过来，接着往上漏。"
+ },
+ {
+  "id": "relic_53",
+  "name": "无声的音叉",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "震脉连携加成 +1；每场战斗开始时，格挡 +2。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 2
+   }
+  ],
+  "mod": {
+   "chain_vein": "tremor",
+   "chain_bonus": 1
+  },
+  "flavor": "敲它不出声。出声的是你手里下一张牌。"
+ },
+ {
+  "id": "relic_54",
+  "name": "淬过冷水的矿灯罩",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "光脉连携加成 +1；每场战斗开始时，格挡 +2。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 2
+   }
+  ],
+  "mod": {
+   "chain_vein": "light",
+   "chain_bonus": 1
+  },
+  "flavor": "罩上有一道淬火纹。光经过它，排得更齐。"
+ },
+ {
+  "id": "relic_55",
+  "name": "渊民的合葬结",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "回合结束时，格挡留下一半；每场战斗开始时，格挡 +3。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 3
+   }
+  ],
+  "mod": {
+   "keep_block": true
+  },
+  "flavor": "结打在两块布中间。少的那部分由结替你扛着。"
+ },
+ {
+  "id": "relic_56",
+  "name": "批到一半的豁免章",
+  "rarity": "rare",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "带代价的牌，代价改写为凝视 +2；每场战斗开始时，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "mod": {
+   "cost_redirect": "gaze"
+  },
+  "flavor": "章盖到一半停了手。剩下的半张批文还在等墨。"
+ },
+ {
+  "id": "relic_57",
+  "name": "倒着走的怀表",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每回合开始时，抽 1 张牌。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "draw",
+    "value": 1
+   }
+  ],
+  "flavor": "它倒着走，也走满了每一天。你照着它调了表。"
+ },
+ {
+  "id": "relic_58",
+  "name": "收殓用的白手套",
+  "rarity": "rare",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "击杀敌人时回复 3 点生命。",
+  "effect_code": [
+   {
+    "trigger": "on_kill",
+    "action": "heal",
+    "value": 3
+   }
+  ],
+  "flavor": "手套洗得很白。有些活只能戴着它干。"
+ },
+ {
+  "id": "relic_59",
+  "name": "研究院的空白工牌",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，抽 1 张牌，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 1
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "姓名栏空着。谁捡到，研究院就是谁的人。"
+ },
+ {
+  "id": "relic_60",
+  "name": "墟蛹蜕下的第一层茧",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每回合开始时，共振 +3。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 3
+   }
+  ],
+  "flavor": "茧上有一张脸的印子。印子不太像人，也不太像别的。"
+ },
+ {
+  "id": "relic_61",
+  "name": "着陆点的盐钉",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每场战斗开始时，获得 4 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 4
+   }
+  ],
+  "flavor": "钉是从旧返回舱外壳上起的。盐把它咬死了，撬下来费了半只手套。"
+ },
+ {
+  "id": "relic_62",
+  "name": "帝星一线",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每回合开始时，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "一根细线扎进石头缝里，不动。你后来才发现自己一直朝着它走。"
+ },
+ {
+  "id": "relic_63",
+  "name": "历壁的拓片",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "每回合开始时，回复 1 点生命。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 1
+   }
+  ],
+  "flavor": "最老那段刻痕拓下来贴在胸口。摸到它就想起有人比你有耐心得多。"
+ },
+ {
+  "id": "relic_64",
+  "name": "冷洞的慢",
+  "rarity": "common",
+  "veins": [],
+  "effect_text": "最大生命 +4。",
+  "effect_code": [
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": 4
+   }
+  ],
+  "flavor": "不吃不动，几年过去。你学不来，但可以带着。"
+ },
+ {
+  "id": "relic_65",
+  "name": "泉眼的滴水",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "每回合开始时，回复 2 点生命。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 2
+   }
+  ],
+  "flavor": "水按滴记的地方，滴也是恩情。囊口塞着一种草，漏得刚好。"
+ },
+ {
+  "id": "relic_66",
+  "name": "干河床的行李",
+  "rarity": "common",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "击败敌人后，回复 2 点生命。",
+  "effect_code": [
+   {
+    "trigger": "on_kill",
+    "action": "heal",
+    "value": 2
+   }
+  ],
+  "flavor": "主人往深处去了，脚步很稳。行李里最重的那样，他没带走。"
+ },
+ {
+  "id": "relic_67",
+  "name": "涌喉的客牌",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "effect_text": "每场战斗开始时，获得 5 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 5
+   }
+  ],
+  "flavor": "客议会的牌子。市集里不问来路，牌子只问规矩。"
+ },
+ {
+  "id": "relic_68",
+  "name": "街灯的灯芯",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "击败敌人后，回复 3 点生命。",
+  "effect_code": [
+   {
+    "trigger": "on_kill",
+    "action": "heal",
+    "value": 3
+   }
+  ],
+  "flavor": "三十七盏里的一盏。灯芯换过，火种是同一个。"
+ },
+ {
+  "id": "relic_69",
+  "name": "喷息的汤勺",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每回合开始时，共振额外 +2。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "resonance",
+    "value": 2
+   }
+  ],
+  "flavor": "勺柄上刻着喷议会的价目。中立是明码标价的。"
+ },
+ {
+  "id": "relic_70",
+  "name": "管虫的触须",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "触须在红光里微微发光。过滤硫，也过滤别的东西。"
+ },
+ {
+  "id": "relic_71",
+  "name": "重金属的鳞",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "effect_text": "每场战斗开始时，获得 6 点格挡。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 6
+   }
+  ],
+  "flavor": "铅钡铋长在壳上。壳的主人活了很多年，死在别处。"
+ },
+ {
+  "id": "relic_72",
+  "name": "仪表的绿光",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "effect_text": "每回合开始时，回复 3 点生命。",
+  "effect_code": [
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 3
+   }
+  ],
+  "flavor": "全死的仪表里有一块还活着。灭之前的那一下绿光，被它记住了。"
+ },
+ {
+  "id": "relic_73",
+  "name": "祭台的余温",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 4 点格挡，凝视 +1。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 4
+   },
+   {
+    "trigger": "combat_start",
+    "action": "gaze",
+    "value": 1
+   }
+  ],
+  "flavor": "祭祀台上什么都没有，只有热。热穿过你，替你把多余的东西烧掉了些。"
+ },
+ {
+  "id": "relic_74",
+  "name": "茧上剥落的",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "effect_text": "每场战斗开始时，抽 2 张牌。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "draw",
+    "value": 2
+   }
+  ],
+  "flavor": "从茧上剥落的一片。上面的纹路不是刻的，是自己长出来的。它还在长。"
+ },
+ {
+  "id": "relic_75",
+  "name": "账本上的一页",
+  "rarity": "uncommon",
+  "veins": [],
+  "effect_text": "最大生命 +3。",
+  "effect_code": [
+   {
+    "trigger": "run_start",
+    "action": "maxhp",
+    "value": 3
+   }
+  ],
+  "flavor": "八万年没人翻的账本翻到了新的一页。页码是你。"
+ },
+ {
+  "id": "relic_76",
+  "name": "透的影子",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "effect_text": "每场战斗开始时，获得 3 点格挡；每回合开始时，回复 2 点生命。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 3
+   },
+   {
+    "trigger": "turn_start",
+    "action": "heal",
+    "value": 2
+   }
+  ],
+  "flavor": "红光把影子照透了。透的那部分跟着你走，厚的部分留在了原地。"
+ },
+ {
+  "id": "relic_77",
+  "name": "泉权的账戳",
+  "rarity": "rare",
+  "veins": [
+   "water"
+  ],
+  "eco": "eco_arid",
+  "effect_text": "开战时格挡 +3。水脉牌的费用 -1——干旱带的规程也认这个印。",
+  "effect_code": [
+   {
+    "trigger": "combat_start",
+    "action": "block",
+    "value": 3
+   }
+  ],
+  "mod": {
+   "vein_cost": "water",
+   "vein_cost_delta": -1
+  },
+  "flavor": "泉权的印，往水牌上一戳。路是它的，水也记它的账。"
+ }
+]

@@ -1,0 +1,549 @@
+[
+ {
+  "id": "anm_0058",
+  "name": "加班申报",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 0,
+  "effect": {
+   "target": "self",
+   "special": [
+    { "code": "mech_grow", "value": 1 },
+    { "code": "exhaust" }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "加班费是没有的。申报通过，零件照计。",
+  "upgrade": {
+   "name_suffix": "·勤",
+   "effect": { "draw": 1 },
+   "flavor_add": "第二份申报批得更快。他们开始不看内容。"
+  }
+ },
+ {
+  "id": "anm_0059",
+  "name": "批量报废",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["water"],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    { "code": "discard_hand" },
+    { "code": "parts_from_discard", "value": 2 }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "修不好的全折价。折出来的都是零件。",
+  "upgrade": {
+   "name_suffix": "·清",
+   "effect": { "special": [ { "code": "energy_gain", "value": 1 } ] },
+   "flavor_add": "清到最后一件，电表倒转了一格。"
+  }
+ },
+ {
+  "id": "anm_0060",
+  "name": "余量入库",
+  "class": "anmin",
+  "type": "attack",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "damage": 5,
+   "hits": 1,
+   "target": "single",
+   "special": [ { "code": "mech_grow", "value": 1 } ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "打下来的东西先别扔。过秤，入册。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": { "damage": 7 },
+   "flavor_add": "过秤的精度上去了。秤是它自己的骨头。"
+  }
+ },
+ {
+  "id": "anm_0061",
+  "name": "力量标定",
+  "class": "anmin",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 2,
+  "part_cost": 4,
+  "effect": {
+   "target": "self",
+   "special": [ { "code": "perm_strength", "value": 2 } ]
+  },
+  "cost_type": "lock",
+  "cost_text": "零件 -4，这张牌本场锁死。",
+  "flavor": "标定仪走过全身。多出来的力气，当场转正。",
+  "upgrade": {
+   "name_suffix": "·精",
+   "part_cost": 3,
+   "flavor_add": "第二次标定免了手续费。"
+  }
+ },
+ {
+  "id": "anm_0062",
+  "name": "固定资产",
+  "class": "anmin",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 1,
+  "part_cost": 3,
+  "effect": {
+   "target": "self",
+   "special": [
+    { "code": "perm_strength", "value": 1 },
+    { "code": "strength", "value": 1 }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -3。",
+  "flavor": "记在你名下的部分不参与折旧。其余部分参与。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "part_cost": 2,
+   "flavor_add": "评估报告少了一页。少的那页写着折旧年限。"
+  }
+ },
+ {
+  "id": "anm_0063",
+  "name": "编制扩充",
+  "class": "anmin",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 2,
+  "part_cost": 3,
+  "effect": {
+   "damage": 8,
+   "hits": 1,
+   "target": "single",
+   "special": [ { "code": "perm_strength", "value": 1 } ]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -3。",
+  "flavor": "名额批下来了。干活的手多了一只，长在你身上。",
+  "upgrade": {
+   "name_suffix": "·满",
+   "effect": { "damage": 11 },
+   "flavor_add": "编制表背面还有一行。那一行没有名字。"
+  }
+ },
+ {
+  "id": "anm_0064",
+  "name": "转正名额",
+  "class": "anmin",
+  "type": "power",
+  "rarity": "rare",
+  "veins": ["mineral"],
+  "energy": 1,
+  "part_cost": 6,
+  "effect": {
+   "target": "self",
+   "special": [ { "code": "perm_strength", "value": 3 } ]
+  },
+  "cost_type": "lock",
+  "cost_text": "零件 -6，这张牌本场锁死。",
+  "flavor": "试用期结束了。从今天起你是设备的一部分，设备也是。",
+  "upgrade": {
+   "name_suffix": "·批",
+   "part_cost": 5,
+   "flavor_add": "加急件。章还是热的。"
+  }
+ },
+ {
+  "id": "anm_0065",
+  "name": "清仓入库",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": ["water"],
+  "energy": 1,
+  "effect": {
+   "draw": 2,
+   "target": "self",
+   "special": [
+    { "code": "discard_hand" },
+    { "code": "parts_from_discard", "value": 1 }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "仓库满了。满的仓库不发工资。清。",
+  "upgrade": {
+   "name_suffix": "·净",
+   "effect": { "special": [ { "code": "energy_gain", "value": 1 } ] },
+   "flavor_add": "清完最后一批，灯自己亮了。"
+  }
+ },
+ {
+  "id": "anm_0066",
+  "name": "外挂装甲",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "block": 6,
+   "target": "self",
+   "special": [ { "code": "thorns", "value": 2 } ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "装甲不挑来向。谁撞上来，谁留下点东西。",
+  "upgrade": {
+   "name_suffix": "·厚",
+   "effect": { "block": 9 },
+   "flavor_add": "第二层装甲焊死了。焊枪顺手也焊了袖口。"
+  }
+ },
+ {
+  "id": "anm_0067",
+  "name": "衬层加固",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "block": 4,
+   "target": "self",
+   "special": [ { "code": "dexterity", "value": 1 } ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "衬层装上就不拆。这不是加固，是长死。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": { "block": 6 },
+   "flavor_add": "第二次加固的时候，衬层先裹住了手。"
+  }
+ },
+ {
+  "id": "anm_0068",
+  "name": "静态防御",
+  "class": "anmin",
+  "type": "power",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [ { "code": "thorns", "value": 2 } ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "不还手。你打我的部分，归我。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": { "special": [ { "code": "dexterity", "value": 1 } ] },
+   "flavor_add": "外壳通上了地线。打上来的劲会漏走一半。"
+  }
+ },
+ {
+  "id": "anm_0069",
+  "name": "循环液补给",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["water"],
+  "energy": 1,
+  "effect": {
+   "heal": 5,
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "循环液是新配的。配比表上有一栏写着：不必知道。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": { "heal": 7 },
+   "flavor_add": "新的这批更稠。说明里多了一行：请勿搅拌。"
+  }
+ },
+ {
+  "id": "anm_0070",
+  "name": "双层甲板",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "block": 7,
+   "target": "self",
+   "special": [ { "code": "retain" } ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "外层挡冲击。内层挡清点。",
+  "upgrade": {
+   "name_suffix": "·Ⅲ",
+   "effect": { "block": 10 },
+   "flavor_add": "第三层是空的。空的那层最挡。"
+  }
+ },
+ {
+  "id": "anm_0071",
+  "name": "主承重结构",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": ["mineral"],
+  "energy": 2,
+  "effect": {
+   "block": 16,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "这根柱子接手之后，塌不塌轮不到你操心。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": { "block": 20 },
+   "flavor_add": "验收章盖上去的时候，柱子响了一声。谁也没提。"
+  }
+ },
+ {
+  "id": "anm_0072",
+  "name": "自修复框架",
+  "class": "anmin",
+  "type": "power",
+  "rarity": "rare",
+  "veins": ["mineral"],
+  "energy": 2,
+  "effect": {
+   "target": "self",
+   "special": [
+    { "code": "regenerate", "value": 3 },
+    { "code": "thorns", "value": 2 }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "框架自己在补。补的材料从哪来，别问。",
+  "upgrade": {
+   "name_suffix": "·活",
+   "effect": { "special": [ { "code": "dexterity", "value": 1 } ] },
+   "flavor_add": "框架补得比拆得快了。头一回有这种事。"
+  }
+ },
+ {
+  "id": "anm_0073",
+  "name": "液压助力",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "target": "self",
+   "special": [ { "code": "dexterity", "value": 2 } ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "助力来自液体。液体来自管道。管道通向哪，表盘不显示。",
+  "upgrade": {
+   "name_suffix": "·压",
+   "effect": { "block": 8 },
+   "flavor_add": "表针过了红线，停住了。它自己停的。"
+  }
+ },
+ {
+  "id": "anm_0074",
+  "name": "快换钻头",
+  "class": "anmin",
+  "type": "attack",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 0,
+  "part_cost": 1,
+  "effect": {
+   "damage": 6,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -1。",
+  "flavor": "钻头型号跟伤口腔径对得上。对不上就换，一秒。",
+  "upgrade": {
+   "name_suffix": "·利",
+   "effect": { "damage": 8 },
+   "flavor_add": "换上的这根不是配发给你的。没人问来路。"
+  }
+ },
+ {
+  "id": "anm_0075",
+  "name": "临时装甲板",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 0,
+  "part_cost": 1,
+  "effect": {
+   "block": 6,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -1。",
+  "flavor": "板是临时的。挡下来的那一下是真的。",
+  "upgrade": {
+   "name_suffix": "·厚",
+   "effect": { "block": 8 },
+   "flavor_add": "「临时」两个字被划掉了。没写改成什么。"
+  }
+ },
+ {
+  "id": "anm_0076",
+  "name": "液压猛冲",
+  "class": "anmin",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 1,
+  "part_cost": 2,
+  "effect": {
+   "damage": 15,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -2。",
+  "flavor": "压力表进红区的那半秒，正好够撞穿一扇门。",
+  "upgrade": {
+   "name_suffix": "·爆",
+   "effect": { "damage": 19 },
+   "flavor_add": "第二次冲撞没留门。门也没了。"
+  }
+ },
+ {
+  "id": "anm_0077",
+  "name": "预载料斗",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["water"],
+  "energy": 0,
+  "part_cost": 1,
+  "effect": {
+   "draw": 3,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -1。",
+  "flavor": "料斗先装满。装什么后面再说。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": { "draw": 4 },
+   "flavor_add": "斗沿加高了一截。加高用的料也是斗里的。"
+  }
+ },
+ {
+  "id": "anm_0078",
+  "name": "寄生电路",
+  "class": "anmin",
+  "type": "power",
+  "rarity": "rare",
+  "veins": ["mineral"],
+  "energy": 1,
+  "part_cost": 4,
+  "effect": {
+   "target": "self",
+   "special": [
+    { "code": "energy_on_enemy_attack", "value": 1 },
+    { "code": "enemy_defend_draw", "value": 1 }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -4。",
+  "flavor": "电路接进它的供电回路。它每次出手，都替你发电。",
+  "upgrade": {
+   "name_suffix": "·密",
+   "part_cost": 3,
+   "flavor_add": "接线改了隐蔽走线。它到现在没发现电少了。"
+  }
+ },
+ {
+  "id": "anm_0079",
+  "name": "临时功率上调",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 0,
+  "part_cost": 3,
+  "effect": {
+   "target": "self",
+   "special": [ { "code": "strength", "value": 2 } ]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -3。超幅部分本战斗有效。",
+  "flavor": "功率上调不问设备的意见。设备就是你的意见。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "part_cost": 2,
+   "flavor_add": "第二次上调，表针跳过了中间那格。"
+  }
+ },
+ {
+  "id": "anm_0080",
+  "name": "原型机点火",
+  "class": "anmin",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": ["mineral"],
+  "energy": 2,
+  "part_cost": 5,
+  "effect": {
+   "damage": 28,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -5。",
+  "flavor": "点火程序跳过了自检。自检是给要重复用的机器准备的。",
+  "upgrade": {
+   "name_suffix": "·轰",
+   "effect": { "damage": 34 },
+   "flavor_add": "点完火它就没打算再点。所以这次烧的是全部。"
+  }
+ },
+ {
+  "id": "anm_0081",
+  "name": "抽检轮盘",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": ["tremor"],
+  "energy": 0,
+  "part_cost": 2,
+  "effect": {
+   "target": "self",
+   "special": [ { "code": "random_effect" } ]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -2。",
+  "flavor": "抽检合格率百分之百。抽到什么，什么就是合格品。",
+  "upgrade": {
+   "name_suffix": "·转",
+   "part_cost": 1,
+   "flavor_add": "转盘修过一次。修完好像更准了，没人证实。"
+  }
+ }
+]

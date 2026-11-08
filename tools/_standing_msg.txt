@@ -1,0 +1,6 @@
+[顺做] T68 做完不要停，按这个顺序继续：T67 → T69 → T70。
+每一项：读 tasks/T<编号>.md 严格照做 → 跑自检 → 全绿后往 TASK_DONE.md 追加记录（output / check / notes + 边界声明）。
+T67 素材接入：ART 常量表 + data URI；check_web 放宽为允许 data: 但仍必须拦 http(s) 外链，并给出「它仍然会红」的证据；体积增量 ≤1.6MB。
+T69 批量补齐剩余 68 条素材：640×936、单张 ≤30KB，跑完复跑闸门，命中就换 seed 重出。
+T70 终局回归：写 docs/FINAL_REGRESSION.md，并截图证明「不带参数打开就是新地图」。
+红线：不改需求；不改 engine 战斗结算；不修 ComfyUI；不许为过关放宽检查器。

@@ -1,0 +1,1662 @@
+[
+ {
+  "id": "trem_0001",
+  "name": "震语：听骨",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "岩壁在讲一件旧事。你听过这一段，结尾是别人的。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 1,
+    "special": [
+     {
+      "code": "retain"
+     }
+    ]
+   },
+   "flavor_add": "那件事讲完了。它把后半段留给你慢慢听。"
+  }
+ },
+ {
+  "id": "trem_0002",
+  "name": "听震",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 0,
+  "effect": {
+   "resonance_gain": 3,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "耳朵贴上去。你的血先到，岩层晚了一步。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "resonance_gain": 4
+   },
+   "flavor_add": "这次你先贴的额头。岩层愣了一下。"
+  }
+ },
+ {
+  "id": "trem_0003",
+  "name": "震语：压息",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 7,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "呼吸放到最慢。外面那个东西找不到你换气的点。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 10
+   },
+   "flavor_add": "你把呼吸放到没有。外面那东西以为你走了。"
+  }
+ },
+ {
+  "id": "trem_0004",
+  "name": "震语：回响",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 11,
+   "hits": 1,
+   "target": "single",
+   "resonance_gain": 2
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "你用旧语气还它一句。它回头找了很久。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "damage": 14
+   },
+   "flavor_add": "你把二十年前的语气学全了。它听哭了。"
+  }
+ },
+ {
+  "id": "trem_0005",
+  "name": "震语：双声",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 4,
+   "hits": 2,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "两句一起出去。回来的时候是三句。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 6
+   },
+   "flavor_add": "回来的不止三句。你没数，怕数出更多。"
+  }
+ },
+ {
+  "id": "trem_0006",
+  "name": "震台石碑（拓片）",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "resonance_gain": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "拓片上的字比石头新。补刻的人笔画很急。",
+  "upgrade": {
+   "name_suffix": "·残",
+   "effect": {
+    "block": 7
+   },
+   "flavor_add": "补刻的字认出来了。是你自己的笔迹。"
+  }
+ },
+ {
+  "id": "trem_0009",
+  "name": "震语：断脉",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 10,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "memory",
+  "cost_text": "你忘了母亲的声音。",
+  "flavor": "切断了。岩层安静下来。你的喉咙跟着哑了一瞬。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "damage": 14
+   },
+   "flavor_add": "这一次没切干净。母亲的声音留了下来。",
+   "cost_type": "none"
+  }
+ },
+ {
+  "id": "trem_0010",
+  "name": "震语：三震",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "special",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 9,
+   "hits": 3,
+   "target": "single",
+   "gaze_cost": 2
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "第一声你听。剩下两声，收件人不明。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 12
+   },
+   "flavor_add": "第四声给的是你。你收下了。"
+  }
+ },
+ {
+  "id": "trem_0011",
+  "name": "震台石碑",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "block": 10,
+   "target": "self"
+  },
+  "cost_type": "lock",
+  "cost_text": "碑文每层只应验一次。",
+  "flavor": "碑文缺了一半。缺的那半是你来之前的事。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 14
+   },
+   "flavor_add": "另一半碑文找到了。刻在你站的地方。"
+  }
+ },
+ {
+  "id": "trem_0013",
+  "name": "震语：崩齿",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 3,
+  "effect": {
+   "damage": 10,
+   "hits": 3,
+   "target": "single",
+   "resonance_cost": 6,
+   "gaze_cost": 4
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "牙替你数拍子。第三下少了一颗，拍子没乱。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 13
+   },
+   "flavor_add": "牙又缺了一颗。数拍子的活分给了骨头。"
+  }
+ },
+ {
+  "id": "trem_0014",
+  "name": "听地神脉搏",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 3,
+  "effect": {
+   "resonance_gain": 4,
+   "target": "self",
+   "gaze_cost": 3,
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 5
+    }
+   ]
+  },
+  "cost_type": "lock",
+  "cost_text": "它听完这次就走了。",
+  "flavor": "它在数数。数到你的时候，停了一下。",
+  "upgrade": {
+   "name_suffix": "·旧",
+   "effect": {
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "flavor_add": "它数完了。又从头数了一遍。这次是给你。"
+  }
+ },
+ {
+  "id": "trem_0015",
+  "name": "触温",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "energy": 0,
+  "effect": {
+   "block": 4,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "手心贴上去，是温的。这里不该有温的东西。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "block": 6
+   },
+   "flavor_add": "它先动了。你等到了。"
+  }
+ },
+ {
+  "id": "trem_0016",
+  "name": "喷息·热池边",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 6,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "池边的人不看你。你的倒影在看别处。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 9
+   },
+   "flavor_add": "池边的人看了你一眼。礼数破了，热更稳了。"
+  }
+ },
+ {
+  "id": "trem_0017",
+  "name": "震语：焚名",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 7,
+   "hits": 1,
+   "target": "single",
+   "special": [
+    {
+     "code": "burn",
+     "value": 2,
+     "turns": 2
+    }
+   ]
+  },
+  "cost_type": "memory",
+  "cost_text": "名册上少了一个名字，是你的。",
+  "flavor": "火不是从底下上来的。它从名册那一页开始烧。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "damage": 10
+   },
+   "flavor_add": "名册补回了你的名字。火记得该还哪里。"
+  }
+ },
+ {
+  "id": "trem_0018",
+  "name": "静日",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "special",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 8,
+   "target": "self",
+   "special": [
+    {
+     "code": "retain"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "你不说话。岩层替你说完了剩下的半句。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 12
+   },
+   "flavor_add": "世界更清楚了。清楚得有点吵。"
+  }
+ },
+ {
+  "id": "trem_0019",
+  "name": "禁声日",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 6,
+   "target": "self",
+   "special": [
+    {
+     "code": "resonance_lock"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "连岩层都闭嘴。你的脚步声显得很响。",
+  "upgrade": {
+   "name_suffix": "·旧",
+   "effect": {
+    "block": 9
+   },
+   "flavor_add": "你的脚步声也闭嘴了。岩层先受不了。"
+  }
+ },
+ {
+  "id": "trem_0020",
+  "name": "静日触杖",
+  "class": "tremor",
+  "type": "power",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "dexterity",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "杖尖点到哪里，热就在哪里停。像被点名的人站直了。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "杖尖点过的地方，热开始排队。"
+  }
+ },
+ {
+  "id": "trem_0022",
+  "name": "回归墟骨",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "energy": 2,
+  "effect": {
+   "block": 6,
+   "target": "self",
+   "special": [
+    {
+     "code": "delete_random"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "骨头归堆，不多不少。你带来的那件，堆里早有位置。",
+  "upgrade": {
+   "name_suffix": "·残",
+   "effect": {
+    "block": 9
+   },
+   "flavor_add": "骨堆收下了它。仪式的意思你念对了。"
+  }
+ },
+ {
+  "id": "trem_0023",
+  "name": "震语：沸息",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 12,
+   "hits": 1,
+   "target": "single",
+   "resonance_cost": 5,
+   "special": [
+    {
+     "code": "burn",
+     "value": 4,
+     "turns": 3
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "一句烫话留在它体内。它走到哪里，烧到哪里。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 17
+   },
+   "flavor_add": "那句话更烫了。它走的路也更长。"
+  }
+ },
+ {
+  "id": "trem_0024",
+  "name": "震语：熔名",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "energy": 3,
+  "effect": {
+   "damage": 12,
+   "hits": 1,
+   "target": "single",
+   "special": [
+    {
+     "code": "burn",
+     "value": 6,
+     "turns": 3
+    }
+   ]
+  },
+  "cost_type": "memory",
+  "cost_text": "你想不起被烧的是谁的名字了。",
+  "flavor": "名字烧完了。它做过的事一件不少地留了下来。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "damage": 17
+   },
+   "flavor_add": "名字想起来了。你把它重新烧了一遍。"
+  }
+ },
+ {
+  "id": "trem_0025",
+  "name": "观红",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 0,
+  "effect": {
+   "block": 2,
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "红光排着队进来。队伍里有一个不是光。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 2
+   },
+   "flavor_add": "你数到两个。剩下的不敢数。"
+  }
+ },
+ {
+  "id": "trem_0026",
+  "name": "光导石",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 3,
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "它把光递过来，先擦了擦棱角。交接的礼数一步不少。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "block": 5
+   },
+   "flavor_add": "交接改成了托付。石头把手松开了。"
+  }
+ },
+ {
+  "id": "trem_0027",
+  "name": "震语：明目",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 1,
+   "target": "self",
+   "special": [
+    {
+     "code": "gaze_reduce",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "少看了一眼。那一眼还在排队。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "special": [
+     {
+      "code": "gaze_reduce",
+      "value": 2
+     }
+    ]
+   },
+   "flavor_add": "少看的不止一点。有些地方你绕着走。"
+  }
+ },
+ {
+  "id": "trem_0028",
+  "name": "涌喉·光池倒影",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "mark",
+  "cost_text": "池面记下了你的脸。",
+  "flavor": "池面记下你的脸。记的那张比你老。",
+  "upgrade": {
+   "name_suffix": "·残",
+   "effect": {
+    "block": 7
+   },
+   "flavor_add": "池面记下的脸换了。新的那张更旧。"
+  }
+ },
+ {
+  "id": "trem_0029",
+  "name": "观红（深相）",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 2,
+  "effect": {
+   "block": 8,
+   "target": "self",
+   "special": [
+    {
+     "code": "gaze_reduce",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "红光退了半步。它认得你。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "block": 12,
+    "special": [
+     {
+      "code": "gaze_reduce",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "它又退了一步。现在它记得你两遍。"
+  }
+ },
+ {
+  "id": "trem_0030",
+  "name": "震语：照骨",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 12,
+   "hits": 1,
+   "target": "single",
+   "gaze_cost": 4
+  },
+  "cost_type": "mark",
+  "cost_text": "光看清了你。你也就被看清了。",
+  "flavor": "光穿过它。岩壁上留下它的形状，也留下你的。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 17
+   },
+   "flavor_add": "拓片多了两张。岩壁开始收藏你。"
+  }
+ },
+ {
+  "id": "trem_0031",
+  "name": "尝水",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "water"
+  ],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "苦味底下有一层甜。甜比水旧。",
+  "upgrade": {
+   "name_suffix": "·旧",
+   "effect": {
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "那层旧甜化开了。上游的事你不再问。"
+  }
+ },
+ {
+  "id": "trem_0033",
+  "name": "涌喉·水契",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 4
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "契约写在水面之下。你的手一直是湿的，正好。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "flavor_add": "契约续了一页。这次只有你一个人湿手。"
+  }
+ },
+ {
+  "id": "trem_0034",
+  "name": "震语：断流",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 14,
+   "hits": 1,
+   "target": "single",
+   "resonance_cost": 6,
+   "special": [
+    {
+     "code": "frail",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "水停了一瞬。你就在那一瞬里过去。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "damage": 19
+   },
+   "flavor_add": "水停了两瞬。都用上了。"
+  }
+ },
+ {
+  "id": "trem_0035",
+  "name": "尝水（深井）",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "water"
+  ],
+  "energy": 2,
+  "effect": {
+   "draw": 1,
+   "target": "self",
+   "special": [
+    {
+     "code": "regenerate",
+     "value": 5
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "井底的样本没有编号。取样人那一栏也是。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "flavor_add": "井底有回音了。它比你更早知道明天。"
+  }
+ },
+ {
+  "id": "trem_0037",
+  "name": "相石·初刻",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 1,
+   "resonance_gain": 3,
+   "target": "self"
+  },
+  "cost_type": "mark",
+  "cost_text": "它记下了你的掌心。",
+  "flavor": "它记你的掌心。你记它记你的事。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "resonance_gain": 5
+   },
+   "flavor_add": "掌心的纹路刻深了。它记熟了。"
+  }
+ },
+ {
+  "id": "trem_0038",
+  "name": "相石·满录",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 2,
+  "effect": {
+   "draw": 3,
+   "resonance_gain": 2,
+   "target": "self"
+  },
+  "cost_type": "memory",
+  "cost_text": "读满录的相石要押一段记忆，押金不退。",
+  "flavor": "押金是一段记忆。石头不找零。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 4
+   },
+   "flavor_add": "押金退了。石头说这段记忆还用得上。",
+   "cost_type": "none"
+  }
+ },
+ {
+  "id": "trem_0039",
+  "name": "埋骨布",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "target": "self",
+   "special": [
+    {
+     "code": "retain"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "布是空的。折痕都是新的。",
+  "upgrade": {
+   "name_suffix": "·残",
+   "effect": {
+    "block": 7
+   },
+   "flavor_add": "布用旧了。旧得很整齐。"
+  }
+ },
+ {
+  "id": "trem_0043",
+  "name": "静底·焚忆",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 2,
+   "target": "self"
+  },
+  "cost_type": "memory",
+  "cost_text": "烧掉的是一页信，收信人是你。",
+  "flavor": "烧掉一页信。火只烧了字，纸还在。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "draw": 3
+   },
+   "flavor_add": "灰落进水里之前，你回头收了信。"
+  }
+ },
+ {
+  "id": "trem_0044",
+  "name": "相石·封忆",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 2,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "strength",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "memory",
+  "cost_text": "石头收走一段，还你一寸硬。",
+  "flavor": "石头收走一段，还你一寸硬。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "石头多收了一段。还你的不止一寸。"
+  }
+ },
+ {
+  "id": "trem_0045",
+  "name": "埋骨礼（合葬）",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "heat"
+  ],
+  "energy": 2,
+  "effect": {
+   "block": 18,
+   "target": "self"
+  },
+  "cost_type": "memory",
+  "cost_text": "你替别人记的那部分，也一起埋了。",
+  "flavor": "两块布叠在一起摆。下面的那块先动的。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "block": 26
+   },
+   "flavor_add": "第三块布摊开了。压布的石头没变。"
+  }
+ },
+ {
+  "id": "trem_0046",
+  "name": "震语：舍字",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "lock",
+  "cost_text": "本层只舍这一次。",
+  "flavor": "先舍一个字。你选了很久，选了最轻的。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 2
+   },
+   "flavor_add": "又舍了一个字。剩下的都开始发光。"
+  }
+ },
+ {
+  "id": "trem_0047",
+  "name": "震台石碑（残诵）",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "resonance_gain": 4,
+   "target": "self"
+  },
+  "cost_type": "memory",
+  "cost_text": "碑文缺的那一段，原本在你的脑子里。",
+  "flavor": "你把缺的那段念了。碑没补上，你少了一段。",
+  "upgrade": {
+   "name_suffix": "·残",
+   "effect": {
+    "resonance_gain": 6
+   },
+   "flavor_add": "你缺的那段开始漏。漏出来的都是震动。"
+  }
+ },
+ {
+  "id": "trem_0050",
+  "name": "震语：传温",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [
+   "heat"
+  ],
+  "energy": 0,
+  "effect": {
+   "damage": 3,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "手心贴着壳。那句话烫了很久才凉。",
+  "upgrade": {
+   "name_suffix": "·改",
+   "effect": {
+    "damage": 4
+   },
+   "flavor_add": "手心的话换了一句。更烫的那句。"
+  }
+ },
+ {
+  "id": "trem_0052",
+  "name": "震语：合鸣",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 9,
+   "hits": 1,
+   "target": "single",
+   "draw": 1
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "两个声部碰头。石头先裂，谁也没道歉。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 13
+   },
+   "flavor_add": "石头裂成了两半。声部各占一半。"
+  }
+ },
+ {
+  "id": "trem_0055",
+  "name": "震语：直视",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "light"
+  ],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "gaze_gain": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "你看回去了。它先移开，又移回来，停在你身后。",
+  "upgrade": {
+   "name_suffix": "·残",
+   "effect": {
+    "draw": 2
+   },
+   "flavor_add": "这一眼久了。应答变成了对峙。"
+  }
+ },
+ {
+  "id": "trem_0056",
+  "name": "震语：回望",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 3,
+   "target": "self",
+   "gaze_cost": 5
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "从那边看过来的你，和你打了个照面。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 4,
+    "gaze_cost": 4
+   },
+   "flavor_add": "你看回来的次数够多了。那边给你留了位置。"
+  }
+ },
+ {
+  "id": "trem_0057",
+  "name": "相石·对视",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "resonance_gain": 5,
+   "target": "self",
+   "gaze_cost": 3
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "它没有眼，但它先眨了。",
+  "upgrade": {
+   "name_suffix": "·固",
+   "effect": {
+    "resonance_gain": 7
+   },
+   "flavor_add": "它没再眨。你们开始轮流看着同一个方向。"
+  }
+ },
+ {
+  "id": "trem_0058",
+  "name": "静底·深阅",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [],
+  "energy": 2,
+  "effect": {
+   "target": "self",
+   "gaze_cost": 8,
+   "special": [
+    {
+     "code": "strength",
+     "value": 2
+    },
+    {
+     "code": "dexterity",
+     "value": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "最里面那页没有页码。念完，屋里坐了两个人。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "两个人合得来了。至少在念这一页的时候。"
+  }
+ },
+ {
+  "id": "trem_0059",
+  "name": "震台石碑（注视）",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 9,
+   "target": "self",
+   "gaze_cost": 2
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "碑面里站着的那个不是你。你们各自退了半步。",
+  "upgrade": {
+   "name_suffix": "·旧",
+   "effect": {
+    "block": 13
+   },
+   "flavor_add": "碑面磨亮了。里面站的那个先让了一步。"
+  }
+ },
+ {
+  "id": "trem_0060",
+  "name": "五脉符（逆位）",
+  "class": "tremor",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [],
+  "energy": 2,
+  "effect": {
+   "damage": 12,
+   "hits": 1,
+   "target": "all",
+   "gaze_cost": 6
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "符倒过来贴。这一次，是它在读你。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 17
+   },
+   "flavor_add": "五个方向都看清了。它们也都没躲。"
+  }
+ },
+ {
+  "id": "trem_0061",
+  "name": "震语：数息",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 0,
+  "effect": {
+   "block": 3,
+   "resonance_gain": 2,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "你数自己的呼吸。数到第七下，岩层跟着数。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "block": 5,
+    "resonance_gain": 2
+   },
+   "flavor_add": "岩层先数完了。它在等你。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0066",
+  "name": "震语：回声定位",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 2,
+   "gaze_gain": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "光走不到的地方，你喊一声。回声替你把路照亮。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 3
+   },
+   "flavor_add": "路多看了一眼。你没躲。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0067",
+  "name": "五脉符（缺位）",
+  "type": "power",
+  "rarity": "rare",
+  "veins": [
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "strength",
+     "value": 1
+    },
+    {
+     "code": "dexterity",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "mark",
+  "cost_text": "缺的那一位记住了你补的位置。",
+  "flavor": "第五个刻痕是空的。空得很有分量。",
+  "upgrade": {
+   "name_suffix": "·刻",
+   "effect": {
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "缺位补上了。补上去的名字是你的。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0069",
+  "name": "震台石碑（新碑）",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 15,
+   "hits": 1,
+   "target": "single",
+   "resonance_gain": 3
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "新碑立起来的时候，旧碑挪了一寸。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 20
+   },
+   "flavor_add": "旧碑又挪了一寸。它在让位。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0070",
+  "name": "震语：低语",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 0,
+  "effect": {
+   "draw": 1,
+   "resonance_gain": 1,
+   "target": "self",
+   "special": [
+    {
+     "code": "exhaust"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "只说给离得最近的东西听。最近的是你自己的骨头。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 2
+   },
+   "flavor_add": "低语变多了。骨头开始插话。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0071",
+  "name": "震语：试井",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 0,
+  "effect": {
+   "resonance_gain": 2,
+   "target": "self",
+   "special": [
+    {
+     "code": "exhaust"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "往井里丢一句话，听回声有多深。井吞了话，没还。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "resonance_gain": 3
+   },
+   "flavor_add": "井把话还了。换了一种说法还的。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0075",
+  "name": "历法刻盘（倒页）",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "draw": 3,
+   "target": "self",
+   "resonance_cost": 6
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "倒着翻的页记载着没发生的事。字迹很新，日期很老。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 4,
+    "resonance_cost": 5
+   },
+   "flavor_add": "有一页记载着今天。你读过之后，今天照常发生了。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0076",
+  "name": "震语：双唱",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 6,
+   "hits": 2,
+   "target": "single"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "你和自己合唱。差的那半拍，也打在人身上。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 8
+   },
+   "flavor_add": "第三个声部加进来了。不认识，但音准。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0078",
+  "name": "观红（对影）",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": [
+   "light"
+  ],
+  "energy": 0,
+  "effect": {
+   "block": 2,
+   "draw": 2,
+   "target": "self",
+   "gaze_cost": 3
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "你看红的影。影里也有个人在翻牌，翻得比你慢半拍。",
+  "upgrade": {
+   "name_suffix": "·新",
+   "effect": {
+    "draw": 3
+   },
+   "flavor_add": "影里那个人追上来了。你们同时出牌。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0080",
+  "name": "震语：长夜",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "heat"
+  ],
+  "energy": 2,
+  "effect": {
+   "damage": 9,
+   "hits": 1,
+   "target": "single",
+   "special": [
+    {
+     "code": "burn",
+     "value": 4,
+     "turns": 3
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "这一句要烧一整个夜。夜在这里有多长，它就烧多久。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "damage": 12
+   },
+   "flavor_add": "夜里续了更长的一段。它陪着烧完。"
+  },
+  "class": "tremor"
+ },
+ {
+  "id": "trem_0082",
+  "name": "不许关闭",
+  "class": "tremor",
+  "type": "skill",
+  "rarity": "common",
+  "veins": [],
+  "energy": 0,
+  "effect": {
+   "block": 2,
+   "target": "self",
+   "resonance_gain": 1,
+   "special": [
+    {
+     "code": "retain"
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "钉子是新的。牌子留在手里，不许灭，也不许扔。"
+ }
+]

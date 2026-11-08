@@ -1,0 +1,11 @@
+{
+ "step": "jobs",
+ "script": "job_builder.py",
+ "cmd": [
+  "D:\\学习资料\\学习所需软件\\python313-win\\python313\\python.exe",
+  "-I",
+  "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\tools\\job_builder.py"
+ ],
+ "exit": 0,
+ "seconds": 0.1
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>红渊 · 地图生成调试（T55）</title>
+<style>
+  :root { --bg:#0d1013; --panel:#151a1f; --ink:#cfc7c0; --dim:#8a7f78; --red:#a83a30; --line:#2a323a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--ink); font:13px/1.6 "Microsoft YaHei", sans-serif; display:flex; gap:16px; padding:16px; }
+  #ctrl { width:300px; flex:none; }
+  #ctrl h1 { font-size:15px; color:#e2c4bb; margin-bottom:8px; letter-spacing:2px; }
+  .box { background:var(--panel); border:1px solid var(--line); border-radius:4px; padding:10px 12px; margin-bottom:10px; }
+  .row { display:flex; align-items:center; gap:8px; margin:6px 0; }
+  .row label { color:var(--dim); flex:none; width:72px; }
+  input[type=number] { width:90px; background:#0a0d10; color:var(--ink); border:1px solid var(--line); padding:3px 6px; }
+  input[type=range] { flex:1; accent-color:#a83a30; }
+  button { background:#2b0a10; color:#e2c4bb; border:1px solid #64101a; padding:5px 14px; cursor:pointer; border-radius:3px; }
+  button:hover { background:#420a12; }
+  .val { color:#e2c4bb; min-width:36px; text-align:right; }
+  #verdict { font-size:14px; font-weight:bold; }
+  #verdict.ok { color:#7fb069; } #verdict.bad { color:#e2705f; }
+  #errors { color:#e2705f; font-size:12px; white-space:pre-wrap; }
+  .stat { color:var(--dim); } .stat b { color:var(--ink); font-weight:normal; }
+  #legend { display:flex; flex-wrap:wrap; gap:4px 10px; font-size:12px; color:var(--dim); }
+  .sw { display:inline-block; width:10px; height:10px; margin-right:3px; vertical-align:-1px; border:1px solid rgba(255,255,255,.15); }
+  svg { background:#080a0c; border:1px solid var(--line); border-radius:4px; }
+  .node-label { font:9px sans-serif; fill:#0a0a0a; text-anchor:middle; dominant-baseline:central; pointer-events:none; }
+</style>
+</head>
+<body>
+<div id="ctrl">
+  <h1>红渊 · 地图生成调试</h1>
+  <div class="box">
+    <div class="row"><label>seed</label><input id="seed" type="number" value="1"><button id="regen">重新生成</button></div>
+    <div class="row"><label>生态聚合度 κ</label><input id="kappa" type="range" min="0" max="1" step="0.05" value="0.7"><span class="val" id="kappaV">0.70</span></div>
+    <div class="row"><label>节点数 ×</label><input id="qscale" type="range" min="0.6" max="1.4" step="0.05" value="1"><span class="val" id="qscaleV">1.00</span></div>
+    <div class="row"><label>雾层（可见性）</label><input id="fog" type="checkbox"><span class="stat">只画 visited ∪ 周边1跳（数据层裁剪）</span></div>
+  </div>
+  <div class="box">
+    <div id="verdict">—</div>
+    <div id="errors"></div>
+    <div id="stats" class="stat"></div>
+  </div>
+  <div class="box">
+    <div id="legend"></div>
+  </div>
+</div>
+<div id="stage"></div>
+
+<script src="mapgen.js"></script>
+<script>
+(function () {
+  'use strict';
+  var ECOC = {
+    eco_surface: '#6b7683', eco_cold: '#3f6470', eco_arid: '#7d7258', eco_sea: '#2e5d46',
+    eco_vent: '#8a4a2e', eco_rad: '#5d7a35', eco_core: '#8a3226', eco_nexus: '#4a3a5e'
+  };
+  var ECON = { eco_surface:'死寂壳层', eco_cold:'沉积冷洞', eco_arid:'泉眼干旱区', eco_sea:'红蕨空洞海',
+    eco_vent:'热泉裂带', eco_rad:'辐射荒漠', eco_core:'核心高热区', eco_nexus:'核心回路' };
+  var TYPE_GLYPH = { combat:'战', elite:'英', random:'随', shop:'商', event:'事', finalBoss:'终' };
+  var TYPE_FILL = { combat:'#c8b9a8', elite:'#d9a441', random:'#9a8fd0', shop:'#7fb069', event:'#d8d2c8', finalBoss:'#e2705f' };
+
+  var CELL = 17, PAD = 14;
+
+  function buildLegend() {
+    var html = '';
+    Object.keys(ECOC).forEach(function (e) { html += '<span><span class="sw" style="background:' + ECOC[e] + '"></span>' + ECON[e] + '</span>'; });
+    html += '<br>';
+    Object.keys(TYPE_GLYPH).forEach(function (t) { html += '<span><span class="sw" style="background:' + TYPE_FILL[t] + '"></span>' + TYPE_GLYPH[t] + (t === 'finalBoss' ? '（运行时跨带替换才出「终」以外的主）' : '') + '</span>'; });
+    document.getElementById('legend').innerHTML = html;
+  }
+
+  // 演示用 visited：种子化主路径游走（同 seed 同雾），雾层演示 pruneForFrontend 的数据层裁剪
+  function demoVisited(region, seed) {
+    var rng = MapGen.makeRng((seed >>> 0) * 7919 + 13);
+    var byId = {};
+    region.nodes.forEach(function (n) { byId[n.id] = n; });
+    var visited = {}; visited[region.startId] = true;
+    var cur = byId[region.startId], guard = 0;
+    while (cur.id !== region.finalBossId && guard++ < 500) {
+      var outs = region.edges.filter(function (e) { return e.from === cur.id; });
+      if (!outs.length) break;
+      var e = outs[Math.floor(rng() * outs.length)];
+      visited[e.to] = true;
+      cur = byId[e.to];
+    }
+    return visited;
+  }
+
+  function render() {
+    var seed = parseInt(document.getElementById('seed').value, 10) || 1;
+    var kappa = parseFloat(document.getElementById('kappa').value);
+    var qscale = parseFloat(document.getElementById('qscale').value);
+    var fog = document.getElementById('fog').checked;
+    document.getElementById('kappaV').textContent = kappa.toFixed(2);
+    document.getElementById('qscaleV').textContent = qscale.toFixed(2);
+
+    var t0 = performance.now();
+    var region;
+    try {
+      region = MapGen.generate(seed, { ecoGrowth: { kappa: kappa }, quotaScale: qscale }, null);
+    } catch (e) {
+      document.getElementById('verdict').className = 'bad';
+      document.getElementById('verdict').textContent = '✗ 生成失败';
+      document.getElementById('errors').textContent = e.message;
+      return;
+    }
+    var genMs = (performance.now() - t0).toFixed(1);
+    var v = MapGen.validate(region);
+
+    var shown = region;
+    if (fog) {
+      var visited = demoVisited(region, seed);
+      var pr = MapGen.pruneForFrontend(region, visited, 1);
+      shown = { nodes: pr.nodes, edges: pr.edges, w: region.w, h: region.h, bandRows: region.bandRows, ecoOf: region.ecoOf, startId: region.startId, finalBossId: region.finalBossId };
+    }
+
+    var W = region.w * CELL + PAD * 2, H = region.h * CELL + PAD * 2;
+    var s = '<svg width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '">';
+    // 生态色块（底）
+    for (var y = 0; y < region.h; y++) {
+      for (var x = 0; x < region.w; x++) {
+        s += '<rect x="' + (PAD + x * CELL) + '" y="' + (PAD + y * CELL) + '" width="' + CELL + '" height="' + CELL + '" fill="' + ECOC[region.ecoOf[y * region.w + x]] + '" opacity="0.55"/>';
+      }
+    }
+    // 深度线 + 带标签
+    for (var b = 0; b < 8; b++) {
+      var yTop = PAD + b * region.bandRows * CELL;
+      s += '<text x="' + (W - PAD + 2) + '" y="' + (yTop + 22) + '" fill="#8a7f78" font-size="10">D' + (b + 1) + '</text>';
+      if (b > 0) s += '<line x1="' + PAD + '" y1="' + yTop + '" x2="' + (W - PAD) + '" y2="' + yTop + '" stroke="#cfc7c0" stroke-opacity="0.25" stroke-dasharray="5,4"/>';
+    }
+    // 连线（跨带红虚线）
+    shown.edges.forEach(function (e) {
+      var u = region.nodes[+e.from.slice(1)], v2 = region.nodes[+e.to.slice(1)];
+      var col = e.crossBand ? '#e2705f' : '#cfc7c0';
+      var dash = e.crossBand ? ' stroke-dasharray="4,3"' : '';
+      s += '<line x1="' + (PAD + u.x * CELL + CELL / 2) + '" y1="' + (PAD + u.y * CELL + CELL / 2) +
+           '" x2="' + (PAD + v2.x * CELL + CELL / 2) + '" y2="' + (PAD + v2.y * CELL + CELL / 2) +
+           '" stroke="' + col + '" stroke-opacity="' + (e.crossBand ? 0.9 : 0.5) + '" stroke-width="' + (e.crossBand ? 1.6 : 1.1) + '"' + dash + '/>';
+    });
+    // 节点
+    var nodeById = {};
+    region.nodes.forEach(function (n) { nodeById[n.id] = n; });
+    shown.nodes.forEach(function (n) {
+      var cx = PAD + n.x * CELL + CELL / 2, cy = PAD + n.y * CELL + CELL / 2;
+      var r = n.type === 'finalBoss' ? 8 : 6.5;
+      var ring = n.crossBandIn ? ' stroke="#e2705f" stroke-width="1.5"' : '';
+      s += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + TYPE_FILL[n.type] + '"' + ring + '/>';
+      s += '<text class="node-label" x="' + cx + '" y="' + cy + '">' + TYPE_GLYPH[n.type] + '</text>';
+      if (n.id === region.startId) s += '<circle cx="' + cx + '" cy="' + cy + '" r="' + (r + 3) + '" fill="none" stroke="#7fb069" stroke-width="1.4"/>';
+    });
+    s += '</svg>';
+    document.getElementById('stage').innerHTML = s;
+
+    // 校验结果与统计
+    var vd = document.getElementById('verdict');
+    if (v.ok) { vd.className = 'ok'; vd.textContent = '✓ 校验通过（I1–I12）'; document.getElementById('errors').textContent = ''; }
+    else { vd.className = 'bad'; vd.textContent = '✗ 校验失败'; document.getElementById('errors').textContent = v.errors.join('\n'); }
+    var bleed = 0;
+    for (var i = 0; i < region.ecoOf.length; i++) {
+      var cellBand = MapGen.bandOfY((i / region.w) | 0, region.h, region.bandRows);
+      var home = null;
+      MapGen.ECOS.forEach(function (e2) { if (e2.id === region.ecoOf[i]) home = e2.homeBand; });
+      if (home !== cellBand) bleed += 1;
+    }
+    var bp = MapGen.bfsMaxDepth(region);
+    var outd = {};
+    region.nodes.forEach(function (n) {
+      var d = region.edges.filter(function (e3) { return e3.from === n.id; }).length;
+      outd[d] = (outd[d] || 0) + 1;
+    });
+    document.getElementById('stats').innerHTML =
+      'seed <b>' + region.seedUsed + '</b>（尝试 ' + region.attempts + ' 次）· 生成 <b>' + genMs + 'ms</b><br>' +
+      '节点 <b>' + region.nodes.length + '</b> · 边 <b>' + region.edges.length + '</b>（跨带 <b>' + region.edges.filter(function (e) { return e.crossBand; }).length + '</b>）<br>' +
+      '最长最短路径 <b>' + bp.max + '</b> · finalBoss 深度 <b>' + bp.finalBoss + '</b><br>' +
+      '出度分布 <b>' + JSON.stringify(outd) + '</b><br>' +
+      '生态渗入率 <b>' + (bleed * 100 / region.ecoOf.length).toFixed(1) + '%</b>（非母本带格占比）' +
+      (fog ? '<br>雾层：显示 <b>' + shown.nodes.length + '/' + region.nodes.length + '</b> 节点（其余未进 DOM）' : '');
+  }
+
+  buildLegend();
+  ['seed', 'kappa', 'qscale', 'fog'].forEach(function (id) {
+    document.getElementById(id).addEventListener('input', render);
+    document.getElementById(id).addEventListener('change', render);
+  });
+  document.getElementById('regen').addEventListener('click', render);
+  render();
+})();
+</script>
+</body>
+</html>

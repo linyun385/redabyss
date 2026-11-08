@@ -1,0 +1,740 @@
+{
+ "version": "1.7",
+ "task": "T54",
+ "doc": "docs/MAPGEN_DESIGN.md",
+ "brief": "docs/MAPGEN_BRIEF.md",
+ "note": "地图生成参数唯一来源（T54 落盘）。后续任务从这里读参数，不要各写一份。依据标注：requirement=需求原文/任务书，existing=既有设定，assumption=设计假设（可调）。",
+ "grid": {
+  "w": {
+   "default": 20,
+   "min": 10,
+   "max": 20,
+   "basis": "requirement",
+   "note": "T74: 14→20 加宽——纵向间距约束放宽前 14 列是死锁主因；加宽同时给 12 行带留出横向位移余量"
+  },
+  "h": {
+   "default": 96,
+   "min": 56,
+   "max": 128,
+   "multipleOf": 8,
+   "basis": "requirement",
+   "note": "T74: 64→96，每带 12 行（节奏：步数 32.3→目标 ≥36）；96 为 8 的倍数，带高=12 行"
+  }
+ },
+ "ecos": [
+  {
+   "id": "eco_surface",
+   "name": "死寂壳层",
+   "homeBand": 1,
+   "veinAffinity": null,
+   "layerRule": "no_light"
+  },
+  {
+   "id": "eco_cold",
+   "name": "沉积冷洞",
+   "homeBand": 2,
+   "veinAffinity": "tremor",
+   "layerRule": "dim"
+  },
+  {
+   "id": "eco_arid",
+   "name": "泉眼干旱区",
+   "homeBand": 3,
+   "veinAffinity": "water",
+   "layerRule": "dry"
+  },
+  {
+   "id": "eco_sea",
+   "name": "红蕨空洞海",
+   "homeBand": 4,
+   "veinAffinity": "light",
+   "layerRule": "bright"
+  },
+  {
+   "id": "eco_vent",
+   "name": "热泉裂带",
+   "homeBand": 5,
+   "veinAffinity": "heat",
+   "layerRule": "heat_tick"
+  },
+  {
+   "id": "eco_rad",
+   "name": "辐射荒漠",
+   "homeBand": 6,
+   "veinAffinity": "mineral",
+   "layerRule": "rad_tick"
+  },
+  {
+   "id": "eco_core",
+   "name": "核心高热区",
+   "homeBand": 7,
+   "veinAffinity": "heat",
+   "layerRule": "burn_hand"
+  },
+  {
+   "id": "eco_nexus",
+   "name": "核心回路",
+   "homeBand": 8,
+   "veinAffinity": null,
+   "layerRule": "time_loop"
+  }
+ ],
+ "nodeTypes": {
+  "generated": [
+   "combat",
+   "elite",
+   "random",
+   "shop",
+   "event",
+   "finalBoss"
+  ],
+  "runtimeOnly": [
+   "boss"
+  ],
+  "note": "生成阶段不产生 boss；boss 只由运行时跨带判定替换（brief 已确认2）。"
+ },
+ "randomMix": {
+  "campfire": {
+   "default": 0.45,
+   "basis": "assumption"
+  },
+  "event": {
+   "default": 0.4,
+   "basis": "assumption"
+  },
+  "shop": {
+   "default": 0.15,
+   "basis": "assumption"
+  },
+  "note": "random 节点触发时的落点分布（T57 消费）；既有营火并入 random。"
+ },
+ "weight": {
+  "home": {
+   "default": 0.45,
+   "range": [
+    0.4,
+    0.5
+   ],
+   "basis": "requirement",
+   "note": "母本生态在主场带的权重（T72 从 0.72 降档）"
+  },
+  "adjacentEach": {
+   "default": 0.2,
+   "range": [
+    0.15,
+    0.25
+   ],
+   "basis": "requirement",
+   "note": "每个邻带生态的权重（n=1 时顶格 0.25，余量入 rest）"
+  },
+  "rest": {
+   "note": "1 − home − Σadjacent，由其余生态均分",
+   "basis": "derived"
+  }
+ },
+ "ecoGrowth": {
+  "kappa": {
+   "default": 0.7,
+   "min": 0,
+   "max": 1,
+   "basis": "assumption",
+   "affects": "聚合度：1=紧成一片，0=碎斑"
+  },
+  "minPatchArea": {
+   "default": 8,
+   "min": 8,
+   "max": 40,
+   "basis": "requirement",
+   "note": "T74: 12→8（网格加宽后小块更碎，8 仍高于可读下限；T74 允许项）"
+  },
+  "maxComponents": {
+   "default": 2,
+   "min": 1,
+   "max": 3,
+   "basis": "assumption"
+  }
+ },
+ "node": {
+  "minSameTypeDist": {
+   "default": 2,
+   "min": 1,
+   "max": 4,
+   "basis": "requirement"
+  },
+  "maxInDeg": {
+   "default": 3,
+   "min": 2,
+   "max": 4,
+   "basis": "assumption"
+  },
+  "rowBalanced": {
+   "value": true,
+   "basis": "assumption",
+   "note": "每带配额摊到每行（1-2个/行，band1 排除起点行、band8 排除 fb 行）——替代原 rowCoverage 规则，保每行有节点→下游候选密度"
+  },
+  "verticalSpacing": {
+   "minRows": 1,
+   "scope": "same band + same column",
+   "basis": "requirement",
+   "note": "T74: ≥2→≥1 放宽（T74 允许项）——同带同列贴邻放行；死锁主因解除，重试均值 19.3→目标 ≤6"
+  }
+ },
+ "edge": {
+  "outDegMin": {
+   "default": 1,
+   "basis": "requirement"
+  },
+  "outDegMax": {
+   "default": 3,
+   "basis": "requirement"
+  },
+  "maxLen": {
+   "default": 4,
+   "min": 2,
+   "max": 6,
+   "basis": "assumption",
+   "note": "len = max(|dx|, dy) ∈ 1..k"
+  },
+  "angles": {
+   "nominal": [
+    0,
+    35,
+    60,
+    85
+   ],
+   "basis": "requirement",
+   "note": "需求例值；网格量化见 displacementTable"
+  },
+  "displacementTable": [
+   {
+    "nominalDeg": 0,
+    "candidates": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      -1,
+      4
+     ]
+    ]
+   },
+   {
+    "nominalDeg": 35,
+    "candidates": [
+     [
+      1,
+      1
+     ],
+     [
+      -1,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      -1,
+      2
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      -1,
+      3
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      -2,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      -2,
+      3
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      -2,
+      4
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      -3,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      -3,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      -4,
+      4
+     ]
+    ]
+   },
+   {
+    "nominalDeg": 60,
+    "candidates": [
+     [
+      2,
+      1
+     ],
+     [
+      -2,
+      1
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      -3,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      -4,
+      2
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      -4,
+      3
+     ]
+    ]
+   },
+   {
+    "nominalDeg": 85,
+    "candidates": [
+     [
+      4,
+      1
+     ],
+     [
+      -4,
+      1
+     ]
+    ]
+   }
+  ],
+  "changelog": "v1.1（T55 实测）：35° 桶补 ±1,1；v1.2（T55 实测）：位移表扩为 dy 1..4 × |dx| 0..4 全覆盖（len=max(|dx|,dy)≤4 闸门不变；名义角按最近实际角归桶）——窄表×稀疏行分布会让过半节点零上游候选。源点钉在母本带（原按权重抽样会漂出母本带并被饿死），生态渗入仍由 weightTable 在生长代价中体现",
+  "extraBranchOdds": {
+   "default": 0.15,
+   "basis": "assumption",
+   "note": "阶段C补分叉概率（T73 收口：0.35→0.15 降低分叉拉长步数；与 tools/mapgen.js 对齐）"
+  }
+ },
+ "quota": {
+  "bands": {
+   "1": {
+    "combat": 11,
+    "elite": 0,
+    "random": 5,
+    "shop": 2,
+    "event": 5
+   },
+   "2": {
+    "combat": 12,
+    "elite": 3,
+    "random": 5,
+    "shop": 2,
+    "event": 5
+   },
+   "3": {
+    "combat": 12,
+    "elite": 3,
+    "random": 5,
+    "shop": 2,
+    "event": 5
+   },
+   "4": {
+    "combat": 13,
+    "elite": 3,
+    "random": 6,
+    "shop": 2,
+    "event": 8
+   },
+   "5": {
+    "combat": 13,
+    "elite": 5,
+    "random": 6,
+    "shop": 2,
+    "event": 7
+   },
+   "6": {
+    "combat": 13,
+    "elite": 5,
+    "random": 6,
+    "shop": 2,
+    "event": 7
+   },
+   "7": {
+    "combat": 15,
+    "elite": 4,
+    "random": 6,
+    "shop": 2,
+    "event": 8
+   },
+   "8": {
+    "combat": 13,
+    "elite": 4,
+    "random": 5,
+    "shop": 2,
+    "event": 5,
+    "finalBoss": 1
+   }
+  },
+  "basis": "requirement(T73 表 A 合计下限：D1=9 D2-3=11 D4-6=13 D7-8=14；步数不足时允许在上限内上调——下限语义)",
+  "note": "T74 v3（下限语义）：T73 表 ×1.5 等比摊开到 12 行带，唯 band8 收 30——漏斗（fb±k 末行 ±4）容量有限，超配制造死叶；总节点 ≈240"
+ },
+ "visibility": {
+  "depth": {
+   "default": 1,
+   "min": 1,
+   "max": 2,
+   "basis": "requirement",
+   "note": "visible = visited ∪ 边邻居1跳"
+  },
+  "minimapEcoRadius": {
+   "default": 3,
+   "min": 2,
+   "max": 5,
+   "basis": "assumption"
+  },
+  "pruneAtDataLayer": {
+   "value": true,
+   "basis": "requirement",
+   "note": "未可见节点不进 DOM（pruneForFrontend），非 CSS 隐藏"
+  }
+ },
+ "rescue": {
+  "penaltyHpPct": {
+   "default": 10,
+   "min": 5,
+   "max": 20,
+   "basis": "assumption",
+   "note": "penalty 分支扣血 = ceil(maxHp * pct/100)，不致死"
+  },
+  "penaltyGoldPct": {
+   "default": 15,
+   "min": 0,
+   "max": 30,
+   "basis": "assumption",
+   "note": "penalty 分扣金币 = floor(gold * pct/100)"
+  },
+  "ambushChance": {
+   "default": 0.5,
+   "min": 0.3,
+   "max": 0.7,
+   "basis": "requirement",
+   "note": "penalty 或 ambush 二选一、随机（brief 四）"
+  },
+  "pickRule": {
+   "default": "sameBandFirst",
+   "options": [
+    "nearest",
+    "sameBandFirst"
+   ],
+   "basis": "requirement",
+   "note": "救援落点：同带优先再曼哈顿最近（brief 四）；同带内并列表取同带+最近"
+  },
+  "noTurnCost": {
+   "value": true,
+   "basis": "requirement"
+  },
+  "noFogReset": {
+   "value": true,
+   "basis": "requirement"
+  },
+  "targetRule": "未访问前沿节点（有已触发入边邻居）中按 pickRule 取最近",
+  "backtrack": {
+   "badEvent": {
+    "default": 0.45,
+    "basis": "requirement",
+    "note": "坏事件：扣血（当前生命 8–15%）或扣金币（15–25%），带一句文本"
+   },
+   "combat": {
+    "default": 0.3,
+    "basis": "requirement",
+    "note": "该深度带普通战斗池随机 2–3 只"
+   },
+   "elite": {
+    "default": 0.15,
+    "basis": "requirement",
+    "note": "该带精英池"
+   },
+   "boss": {
+    "default": 0.08,
+    "basis": "requirement",
+    "note": "该带 BOSS 池（真的可能遇到 boss）"
+   },
+   "none": {
+    "default": 0.02,
+    "basis": "requirement",
+    "note": "空手而归"
+   },
+   "hpPct": {
+    "default": [
+     0.08,
+     0.15
+    ],
+    "basis": "requirement"
+   },
+   "goldPct": {
+    "default": [
+     0.15,
+     0.25
+    ],
+    "basis": "requirement"
+   },
+   "note": "T75：回返与死路救援共用的遭遇判定表；每次回返只退 1 格（不能跳回起点）"
+  }
+ },
+ "binding": {
+  "structure": "binding[eco][band] -> { enemyPool, elitePool, bossPool, eventPool, shopTier }",
+  "shopTierByBand": {
+   "1-3": 1,
+   "4-6": 2,
+   "7-8": 3,
+   "basis": "assumption"
+  },
+  "fallbackChain": [
+   "exact eco+band",
+   "band home eco",
+   "eco home band",
+   "GenError('binding.empty')"
+  ],
+  "note": "T54 只落结构与默认回退链；实际池表由 T58 交付 data/mapgen_bindings.json"
+ },
+ "retry": {
+  "max": {
+   "default": 300,
+   "min": 5,
+   "max": 500,
+   "basis": "requirement",
+   "note": "T73 从 40 提到 300：98 节点/64 行密集网格单 attempt 成功率 ~3%，300 次 × 8ms ≈ 2.4s/失败 seed 可接受"
+  }
+ },
+ "invariants": [
+  "I1 节点不共格；start/finalBoss 各恰1个",
+  "I2 100%可达：从 start DFS 全部节点可达",
+  "I3 除 finalBoss 外每节点出度>=1",
+  "I4 无环（防御性断言）",
+  "I5 每条边 to.y > from.y",
+  "I6 finalBoss 唯一、band8 最底行、可达",
+  "I7 每带节点数 >= 配额合计",
+  "I8 同带同类型曼哈顿距离 >= D(2)",
+  "I9 对每个带边界 b=1..7 存在 b→b+1 的跨带边",
+  "I10 边中间格互不相交且不含节点格",
+  "I11 出度<=3、入度<=maxInDeg",
+  "I12 每生态>=1格、分量数<=maxComponents、块面积>=minPatchArea"
+ ],
+ "acceptance": {
+  "playableByDefault": "默认参数 20 个不同 seed 全部通过 I1–I12（T55 实测落盘）"
+ },
+ "placement": {
+  "strategy": "growDAG：行槽位 + 前置队列生长（布点连线合并），叶子直连失败则同带搬迁重建（父边拆重连）",
+  "band8Funnel": "band8 节点限制在 finalBoss 横向 ±k 内；紧邻 fb 的行不加量（该行下游只有 fb，入度留余量）",
+  "basis": "assumption(实现策略，T55 实测确定)",
+  "note": "设计文档 §2 步骤2/3 的实现策略变体，产出数据模型与全部不变量不变"
+ },
+ "boss": {
+  "firstAlways": {
+   "value": true,
+   "basis": "requirement",
+   "note": "第一次跨带必出 BOSS（brief 已确认2）"
+  },
+  "p0": {
+   "default": 0.5,
+   "min": 0.3,
+   "max": 1,
+   "basis": "assumption"
+  },
+  "decay": {
+   "default": 0.6,
+   "min": 0.3,
+   "max": 1,
+   "basis": "assumption"
+  },
+  "min": {
+   "default": 0.1,
+   "min": 0,
+   "max": 0.2,
+   "basis": "assumption"
+  },
+  "formula": "p(1)=firstAlways?1:...; p(k)=max(min, p0 * decay^(k-2)) for k>=2",
+  "replacement": "命中时把该跨带边终点节点运行时替换为 boss（类型+内容，run 级 override），不改生成结果（brief 已确认2）；T57 消费"
+ },
+ "ruleModulation": [
+  {
+   "rule": "no_light",
+   "affinity": "light",
+   "factor": 0.5,
+   "basis": "requirement",
+   "note": "用户示例：no_light 带发光生态减半"
+  },
+  {
+   "rule": "dim",
+   "affinity": "light",
+   "factor": 0.75,
+   "basis": "assumption",
+   "note": "D2 红光衰减"
+  },
+  {
+   "rule": "dry",
+   "affinity": "water",
+   "factor": 0.6,
+   "basis": "assumption",
+   "note": "D3 水按滴记"
+  },
+  {
+   "rule": "bright",
+   "affinity": "light",
+   "factor": 1.25,
+   "basis": "assumption",
+   "note": "D4 红光充沛"
+  },
+  {
+   "rule": "heat_tick",
+   "affinity": "heat",
+   "factor": 1.1,
+   "basis": "assumption",
+   "note": "D5 热泉"
+  },
+  {
+   "rule": "rad_tick",
+   "affinity": "mineral",
+   "factor": 1.05,
+   "basis": "assumption",
+   "note": "D6 辐射矿"
+  },
+  {
+   "rule": "burn_hand",
+   "affinity": "heat",
+   "factor": 1.1,
+   "basis": "assumption",
+   "note": "D7 高热"
+  },
+  {
+   "rule": "time_loop",
+   "affinity": null,
+   "factor": 1,
+   "basis": "assumption",
+   "note": "D8 素品语域，不调制"
+  }
+ ],
+ "ruleByBand": {
+  "1": "no_light",
+  "2": "dim",
+  "3": "dry",
+  "4": "bright",
+  "5": "heat_tick",
+  "6": "rad_tick",
+  "7": "burn_hand",
+  "8": "time_loop",
+  "_source": "layers.json / engine LAYERS 的 rule 字段（band 同序复制，数据镜像）"
+ },
+ "bandMix": {
+  "countPerBand": {
+   "min": 2,
+   "max": 4,
+   "basis": "requirement",
+   "note": "每带实现的生态数（零例外）"
+  },
+  "maxShare": {
+   "default": 0.6,
+   "basis": "requirement",
+   "note": "单带最大生态占比（零例外）"
+  },
+  "adjacentIntersect": {
+   "min": 1,
+   "basis": "requirement",
+   "note": "相邻两带共享生态数 ≥1（D3 干旱咬进 D4 边缘）"
+  },
+  "perBandComponents": {
+   "max": 3,
+   "pctl": 95,
+   "basis": "requirement",
+   "note": "带内同生态连通块 ≤3（验收口径 95 分位；validate 内按 100% 强制）"
+  },
+  "minPatch": {
+   "default": 8,
+   "basis": "requirement",
+   "note": "镜像 ecoGrowth.minPatchArea（T74: 12→8）"
+  },
+  "crossBandSpan": {
+   "value": "1–3 格",
+   "basis": "requirement",
+   "note": "同一生态块可跨带 1–3 格（生长自然产生，不做强制）"
+  }
+ },
+ "changelog": "v1.6（T73）：深度带节奏重做——配额表按 T73 表 A（D1=9 D2-3=11 D4-6=13 D7-8=14，下限语义）、网格 48→64（每带 8 行）、同带同列纵向间距 ≥2 行、节奏目标步数 40–70/带到访 ≥4.5/BOSS 3–6；v1.7（T74 实测）：w 14→20 / h 64→96（带高 12）/ minPatchArea 12→8 / verticalSpacing ≥2→≥1 / 配额 ×1.5（总节点 ≈246）——性能回归修复（100 图 <2s、重试均值 ≤6）+ 节奏达标（步数 ≥36、D2–D7 每带 ≥4.2）；v1.8（T75）：新增 rescue.backtrack 遭遇判定表（45/30/15/8/2 + 血金代价区间）——回返与死路救援共用",
+ "rhythm": {
+  "stepsPerRun": [
+   40,
+   70
+  ],
+  "bandVisitsMin": 4.5,
+  "bossFights": [
+   3,
+   6
+  ],
+  "clearRate": 1,
+  "basis": "requirement",
+  "note": "500 局模拟验收线；T74 实测若步数落在 36–40 区间，允许按任务书写明依据后改 36–50（不许静默不达标）"
+ }
+}

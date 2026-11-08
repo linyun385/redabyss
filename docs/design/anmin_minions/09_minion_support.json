@@ -1,0 +1,120 @@
+[
+ {
+  "id": "anm_0082",
+  "name": "检修指令",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "common",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "target": "ally",
+   "heal": 8
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "检修单上写着：优先修复仍在运动的单元。",
+  "upgrade": {
+   "name_suffix": "·续",
+   "effect": {
+    "heal": 12
+   },
+   "flavor_add": "第二张单子没有编号。"
+  }
+ },
+ {
+  "id": "anm_0083",
+  "name": "过载接线",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 1,
+  "part_cost": 1,
+  "effect": {
+   "target": "ally",
+   "special": [{"code": "strength", "value": 4}]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -1",
+  "flavor": "电流绕过保险丝。保险丝是用来保护设备的，不是保护你的。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "special": [{"code": "strength", "value": 6}]
+   },
+   "flavor_add": "第二根线没走保险丝盒，直接从墙里穿过去。"
+  }
+ },
+ {
+  "id": "anm_0084",
+  "name": "装甲焊补",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 1,
+  "part_cost": 1,
+  "effect": {
+   "target": "ally",
+   "special": [{"code": "regenerate", "value": 2}]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -1",
+  "flavor": "焊枪走过的地方会自己长回去。长得比原来难看。",
+  "upgrade": {
+   "name_suffix": "·厚",
+   "effect": {
+    "special": [{"code": "regenerate", "value": 3}]
+   },
+   "flavor_add": "第三道焊缝叠在第二道上。没人打算拆。"
+  }
+ },
+ {
+  "id": "anm_0085",
+  "name": "反甲回路",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": ["mineral"],
+  "energy": 1,
+  "effect": {
+   "target": "ally",
+   "special": [{"code": "thorns", "value": 3}]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "电路把撞击转成回流。它挨打，对面记账。",
+  "upgrade": {
+   "name_suffix": "·复",
+   "effect": {
+    "special": [{"code": "thorns", "value": 5}]
+   },
+   "flavor_add": "回路叠了一层。现在连抬手都算撞击。"
+  }
+ },
+ {
+  "id": "anm_0086",
+  "name": "协同作战",
+  "class": "anmin",
+  "type": "skill",
+  "rarity": "rare",
+  "veins": ["mineral"],
+  "energy": 2,
+  "part_cost": 1,
+  "effect": {
+   "target": "all_ally",
+   "special": [{"code": "strength", "value": 2}]
+  },
+  "cost_type": "none",
+  "cost_text": "零件 -1",
+  "flavor": "它和你用同一套动作。分不清是谁在模仿谁。",
+  "upgrade": {
+   "name_suffix": "·编",
+   "effect": {
+    "special": [{"code": "strength", "value": 3}]
+   },
+   "flavor_add": "第三套动作是它先起的。你跟着做。"
+  }
+ }
+]

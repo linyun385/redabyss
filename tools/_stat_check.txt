@@ -1,0 +1,10 @@
+ 5582 | if (ec.action === 'block') gainBlock(C, ec.value || 0);
+ 5828 | const dmgEach = Math.max(0, e.damage + bonus + (C.buffs.strength || 0) + (C.activeProtocol === 'purge' ? 3 : 0));
+ 5838 | gainBlock(C, Math.max(0, e.block + bonus + (C.buffs.dexterity || 0)));
+ 5867 | case 'strength': C.buffs.strength = (C.buffs.strength || 0) + (V !== undefined ? V : 1); break;
+ 5868 | case 'dexterity': C.buffs.dexterity = (C.buffs.dexterity || 0) + (V !== undefined ? V : 1); break;
+ 5870 | case 'thorns':  C.buffs.thorns = (C.buffs.thorns || 0) + (V !== undefined ? V : 3); break;
+ 5951 | function gainBlock(C, n) {
+ 6026 | if (C.buffs.thorns) { /* 在敌人攻击时结算 */ }
+ 6051 | if (keepBlock) C.block = Math.floor(C.block / 2); else C.block = 0;
+ 6135 | if (C.buffs.thorns) dealToEnemy(C, e, C.buffs.thorns);

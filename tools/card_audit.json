@@ -1,0 +1,1889 @@
+{
+ "total": 260,
+ "matrix": {
+  "diver": {
+   "total": 80,
+   "byVein": {
+    "light": 24,
+    "water": 4,
+    "heat": 9,
+    "tremor": 16,
+    "mineral": 23,
+    "none": 4
+   },
+   "byCost": {
+    "0": 13,
+    "1": 44,
+    "2": 19,
+    "3+": 4
+   },
+   "byType": {
+    "attack": 26,
+    "skill": 44,
+    "power": 10
+   },
+   "byRarity": {
+    "common": 32,
+    "uncommon": 29,
+    "rare": 17,
+    "special": 2
+   },
+   "cells": {
+    "light|0|skill": 3,
+    "light|1|attack": 2,
+    "light|1|skill": 10,
+    "light|1|power": 3,
+    "light|2|attack": 5,
+    "light|3+|attack": 1,
+    "mineral|0|attack": 3,
+    "mineral|1|skill": 6,
+    "mineral|1|attack": 3,
+    "mineral|1|power": 2,
+    "mineral|2|attack": 2,
+    "mineral|2|skill": 2,
+    "mineral|3+|attack": 1,
+    "tremor|0|skill": 3,
+    "tremor|1|attack": 3,
+    "tremor|1|skill": 5,
+    "tremor|2|skill": 1,
+    "tremor|3+|attack": 1,
+    "heat|1|attack": 2,
+    "heat|1|skill": 4,
+    "heat|2|skill": 1,
+    "heat|2|power": 1,
+    "water|1|skill": 3,
+    "water|2|skill": 1,
+    "none|0|skill": 2,
+    "none|2|power": 1,
+    "tremor|2|attack": 2,
+    "tremor|2|power": 1,
+    "mineral|0|skill": 2,
+    "none|1|skill": 1,
+    "heat|3+|attack": 1,
+    "mineral|2|power": 2
+   }
+  },
+  "tremor": {
+   "total": 80,
+   "byVein": {
+    "light": 11,
+    "water": 10,
+    "heat": 16,
+    "tremor": 32,
+    "mineral": 6,
+    "none": 5
+   },
+   "byCost": {
+    "0": 15,
+    "1": 40,
+    "2": 22,
+    "3+": 3
+   },
+   "byType": {
+    "attack": 24,
+    "skill": 52,
+    "power": 4
+   },
+   "byRarity": {
+    "common": 32,
+    "uncommon": 29,
+    "rare": 17,
+    "special": 2
+   },
+   "cells": {
+    "tremor|0|skill": 6,
+    "tremor|1|skill": 7,
+    "tremor|1|attack": 7,
+    "tremor|2|attack": 5,
+    "tremor|2|skill": 3,
+    "tremor|3+|attack": 1,
+    "tremor|3+|skill": 1,
+    "heat|0|skill": 1,
+    "heat|1|skill": 5,
+    "heat|1|attack": 2,
+    "heat|1|power": 1,
+    "heat|2|skill": 3,
+    "heat|2|attack": 2,
+    "heat|3+|attack": 1,
+    "light|0|skill": 3,
+    "light|1|skill": 6,
+    "light|2|skill": 1,
+    "light|2|attack": 1,
+    "water|0|skill": 2,
+    "water|1|skill": 5,
+    "water|2|attack": 1,
+    "water|2|skill": 1,
+    "mineral|1|skill": 3,
+    "mineral|2|skill": 2,
+    "none|1|skill": 2,
+    "none|2|power": 1,
+    "tremor|0|attack": 2,
+    "heat|0|attack": 1,
+    "none|2|skill": 1,
+    "none|2|attack": 1,
+    "mineral|1|power": 1,
+    "water|1|power": 1
+   }
+  },
+  "anmin": {
+   "total": 50,
+   "byVein": {
+    "light": 9,
+    "water": 10,
+    "heat": 3,
+    "tremor": 5,
+    "mineral": 23,
+    "none": 0
+   },
+   "byCost": {
+    "0": 8,
+    "1": 41,
+    "2": 1,
+    "3+": 0
+   },
+   "byType": {
+    "attack": 11,
+    "skill": 33,
+    "power": 6
+   },
+   "byRarity": {
+    "common": 20,
+    "uncommon": 16,
+    "rare": 10,
+    "special": 4
+   },
+   "cells": {
+    "mineral|1|skill": 8,
+    "mineral|1|attack": 7,
+    "light|0|skill": 1,
+    "heat|1|skill": 1,
+    "mineral|0|skill": 6,
+    "light|1|skill": 7,
+    "heat|1|attack": 1,
+    "water|1|skill": 6,
+    "mineral|1|power": 2,
+    "tremor|1|skill": 3,
+    "water|0|skill": 1,
+    "heat|1|power": 1,
+    "tremor|1|attack": 2,
+    "water|1|attack": 1,
+    "water|1|power": 1,
+    "water|2|power": 1,
+    "light|1|power": 1
+   }
+  },
+  "cangmin": {
+   "total": 50,
+   "byVein": {
+    "light": 20,
+    "water": 7,
+    "heat": 6,
+    "tremor": 3,
+    "mineral": 14,
+    "none": 0
+   },
+   "byCost": {
+    "0": 7,
+    "1": 30,
+    "2": 13,
+    "3+": 0
+   },
+   "byType": {
+    "attack": 14,
+    "skill": 32,
+    "power": 4
+   },
+   "byRarity": {
+    "common": 14,
+    "uncommon": 15,
+    "rare": 14,
+    "special": 7
+   },
+   "cells": {
+    "light|0|skill": 4,
+    "mineral|1|skill": 6,
+    "water|1|skill": 4,
+    "light|1|skill": 13,
+    "water|0|skill": 2,
+    "mineral|2|attack": 3,
+    "mineral|2|power": 2,
+    "mineral|2|skill": 1,
+    "mineral|1|attack": 2,
+    "light|1|attack": 2,
+    "heat|2|attack": 3,
+    "light|2|attack": 1,
+    "heat|1|skill": 1,
+    "tremor|1|attack": 1,
+    "tremor|2|attack": 2,
+    "heat|2|power": 1,
+    "heat|0|skill": 1,
+    "water|1|power": 1
+   }
+  }
+ },
+ "spots": [
+  {
+   "cls": "diver",
+   "vein": "light",
+   "cost": "1",
+   "type": "attack",
+   "observed": 2,
+   "expected": 13.2,
+   "residual": -11.2,
+   "kind": "空洞"
+  },
+  {
+   "cls": "diver",
+   "vein": "light",
+   "cost": "1",
+   "type": "power",
+   "observed": 3,
+   "expected": 13.2,
+   "residual": -10.2,
+   "kind": "空洞"
+  },
+  {
+   "cls": "diver",
+   "vein": "mineral",
+   "cost": "1",
+   "type": "attack",
+   "observed": 3,
+   "expected": 12.7,
+   "residual": -9.7,
+   "kind": "空洞"
+  },
+  {
+   "cls": "diver",
+   "vein": "mineral",
+   "cost": "1",
+   "type": "power",
+   "observed": 2,
+   "expected": 12.7,
+   "residual": -10.7,
+   "kind": "空洞"
+  },
+  {
+   "cls": "tremor",
+   "vein": "tremor",
+   "cost": "1",
+   "type": "skill",
+   "observed": 7,
+   "expected": 16,
+   "residual": -9,
+   "kind": "空洞"
+  },
+  {
+   "cls": "tremor",
+   "vein": "tremor",
+   "cost": "1",
+   "type": "attack",
+   "observed": 7,
+   "expected": 16,
+   "residual": -9,
+   "kind": "空洞"
+  },
+  {
+   "cls": "tremor",
+   "vein": "heat",
+   "cost": "1",
+   "type": "attack",
+   "observed": 2,
+   "expected": 8,
+   "residual": -6,
+   "kind": "空洞"
+  },
+  {
+   "cls": "tremor",
+   "vein": "heat",
+   "cost": "1",
+   "type": "power",
+   "observed": 1,
+   "expected": 8,
+   "residual": -7,
+   "kind": "空洞"
+  },
+  {
+   "cls": "anmin",
+   "vein": "mineral",
+   "cost": "1",
+   "type": "skill",
+   "observed": 8,
+   "expected": 18.9,
+   "residual": -10.9,
+   "kind": "空洞"
+  },
+  {
+   "cls": "anmin",
+   "vein": "mineral",
+   "cost": "1",
+   "type": "attack",
+   "observed": 7,
+   "expected": 18.9,
+   "residual": -11.9,
+   "kind": "空洞"
+  },
+  {
+   "cls": "anmin",
+   "vein": "mineral",
+   "cost": "1",
+   "type": "power",
+   "observed": 2,
+   "expected": 18.9,
+   "residual": -16.9,
+   "kind": "空洞"
+  },
+  {
+   "cls": "anmin",
+   "vein": "water",
+   "cost": "1",
+   "type": "attack",
+   "observed": 1,
+   "expected": 8.2,
+   "residual": -7.2,
+   "kind": "空洞"
+  },
+  {
+   "cls": "anmin",
+   "vein": "water",
+   "cost": "1",
+   "type": "power",
+   "observed": 1,
+   "expected": 8.2,
+   "residual": -7.2,
+   "kind": "空洞"
+  },
+  {
+   "cls": "anmin",
+   "vein": "light",
+   "cost": "1",
+   "type": "power",
+   "observed": 1,
+   "expected": 7.4,
+   "residual": -6.4,
+   "kind": "空洞"
+  },
+  {
+   "cls": "cangmin",
+   "vein": "mineral",
+   "cost": "1",
+   "type": "attack",
+   "observed": 2,
+   "expected": 8.4,
+   "residual": -6.4,
+   "kind": "空洞"
+  },
+  {
+   "cls": "cangmin",
+   "vein": "light",
+   "cost": "1",
+   "type": "attack",
+   "observed": 2,
+   "expected": 12,
+   "residual": -10,
+   "kind": "空洞"
+  }
+ ],
+ "dupEffects": [
+  {
+   "count": 12,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0001",
+     "name": "光导透镜（残）",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0039",
+     "name": "矿票",
+     "cost": 0,
+     "rarity": "special"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0048",
+     "name": "矿票（回收藏）",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0001",
+     "name": "震语：听骨",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0046",
+     "name": "震语：舍字",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0003",
+     "name": "备用照明电池",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0033",
+     "name": "血统册摘录",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0044",
+     "name": "死者的工号牌",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0045",
+     "name": "读图纸的人",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0002",
+     "name": "王国账簿",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0006",
+     "name": "守夜人的表",
+     "cost": 0,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0044",
+     "name": "三体历残卷",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "draw=1;target=\"self\""
+  },
+  {
+   "count": 10,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0008",
+     "name": "红渊研究院·数据回传",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0064",
+     "name": "星髓矿业·矿脉图",
+     "cost": 0,
+     "rarity": "rare"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0007",
+     "name": "震语铃",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0043",
+     "name": "静底·焚忆",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0009",
+     "name": "料仓取件",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0023",
+     "name": "协议：信息隔离",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0007",
+     "name": "星表检索",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0017",
+     "name": "地下学院讲义",
+     "cost": 1,
+     "rarity": "special"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0033",
+     "name": "昴宿低语",
+     "cost": 0,
+     "rarity": "rare"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0047",
+     "name": "不醒者的名单",
+     "cost": 1,
+     "rarity": "rare"
+    }
+   ],
+   "fp": "draw=2;target=\"self\""
+  },
+  {
+   "count": 8,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0020",
+     "name": "黑曜采掘·加班条例",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0035",
+     "name": "深红资源集团·地热井口",
+     "cost": 2,
+     "rarity": "rare"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0056",
+     "name": "死亡合同（增补条款）",
+     "cost": 0,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0075",
+     "name": "深红资源集团·地契",
+     "cost": 2,
+     "rarity": "rare"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0044",
+     "name": "相石·封忆",
+     "cost": 2,
+     "rarity": "rare"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0015",
+     "name": "主控授权·工程线",
+     "cost": 1,
+     "rarity": "rare"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0035",
+     "name": "超频保养",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0019",
+     "name": "王权梦",
+     "cost": 2,
+     "rarity": "rare"
+    }
+   ],
+   "fp": "special=[{\"code\":\"strength\",\"value\":2}];target=\"self\""
+  },
+  {
+   "count": 7,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0004",
+     "name": "光苔矿培植舱",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0041",
+     "name": "震语：淡忘",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0063",
+     "name": "涌喉·深潜",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0079",
+     "name": "震台石碑（无字）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0024",
+     "name": "协议：库存封存",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0034",
+     "name": "辐射防护衬层",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0009",
+     "name": "光父的准点",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "block=8;target=\"self\""
+  },
+  {
+   "count": 6,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0007",
+     "name": "渊光重工·导光索",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0060",
+     "name": "黑曜采掘·无氧班次",
+     "cost": 2,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0020",
+     "name": "静日触杖",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0077",
+     "name": "五脉符（浮位）",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0016",
+     "name": "主控授权·安全线",
+     "cost": 1,
+     "rarity": "rare"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0050",
+     "name": "疯先知的笔记",
+     "cost": 1,
+     "rarity": "special"
+    }
+   ],
+   "fp": "special=[{\"code\":\"dexterity\",\"value\":2}];target=\"self\""
+  },
+  {
+   "count": 6,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0079",
+     "name": "红渊贸易局·苦水配给（双份）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0003",
+     "name": "震语：压息",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0032",
+     "name": "震语：引流",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0004",
+     "name": "例检条款",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0011",
+     "name": "猎巫者的谎",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0043",
+     "name": "猎巫者的绳",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=7;target=\"self\""
+  },
+  {
+   "count": 5,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0017",
+     "name": "星髓矿业·深地车",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0040",
+     "name": "重力训练舱",
+     "cost": 2,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0040",
+     "name": "五脉符",
+     "cost": 2,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0067",
+     "name": "五脉符（缺位）",
+     "cost": 1,
+     "rarity": "rare"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0050",
+     "name": "主控密钥（烧毁）",
+     "cost": 1,
+     "rarity": "special"
+    }
+   ],
+   "fp": "special=[{\"code\":\"strength\",\"value\":1},{\"code\":\"dexterity\",\"value\":1}];target=\"self\""
+  },
+  {
+   "count": 5,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0027",
+     "name": "星髓矿业·钻杆",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0062",
+     "name": "震语：叩问",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0002",
+     "name": "扳手规程",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0021",
+     "name": "巨神的欠账",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0048",
+     "name": "猎巫巡逻·换防",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "damage=9;hits=1;target=\"single\""
+  },
+  {
+   "count": 4,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0015",
+     "name": "星髓矿业·爆破执照",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0042",
+     "name": "震语：断忆",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0014",
+     "name": "巡逻体残骸",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0029",
+     "name": "耀斑记忆",
+     "cost": 2,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "damage=12;hits=1;target=\"single\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0002",
+     "name": "聚能枪",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0009",
+     "name": "震语：断脉",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0025",
+     "name": "协议：终端确认",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "damage=10;hits=1;target=\"single\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0006",
+     "name": "渊光重工·工作灯",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0026",
+     "name": "光导石",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0014",
+     "name": "伊格的方向",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=3;draw=1;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0014",
+     "name": "震髓探测器",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0036",
+     "name": "辨矿",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0006",
+     "name": "库存盘点",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "draw=1;resonance_gain=2;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0016",
+     "name": "共振抑制仪",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0019",
+     "name": "禁声日",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0020",
+     "name": "协议：静默段",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "block=6;special=[{\"code\":\"resonance_lock\"}];target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0028",
+     "name": "震频器（校准）",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0043",
+     "name": "曜元（共振型）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0047",
+     "name": "震台石碑（残诵）",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "resonance_gain=4;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0031",
+     "name": "聚能枪（过热）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0078",
+     "name": "红渊研究院·频谱印章",
+     "cost": 2,
+     "rarity": "rare"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0038",
+     "name": "运料井下坠",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "damage=11;hits=1;target=\"single\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0032",
+     "name": "曜元（缓释）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0040",
+     "name": "协议：例外条款",
+     "cost": 1,
+     "rarity": "rare"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0042",
+     "name": "火母的回应",
+     "cost": 2,
+     "rarity": "rare"
+    }
+   ],
+   "fp": "special=[{\"code\":\"regenerate\",\"value\":3}];target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0033",
+     "name": "圣火武器",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0065",
+     "name": "静底·灰烬",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0011",
+     "name": "焊接臂·民用型",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "damage=6;hits=1;special=[{\"code\":\"burn\",\"value\":3,\"turns\":2}];target=\"single\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0061",
+     "name": "巡线灯",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0054",
+     "name": "光导石（串珠）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0021",
+     "name": "协议：优先级翻转",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=4;draw=1;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0074",
+     "name": "黑曜采掘·计件工资",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0047",
+     "name": "通风守卫·代班",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0027",
+     "name": "红矮星风",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "damage=8;hits=1;target=\"single\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "tremor",
+     "id": "trem_0074",
+     "name": "涌喉·潮契",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0019",
+     "name": "例检手套",
+     "cost": 1,
+     "rarity": "special"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0049",
+     "name": "岩洞集会",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=6;draw=1;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0005",
+     "name": "焊缝补强",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0005",
+     "name": "巡夜灯",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0045",
+     "name": "晨昏带地图",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=5;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0010",
+     "name": "应急照明协议",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0015",
+     "name": "守望席",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0030",
+     "name": "星光残照",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=9;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0031",
+     "name": "缓冲库存",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0046",
+     "name": "例检清单（残）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0003",
+     "name": "巨神的欠条",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=6;target=\"self\""
+  },
+  {
+   "count": 3,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0032",
+     "name": "闭环利用",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0010",
+     "name": "忆盐",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0046",
+     "name": "火母的小像",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "heal=3;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0009",
+     "name": "聚能枪（双管）",
+     "cost": 2,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0022",
+     "name": "卫星轨道",
+     "cost": 2,
+     "rarity": "rare"
+    }
+   ],
+   "fp": "damage=8;hits=2;target=\"single\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0029",
+     "name": "红渊研究院·震谱仪",
+     "cost": 2,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0012",
+     "name": "历法刻盘",
+     "cost": 2,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "draw=3;resonance_cost=8;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0036",
+     "name": "红渊贸易局·净水配给",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0016",
+     "name": "喷息·热池边",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=6;special=[{\"code\":\"regenerate\",\"value\":2}];target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0041",
+     "name": "震频器（并联）",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0002",
+     "name": "听震",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "resonance_gain=3;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0045",
+     "name": "红渊研究院·共振采样",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0037",
+     "name": "相石·初刻",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "draw=1;resonance_gain=3;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0049",
+     "name": "硬矿钻（手持）",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0048",
+     "name": "震语：连震",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "damage=4;hits=1;target=\"single\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0053",
+     "name": "渊光重工·备用电源",
+     "cost": 1,
+     "rarity": "rare"
+    },
+    {
+     "cls": "diver",
+     "id": "dive_0080",
+     "name": "渊光重工·断路闸",
+     "cost": 1,
+     "rarity": "rare"
+    }
+   ],
+   "fp": "draw=3;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0054",
+     "name": "聚能枪（超载）",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0031",
+     "name": "光父的审判",
+     "cost": 2,
+     "rarity": "rare"
+    }
+   ],
+   "fp": "damage=16;hits=1;target=\"single\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0059",
+     "name": "曜元（空腹）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0033",
+     "name": "涌喉·水契",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "special=[{\"code\":\"regenerate\",\"value\":4}];target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0062",
+     "name": "凿屑袋",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0049",
+     "name": "三震（回声）",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "damage=2;hits=2;target=\"single\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0065",
+     "name": "渊光重工·接地缆",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0025",
+     "name": "沉默权柄",
+     "cost": 2,
+     "rarity": "special"
+    }
+   ],
+   "fp": "special=[{\"code\":\"thorns\",\"value\":4}];target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "diver",
+     "id": "dive_0066",
+     "name": "曜元（高浓）",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0022",
+     "name": "协议：保运行",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "heal=6;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "tremor",
+     "id": "trem_0005",
+     "name": "震语：双声",
+     "cost": 1,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0007",
+     "name": "调节螺栓",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "damage=4;hits=2;target=\"single\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "tremor",
+     "id": "trem_0008",
+     "name": "震语：问地",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0018",
+     "name": "巨神的凝视",
+     "cost": 2,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "damage=13;hits=1;target=\"single\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "tremor",
+     "id": "trem_0011",
+     "name": "震台石碑",
+     "cost": 2,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "anmin",
+     "id": "anm_0037",
+     "name": "动用储备",
+     "cost": 0,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "block=10;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "tremor",
+     "id": "trem_0021",
+     "name": "埋骨礼",
+     "cost": 2,
+     "rarity": "uncommon"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0020",
+     "name": "城墙梦",
+     "cost": 2,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "block=14;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "tremor",
+     "id": "trem_0025",
+     "name": "观红",
+     "cost": 0,
+     "rarity": "common"
+    },
+    {
+     "cls": "tremor",
+     "id": "trem_0051",
+     "name": "震语：润喉",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=2;draw=1;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0001",
+     "name": "现场回收",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0001",
+     "name": "守夜",
+     "cost": 0,
+     "rarity": "common"
+    }
+   ],
+   "fp": "block=4;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0029",
+     "name": "氧气核算",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0004",
+     "name": "灰藻汤",
+     "cost": 1,
+     "rarity": "common"
+    }
+   ],
+   "fp": "heal=5;target=\"self\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0030",
+     "name": "运料车残骸",
+     "cost": 1,
+     "rarity": "common"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0026",
+     "name": "光父的钟摆",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "damage=7;hits=1;target=\"single\""
+  },
+  {
+   "count": 2,
+   "cards": [
+    {
+     "cls": "anmin",
+     "id": "anm_0042",
+     "name": "基因修复台",
+     "cost": 1,
+     "rarity": "rare"
+    },
+    {
+     "cls": "cangmin",
+     "id": "cng_0041",
+     "name": "红藻花园",
+     "cost": 1,
+     "rarity": "uncommon"
+    }
+   ],
+   "fp": "heal=8;target=\"self\""
+  }
+ ],
+ "dupNames": [],
+ "suspects": [
+  {
+   "cls": "diver",
+   "type": "skill",
+   "name": "墟盐",
+   "id": "dive_0018",
+   "cost": 1,
+   "density": 12,
+   "med": 5.8,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "skill",
+   "name": "重力训练舱（极限负重）",
+   "id": "dive_0057",
+   "cost": 1,
+   "density": 12,
+   "med": 5.8,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "attack",
+   "name": "星髓矿业·深部震源",
+   "id": "dive_0046",
+   "cost": 2,
+   "density": 18,
+   "med": 8.8,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "anmin",
+   "type": "attack",
+   "name": "菌婪者组织样本",
+   "id": "anm_0039",
+   "cost": 1,
+   "density": 20.4,
+   "med": 10,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "anmin",
+   "type": "skill",
+   "name": "回收协议·总则",
+   "id": "anm_0017",
+   "cost": 1,
+   "density": 12,
+   "med": 6,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "cangmin",
+   "type": "skill",
+   "name": "五十日",
+   "id": "cng_0028",
+   "cost": 1,
+   "density": 13,
+   "med": 6.5,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "cangmin",
+   "type": "skill",
+   "name": "潮汐锁",
+   "id": "cng_0023",
+   "cost": 1,
+   "density": 12,
+   "med": 6.5,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "attack",
+   "name": "聚能枪（超载）",
+   "id": "dive_0054",
+   "cost": 1,
+   "density": 16,
+   "med": 8.8,
+   "kind": "超模嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "skill",
+   "name": "震频器（校准）",
+   "id": "dive_0028",
+   "cost": 1,
+   "density": 2,
+   "med": 5.8,
+   "kind": "废卡嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "skill",
+   "name": "曜元（共振型）",
+   "id": "dive_0043",
+   "cost": 1,
+   "density": 2,
+   "med": 5.8,
+   "kind": "废卡嫌疑"
+  },
+  {
+   "cls": "tremor",
+   "type": "attack",
+   "name": "震语：传温",
+   "id": "trem_0050",
+   "cost": 0,
+   "density": 3,
+   "med": 9,
+   "kind": "废卡嫌疑"
+  },
+  {
+   "cls": "tremor",
+   "type": "skill",
+   "name": "听震",
+   "id": "trem_0002",
+   "cost": 0,
+   "density": 1.5,
+   "med": 5.3,
+   "kind": "废卡嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "skill",
+   "name": "震频器（并联）",
+   "id": "dive_0041",
+   "cost": 0,
+   "density": 1.5,
+   "med": 5.8,
+   "kind": "废卡嫌疑"
+  },
+  {
+   "cls": "tremor",
+   "type": "skill",
+   "name": "震语：试井",
+   "id": "trem_0071",
+   "cost": 0,
+   "density": 1,
+   "med": 5.3,
+   "kind": "废卡嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "skill",
+   "name": "震频器",
+   "id": "dive_0025",
+   "cost": 0,
+   "density": 1,
+   "med": 5.8,
+   "kind": "废卡嫌疑"
+  },
+  {
+   "cls": "diver",
+   "type": "skill",
+   "name": "震频器（微型）",
+   "id": "dive_0051",
+   "cost": 0,
+   "density": 0.5,
+   "med": 5.8,
+   "kind": "废卡嫌疑"
+  }
+ ],
+ "coefficients": {
+  "damage": 1,
+  "block": 1,
+  "heal": 1,
+  "draw": 2.5,
+  "gaze": 2,
+  "resonance": 0.5,
+  "strength": 4,
+  "dexterity": 4,
+  "regenerate": 1.5,
+  "burn": 1.2,
+  "poison": 1.2,
+  "weak": 1,
+  "frail": 1,
+  "thorns": 1.5,
+  "exhaustDiscount": 0.8,
+  "note": "系数为设计假设：1 费≈1 点即时价值；抽牌按 StS 经验一张牌≈2.5 价值；持续 buff 按整场战斗约 2 次收益折算。"
+ }
+}

@@ -1,0 +1,17 @@
+=== T75 回返遭遇判定检查 ===
+
+  ok    已从 ==T75-BACKTRACK-ROLL== 段抽取 backtrackRoll（发货代码）
+  ok    参数（spec rescue.backtrack）：{"badEvent":0.45,"combat":0.3,"elite":0.15,"boss":0.08,"none":0.02}
+  ok    五项概率之和 = 1
+  ok    web 模块 P.rescue.backtrack 与 spec 一致（5 项）
+
+  回返遭遇分布（500 次）：
+  判定      次数   实测%   目标%   偏差   判定
+  badEvent   217    43.4     45   -1.6pp  ✓
+  combat     163    32.6     30  +  2.6pp  ✓
+  elite       71    14.2     15   -0.8pp  ✓
+  boss        36     7.2      8   -0.8pp  ✓
+  none        13     2.6      2  +  0.6pp  ✓
+  ok    确定性（同 seed 双跑 200 次）: ✓
+
+T75 回返判定检查全过：发货代码 500 次分布 ≈ 45/30/15/8/2（±5pp）

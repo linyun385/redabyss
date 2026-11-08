@@ -1,0 +1,22 @@
+== run sim_reward.py ==
+rate 0.459 [0.400-0.550] streak-proxy 0
+veins {'å…‰': 15422, 'æ°´': 13474, 'çƒ­': 9986, 'éœ‡': 9167, 'çŸ¿': 11621}
+   0.7s
+== run sim_combat.py ==
+(1, 14, 1.6525, 3.2527539682539683)
+(2, 14, 2.43, 6.440957142857143)
+(3, 14, 2.9075, 10.768194444444445)
+(4, 14, 3.5175, 14.782430555555555)
+(5, 14, 3.785, 18.50277673992674)
+(6, 14, 4.04, 19.901622222222223)
+(7, 14, 3.3125, 17.266416666666665)
+(8, 15, 4.5675, 23.395436752136753)
+   0.1s
+== run sim_economy.py ==
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\ÔÓÆßÔÓ°Ë\ºìÔ¨\game\tools\sim\sim_economy.py", line 40, in <module>
+    fights = FIGHTS_PER_LAYER[L]
+             ^^^^^^^^^^^^^^^^
+NameError: name 'FIGHTS_PER_LAYER' is not defined
+   0.1s
+!! sim_economy.py failed

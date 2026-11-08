@@ -1,0 +1,25 @@
+=== T71 生态色板检查 ===
+
+  ok    index.html ECO_C 与 tools/eco_palette.json 完全一致（8/8）
+
+  生态          色值      L*      a*      b*   C*     h°    带校
+  eco_surface #998b53    57.9    -2.8    31.8  31.9   95.1  D1
+  eco_cold    #59b4b6    68.1   -26.5    -9.3  28.1  199.5  D2
+  eco_arid    #c98350    61.0    21.9    38.3  44.1   60.3  D3
+  eco_sea     #68b291    67.1   -30.8     9.7  32.3  162.5  D4
+  eco_vent    #d06b6b    57.1    39.7    18.4  43.8   24.8  D5
+  eco_rad     #85a567    64.1   -22.3    28.6  36.3  127.9  D6
+  eco_core    #c46994    56.1    41.4    -7.2  42.0  350.2  D7
+  eco_nexus   #84b2e4    71.1    -2.5   -29.9  30.0  265.1  D8
+  ok    全部 L* ≥ 55（最低 56.1）
+
+  ok    ΔL* D1→D2  eco_surface / eco_cold = 10.2
+  ok    ΔL* D2→D3  eco_cold / eco_arid = 7.1
+  ok    ΔL* D3→D4  eco_arid / eco_sea = 6.2
+  ok    ΔL* D4→D5  eco_sea / eco_vent = 10.1
+  ok    ΔL* D5→D6  eco_vent / eco_rad = 7.0
+  ok    ΔL* D6→D7  eco_rad / eco_core = 8.0
+  ok    ΔL* D7→D8  eco_core / eco_nexus = 15.0
+  ok    两两色相最小间隔 32.8° ≥ 25°（最近：eco_surface / eco_rad）
+
+T71 色板检查全过：8 色 L*≥55、相邻带 ΔL*≥6、色相间隔≥25°，双份副本一致

@@ -1,0 +1,3229 @@
+[
+ {
+  "id": "enemy_d1_01",
+  "kind": "foe",
+  "name": "嗜热古菌",
+  "desc": "它们贴在余温上。管道凉了三十年，它们还在等。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d1_02",
+  "kind": "foe",
+  "name": "腐生菌",
+  "desc": "灰白的膜盖在座椅上，按座椅的形状长的。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d2_01",
+  "kind": "foe",
+  "name": "冷洞食腐鳗",
+  "desc": "它沿洞壁捡食碎屑。你掉落的装备它闻了闻，没要。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d2_02",
+  "kind": "foe",
+  "name": "冷洞青菌",
+  "desc": "菌斑扩到你脚边要以年计。它不急。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d2_03",
+  "kind": "foe",
+  "name": "墟蟹",
+  "desc": "它把矿票残角拖回缝里，拖得很郑重。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d2_04",
+  "kind": "foe",
+  "name": "休眠两栖类",
+  "desc": "它睡在渗水线上。你踩进水，它醒了一半，另一半没动。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d2_05",
+  "kind": "foe",
+  "name": "噬骨菌群",
+  "desc": "白骨上的缺口很整齐。缺口是从里面开始的。",
+  "extra": "层2 elite "
+ },
+ {
+  "id": "enemy_d3_01",
+  "kind": "foe",
+  "name": "硬矿洞蛇",
+  "desc": "它盘成矿脉的形状。你第二眼才认出它是活的。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d3_02",
+  "kind": "foe",
+  "name": "钻孔贝",
+  "desc": "壳上的洞排成直线。下一条直线的位置和你的胸口平齐。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d3_03",
+  "kind": "foe",
+  "name": "干旱肺鱼",
+  "desc": "它在干泥壳里等水。洞口朝着水的方向，摆了很多年。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d3_04",
+  "kind": "foe",
+  "name": "盲蛛",
+  "desc": "它不动。影子挪过去，它恰好总在影子里。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d3_05",
+  "kind": "foe",
+  "name": "气腔洞鼹兽",
+  "desc": "塌下来的方向是它挖的。挖的时候，这条路还没有人。",
+  "extra": "层3 elite "
+ },
+ {
+  "id": "enemy_d4_01",
+  "kind": "foe",
+  "name": "红腔鱼",
+  "desc": "它悬在暗处不动。暗处少的那一块就是它。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d4_02",
+  "kind": "foe",
+  "name": "滤食鱼群",
+  "desc": "它们绕你转了一圈。不是攻击，是在称重。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d4_03",
+  "kind": "foe",
+  "name": "垂光蕨",
+  "desc": "你路过的时候，叶尖齐齐转向你。没有风。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d4_04",
+  "kind": "foe",
+  "name": "光池银鱼",
+  "desc": "一小群反光贴着水面走。最前面那条是空的。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d4_05",
+  "kind": "foe",
+  "name": "盲眼红腔鱼",
+  "desc": "它没有眼。你进洞的时候，洞暗了一下。",
+  "extra": "层4 elite "
+ },
+ {
+  "id": "enemy_d4_06",
+  "kind": "foe",
+  "name": "光蛭母",
+  "desc": "它悬在气流里，薄得透光。你被从头到尾数过一遍。谁数的，没有对账。",
+  "extra": "层4 boss "
+ },
+ {
+  "id": "enemy_d5_01",
+  "kind": "foe",
+  "name": "热泉管虫",
+  "desc": "触须开合的节奏和你的心跳对上了。你先停的。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d5_02",
+  "kind": "foe",
+  "name": "热泉螈",
+  "desc": "它泡在池里。你伸手进去，池水绕开你的手，先碰它。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d5_03",
+  "kind": "foe",
+  "name": "硫塔菌",
+  "desc": "硫塔中空。风穿过去的时候，它用你的脚步打拍子。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d5_04",
+  "kind": "foe",
+  "name": "震鸣蟾",
+  "desc": "它的叫声让你的牙发麻。收件人不是你。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d5_05",
+  "kind": "foe",
+  "name": "铁细菌膜母体",
+  "desc": "整片浅滩在膜下呼吸。你踩过的地方陷得深一些。",
+  "extra": "层5 elite "
+ },
+ {
+  "id": "enemy_d5_06",
+  "kind": "foe",
+  "name": "震喉",
+  "desc": "管道骨骼缠成一团。中心空腔开合，吸的不是气。",
+  "extra": "层5 boss "
+ },
+ {
+  "id": "enemy_d6_01",
+  "kind": "foe",
+  "name": "辐射合成菌",
+  "desc": "辐射对它们是食物。你走过的那一段，特别肥。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d6_02",
+  "kind": "foe",
+  "name": "抗辐射甲壳类",
+  "desc": "垢从壳缝里长出来，把辐射裹在里头。它走在剂量表外面。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d6_03",
+  "kind": "foe",
+  "name": "辐射金属鳞鳄",
+  "desc": "鳞缝里漏红光。它爬过的地方，计数器响很久。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d6_04",
+  "kind": "foe",
+  "name": "锈蚀菌",
+  "desc": "支撑柱的锈多了几道新指痕。进食声像翻书。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d6_05",
+  "kind": "foe",
+  "name": "辐射金属鳞鳄王",
+  "desc": "它的领地按剂量划分。你进门那一步已经越界。",
+  "extra": "层6 elite "
+ },
+ {
+  "id": "enemy_d7_01",
+  "kind": "foe",
+  "name": "旧光者残影",
+  "desc": "它在重复一段旧对话。你的名字在里面，位置没变过。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d7_02",
+  "kind": "foe",
+  "name": "光柱蛇蜥",
+  "desc": "光柱熄了。它还悬在原来的位置。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d7_03",
+  "kind": "foe",
+  "name": "震杆菌",
+  "desc": "培养皿碎了，它们还在分裂。间隔很短，像赶时间。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d7_04",
+  "kind": "foe",
+  "name": "孢子群",
+  "desc": "它们过境时红光暗一小会儿。刚好够你数错一步。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d7_05",
+  "kind": "foe",
+  "name": "震语苔丛",
+  "desc": "整面墙的苔在念经。用的是你的步频。",
+  "extra": "层7 elite "
+ },
+ {
+  "id": "enemy_d7_06",
+  "kind": "foe",
+  "name": "穹顶之影",
+  "desc": "倒挂的发光网。它不捕猎。它照明，然后等。",
+  "extra": "层7 boss "
+ },
+ {
+  "id": "enemy_d8_01",
+  "kind": "foe",
+  "name": "墟蛹",
+  "desc": "茧的表面在计算。算到你的部分，停了很久。",
+  "extra": "层8 boss "
+ },
+ {
+  "id": "enemy_d8_02",
+  "kind": "foe",
+  "name": "墟尘行像",
+  "desc": "跟着茧的节拍走。没有人抬它，它自己在走。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "enemy_d8_03",
+  "kind": "foe",
+  "name": "空壳旧光者",
+  "desc": "防护服还在自动广播。里面的人已经不需要它了。",
+  "extra": "层8 elite "
+ },
+ {
+  "id": "enemy_d1_03",
+  "kind": "foe",
+  "name": "隙居螨",
+  "desc": "它们住在岩缝里。身子比缝薄一层，薄得刚好。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d1_04",
+  "kind": "foe",
+  "name": "管廊苔毯",
+  "desc": "苔铺满了整条管廊。你踩过的地方，第二天是空的。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d2_06",
+  "kind": "foe",
+  "name": "沉屑鱼",
+  "desc": "它们吃上层落下来的东西。你掉下去的时候，它们排好了次序。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d2_07",
+  "kind": "foe",
+  "name": "冷洞跳蛛",
+  "desc": "它跳之前会看你一眼。落点从来不是你刚才站的地方。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d3_06",
+  "kind": "foe",
+  "name": "硬壳蜗",
+  "desc": "壳上的年轮一圈套一圈。最宽的那圈里嵌着一枚牙。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d3_07",
+  "kind": "foe",
+  "name": "空腔蝠",
+  "desc": "它们没有眼睛，靠回声画地图。地图上你是一个洞。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d4_07",
+  "kind": "foe",
+  "name": "浮光水母",
+  "desc": "它浮在光池上方。影子沉在水底，影子比你先到。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d4_08",
+  "kind": "foe",
+  "name": "光藓蠕虫",
+  "desc": "它们啃光藓。啃过的地方亮一下，像谁在里面翻了个身。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d5_07",
+  "kind": "foe",
+  "name": "沸泥鳗",
+  "desc": "泥是沸的，它不急。它在等泥替它把你的脚固定住。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d5_08",
+  "kind": "foe",
+  "name": "硫雾囊菌",
+  "desc": "囊一鼓一缩。缩的时候，你闻到的硫味会换一个方向。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d6_06",
+  "kind": "foe",
+  "name": "铅皮蛞蝓",
+  "desc": "铅皮是它自己裹的。剂量表上没有这一栏。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d6_07",
+  "kind": "foe",
+  "name": "辐射藻垫",
+  "desc": "藻垫过境的地方石头是暖的。暖得像有人刚躺过。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d7_07",
+  "kind": "foe",
+  "name": "无面记录员",
+  "desc": "它记东西不用脸。你走近时，它把你的样子念了出来。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d7_08",
+  "kind": "foe",
+  "name": "静默歌者",
+  "desc": "它张着嘴，不出声。歌在你牙齿里，你只是借住。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d8_04",
+  "kind": "foe",
+  "name": "茧丝虫",
+  "desc": "它们吐的丝和墟蛹的是一种。货源不明。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "enemy_d8_05",
+  "kind": "foe",
+  "name": "墟影残片",
+  "desc": "它是墟蛹掉下来的一角。掉下来之后自己动了很多年。",
+  "extra": "层8 elite "
+ },
+ {
+  "id": "enemy_d1_05",
+  "kind": "foe",
+  "name": "管壁钟乳盐",
+  "desc": "盐从管壁上倒着长。长到一定长度会断，断口是圆的。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d8_06",
+  "kind": "foe",
+  "name": "墟腔",
+  "desc": "它有一个腔。腔里的声音不是它的，它只是借壳放着。",
+  "extra": "层8 elite "
+ },
+ {
+  "id": "enemy_d1_e1",
+  "kind": "foe",
+  "name": "盐壳拾荒者",
+  "desc": "改到第三代的防护服，面甲上开了一条自己割的缝。它靠什么呼吸，没人问过。",
+  "extra": "层1 elite "
+ },
+ {
+  "id": "enemy_d1_e2",
+  "kind": "foe",
+  "name": "孢子清道夫",
+  "desc": "它扫拢孢子不是为杀谁。扫干净的地方，红渊就看不见了。",
+  "extra": "层1 elite "
+ },
+ {
+  "id": "enemy_d1_b1",
+  "kind": "foe",
+  "name": "钟乳盐·塌落体",
+  "desc": "钟乳盐长了几千年，长成了会自己塌下来的形状。",
+  "extra": "层1 boss "
+ },
+ {
+  "id": "enemy_d2_e1",
+  "kind": "foe",
+  "name": "历虫",
+  "desc": "它以年为进食间隔，以历痕为巢。你打它的时候，它正在补一段旧历。",
+  "extra": "层2 elite "
+ },
+ {
+  "id": "enemy_d2_e2",
+  "kind": "foe",
+  "name": "菌膜织者",
+  "desc": "冷洞的菌膜是它织的。织到密处，连你的手牌也归它安排。",
+  "extra": "层2 elite "
+ },
+ {
+  "id": "enemy_d2_b1",
+  "kind": "foe",
+  "name": "历壁的守读者",
+  "desc": "它守着历壁最老的一段。读它要几百年，它已经开始读了。",
+  "extra": "层2 boss "
+ },
+ {
+  "id": "enemy_d3_e1",
+  "kind": "foe",
+  "name": "钻孔贝群",
+  "desc": "不是一只，是一片。它们钻了三代才钻成这个阵型。",
+  "extra": "层3 elite "
+ },
+ {
+  "id": "enemy_d3_e2",
+  "kind": "foe",
+  "name": "旱螈伏兵",
+  "desc": "它在干缝里趴了整整一个水脉冲。你走到它面前，是它等的。",
+  "extra": "层3 elite "
+ },
+ {
+  "id": "enemy_d3_b1",
+  "kind": "foe",
+  "name": "旱脉的封口者",
+  "desc": "哪条水脉干了，它就把哪条脉口封上。封口的东西是它自己的壳。",
+  "extra": "层3 boss "
+ },
+ {
+  "id": "enemy_d4_e1",
+  "kind": "foe",
+  "name": "藻毯伏击者",
+  "desc": "藻毯动了一下。不是水流。",
+  "extra": "层4 elite "
+ },
+ {
+  "id": "enemy_d4_e2",
+  "kind": "foe",
+  "name": "红腔鱼·巡游种",
+  "desc": "巡游种不吃伏击。它绕着你游，一圈比一圈小。",
+  "extra": "层4 elite "
+ },
+ {
+  "id": "enemy_d4_b1",
+  "kind": "foe",
+  "name": "光蛭母·逆流",
+  "desc": "它逆着上升气流漂。被它照亮的东西会往下坠。",
+  "extra": "层4 boss "
+ },
+ {
+  "id": "enemy_d5_e1",
+  "kind": "foe",
+  "name": "喷息守卫",
+  "desc": "喷议会的门卫不收钱，只收节奏。踩不对点的人会被请出去。",
+  "extra": "层5 elite "
+ },
+ {
+  "id": "enemy_d5_e2",
+  "kind": "foe",
+  "name": "硫沫赘生体",
+  "desc": "它从一次大喷里长出来，身上还带着那个节奏。",
+  "extra": "层5 elite "
+ },
+ {
+  "id": "enemy_d5_b1",
+  "kind": "foe",
+  "name": "震喉·空腔独奏",
+  "desc": "它不广播别人的振动了。它只播自己的一段，翻来覆去。",
+  "extra": "层5 boss "
+ },
+ {
+  "id": "enemy_d6_e1",
+  "kind": "foe",
+  "name": "辐射休眠孢子群",
+  "desc": "孢子不该聚成团。聚成团的孢子已经开始记东西了。",
+  "extra": "层6 elite "
+ },
+ {
+  "id": "enemy_d6_e2",
+  "kind": "foe",
+  "name": "金属鳞鳄幼体",
+  "desc": "王蜕下来的壳里孵出了它。它比王的壳更硬。",
+  "extra": "层6 elite "
+ },
+ {
+  "id": "enemy_d6_b1",
+  "kind": "foe",
+  "name": "辐射金属鳞鳄王·蜕",
+  "desc": "王蜕了一次皮。蜕下来的那层也在爬。",
+  "extra": "层6 boss "
+ },
+ {
+  "id": "enemy_d7_e1",
+  "kind": "foe",
+  "name": "烧手的灰烬",
+  "desc": "祭祀台上没烧尽的部分聚了起来。它烧你的手，和当年烧历书是同一个动作。",
+  "extra": "层7 elite "
+ },
+ {
+  "id": "enemy_d7_e2",
+  "kind": "foe",
+  "name": "震台祭司",
+  "desc": "它祭的已经不是地神。它祭的是自己即将成为的东西。",
+  "extra": "层7 elite "
+ },
+ {
+  "id": "enemy_d7_b1",
+  "kind": "foe",
+  "name": "穹顶之影·网颤",
+  "desc": "穹顶之影的一角垂到了核心区。网在颤，颤的是网住的还是网，分不清。",
+  "extra": "层7 boss "
+ },
+ {
+  "id": "enemy_d8_e1",
+  "kind": "foe",
+  "name": "循环的巡逻体",
+  "desc": "它按八万年前的路线巡逻。路线上的东西换了几拨，路线没换。",
+  "extra": "层8 elite "
+ },
+ {
+  "id": "enemy_d8_e2",
+  "kind": "foe",
+  "name": "墟影残片·重奏",
+  "desc": "同一片残影，抄了两遍。两遍都认为自己是真的。",
+  "extra": "层8 elite "
+ },
+ {
+  "id": "enemy_d8_b1",
+  "kind": "foe",
+  "name": "墟蛹·未完成",
+  "desc": "它比墟蛹小一圈，也新一层。有些程序还没算完，所以它还醒着。",
+  "extra": "层8 boss "
+ },
+ {
+  "id": "enemy_d1_06",
+  "kind": "foe",
+  "name": "空服的壳",
+  "desc": "防护服里早就没有人了。它照样按规程合拢，按规程张开。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d1_07",
+  "kind": "foe",
+  "name": "晒裂的软管",
+  "desc": "管子裂着，漏出来的不是水。漏了五百年，还没漏完。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d1_08",
+  "kind": "foe",
+  "name": "记名的旗",
+  "desc": "旗面只剩编号。风根本没有，它还是展开一次，收起一次。",
+  "extra": "层1 normal "
+ },
+ {
+  "id": "enemy_d1_e3",
+  "kind": "foe",
+  "name": "气闸的守夜者",
+  "desc": "它在等一个对不上暗号的人。等了这么久，暗号已经换过四版。",
+  "extra": "层1 elite "
+ },
+ {
+  "id": "enemy_d1_e4",
+  "kind": "foe",
+  "name": "坠轨的投影",
+  "desc": "轨道上的人按过按钮。投影把他们落下来的样子，一遍一遍演给你看。",
+  "extra": "层1 elite "
+ },
+ {
+  "id": "enemy_d1_b2",
+  "kind": "foe",
+  "name": "静默号·最后一次广播",
+  "desc": "广播稿念到第三页。第三页之后是空白。它还在念。",
+  "extra": "层1 boss "
+ },
+ {
+  "id": "enemy_d2_08",
+  "kind": "foe",
+  "name": "沉雪的苔背",
+  "desc": "雪落在它背上，落了八万年。它不动，雪替它记年。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d2_09",
+  "kind": "foe",
+  "name": "历壁的蛀痕",
+  "desc": "历上缺了一小段。缺的那段在它肚子里，还没有消化。",
+  "extra": "层2 normal "
+ },
+ {
+  "id": "enemy_d2_e3",
+  "kind": "foe",
+  "name": "冷眠的守历者",
+  "desc": "它守的历不许火。谁带了火来，它就把火塞回谁的胸口。",
+  "extra": "层2 elite "
+ },
+ {
+  "id": "enemy_d2_b2",
+  "kind": "foe",
+  "name": "历的补写者",
+  "desc": "历上空着的年份要补齐。它看见你带了多少过去，就补多少。",
+  "extra": "层2 boss "
+ },
+ {
+  "id": "enemy_d3_08",
+  "kind": "foe",
+  "name": "滴水的账房",
+  "desc": "它记账。一滴进，一滴出。你身上带的水，它已经记下了。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d3_09",
+  "kind": "foe",
+  "name": "隐生的缓步",
+  "desc": "它死过很多次，每次都趁没人的时候活回来。这次它醒着。",
+  "extra": "层3 normal "
+ },
+ {
+  "id": "enemy_d3_e3",
+  "kind": "foe",
+  "name": "抢路的干壳",
+  "desc": "水在这里有路权。它把自己的路，修进了你的喉咙。",
+  "extra": "层3 elite "
+ },
+ {
+  "id": "enemy_d3_b2",
+  "kind": "foe",
+  "name": "泉权的丈量者",
+  "desc": "它量过每一眼泉。轮到你的时候，它量的不是水。",
+  "extra": "层3 boss "
+ },
+ {
+  "id": "enemy_d4_09",
+  "kind": "foe",
+  "name": "藻毯的影子",
+  "desc": "影子先到，它后到。你看影子的那一眼，就是它等的全部。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d4_10",
+  "kind": "foe",
+  "name": "滤食的须群",
+  "desc": "它们不吃你。它们只是把你和水一起滤一遍，留下的都算渣。",
+  "extra": "层4 normal "
+ },
+ {
+  "id": "enemy_d4_e3",
+  "kind": "foe",
+  "name": "红腔鱼的伏击手",
+  "desc": "它在暗处悬着，悬了很久。红光每闪一次，它近一段。",
+  "extra": "层4 elite "
+ },
+ {
+  "id": "enemy_d5_09",
+  "kind": "foe",
+  "name": "硫菌丘的看火者",
+  "desc": "它守着一口不开的泉。开泉的日子由不得它，也由不得你。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d5_10",
+  "kind": "foe",
+  "name": "喷发期的管虫",
+  "desc": "羽状触须张开的时候最好看。看完的人都这么说，说得很轻。",
+  "extra": "层5 normal "
+ },
+ {
+  "id": "enemy_d5_e3",
+  "kind": "foe",
+  "name": "热议会的执汤者",
+  "desc": "汤是用活水煨的。你进了汤锅的事，就是全城的事。",
+  "extra": "层5 elite "
+ },
+ {
+  "id": "enemy_d6_08",
+  "kind": "foe",
+  "name": "重鳞的拾壳者",
+  "desc": "它捡壳，一只一只码好。有的壳里还住着小东西，它也码。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d6_09",
+  "kind": "foe",
+  "name": "低烧的菌群",
+  "desc": "辐射是它的低烧。烧得越久，它越有精神。",
+  "extra": "层6 normal "
+ },
+ {
+  "id": "enemy_d6_e3",
+  "kind": "foe",
+  "name": "铅鳞的收藏家",
+  "desc": "它收仪表，收屏蔽板，收到后来，收会走的东西。",
+  "extra": "层6 elite "
+ },
+ {
+  "id": "enemy_d6_b2",
+  "kind": "foe",
+  "name": "地神骨灰坛的看守",
+  "desc": "坛子里的灰是地神剩下的。它守着，像守着一个还没凉透的名字。",
+  "extra": "层6 boss "
+ },
+ {
+  "id": "enemy_d7_09",
+  "kind": "foe",
+  "name": "三色菌毯的须",
+  "desc": "黑红金三色按顺序烫人。它换色的间隔，比你的呼吸慢半口。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d7_10",
+  "kind": "foe",
+  "name": "慢半拍的影",
+  "desc": "它打你的节奏，是你上一步的节奏。在这里，连影子都懒得自己动。",
+  "extra": "层7 normal "
+ },
+ {
+  "id": "enemy_d7_e3",
+  "kind": "foe",
+  "name": "超临界的水囊",
+  "desc": "囊里的水不在沸点以下。它鼓一下，走廊就暗一次。",
+  "extra": "层7 elite "
+ },
+ {
+  "id": "enemy_d8_07",
+  "kind": "foe",
+  "name": "八万年前的班表",
+  "desc": "班表上的名字都走光了。班表不认识走光，照常排班。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "enemy_d8_08",
+  "kind": "foe",
+  "name": "签到簿的笔",
+  "desc": "来的人都要签。笔不挑人，签什么都收，收走就不还。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "enemy_d8_09",
+  "kind": "foe",
+  "name": "谐振的余音",
+  "desc": "声音停了以后还响着的那部分。它打的是你听到过的东西。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "enemy_d8_10",
+  "kind": "foe",
+  "name": "不许关闭的告示",
+  "desc": "告示钉死了，四种字写同一句话。你多看的那几眼，都是它要的。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "enemy_d8_11",
+  "kind": "foe",
+  "name": "检修窗后的手",
+  "desc": "窗后有手在拨仪表。拨得很准。窗后没有人，这一点它不瞒你。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "enemy_d8_12",
+  "kind": "foe",
+  "name": "走廊尽头的白噪音",
+  "desc": "它没有形状。你听多久，它就有多久。",
+  "extra": "层8 normal "
+ },
+ {
+  "id": "event_d2_1",
+  "kind": "evt",
+  "name": "矿道口的碎石",
+  "desc": "矿道口的碎石是新搬开的，搬的人不在这里。石缝里卡着半截手套。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d2_2",
+  "kind": "evt",
+  "name": "会自己开关的矿灯",
+  "desc": "矿灯在无人处亮起又熄灭，间隔很稳。值班表上有它的名字，没有人的。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d3_1",
+  "kind": "evt",
+  "name": "穿防护服的遗体",
+  "desc": "防护服是完整的。面罩内侧有字，笔迹很稳。这里没有风，字还在。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d3_2",
+  "kind": "evt",
+  "name": "一池不流动的水",
+  "desc": "水面平得像结了蜡，水很清。池底还有一层水在动，方向朝下。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d4_1",
+  "kind": "evt",
+  "name": "渊民的埋骨布",
+  "desc": "埋骨布摊在洞壁的凹处，四角用石头压着。布是空的，摆得很郑重。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d4_2",
+  "kind": "evt",
+  "name": "烧过又长回来的红蕨",
+  "desc": "这片红蕨烧过，灰还在根上。新叶从灰里长出来，比别处的红。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d5_1",
+  "kind": "evt",
+  "name": "静日里响起的震语",
+  "desc": "静日。整条裂带都安静。岩层深处有一句震语在重复，不在节日的名录里。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d5_2",
+  "kind": "evt",
+  "name": "反应堆城的废弃管道",
+  "desc": "管道从上层的方向垂下来，端口朝天。每隔一阵漏出一口热气，间隔是你的呼吸频率。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d6_1",
+  "kind": "evt",
+  "name": "一块有字的相石",
+  "desc": "相石躺在辐射矿的碎堆里，光纹没灭。字不是刻的，是长在里面的。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d6_2",
+  "kind": "evt",
+  "name": "别人的营地",
+  "desc": "营地收拾得很整齐，毯子叠好了，炉子是冷的。人是自己走的，走得从容。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d7_1",
+  "kind": "evt",
+  "name": "震台上的旧刻痕",
+  "desc": "一座塌了半边的震台，石面刻着历法。刻到很深的地方，笔画还稳。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d7_2",
+  "kind": "evt",
+  "name": "还在转的旧光者自动门",
+  "desc": "自动门在没有电的走廊里开合，间隔很稳。门轴没有声音，走廊里的灰却一直让开。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d2_3",
+  "kind": "evt",
+  "name": "别的下潜者",
+  "desc": "有个人背靠岩壁坐着。防护服胸口的公司标志被涂掉了，涂得很用力。他抬手，示意你小声。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d2_4",
+  "kind": "evt",
+  "name": "一条被堵住的近路",
+  "desc": "塌下来的岩块卡在通道里，缝隙后面有风。风是暖的。这一层不该有暖风。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d3_3",
+  "kind": "evt",
+  "name": "一只快死的生物",
+  "desc": "一条干旱肺鱼侧躺在干泥上，鳃盖开合的间隔越来越长。它的洞就在两步外。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d3_4",
+  "kind": "evt",
+  "name": "有人留下的警告",
+  "desc": "岩壁上用矿粉喷着一行字：别数脚步声。下面还有半句，被水渍泡掉了。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d4_3",
+  "kind": "evt",
+  "name": "渊民的仪式现场",
+  "desc": "洞壁下摆着一圈白石头，沙地上画着五个符号。火刚熄，灰是温的。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d4_4",
+  "kind": "evt",
+  "name": "呼吸的节奏",
+  "desc": "你在洞里站了一分钟，呼吸慢了下来，和气流对上了。对上之后，肺不用你管了。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d5_3",
+  "kind": "evt",
+  "name": "净化者的圣火堆",
+  "desc": "圣火堆烧得很旺，围火坐过的人一个都不在。灰是白的，火不肯灭。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d5_4",
+  "kind": "evt",
+  "name": "还在工作的旧光者设备",
+  "desc": "一台仪表嵌在岩壁里，屏幕每隔几秒跳一次。数字一直在变小。没有人给它供电。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d6_3",
+  "kind": "evt",
+  "name": "往深处去的人",
+  "desc": "那个人穿着制式防护服，动作像穿着一件很旧的衣服。他点了点头，没说话，把一块相石推到你脚边。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d6_4",
+  "kind": "evt",
+  "name": "深层的回声",
+  "desc": "你对着竖井喊了一声。回来两个声音：一个是你的。另一个慢半拍，学得很像。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d7_3",
+  "kind": "evt",
+  "name": "震台上的新刻痕",
+  "desc": "刻痕是新的，边缘还挂着石粉。记的是日期，用的是殖民历。日期是三天后。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d7_4",
+  "kind": "evt",
+  "name": "门后什么都没有",
+  "desc": "门是旧光者样式的，感应很灵。门后是间空屋，墙面很新。屋中间有一把椅子。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d2_5",
+  "kind": "evt",
+  "name": "一排还在出风的更衣柜",
+  "desc": "更衣柜嵌在岩壁里，柜门上有编号。其中一格在出风，风是别人的呼吸节奏。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d2_6",
+  "kind": "evt",
+  "name": "有人画在地上的箭头",
+  "desc": "矿粉画的箭头指向下层，笔画很稳。箭头旁边写着两个字：快走。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d3_5",
+  "kind": "evt",
+  "name": "一口倒在旱地的井",
+  "desc": "井圈完好，井绳是新换的。井里没有水，只有一层很细的沙在往下漏。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d3_6",
+  "kind": "evt",
+  "name": "一面会长字的墙",
+  "desc": "岩壁上浮出很浅的字，一层一层叠着。最新的字还没干，记的是你脚步的节奏。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d4_5",
+  "kind": "evt",
+  "name": "泡在光池里的补给箱",
+  "desc": "补给箱沉在光池边缘，箱体发着很淡的光。锁是开的。里面的亮和池水的亮不是一种。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d4_6",
+  "kind": "evt",
+  "name": "一副没人接的耳机",
+  "desc": "耳机挂在石笋上，线的另一头埋进岩层。耳机里有很轻的呼吸声，两个人份的。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d5_6",
+  "kind": "evt",
+  "name": "一排朝下喷的热泉眼",
+  "desc": "热泉从洞顶往下喷，落点围成一个圈。圈里的地面是凉的，圈外是烫的。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d5_7",
+  "kind": "evt",
+  "name": "写满排班表的白板",
+  "desc": "白板挂在裂带的岩壁上，排班表写到了第 41 天。擦过很多次的字痕叠成了灰色。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d6_5",
+  "kind": "evt",
+  "name": "剂量表挂在走廊正中",
+  "desc": "表盘的指针朝下，超了量程。有人用记号笔在表盘上补了一个新的刻度，标着你的方向。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d6_6",
+  "kind": "evt",
+  "name": "一台还在广播的收音机",
+  "desc": "收音机用电池点着，播的是上层的晨间节目。杂音里夹着一句很近的话：收到请回复。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d7_5",
+  "kind": "evt",
+  "name": "一段循环播放的告别",
+  "desc": "岩层里有一句震语在循环，音色很旧。翻译过来是：我先走了，别数我走了多久。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d7_6",
+  "kind": "evt",
+  "name": "一间反着装修的宿舍",
+  "desc": "宿舍的床在天花板上，桌子朝下，杯子倒扣着装满了水。有人在这里倒着生活过很久。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d2_7",
+  "kind": "evt",
+  "name": "横在矿道里的安全绳",
+  "desc": "一条安全绳横过矿道，两端钉死。绳子中段磨得发亮，亮的地方离地三尺。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d3_7",
+  "kind": "evt",
+  "name": "倒扣的采矿钻",
+  "desc": "采矿钻倒扣在碎岩上，钻头朝天。机身还温着，温度和你的手心一样。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d4_7",
+  "kind": "evt",
+  "name": "会还话的亮墙",
+  "desc": "光池边的岩壁会把你刚说过的话还给你，隔一拍。还回来的语气更平静。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d5_8",
+  "kind": "evt",
+  "name": "还在计时的高压锅",
+  "desc": "裂带深处有一口老式高压锅，阀每隔七息放一次气。锅盖上摆着一只倒空的碗。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d6_7",
+  "kind": "evt",
+  "name": "没拆封的辐射药",
+  "desc": "铅盒里躺着三支辐射药，封条完好。盒盖内侧用指甲划了很多道，每五道一组，划到第三组。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d7_7",
+  "kind": "evt",
+  "name": "没有观众的演出",
+  "desc": "震台上摆着一排小石子，按音高排开。有人刚敲过它们，敲的顺序记在旁边的石板上。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d2_8",
+  "kind": "evt",
+  "name": "一盏埋进苔里的矿灯",
+  "desc": "矿灯半埋在苔丛里，灯罩朝下。苔绕开了灯罩的位置，绕得很圆。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d3_8",
+  "kind": "evt",
+  "name": "画在岩壁上的宿舍平面图",
+  "desc": "有人把宿舍的布局画在岩壁上，床铺桌椅都有编号。图的角落写着：这样就能记住家了。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d4_8",
+  "kind": "evt",
+  "name": "浮在光池上的一封信",
+  "desc": "信封浮在光池正中，不沉，也不漂走。信封上没有收件人，封口用的是红渊的火漆。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d5_9",
+  "kind": "evt",
+  "name": "一道自己拐弯的蒸汽",
+  "desc": "管道裂口的蒸汽本该直冲，却在半途拐了个弯，绕开你常站的那个位置。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d6_8",
+  "kind": "evt",
+  "name": "一墙贴到天花板的剂量条",
+  "desc": "走廊两侧贴满剂量条，从脚底贴到顶。每一条都黄了，只有齐腰高的那一排还是白的。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d7_8",
+  "kind": "evt",
+  "name": "一个正在自我删除的日志",
+  "desc": "旧光者的日志悬浮在台面上，行数每隔几息少一行。删到中途会停一下，像在犹豫。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d1_1",
+  "kind": "evt",
+  "name": "降落的旧舱",
+  "desc": "登陆基地外围有一只废弃的返回舱，舱门半开，气闸的灯还亮着一格。八百年了，那一格没灭。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d1_2",
+  "kind": "evt",
+  "name": "帝星的影子",
+  "desc": "站在裂隙边能看到帝星，很小，很亮。这里没有大气，它的光不散，是一根细线，直直扎进石头缝里。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d1_3",
+  "kind": "evt",
+  "name": "休眠的孢子",
+  "desc": "陨击坑的阴影里积着一层粉末，是耐辐射的休眠孢子。它们在等一个不是这里的地方，等了几万年。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d2_9",
+  "kind": "evt",
+  "name": "刻在岩壁上的历",
+  "desc": "一面岩壁刻满细密的刻痕，深浅不一，最老的那些被菌膜盖住一半。是记忆者的历，记到上一次大塌为止。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d2_10",
+  "kind": "evt",
+  "name": "不动的邻居",
+  "desc": "湿岩缝里伏着一只休眠的两栖类，皮皱得像干了的水囊。它可以几年不吃不动。你路过三回，它都在。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d2_11",
+  "kind": "evt",
+  "name": "沉下来的东西",
+  "desc": "冷洞的吃食全靠上面沉降。碎屑落了八万年，铺出一层软的。软层里露出一角金属，不是矿。",
+  "extra": "层2"
+ },
+ {
+  "id": "event_d3_9",
+  "kind": "evt",
+  "name": "泉眼的水囊",
+  "desc": "泉眼里悬着一个水囊，两栖类在里面繁殖。水在这里是按滴记的，一滴一滴，记了不知多少年。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d3_10",
+  "kind": "evt",
+  "name": "干死的通道",
+  "desc": "一条水道干了几十年，河床上的贝类还张着壳。有人的行李摊在河床中间，人不在。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d3_11",
+  "kind": "evt",
+  "name": "硬矿石上的牙印",
+  "desc": "硬矿石表面有一排牙印，深得能放进手指。钻孔贝干的，钻了几代。最深的牙印里嵌着一点发亮的矿屑。",
+  "extra": "层3"
+ },
+ {
+  "id": "event_d4_9",
+  "kind": "evt",
+  "name": "涌喉的市集",
+  "desc": "巢城的市集开在水线上方，客议会说话算数。摊位挂着各家的灯，渊民和上面来的东西摆在同一个架子上。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d4_10",
+  "kind": "evt",
+  "name": "倒挂林的暗处",
+  "desc": "红蕨林从洞顶垂下来，深红紫黑金红。林子深处的红光被叶子滤成暗的。暗处有个很大的形状，随热对流慢慢漂。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d4_11",
+  "kind": "evt",
+  "name": "旧城的街灯",
+  "desc": "水下的旧城市残骸，街灯还立着。稳定空洞海的废墟保存完好——结构层替它们挡了八万年。",
+  "extra": "层4"
+ },
+ {
+  "id": "event_d5_10",
+  "kind": "evt",
+  "name": "喷息的汤",
+  "desc": "绿洲城邦的汤锅架在温泉支流上，汤是菌和管虫尖熬的。喷议会的中立挂在门口：卖汤，不卖立场。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d5_11",
+  "kind": "evt",
+  "name": "硫菌丘之间",
+  "desc": "黑色菌丘一座一座立在裂缝边，像塔群。最近的一座在冒新芽——它要长高了，长高就挡光。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d5_12",
+  "kind": "evt",
+  "name": "冷却池边的卵",
+  "desc": "冷却池边粘着一排卵，靠余温孵化。一次地震就能让这池水凉掉。凉掉的那天，这排卵就到日子了。",
+  "extra": "层5"
+ },
+ {
+  "id": "event_d6_9",
+  "kind": "evt",
+  "name": "挂着骨头的警示",
+  "desc": "矿区入口的岩架上挂着一串骨头，间隔摆得很匀。是人的骨头。摆骨头的人想让你数清楚再进去。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d6_10",
+  "kind": "evt",
+  "name": "抗辐射的壳",
+  "desc": "一只重金属鳞的甲壳类死在矿缝里，壳还完整。这身壳是它活命的本钱。现在是谁的本钱，就是谁的。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d6_11",
+  "kind": "evt",
+  "name": "反应堆的余温",
+  "desc": "旧反应堆的外壳上还有温度。上面的人两百年前建的东西，渊民叫它地神的骨灰坛。仪表都死了，风从管子里过，呜呜的。",
+  "extra": "层6"
+ },
+ {
+  "id": "event_d7_9",
+  "kind": "evt",
+  "name": "祭祀台的灰",
+  "desc": "震语者的祭祀台在热液边缘，台上积着灰，灰是烧完的历书。是敬意还是恐惧烧的，台上分不出来。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d7_10",
+  "kind": "evt",
+  "name": "钻探队的末端",
+  "desc": "深层钻探队的管子伸到这里就停了。设备烂在原地，管口朝着核心的方向。停机原因的记录屏早就读不出来了。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d7_11",
+  "kind": "evt",
+  "name": "墟蛹的外壳",
+  "desc": "废墟深处立着一只墟蛹，金属管道和骨骼把它缠成茧。茧里的红光是脉动的，慢，但是有节奏。它在重新运行一套八万年前的程序。",
+  "extra": "层7"
+ },
+ {
+  "id": "event_d8_1",
+  "kind": "evt",
+  "name": "还在运转的走廊",
+  "desc": "核心的走廊有灯。八万年了，灯还亮着，自动化的东西还在按旧光者的作息运行。门在你面前开，像你回来迟了。",
+  "extra": "层8"
+ },
+ {
+  "id": "event_d8_2",
+  "kind": "evt",
+  "name": "不许关闭的告示",
+  "desc": "谐振器外围的墙上刻着一行旧光者的字，下面有人用震语刻了翻译。翻译是：不要试图关闭它。不要试图控制它。它已经是你们的一部分了。",
+  "extra": "层8"
+ },
+ {
+  "id": "event_d8_3",
+  "kind": "evt",
+  "name": "核心的红光",
+  "desc": "最深处没有声音。谐振器的红光把整个穹腔照透，红光穿过你，你的影子是透的。站在这里，像站在一样东西的注意力的正中间。",
+  "extra": "层8"
+ },
+ {
+  "id": "event_d1_4",
+  "kind": "evt",
+  "name": "气闸的对答",
+  "desc": "气闸一开一合，合上的力道比开的时候大。门边的对讲器沙沙响，像在等一句对得上的暗号。守夜的那位已经换过四版规程，它还在等第一版。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d1_5",
+  "kind": "evt",
+  "name": "第三层防护服",
+  "desc": "挂钩上一排防护服，按挂的年头排。最外面那件晒得发脆，最里面那件几乎没见过光。每一件的胸口都有一串编号，编号后面都跟着一句话：不保证返程。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d1_6",
+  "kind": "evt",
+  "name": "晒了五百年的水箱",
+  "desc": "水箱立在陨击坑的阴影里，裂了一道缝。渗出来的水在坑沿结成一串圆珠，五百年的日头都晒在里面。谁接的谁喝，这里没有别的规矩。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d1_7",
+  "kind": "evt",
+  "name": "按规程应答",
+  "desc": "广播醒着。第三页念完又从头念，字与字之间隔着标准的停顿。规程第十一条：听到问询，应答。它问到的第几条了，没人数。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d1_8",
+  "kind": "evt",
+  "name": "坠轨的清单",
+  "desc": "残骸散了一坡，清单卡在货舱的夹层里，塑封完好。每一行货物后面都有一栏签收人。签收人那一栏，从上到下都是空的。",
+  "extra": "层1"
+ },
+ {
+  "id": "event_d8_4",
+  "kind": "evt",
+  "name": "值班交接",
+  "desc": "走廊里那位把班表递了过来。班表上的排班排到八万年后，每一个格子都签了字，只有一个格子空着——就是今天这一格。它站着，等一个接班的人。",
+  "extra": "层8"
+ },
+ {
+  "id": "event_d8_5",
+  "kind": "evt",
+  "name": "四种字的告示",
+  "desc": "告示钉死了，旧光者文字、渊民震语、殖民者通用语、还有谁也不认得的第四种，写的是同一句话。钉子是新的。这句话不许关闭。",
+  "extra": "层8"
+ },
+ {
+  "id": "event_d8_6",
+  "kind": "evt",
+  "name": "签到处",
+  "desc": "簿子摊开在台上，笔用链子拴着。八万年来这里的人签了一整本又换一本，换下来的那摞码得像地基。簿子的最后一页是空的，正对着你。",
+  "extra": "层8"
+ },
+ {
+  "id": "event_d8_7",
+  "kind": "evt",
+  "name": "八万年前的休息室",
+  "desc": "休息室的门没有锁。柜子按编号排，柜门上的名字磨没了，编号还在。椅子保持着有人刚起身的样子，烟灰缸是空的，烟灰缸不许有烟。",
+  "extra": "层8"
+ },
+ {
+  "id": "event_d8_8",
+  "kind": "evt",
+  "name": "呼吸口",
+  "desc": "走廊尽头风往上走。风里什么都没有，只有谐振器透出来的那点余温。从这里上去，就到它跟前了。风是凉的，往上走的东西没有凉的。",
+  "extra": "层8"
+ },
+ {
+  "id": "anm_0001",
+  "kind": "card",
+  "name": "现场回收",
+  "desc": "击杀登记：料料入账。废墟不发工资，发零件。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0002",
+  "kind": "card",
+  "name": "扳手规程",
+  "desc": "扳手有两种用法。规程只写了第一种。",
+  "extra": "anmin attack mineral"
+ },
+ {
+  "id": "anm_0003",
+  "kind": "card",
+  "name": "备用照明电池",
+  "desc": "电量：够照三次呼吸。省着用。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0004",
+  "kind": "card",
+  "name": "例检条款",
+  "desc": "我逐项打钩。机械逐项通过。我们都很专业。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0005",
+  "kind": "card",
+  "name": "焊缝补强",
+  "desc": "焊枪走过的地方，墙忘了自己是墙。",
+  "extra": "anmin skill heat"
+ },
+ {
+  "id": "anm_0006",
+  "kind": "card",
+  "name": "库存盘点",
+  "desc": "料：账实相符。人：没点。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0007",
+  "kind": "card",
+  "name": "调节螺栓",
+  "desc": "拧一圈，紧一圈。松的东西总要有人管。",
+  "extra": "anmin attack mineral"
+ },
+ {
+  "id": "anm_0008",
+  "kind": "card",
+  "name": "报废清单",
+  "desc": "七个编号同时注销。墨水是最后一次配给的。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0009",
+  "kind": "card",
+  "name": "料仓取件",
+  "desc": "料仓认工号。工号认我。我认不认它，没登记。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0010",
+  "kind": "card",
+  "name": "应急照明协议",
+  "desc": "按下按钮。走廊亮起。黑暗退到条款边缘。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0011",
+  "kind": "card",
+  "name": "焊接臂·民用型",
+  "desc": "民用型。焊不了装甲，焊得住皮肉。",
+  "extra": "anmin attack heat"
+ },
+ {
+  "id": "anm_0012",
+  "kind": "card",
+  "name": "维修凝胶",
+  "desc": "凝胶不挑部位。哪里漏，哪里算伤口。",
+  "extra": "anmin skill water"
+ },
+ {
+  "id": "anm_0013",
+  "kind": "card",
+  "name": "料径校准",
+  "desc": "料径误差不许超过一丝。红光的误差不算误差。",
+  "extra": "anmin attack mineral"
+ },
+ {
+  "id": "anm_0014",
+  "kind": "card",
+  "name": "巡逻体残骸",
+  "desc": "把它抬回避难所的路上，它一直在给别的巡逻体发位置。",
+  "extra": "anmin attack mineral"
+ },
+ {
+  "id": "anm_0015",
+  "kind": "card",
+  "name": "主控授权·工程线",
+  "desc": "授权下发。从今天起，你拧的每一颗螺栓都算数。",
+  "extra": "anmin power mineral"
+ },
+ {
+  "id": "anm_0016",
+  "kind": "card",
+  "name": "主控授权·安全线",
+  "desc": "安全线授权比工程线难拿。因为安全线管的是命。",
+  "extra": "anmin power mineral"
+ },
+ {
+  "id": "anm_0017",
+  "kind": "card",
+  "name": "回收协议·总则",
+  "desc": "协议一旦下达不可撤销。这一条写在标题里。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0018",
+  "kind": "card",
+  "name": "威胁等级·评估员",
+  "desc": "评估员不需要勇气。评估员只需要看清等级，然后签字。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0019",
+  "kind": "card",
+  "name": "例检手套",
+  "desc": "手套里还留着上一任的体温。条例规定不得清空。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0020",
+  "kind": "card",
+  "name": "协议：静默段",
+  "desc": "共振冻结。冻结不是和平，是账。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0021",
+  "kind": "card",
+  "name": "协议：优先级翻转",
+  "desc": "先处理谁，后处理谁。协议说了算，证据不算。",
+  "extra": "anmin skill tremor"
+ },
+ {
+  "id": "anm_0022",
+  "kind": "card",
+  "name": "协议：保运行",
+  "desc": "运行优先于人。人也是运行的一部分。",
+  "extra": "anmin skill water"
+ },
+ {
+  "id": "anm_0023",
+  "kind": "card",
+  "name": "协议：信息隔离",
+  "desc": "走廊两侧互不通报。通报的都出事了。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0024",
+  "kind": "card",
+  "name": "协议：库存封存",
+  "desc": "封存物资每层只启封一次。启封记录不公开。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0025",
+  "kind": "card",
+  "name": "协议：终端确认",
+  "desc": "请确认。再确认一次。第三次是给它的。",
+  "extra": "anmin attack mineral"
+ },
+ {
+  "id": "anm_0026",
+  "kind": "card",
+  "name": "协议：最小代价原则",
+  "desc": "在两个坏结果里，协议替你选了小的。谢谢它。",
+  "extra": "anmin skill water"
+ },
+ {
+  "id": "anm_0027",
+  "kind": "card",
+  "name": "协议：静默段·延长",
+  "desc": "静默段有第 2000 年了。你续的是第 2001 年。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0028",
+  "kind": "card",
+  "name": "协议：注销",
+  "desc": "被注销的编号从此不属于任何人。",
+  "extra": "anmin attack mineral"
+ },
+ {
+  "id": "anm_0029",
+  "kind": "card",
+  "name": "氧气核算",
+  "desc": "氧气存量：够。人数：对得上。这两件事很少同时成立。",
+  "extra": "anmin skill water"
+ },
+ {
+  "id": "anm_0030",
+  "kind": "card",
+  "name": "运料车残骸",
+  "desc": "运料车停在半路。停了五百年，货还算齐的。",
+  "extra": "anmin attack mineral"
+ },
+ {
+  "id": "anm_0031",
+  "kind": "card",
+  "name": "缓冲库存",
+  "desc": "把今天的伤记成明天的库存。库存不算伤。",
+  "extra": "anmin skill water"
+ },
+ {
+  "id": "anm_0032",
+  "kind": "card",
+  "name": "闭环利用",
+  "desc": "你呼出的，避难所会还给你。还的时候别问混了什么。",
+  "extra": "anmin skill water"
+ },
+ {
+  "id": "anm_0033",
+  "kind": "card",
+  "name": "血统册摘录",
+  "desc": "册子上你的名字有三处批注。三处都是待修。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0034",
+  "kind": "card",
+  "name": "辐射防护衬层",
+  "desc": "衬层穿了两千年。它比你更懂这颗卫星。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0035",
+  "kind": "card",
+  "name": "超频保养",
+  "desc": "超频的损耗计入下个核算期。核算期很长。",
+  "extra": "anmin power heat"
+ },
+ {
+  "id": "anm_0036",
+  "kind": "card",
+  "name": "保运行批文",
+  "desc": "批文核准：你再运行一个核算期。批复人栏是空的。",
+  "extra": "anmin skill water"
+ },
+ {
+  "id": "anm_0037",
+  "kind": "card",
+  "name": "动用储备",
+  "desc": "储备不是用来保命的。储备是用来撑到下一次例检的。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0038",
+  "kind": "card",
+  "name": "运料井下坠",
+  "desc": "运输井没有电梯，只有方向。方向是下。",
+  "extra": "anmin attack tremor"
+ },
+ {
+  "id": "anm_0039",
+  "kind": "card",
+  "name": "菌婪者组织样本",
+  "desc": "样本登记为：被改造生物，编号注销。它不同意注销。",
+  "extra": "anmin attack water"
+ },
+ {
+  "id": "anm_0040",
+  "kind": "card",
+  "name": "协议：例外条款",
+  "desc": "例外条款救不了所有人。它救的是签字的人。",
+  "extra": "anmin power water"
+ },
+ {
+  "id": "anm_0041",
+  "kind": "card",
+  "name": "保运行优先级",
+  "desc": "主控将优先保运行。运行的定义不包括你的腿。",
+  "extra": "anmin power water"
+ },
+ {
+  "id": "anm_0042",
+  "kind": "card",
+  "name": "基因修复台",
+  "desc": "修复会覆盖一段序列。覆盖的那段不通知你。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0043",
+  "kind": "card",
+  "name": "静默段徵章",
+  "desc": "徵章授给经历过最长静默段的人。他没说话，就是证明。",
+  "extra": "anmin skill tremor"
+ },
+ {
+  "id": "anm_0044",
+  "kind": "card",
+  "name": "死者的工号牌",
+  "desc": "工号牌还在发信号。信号发给了两千年前。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0045",
+  "kind": "card",
+  "name": "读图纸的人",
+  "desc": "我看得懂图纸。这件事我谁也没告诉。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0046",
+  "kind": "card",
+  "name": "例检清单（残）",
+  "desc": "清单缺了后半页。缺的后半页都是关键项。",
+  "extra": "anmin skill mineral"
+ },
+ {
+  "id": "anm_0047",
+  "kind": "card",
+  "name": "通风守卫·代班",
+  "desc": "守卫还在通风口。通风早就停了。它没收到停工通知。",
+  "extra": "anmin attack tremor"
+ },
+ {
+  "id": "anm_0048",
+  "kind": "card",
+  "name": "运输井规程",
+  "desc": "下井前默哀十秒。规程上的时间，你们总是省着用。",
+  "extra": "anmin skill tremor"
+ },
+ {
+  "id": "anm_0049",
+  "kind": "card",
+  "name": "撤销程序残片",
+  "desc": "残片教你撤销一样东西。残片没说哪样。",
+  "extra": "anmin skill light"
+ },
+ {
+  "id": "anm_0050",
+  "kind": "card",
+  "name": "主控密钥（烧毁）",
+  "desc": "烧毁的密钥只剩一半权限。另一半在红光里。",
+  "extra": "anmin power light"
+ },
+ {
+  "id": "cng_0001",
+  "kind": "card",
+  "name": "守夜",
+  "desc": "不睡，梦就不会破。不睡，明天也不会来。两件事我选了一夜。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0002",
+  "kind": "card",
+  "name": "王国账簿",
+  "desc": "王国的账记到一千三百年前。后面是空白，空白也算账。",
+  "extra": "cangmin skill mineral"
+ },
+ {
+  "id": "cng_0003",
+  "kind": "card",
+  "name": "巨神的欠条",
+  "desc": "巨神拿走了火母，欠我们一个天亮。欠条没有落款日期。",
+  "extra": "cangmin skill mineral"
+ },
+ {
+  "id": "cng_0004",
+  "kind": "card",
+  "name": "灰藻汤",
+  "desc": "灰藻是酸的。酸是好事，酸说明海还认得旧配方。",
+  "extra": "cangmin skill water"
+ },
+ {
+  "id": "cng_0005",
+  "kind": "card",
+  "name": "巡夜灯",
+  "desc": "灯照三步。三步之外交给神。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0006",
+  "kind": "card",
+  "name": "守夜人的表",
+  "desc": "光父每五十天绕一圈。我的表每小时绕一圈。总得有一样是准的。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0007",
+  "kind": "card",
+  "name": "星表检索",
+  "desc": "星表第一页画着火母。第一页翻得最烂。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0008",
+  "kind": "card",
+  "name": "历法之争",
+  "desc": "两派为一息的长度打了十年。后来火母走了，架白吵了。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0009",
+  "kind": "card",
+  "name": "光父的准点",
+  "desc": "光父今夜准时。巨神今夜准时。只有该回来的那位，不准时。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0010",
+  "kind": "card",
+  "name": "忆盐",
+  "desc": "盐是灰的。梦是红的。嚼一口，账就记在火母那边。",
+  "extra": "cangmin skill water"
+ },
+ {
+  "id": "cng_0011",
+  "kind": "card",
+  "name": "猎巫者的谎",
+  "desc": "猎巫人问我会不会飞。我说不会。他很高兴，多给了我半条鱼。",
+  "extra": "cangmin skill mineral"
+ },
+ {
+  "id": "cng_0012",
+  "kind": "card",
+  "name": "母亲的祷文",
+  "desc": "她念到第三句就睡着。我抄下来，念到第三句，也睡着了。",
+  "extra": "cangmin skill water"
+ },
+ {
+  "id": "cng_0013",
+  "kind": "card",
+  "name": "灰藻供品",
+  "desc": "供品摆在熄灭的方向。第二天供品还在，火母没吃，我自己吃了。",
+  "extra": "cangmin skill water"
+ },
+ {
+  "id": "cng_0014",
+  "kind": "card",
+  "name": "伊格的方向",
+  "desc": "先找巨神的圆盘，再往左。火母的方向要用两步才能说清。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0015",
+  "kind": "card",
+  "name": "守望席",
+  "desc": "这是全城最体面的位置。体面在石头上磨出了坑。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0016",
+  "kind": "card",
+  "name": "火母历第一页",
+  "desc": "历法第一个单位是一息。观测对象没了，单位还在值班。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0017",
+  "kind": "card",
+  "name": "地下学院讲义",
+  "desc": "第一页是呼吸法。我们练了十三代人，练会了呼吸。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0018",
+  "kind": "card",
+  "name": "巨神的凝视",
+  "desc": "在梦里，圆盘占四分之一的天。它看你的时候不用转身。",
+  "extra": "cangmin attack mineral"
+ },
+ {
+  "id": "cng_0019",
+  "kind": "card",
+  "name": "王权梦",
+  "desc": "梦里我也是王。醒来王冠留在枕头上，是灰藻编的。",
+  "extra": "cangmin power mineral"
+ },
+ {
+  "id": "cng_0020",
+  "kind": "card",
+  "name": "城墙梦",
+  "desc": "梦里我把城墙修完了。修了一半的那半也长齐了。",
+  "extra": "cangmin skill mineral"
+ },
+ {
+  "id": "cng_0021",
+  "kind": "card",
+  "name": "巨神的欠账",
+  "desc": "梦里我去讨债了。巨神的账房比醒着的城还大。",
+  "extra": "cangmin attack mineral"
+ },
+ {
+  "id": "cng_0022",
+  "kind": "card",
+  "name": "卫星轨道",
+  "desc": "我沿着轨道跑。跑一圈二十一晚，每一晚都撞上同一个敌人。",
+  "extra": "cangmin attack mineral"
+ },
+ {
+  "id": "cng_0023",
+  "kind": "card",
+  "name": "潮汐锁",
+  "desc": "潮汐锁住的是脸的方向。梦里我把它锁在了敌人身上。",
+  "extra": "cangmin skill water"
+ },
+ {
+  "id": "cng_0024",
+  "kind": "card",
+  "name": "暗盘俯瞰",
+  "desc": "我从圆盘的高度往下看。梦里的一切都小，小到可以一次收拾。",
+  "extra": "cangmin attack mineral"
+ },
+ {
+  "id": "cng_0025",
+  "kind": "card",
+  "name": "沉默权柄",
+  "desc": "巨神一万年不说话。不说话的东西最吓人，也最硬。",
+  "extra": "cangmin power mineral"
+ },
+ {
+  "id": "cng_0026",
+  "kind": "card",
+  "name": "光父的钟摆",
+  "desc": "钟摆左右摆。左边是昨天，右边是明天，中间是它砸下来的地方。",
+  "extra": "cangmin attack light"
+ },
+ {
+  "id": "cng_0027",
+  "kind": "card",
+  "name": "红矮星风",
+  "desc": "光父吹过来的风是暗红的。风里全是别处的火。",
+  "extra": "cangmin attack light"
+ },
+ {
+  "id": "cng_0028",
+  "kind": "card",
+  "name": "五十日",
+  "desc": "五十天一个周期。我在梦里把五十天过成五十个夜。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0029",
+  "kind": "card",
+  "name": "耀斑记忆",
+  "desc": "光父发脾气我见过一次。梦里它冲我发脾气。受宠若惊。",
+  "extra": "cangmin attack heat"
+ },
+ {
+  "id": "cng_0030",
+  "kind": "card",
+  "name": "星光残照",
+  "desc": "星光很淡。淡光照见的东西，白天看不见。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0031",
+  "kind": "card",
+  "name": "光父的审判",
+  "desc": "审判准时开始。被告席空着，判给了在场所有的东西。",
+  "extra": "cangmin attack light"
+ },
+ {
+  "id": "cng_0032",
+  "kind": "card",
+  "name": "准时的心跳",
+  "desc": "梦里我的心跳和光父同步。第一次同步的时候我哭了，梦里不知道。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0033",
+  "kind": "card",
+  "name": "昴宿低语",
+  "desc": "光父说话很轻。它说：你母亲那颗星，我认识。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0034",
+  "kind": "card",
+  "name": "火母的怀抱",
+  "desc": "抱住它的时候要忍住不哭。眼泪在梦里是助燃的。",
+  "extra": "cangmin attack heat"
+ },
+ {
+  "id": "cng_0035",
+  "kind": "card",
+  "name": "伊格的痛苦",
+  "desc": "她在梦里喊疼。我醒了，枕头是湿的，是红的。",
+  "extra": "cangmin attack heat"
+ },
+ {
+  "id": "cng_0036",
+  "kind": "card",
+  "name": "归乡",
+  "desc": "梦里往回走。走到一半想起，老家已经是别人的星球了。",
+  "extra": "cangmin skill heat"
+ },
+ {
+  "id": "cng_0037",
+  "kind": "card",
+  "name": "影语",
+  "desc": "穹顶之影的话要倒着听。它说欢迎，意思是别走。",
+  "extra": "cangmin attack tremor"
+ },
+ {
+  "id": "cng_0038",
+  "kind": "card",
+  "name": "震喉",
+  "desc": "震喉的话不用听，站在声里就算读过。",
+  "extra": "cangmin attack tremor"
+ },
+ {
+  "id": "cng_0039",
+  "kind": "card",
+  "name": "光导",
+  "desc": "光蛭母把光分给你，也多要一点。利率面议。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0040",
+  "kind": "card",
+  "name": "墟语",
+  "desc": "墟蛹的遗言很长。我在梦里只抄了伤害的部分。",
+  "extra": "cangmin attack tremor"
+ },
+ {
+  "id": "cng_0041",
+  "kind": "card",
+  "name": "红藻花园",
+  "desc": "梦里红藻是活的。一千三百年了，它们在梦里没死过。",
+  "extra": "cangmin skill water"
+ },
+ {
+  "id": "cng_0042",
+  "kind": "card",
+  "name": "火母的回应",
+  "desc": "我喊了火母一声。回应迟到了一千三百年，但押着韵。",
+  "extra": "cangmin power heat"
+ },
+ {
+  "id": "cng_0043",
+  "kind": "card",
+  "name": "猎巫者的绳",
+  "desc": "绳打的是活结。猎巫人讲究效率，活结能重复用。",
+  "extra": "cangmin skill mineral"
+ },
+ {
+  "id": "cng_0044",
+  "kind": "card",
+  "name": "三体历残卷",
+  "desc": "残卷记着三个天体的位置。有两个还准，一个在等。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0045",
+  "kind": "card",
+  "name": "晨昏带地图",
+  "desc": "晨昏带是唯一不冷不热的地方。地图上它细得像一根线。",
+  "extra": "cangmin skill mineral"
+ },
+ {
+  "id": "cng_0046",
+  "kind": "card",
+  "name": "火母的小像",
+  "desc": "小像拿红藻灰捏的。捏得不像。她走的时候我们也没看清。",
+  "extra": "cangmin skill heat"
+ },
+ {
+  "id": "cng_0047",
+  "kind": "card",
+  "name": "不醒者的名单",
+  "desc": "名单上的人都在梦里没回来。名字之间画着线，像亲缘图。",
+  "extra": "cangmin skill light"
+ },
+ {
+  "id": "cng_0048",
+  "kind": "card",
+  "name": "猎巫巡逻·换防",
+  "desc": "巡逻队换防要查火把。火把照不了梦，他们不信。",
+  "extra": "cangmin attack mineral"
+ },
+ {
+  "id": "cng_0049",
+  "kind": "card",
+  "name": "岩洞集会",
+  "desc": "集会议题：今晚谁守夜。全票通过：不是我。",
+  "extra": "cangmin skill mineral"
+ },
+ {
+  "id": "cng_0050",
+  "kind": "card",
+  "name": "疯先知的笔记",
+  "desc": "笔记传到我手里时多了个封套。封套里是一小撮灰，红的。",
+  "extra": "cangmin power water"
+ },
+ {
+  "id": "dive_0001",
+  "kind": "card",
+  "name": "光导透镜（残）",
+  "desc": "镜片裂了一道。裂的那道看得更清楚。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0002",
+  "kind": "card",
+  "name": "聚能枪",
+  "desc": "填弹的时候它自己热了。这里没有火。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0003",
+  "kind": "card",
+  "name": "曜元",
+  "desc": "药液是亮的。管壁上留着别人的指纹。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0004",
+  "kind": "card",
+  "name": "光苔矿培植舱",
+  "desc": "绿光照在护板上。苔沿着铆钉排成长列，一列不落。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0005",
+  "kind": "card",
+  "name": "氧气再生器",
+  "desc": "换下来的滤芯还温着。新的那只会哼另一支曲子。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0006",
+  "kind": "card",
+  "name": "渊光重工·工作灯",
+  "desc": "灯照到哪里，哪里就算地面。照明范围写在合同附件里。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0007",
+  "kind": "card",
+  "name": "渊光重工·导光索",
+  "desc": "红光在索上走得比人快。它从不回头。",
+  "extra": "diver power light"
+ },
+ {
+  "id": "dive_0008",
+  "kind": "card",
+  "name": "红渊研究院·数据回传",
+  "desc": "传输条走完。你的童年少了一条巷子。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0009",
+  "kind": "card",
+  "name": "聚能枪（双管）",
+  "desc": "两根管，一根有弹药。另一根在等你签字。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0010",
+  "kind": "card",
+  "name": "聚变鱼雷",
+  "desc": "按钮在四十公里上面。你替他们按了。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0011",
+  "kind": "card",
+  "name": "辐射弹",
+  "desc": "弹体上有三个签章。没有一个是收尾的。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0012",
+  "kind": "card",
+  "name": "轨道炮支援",
+  "desc": "上面的人按了按钮。他们不需要看见你。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0013",
+  "kind": "card",
+  "name": "硬矿钻",
+  "desc": "钻头换过三次。你的骨头一次都没换过，还是原来的硬法。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0014",
+  "kind": "card",
+  "name": "震髓探测器",
+  "desc": "探针收回来，尖上是暗红的。它有脉搏。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0015",
+  "kind": "card",
+  "name": "星髓矿业·爆破执照",
+  "desc": "第七章要求默哀十秒。你数到三就开始了。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0016",
+  "kind": "card",
+  "name": "共振抑制仪",
+  "desc": "机器嗡了一声。有个东西退了一步。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0017",
+  "kind": "card",
+  "name": "星髓矿业·深地车",
+  "desc": "仪表盘贴着一张孩子的画。画的是上面。",
+  "extra": "diver power mineral"
+ },
+ {
+  "id": "dive_0018",
+  "kind": "card",
+  "name": "墟盐",
+  "desc": "你按规程尝了一点。规程没说不能咽，你也没咽。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0019",
+  "kind": "card",
+  "name": "抗共振司·锚桩",
+  "desc": "桩顶的灯转成红的。岩层忍住了。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0020",
+  "kind": "card",
+  "name": "黑曜采掘·加班条例",
+  "desc": "念到第三十一条，你的指甲透明了。没有人停下来。",
+  "extra": "diver power mineral"
+ },
+ {
+  "id": "dive_0021",
+  "kind": "card",
+  "name": "星髓矿业·定向爆破",
+  "desc": "药量按三十年前的图纸装。岩层比图纸老。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0022",
+  "kind": "card",
+  "name": "硬矿钻（重型）",
+  "desc": "它啃硬矿的声音从牙根进来。你俩啃的是同一块。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0023",
+  "kind": "card",
+  "name": "抗共振司·静默规程",
+  "desc": "规程生效之后，心跳得先打报告。批下来的那部分才许响。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0024",
+  "kind": "card",
+  "name": "深红资源集团·钻探平台",
+  "desc": "打桩声传到地表。有人在那儿听了一辈子。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0025",
+  "kind": "card",
+  "name": "震频器",
+  "desc": "指针停在两个刻度之间。哪边都不是给你的。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0026",
+  "kind": "card",
+  "name": "震髓装药",
+  "desc": "它把振动吃进去，再吐出来。吐出来的部分不认人。",
+  "extra": "diver attack tremor"
+ },
+ {
+  "id": "dive_0027",
+  "kind": "card",
+  "name": "星髓矿业·钻杆",
+  "desc": "杆身刻满深度记号。最深那道不是刻度，是指甲。",
+  "extra": "diver attack tremor"
+ },
+ {
+  "id": "dive_0028",
+  "kind": "card",
+  "name": "震频器（校准）",
+  "desc": "校准之后只指一个方向。向下。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0029",
+  "kind": "card",
+  "name": "红渊研究院·震谱仪",
+  "desc": "谱线上有一段很规律的波。注释写着：设备干扰。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0030",
+  "kind": "card",
+  "name": "抗共振司·镇爆弹",
+  "desc": "弹壳上印着守则。第一条：不要去听回声。",
+  "extra": "diver attack tremor"
+ },
+ {
+  "id": "dive_0031",
+  "kind": "card",
+  "name": "聚能枪（过热）",
+  "desc": "打完第三发，护目镜裂了。裂纹正对着你的眼前。",
+  "extra": "diver attack heat"
+ },
+ {
+  "id": "dive_0032",
+  "kind": "card",
+  "name": "曜元（缓释）",
+  "desc": "药效排在后半夜。排班表上没有后半夜。",
+  "extra": "diver skill heat"
+ },
+ {
+  "id": "dive_0033",
+  "kind": "card",
+  "name": "圣火武器",
+  "desc": "授权书上的火漆是真的火漆。它烧得很安静。",
+  "extra": "diver attack heat"
+ },
+ {
+  "id": "dive_0034",
+  "kind": "card",
+  "name": "反走私局·焚烧记录",
+  "desc": "没收品烧起来的颜色不对。记录上写的是标准红。",
+  "extra": "diver skill heat"
+ },
+ {
+  "id": "dive_0035",
+  "kind": "card",
+  "name": "深红资源集团·地热井口",
+  "desc": "井口的风往上吹。你在风里站了很久，没有出汗。",
+  "extra": "diver power heat"
+ },
+ {
+  "id": "dive_0036",
+  "kind": "card",
+  "name": "红渊贸易局·净水配给",
+  "desc": "配给水是苦的。你喝的时候没有皱眉。上面教过。",
+  "extra": "diver skill water"
+ },
+ {
+  "id": "dive_0037",
+  "kind": "card",
+  "name": "红渊研究院·水样档案",
+  "desc": "编号靠后的水样没有检测人签名。纸是湿的。",
+  "extra": "diver skill water"
+ },
+ {
+  "id": "dive_0038",
+  "kind": "card",
+  "name": "氧气再生器（满压）",
+  "desc": "满压时机器会哼一支不成调的曲子。后来你也会哼了。",
+  "extra": "diver skill water"
+ },
+ {
+  "id": "dive_0039",
+  "kind": "card",
+  "name": "矿票",
+  "desc": "票面编号比你的小。签字的人没有下来。",
+  "extra": "diver skill "
+ },
+ {
+  "id": "dive_0040",
+  "kind": "card",
+  "name": "重力训练舱",
+  "desc": "舱里待一天，抵地面一年。工资单上的数字没跟上。",
+  "extra": "diver power "
+ },
+ {
+  "id": "dive_0041",
+  "kind": "card",
+  "name": "震频器（并联）",
+  "desc": "三台一起响。分不清哪个是回声，哪个是源头。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0042",
+  "kind": "card",
+  "name": "震髓探测器（阵列）",
+  "desc": "十二根探针一起扎下去。岩层抖了一下，像被挠到痒处。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0043",
+  "kind": "card",
+  "name": "曜元（共振型）",
+  "desc": "药剂自己发光，跟着某个节拍。你的心跳没跟上，它等了等。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0044",
+  "kind": "card",
+  "name": "抗共振司·导波索",
+  "desc": "索把振动引向你指定的地方。规程没写不能指向自己。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0045",
+  "kind": "card",
+  "name": "红渊研究院·共振采样",
+  "desc": "样本瓶里的液体在跳。标签写着：勿摇。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0046",
+  "kind": "card",
+  "name": "星髓矿业·深部震源",
+  "desc": "半条矿道的振动一次放完。放完之后，那里的安静有了重量。",
+  "extra": "diver attack tremor"
+ },
+ {
+  "id": "dive_0047",
+  "kind": "card",
+  "name": "深红资源集团·谐振井",
+  "desc": "井打通了三层。下面传上来的东西，比报告里多。",
+  "extra": "diver power tremor"
+ },
+ {
+  "id": "dive_0048",
+  "kind": "card",
+  "name": "矿票（回收藏）",
+  "desc": "收票的人只捏皱的。平展的那叠，他看都不看。",
+  "extra": "diver skill "
+ },
+ {
+  "id": "dive_0049",
+  "kind": "card",
+  "name": "硬矿钻（手持）",
+  "desc": "手柄缠着防滑布。缠布的人只信自己的手。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0050",
+  "kind": "card",
+  "name": "氧气再生器（便携）",
+  "desc": "说明书写着：不保证供氧，只保证你还想呼吸。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0051",
+  "kind": "card",
+  "name": "震频器（微型）",
+  "desc": "它半夜自己响。你现在在它响之前醒，等它响。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0052",
+  "kind": "card",
+  "name": "光苔矿（盆栽）",
+  "desc": "车里的位置给了它。它把叶子的方向调成了下面。",
+  "extra": "diver power light"
+ },
+ {
+  "id": "dive_0053",
+  "kind": "card",
+  "name": "渊光重工·备用电源",
+  "desc": "「真的不能用」怎么判断。条例没说。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0054",
+  "kind": "card",
+  "name": "聚能枪（超载）",
+  "desc": "后坐力从骨缝里进去。你的一部分也算弹药。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0055",
+  "kind": "card",
+  "name": "辐射弹（裸装）",
+  "desc": "去掉防护壳，装药多一半。运它的人走在最前面。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0056",
+  "kind": "card",
+  "name": "死亡合同（增补条款）",
+  "desc": "签字栏下面还有一行小字。你没读。你签得很快。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0057",
+  "kind": "card",
+  "name": "重力训练舱（极限负重）",
+  "desc": "出舱的时候你的手在抖。是肌肉在重新学什么叫重。",
+  "extra": "diver skill "
+ },
+ {
+  "id": "dive_0058",
+  "kind": "card",
+  "name": "圣火武器（殉爆）",
+  "desc": "它想快点。你按住了它，又松开。",
+  "extra": "diver attack heat"
+ },
+ {
+  "id": "dive_0059",
+  "kind": "card",
+  "name": "曜元（空腹）",
+  "desc": "空腹注射的警告被划掉了。你照着划掉之后的样子做。",
+  "extra": "diver skill heat"
+ },
+ {
+  "id": "dive_0060",
+  "kind": "card",
+  "name": "黑曜采掘·无氧班次",
+  "desc": "无氧班的工牌是黑色的。戴黑牌的人走路都很轻。",
+  "extra": "diver power mineral"
+ },
+ {
+  "id": "dive_0061",
+  "kind": "card",
+  "name": "巡线灯",
+  "desc": "灯沿线走到头，又走回来。它在线上住了很多年。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0062",
+  "kind": "card",
+  "name": "凿屑袋",
+  "desc": "袋里的碎屑还是烫的。它们刚才还是墙。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0063",
+  "kind": "card",
+  "name": "抗共振司·静音瓦",
+  "desc": "瓦贴上墙的地方，回声绕道走。走之前顿了一下，像记路。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0064",
+  "kind": "card",
+  "name": "星髓矿业·矿脉图",
+  "desc": "图比走廊准。走廊改过三次，图没改。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0065",
+  "kind": "card",
+  "name": "渊光重工·接地缆",
+  "desc": "碰到缆的人会替你疼一下。他们后来都不碰第二下。",
+  "extra": "diver power light"
+ },
+ {
+  "id": "dive_0066",
+  "kind": "card",
+  "name": "曜元（高浓）",
+  "desc": "药液挂在管壁上，挂了很久。你晃一晃，它慢慢让步。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0067",
+  "kind": "card",
+  "name": "震髓残响",
+  "desc": "打出去的是声音的回执。原件在更下面。",
+  "extra": "diver attack tremor"
+ },
+ {
+  "id": "dive_0068",
+  "kind": "card",
+  "name": "深红资源集团·冷却协议",
+  "desc": "风从协议里吹出来。是凉的，也是批下来的。",
+  "extra": "diver skill heat"
+ },
+ {
+  "id": "dive_0069",
+  "kind": "card",
+  "name": "聚能枪（三管）",
+  "desc": "三根管，零份许可证。它自己批的。",
+  "extra": "diver attack light"
+ },
+ {
+  "id": "dive_0070",
+  "kind": "card",
+  "name": "回收员的账本",
+  "desc": "账本上的红字没人销。红光那一栏，欠着三笔。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0071",
+  "kind": "card",
+  "name": "渊光重工·灯序表",
+  "desc": "表上排着每盏灯的名字。今晚轮到的两盏，一盏已经灭了。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0072",
+  "kind": "card",
+  "name": "星髓矿业·二号钻台",
+  "desc": "一号台塌了以后，二号台的产量翻了一倍。名册上多了一排新名字。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0073",
+  "kind": "card",
+  "name": "抗共振司·白噪机",
+  "desc": "它发出一种什么都不像的声音。红光听完就走了。",
+  "extra": "diver skill mineral"
+ },
+ {
+  "id": "dive_0074",
+  "kind": "card",
+  "name": "黑曜采掘·计件工资",
+  "desc": "多打一件，多算一件。你的手比脑子先慢了下来。",
+  "extra": "diver attack mineral"
+ },
+ {
+  "id": "dive_0075",
+  "kind": "card",
+  "name": "深红资源集团·地契",
+  "desc": "地契写着你站的地方归你。你往下挪，契纸跟着改。",
+  "extra": "diver power mineral"
+ },
+ {
+  "id": "dive_0076",
+  "kind": "card",
+  "name": "曜元（夜班型）",
+  "desc": "夜班专供。药性跟着太阳走，这里没有太阳。",
+  "extra": "diver skill heat"
+ },
+ {
+  "id": "dive_0077",
+  "kind": "card",
+  "name": "抗共振司·导波索（并联）",
+  "desc": "两根索一起导。同一句话走到你身上，成了两种重。",
+  "extra": "diver skill tremor"
+ },
+ {
+  "id": "dive_0078",
+  "kind": "card",
+  "name": "红渊研究院·频谱印章",
+  "desc": "盖下去的地方会留下一段频谱。频谱是最后还在动的那部分。",
+  "extra": "diver attack tremor"
+ },
+ {
+  "id": "dive_0079",
+  "kind": "card",
+  "name": "红渊贸易局·苦水配给（双份）",
+  "desc": "两份苦水一次发。第二瓶比第一瓶苦，苦得更有经验。",
+  "extra": "diver skill water"
+ },
+ {
+  "id": "dive_0080",
+  "kind": "card",
+  "name": "渊光重工·断路闸",
+  "desc": "拉下闸，灯全灭。灭掉的那部分光去照别人了。",
+  "extra": "diver skill light"
+ },
+ {
+  "id": "dive_0081",
+  "kind": "card",
+  "name": "气闸的规程",
+  "desc": "先合，再开，再合。规程留在手里，什么时候开，什么时候算数。",
+  "extra": "diver skill "
+ },
+ {
+  "id": "dive_0082",
+  "kind": "card",
+  "name": "按规程应答",
+  "desc": "编号报得越标准，回音里的东西越清楚。红光也在听。",
+  "extra": "diver attack "
+ },
+ {
+  "id": "dive_0083",
+  "kind": "card",
+  "name": "坠轨的清单",
+  "desc": "没登记的那一件压在最底下。你拿了它，就替它签了收。",
+  "extra": "diver skill "
+ },
+ {
+  "id": "trem_0001",
+  "kind": "card",
+  "name": "震语：听骨",
+  "desc": "岩壁在讲一件旧事。你听过这一段，结尾是别人的。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0002",
+  "kind": "card",
+  "name": "听震",
+  "desc": "耳朵贴上去。你的血先到，岩层晚了一步。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0003",
+  "kind": "card",
+  "name": "震语：压息",
+  "desc": "呼吸放到最慢。外面那个东西找不到你换气的点。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0004",
+  "kind": "card",
+  "name": "震语：回响",
+  "desc": "你用旧语气还它一句。它回头找了很久。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0005",
+  "kind": "card",
+  "name": "震语：双声",
+  "desc": "两句一起出去。回来的时候是三句。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0006",
+  "kind": "card",
+  "name": "震台石碑（拓片）",
+  "desc": "拓片上的字比石头新。补刻的人笔画很急。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0007",
+  "kind": "card",
+  "name": "震语铃",
+  "desc": "铃舌是软的。出声的不是铃。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0008",
+  "kind": "card",
+  "name": "震语：问地",
+  "desc": "问题放下去了。回音先到，答案没到。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0009",
+  "kind": "card",
+  "name": "震语：断脉",
+  "desc": "切断了。岩层安静下来。你的喉咙跟着哑了一瞬。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0010",
+  "kind": "card",
+  "name": "震语：三震",
+  "desc": "第一声你听。剩下两声，收件人不明。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0011",
+  "kind": "card",
+  "name": "震台石碑",
+  "desc": "碑文缺了一半。缺的那半是你来之前的事。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0012",
+  "kind": "card",
+  "name": "历法刻盘",
+  "desc": "刻盘停在某个日期。往后的刻度刻好了，没敢填。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0013",
+  "kind": "card",
+  "name": "震语：崩齿",
+  "desc": "牙替你数拍子。第三下少了一颗，拍子没乱。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0014",
+  "kind": "card",
+  "name": "听地神脉搏",
+  "desc": "它在数数。数到你的时候，停了一下。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0015",
+  "kind": "card",
+  "name": "触温",
+  "desc": "手心贴上去，是温的。这里不该有温的东西。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0016",
+  "kind": "card",
+  "name": "喷息·热池边",
+  "desc": "池边的人不看你。你的倒影在看别处。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0017",
+  "kind": "card",
+  "name": "震语：焚名",
+  "desc": "火不是从底下上来的。它从名册那一页开始烧。",
+  "extra": "tremor attack heat"
+ },
+ {
+  "id": "trem_0018",
+  "kind": "card",
+  "name": "静日",
+  "desc": "你不说话。岩层替你说完了剩下的半句。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0019",
+  "kind": "card",
+  "name": "禁声日",
+  "desc": "连岩层都闭嘴。你的脚步声显得很响。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0020",
+  "kind": "card",
+  "name": "静日触杖",
+  "desc": "杖尖点到哪里，热就在哪里停。像被点名的人站直了。",
+  "extra": "tremor power heat"
+ },
+ {
+  "id": "trem_0021",
+  "kind": "card",
+  "name": "埋骨礼",
+  "desc": "布展开，是空的。压布的石头倒是真的。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0022",
+  "kind": "card",
+  "name": "回归墟骨",
+  "desc": "骨头归堆，不多不少。你带来的那件，堆里早有位置。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0023",
+  "kind": "card",
+  "name": "震语：沸息",
+  "desc": "一句烫话留在它体内。它走到哪里，烧到哪里。",
+  "extra": "tremor attack heat"
+ },
+ {
+  "id": "trem_0024",
+  "kind": "card",
+  "name": "震语：熔名",
+  "desc": "名字烧完了。它做过的事一件不少地留了下来。",
+  "extra": "tremor attack heat"
+ },
+ {
+  "id": "trem_0025",
+  "kind": "card",
+  "name": "观红",
+  "desc": "红光排着队进来。队伍里有一个不是光。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0026",
+  "kind": "card",
+  "name": "光导石",
+  "desc": "它把光递过来，先擦了擦棱角。交接的礼数一步不少。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0027",
+  "kind": "card",
+  "name": "震语：明目",
+  "desc": "少看了一眼。那一眼还在排队。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0028",
+  "kind": "card",
+  "name": "涌喉·光池倒影",
+  "desc": "池面记下你的脸。记的那张比你老。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0029",
+  "kind": "card",
+  "name": "观红（深相）",
+  "desc": "红光退了半步。它认得你。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0030",
+  "kind": "card",
+  "name": "震语：照骨",
+  "desc": "光穿过它。岩壁上留下它的形状，也留下你的。",
+  "extra": "tremor attack light"
+ },
+ {
+  "id": "trem_0031",
+  "kind": "card",
+  "name": "尝水",
+  "desc": "苦味底下有一层甜。甜比水旧。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0032",
+  "kind": "card",
+  "name": "震语：引流",
+  "desc": "你给水让了路。水也给你让了一次。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0033",
+  "kind": "card",
+  "name": "涌喉·水契",
+  "desc": "契约写在水面之下。你的手一直是湿的，正好。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0034",
+  "kind": "card",
+  "name": "震语：断流",
+  "desc": "水停了一瞬。你就在那一瞬里过去。",
+  "extra": "tremor attack water"
+ },
+ {
+  "id": "trem_0035",
+  "kind": "card",
+  "name": "尝水（深井）",
+  "desc": "井底的样本没有编号。取样人那一栏也是。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0036",
+  "kind": "card",
+  "name": "辨矿",
+  "desc": "指腹读过去，石头里有旧年的账。欠款人不明。",
+  "extra": "tremor skill mineral"
+ },
+ {
+  "id": "trem_0037",
+  "kind": "card",
+  "name": "相石·初刻",
+  "desc": "它记你的掌心。你记它记你的事。",
+  "extra": "tremor skill mineral"
+ },
+ {
+  "id": "trem_0038",
+  "kind": "card",
+  "name": "相石·满录",
+  "desc": "押金是一段记忆。石头不找零。",
+  "extra": "tremor skill mineral"
+ },
+ {
+  "id": "trem_0039",
+  "kind": "card",
+  "name": "埋骨布",
+  "desc": "布是空的。折痕都是新的。",
+  "extra": "tremor skill "
+ },
+ {
+  "id": "trem_0040",
+  "kind": "card",
+  "name": "五脉符",
+  "desc": "五个刻痕指向五个方向。回家的方向是第六个。",
+  "extra": "tremor power "
+ },
+ {
+  "id": "trem_0041",
+  "kind": "card",
+  "name": "震语：淡忘",
+  "desc": "那件事沉下去了。水面平得像没发生过。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0042",
+  "kind": "card",
+  "name": "震语：断忆",
+  "desc": "一个词离开了你。岩层咬字不太准。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0043",
+  "kind": "card",
+  "name": "静底·焚忆",
+  "desc": "烧掉一页信。火只烧了字，纸还在。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0044",
+  "kind": "card",
+  "name": "相石·封忆",
+  "desc": "石头收走一段，还你一寸硬。",
+  "extra": "tremor skill mineral"
+ },
+ {
+  "id": "trem_0045",
+  "kind": "card",
+  "name": "埋骨礼（合葬）",
+  "desc": "两块布叠在一起摆。下面的那块先动的。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0046",
+  "kind": "card",
+  "name": "震语：舍字",
+  "desc": "先舍一个字。你选了很久，选了最轻的。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0047",
+  "kind": "card",
+  "name": "震台石碑（残诵）",
+  "desc": "你把缺的那段念了。碑没补上，你少了一段。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0048",
+  "kind": "card",
+  "name": "震语：连震",
+  "desc": "第一声是敲门。后面的声音在里面应。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0049",
+  "kind": "card",
+  "name": "三震（回声）",
+  "desc": "回来的声音矮了一截。矮掉的部分留在下面。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0050",
+  "kind": "card",
+  "name": "震语：传温",
+  "desc": "手心贴着壳。那句话烫了很久才凉。",
+  "extra": "tremor attack heat"
+ },
+ {
+  "id": "trem_0051",
+  "kind": "card",
+  "name": "震语：润喉",
+  "desc": "水很凉。嗓子里的字安静下来了。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0052",
+  "kind": "card",
+  "name": "震语：合鸣",
+  "desc": "两个声部碰头。石头先裂，谁也没道歉。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0053",
+  "kind": "card",
+  "name": "震语：五声",
+  "desc": "五个音一起出去。回来五个，其中一个晚了。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0054",
+  "kind": "card",
+  "name": "光导石（串珠）",
+  "desc": "光在珠子里排队。队尾那颗是空的。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0055",
+  "kind": "card",
+  "name": "震语：直视",
+  "desc": "你看回去了。它先移开，又移回来，停在你身后。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0056",
+  "kind": "card",
+  "name": "震语：回望",
+  "desc": "从那边看过来的你，和你打了个照面。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0057",
+  "kind": "card",
+  "name": "相石·对视",
+  "desc": "它没有眼，但它先眨了。",
+  "extra": "tremor skill mineral"
+ },
+ {
+  "id": "trem_0058",
+  "kind": "card",
+  "name": "静底·深阅",
+  "desc": "最里面那页没有页码。念完，屋里坐了两个人。",
+  "extra": "tremor skill "
+ },
+ {
+  "id": "trem_0059",
+  "kind": "card",
+  "name": "震台石碑（注视）",
+  "desc": "碑面里站着的那个不是你。你们各自退了半步。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0060",
+  "kind": "card",
+  "name": "五脉符（逆位）",
+  "desc": "符倒过来贴。这一次，是它在读你。",
+  "extra": "tremor attack "
+ },
+ {
+  "id": "trem_0061",
+  "kind": "card",
+  "name": "震语：数息",
+  "desc": "你数自己的呼吸。数到第七下，岩层跟着数。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0062",
+  "kind": "card",
+  "name": "震语：叩问",
+  "desc": "你叩了三下。里面回了几下，你没数清。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0063",
+  "kind": "card",
+  "name": "涌喉·深潜",
+  "desc": "你把自己交给水压。它收下了，登记得很慢。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0064",
+  "kind": "card",
+  "name": "历法刻盘（补页）",
+  "desc": "有人给刻盘补了页。补的页没有年份。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0065",
+  "kind": "card",
+  "name": "静底·灰烬",
+  "desc": "你把一句凉话焐热了再说。它落地就烧。",
+  "extra": "tremor attack heat"
+ },
+ {
+  "id": "trem_0066",
+  "kind": "card",
+  "name": "震语：回声定位",
+  "desc": "光走不到的地方，你喊一声。回声替你把路照亮。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0067",
+  "kind": "card",
+  "name": "五脉符（缺位）",
+  "desc": "第五个刻痕是空的。空得很有分量。",
+  "extra": "tremor power mineral"
+ },
+ {
+  "id": "trem_0068",
+  "kind": "card",
+  "name": "埋骨布（裹身）",
+  "desc": "布裹住你。空布裹人，尺寸正好。",
+  "extra": "tremor skill "
+ },
+ {
+  "id": "trem_0069",
+  "kind": "card",
+  "name": "震台石碑（新碑）",
+  "desc": "新碑立起来的时候，旧碑挪了一寸。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0070",
+  "kind": "card",
+  "name": "震语：低语",
+  "desc": "只说给离得最近的东西听。最近的是你自己的骨头。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0071",
+  "kind": "card",
+  "name": "震语：试井",
+  "desc": "往井里丢一句话，听回声有多深。井吞了话，没还。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0072",
+  "kind": "card",
+  "name": "震语：回礼",
+  "desc": "它给你的每一击，你都按原样还。还回去的总要重一点。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0073",
+  "kind": "card",
+  "name": "静底·翻灰",
+  "desc": "灰下面还有火星。你翻得慢，怕它们醒得太齐。",
+  "extra": "tremor skill heat"
+ },
+ {
+  "id": "trem_0074",
+  "kind": "card",
+  "name": "涌喉·潮契",
+  "desc": "和潮水签的是活契。你签字的时候，笔迹是湿的。",
+  "extra": "tremor skill water"
+ },
+ {
+  "id": "trem_0075",
+  "kind": "card",
+  "name": "历法刻盘（倒页）",
+  "desc": "倒着翻的页记载着没发生的事。字迹很新，日期很老。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0076",
+  "kind": "card",
+  "name": "震语：双唱",
+  "desc": "你和自己合唱。差的那半拍，也打在人身上。",
+  "extra": "tremor attack tremor"
+ },
+ {
+  "id": "trem_0077",
+  "kind": "card",
+  "name": "五脉符（浮位）",
+  "desc": "第五个刻痕浮在符面之上，不肯落下去。你按了一下，它弹回来了。",
+  "extra": "tremor power water"
+ },
+ {
+  "id": "trem_0078",
+  "kind": "card",
+  "name": "观红（对影）",
+  "desc": "你看红的影。影里也有个人在翻牌，翻得比你慢半拍。",
+  "extra": "tremor skill light"
+ },
+ {
+  "id": "trem_0079",
+  "kind": "card",
+  "name": "震台石碑（无字）",
+  "desc": "碑上没有字。没有字的碑，风绕着走。",
+  "extra": "tremor skill tremor"
+ },
+ {
+  "id": "trem_0080",
+  "kind": "card",
+  "name": "震语：长夜",
+  "desc": "这一句要烧一整个夜。夜在这里有多长，它就烧多久。",
+  "extra": "tremor attack heat"
+ },
+ {
+  "id": "trem_0081",
+  "kind": "card",
+  "name": "值班交接",
+  "desc": "班表递过来的时候很轻。接住的那只手，就算到岗了。",
+  "extra": "tremor skill "
+ },
+ {
+  "id": "trem_0082",
+  "kind": "card",
+  "name": "不许关闭",
+  "desc": "钉子是新的。牌子留在手里，不许灭，也不许扔。",
+  "extra": "tremor skill "
+ },
+ {
+  "id": "trem_0083",
+  "kind": "card",
+  "name": "谐振的余音",
+  "desc": "声音停了以后还响着的那部分。第二段，打的是你没防备的地方。",
+  "extra": "tremor attack "
+ }
+]

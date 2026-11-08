@@ -1,0 +1,705 @@
+/* 红渊 · UI 重排 v3（2026-11-06）
+ *
+ * 三段：上段敌人 / 中段回合事件 / 下段手牌，每段一个槽。
+ * 覆盖在原 <style> 之后加载，回退只要删掉 index.html 里那一行 <link href="ui.css">。
+ *
+ * v3 改的（用户红框批注）：
+ *   · 槽和背景色太接近 → 槽底抬亮一档、边框加金线、加外发光，和暗岩背景拉开
+ *   · 事件槽：加宽、压矮
+ *   · 牌堆：放大到接近卡牌尺寸，弃牌堆上提
+ *   · 手牌：取消扇形，直排，多了按扑克牌那样叠（配合 index.html 的 layoutFan）
+ */
+
+/* ═══════════ ① 生态纹理 ═══════════
+   8 张 assets/tex/eco_*.webp，层号 → 生态由 applyLayerTheme(depth) 写到 <html data-eco>。 */
+html[data-eco="eco_surface"] #screen-combat::before { background-image: url(assets/tex/eco_surface.webp); }
+html[data-eco="eco_cold"]    #screen-combat::before { background-image: url(assets/tex/eco_cold.webp); }
+html[data-eco="eco_arid"]    #screen-combat::before { background-image: url(assets/tex/eco_arid.webp); }
+html[data-eco="eco_sea"]     #screen-combat::before { background-image: url(assets/tex/eco_sea.webp); }
+html[data-eco="eco_vent"]    #screen-combat::before { background-image: url(assets/tex/eco_vent.webp); }
+html[data-eco="eco_rad"]     #screen-combat::before { background-image: url(assets/tex/eco_rad.webp); }
+html[data-eco="eco_core"]    #screen-combat::before { background-image: url(assets/tex/eco_core.webp); }
+html[data-eco="eco_nexus"]   #screen-combat::before { background-image: url(assets/tex/eco_nexus.webp); }
+
+/* 纹理是深色岩面材质，先提亮再半透明叠。中间淡四周浓，中间留给敌人和文字。
+   不透明度从 .26 降到 .20：槽要压得住背景，纹理就不能太跳。 */
+#screen-combat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 256px 256px;
+  background-repeat: repeat;
+  filter: brightness(1.85) saturate(1.12) contrast(.95);
+  opacity: .20;
+  -webkit-mask-image: radial-gradient(ellipse 78% 65% at 50% 52%,
+    rgba(0, 0, 0, .28) 0%, rgba(0, 0, 0, .52) 58%, rgba(0, 0, 0, .90) 100%);
+  mask-image: radial-gradient(ellipse 78% 65% at 50% 52%,
+    rgba(0, 0, 0, .28) 0%, rgba(0, 0, 0, .52) 58%, rgba(0, 0, 0, .90) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+#screen-combat {
+  position: relative;
+  isolation: isolate;
+  max-width: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: var(--layer-bg, #0d1013);
+  background-image:
+    radial-gradient(ellipse 62% 34% at 50% 76%,
+      rgba(214, 176, 132, .07) 0%, rgba(214, 176, 132, 0) 70%),
+    radial-gradient(ellipse 88% 64% at 50% 112%,
+      rgba(158, 28, 20, .42) 0%,
+      rgba(120, 20, 16, .12) 44%,
+      rgba(120, 20, 16, 0) 74%),
+    linear-gradient(180deg,
+      rgba(0, 0, 0, .38) 0%,
+      rgba(255, 255, 255, .035) 26%,
+      rgba(255, 255, 255, .015) 60%,
+      rgba(0, 0, 0, .30) 100%);
+  background-size: auto, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  /* 三段之间统一留 20px：用户要求敌人槽↔事件槽、事件槽↔手牌槽的间距一样，
+     不能一边贴着、一边离着（之前 #log 是撑满剩余高度的，顶上贴死、底下靠手牌托板才显得有空隙）。 */
+  row-gap: 20px;
+}
+
+/* ── 槽的统一样式 ──
+   用户说"和背景色太接近"。原来槽是 rgba(0,0,0,.2)、背景也是近黑，等于没画。
+   现在反过来：槽底比背景**亮**一档（暖褐灰），边框用金线，外面一圈很淡的暖光把槽托起来。 */
+#screen-combat #enemy-area::after,
+#screen-combat #log {
+  background-color: rgba(58, 50, 40, .58);
+  border: 1px solid rgba(179, 154, 107, .46);
+  box-shadow:
+    inset 0 2px 14px rgba(0, 0, 0, .55),
+    inset 0 -1px 0 rgba(255, 255, 255, .06),
+    0 0 0 1px rgba(0, 0, 0, .35),
+    0 10px 30px rgba(0, 0, 0, .40),
+    0 0 26px rgba(179, 154, 107, .07);
+}
+
+/* ═══════════ ② 上段：敌人 ═══════════ */
+#screen-combat #enemy-area {
+  order: 1;
+  flex: 0 0 auto;
+  height: 330px;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border-bottom: 0;
+  gap: 40px;
+  position: relative;
+  background: transparent;
+}
+
+/* 敌人的槽：和事件槽、手牌槽同宽（左 180 / 右 300），三者左右边对齐。
+   右侧 300 是给右上角属性面板让的位，面板宽 260 + 右边距 16。 */
+#screen-combat #enemy-area::after {
+  content: "";
+  position: absolute;
+  left: 180px;
+  right: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 250px;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 0;
+}
+#screen-combat #enemy-area > .enemy { position: relative; z-index: 1; }
+
+#screen-combat .enemy {
+  width: 184px;
+  padding: 0 0 9px;
+  border-radius: 2px;
+}
+#screen-combat .enemy .eart {
+  height: 96px;
+  margin: 0 0 9px;
+  border-radius: 0;
+  border-bottom-width: 1px;
+}
+#screen-combat .enemy .eart span { font-size: 38px; }
+#screen-combat .enemy .ename { font-size: 13px; letter-spacing: 1.5px; padding: 0 10px; }
+#screen-combat .enemy .intent { padding: 0 10px; font-size: 12.5px; }
+#screen-combat .enemy .hpbar { margin: 9px 10px 0; height: 8px; }
+#screen-combat .enemy .hpnum { padding: 5px 10px 0; font-size: 12px; }
+
+/* ═══════════ ③ 中段：每回合事件 ═══════════
+   用户：变宽、长度缩小。760 → 1000 宽，上下内边距 16 → 11。 */
+#screen-combat #log-wrap {
+  order: 2;
+  flex: 1 1 auto;
+  min-height: 96px;
+  max-height: none;
+  margin: 0;
+  /* 和敌人槽、手牌槽同一组边距：左 180 / 右 300 —— 三条槽左右边对齐 */
+  padding: 0 300px 0 180px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#screen-combat #log {
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  /* 用户：事件槽不要一条细长横线。给它撑满中段高度，内容垂直居中 —— 是一块面板，不是一条横幅。 */
+  display: flex;
+  flex-direction: column;
+  /* ★ 不能用 justify-content:center。日志是「最新一在最上面」的逆序渲染（scrollTop=0 是有意的），
+     居中会让内容多的时候从中间往两头溢出，最新那条被顶到容器外，滚到顶也看不见 —— 这就是
+     「点结束回合」时出现的那个 bug。改用首尾 margin:auto：内容少时仍然居中，多了自动从顶开始。 */
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2px;
+  padding: 22px 40px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.7;
+  backdrop-filter: blur(2px);
+}
+#screen-combat #log > div {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #d2c6ba;
+  font-size: 13px;
+}
+/* 首尾 auto：内容不满一屏时上下各吃一半空白 = 垂直居中；攒满时 auto 变成 0，从顶部往下排 */
+#screen-combat #log > div:first-child { margin-top: auto; }
+#screen-combat #log > div:last-child { margin-bottom: auto; }
+#screen-combat #log div.turnline {
+  color: #f3d9c9;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 2px 0;
+}
+#screen-combat #log div.hurt { color: #f0ded4; }
+#screen-combat #log div.blocked {
+  color: #ffb4a2;
+  border-left: 0;
+  background: rgba(107, 26, 18, .32);
+  border-radius: 2px;
+}
+#screen-combat #log::-webkit-scrollbar { width: 8px; }
+#screen-combat #log::-webkit-scrollbar-track { background: transparent; }
+#screen-combat #log::-webkit-scrollbar-thumb { background: #5a473f; border-radius: 4px; }
+#screen-combat #log::-webkit-scrollbar-thumb:hover { background: #7a6153; }
+
+/* ═══════════ ④ 下段：手牌 + 卡牌槽 ═══════════
+   手牌改成直排（layoutFan 里 rot=0、ty=0），多了靠 span 收窄来叠。
+   槽做成一个真正的托：底托板 + 两侧竖边，卡片插在里面。 */
+#screen-combat #hand-area {
+  order: 3;
+  flex: 0 0 auto;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .42));
+}
+#screen-combat #hand-area::before {
+  content: "";
+  position: absolute;
+  left: 180px;   /* 和敌人槽/事件槽同一组边距，三槽左右边对齐 */
+  right: 300px;   /* 和敌人槽/事件槽同一组边距 */
+  top: 2px;
+  bottom: 46px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(58, 50, 40, .20), rgba(58, 50, 40, .70));
+  border: 1px solid rgba(179, 154, 107, .40);
+  box-shadow:
+    inset 0 2px 16px rgba(0, 0, 0, .55),
+    0 0 26px rgba(179, 154, 107, .06);
+  pointer-events: none;
+  z-index: 0;
+}
+/* 槽沿那道金线：托板的上边缘，牌"插"在这条线上 */
+#screen-combat #hand-area::after {
+  content: "";
+  position: absolute;
+  left: 180px;   /* 和敌人槽/事件槽同一组边距，三槽左右边对齐 */
+  right: 300px;   /* 和敌人槽/事件槽同一组边距 */
+  top: 2px;
+  height: 1px;
+  background: linear-gradient(90deg,
+    rgba(179, 154, 107, 0) 0%,
+    rgba(179, 154, 107, .55) 10%,
+    rgba(179, 154, 107, .55) 90%,
+    rgba(179, 154, 107, 0) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ═══════════ ⑤ 牌堆：和卡牌同形，小一号 ═══════════
+   用户：和手牌堆做得和卡牌一样大。手牌 150×210，这里 108×150（同比例，略小）。 */
+#screen-combat #piles span {
+  position: fixed;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 210px;
+  padding: 0 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: .5px;
+  text-align: center;
+  color: #d8ccbc;
+  background:
+    linear-gradient(165deg, rgba(72, 30, 26, .95) 0%, rgba(38, 16, 14, .95) 55%, rgba(16, 9, 8, .97) 100%);
+  border: 1px solid rgba(179, 154, 107, .50);
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow:
+    5px 5px 0 -1px rgba(10, 8, 8, .90),
+    5px 5px 0 0 rgba(179, 154, 107, .22),
+    0 12px 24px rgba(0, 0, 0, .55);
+  transition: color .15s, border-color .15s, transform .15s;
+}
+/* 牌面上的那道暗线，让它读起来像卡背而不是一个空框 */
+#screen-combat #piles span::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(179, 154, 107, .22);
+  border-radius: 3px;
+  pointer-events: none;
+}
+#screen-combat #piles span:hover {
+  color: #fff3e4;
+  border-color: rgba(179, 154, 107, .85);
+  transform: translateY(-3px);
+}
+#screen-combat #piles #pile-draw    { left: 18px;  bottom: 18px; }
+#screen-combat #piles #pile-discard { left: 18px;  top: 56px; }    /* 用户：移到左上，HUD 正下方 */
+#screen-combat #piles #pile-exhaust { right: 18px; top: 420px; }   /* 右上角让给属性面板，移除堆下移 */
+#screen-combat #piles #pile-exhaust:empty { display: none; }
+
+/* ═══════════ ⑥ 主题 C 补完 ═══════════ */
+
+html[data-theme="C"] #hud {
+  background: var(--paper-lo, #cfc3ae);
+  border-bottom: 2px solid var(--seal, #6b1a12);
+}
+html[data-theme="C"] #hud .k { color: var(--ink-dim, #6b5334); opacity: .9; }
+html[data-theme="C"] #hud .v { color: var(--ink, #2b2118); font-weight: 600; }
+html[data-theme="C"] #hud .v.hp-low { color: var(--seal, #6b1a12); }
+html[data-theme="C"] #hud .hud-stats .ic { filter: saturate(.85); }
+html[data-theme="C"] #hud-relics span { color: var(--seal, #6b1a12); }
+
+html[data-theme="C"] .enemy {
+  background: var(--paper, #d9cfbe);
+  border: 1px solid var(--edge, #8a7050);
+  box-shadow:
+    0 0 0 1px rgba(179, 154, 107, .30),
+    0 16px 36px rgba(0, 0, 0, .52),
+    0 0 56px rgba(176, 116, 62, .10);
+}
+html[data-theme="C"] .enemy .eart {
+  background: var(--paper-hi, #e7dfcc);
+  border-bottom: 1px solid var(--edge, #8a7050);
+}
+html[data-theme="C"] .enemy .eart span { color: rgba(43, 33, 24, .22); }
+html[data-theme="C"] .enemy .ename { color: var(--seal, #6b1a12); }
+html[data-theme="C"] .enemy .intent { color: var(--ink, #2b2118); }
+html[data-theme="C"] .enemy .intent .i-atk { color: var(--seal, #6b1a12); }
+html[data-theme="C"] .enemy .intent .i-def { color: #4a5a68; }
+html[data-theme="C"] .enemy .hpbar { background: #b9ac93; border-color: var(--edge, #8a7050); }
+html[data-theme="C"] .enemy .hpbar > i { background: var(--seal, #6b1a12); }
+html[data-theme="C"] .enemy .hpnum { color: var(--ink-dim, #6b5334); }
+html[data-theme="C"] .enemy .eblock { color: #4a5a68; }
+html[data-theme="C"] .enemy.targetable { border-color: var(--seal, #6b1a12); box-shadow: 0 0 0 1px var(--seal, #6b1a12); }
+html[data-theme="C"] .enemy.minion { border-color: #4f7a72; box-shadow: inset 0 0 0 1px rgba(79, 122, 114, .4); }
+
+html[data-theme="C"] .card {
+  border: 1px solid var(--edge, #8a7050);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .45), 0 1px 3px rgba(43, 33, 24, .30);
+}
+html[data-theme="C"] .card:hover:not(.dimmed):not(.wrongworld) {
+  border-color: var(--seal, #6b1a12);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .55);
+}
+html[data-theme="C"] .card.dimmed { opacity: .4; filter: grayscale(.4); }
+html[data-theme="C"] .card .cost {
+  border-color: var(--seal, #6b1a12);
+  color: var(--seal, #6b1a12);
+  background: var(--paper-hi, #e7dfcc);
+  font-weight: 700;
+}
+html[data-theme="C"] .card .cname { letter-spacing: .5px; }
+
+/* 卡图是「暗底亮线」，卡身是「亮底暗字」，方向相反。
+   把图案区做成卡上开的一个观察窗 —— 明确框线 + 内凹阴影。 */
+html[data-theme="C"] .card .art {
+  background-color: #1a1214;
+  height: 92px;
+  border-bottom: 1px solid rgba(138, 112, 80, .9);
+  box-shadow:
+    inset 0 0 0 2px rgba(43, 33, 24, .55),
+    inset 0 3px 10px rgba(0, 0, 0, .55);
+}
+html[data-theme="C"] .card .art::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: rgba(231, 223, 204, .45);
+  pointer-events: none;
+}
+
+html[data-theme="C"] button,
+html[data-theme="C"] .btnrow button,
+html[data-theme="C"] #btn-end,
+html[data-theme="C"] #btn-help,
+html[data-theme="C"] #btn-world {
+  background: var(--paper-lo, #cfc3ae);
+  color: var(--ink, #2b2118);
+  border: 1px solid var(--edge, #8a7050);
+}
+html[data-theme="C"] button:hover {
+  background: var(--paper-hi, #e7dfcc);
+  border-color: var(--seal, #6b1a12);
+  color: var(--seal, #6b1a12);
+}
+html[data-theme="C"] #btn-end {
+  border-color: var(--seal, #6b1a12);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+html[data-theme="C"] #hud button {
+  background: rgba(43, 33, 24, .08);
+  color: var(--ink, #2b2118);
+  border: 1px solid var(--edge, #8a7050);
+}
+
+html[data-theme="C"] #flow-panel,
+html[data-theme="C"] #screen-flow {
+  color: var(--ink, #2b2118);
+}
+
+/* ═══════════ ⑧ 右上角属性槽（试验） ═══════════
+   用户：右上做个槽，把 HUD 上那一排小属性放大填进去。
+   只对战斗屏生效（:has 检测战斗屏没隐藏），地图/选人界面还是原来的横排。
+   ★ 这是试验，不满意删掉这一整段就回到原样。 */
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats {
+  position: fixed;   /* fixed 相对 #app 那张 1600×900 画布（#app 有 transform），不会被 HUD 裁掉 */
+  right: 16px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  width: 260px;
+  padding: 10px 16px;
+  background: rgba(80, 69, 56, .88);
+  border: 1px solid rgba(196, 172, 124, .62);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 2px 14px rgba(0, 0, 0, .45),
+    0 10px 30px rgba(0, 0, 0, .45),
+    0 0 30px rgba(179, 154, 107, .10);
+  z-index: 9;
+}
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats .stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 2px;
+  border-bottom: 1px solid rgba(179, 154, 107, .10);
+}
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats .stat:last-child { border-bottom: 0; }
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats .stat.hidden { display: none !important; }
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats .stat .ic {
+  width: 18px;
+  font-size: 16px;
+  text-align: center;
+  color: #f0e4cf;
+  filter: brightness(1.8) saturate(1.15);
+}
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats .stat .k {
+  flex: 1 1 auto;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  /* ★ 原来这里是深墨色 --ink #2b2118，压在暗褐底上等于看不见 —— 改成纸色 */
+  color: #ece2d0;
+}
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats .stat .v {
+  font-size: 18px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #fffaf0;
+  text-shadow: 0 0 10px rgba(255, 226, 178, .30);
+}
+/* 面板里如果夹着按钮（「地图」），让它撑满一行，别缩成一条 */
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats button {
+  width: 100%;
+  height: 30px;
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  color: #f0e4cf;
+  background: rgba(240, 228, 207, .14);
+  border: 1px solid rgba(196, 172, 124, .55);
+}
+/* 遗物栏：给它在属性面板正下方留一块位置（面板约 y 50–360，这里从 372 起） */
+body:has(#screen-combat:not(.hidden)) #hud #hud-relics {
+  position: fixed;
+  right: 16px;
+  top: 372px;
+  width: 260px;
+  z-index: 9;
+}
+/* 其余（「地图」按钮等）浮到左上，别挤在面板下面 */
+body:has(#screen-combat:not(.hidden)) #hud > button {
+  position: fixed;
+  left: 16px;
+  top: 12px;
+  z-index: 9;
+}
+
+/* ═══════════ ⑦ 固定画布：窗口化 ═══════════ */
+html, body {
+  overflow: hidden;
+  height: 100%;
+  background: #050505;
+}
+/* ★ body 也钉死：只给 html 加 overflow:hidden 不够 —— 点「结束回合」后按钮拿到焦点，
+   浏览器会把它 scrollIntoView，整个 body 被滚下去（实测画面往下跳 160px 再弹回）。
+   position:fixed + inset:0 让 body 不产生任何滚动区域。 */
+body {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+}
+#app {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 1600px;
+  height: 900px;
+  transform: translate(-50%, -50%) scale(var(--ui-scale, 1));
+  transform-origin: center center;
+  overflow: hidden;
+}
+
+/* ═══════════ ⑨ v4 修正：左右两条边栏 ═══════════
+   截图暴露的问题：右上角属性面板和卡牌详情面板（#card-detail）叠在同一处，
+   两个竖条压在一起，字全糊了。所以把屏幕切成左右两条边栏 ——
+     左栏：属性面板 + 遗物
+     右栏：弃牌堆 + 移除堆 + 卡牌详情（它本来就在右侧）
+   中间三槽从 300 到 1300，左右各留 300，仍然严格对齐。 */
+
+body:has(#screen-combat:not(.hidden)) #hud .hud-stats {
+  right: auto;
+  left: 16px;
+}
+body:has(#screen-combat:not(.hidden)) #hud #hud-relics {
+  right: auto;
+  left: 16px;
+}
+
+/* 弃牌堆换到右上；移除堆挪到它下面 */
+#screen-combat #piles #pile-discard { left: auto; right: 18px; top: 56px; }
+#screen-combat #piles #pile-exhaust { right: 18px; top: 300px; }
+
+/* 三槽让出左右各 300 */
+#screen-combat #enemy-area::after { left: 300px; right: 300px; }
+#screen-combat #log-wrap { padding: 0 300px; }
+#screen-combat #hand-area::before { left: 300px; }
+#screen-combat #hand-area::after { left: 300px; }
+
+/* 卡牌详情浮层下移：它原来和右上角弃牌堆叠在一起（用户截图里两个红框压着）。
+   弃牌堆 y 56~266，这里从 286 起。 */
+#screen-combat #card-detail {
+  top: 286px;
+  bottom: auto;
+}
+
+/* ═══════════ ⑩ 卡图铺满整卡，文字压在图上 ═══════════
+   用户选了方案 A。卡的结构是 cost/ctype → art → cname → cveins → ctext → cflavor，
+   art 原是流里的 92px 块，卡身是纸色。现在把 art 拉成整张卡的底图，
+   卡身让位给一层从透明到近黑的渐变，文字浮在上面 —— 图归图，字归字，但共用一张卡。
+   ★ 回退：删掉这一整节就回到"上半图、下半纸"的老样子。 */
+html[data-theme="C"] .card {
+  position: relative;
+  overflow: hidden;
+  padding-top: 104px;   /* 文字从卡片下半开始，上半留给图 */
+}
+html[data-theme="C"] .card .art {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  margin: 0;
+  border-bottom: 0;
+  box-shadow: none;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+html[data-theme="C"] .card .art::after { display: none; }
+/* 压在图上的一层暗，越往下越黑：上半几乎不挡图，下半把文字托出来 */
+html[data-theme="C"] .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(12, 8, 8, .05) 0%,
+    rgba(12, 8, 8, .28) 38%,
+    rgba(12, 8, 8, .78) 64%,
+    rgba(12, 8, 8, .95) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+html[data-theme="C"] .card > .cname,
+html[data-theme="C"] .card > .cveins,
+html[data-theme="C"] .card > .ctext,
+html[data-theme="C"] .card > .cflavor {
+  position: relative;
+  z-index: 2;
+}
+html[data-theme="C"] .card > .cost,
+html[data-theme="C"] .card > .ctype {
+  z-index: 3;
+}
+html[data-theme="C"] .card .cname {
+  color: #fbf1de;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .85);
+  font-weight: 700;
+}
+html[data-theme="C"] .card .ctext {
+  color: #e4d8c6;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .8);
+}
+html[data-theme="C"] .card .cflavor {
+  color: #a89b8a;
+}
+html[data-theme="C"] .card.upgraded .cname { color: #f0cf80; }
+
+/* ── 敌人卡同一套：图铺满，文字压下 ──
+   ★ 每条都要带 #screen-combat：② 节里的 `#screen-combat .enemy .eart { height:96px }` 带 id，
+   比 `html[data-theme="C"] .enemy .eart`（只有属性选择器）优先级高 —— 不加 id 就压不住 height，
+   .eart 会变成 absolute + height:96，图缩在左上角一小块。 */
+html[data-theme="C"] #screen-combat .enemy {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 200px;
+  padding: 0 0 10px;
+}
+html[data-theme="C"] #screen-combat .enemy .eart {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  margin: 0;
+  border-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+html[data-theme="C"] #screen-combat .enemy::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(12, 8, 8, .04) 0%,
+    rgba(12, 8, 8, .26) 36%,
+    rgba(12, 8, 8, .80) 64%,
+    rgba(12, 8, 8, .95) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+html[data-theme="C"] #screen-combat .enemy .ename,
+html[data-theme="C"] #screen-combat .enemy .intent,
+html[data-theme="C"] #screen-combat .enemy .hpbar,
+html[data-theme="C"] #screen-combat .enemy .hpnum,
+html[data-theme="C"] #screen-combat .enemy .eblock {
+  position: relative;
+  z-index: 2;
+}
+html[data-theme="C"] #screen-combat .enemy .ename {
+  color: #fdf3e0;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .85);
+}
+html[data-theme="C"] #screen-combat .enemy .intent { color: #e8dcc9; text-shadow: 0 1px 4px rgba(0, 0, 0, .8); }
+html[data-theme="C"] #screen-combat .enemy .intent .i-atk { color: #ff9c86; }
+html[data-theme="C"] #screen-combat .enemy .intent .i-def { color: #9fc4d8; }
+html[data-theme="C"] #screen-combat .enemy .hpnum { color: #cfc3b0; }
+html[data-theme="C"] #screen-combat .enemy .hpbar { background: rgba(0, 0, 0, .55); border-color: rgba(179, 154, 107, .55); }
+html[data-theme="C"] #screen-combat .enemy .hpbar > i { background: #b8301f; }
+
+/* ══════════════════════════════════════════════════════════════════
+   ⑪ 职业详情：左右材质统一（2026-11-06 UI v4）
+
+   病：左半是 assets/class/*.webp 自带的米色纸边，右半是 #class-modal-box
+   的 #101418 深色 —— 一块弹窗里两种材质硬拼，中间一道缝。
+   和战斗屏当初「半纸半暗」是同一个病：主题 C 只做了一半。
+
+   做法：把右半也归到纸色系，文字换成墨色。只在 theme C 下生效，
+   其他主题（A/B）保持原样 —— 删掉这一节即可回退。
+   ══════════════════════════════════════════════════════════════════ */
+html[data-theme="C"] #class-modal-box {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--edge);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, .72);
+}
+html[data-theme="C"] #class-modal-art { background: var(--paper-lo); }
+/* 左图和右文之间给一道分隔，代替原来的材质硬缝 */
+html[data-theme="C"] #class-modal-art { border-right: 1px solid var(--edge); }
+
+html[data-theme="C"] #class-modal-detail h2 { color: #6b1a12; }
+html[data-theme="C"] #class-modal-detail .cm-line { color: var(--ink); }
+html[data-theme="C"] #class-modal-detail .cm-stats li {
+  color: var(--ink);
+  border-bottom-color: rgba(107, 26, 18, .32);
+}
+html[data-theme="C"] #class-modal-detail .cm-mechs li { color: var(--ink-dim); }
+html[data-theme="C"] #class-modal-detail .cm-mechs li::before { color: #6b1a12; }
+
+/* 关闭键：原来 --text（亮色），在纸上会消失 */
+html[data-theme="C"] #class-modal-close { color: var(--ink-dim); }
+html[data-theme="C"] #class-modal-close:hover { color: #6b1a12; }
+
+/* 「以此身份下潜」：原来米色亮块，是这块黑底上唯一的亮点。
+   改到纸底以后它反过来太淡了（--paper-hi 只比 --paper 浅一点点），
+   看着不像按钮 —— 给它一道实边框 + 底部投影像一枚压上去的印。 */
+html[data-theme="C"] #btn-dive-confirm {
+  background: #ece3d0;
+  color: #6b1a12;
+  border: 1px solid #9c7f5c;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 #c4b39a;
+}
+html[data-theme="C"] #btn-dive-confirm:hover {
+  background: #f4ecda;
+  border-color: #6b1a12;
+  box-shadow: 0 2px 0 #b39a6b;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   ⑫ 地图屏顶部：按钮 + 快捷键提示（2026-11-06 UI v4）
+
+   原来 .map-hint 是 11px + var(--mm-dim)，那是「纸上」的灰；
+   而它站的 #screen-flow 背景是深蓝灰 —— 11px 的暗灰压在暗底上，
+   等于没写。同时按钮和提示靠 margin-left 挤在同一行。
+   ══════════════════════════════════════════════════════════════════ */
+#flow-panel .mapfoot {
+  display: flex; align-items: center; justify-content: center;
+  gap: 12px; flex-wrap: wrap;
+}
+#flow-panel .map-hint {
+  font-size: 12px;
+  color: #a89c8c;
+  margin-left: 0;
+}

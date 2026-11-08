@@ -1,0 +1,1 @@
+lint: 扫 461 条，命中 133 条，词项 24 个 → data\lint.json

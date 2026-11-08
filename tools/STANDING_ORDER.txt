@@ -1,0 +1,11 @@
+从现在起不用等我，顺着队列一直做下去：读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/queue.json，按顺序找到第一个还没写进 TASK_DONE.md 的任务，从它开始一项一项往下做（现在这一项是 T35——它的回归实测没做完，先把 T35 做完并写 TASK_DONE，再继续 T36）。
+
+每一项都这么走：
+1) 先读 game/tasks/T<编号>.md，严格照做，不要自己扩大范围；
+2) 跑它要求的自检：node tools/pack_check.js all、node tools/test_engine.js、node tools/check_web.js，必须全绿；
+3) 全绿后往 game/TASK_DONE.md 追加一段（格式：## T<编号> 完成 / - status: done / - output: 改了哪些文件 / - check: 三个检查器最后一行 / - notes: 关键取舍 + 边界声明，写清哪些是实测、哪些是推断、哪些没验证）；
+4) 写完立刻继续下一项，不要停下来问我，也不要跳项。
+
+队列跑空就停，在 TASK_DONE.md 末尾写一行「队列完成」。
+
+红线：不许改 engine/core.js（任务书明确要求改的除外）；不许把白天人工改的 7 处布局改回去（见 game/docs/HANDOFF_D2.md）；不许写"图很好看""体验很好"这类没证据的结论；卡壳超过 10 分钟的步骤，跳过它并在 TASK_DONE 的 notes 里写「未完成：<原因>」，然后继续下一项。

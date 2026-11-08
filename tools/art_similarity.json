@@ -1,0 +1,482 @@
+{
+ "threshold": 6,
+ "refs": 43,
+ "checked": 79,
+ "rejects": 0,
+ "results": [
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\class\\anmin.webp",
+   "ref": "192px-Doorintheeye.webp",
+   "hamming": 26,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\class\\cangmin.webp",
+   "ref": "75px-Auclair_a.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\class\\diver.webp",
+   "ref": "75px-Auclair_a.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\class\\tremor.webp",
+   "ref": "192px-Meniscate.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\001_single_falling_water_dro.webp",
+   "ref": "192px-Notorious.webp",
+   "hamming": 19,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\002_cryptobiotic_tardigrade.webp",
+   "ref": "192px-Lionsmith.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\003_dry_spring_mouth.webp",
+   "ref": "192px-Vaultshiresdefaultexile.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\004_cracked_mud_ledger.webp",
+   "ref": "192px-Suninrags.webp",
+   "hamming": 15,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\005_drought_fish_gill.webp",
+   "ref": "192px-Madrugad.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\006_water_right_seal_stamp.webp",
+   "ref": "75px-Rose_a.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\010_water_tally_ledger.webp",
+   "ref": "192px-The-Moth.webp",
+   "hamming": 24,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\011_hollow_dry_husk.webp",
+   "ref": "75px-Laidlaw_a.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_arid\\012_spring_seal_stamp.webp",
+   "ref": "75px-Leo_a.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\001_snow_buried_mossback_she.webp",
+   "ref": "192px-Forgeofdays.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\002_worm_eaten_wall_calendar.webp",
+   "ref": "192px-Notorious.webp",
+   "hamming": 24,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\003_coiled_hibernating_amphi.webp",
+   "ref": "192px-Doorintheeye.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\004_slow_sediment_drift.webp",
+   "ref": "192px-Motherofants.webp",
+   "hamming": 24,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\005_frost_grey_eel_skull.webp",
+   "ref": "192px-Madrugad.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\006_frozen_ledger_book.webp",
+   "ref": "75px-Cat_a.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\010_mossback_turtle_shell.webp",
+   "ref": "192px-Suninrags.webp",
+   "hamming": 19,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\011_worm_eaten_stone_tablet.webp",
+   "ref": "192px-The_Wolf_Divided.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_cold\\012_coiled_frost_eel.webp",
+   "ref": "192px-Flowermaker.webp",
+   "hamming": 15,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\001_tri_color_bacterial_mat.webp",
+   "ref": "192px-Thunderskin.webp",
+   "hamming": 27,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\002_supercritical_water_sac.webp",
+   "ref": "Chinese-card-header.webp",
+   "hamming": 24,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\003_slow_moving_shadow.webp",
+   "ref": "192px-The-Moth.webp",
+   "hamming": 18,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\004_heat_blistered_alloy_pip.webp",
+   "ref": "75px-Saliba_a.webp",
+   "hamming": 26,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\005_golden_filament_tangle.webp",
+   "ref": "192px-The-Moth.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\006_boiling_mineral_vein.webp",
+   "ref": "192px-Notorious.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\010_tri_color_mat.webp",
+   "ref": "192px-The-Moth.webp",
+   "hamming": 24,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\011_slow_shadow_figure.webp",
+   "ref": "192px-Motherofants.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_core\\012_swelling_water_sac.webp",
+   "ref": "192px-Lionsmith.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\001_single_corridor_lamp.webp",
+   "ref": "192px-Motherofants.webp",
+   "hamming": 17,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\002_duty_roster_page.webp",
+   "ref": "192px-Lionsmith.webp",
+   "hamming": 15,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\003_chained_signature_quill.webp",
+   "ref": "192px-Forgeofdays.webp",
+   "hamming": 25,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\004_resonator_hum_wave.webp",
+   "ref": "192px-Thunderskin.webp",
+   "hamming": 19,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\005_nailed_notice_board.webp",
+   "ref": "Chinese-card-header.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\006_wall_of_white_noise.webp",
+   "ref": "75px-Cat_a.webp",
+   "hamming": 26,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\010_corridor_lamp.webp",
+   "ref": "192px-Notorious.webp",
+   "hamming": 25,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\011_chained_quill.webp",
+   "ref": "192px-The-Moth.webp",
+   "hamming": 24,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_nexus\\012_nailed_notice_board.webp",
+   "ref": "192px-Crownedgrowth.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\001_stack_of_lead_scaled_she.webp",
+   "ref": "192px-Despair.webp",
+   "hamming": 26,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\002_glowing_burial_urn.webp",
+   "ref": "75px-Renira_a.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\003_cracked_gauge_dial.webp",
+   "ref": "75px-Tristan_a.webp",
+   "hamming": 19,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\004_feverish_mold_colony.webp",
+   "ref": "75px-Tristan_a.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\005_hoarded_shell_pile.webp",
+   "ref": "192px-Forgeofdays.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\006_scorched_hollow_bone.webp",
+   "ref": "75px-Cat_a.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\010_lead_scaled_shell.webp",
+   "ref": "192px-Lionsmith.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\011_glowing_burial_urn.webp",
+   "ref": "192px-Flowermaker.webp",
+   "hamming": 17,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_rad\\012_feverish_mold_patch.webp",
+   "ref": "192px-Notorious.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\001_hanging_red_fern_frond.webp",
+   "ref": "192px-The_Velvet.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\002_shadow_under_algae_blank.webp",
+   "ref": "192px-Flowermaker.webp",
+   "hamming": 16,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\003_filter_feeler_swarm.webp",
+   "ref": "192px-Doorintheeye.webp",
+   "hamming": 15,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\004_ambush_fish_eye.webp",
+   "ref": "192px-Vaultshiresdefaultexile.webp",
+   "hamming": 27,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\005_drifting_spore_lantern.webp",
+   "ref": "192px-Insomnia.webp",
+   "hamming": 16,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\006_sunken_corridor_lamp.webp",
+   "ref": "192px-Doorintheeye.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\010_ambush_fish_eye.webp",
+   "ref": "192px-Lionsmith.webp",
+   "hamming": 18,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\011_filter_feeler_swarm.webp",
+   "ref": "192px-Doorintheeye.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_sea\\012_hanging_fern_shadow.webp",
+   "ref": "192px-Meniscate.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\001_dormant_spore_pod.webp",
+   "ref": "192px-The_Colonel.webp",
+   "hamming": 24,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\002_sealed_airlock_hatch.webp",
+   "ref": "288px-Meniscate-zhs.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\003_numbered_flag_pole.webp",
+   "ref": "192px-Notorious.webp",
+   "hamming": 26,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\004_sun_bleached_cracked_tub.webp",
+   "ref": "192px-Madrugad.webp",
+   "hamming": 18,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\005_empty_suit_shell.webp",
+   "ref": "192px-Finehouse.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\006_bone_dry_water_cistern.webp",
+   "ref": "192px-The_Colonel.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\010_sealed_diver_suit_shell.webp",
+   "ref": "75px-Valciane_a.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\011_broadcast_horn_speaker.webp",
+   "ref": "192px-Despair.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_surface\\012_heavy_airlock_gate.webp",
+   "ref": "192px-Doorintheeye.webp",
+   "hamming": 14,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\001_black_sulfur_mound_tower.webp",
+   "ref": "75px-Dorothy_a.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\002_tube_worm_feather_plume.webp",
+   "ref": "192px-Notorious.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\003_boiling_vent_mouth.webp",
+   "ref": "192px-Flowermaker.webp",
+   "hamming": 19,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\004_dented_soup_ladle.webp",
+   "ref": "192px-Forgeofdays.webp",
+   "hamming": 17,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\005_ring_of_heat_haze.webp",
+   "ref": "75px-Valciane_a.webp",
+   "hamming": 23,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\006_small_geyser_cone.webp",
+   "ref": "192px-Forgeofdays.webp",
+   "hamming": 20,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\010_tube_worm_plume.webp",
+   "ref": "192px-The_Colonel.webp",
+   "hamming": 16,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\011_dented_soup_ladle.webp",
+   "ref": "192px-The_Wolf_Divided.webp",
+   "hamming": 21,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\eco\\eco_vent\\012_black_sulfur_tower.webp",
+   "ref": "288px-Meniscate-zhs.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\ending\\ending_averted.webp",
+   "ref": "192px-Madrugad.webp",
+   "hamming": 12,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\ending\\ending_walked.webp",
+   "ref": "192px-The_Wolf_Divided.webp",
+   "hamming": 22,
+   "status": "ok"
+  },
+  {
+   "file": "C:\\Users\\Administrator\\Desktop\\杂七杂八\\红渊\\game\\art\\ending\\ending_watched.webp",
+   "ref": "192px-Madness.webp",
+   "hamming": 21,
+   "status": "ok"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "task": "T80",
+  "steps": 20,
+  "seed": 7,
+  "cfg": 6.0,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "config": "embeds cached + text encoders freed + VAE fp32 no-tiling + expandable_segments + tf32 matmul"
+ },
+ "steps": [
+  {
+   "tag": "R2_freed_encoders_fp32vae",
+   "i": 1,
+   "size": "640x936",
+   "gen_s": 460.0,
+   "vram_gb": 9.11
+  },
+  {
+   "tag": "R2_freed_encoders_fp32vae",
+   "i": 2,
+   "size": "640x936",
+   "gen_s": 295.1,
+   "vram_gb": 9.11
+  },
+  {
+   "tag": "R2_freed_encoders_fp32vae",
+   "i": 3,
+   "size": "640x936",
+   "gen_s": 736.8,
+   "vram_gb": 9.11
+  },
+  {
+   "tag": "R2_512x752",
+   "i": 1,
+   "size": "512x752",
+   "gen_s": 108.9,
+   "vram_gb": 8.34
+  },
+  {
+   "tag": "R2_512x752",
+   "i": 2,
+   "size": "512x752",
+   "gen_s": 118.7,
+   "vram_gb": 8.34
+  }
+ ]
+}

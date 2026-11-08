@@ -1,0 +1,3032 @@
+[
+ {
+  "id": "event_d2_1",
+  "layer": 2,
+  "title": "矿道口的碎石",
+  "body": "矿道口的碎石是新搬开的，搬的人不在这里。石缝里卡着半截手套。",
+  "options": [
+   {
+    "text": "搬开碎石，进去看看。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 40,
+     "damage": 5
+    },
+    "result_text": "石头后面有一小袋矿票。搬最后一块的时候，石头动了，你的手慢了半步。"
+   },
+   {
+    "text": "贴着岩壁，听里面的动静。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "里面的东西搬完了才走，走得很急。装备架上还挂着一件。"
+   },
+   {
+    "text": "绕开。",
+    "veins": [],
+    "result": {},
+    "result_text": "碎石是别人的，路也是别人的。你走你的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_2",
+  "layer": 2,
+  "title": "会自己开关的矿灯",
+  "body": "矿灯在无人处亮起又熄灭，间隔很稳。值班表上有它的名字，没有人的。",
+  "options": [
+   {
+    "text": "站进光里，等它熄。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 1,
+     "heal": 10
+    },
+    "result_text": "光在你身上停了一会儿，从头到脚。停完，它自己熄了。"
+   },
+   {
+    "text": "拆下电池。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 30
+    },
+    "result_text": "电池是满的。灯灭了以后，走廊比刚才长了一截。"
+   },
+   {
+    "text": "关掉自己的头灯走过去。",
+    "veins": [],
+    "result": {},
+    "result_text": "你走近，它不亮。你走远，它亮了。你们错开了。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_1",
+  "layer": 3,
+  "title": "穿防护服的遗体",
+  "body": "防护服是完整的。面罩内侧有字，笔迹很稳。这里没有风，字还在。",
+  "options": [
+   {
+    "text": "读面罩内侧的字。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 1,
+     "card_reward": "uncommon"
+    },
+    "result_text": "字只有四个：别信信号。落款的日期是今天的。他的工具归你了。"
+   },
+   {
+    "text": "解下他的装备。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 50,
+     "gaze": 1
+    },
+    "result_text": "装备保养得很好，扣具都扣到最后一格。他到最后都在守规矩。"
+   },
+   {
+    "text": "把他安顿好。",
+    "veins": [],
+    "result": {},
+    "result_text": "你搬不动石头，只把他的面罩转向岩壁。风声过不去，这样就听不见了。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_2",
+  "layer": 3,
+  "title": "一池不流动的水",
+  "body": "水面平得像结了蜡，水很清。池底还有一层水在动，方向朝下。",
+  "options": [
+   {
+    "text": "喝一口上层的水。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 12,
+     "gaze": 1
+    },
+    "result_text": "上层的水是甜的。它记得的东西比下面少。"
+   },
+   {
+    "text": "潜下去看第二层。",
+    "veins": [
+     "water",
+     "tremor"
+    ],
+    "result": {
+     "damage": 6,
+     "card_reward": "rare"
+    },
+    "result_text": "第二层的水往下跌。你回来的时候手里多了东西，肺里也是。"
+   },
+   {
+    "text": "绕开走。",
+    "veins": [],
+    "result": {},
+    "result_text": "水面在你背后合拢。没有声音。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_1",
+  "layer": 4,
+  "title": "渊民的埋骨布",
+  "body": "埋骨布摊在洞壁的凹处，四角用石头压着。布是空的，摆得很郑重。",
+  "options": [
+   {
+    "text": "按渊民的规矩，添一块石头。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": -1,
+     "heal": 8
+    },
+    "result_text": "你不知道步子对不对。你放下石头，布动了一下。"
+   },
+   {
+    "text": "收走压布的石头，它们是磨光的。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 35,
+     "gaze": 2
+    },
+    "result_text": "石头下面什么都没有。你收石头的时候，手一直在抖。"
+   },
+   {
+    "text": "原样离开。",
+    "veins": [],
+    "result": {},
+    "result_text": "你从布的下风处走，没有惊动它。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_2",
+  "layer": 4,
+  "title": "烧过又长回来的红蕨",
+  "body": "这片红蕨烧过，灰还在根上。新叶从灰里长出来，比别处的红。",
+  "options": [
+   {
+    "text": "掐一片新叶含着。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "heal": 15
+    },
+    "result_text": "新叶是苦的。苦完了，胸口暖了很久。"
+   },
+   {
+    "text": "挖走一段根。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "card_reward": "uncommon",
+     "damage": 4
+    },
+    "result_text": "根断的时候，整片蕨缩了一下。你挖得很快。"
+   },
+   {
+    "text": "记下位置，走开。",
+    "veins": [],
+    "result": {},
+    "result_text": "火还会再来。蕨不搬家。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_1",
+  "layer": 5,
+  "title": "静日里响起的震语",
+  "body": "静日。整条裂带都安静。岩层深处有一句震语在重复，不在节日的名录里。",
+  "options": [
+   {
+    "text": "回它一句。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 2,
+     "card_reward": "rare"
+    },
+    "result_text": "你用错了两个音。它纠正了你，然后教了你第三句。"
+   },
+   {
+    "text": "顺着声源找过去。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 8,
+     "gold": 45
+    },
+    "result_text": "声源是一口正在收口的热泉。泉眼里卡着上一批人的装备。"
+   },
+   {
+    "text": "按住耳朵走过去。",
+    "veins": [],
+    "result": {},
+    "result_text": "静日不该听。你走远了才把手放下来。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_2",
+  "layer": 5,
+  "title": "反应堆城的废弃管道",
+  "body": "管道从上层的方向垂下来，端口朝天。每隔一阵漏出一口热气，间隔是你的呼吸频率。",
+  "options": [
+   {
+    "text": "把手伸进端口。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 5,
+     "gold": 40
+    },
+    "result_text": "里面卡着一段没送完的补给。热气烫了手背，不深。"
+   },
+   {
+    "text": "贴着管壁，听上面的动静。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 10
+    },
+    "result_text": "上面有人在走动，不止一个。他们不知道这根管子通到哪里。"
+   },
+   {
+    "text": "封住端口。",
+    "veins": [],
+    "result": {},
+    "result_text": "你用碎石把口堵上。漏气声小了很多，你没有再听。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_1",
+  "layer": 6,
+  "title": "一块有字的相石",
+  "body": "相石躺在辐射矿的碎堆里，光纹没灭。字不是刻的，是长在里面的。",
+  "options": [
+   {
+    "text": "读它。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2,
+     "card_reward": "uncommon"
+    },
+    "result_text": "字记的是很久以前的一次塌方。名单末尾空着一行，现在写上了你的。"
+   },
+   {
+    "text": "把它卖个好价钱。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 60,
+     "gaze": 1
+    },
+    "result_text": "收货的人没有看第二眼。他知道这批货流向哪里。"
+   },
+   {
+    "text": "放回原处。",
+    "veins": [],
+    "result": {},
+    "result_text": "你把它按原来的朝向摆好。光纹灭了一瞬，又亮了。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_2",
+  "layer": 6,
+  "title": "别人的营地",
+  "body": "营地收拾得很整齐，毯子叠好了，炉子是冷的。人是自己走的，走得从容。",
+  "options": [
+   {
+    "text": "补给照单全收。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 45,
+     "heal": 6
+    },
+    "result_text": "干粮还有大半。水是苦的，他喝惯了，你也喝得惯。"
+   },
+   {
+    "text": "读炉边的日志。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "card_reward": "common",
+     "gaze": 1
+    },
+    "result_text": "最后一天写着：往下走比往上走安全。这一行被划掉过，又描了一遍。"
+   },
+   {
+    "text": "替他把炉灰埋了。",
+    "veins": [],
+    "result": {},
+    "result_text": "你替他把炉灰埋了。按规矩，这样的营地不算被抛弃。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_1",
+  "layer": 7,
+  "title": "震台上的旧刻痕",
+  "body": "一座塌了半边的震台，石面刻着历法。刻到很深的地方，笔画还稳。",
+  "options": [
+   {
+    "text": "辨认最后几个刻痕。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 1,
+     "heal": 12
+    },
+    "result_text": "最后刻的是一句完整的话。你读完，牙不麻了，耳朵一直热。"
+   },
+   {
+    "text": "拓一段带走。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "拓片上多了一行石面上没有的字。你没有细看。"
+   },
+   {
+    "text": "不碰石面。",
+    "veins": [],
+    "result": {},
+    "result_text": "刻痕比你早到了很多年。不缺你这一眼。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_2",
+  "layer": 7,
+  "title": "还在转的旧光者自动门",
+  "body": "自动门在没有电的走廊里开合，间隔很稳。门轴没有声音，走廊里的灰却一直让开。",
+  "options": [
+   {
+    "text": "在门开的时候穿过去。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2,
+     "gold": 50
+    },
+    "result_text": "门后是间办公室。抽屉里的东西按日期排好，最后一天的日期是明天。"
+   },
+   {
+    "text": "站在门缝里，让它夹一下。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 6,
+     "card_reward": "rare"
+    },
+    "result_text": "门停了。它第一次没有按间隔开合。它给你让了路。"
+   },
+   {
+    "text": "学它的节奏，站着等。",
+    "veins": [],
+    "result": {},
+    "result_text": "你陪它开了几轮。你走的时候，它多开了一次。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_3",
+  "layer": 2,
+  "title": "别的下潜者",
+  "body": "有个人背靠岩壁坐着。防护服胸口的公司标志被涂掉了，涂得很用力。他抬手，示意你小声。",
+  "options": [
+   {
+    "text": "分他一半水。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "他喝得很慢。喝完，指了一条避开渗水线的路。"
+   },
+   {
+    "text": "问他在躲什么。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 1,
+     "gold": 30
+    },
+    "result_text": "他说的东西你听不懂。他指的方向你用得上。"
+   },
+   {
+    "text": "装作没看见。",
+    "veins": [],
+    "result": {},
+    "result_text": "你走过去的时候，他把自己的灯关了。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_4",
+  "layer": 2,
+  "title": "一条被堵住的近路",
+  "body": "塌下来的岩块卡在通道里，缝隙后面有风。风是暖的。这一层不该有暖风。",
+  "options": [
+   {
+    "text": "挤过去。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "damage": 5,
+     "card_reward": "uncommon"
+    },
+    "result_text": "缝隙比你估的窄。出来的时候背包轻了一点，手里多了一点。"
+   },
+   {
+    "text": "听风的节奏。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "风每十九息一次，很稳。你靠着缝隙缓了一会儿。"
+   },
+   {
+    "text": "原路走。",
+    "veins": [],
+    "result": {},
+    "result_text": "近路是别人的。你走你的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_3",
+  "layer": 3,
+  "title": "一只快死的生物",
+  "body": "一条干旱肺鱼侧躺在干泥上，鳃盖开合的间隔越来越长。它的洞就在两步外。",
+  "options": [
+   {
+    "text": "把它送回水囊里。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 10,
+     "gaze": -1
+    },
+    "result_text": "它滑回水囊，用尾巴拍了一下水。就一下。"
+   },
+   {
+    "text": "看看它的洞。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 35
+    },
+    "result_text": "洞里垫着一层磨圆的碎石。你拿走了最亮的几颗。"
+   },
+   {
+    "text": "别碰它。",
+    "veins": [],
+    "result": {},
+    "result_text": "干掉的东西自己知道时候。你让开了它的路。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_4",
+  "layer": 3,
+  "title": "有人留下的警告",
+  "body": "岩壁上用矿粉喷着一行字：别数脚步声。下面还有半句，被水渍泡掉了。",
+  "options": [
+   {
+    "text": "补齐剩下的半句。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 1,
+     "card_reward": "common"
+    },
+    "result_text": "你按自己的理解补了半句。写完发现，两段字迹是一样的。"
+   },
+   {
+    "text": "把警告擦掉。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 25
+    },
+    "result_text": "矿粉收起来还能用。墙干净了，也错了。"
+   },
+   {
+    "text": "不数就不数。",
+    "veins": [],
+    "result": {},
+    "result_text": "你哼着歌走完那一段。跑调，但有用。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_3",
+  "layer": 4,
+  "title": "渊民的仪式现场",
+  "body": "洞壁下摆着一圈白石头，沙地上画着五个符号。火刚熄，灰是温的。",
+  "options": [
+   {
+    "text": "按渊民的礼数绕一圈。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": -2,
+     "heal": 8
+    },
+    "result_text": "你按礼数绕了一圈。走过第三个符号的时候，沙地亮了一下。"
+   },
+   {
+    "text": "收走白石头。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 40,
+     "gaze": 2
+    },
+    "result_text": "白石头是墟盐结晶。有人的祭品变成了你的路费。"
+   },
+   {
+    "text": "从圈外走。",
+    "veins": [],
+    "result": {},
+    "result_text": "你没有跨进去。这一圈不缺人。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_4",
+  "layer": 4,
+  "title": "呼吸的节奏",
+  "body": "你在洞里站了一分钟，呼吸慢了下来，和气流对上了。对上之后，肺不用你管了。",
+  "options": [
+   {
+    "text": "顺着这个节奏走。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "heal": 12,
+     "gaze": 1
+    },
+    "result_text": "你顺着它走了很久。肺不疼了。疼的地方换了一个，说不清在哪。"
+   },
+   {
+    "text": "打破它。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 4,
+     "card_reward": "uncommon"
+    },
+    "result_text": "你猛吸一口气。气流散了，在别处重新聚起来，聚得比刚才慢。"
+   },
+   {
+    "text": "站着别动。",
+    "veins": [],
+    "result": {},
+    "result_text": "它先散的。你后走的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_3",
+  "layer": 5,
+  "title": "净化者的圣火堆",
+  "body": "圣火堆烧得很旺，围火坐过的人一个都不在。灰是白的，火不肯灭。",
+  "options": [
+   {
+    "text": "把手伸进火里。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 6,
+     "card_reward": "rare"
+    },
+    "result_text": "火烧穿了你的一部分。拿走的部分没还，还回来的部分更好用。"
+   },
+   {
+    "text": "加一把燃料。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gaze": 1,
+     "heal": 10
+    },
+    "result_text": "火收下了燃料，烧得更旺。暖意漫过来。你欠了它一次。"
+   },
+   {
+    "text": "绕开火堆。",
+    "veins": [],
+    "result": {},
+    "result_text": "白灰在你身后扬了一下。风的问题。应该是。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_4",
+  "layer": 5,
+  "title": "还在工作的旧光者设备",
+  "body": "一台仪表嵌在岩壁里，屏幕每隔几秒跳一次。数字一直在变小。没有人给它供电。",
+  "options": [
+   {
+    "text": "等它数到零。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2,
+     "card_reward": "uncommon"
+    },
+    "result_text": "还差很远。但你等到了它跳的那一下：数字旁边多了三个字，是你来的方向。"
+   },
+   {
+    "text": "拆走能源块。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 50
+    },
+    "result_text": "屏幕黑了。数字停在很大的地方。走廊里安静了一格。"
+   },
+   {
+    "text": "把数字记住，走。",
+    "veins": [],
+    "result": {},
+    "result_text": "你把数字记下来了。纸条上多了一道折痕，不是你折的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_3",
+  "layer": 6,
+  "title": "往深处去的人",
+  "body": "那个人穿着制式防护服，动作像穿着一件很旧的衣服。他点了点头，没说话，把一块相石推到你脚边。",
+  "options": [
+   {
+    "text": "推回去。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": -1,
+     "heal": 8
+    },
+    "result_text": "他笑了。你们谁都没说话。协议签好了。"
+   },
+   {
+    "text": "收下相石。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "card_reward": "uncommon",
+     "gaze": 1
+    },
+    "result_text": "石头是温的。他转身往深处走。深处不是这个方向。"
+   },
+   {
+    "text": "站在原地。",
+    "veins": [],
+    "result": {},
+    "result_text": "他先走的。你记住了他站的位置。那个位置后来一直空着。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_4",
+  "layer": 6,
+  "title": "深层的回声",
+  "body": "你对着竖井喊了一声。回来两个声音：一个是你的。另一个慢半拍，学得很像。",
+  "options": [
+   {
+    "text": "再喊一声。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 1,
+     "gold": 40
+    },
+    "result_text": "第二次它先喊了。你顺着它的方向摸到一个补给点。落了灰的货架上没有脚印。"
+   },
+   {
+    "text": "保持安静。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "你咽了口口水。回声也咽了。它比你多咽了一声。"
+   },
+   {
+    "text": "捂住耳朵走。",
+    "veins": [],
+    "result": {},
+    "result_text": "你走你的，它学它的。谁也不欠谁。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_3",
+  "layer": 7,
+  "title": "震台上的新刻痕",
+  "body": "刻痕是新的，边缘还挂着石粉。记的是日期，用的是殖民历。日期是三天后。",
+  "options": [
+   {
+    "text": "在旁边刻下自己的日期。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 2,
+     "card_reward": "rare"
+    },
+    "result_text": "你刻完才发现，两行字是同一种笔迹。不是你的。"
+   },
+   {
+    "text": "把石粉带走。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 35
+    },
+    "result_text": "石粉是很好的引子。刻字的人不在乎，他要刻的是未来。"
+   },
+   {
+    "text": "别碰。",
+    "veins": [],
+    "result": {},
+    "result_text": "三天后你会想回来读这里。现在你只想走。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_4",
+  "layer": 7,
+  "title": "门后什么都没有",
+  "body": "门是旧光者样式的，感应很灵。门后是间空屋，墙面很新。屋中间有一把椅子。",
+  "options": [
+   {
+    "text": "坐进椅子。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2,
+     "heal": 15
+    },
+    "result_text": "椅子按你的坐姿调整了三次。它记得上一个人的姿势，顺手修正了你的。"
+   },
+   {
+    "text": "拆门上的感应器。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 55,
+     "damage": 4
+    },
+    "result_text": "感应器拆下来的时候叫了一声，很短。那扇门从那以后没再开过。"
+   },
+   {
+    "text": "帮门带上。",
+    "veins": [],
+    "result": {},
+    "result_text": "你出去的时候帮它把门带上。它开了半下。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_5",
+  "layer": 2,
+  "title": "一排还在出风的更衣柜",
+  "body": "更衣柜嵌在岩壁里，柜门上有编号。其中一格在出风，风是别人的呼吸节奏。",
+  "options": [
+   {
+    "text": "打开出风的那格。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 35,
+     "damage": 4
+    },
+    "result_text": "里面是半罐氧气和一张调岗单。罐是满的，单是空的。"
+   },
+   {
+    "text": "把所有柜门都关严。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "风停了。走廊安静下来，安静得像有人道了谢。"
+   },
+   {
+    "text": "不碰。",
+    "veins": [],
+    "result": {},
+    "result_text": "你走过去之后，出风的那格换了位置。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_6",
+  "layer": 2,
+  "title": "有人画在地上的箭头",
+  "body": "矿粉画的箭头指向下层，笔画很稳。箭头旁边写着两个字：快走。",
+  "options": [
+   {
+    "text": "顺着箭头走。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 30
+    },
+    "result_text": "箭头把你带到一处干燥的岔口。写箭头的人留下的火堆还剩一点余温。"
+   },
+   {
+    "text": "反着走。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "damage": 5,
+     "card_reward": "uncommon"
+    },
+    "result_text": "反方向的路塌了一半。你从缝里挤过去，东西还在，手破了。"
+   },
+   {
+    "text": "原地休息。",
+    "veins": [],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "你靠着箭头坐了一会儿。字迹在你的余光里换了方向。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_5",
+  "layer": 3,
+  "title": "一口倒在旱地的井",
+  "body": "井圈完好，井绳是新换的。井里没有水，只有一层很细的沙在往下漏。",
+  "options": [
+   {
+    "text": "顺着井绳下去。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "damage": 6,
+     "card_reward": "uncommon"
+    },
+    "result_text": "井底有一间干房。东西都在，人走的时候把水留在了这里。"
+   },
+   {
+    "text": "收集漏下来的沙。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 40
+    },
+    "result_text": "沙在瓶子里继续漏。瓶子永远漏不满。收货的人就认这个。"
+   },
+   {
+    "text": "把井绳卷走。",
+    "veins": [],
+    "result": {},
+    "result_text": "绳比看上去长。你卷到第三圈就停手了，够用就行。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_6",
+  "layer": 3,
+  "title": "一面会长字的墙",
+  "body": "岩壁上浮出很浅的字，一层一层叠着。最新的字还没干，记的是你脚步的节奏。",
+  "options": [
+   {
+    "text": "把最上面一层抹掉。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "gaze": -1,
+     "heal": 8
+    },
+    "result_text": "字没了，墙面平了。你的脚步声轻了一点。"
+   },
+   {
+    "text": "往下读旧的一层。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 1,
+     "card_reward": "common"
+    },
+    "result_text": "旧字是上一批人的对话。有一句是回你的，你确定你还没说过。"
+   },
+   {
+    "text": "背对着墙走。",
+    "veins": [],
+    "result": {},
+    "result_text": "你没看。字在你背后写完了，笔画声很轻。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_5",
+  "layer": 4,
+  "title": "泡在光池里的补给箱",
+  "body": "补给箱沉在光池边缘，箱体发着很淡的光。锁是开的。里面的亮和池水的亮不是一种。",
+  "options": [
+   {
+    "text": "把手伸进光里拿。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gold": 45,
+     "gaze": 1
+    },
+    "result_text": "东西到手了。你的手在暗中会亮一小会儿，一星期左右。"
+   },
+   {
+    "text": "用杆子把箱子挑翻。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 25,
+     "damage": 3
+    },
+    "result_text": "箱子翻在池外，亮的东西散了一地。有几件在你脚下熄了。"
+   },
+   {
+    "text": "把箱子按回水里。",
+    "veins": [],
+    "result": {},
+    "result_text": "它沉下去的时候光稳了。池边安静得像什么都没发生过。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_6",
+  "layer": 4,
+  "title": "一副没人接的耳机",
+  "body": "耳机挂在石笋上，线的另一头埋进岩层。耳机里有很轻的呼吸声，两个人份的。",
+  "options": [
+   {
+    "text": "戴上听。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 1,
+     "heal": 6
+    },
+    "result_text": "他们聊的是明天的排班。明天在这里是很久以前的事。"
+   },
+   {
+    "text": "对着线说话。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "你说完，那边静了一会儿。然后有人替你把没说完的半句补上了。"
+   },
+   {
+    "text": "把线剪断。",
+    "veins": [],
+    "result": {
+     "gold": 20
+    },
+    "result_text": "线头里的金属卖了钱。呼吸声停在你剪断的那一拍。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_6",
+  "layer": 5,
+  "title": "一排朝下喷的热泉眼",
+  "body": "热泉从洞顶往下喷，落点围成一个圈。圈里的地面是凉的，圈外是烫的。",
+  "options": [
+   {
+    "text": "站进圈里。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "heal": 12,
+     "gaze": 1
+    },
+    "result_text": "热落在你四周，不落在你身上。圈给你留着位置。"
+   },
+   {
+    "text": "在圈外的烫地上找东西。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "damage": 6,
+     "gold": 50
+    },
+    "result_text": "烫地上有前人掉的补给袋。东西捡齐了，鞋底薄了一层。"
+   },
+   {
+    "text": "把圈用碎石填了。",
+    "veins": [],
+    "result": {},
+    "result_text": "你填完就走。身后泉眼换了个地方，重新围了一个圈。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_7",
+  "layer": 5,
+  "title": "写满排班表的白板",
+  "body": "白板挂在裂带的岩壁上，排班表写到了第 41 天。擦过很多次的字痕叠成了灰色。",
+  "options": [
+   {
+    "text": "在第 42 天写上自己的名字。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 1,
+     "gold": 35
+    },
+    "result_text": "字迹落上去的一瞬，整块板的旧字都深了一度。有人接了你的班。"
+   },
+   {
+    "text": "把整块板擦干净。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "heal": 10
+    },
+    "result_text": "擦完之后你喘匀了气。板面干净得像没有人来过，包括你。"
+   },
+   {
+    "text": "抄下第 41 天的安排。",
+    "veins": [],
+    "result": {
+     "card_reward": "common"
+    },
+    "result_text": "那天的安排只有一行：交给人字底的。你低头看了看自己脚下。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_5",
+  "layer": 6,
+  "title": "剂量表挂在走廊正中",
+  "body": "表盘的指针朝下，超了量程。有人用记号笔在表盘上补了一个新的刻度，标着你的方向。",
+  "options": [
+   {
+    "text": "把指针掰回来。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 40,
+     "damage": 4
+    },
+    "result_text": "指针断了。走廊的读数恢复了正常，是坏的那种正常。"
+   },
+   {
+    "text": "照补上的刻度走。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 1,
+     "card_reward": "uncommon"
+    },
+    "result_text": "那条路比剂量表上任何一格都深。走完之后，表盘安静了。"
+   },
+   {
+    "text": "把表摘下来带走。",
+    "veins": [],
+    "result": {},
+    "result_text": "表在你包里继续走针。你不再看它，它也不再看你。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_6",
+  "layer": 6,
+  "title": "一台还在广播的收音机",
+  "body": "收音机用电池点着，播的是上层的晨间节目。杂音里夹着一句很近的话：收到请回复。",
+  "options": [
+   {
+    "text": "回复。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 2,
+     "gold": 30
+    },
+    "result_text": "你说：收到。节目正常播完。你听见了笔尖在纸上记了什么。"
+   },
+   {
+    "text": "拆电池。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 45
+    },
+    "result_text": "节目停在半句歌上。电池还很足，你装进了口袋。"
+   },
+   {
+    "text": "调大杂音。",
+    "veins": [],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "杂音盖住了那句话。你靠着收音机歇了一会儿，像靠着人。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_5",
+  "layer": 7,
+  "title": "一段循环播放的告别",
+  "body": "岩层里有一句震语在循环，音色很旧。翻译过来是：我先走了，别数我走了多久。",
+  "options": [
+   {
+    "text": "跟着念一遍。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 2,
+     "heal": 10
+    },
+    "result_text": "你念完，循环停了。岩层把这句还给了你，用你的音色。"
+   },
+   {
+    "text": "把循环记进历法。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "你记下了它的周期。往后的每一天，这个时刻它都会准时安静。"
+   },
+   {
+    "text": "等它自己停下来。",
+    "veins": [],
+    "result": {},
+    "result_text": "你等了很久。它没停，你先走了。这不算数。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_6",
+  "layer": 7,
+  "title": "一间反着装修的宿舍",
+  "body": "宿舍的床在天花板上，桌子朝下，杯子倒扣着装满了水。有人在这里倒着生活过很久。",
+  "options": [
+   {
+    "text": "在倒着的床上躺一会儿。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 14
+    },
+    "result_text": "重力在你躺下之后迟疑了一下。你睡得很沉，没有做梦。"
+   },
+   {
+    "text": "把倒着的杯子扶正。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "damage": 4,
+     "card_reward": "uncommon"
+    },
+    "result_text": "水洒了。房间不喜欢被纠正，墙纸皱了一下眉。"
+   },
+   {
+    "text": "带走倒扣的杯子。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 30
+    },
+    "result_text": "杯子在你包里一直没干。有人问起，你就说是露水。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_7",
+  "layer": 2,
+  "title": "横在矿道里的安全绳",
+  "body": "一条安全绳横过矿道，两端钉死。绳子中段磨得发亮，亮的地方离地三尺。",
+  "options": [
+   {
+    "text": "解下绳子。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 30,
+     "damage": 3
+    },
+    "result_text": "绳子收了十米。钉子留着的四个孔排成一条线，指向上层。"
+   },
+   {
+    "text": "蹲下，从绳子下面过。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "你从绳子下面过去了。绳子晃了几下，替你数了步数。"
+   },
+   {
+    "text": "原样走开。",
+    "veins": [],
+    "result": {},
+    "result_text": "亮处又磨亮了一分。这条路有人常走。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_7",
+  "layer": 3,
+  "title": "倒扣的采矿钻",
+  "body": "采矿钻倒扣在碎岩上，钻头朝天。机身还温着，温度和你的手心一样。",
+  "options": [
+   {
+    "text": "拆走钻头。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "damage": 4,
+     "card_reward": "uncommon"
+    },
+    "result_text": "钻头比看上去沉。你拖走它的时候，碎岩往塌的方向多滚了一些。"
+   },
+   {
+    "text": "顺着温的方向摸。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 8,
+     "gaze": 1
+    },
+    "result_text": "温的来源不是钻。钻只是搭在这上面的一件东西。"
+   },
+   {
+    "text": "让它保持原样。",
+    "veins": [],
+    "result": {},
+    "result_text": "你把被你碰歪的碎石摆了回去。摆完之后，温度没有变。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_7",
+  "layer": 4,
+  "title": "会还话的亮墙",
+  "body": "光池边的岩壁会把你刚说过的话还给你，隔一拍。还回来的语气更平静。",
+  "options": [
+   {
+    "text": "对它说一句真话。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2,
+     "card_reward": "common"
+    },
+    "result_text": "你说了。它还回来的时候，删掉了你撒谎的那半句。"
+   },
+   {
+    "text": "对它喊。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 5,
+     "gold": 35
+    },
+    "result_text": "墙震落了一层光苔。苔下面贴着前人塞的钱。"
+   },
+   {
+    "text": "沉默。",
+    "veins": [],
+    "result": {},
+    "result_text": "你不说，它也不还。你们对峙到火把矮了一截。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_8",
+  "layer": 5,
+  "title": "还在计时的高压锅",
+  "body": "裂带深处有一口老式高压锅，阀每隔七息放一次气。锅盖上摆着一只倒空的碗。",
+  "options": [
+   {
+    "text": "等它放完第七次气。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "heal": 10,
+     "gaze": 1
+    },
+    "result_text": "第七次放气之后，阀没有再落回去。锅里的东西熟了，愿意分你一半。"
+   },
+   {
+    "text": "拿走倒扣的碗。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 40
+    },
+    "result_text": "碗底刻着字：借碗要还。你把钱压在了锅盖上。"
+   },
+   {
+    "text": "把阀拧死。",
+    "veins": [],
+    "result": {},
+    "result_text": "气声停了。你走出很远，锅才想起来继续响。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_7",
+  "layer": 6,
+  "title": "没拆封的辐射药",
+  "body": "铅盒里躺着三支辐射药，封条完好。盒盖内侧用指甲划了很多道，每五道一组，划到第三组。",
+  "options": [
+   {
+    "text": "打一针试试。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "heal": 15,
+     "damage": 5
+    },
+    "result_text": "药是真的。疼也是真的。疼过之后，你数铅盒的方式变了。"
+   },
+   {
+    "text": "整盒卖掉。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 55
+    },
+    "result_text": "收药的人没验封条。他数了三遍钱，一遍比一遍快。"
+   },
+   {
+    "text": "把铅盒留在原处。",
+    "veins": [],
+    "result": {},
+    "result_text": "你把盒盖按原样扣好。第三组划痕停在第十四道。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_7",
+  "layer": 7,
+  "title": "没有观众的演出",
+  "body": "震台上摆着一排小石子，按音高排开。有人刚敲过它们，敲的顺序记在旁边的石板上。",
+  "options": [
+   {
+    "text": "按石板敲一遍。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "damage": 4,
+     "card_reward": "rare"
+    },
+    "result_text": "你敲错了一个音。错的那一下把整段补完了，补法比原谱好。"
+   },
+   {
+    "text": "把石子收进口袋。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 40
+    },
+    "result_text": "石子在你包里互相碰，碰出来的还是那段音。"
+   },
+   {
+    "text": "按自己的顺序敲。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 1
+    },
+    "result_text": "台子听完了，把你的顺序记在了石板背面。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_8",
+  "layer": 2,
+  "title": "一盏埋进苔里的矿灯",
+  "body": "矿灯半埋在苔丛里，灯罩朝下。苔绕开了灯罩的位置，绕得很圆。",
+  "options": [
+   {
+    "text": "把灯挖出来。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "common",
+     "gaze": 1
+    },
+    "result_text": "灯还亮。苔在你把灯抱起来之后，慢慢把那个圆填上了。"
+   },
+   {
+    "text": "就着灯光歇一会儿。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "灯光圈刚好够坐两个人。另一个位置一直空着，不凉。"
+   },
+   {
+    "text": "把灯罩拧下来带走。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 25
+    },
+    "result_text": "灯罩比灯值钱。苔在你收手的瞬间围拢了。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_8",
+  "layer": 3,
+  "title": "画在岩壁上的宿舍平面图",
+  "body": "有人把宿舍的布局画在岩壁上，床铺桌椅都有编号。图的角落写着：这样就能记住家了。",
+  "options": [
+   {
+    "text": "把图拓下来。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "拓片上多了一间图上没有的屋子。门的位置画得很仔细。"
+   },
+   {
+    "text": "在图上加一件你的东西。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 10
+    },
+    "result_text": "你画了一把椅子。画完之后，这一层不再像路过。"
+   },
+   {
+    "text": "不添东西。",
+    "veins": [],
+    "result": {},
+    "result_text": "你怕它认下来。有些图沾了东西就会开始等人。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_8",
+  "layer": 4,
+  "title": "浮在光池上的一封信",
+  "body": "信封浮在光池正中，不沉，也不漂走。信封上没有收件人，封口用的是红渊的火漆。",
+  "options": [
+   {
+    "text": "捞上来读。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "gaze": 2,
+     "card_reward": "uncommon"
+    },
+    "result_text": "信只有一行：别找我。落款的日期你认得，是明天。"
+   },
+   {
+    "text": "把它按进水里。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 4
+    },
+    "result_text": "信沉了。光池亮了一下，像清点完一件寄存的行李。"
+   },
+   {
+    "text": "替它拆掉火漆。",
+    "veins": [],
+    "result": {
+     "gold": 30
+    },
+    "result_text": "火漆是空心的，里面封着一小粒金。信纸你自己没看。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_9",
+  "layer": 5,
+  "title": "一道自己拐弯的蒸汽",
+  "body": "管道裂口的蒸汽本该直冲，却在半途拐了个弯，绕开你常站的那个位置。",
+  "options": [
+   {
+    "text": "站进蒸汽里。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "damage": 6,
+     "card_reward": "rare"
+    },
+    "result_text": "烫意穿身而过，没留下伤。蒸汽记性不好，认错了一次人。"
+   },
+   {
+    "text": "研究它拐弯的轨迹。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "轨迹画出来是一个人抬手挡东西的形状。你照着练了一会儿。"
+   },
+   {
+    "text": "把裂口封上。",
+    "veins": [],
+    "result": {},
+    "result_text": "你封得很快。封完之后，那个位置空得很大。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_8",
+  "layer": 6,
+  "title": "一墙贴到天花板的剂量条",
+  "body": "走廊两侧贴满剂量条，从脚底贴到顶。每一条都黄了，只有齐腰高的那一排还是白的。",
+  "options": [
+   {
+    "text": "读齐腰那排的日期。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 1,
+     "gold": 30
+    },
+    "result_text": "白条记的日期是连续的，间隔十二小时。有人在这里值过很久的班。"
+   },
+   {
+    "text": "撕下最黄的一条。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 45,
+     "damage": 3
+    },
+    "result_text": "黄得最透的那条背后粘着一枚旧币。你的指尖麻了一下。"
+   },
+   {
+    "text": "补一条自己的。",
+    "veins": [],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "你把新条贴在白排的末尾。贴完之后，那排还是白的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_8",
+  "layer": 7,
+  "title": "一个正在自我删除的日志",
+  "body": "旧光者的日志悬浮在台面上，行数每隔几息少一行。删到中途会停一下，像在犹豫。",
+  "options": [
+   {
+    "text": "赶在删除前读。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "uncommon",
+     "gaze": 1
+    },
+    "result_text": "你读到三行。第二行是你的名字，写法和你自己写的习惯一样。"
+   },
+   {
+    "text": "按住删除键。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 12
+    },
+    "result_text": "删除停了。日志安安静静地写完，写的是一件很小的喜事。"
+   },
+   {
+    "text": "替它把剩下的抄下来。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "gold": 35
+    },
+    "result_text": "你抄得比删得快。抄完的最后一句是：谢谢你，不管你是谁。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_1",
+  "layer": 1,
+  "title": "降落的旧舱",
+  "body": "登陆基地外围有一只废弃的返回舱，舱门半开，气闸的灯还亮着一格。八百年了，那一格没灭。",
+  "options": [
+   {
+    "text": "钻进去翻物资。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 45,
+     "damage": 3
+    },
+    "result_text": "舱里的储物箱码得很整齐，翻到最后一样的时候，割破的手套在真空边缘渗出血珠。血珠是圆的，滚走了。"
+   },
+   {
+    "text": "把氧气罐留给下一个人。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 10
+    },
+    "result_text": "舱里的人早就走了，走之前把水壶挂在门边。壶是满的。你替他把壶又挂正了一点。"
+   },
+   {
+    "text": "走开。",
+    "veins": [],
+    "result": {},
+    "result_text": "舱皮在热胀冷缩，一声一声，像有人在敲。这里没有风，你把这件事记成了风。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_2",
+  "layer": 1,
+  "title": "帝星的影子",
+  "body": "站在裂隙边能看到帝星，很小，很亮。这里没有大气，它的光不散，是一根细线，直直扎进石头缝里。",
+  "options": [
+   {
+    "text": "对着光站一会儿。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 1,
+     "heal": 5
+    },
+    "result_text": "帝星不管这里。看它一会儿，是为了记得上面还有别的东西。"
+   },
+   {
+    "text": "顺着裂隙往下听。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "common"
+    },
+    "result_text": "裂隙把地底的震动送上来一丝。你听懂了半句：更深的地方，有东西活着。"
+   },
+   {
+    "text": "盖上石板。",
+    "veins": [],
+    "result": {},
+    "result_text": "光被关在外面。这种黑和闭上眼不一样——闭上眼是自己愿意的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_3",
+  "layer": 1,
+  "title": "休眠的孢子",
+  "body": "陨击坑的阴影里积着一层粉末，是耐辐射的休眠孢子。它们在等一个不是这里的地方，等了几万年。",
+  "options": [
+   {
+    "text": "带一撮下去。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "你把孢子扫进空罐。它们不响也不动。带它们下去的人很多，带它们活着下去的人很少。"
+   },
+   {
+    "text": "绕开，别踩。",
+    "veins": [],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "有些等待与你无关。你把脚印收轻了。"
+   },
+   {
+    "text": "用靴子碾过去。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "gold": 30,
+     "damage": 6
+    },
+    "result_text": "粉末溅起来又落下，一点声音也没有。靴底缝里嵌进一点发亮的东西，抠不出来。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_9",
+  "layer": 2,
+  "title": "刻在岩壁上的历",
+  "body": "一面岩壁刻满细密的刻痕，深浅不一，最老的那些被菌膜盖住一半。是记忆者的历，记到上一次大塌为止。",
+  "options": [
+   {
+    "text": "把最新的一道补上。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "你不知道今天算什么日子，就照着手感刻了一道。刻完才发现岩壁是温的。"
+   },
+   {
+    "text": "抄下最老的一段。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 25,
+     "gaze": 1
+    },
+    "result_text": "有几段刻痕的意思已经没人认得。抄下来的东西也许值钱，也许只是重。"
+   },
+   {
+    "text": "什么都不刻。",
+    "veins": [],
+    "result": {},
+    "result_text": "历不缺你这一道。你把手收回来，掌心里留着一点别人的旧震动。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_10",
+  "layer": 2,
+  "title": "不动的邻居",
+  "body": "湿岩缝里伏着一只休眠的两栖类，皮皱得像干了的水囊。它可以几年不吃不动。你路过三回，它都在。",
+  "options": [
+   {
+    "text": "贴着它的呼吸走。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "它呼吸很慢，慢得能对上你的步子。走完这段路，你的喘也匀了。"
+   },
+   {
+    "text": "把碎屑分它一点。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "card_reward": "common"
+    },
+    "result_text": "它不吃。碎屑沉进缝里，喂了别的小东西。这一段路的灯光亮了一些。"
+   },
+   {
+    "text": "别吵醒它。",
+    "veins": [],
+    "result": {},
+    "result_text": "有些安静是借来的。你把借来的原样放回。"
+   }
+  ]
+ },
+ {
+  "id": "event_d2_11",
+  "layer": 2,
+  "title": "沉下来的东西",
+  "body": "冷洞的吃食全靠上面沉降。碎屑落了八万年，铺出一层软的。软层里露出一角金属，不是矿。",
+  "options": [
+   {
+    "text": "挖出来看看。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "relic": true
+    },
+    "result_text": "旧光者的东西，落了八万年也没锈完。它比你更早到这里。"
+   },
+   {
+    "text": "别碰，让软层盖回去。",
+    "veins": [],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "你把软层按回去。这层里埋的东西，睡得比你好。"
+   },
+   {
+    "text": "循着碎屑往上找源头。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gold": 40
+    },
+    "result_text": "碎屑的来路也是你往下要走的去路。一路上捡到几样还能用的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_9",
+  "layer": 3,
+  "title": "泉眼的水囊",
+  "body": "泉眼里悬着一个水囊，两栖类在里面繁殖。水在这里是按滴记的，一滴一滴，记了不知多少年。",
+  "options": [
+   {
+    "text": "只取一口。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 10
+    },
+    "result_text": "你按规矩取了一口。水囊晃了晃，又满了。这里的规矩是够用就好。"
+   },
+   {
+    "text": "把随身的空罐灌满。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 35,
+     "gaze": 1
+    },
+    "result_text": "你多拿了。回声在空洞里传得很远，不知道谁听见了。"
+   },
+   {
+    "text": "给水囊让路。",
+    "veins": [],
+    "result": {},
+    "result_text": "你从别的缝绕过去。石头记不住人，水记得。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_10",
+  "layer": 3,
+  "title": "干死的通道",
+  "body": "一条水道干了几十年，河床上的贝类还张着壳。有人的行李摊在河床中间，人不在。",
+  "options": [
+   {
+    "text": "翻翻行李。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 30,
+     "damage": 4
+    },
+    "result_text": "行李里有干粮和票子。翻到一半，头顶落了些灰，落得很匀，像下了一场不着急的雪。"
+   },
+   {
+    "text": "沿着河床找痕迹。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "走的人往深处去了，脚步很稳。你顺着那条路走了一段，路比刚才好走。"
+   },
+   {
+    "text": "把行李摆整齐。",
+    "veins": [],
+    "result": {
+     "heal": 5
+    },
+    "result_text": "你把摊开的东西收拢摆好。谁的东西谁认得，摆整齐了认起来快。"
+   }
+  ]
+ },
+ {
+  "id": "event_d3_11",
+  "layer": 3,
+  "title": "硬矿石上的牙印",
+  "body": "硬矿石表面有一排牙印，深得能放进手指。钻孔贝干的，钻了几代。最深的牙印里嵌着一点发亮的矿屑。",
+  "options": [
+   {
+    "text": "抠出矿屑。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 45
+    },
+    "result_text": "矿屑是好东西。贝钻了三代才攒下的，你一次拿完了。"
+   },
+   {
+    "text": "学着它的路线找缝。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "common"
+    },
+    "result_text": "牙印是路标。顺着最深的那个，你找到一条缝，缝里有风，风是活的。"
+   },
+   {
+    "text": "在牙印旁边刻个记号。",
+    "veins": [],
+    "result": {},
+    "result_text": "你刻了一道短的。后来的东西看得懂就看，看不懂，就当石头长了个疤。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_9",
+  "layer": 4,
+  "title": "涌喉的市集",
+  "body": "巢城的市集开在水线上方，客议会说话算数。摊位挂着各家的灯，渊民和上面来的东西摆在同一个架子上。",
+  "options": [
+   {
+    "text": "用矿票换干红蕨。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 12
+    },
+    "result_text": "摊主按客议会的价收的钱，没抬价。涌喉的规矩是市集里不问来路。"
+   },
+   {
+    "text": "打听往深处的路。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "一个客语者给你画了半张图。剩下半张他说：下面的路，图不如腿。"
+   },
+   {
+    "text": "只看不买。",
+    "veins": [],
+    "result": {},
+    "result_text": "你逛完了没买。摊主也不恼，把灯往你这边挪了挪，算是照明。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_10",
+  "layer": 4,
+  "title": "倒挂林的暗处",
+  "body": "红蕨林从洞顶垂下来，深红紫黑金红。林子深处的红光被叶子滤成暗的。暗处有个很大的形状，随热对流慢慢漂。",
+  "options": [
+   {
+    "text": "退回光里。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "你退回亮处。那形状没跟来。它漂它的，你走你的。"
+   },
+   {
+    "text": "趁它没注意穿过林子。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "rare",
+     "damage": 8
+    },
+    "result_text": "你从林子里过去了，带了点东西出来。林子在你身后合拢，像水合拢。"
+   },
+   {
+    "text": "对着它站定。",
+    "veins": [],
+    "result": {
+     "gaze": 2,
+     "damage": 5
+    },
+    "result_text": "它把你记了一下。被记过的地方现在有点凉。"
+   }
+  ]
+ },
+ {
+  "id": "event_d4_11",
+  "layer": 4,
+  "title": "旧城的街灯",
+  "body": "水下的旧城市残骸，街灯还立着。稳定空洞海的废墟保存完好——结构层替它们挡了八万年。",
+  "options": [
+   {
+    "text": "拆一盏灯。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 50,
+     "damage": 5
+    },
+    "result_text": "灯座拆下来的时候，整条街的灯闪了一下。只闪了一下。也可能是错觉。"
+   },
+   {
+    "text": "数一数有几盏还亮。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "三十七盏。你数了两遍。这种事没人会知道，除了你数过的那条街。"
+   },
+   {
+    "text": "在灯下坐一会儿。",
+    "veins": [],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "灯下的位置比别处暖。八万年没人的地方，暖是从石头里渗出来的。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_10",
+  "layer": 5,
+  "title": "喷息的汤",
+  "body": "绿洲城邦的汤锅架在温泉支流上，汤是菌和管虫尖熬的。喷议会的中立挂在门口：卖汤，不卖立场。",
+  "options": [
+   {
+    "text": "喝一碗。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 14
+    },
+    "result_text": "汤很烫，辣得很实在。碗底沉着几粒盐——墟盐，融在红光里才算数。"
+   },
+   {
+    "text": "问最近喷发的日子。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "热议会的历上写着：大喷在两个喷之后。你把日子记在手背上。"
+   },
+   {
+    "text": "白喝一碗就走。",
+    "veins": [],
+    "result": {
+     "damage": 6
+    },
+    "result_text": "锅边守卫的棍子比语言快。中立不等于没脾气。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_11",
+  "layer": 5,
+  "title": "硫菌丘之间",
+  "body": "黑色菌丘一座一座立在裂缝边，像塔群。最近的一座在冒新芽——它要长高了，长高就挡光。",
+  "options": [
+   {
+    "text": "掐掉新芽。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "gold": 40,
+     "damage": 4
+    },
+    "result_text": "菌芽的汁液是硬通货。断口喷了你一手硫沫，火辣辣的。"
+   },
+   {
+    "text": "给它量个高。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "common"
+    },
+    "result_text": "你用步子量了量，记在心里。这块地方的高度表，比你先知道地震。"
+   },
+   {
+    "text": "从丘群中间穿过去。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gold": 20
+    },
+    "result_text": "丘群之间的风道是现成的路。你走过去，什么都没发生。什么都没发生就是好事。"
+   }
+  ]
+ },
+ {
+  "id": "event_d5_12",
+  "layer": 5,
+  "title": "冷却池边的卵",
+  "body": "冷却池边粘着一排卵，靠余温孵化。一次地震就能让这池水凉掉。凉掉的那天，这排卵就到日子了。",
+  "options": [
+   {
+    "text": "守到它们出膜。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 12
+    },
+    "result_text": "你守了半场。出膜的幼体往水里游，有一只回头看了你一眼。也许没有。"
+   },
+   {
+    "text": "捡两颗揣走。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 35,
+     "gaze": 1
+    },
+    "result_text": "卵在怀里是温的，卖到有炉子的地方是好价钱。身后有东西在看你，看了一会儿，走了。"
+   },
+   {
+    "text": "绕开这池水。",
+    "veins": [],
+    "result": {},
+    "result_text": "你的脚印没往池边去。这一趟你什么都没带，也什么都没欠。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_9",
+  "layer": 6,
+  "title": "挂着骨头的警示",
+  "body": "矿区入口的岩架上挂着一串骨头，间隔摆得很匀。是人的骨头。摆骨头的人想让你数清楚再进去。",
+  "options": [
+   {
+    "text": "数清楚再进去。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "二十六根。你进去的路程比摆骨头的人短，收获也比他短。"
+   },
+   {
+    "text": "不进去，沿边缘收矿。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 50,
+     "damage": 6
+    },
+    "result_text": "边缘的辐射矿成色够。皮肤开始发痒的时候你收手了。"
+   },
+   {
+    "text": "把骨头放下来，埋了。",
+    "veins": [],
+    "result": {
+     "gaze": 1
+    },
+    "result_text": "你把骨头收拢理好，埋了。做这件事的时候红光很亮。有人看着你做了这件事。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_10",
+  "layer": 6,
+  "title": "抗辐射的壳",
+  "body": "一只重金属鳞的甲壳类死在矿缝里，壳还完整。这身壳是它活命的本钱。现在是谁的本钱，就是谁的。",
+  "options": [
+   {
+    "text": "剥壳做护具。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "damage": 6,
+     "card_reward": "uncommon"
+    },
+    "result_text": "壳割手。做出来的东西糙，但管用。"
+   },
+   {
+    "text": "把壳留给更小的东西。",
+    "veins": [],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "缝里钻出来一只小的，住进了壳里。你看着它住进去的。这里连庇护都是接力。"
+   },
+   {
+    "text": "整只搬走卖。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "gold": 55
+    },
+    "result_text": "生物科技公司收这个，按克算。你没问它拿来做什么。"
+   }
+  ]
+ },
+ {
+  "id": "event_d6_11",
+  "layer": 6,
+  "title": "反应堆的余温",
+  "body": "旧反应堆的外壳上还有温度。上面的人两百年前建的东西，渊民叫它地神的骨灰坛。仪表都死了，风从管子里过，呜呜的。",
+  "options": [
+   {
+    "text": "拆一块屏蔽板。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 60,
+     "damage": 8
+    },
+    "result_text": "屏蔽板是好料。拆的时候你在管子的呜呜声里听见一个词，不像震语，也不像上面的话。"
+   },
+   {
+    "text": "把歪掉的仪表拨正。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "heal": 8,
+     "gaze": 1
+    },
+    "result_text": "仪表亮了一下，又灭了。灭之前那一瞬间的绿光，你记到现在。"
+   },
+   {
+    "text": "原样离开。",
+    "veins": [],
+    "result": {},
+    "result_text": "有些东西不缺你这一动。你退出去了，门没关，风继续呜呜。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_9",
+  "layer": 7,
+  "title": "祭祀台的灰",
+  "body": "震语者的祭祀台在热液边缘，台上积着灰，灰是烧完的历书。是敬意还是恐惧烧的，台上分不出来。",
+  "options": [
+   {
+    "text": "照着残灰续一炷。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "heal": 10,
+     "gaze": 1
+    },
+    "result_text": "你把手边能烧的都烧了。灰落下去的地方，热液亮了一下。"
+   },
+   {
+    "text": "把台上的灰扫走。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 45
+    },
+    "result_text": "灰里烧剩的东西不少。扫灰的人没回来收，你来收了。"
+   },
+   {
+    "text": "背对祭台坐一会儿。",
+    "veins": [],
+    "result": {
+     "heal": 6
+    },
+    "result_text": "你坐了会儿。背对着它，反而听得清它的动静。像很大的东西在很慢地呼吸。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_10",
+  "layer": 7,
+  "title": "钻探队的末端",
+  "body": "深层钻探队的管子伸到这里就停了。设备烂在原地，管口朝着核心的方向。停机原因的记录屏早就读不出来了。",
+  "options": [
+   {
+    "text": "拆管口的合金。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 65,
+     "damage": 5
+    },
+    "result_text": "合金是这趟最值钱的东西。拆的时候管子里掉出来一副手套，手骨还在里面，姿势是朝着外爬的。"
+   },
+   {
+    "text": "读记录屏的残句。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "rare"
+    },
+    "result_text": "只读得出半句：不要回。后面的字被热液洗掉了。你把这句也带上了。"
+   },
+   {
+    "text": "把管口封死。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "gaze": 1
+    },
+    "result_text": "你用随身的料把管口封了。封完之后这里安静了些。安静得像有什么换了个地方继续。"
+   }
+  ]
+ },
+ {
+  "id": "event_d7_11",
+  "layer": 7,
+  "title": "墟蛹的外壳",
+  "body": "废墟深处立着一只墟蛹，金属管道和骨骼把它缠成茧。茧里的红光是脉动的，慢，但是有节奏。它在重新运行一套八万年前的程序。",
+  "options": [
+   {
+    "text": "贴着外壳听。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": 2,
+     "damage": 6
+    },
+    "result_text": "你听见了排好的、成句的震动。它们穿过你的手往骨头里去。你抽手抽得够快，没有全留下。"
+   },
+   {
+    "text": "贴着最远的墙根绕过去。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "墟蛹不追东西。它只是在那里算，算你经过了。"
+   },
+   {
+    "text": "拿石头敲一下外壳。",
+    "veins": [],
+    "result": {
+     "damage": 8,
+     "card_reward": "uncommon"
+    },
+    "result_text": "茧里的节奏停了一拍，又继续。停的那一拍里，你手边多了样东西——从茧上剥落的。你不想知道它为什么剥落。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_1",
+  "layer": 8,
+  "title": "还在运转的走廊",
+  "body": "核心的走廊有灯。八万年了，灯还亮着，自动化的东西还在按旧光者的作息运行。门在你面前开，像你回来迟了。",
+  "options": [
+   {
+    "text": "走进去。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "rare",
+     "damage": 5
+    },
+    "result_text": "门里的一切都在等一个不会回来的人。你路过的时候，有东西把你的步数记进了某个八万年没人翻的账本。"
+   },
+   {
+    "text": "在窗台上留一样自己的东西。",
+    "veins": [],
+    "result": {
+     "heal": 8,
+     "gaze": 1
+    },
+    "result_text": "你放下一件小东西。它被扫了一遍，没有被清掉。这里总算有一样不是旧光者的东西了。"
+   },
+   {
+    "text": "抄近路穿过去。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gold": 55
+    },
+    "result_text": "你没走该走的道。账本没记你，角落里被遗漏的东西归了你。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_2",
+  "layer": 8,
+  "title": "不许关闭的告示",
+  "body": "谐振器外围的墙上刻着一行旧光者的字，下面有人用震语刻了翻译。翻译是：不要试图关闭它。不要试图控制它。它已经是你们的一部分了。",
+  "options": [
+   {
+    "text": "把这句抄下来。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "uncommon"
+    },
+    "result_text": "你抄了。抄完发现手是自己动的。这句话不该由手记，该由骨头记。"
+   },
+   {
+    "text": "往墙上补一句。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2
+    },
+    "result_text": "你在下面刻了自己的话：我看到了。刻完四周的灯亮了一瞬，像是有人回了一句：看到了。"
+   },
+   {
+    "text": "绕开那面墙。",
+    "veins": [],
+    "result": {},
+    "result_text": "墙上的字不缺读者，缺的是信的人。你信不信，往后的路会问你。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_3",
+  "layer": 8,
+  "title": "核心的红光",
+  "body": "最深处没有声音。谐振器的红光把整个穹腔照透，红光穿过你，你的影子是透的。站在这里，像站在一样东西的注意力的正中间。",
+  "options": [
+   {
+    "text": "在光里站到底。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "maxhp": 2,
+     "damage": 6
+    },
+    "result_text": "你站到红光把你从头到脚数完。数完之后你轻了一点，也硬了一点。它把你记成了这里的东西。"
+   },
+   {
+    "text": "掬一捧红光带走。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "card_reward": "rare",
+     "gaze": 2
+    },
+    "result_text": "红光捧不起来。你带走的只是手心里多一点的热。但你说你带走了，红渊没有反驳。"
+   },
+   {
+    "text": "转身往回走。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 10
+    },
+    "result_text": "你转身走了。红光在你背后留了一路。走得快的话，可以一直借着这点亮。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_4",
+  "layer": 1,
+  "eco": "eco_surface",
+  "bands": [
+   1,
+   2
+  ],
+  "title": "气闸的对答",
+  "body": "气闸一开一合，合上的力道比开的时候大。门边的对讲器沙沙响，像在等一句对得上的暗号。守夜的那位已经换过四版规程，它还在等第一版。",
+  "options": [
+   {
+    "text": "按规程敲三下，等回音。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 30,
+     "heal": 4
+    },
+    "result_text": "回音来了，比广播里的年轻。储物柜自己弹开一格，里面的补给码得整整齐齐，像在等领的人。"
+   },
+   {
+    "text": "直接进去，快一点。",
+    "veins": [],
+    "result": {
+     "heal": 12,
+     "damage": 6
+    },
+    "result_text": "补给是全的，动作也快。只有气闸合上的时候没等你收手——规程里没有快这一项，它是照规程办事的。"
+   },
+   {
+    "text": "把门固定住，让它开不全。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "gaze": -1
+    },
+    "result_text": "你用撬棍别住门轴。里面的一切停在半开：你看了看门框，没有看门里。它没有记住你。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_5",
+  "layer": 1,
+  "eco": "eco_surface",
+  "bands": [
+   1,
+   2
+  ],
+  "title": "第三层防护服",
+  "body": "挂钩上一排防护服，按挂的年头排。最外面那件晒得发脆，最里面那件几乎没见过光。每一件的胸口都有一串编号，编号后面都跟着一句话：不保证返程。",
+  "options": [
+   {
+    "text": "穿最外面那件，最旧的。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "脆的地方正好透风。旧有成旧的好处——该坏的它都坏完了，剩下的部分靠得住。"
+   },
+   {
+    "text": "穿最里面那件，几乎没晒过。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gold": 40,
+     "damage": 7
+    },
+    "result_text": "衣服是新的，口袋是满的：矿票、氧气罐、一枚别人的戒指。口袋的主人挂在第三排，你替他把这些东西背进了地下。"
+   },
+   {
+    "text": "都不穿，站远一点。",
+    "veins": [],
+    "result": {
+     "gaze": 1
+    },
+    "result_text": "真空把影子收得很短。多看这一眼，眼底的蓝斑过了很久才散。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_6",
+  "layer": 1,
+  "eco": "eco_surface",
+  "bands": [
+   1,
+   2
+  ],
+  "title": "晒了五百年的水箱",
+  "body": "水箱立在陨击坑的阴影里，裂了一道缝。渗出来的水在坑沿结成一串圆珠，五百年的日头都晒在里面。谁接的谁喝，这里没有别的规矩。",
+  "options": [
+   {
+    "text": "喝一口。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 6,
+     "damage": 4
+    },
+    "result_text": "水是甜的，甜里带着一点晒过的钝痛。五百年攒下来的东西，一起进了喉咙。"
+   },
+   {
+    "text": "把水箱整个搬走。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 35
+    },
+    "result_text": "深层的人按毫升收这个。你只是搬运，搬运不算喝。"
+   },
+   {
+    "text": "把裂口对准自己，等渗漏。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2,
+     "heal": 3
+    },
+    "result_text": "圆珠一颗一颗落进领口。你数着数着，就忘了自己在等什么——红光替你记着，它也看着。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_7",
+  "layer": 1,
+  "eco": "eco_surface",
+  "bands": [
+   1,
+   2
+  ],
+  "title": "按规程应答",
+  "body": "广播醒着。第三页念完又从头念，字与字之间隔着标准的停顿。规程第十一条：听到问询，应答。它问到的第几条了，没人数。",
+  "options": [
+   {
+    "text": "报自己的编号。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 3
+    },
+    "result_text": "编号报得很标准。广播停了一拍——从来没有人答得这么准。从这一拍起，它记住你了。"
+   },
+   {
+    "text": "报一个死人的编号。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 45
+    },
+    "result_text": "死人的编号对得上，死人的遗物费还没人领。手续齐全，款项当场结清。"
+   },
+   {
+    "text": "让静默继续。",
+    "veins": [],
+    "result": {},
+    "result_text": "你从广播底下走过去。第三页念完了，翻回第一页。没有名字的事，不算发生过。"
+   }
+  ]
+ },
+ {
+  "id": "event_d1_8",
+  "layer": 1,
+  "eco": "eco_surface",
+  "bands": [
+   1,
+   2
+  ],
+  "title": "坠轨的清单",
+  "body": "残骸散了一坡，清单卡在货舱的夹层里，塑封完好。每一行货物后面都有一栏签收人。签收人那一栏，从上到下都是空的。",
+  "options": [
+   {
+    "text": "按清单清点货物。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 50,
+     "damage": 3
+    },
+    "result_text": "一件一件对，对到最后一件的时候手被划了。清单上有它的名字，它就照清单办事。"
+   },
+   {
+    "text": "只拿清单上没有的。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "rare",
+     "damage": 5
+    },
+    "result_text": "没登记的东西压在最底下，比清单上所有的都好。它比看上去重，也没看上去老实。"
+   },
+   {
+    "text": "把清单烧了。",
+    "veins": [
+     "heat"
+    ],
+    "result": {
+     "gaze": 2,
+     "heal": 3
+    },
+    "result_text": "塑封烧起来的时候有声音，很轻。没有清单，就没有欠账。你胸口那点旧伤先松了。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_4",
+  "layer": 8,
+  "eco": "eco_nexus",
+  "bands": [
+   7,
+   8
+  ],
+  "title": "值班交接",
+  "body": "走廊里那位把班表递了过来。班表上的排班排到八万年后，每一个格子都签了字，只有一个格子空着——就是今天这一格。它站着，等一个接班的人。",
+  "options": [
+   {
+    "text": "接下班表。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 3,
+     "heal": 4
+    },
+    "result_text": "笔在你手里的时候很轻。它松开的那一下，八万年的站姿散了架。位置是你的了，走廊从你站的地方重新开始。"
+   },
+   {
+    "text": "替它站一班。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 60,
+     "damage": 6
+    },
+    "result_text": "它把八万年攒下的东西全数交给你，交接单一式两份。站班的滋味它没写——腿是自己的，麻也是自己的。"
+   },
+   {
+    "text": "从旁边绕过去。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {},
+    "result_text": "走廊不宽，你侧着身。它的目光跟着你走了三步，第四步起就不归它管了。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_5",
+  "layer": 8,
+  "eco": "eco_nexus",
+  "bands": [
+   7,
+   8
+  ],
+  "title": "四种字的告示",
+  "body": "告示钉死了，旧光者文字、渊民震语、殖民者通用语、还有谁也不认得的第四种，写的是同一句话。钉子是新的。这句话不许关闭。",
+  "options": [
+   {
+    "text": "照告示做。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "heal": 9
+    },
+    "result_text": "你照做了。做完之后呼吸顺了一截，像是有什么替你把姿势校准了。它说做什么，你就该做什么。"
+   },
+   {
+    "text": "闭着眼走过去。",
+    "veins": [],
+    "result": {
+     "gaze": 3
+    },
+    "result_text": "闭着眼反而看得更清楚。四种字在眼皮底下排着队走，你多看了三眼，眼眼都记了档。"
+   },
+   {
+    "text": "把告示念出声。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "maxhp": -2,
+     "gold": 35
+    },
+    "result_text": "念到第二种字的时候声音就不像你的了。工钱按次结，当场付清——嗓子里的那点余量，算你入的股。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_6",
+  "layer": 8,
+  "eco": "eco_nexus",
+  "bands": [
+   7,
+   8
+  ],
+  "title": "签到处",
+  "body": "簿子摊开在台上，笔用链子拴着。八万年来这里的人签了一整本又换一本，换下来的那摞码得像地基。簿子的最后一页是空的，正对着你。",
+  "options": [
+   {
+    "text": "签自己的名字。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 3
+    },
+    "result_text": "签名的时候手很稳。这一页只有一个名字，整本簿子都在替这个笔画作证。"
+   },
+   {
+    "text": "签上一个来过的人。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "gold": 40,
+     "damage": 4
+    },
+    "result_text": "上一个来过的人不会来对笔迹。链子够长，笔够快——账要平，划伤就算利息。"
+   },
+   {
+    "text": "把笔收进兜里。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "card_reward": "rare",
+     "damage": 5
+    },
+    "result_text": "笔尖是谐振器上磨下来的，写出来的字比人活得久。它在你兜里不老实，攥一下，疼一下。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_7",
+  "layer": 8,
+  "eco": "eco_nexus",
+  "bands": [
+   7,
+   8
+  ],
+  "title": "八万年前的休息室",
+  "body": "休息室的门没有锁。柜子按编号排，柜门上的名字磨没了，编号还在。椅子保持着有人刚起身的样子，烟灰缸是空的，烟灰缸不许有烟。",
+  "options": [
+   {
+    "text": "打开写着编号的柜子。",
+    "veins": [],
+    "result": {
+     "gold": 30
+    },
+    "result_text": "柜子里的东西按用途分好，连绳子都绕好了圈。都拿走也不算偷——按规程，失效满八万年即视为无主。"
+   },
+   {
+    "text": "只拿过了保质期还能吃的。",
+    "veins": [
+     "water"
+    ],
+    "result": {
+     "heal": 7,
+     "gaze": 1
+    },
+    "result_text": "八万年不算短。味道也过了八万年。你吃着，感觉到有什么在看你吃东西，看得很仔细。"
+   },
+   {
+    "text": "把柜门轻轻带上。",
+    "veins": [
+     "light"
+    ],
+    "result": {},
+    "result_text": "柜门合上的声音只有你听见。椅子还是刚起身的样子。有的东西不惊动，就还能一直维持着。"
+   }
+  ]
+ },
+ {
+  "id": "event_d8_8",
+  "layer": 8,
+  "eco": "eco_nexus",
+  "bands": [
+   7,
+   8
+  ],
+  "title": "呼吸口",
+  "body": "走廊尽头风往上走。风里什么都没有，只有谐振器透出来的那点余温。从这里上去，就到它跟前了。风是凉的，往上走的东西没有凉的。",
+  "options": [
+   {
+    "text": "把手伸进风里。",
+    "veins": [
+     "light"
+    ],
+    "result": {
+     "gaze": 2,
+     "maxhp": -2
+    },
+    "result_text": "风从指缝里过去，数得清每一根。少的那点东西没有感觉——它拿走的部分，本来就不归手管。"
+   },
+   {
+    "text": "贴着墙听它呼吸。",
+    "veins": [
+     "tremor"
+    ],
+    "result": {
+     "heal": 8
+    },
+    "result_text": "墙的这面是热的。呼吸很长，你跟着调了两轮，伤处跟着松开了。它没有察觉，或者习以为常。"
+   },
+   {
+    "text": "往风里放一枚矿票。",
+    "veins": [
+     "mineral"
+    ],
+    "result": {
+     "damage": 3,
+     "heal": 10
+    },
+    "result_text": "矿票打着旋往上走。风顿了一下——收下了。烫是找零，顺过来的那口呼吸是真的。"
+   }
+  ]
+ }
+]

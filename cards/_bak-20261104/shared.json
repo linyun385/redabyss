@@ -1,0 +1,33 @@
+[
+  {
+    "id": "share_0001",
+    "name": "强行供能",
+    "class": "shared",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [],
+    "energy": 1,
+    "effect": {
+      "special": [
+        {
+          "code": "rule_bypass"
+        }
+      ],
+      "target": "self"
+    },
+    "cost_type": "vitality",
+    "cost_text": "你的指尖凉了一下。",
+    "flavor": "你把手按在枪膛上。热的不是枪，是你。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "special": [
+          {
+            "code": "rule_bypass"
+          }
+        ]
+      },
+      "flavor_add": "第二次按下去，你已经知道要疼多久了。"
+    }
+  }
+]

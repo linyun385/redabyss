@@ -1,0 +1,59 @@
+﻿id,name,class,reason,art_file,reuse_for
+dive_0009,聚能枪（双管）,diver,D1；2费单体伤害同struct被dive_0069覆盖(8x2总16伤 vs 7x3总21伤)；双管枪面给通·双芯灯管(near-miss),web/assets/art/dive_0009.webp,通·双芯灯管
+dive_0010,聚变鱼雷,diver,D1；special稀有度本就不进奖励池(见index.html 7173)；2费none被dive_0055覆盖(12伤vs14伤),web/assets/art/dive_0010.webp,无（旧版风格v1；废弃）
+dive_0021,星髓矿业·定向爆破,diver,D1；2费rare damage+resonance_cost被dive_0046覆盖(26伤vs36伤同费同稀有度),web/assets/art/dive_0021.webp,无（旧版风格v0；废弃）
+dive_0027,星髓矿业·钻杆,diver,D1；1费none单体伤害被dive_0002覆盖(9伤vs10伤),web/assets/art/dive_0027.webp,无（旧版风格v0；废弃）
+dive_0031,聚能枪（过热）,diver,D1；1费vitality被dive_0054覆盖(11伤vs16伤)；另撞通·风险合同(D3)；过热炮管面给通·风险合同(near-miss),web/assets/art/dive_0031.webp,通·风险合同
+dive_0036,红渊贸易局·净水配给,diver,D2；T321同构组4张block+regen；1费档保留dive_0005(且R4),web/assets/art/dive_0036.webp,无（未回收；活水引泉已配trem_0051）
+dive_0040,重力训练舱,diver,D1；effect与dive_0017完全相同而费用更高(2费vs1费)；T321完全相同对,web/assets/art/dive_0040.webp,无（旧版风格v0；废弃）
+dive_0041,震频器（并联）,diver,D2；T321同构组6张resonance_gain；0费档保留dive_0025(R4),web/assets/art/dive_0041.webp,无（旧版风格v1；废弃）
+dive_0043,曜元（共振型）,diver,D2；同组1费resonance_gain保留dive_0028,web/assets/art/dive_0043.webp,通·虹吸管
+dive_0045,红渊研究院·共振采样,diver,D2；同组1费draw+resonance_gain三张保留dive_0042,web/assets/art/dive_0045.webp,通·共鸣腔
+dive_0048,矿票（回收藏）,diver,D1；0费none抽牌被同struct的dive_0039(矿票)占位；两卡effect同构,web/assets/art/dive_0048.webp,无（旧版风格v0；废弃）
+dive_0049,硬矿钻（手持）,diver,D1；0费none单体伤害被dive_0013覆盖(4伤vs5伤),web/assets/art/dive_0049.webp,无（旧版风格v0；废弃）
+dive_0051,震频器（微型）,diver,D2；0费resonance_gain同struct同费保留dive_0025,web/assets/art/dive_0051.webp,无（旧版风格v0；废弃）
+dive_0057,重力训练舱（极限负重）,diver,D1；1费vitality力量同struct同费保留dive_0020,web/assets/art/dive_0057.webp,通·减压舱
+dive_0059,曜元（空腹）,diver,D2；同组1费regen两曜元保留dive_0032,web/assets/art/dive_0059.webp,无（旧版风格v1；废弃）
+dive_0060,黑曜采掘·无氧班次,diver,D1；2费lock敏捷被1费dive_0007覆盖(同值敏捷+1费用更低),web/assets/art/dive_0060.webp,无（旧版风格v0；废弃）
+dive_0061,巡线灯,diver,D2；同组1费block+draw保留dive_0006,web/assets/art/dive_0061.webp,无（旧版风格v0；废弃）
+dive_0062,凿屑袋,diver,D1；0费单体伤害被dive_0013覆盖(2x2总4伤vs5伤),web/assets/art/dive_0062.webp,无（旧版风格v1；废弃）
+dive_0064,星髓矿业·矿脉图,diver,D2；同组memory档抽牌保留dive_0008(且R4),web/assets/art/dive_0064.webp,无（旧版风格v1；废弃）
+dive_0072,星髓矿业·二号钻台,diver,D2；T321同构组14张单体伤害1费none档保留dive_0002(R4),web/assets/art/dive_0072.webp,无（旧版风格v0；废弃）
+dive_0073,抗共振司·白噪机,diver,D1；1费resonance_lock同struct同费保留dive_0016,web/assets/art/dive_0073.webp,无（旧版风格v0；废弃）
+dive_0074,黑曜采掘·计件工资,diver,D1；1费vitality单体伤害被dive_0054覆盖(8伤vs16伤)；另撞通·风险合同(D3),web/assets/art/dive_0074.webp,无（旧版风格v1；废弃）
+dive_0077,抗共振司·导波索（并联）,diver,D2；与dive_0044同名词根同struct的并联复制(导波索),web/assets/art/dive_0077.webp,通·传声钢缆
+dive_0078,红渊研究院·频谱印章,diver,D1；2费rare单体伤害被dive_0069覆盖(11伤vs7x3总21伤)；铜锣面给通·守夜人的钟,web/assets/art/dive_0078.webp,通·守夜人的钟
+dive_0079,红渊贸易局·苦水配给（双份）,diver,D2；T321同构组4张纯格挡1费档保留dive_0004,web/assets/art/dive_0079.webp,无（旧版风格v0；废弃）
+dive_0083,坠轨的清单,diver,D2；同组1费vitality抽牌保留dive_0001(0费更低),web/assets/art/dive_0083.webp,无（旧版风格v1；废弃）
+trem_0007,震语铃,tremor,D2；T321同构组4张纯抽牌；1费档保留trem_0043(memory档),web/assets/art/trem_0007.webp,无（旧版风格v1；废弃）
+trem_0008,震语：问地,tremor,D2；T321同构组10张单体伤害1费none档保留trem_0005,web/assets/art/trem_0008.webp,无（旧版风格v1；废弃）
+trem_0012,历法刻盘,tremor,D2；2费rare draw+resonance_cost与trem_0064同费同struct二选一；1费rare trem_0075保留,web/assets/art/trem_0012.webp,通·深井的回声
+trem_0021,埋骨礼,tremor,D1；2费memory纯格挡被trem_0045覆盖(14盾vs18盾),web/assets/art/trem_0021.webp,无（旧版风格v0；废弃）
+trem_0032,震语：引流,tremor,D2；1费none纯格挡四张同构保留trem_0003(R版),web/assets/art/trem_0032.webp,无（旧版风格v1；废弃）
+trem_0036,辨矿,tremor,D2；同组1费draw+resonance_gain保留trem_0037(mark档),web/assets/art/trem_0036.webp,无（旧版风格v1；废弃）
+trem_0040,五脉符,tremor,D1；2费none力量敏捷符被trem_0067覆盖(同effect且1费),web/assets/art/trem_0040.webp,无（旧版风格v1；废弃）
+trem_0041,震语：淡忘,tremor,D2；1费none纯格挡四张同构,web/assets/art/trem_0041.webp,无（旧版风格v1；废弃）
+trem_0042,震语：断忆,tremor,D1；1费memory单体伤害被trem_0009覆盖(同费同代价),web/assets/art/trem_0042.webp,无（旧版风格v0；废弃）
+trem_0048,震语：连震,tremor,D2；0费none单体伤害保留trem_0050(R1),web/assets/art/trem_0048.webp,无（旧版风格v0；废弃）
+trem_0049,三震（回声）,tremor,D1；0费none单体伤害被trem_0048覆盖,web/assets/art/trem_0049.webp,无（旧版风格v0；废弃）
+trem_0051,震语：润喉,tremor,D1；0费block+draw被trem_0025覆盖(同struct同费),web/assets/art/trem_0051.webp,通·活水引泉
+trem_0053,震语：五声,tremor,D1；2费damage+resonance_gain被trem_0069覆盖(同struct同费rare),web/assets/art/trem_0053.webp,无（旧版风格v0；废弃）
+trem_0054,光导石（串珠）,tremor,D1；1费block+draw被trem_0026覆盖(同struct同费),web/assets/art/trem_0054.webp,无（旧版风格v1；废弃）
+trem_0062,震语：叩问,tremor,D2；T321同构组10张单体伤害1费none档,web/assets/art/trem_0062.webp,通·散落的铅字
+trem_0063,涌喉·深潜,tremor,D1；1费vitality纯格挡被trem_0003覆盖(同盾值且无代价),web/assets/art/trem_0063.webp,无（旧版风格v0；废弃）
+trem_0064,历法刻盘（补页）,tremor,D1；2费rare draw+resonance_cost与trem_0012同struct同费二选一,web/assets/art/trem_0064.webp,无（旧版风格v0；废弃）
+trem_0065,静底·灰烬,tremor,D2；T321灼烧同构组5张1费none档保留trem_0017(memory档),web/assets/art/trem_0065.webp,无（旧版风格v0；废弃）
+trem_0068,埋骨布（裹身）,tremor,D1；1费retain同struct同费保留trem_0039(R4),web/assets/art/trem_0068.webp,无（旧版风格v1；废弃）
+trem_0072,震语：回礼,tremor,D1；1费damage+resonance_gain被trem_0004覆盖(同struct同费),web/assets/art/trem_0072.webp,无（旧版风格v0；废弃）
+trem_0073,静底·翻灰,tremor,D1；1费block+regen被trem_0016覆盖(同struct同费),web/assets/art/trem_0073.webp,无（旧版风格v0；废弃）
+trem_0074,涌喉·潮契,tremor,D1；1费mark block+draw被trem_0028覆盖(同struct同费同代价),web/assets/art/trem_0074.webp,无（旧版风格v1；废弃）
+trem_0077,五脉符（浮位）,tremor,D1；effect与trem_0020完全相同且同费同稀有度(T321完全相同对),web/assets/art/trem_0077.webp,无（旧版风格v1；废弃）
+trem_0079,震台石碑（无字）,tremor,D2；1费none纯格挡四张同构,web/assets/art/trem_0079.webp,无（旧版风格v0；废弃）
+trem_0081,值班交接,tremor,D2；1费block+resonance_gain与trem_0006同struct同费,web/assets/art/trem_0081.webp,无（旧版风格v3；本版但画面(双吊牌)未匹配到通用牌；未回收）
+trem_0083,谐振的余音,tremor,D1；2费单体伤害被trem_0076覆盖(同struct同费),web/assets/art/trem_0083.webp,无（旧版风格v0；废弃）
+anm_0005,焊缝补强,anmin,D2；9张1费纯格挡同构族保留anm_0037(0费rare)与anm_0046,web/assets/art/anm_0005.webp,无（旧版风格v1；废弃）
+anm_0034,辐射防护衬层,anmin,D2；同上,web/assets/art/anm_0034.webp,无（旧版风格v1；废弃）
+anm_0038,运料井下坠,anmin,D2；同上,web/assets/art/anm_0038.webp,通·空的手
+cng_0022,卫星轨道,cangmin,D1；2费rare单体伤害同struct五张保留cng_0018(R2)与cng_0040(18伤),web/assets/art/cng_0022.webp,通·借来的凝视
+cng_0029,耀斑记忆,cangmin,D1；同上,web/assets/art/cng_0029.webp,通·倒转圣痕
+cng_0031,光父的审判,cangmin,D1；同上,web/assets/art/cng_0031.webp,通·越权的批文

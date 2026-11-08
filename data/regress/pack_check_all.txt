@@ -1,0 +1,44 @@
+
+=== card packs ===
+  warn  cards/diver.json 共 83 张（基础 40，扩充已生效）
+  ok    cards/diver.json flavor 全部合规
+        rarity: {"common":34,"uncommon":30,"rare":17,"special":2}
+  warn  cards/tremor.json 共 83 张（基础 40，扩充已生效）
+  ok    cards/tremor.json flavor 全部合规
+        rarity: {"common":34,"uncommon":30,"rare":17,"special":2}
+
+=== enemy pack ===
+  warn  敌人共 113 个（基础 36，扩充已生效）
+        分层: {"1":14,"2":14,"3":14,"4":14,"5":14,"6":14,"7":14,"8":15}
+  ok    敌人 flavor 齐全
+  ok    四个 canonical Boss 名称正确
+  ok    另有 12 个 Boss 变体（T48）
+  ok    Boss 层校验通过（canonical 4/5/7/8 + 变体层 1/2/3/6 允许）
+
+=== relic pack ===
+  warn  遗物共 77 个（基础 20，扩充已生效）
+
+=== event pack ===
+  warn  事件共 82 个（基础 12，扩充已生效）
+
+=== anmin DLC pack ===
+  ok    anmin 卡 50 张
+        rarity: {"common":20,"uncommon":16,"rare":10,"special":4}
+  ok    anmin 敌人 16 个
+  ok    anmin 敌 flavor 齐全
+        tier: {"normal":12,"elite":3,"boss":1}  分层: {"1":4,"2":5,"3":7}
+  ok    anmin 遗物 15 个
+  ok    anmin 事件 10 个
+
+=== cangmin DLC pack ===
+  ok    cangmin 卡 50 张
+  ok    清醒牌 / 梦牌 = 25 / 25
+        rarity: {"common":14,"uncommon":15,"rare":14,"special":7}
+  ok    cangmin 敌人 16 个
+  ok    cangmin 敌 flavor 齐全
+        tier: {"normal":12,"elite":3,"boss":1}  分层: {"1":4,"2":6,"3":6}
+  ok    cangmin 遗物 15 个
+  ok    cangmin 事件 10 个
+
+========================================
+全部通过（5 个警告）

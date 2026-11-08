@@ -1,0 +1,2967 @@
+{
+ "_about": "T58 生态×深度内容绑定表。规则与字段见 docs/CONTENT_PLAN.md §3.2 与 tools/mapgen_spec.json。生成：node tools/_t58_build.js（勿手改 id）。",
+ "_legend": {
+  "enemies": {
+   "enemy_d1_01": "嗜热古菌",
+   "enemy_d1_02": "腐生菌",
+   "enemy_d1_03": "隙居螨",
+   "enemy_d1_04": "管廊苔毯",
+   "enemy_d1_05": "管壁钟乳盐",
+   "enemy_d1_e1": "盐壳拾荒者",
+   "enemy_d1_e2": "孢子清道夫",
+   "enemy_d1_b1": "钟乳盐·塌落体",
+   "enemy_d1_06": "空服的壳",
+   "enemy_d1_07": "晒裂的软管",
+   "enemy_d1_08": "记名的旗",
+   "enemy_d1_e3": "气闸的守夜者",
+   "enemy_d1_e4": "坠轨的投影",
+   "enemy_d1_b2": "静默号·最后一次广播",
+   "enemy_d2_01": "冷洞食腐鳗",
+   "enemy_d2_02": "冷洞青菌",
+   "enemy_d2_03": "墟蟹",
+   "enemy_d2_04": "休眠两栖类",
+   "enemy_d2_05": "噬骨菌群",
+   "enemy_d2_06": "沉屑鱼",
+   "enemy_d2_07": "冷洞跳蛛",
+   "enemy_d2_e1": "历虫",
+   "enemy_d2_e2": "菌膜织者",
+   "enemy_d2_b1": "历壁的守读者",
+   "enemy_d2_08": "沉雪的苔背",
+   "enemy_d2_09": "历壁的蛀痕",
+   "enemy_d2_e3": "冷眠的守历者",
+   "enemy_d2_b2": "历的补写者",
+   "enemy_d3_01": "硬矿洞蛇",
+   "enemy_d3_02": "钻孔贝",
+   "enemy_d3_03": "干旱肺鱼",
+   "enemy_d3_04": "盲蛛",
+   "enemy_d3_05": "气腔洞鼹兽",
+   "enemy_d3_06": "硬壳蜗",
+   "enemy_d3_07": "空腔蝠",
+   "enemy_d3_e1": "钻孔贝群",
+   "enemy_d3_e2": "旱螈伏兵",
+   "enemy_d3_b1": "旱脉的封口者",
+   "enemy_d3_08": "滴水的账房",
+   "enemy_d3_09": "隐生的缓步",
+   "enemy_d3_e3": "抢路的干壳",
+   "enemy_d3_b2": "泉权的丈量者",
+   "enemy_d4_01": "红腔鱼",
+   "enemy_d4_02": "滤食鱼群",
+   "enemy_d4_03": "垂光蕨",
+   "enemy_d4_04": "光池银鱼",
+   "enemy_d4_05": "盲眼红腔鱼",
+   "enemy_d4_06": "光蛭母",
+   "enemy_d4_07": "浮光水母",
+   "enemy_d4_08": "光藓蠕虫",
+   "enemy_d4_e1": "藻毯伏击者",
+   "enemy_d4_e2": "红腔鱼·巡游种",
+   "enemy_d4_b1": "光蛭母·逆流",
+   "enemy_d4_09": "藻毯的影子",
+   "enemy_d4_10": "滤食的须群",
+   "enemy_d4_e3": "红腔鱼的伏击手",
+   "enemy_d5_01": "热泉管虫",
+   "enemy_d5_02": "热泉螈",
+   "enemy_d5_03": "硫塔菌",
+   "enemy_d5_04": "震鸣蟾",
+   "enemy_d5_05": "铁细菌膜母体",
+   "enemy_d5_06": "震喉",
+   "enemy_d5_07": "沸泥鳗",
+   "enemy_d5_08": "硫雾囊菌",
+   "enemy_d5_e1": "喷息守卫",
+   "enemy_d5_e2": "硫沫赘生体",
+   "enemy_d5_b1": "震喉·空腔独奏",
+   "enemy_d5_09": "硫菌丘的看火者",
+   "enemy_d5_10": "喷发期的管虫",
+   "enemy_d5_e3": "热议会的执汤者",
+   "enemy_d6_01": "辐射合成菌",
+   "enemy_d6_02": "抗辐射甲壳类",
+   "enemy_d6_03": "辐射金属鳞鳄",
+   "enemy_d6_04": "锈蚀菌",
+   "enemy_d6_05": "辐射金属鳞鳄王",
+   "enemy_d6_06": "铅皮蛞蝓",
+   "enemy_d6_07": "辐射藻垫",
+   "enemy_d6_e1": "辐射休眠孢子群",
+   "enemy_d6_e2": "金属鳞鳄幼体",
+   "enemy_d6_b1": "辐射金属鳞鳄王·蜕",
+   "enemy_d6_08": "重鳞的拾壳者",
+   "enemy_d6_09": "低烧的菌群",
+   "enemy_d6_e3": "铅鳞的收藏家",
+   "enemy_d6_b2": "地神骨灰坛的看守",
+   "enemy_d7_01": "旧光者残影",
+   "enemy_d7_02": "光柱蛇蜥",
+   "enemy_d7_03": "震杆菌",
+   "enemy_d7_04": "孢子群",
+   "enemy_d7_05": "震语苔丛",
+   "enemy_d7_06": "穹顶之影",
+   "enemy_d7_07": "无面记录员",
+   "enemy_d7_08": "静默歌者",
+   "enemy_d7_e1": "烧手的灰烬",
+   "enemy_d7_e2": "震台祭司",
+   "enemy_d7_b1": "穹顶之影·网颤",
+   "enemy_d7_09": "三色菌毯的须",
+   "enemy_d7_10": "慢半拍的影",
+   "enemy_d7_e3": "超临界的水囊",
+   "enemy_d8_01": "墟蛹",
+   "enemy_d8_02": "墟尘行像",
+   "enemy_d8_03": "空壳旧光者",
+   "enemy_d8_04": "茧丝虫",
+   "enemy_d8_05": "墟影残片",
+   "enemy_d8_06": "墟腔",
+   "enemy_d8_e1": "循环的巡逻体",
+   "enemy_d8_e2": "墟影残片·重奏",
+   "enemy_d8_b1": "墟蛹·未完成",
+   "enemy_d8_07": "八万年前的班表",
+   "enemy_d8_08": "签到簿的笔",
+   "enemy_d8_09": "谐振的余音",
+   "enemy_d8_10": "不许关闭的告示",
+   "enemy_d8_11": "检修窗后的手",
+   "enemy_d8_12": "走廊尽头的白噪音"
+  },
+  "events": {
+   "event_d1_1": "降落的旧舱",
+   "event_d1_2": "帝星的影子",
+   "event_d1_3": "休眠的孢子",
+   "event_d1_4": "气闸的对答",
+   "event_d1_5": "第三层防护服",
+   "event_d1_6": "晒了五百年的水箱",
+   "event_d1_7": "按规程应答",
+   "event_d1_8": "坠轨的清单",
+   "event_d2_1": "矿道口的碎石",
+   "event_d2_2": "会自己开关的矿灯",
+   "event_d2_3": "别的下潜者",
+   "event_d2_4": "一条被堵住的近路",
+   "event_d2_5": "一排还在出风的更衣柜",
+   "event_d2_6": "有人画在地上的箭头",
+   "event_d2_7": "横在矿道里的安全绳",
+   "event_d2_8": "一盏埋进苔里的矿灯",
+   "event_d2_9": "刻在岩壁上的历",
+   "event_d2_10": "不动的邻居",
+   "event_d2_11": "沉下来的东西",
+   "event_d3_1": "穿防护服的遗体",
+   "event_d3_2": "一池不流动的水",
+   "event_d3_3": "一只快死的生物",
+   "event_d3_4": "有人留下的警告",
+   "event_d3_5": "一口倒在旱地的井",
+   "event_d3_6": "一面会长字的墙",
+   "event_d3_7": "倒扣的采矿钻",
+   "event_d3_8": "画在岩壁上的宿舍平面图",
+   "event_d3_9": "泉眼的水囊",
+   "event_d3_10": "干死的通道",
+   "event_d3_11": "硬矿石上的牙印",
+   "event_d4_1": "渊民的埋骨布",
+   "event_d4_2": "烧过又长回来的红蕨",
+   "event_d4_3": "渊民的仪式现场",
+   "event_d4_4": "呼吸的节奏",
+   "event_d4_5": "泡在光池里的补给箱",
+   "event_d4_6": "一副没人接的耳机",
+   "event_d4_7": "会还话的亮墙",
+   "event_d4_8": "浮在光池上的一封信",
+   "event_d4_9": "涌喉的市集",
+   "event_d4_10": "倒挂林的暗处",
+   "event_d4_11": "旧城的街灯",
+   "event_d5_1": "静日里响起的震语",
+   "event_d5_2": "反应堆城的废弃管道",
+   "event_d5_3": "净化者的圣火堆",
+   "event_d5_4": "还在工作的旧光者设备",
+   "event_d5_6": "一排朝下喷的热泉眼",
+   "event_d5_7": "写满排班表的白板",
+   "event_d5_8": "还在计时的高压锅",
+   "event_d5_9": "一道自己拐弯的蒸汽",
+   "event_d5_10": "喷息的汤",
+   "event_d5_11": "硫菌丘之间",
+   "event_d5_12": "冷却池边的卵",
+   "event_d6_1": "一块有字的相石",
+   "event_d6_2": "别人的营地",
+   "event_d6_3": "往深处去的人",
+   "event_d6_4": "深层的回声",
+   "event_d6_5": "剂量表挂在走廊正中",
+   "event_d6_6": "一台还在广播的收音机",
+   "event_d6_7": "没拆封的辐射药",
+   "event_d6_8": "一墙贴到天花板的剂量条",
+   "event_d6_9": "挂着骨头的警示",
+   "event_d6_10": "抗辐射的壳",
+   "event_d6_11": "反应堆的余温",
+   "event_d7_1": "震台上的旧刻痕",
+   "event_d7_2": "还在转的旧光者自动门",
+   "event_d7_3": "震台上的新刻痕",
+   "event_d7_4": "门后什么都没有",
+   "event_d7_5": "一段循环播放的告别",
+   "event_d7_6": "一间反着装修的宿舍",
+   "event_d7_7": "没有观众的演出",
+   "event_d7_8": "一个正在自我删除的日志",
+   "event_d7_9": "祭祀台的灰",
+   "event_d7_10": "钻探队的末端",
+   "event_d7_11": "墟蛹的外壳",
+   "event_d8_1": "还在运转的走廊",
+   "event_d8_2": "不许关闭的告示",
+   "event_d8_3": "核心的红光",
+   "event_d8_4": "值班交接",
+   "event_d8_5": "四种字的告示",
+   "event_d8_6": "签到处",
+   "event_d8_7": "八万年前的休息室",
+   "event_d8_8": "呼吸口"
+  }
+ },
+ "borrowLog": [],
+ "eco": {
+  "eco_surface": {
+   "name": "死寂壳层",
+   "homeBand": 1,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.12,
+       "atkMul": 1.08
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.24,
+       "atkMul": 1.16
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.36,
+       "atkMul": 1.24
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.48,
+       "atkMul": 1.32
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.6,
+       "atkMul": 1.4
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.6,
+       "atkMul": 1.48
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d1_01",
+      "enemy_d1_02",
+      "enemy_d1_03",
+      "enemy_d1_04",
+      "enemy_d1_05",
+      "enemy_d1_06",
+      "enemy_d1_07",
+      "enemy_d1_08"
+     ],
+     "elite": [
+      "enemy_d1_e1",
+      "enemy_d1_e2",
+      "enemy_d1_e3",
+      "enemy_d1_e4"
+     ],
+     "boss": [
+      "enemy_d1_b1",
+      "enemy_d1_b2"
+     ],
+     "event": [
+      "event_d1_1",
+      "event_d1_2",
+      "event_d1_3",
+      "event_d1_4",
+      "event_d1_5",
+      "event_d1_6",
+      "event_d1_7",
+      "event_d1_8"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.6,
+       "atkMul": 1.56
+      }
+     }
+    }
+   }
+  },
+  "eco_cold": {
+   "name": "沉积冷洞",
+   "homeBand": 2,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.9,
+       "atkMul": 0.94
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.12,
+       "atkMul": 1.08
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.24,
+       "atkMul": 1.16
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.36,
+       "atkMul": 1.24
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.48,
+       "atkMul": 1.32
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.6,
+       "atkMul": 1.4
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d2_01",
+      "enemy_d2_02",
+      "enemy_d2_03",
+      "enemy_d2_04",
+      "enemy_d2_06",
+      "enemy_d2_07",
+      "enemy_d2_08",
+      "enemy_d2_09"
+     ],
+     "elite": [
+      "enemy_d2_05",
+      "enemy_d2_e1",
+      "enemy_d2_e2",
+      "enemy_d2_e3"
+     ],
+     "boss": [
+      "enemy_d2_b1",
+      "enemy_d2_b2"
+     ],
+     "event": [
+      "event_d2_1",
+      "event_d2_2",
+      "event_d2_3",
+      "event_d2_4",
+      "event_d2_5",
+      "event_d2_6",
+      "event_d2_7",
+      "event_d2_8",
+      "event_d2_9",
+      "event_d2_10",
+      "event_d2_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.6,
+       "atkMul": 1.48
+      }
+     }
+    }
+   }
+  },
+  "eco_arid": {
+   "name": "泉眼干旱区",
+   "homeBand": 3,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.8,
+       "atkMul": 0.88
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.9,
+       "atkMul": 0.94
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.12,
+       "atkMul": 1.08
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.24,
+       "atkMul": 1.16
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.36,
+       "atkMul": 1.24
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.48,
+       "atkMul": 1.32
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d3_01",
+      "enemy_d3_02",
+      "enemy_d3_03",
+      "enemy_d3_04",
+      "enemy_d3_06",
+      "enemy_d3_07",
+      "enemy_d3_08",
+      "enemy_d3_09"
+     ],
+     "elite": [
+      "enemy_d3_05",
+      "enemy_d3_e1",
+      "enemy_d3_e2",
+      "enemy_d3_e3"
+     ],
+     "boss": [
+      "enemy_d3_b1",
+      "enemy_d3_b2"
+     ],
+     "event": [
+      "event_d3_1",
+      "event_d3_2",
+      "event_d3_3",
+      "event_d3_4",
+      "event_d3_5",
+      "event_d3_6",
+      "event_d3_7",
+      "event_d3_8",
+      "event_d3_9",
+      "event_d3_10",
+      "event_d3_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.6,
+       "atkMul": 1.4
+      }
+     }
+    }
+   }
+  },
+  "eco_sea": {
+   "name": "红蕨空洞海",
+   "homeBand": 4,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.82
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.8,
+       "atkMul": 0.88
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.9,
+       "atkMul": 0.94
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.12,
+       "atkMul": 1.08
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.24,
+       "atkMul": 1.16
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.36,
+       "atkMul": 1.24
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d4_01",
+      "enemy_d4_02",
+      "enemy_d4_03",
+      "enemy_d4_04",
+      "enemy_d4_07",
+      "enemy_d4_08",
+      "enemy_d4_09",
+      "enemy_d4_10"
+     ],
+     "elite": [
+      "enemy_d4_05",
+      "enemy_d4_e1",
+      "enemy_d4_e2",
+      "enemy_d4_e3"
+     ],
+     "boss": [
+      "enemy_d4_06",
+      "enemy_d4_b1"
+     ],
+     "event": [
+      "event_d4_1",
+      "event_d4_2",
+      "event_d4_3",
+      "event_d4_4",
+      "event_d4_5",
+      "event_d4_6",
+      "event_d4_7",
+      "event_d4_8",
+      "event_d4_9",
+      "event_d4_10",
+      "event_d4_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.48,
+       "atkMul": 1.32
+      }
+     }
+    }
+   }
+  },
+  "eco_vent": {
+   "name": "热泉裂带",
+   "homeBand": 5,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.76
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.82
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.8,
+       "atkMul": 0.88
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.9,
+       "atkMul": 0.94
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.12,
+       "atkMul": 1.08
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.24,
+       "atkMul": 1.16
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d5_01",
+      "enemy_d5_02",
+      "enemy_d5_03",
+      "enemy_d5_04",
+      "enemy_d5_07",
+      "enemy_d5_08",
+      "enemy_d5_09",
+      "enemy_d5_10"
+     ],
+     "elite": [
+      "enemy_d5_05",
+      "enemy_d5_e1",
+      "enemy_d5_e2",
+      "enemy_d5_e3"
+     ],
+     "boss": [
+      "enemy_d5_06",
+      "enemy_d5_b1"
+     ],
+     "event": [
+      "event_d5_1",
+      "event_d5_2",
+      "event_d5_3",
+      "event_d5_4",
+      "event_d5_6",
+      "event_d5_7",
+      "event_d5_8",
+      "event_d5_9",
+      "event_d5_10",
+      "event_d5_11",
+      "event_d5_12"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.36,
+       "atkMul": 1.24
+      }
+     }
+    }
+   }
+  },
+  "eco_rad": {
+   "name": "辐射荒漠",
+   "homeBand": 6,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.7
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.76
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.82
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.8,
+       "atkMul": 0.88
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.9,
+       "atkMul": 0.94
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.12,
+       "atkMul": 1.08
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d6_01",
+      "enemy_d6_02",
+      "enemy_d6_03",
+      "enemy_d6_04",
+      "enemy_d6_06",
+      "enemy_d6_07",
+      "enemy_d6_08",
+      "enemy_d6_09"
+     ],
+     "elite": [
+      "enemy_d6_05",
+      "enemy_d6_e1",
+      "enemy_d6_e2",
+      "enemy_d6_e3"
+     ],
+     "boss": [
+      "enemy_d6_b1",
+      "enemy_d6_b2"
+     ],
+     "event": [
+      "event_d6_1",
+      "event_d6_2",
+      "event_d6_3",
+      "event_d6_4",
+      "event_d6_5",
+      "event_d6_6",
+      "event_d6_7",
+      "event_d6_8",
+      "event_d6_9",
+      "event_d6_10",
+      "event_d6_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.24,
+       "atkMul": 1.16
+      }
+     }
+    }
+   }
+  },
+  "eco_core": {
+   "name": "核心高热区",
+   "homeBand": 7,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.7
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.7
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.76
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.82
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.8,
+       "atkMul": 0.88
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.9,
+       "atkMul": 0.94
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d7_01",
+      "enemy_d7_02",
+      "enemy_d7_03",
+      "enemy_d7_04",
+      "enemy_d7_07",
+      "enemy_d7_08",
+      "enemy_d7_09",
+      "enemy_d7_10"
+     ],
+     "elite": [
+      "enemy_d7_05",
+      "enemy_d7_e1",
+      "enemy_d7_e2",
+      "enemy_d7_e3"
+     ],
+     "boss": [
+      "enemy_d7_06",
+      "enemy_d7_b1"
+     ],
+     "event": [
+      "event_d7_1",
+      "event_d7_2",
+      "event_d7_3",
+      "event_d7_4",
+      "event_d7_5",
+      "event_d7_6",
+      "event_d7_7",
+      "event_d7_8",
+      "event_d7_9",
+      "event_d7_10",
+      "event_d7_11"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1.12,
+       "atkMul": 1.08
+      }
+     }
+    }
+   }
+  },
+  "eco_nexus": {
+   "name": "核心回路",
+   "homeBand": 8,
+   "bands": {
+    "1": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.7
+      }
+     }
+    },
+    "2": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.7
+      }
+     }
+    },
+    "3": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 1,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.7
+      }
+     }
+    },
+    "4": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.76
+      }
+     }
+    },
+    "5": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.7,
+       "atkMul": 0.82
+      }
+     }
+    },
+    "6": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 2,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.8,
+       "atkMul": 0.88
+      }
+     }
+    },
+    "7": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 0.9,
+       "atkMul": 0.94
+      }
+     }
+    },
+    "8": {
+     "enemy": [
+      "enemy_d8_02",
+      "enemy_d8_04",
+      "enemy_d8_07",
+      "enemy_d8_08",
+      "enemy_d8_09",
+      "enemy_d8_10",
+      "enemy_d8_11",
+      "enemy_d8_12"
+     ],
+     "elite": [
+      "enemy_d8_03",
+      "enemy_d8_05",
+      "enemy_d8_06",
+      "enemy_d8_e1",
+      "enemy_d8_e2"
+     ],
+     "boss": [
+      "enemy_d8_01",
+      "enemy_d8_b1"
+     ],
+     "event": [
+      "event_d8_1",
+      "event_d8_2",
+      "event_d8_3",
+      "event_d8_4",
+      "event_d8_5",
+      "event_d8_6",
+      "event_d8_7",
+      "event_d8_8"
+     ],
+     "shop": 3,
+     "_meta": {
+      "borrowed": [],
+      "mods": {
+       "hpMul": 1,
+       "atkMul": 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

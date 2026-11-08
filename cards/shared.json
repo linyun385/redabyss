@@ -1,0 +1,361 @@
+[
+ {
+  "id": "share_0001",
+  "name": "强行供能",
+  "class": "shared",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [],
+  "energy": 1,
+  "effect": {
+   "special": [
+    {
+     "code": "rule_bypass"
+    }
+   ],
+   "target": "self"
+  },
+  "cost_type": "vitality",
+  "cost_text": "你的指尖凉了一下。",
+  "flavor": "你把手按在枪膛上。热的不是枪，是你。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "special": [
+     {
+      "code": "rule_bypass"
+     }
+    ]
+   },
+   "flavor_add": "第二次按下去，你已经知道要疼多久了。"
+  }
+ },
+ {
+  "id": "u_0003",
+  "name": "虹吸管",
+  "class": "shared",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [],
+  "energy": 1,
+  "effect": {
+   "damage": 5,
+   "hits": 1,
+   "target": "single",
+   "heal": 2
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "管子一头插在伤口里，另一头插在你嘴里。",
+  "upgrade": {
+   "name_suffix": "·顺",
+   "effect": {
+    "damage": 7,
+    "heal": 3
+   },
+   "flavor_add": "抽出来的东西比上一次干净。"
+  }
+ },
+ {
+  "id": "u_0006",
+  "name": "风险合同",
+  "class": "shared",
+  "type": "attack",
+  "rarity": "common",
+  "veins": [],
+  "energy": 1,
+  "effect": {
+   "damage": 9,
+   "hits": 1,
+   "target": "single"
+  },
+  "cost_type": "vitality",
+  "cost_text": "签约的手指失去了指纹。",
+  "flavor": "第三条写：不保证返程。你签得太快，没看是谁替你担保。",
+  "upgrade": {
+   "name_suffix": "·续",
+   "effect": {
+    "damage": 12
+   },
+   "flavor_add": "续约不需要再看第三条。"
+  }
+ },
+ {
+  "id": "u_0008",
+  "name": "灰烬测振仪",
+  "class": "shared",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "heat",
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 6,
+   "hits": 1,
+   "target": "single",
+   "resonance_gain": 2,
+   "special": [
+    {
+     "code": "burn",
+     "value": 2,
+     "turns": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "灰烬落进刻度盘的那一刻，岩层说了一个字。",
+  "upgrade": {
+   "name_suffix": "·敏",
+   "effect": {
+    "damage": 8,
+    "resonance_gain": 3
+   },
+   "flavor_add": "它连你没听清的那一句都测出来了。"
+  }
+ },
+ {
+  "id": "u_0009",
+  "name": "倒转圣痕",
+  "class": "shared",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "light"
+  ],
+  "energy": 1,
+  "effect": {
+   "target": "self",
+   "special": [
+    {
+     "code": "gaze_reduce",
+     "value": 2
+    },
+    {
+     "code": "resonance_gain",
+     "value": 3
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "正面的字是警告，背面的是邀请。你看的是哪一面？",
+  "upgrade": {
+   "name_suffix": "·深",
+   "effect": {
+    "special": [
+     {
+      "code": "gaze_reduce",
+      "value": 2
+     },
+     {
+      "code": "resonance_gain",
+      "value": 4
+     }
+    ]
+   },
+   "flavor_add": "背面比正面更像正面。"
+  }
+ },
+ {
+  "id": "u_0010",
+  "name": "谐振垫层",
+  "class": "shared",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "tremor",
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 7,
+   "target": "self",
+   "resonance_drain": 2
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "把震动能垫在身下，你就成了地面的一部分。",
+  "upgrade": {
+   "name_suffix": "·厚",
+   "effect": {
+    "block": 10,
+    "resonance_drain": 2
+   },
+   "flavor_add": "垫层旧了。你反而站得更稳。"
+  }
+ },
+ {
+  "id": "u_0011",
+  "name": "活水引泉",
+  "class": "shared",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "water"
+  ],
+  "energy": 1,
+  "effect": {
+   "heal": 4,
+   "target": "self",
+   "special": [
+    {
+     "code": "dexterity",
+     "value": 1
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "泉眼认得口渴的人。它只是不认得急着走的人。",
+  "upgrade": {
+   "name_suffix": "·涌",
+   "effect": {
+    "heal": 6,
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "flavor_add": "今天的水多到可以浪费。"
+  }
+ },
+ {
+  "id": "u_0012",
+  "name": "双芯灯管",
+  "class": "shared",
+  "type": "attack",
+  "rarity": "uncommon",
+  "veins": [
+   "light",
+   "heat"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 7,
+   "hits": 1,
+   "target": "single",
+   "special": [
+    {
+     "code": "burn",
+     "value": 1,
+     "turns": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "一根芯给你照亮，一根芯给你点火。厂里说这叫冗余。",
+  "upgrade": {
+   "name_suffix": "·并",
+   "effect": {
+    "damage": 10,
+    "special": [
+     {
+      "code": "burn",
+      "value": 2,
+      "turns": 2
+     }
+    ]
+   },
+   "flavor_add": "两根芯烧成了一根。亮得更狠。"
+  }
+ },
+ {
+  "id": "u_0013",
+  "name": "散落的铅字",
+  "class": "shared",
+  "type": "attack",
+  "rarity": "rare",
+  "veins": [
+   "tremor",
+   "mineral"
+  ],
+  "energy": 1,
+  "effect": {
+   "damage": 4,
+   "hits": 1,
+   "target": "all",
+   "special": [
+    {
+     "code": "weak",
+     "turns": 2
+    }
+   ]
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "报馆塌了以后，字比人先落地。踩到一个，你就慢半拍。",
+  "upgrade": {
+   "name_suffix": "·重",
+   "effect": {
+    "damage": 6,
+    "special": [
+     {
+      "code": "weak",
+      "turns": 3
+     }
+    ]
+   },
+   "flavor_add": "标题字最重。砸中最响。"
+  }
+ },
+ {
+  "id": "u_0016",
+  "name": "越权的批文",
+  "class": "shared",
+  "type": "power",
+  "rarity": "rare",
+  "veins": [],
+  "energy": 1,
+  "effect": {
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "签发栏是空的。你把名字签了上去，协议就开始执行。",
+  "upgrade": {
+   "name_suffix": "·Ⅱ",
+   "effect": {
+    "target": "self"
+   },
+   "flavor_add": "第二张批文用的是同一个章。章不问次数。"
+  },
+  "anmin_mark": {
+   "kind": "protocol",
+   "protocol": "purge"
+  }
+ },
+ {
+  "id": "u_0007",
+  "name": "传声钢缆",
+  "class": "shared",
+  "type": "skill",
+  "rarity": "uncommon",
+  "veins": [
+   "light",
+   "tremor"
+  ],
+  "energy": 1,
+  "effect": {
+   "block": 5,
+   "draw": 1,
+   "target": "self"
+  },
+  "cost_type": "none",
+  "cost_text": "",
+  "flavor": "一头接在灯上，一头接在岩层里。两边都以为对方在说话。",
+  "upgrade": {
+   "name_suffix": "·并联",
+   "effect": {
+    "block": 7,
+    "draw": 1
+   },
+   "flavor_add": "第二根缆是多余的。多余的东西最结实。"
+  }
+ }
+]

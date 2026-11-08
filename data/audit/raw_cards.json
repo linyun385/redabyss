@@ -1,0 +1,6265 @@
+{
+ "shared": [
+  {
+   "id": "share_0001",
+   "name": "强行供能",
+   "class": "shared",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [],
+   "energy": 1,
+   "effect": {
+    "special": [
+     {
+      "code": "rule_bypass"
+     }
+    ],
+    "target": "self"
+   },
+   "cost_type": "vitality",
+   "cost_text": "你的指尖凉了一下。",
+   "flavor": "你把手按在枪膛上。热的不是枪，是你。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "special": [
+      {
+       "code": "rule_bypass"
+      }
+     ]
+    },
+    "flavor_add": "第二次按下去，你已经知道要疼多久了。"
+   }
+  },
+  {
+   "id": "u_0003",
+   "name": "虹吸管",
+   "class": "shared",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [],
+   "energy": 1,
+   "effect": {
+    "damage": 5,
+    "hits": 1,
+    "target": "single",
+    "heal": 2
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "管子一头插在伤口里，另一头插在你嘴里。",
+   "upgrade": {
+    "name_suffix": "·顺",
+    "effect": {
+     "damage": 7,
+     "heal": 3
+    },
+    "flavor_add": "抽出来的东西比上一次干净。"
+   }
+  },
+  {
+   "id": "u_0006",
+   "name": "风险合同",
+   "class": "shared",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [],
+   "energy": 1,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "vitality",
+   "cost_text": "签约的手指失去了指纹。",
+   "flavor": "第三条写：不保证返程。你签得太快，没看是谁替你担保。",
+   "upgrade": {
+    "name_suffix": "·续",
+    "effect": {
+     "damage": 12
+    },
+    "flavor_add": "续约不需要再看第三条。"
+   }
+  },
+  {
+   "id": "u_0008",
+   "name": "灰烬测振仪",
+   "class": "shared",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "heat",
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 6,
+    "hits": 1,
+    "target": "single",
+    "resonance_gain": 2,
+    "special": [
+     {
+      "code": "burn",
+      "value": 2,
+      "turns": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "灰烬落进刻度盘的那一刻，岩层说了一个字。",
+   "upgrade": {
+    "name_suffix": "·敏",
+    "effect": {
+     "damage": 8,
+     "resonance_gain": 3
+    },
+    "flavor_add": "它连你没听清的那一句都测出来了。"
+   }
+  },
+  {
+   "id": "u_0009",
+   "name": "倒转圣痕",
+   "class": "shared",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "gaze_reduce",
+      "value": 2
+     },
+     {
+      "code": "resonance_gain",
+      "value": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "正面的字是警告，背面的是邀请。你看的是哪一面？",
+   "upgrade": {
+    "name_suffix": "·深",
+    "effect": {
+     "special": [
+      {
+       "code": "gaze_reduce",
+       "value": 2
+      },
+      {
+       "code": "resonance_gain",
+       "value": 4
+      }
+     ]
+    },
+    "flavor_add": "背面比正面更像正面。"
+   }
+  },
+  {
+   "id": "u_0010",
+   "name": "谐振垫层",
+   "class": "shared",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor",
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 7,
+    "target": "self",
+    "resonance_drain": 2
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "把震动能垫在身下，你就成了地面的一部分。",
+   "upgrade": {
+    "name_suffix": "·厚",
+    "effect": {
+     "block": 10,
+     "resonance_drain": 2
+    },
+    "flavor_add": "垫层旧了。你反而站得更稳。"
+   }
+  },
+  {
+   "id": "u_0011",
+   "name": "活水引泉",
+   "class": "shared",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 4,
+    "target": "self",
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "泉眼认得口渴的人。它只是不认得急着走的人。",
+   "upgrade": {
+    "name_suffix": "·涌",
+    "effect": {
+     "heal": 6,
+     "special": [
+      {
+       "code": "dexterity",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "今天的水多到可以浪费。"
+   }
+  },
+  {
+   "id": "u_0012",
+   "name": "双芯灯管",
+   "class": "shared",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "light",
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 7,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "burn",
+      "value": 1,
+      "turns": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "一根芯给你照亮，一根芯给你点火。厂里说这叫冗余。",
+   "upgrade": {
+    "name_suffix": "·并",
+    "effect": {
+     "damage": 10,
+     "special": [
+      {
+       "code": "burn",
+       "value": 2,
+       "turns": 2
+      }
+     ]
+    },
+    "flavor_add": "两根芯烧成了一根。亮得更狠。"
+   }
+  },
+  {
+   "id": "u_0013",
+   "name": "散落的铅字",
+   "class": "shared",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "tremor",
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 4,
+    "hits": 1,
+    "target": "all",
+    "special": [
+     {
+      "code": "weak",
+      "turns": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "报馆塌了以后，字比人先落地。踩到一个，你就慢半拍。",
+   "upgrade": {
+    "name_suffix": "·重",
+    "effect": {
+     "damage": 6,
+     "special": [
+      {
+       "code": "weak",
+       "turns": 3
+      }
+     ]
+    },
+    "flavor_add": "标题字最重。砸中最响。"
+   }
+  },
+  {
+   "id": "u_0016",
+   "name": "越权的批文",
+   "class": "shared",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [],
+   "energy": 1,
+   "effect": {
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "签发栏是空的。你把名字签了上去，协议就开始执行。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "target": "self"
+    },
+    "flavor_add": "第二张批文用的是同一个章。章不问次数。"
+   },
+   "anmin_mark": {
+    "kind": "protocol",
+    "protocol": "purge"
+   }
+  },
+  {
+   "id": "u_0007",
+   "name": "传声钢缆",
+   "class": "shared",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light",
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "一头接在灯上，一头接在岩层里。两边都以为对方在说话。",
+   "upgrade": {
+    "name_suffix": "·并联",
+    "effect": {
+     "block": 7,
+     "draw": 1
+    },
+    "flavor_add": "第二根缆是多余的。多余的东西最结实。"
+   }
+  }
+ ],
+ "diver": [
+  {
+   "id": "dive_0001",
+   "name": "光导透镜（残）",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "vitality",
+   "cost_text": "你的手开始透光。",
+   "flavor": "镜片裂了一道。裂的那道看得更清楚。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "镜片换过了。它还认得你的眼睛。"
+   }
+  },
+  {
+   "id": "dive_0002",
+   "name": "聚能枪",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 10,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "填弹的时候它自己热了。这里没有火。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "你把撞针磨短了一点。它出膛更快。"
+   }
+  },
+  {
+   "id": "dive_0003",
+   "name": "曜元",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "target": "self",
+    "special": [
+     {
+      "code": "exhaust"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "药液是亮的。管壁上留着别人的指纹。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "draw": 2,
+     "special": []
+    },
+    "flavor_add": "药效过了还在。这一次它不走了。"
+   }
+  },
+  {
+   "id": "dive_0004",
+   "name": "光苔矿培植舱",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 8,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "绿光照在护板上。苔沿着铆钉排成长列，一列不落。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 12
+    },
+    "flavor_add": "你把舱壁的裂缝堵严了。绿色在里面越养越深。"
+   }
+  },
+  {
+   "id": "dive_0005",
+   "name": "氧气再生器",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "换下来的滤芯还温着。新的那只会哼另一支曲子。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "block": 7,
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "滤芯换成了新批次的。呼吸这件事被它包了。"
+   }
+  },
+  {
+   "id": "dive_0006",
+   "name": "渊光重工·工作灯",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 3,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "灯照到哪里，哪里就算地面。照明范围写在合同附件里。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "block": 5
+    },
+    "flavor_add": "灯罩加固过。你的领土暂时不再收缩。"
+   }
+  },
+  {
+   "id": "dive_0007",
+   "name": "渊光重工·导光索",
+   "class": "diver",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "红光在索上走得比人快。它从不回头。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "special": [
+      {
+       "code": "dexterity",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "红光在索上排好了队。一个都不许插队。"
+   }
+  },
+  {
+   "id": "dive_0008",
+   "name": "红渊研究院·数据回传",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "memory",
+   "cost_text": "回传清单把你的童年标成了冗余数据。",
+   "flavor": "传输条走完。你的童年少了一条巷子。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "清单被退回了一次。这次他们只抽走别人的东西。",
+    "cost_type": "none"
+   }
+  },
+  {
+   "id": "dive_0011",
+   "name": "辐射弹",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 10,
+    "hits": 1,
+    "target": "all",
+    "resonance_gain": 4,
+    "gaze_cost": 3
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "弹体上有三个签章。没有一个是收尾的。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "封条撕掉了。三个部门都假装没看见。"
+   }
+  },
+  {
+   "id": "dive_0012",
+   "name": "轨道炮支援",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 3,
+   "effect": {
+    "damage": 24,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "上面的人按了按钮。他们不需要看见你。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 34
+    },
+    "flavor_add": "弹着点画在你的影子上。这算为你申请的。"
+   }
+  },
+  {
+   "id": "dive_0013",
+   "name": "硬矿钻",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "damage": 5,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "钻头换过三次。你的骨头一次都没换过，还是原来的硬法。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "damage": 7
+    },
+    "flavor_add": "钻头换了新合金。还是比你的骨头年轻。"
+   }
+  },
+  {
+   "id": "dive_0014",
+   "name": "震髓探测器",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "resonance_gain": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "探针收回来，尖上是暗红的。它有脉搏。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "resonance_gain": 3
+    },
+    "flavor_add": "探针磨尖了。带回来的东西更烫。"
+   }
+  },
+  {
+   "id": "dive_0015",
+   "name": "星髓矿业·爆破执照",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 12,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "lock",
+   "cost_text": "执照每层只批一次。",
+   "flavor": "第七章要求默哀十秒。你数到三就开始了。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "damage": 17
+    },
+    "flavor_add": "第七章被划掉重写过。哀悼改成了装填。"
+   }
+  },
+  {
+   "id": "dive_0016",
+   "name": "共振抑制仪",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "target": "self",
+    "special": [
+     {
+      "code": "resonance_lock"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "机器嗡了一声。有个东西退了一步。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "嗡声调低半度。退后一步的东西又退了一步。"
+   }
+  },
+  {
+   "id": "dive_0017",
+   "name": "星髓矿业·深地车",
+   "class": "diver",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     },
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "仪表盘贴着一张孩子的画。画的是上面。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "仪表盘上的画换了。新的那张画的是车。"
+   }
+  },
+  {
+   "id": "dive_0018",
+   "name": "墟盐",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 9,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "mark",
+   "cost_text": "白色溶进红光里。有什么把它记下了。",
+   "flavor": "你按规程尝了一点。规程没说不能咽，你也没咽。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 13
+    },
+    "flavor_add": "盐压成了块。苦味停得更久，你不再计较。"
+   }
+  },
+  {
+   "id": "dive_0019",
+   "name": "抗共振司·锚桩",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "target": "self",
+    "special": [
+     {
+      "code": "thorns",
+      "value": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "桩顶的灯转成红的。岩层忍住了。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "桩顶的灯换了常亮的。岩层习惯了。"
+   }
+  },
+  {
+   "id": "dive_0020",
+   "name": "黑曜采掘·加班条例",
+   "class": "diver",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "vitality",
+   "cost_text": "合同第三十一条：身体属于公司。",
+   "flavor": "念到第三十一条，你的指甲透明了。没有人停下来。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "第三十一条加了附则。身体也属于加班。"
+   }
+  },
+  {
+   "id": "dive_0022",
+   "name": "硬矿钻（重型）",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 13,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "frail",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "它啃硬矿的声音从牙根进来。你俩啃的是同一块。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 18,
+     "special": [
+      {
+       "code": "frail",
+       "turns": 3
+      }
+     ]
+    },
+    "flavor_add": "它啃东西的声音变了。你的牙先听出来的。"
+   }
+  },
+  {
+   "id": "dive_0023",
+   "name": "抗共振司·静默规程",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 12,
+    "target": "self",
+    "special": [
+     {
+      "code": "resonance_lock"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "规程生效之后，心跳得先打报告。批下来的那部分才许响。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 17
+    },
+    "flavor_add": "规程补了附录。心跳也被批进了静默范围。"
+   }
+  },
+  {
+   "id": "dive_0024",
+   "name": "深红资源集团·钻探平台",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 3,
+   "effect": {
+    "damage": 10,
+    "hits": 3,
+    "target": "single",
+    "gaze_cost": 4
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "打桩声传到地表。有人在那儿听了一辈子。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 13
+    },
+    "flavor_add": "桩打得更密。地表的人以为地震变多了。"
+   }
+  },
+  {
+   "id": "dive_0025",
+   "name": "震频器",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 0,
+   "effect": {
+    "resonance_gain": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "指针停在两个刻度之间。哪边都不是给你的。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "resonance_gain": 3
+    },
+    "flavor_add": "指针焊死在一个刻度上。那个刻度在下面。"
+   }
+  },
+  {
+   "id": "dive_0026",
+   "name": "震髓装药",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 14,
+    "hits": 1,
+    "target": "single",
+    "resonance_cost": 5
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "它把振动吃进去，再吐出来。吐出来的部分不认人。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "damage": 19
+    },
+    "flavor_add": "装药重新压过。吐出来的部分开始认人。"
+   }
+  },
+  {
+   "id": "dive_0028",
+   "name": "震频器（校准）",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "resonance_gain": 4,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "校准之后只指一个方向。向下。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "resonance_gain": 6
+    },
+    "flavor_add": "校准了两次。现在它只指向更下面。"
+   }
+  },
+  {
+   "id": "dive_0029",
+   "name": "红渊研究院·震谱仪",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "draw": 3,
+    "target": "self",
+    "resonance_cost": 8
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "谱线上有一段很规律的波。注释写着：设备干扰。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 4,
+     "resonance_cost": 6
+    },
+    "flavor_add": "那段波形进了附录。注释改成了：来源未知。"
+   }
+  },
+  {
+   "id": "dive_0030",
+   "name": "抗共振司·镇爆弹",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 3,
+   "effect": {
+    "damage": 10,
+    "hits": 1,
+    "target": "all",
+    "gaze_cost": 3,
+    "special": [
+     {
+      "code": "weak",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "lock",
+   "cost_text": "本层只批这一发。",
+   "flavor": "弹壳上印着守则。第一条：不要去听回声。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "守则加了第二条：回声也归它听。"
+   }
+  },
+  {
+   "id": "dive_0032",
+   "name": "曜元（缓释）",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "药效排在后半夜。排班表上没有后半夜。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "排班表改了。后半夜归你了。"
+   }
+  },
+  {
+   "id": "dive_0033",
+   "name": "圣火武器",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 6,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "burn",
+      "value": 3,
+      "turns": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "授权书上的火漆是真的火漆。它烧得很安静。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 8
+    },
+    "flavor_add": "火漆换了新的。授权在燃烧中续期。"
+   }
+  },
+  {
+   "id": "dive_0034",
+   "name": "反走私局·焚烧记录",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "all",
+    "special": [
+     {
+      "code": "burn",
+      "value": 5,
+      "turns": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "没收品烧起来的颜色不对。记录上写的是标准红。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "special": [
+      {
+       "code": "burn",
+       "value": 2,
+       "turns": 3
+      }
+     ]
+    },
+    "flavor_add": "记录改成了深红。这次没人反对。"
+   }
+  },
+  {
+   "id": "dive_0035",
+   "name": "深红资源集团·地热井口",
+   "class": "diver",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "井口的风往上吹。你在风里站了很久，没有出汗。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "风更急了。旧铁的味道里多了点新的。"
+   }
+  },
+  {
+   "id": "dive_0037",
+   "name": "红渊研究院·水样档案",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "编号靠后的水样没有检测人签名。纸是湿的。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "最后一页写上了名字。字迹不是你的。"
+   }
+  },
+  {
+   "id": "dive_0038",
+   "name": "氧气再生器（满压）",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "water"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 8,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 4
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "满压时机器会哼一支不成调的曲子。后来你也会哼了。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 12
+    },
+    "flavor_add": "曲子哼全了。后半段是你自己编的。"
+   }
+  },
+  {
+   "id": "dive_0039",
+   "name": "矿票",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "special",
+   "veins": [],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "票面编号比你的小。签字的人没有下来。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "票面重新印过。编号栏空着，等你填。"
+   }
+  },
+  {
+   "id": "dive_0042",
+   "name": "震髓探测器（阵列）",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "resonance_gain": 5,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "十二根探针一起扎下去。岩层抖了一下，像被挠到痒处。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "resonance_gain": 7
+    },
+    "flavor_add": "第十三根探针是自己长出来的。"
+   }
+  },
+  {
+   "id": "dive_0044",
+   "name": "抗共振司·导波索",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "resonance_gain": 4,
+    "block": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "索把振动引向你指定的地方。规程没写不能指向自己。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "索换了粗的。振动被你攥在手里。"
+   }
+  },
+  {
+   "id": "dive_0046",
+   "name": "星髓矿业·深部震源",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 36,
+    "hits": 1,
+    "target": "single",
+    "resonance_cost": 15
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "半条矿道的振动一次放完。放完之后，那里的安静有了重量。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 48
+    },
+    "flavor_add": "你攒了整整一层。放完之后，更下面安静了。"
+   }
+  },
+  {
+   "id": "dive_0047",
+   "name": "深红资源集团·谐振井",
+   "class": "diver",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "resonance_gain": 6,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "井打通了三层。下面传上来的东西，比报告里多。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "resonance_gain": 9
+    },
+    "flavor_add": "井又深了一层。传上来的东西学会了排队。"
+   }
+  },
+  {
+   "id": "dive_0050",
+   "name": "氧气再生器（便携）",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "说明书写着：不保证供氧，只保证你还想呼吸。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 5
+    },
+    "flavor_add": "说明书换了一版：保证你还想呼吸。"
+   }
+  },
+  {
+   "id": "dive_0052",
+   "name": "光苔矿（盆栽）",
+   "class": "diver",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "车里的位置给了它。它把叶子的方向调成了下面。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "special": [
+      {
+       "code": "dexterity",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "车里的位置不够了。你把它抱在腿上。"
+   }
+  },
+  {
+   "id": "dive_0053",
+   "name": "渊光重工·备用电源",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "「真的不能用」怎么判断。条例没说。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "draw": 4
+    },
+    "flavor_add": "「真的不能用」的判例多了一条。你那条在内。"
+   }
+  },
+  {
+   "id": "dive_0054",
+   "name": "聚能枪（超载）",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 16,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "vitality",
+   "cost_text": "枪管红透了。你的指节比昨天更透明。",
+   "flavor": "后坐力从骨缝里进去。你的一部分也算弹药。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "damage": 22
+    },
+    "flavor_add": "指节透光的地方包了布。弹药还是要人来当。"
+   }
+  },
+  {
+   "id": "dive_0055",
+   "name": "辐射弹（裸装）",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 14,
+    "hits": 1,
+    "target": "all"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "去掉防护壳，装药多一半。运它的人走在最前面。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "damage": 19
+    },
+    "flavor_add": "壳彻底拆了。走在最后的人也交了运费。"
+   }
+  },
+  {
+   "id": "dive_0056",
+   "name": "死亡合同（增补条款）",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "vitality",
+   "cost_text": "附件第七页：乙方同意提前透支。",
+   "flavor": "签字栏下面还有一行小字。你没读。你签得很快。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "你读了那行小字。读完就背下来了。"
+   }
+  },
+  {
+   "id": "dive_0058",
+   "name": "圣火武器（殉爆）",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 3,
+   "effect": {
+    "damage": 30,
+    "hits": 1,
+    "target": "all"
+   },
+   "cost_type": "vitality",
+   "cost_text": "火漆烧穿了封皮。这一次没有人按住它。",
+   "flavor": "它想快点。你按住了它，又松开。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 42
+    },
+    "flavor_add": "这一次你先松的手。"
+   }
+  },
+  {
+   "id": "dive_0063",
+   "name": "抗共振司·静音瓦",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 13,
+    "target": "self"
+   },
+   "cost_type": "lock",
+   "cost_text": "瓦片每层只批一片。",
+   "flavor": "瓦贴上墙的地方，回声绕道走。走之前顿了一下，像记路。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 18
+    },
+    "flavor_add": "贴了两层。绕道的回声迷路了。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0065",
+   "name": "渊光重工·接地缆",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "thorns",
+      "value": 4
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "碰到缆的人会替你疼一下。他们后来都不碰第二下。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "special": [
+      {
+       "code": "thorns",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "缆外皮磨亮了。替你疼的排起了队。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0066",
+   "name": "曜元（高浓）",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 6,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "药液挂在管壁上，挂了很久。你晃一晃，它慢慢让步。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 9
+    },
+    "flavor_add": "它还是不想走。你多等了一会。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0067",
+   "name": "震髓残响",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 7,
+    "hits": 1,
+    "target": "single",
+    "resonance_gain": 3
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "打出去的是声音的回执。原件在更下面。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 10
+    },
+    "flavor_add": "回执变成了原件。更下面没收件人。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0068",
+   "name": "深红资源集团·冷却协议",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "heal": 4,
+    "target": "self"
+   },
+   "cost_type": "vitality",
+   "cost_text": "附件第九页：降温期间不计入工龄。",
+   "flavor": "风从协议里吹出来。是凉的，也是批下来的。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 9,
+     "heal": 6
+    },
+    "flavor_add": "不计入的工龄你不再计较。风更凉了。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0069",
+   "name": "聚能枪（三管）",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 7,
+    "hits": 3,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "三根管，零份许可证。它自己批的。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 10
+    },
+    "flavor_add": "第四根管长出来了。你没问。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0070",
+   "name": "回收员的账本",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "resonance_drain": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "账本上的红字没人销。红光那一栏，欠着三笔。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "block": 7,
+     "resonance_drain": 7
+    },
+    "flavor_add": "旧账翻到了红光还不清的那一页。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0071",
+   "name": "渊光重工·灯序表",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "resonance_gain": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "表上排着每盏灯的名字。今晚轮到的两盏，一盏已经灭了。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 1,
+     "resonance_gain": 2
+    },
+    "flavor_add": "灭的那盏被人补了名。补名的人不是你。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0075",
+   "name": "深红资源集团·地契",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "lock",
+   "cost_text": "契书每层只生效一次。",
+   "flavor": "地契写着你站的地方归你。你往下挪，契纸跟着改。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "契纸背面加了一行。这层也归你，死后也一样。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0076",
+   "name": "曜元（夜班型）",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 4,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "夜班专供。药性跟着太阳走，这里没有太阳。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 6
+    },
+    "flavor_add": "配方改了。药性开始跟着你走。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0080",
+   "name": "渊光重工·断路闸",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 3,
+    "target": "self"
+   },
+   "cost_type": "lock",
+   "cost_text": "闸每层只拉一次。",
+   "flavor": "拉下闸，灯全灭。灭掉的那部分光去照别人了。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "draw": 4
+    },
+    "flavor_add": "第二次拉闸的时候，闸自己先动了。"
+   },
+   "class": "diver"
+  },
+  {
+   "id": "dive_0081",
+   "name": "气闸的规程",
+   "class": "diver",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [],
+   "energy": 0,
+   "effect": {
+    "block": 4,
+    "target": "self",
+    "special": [
+     {
+      "code": "retain"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "先合，再开，再合。规程留在手里，什么时候开，什么时候算数。"
+  },
+  {
+   "id": "dive_0082",
+   "name": "按规程应答",
+   "class": "diver",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [],
+   "energy": 1,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single",
+    "gaze_cost": 1
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "编号报得越标准，回音里的东西越清楚。红光也在听。"
+  }
+ ],
+ "tremor": [
+  {
+   "id": "trem_0001",
+   "name": "震语：听骨",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "岩壁在讲一件旧事。你听过这一段，结尾是别人的。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 1,
+     "special": [
+      {
+       "code": "retain"
+      }
+     ]
+    },
+    "flavor_add": "那件事讲完了。它把后半段留给你慢慢听。"
+   }
+  },
+  {
+   "id": "trem_0002",
+   "name": "听震",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 0,
+   "effect": {
+    "resonance_gain": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "耳朵贴上去。你的血先到，岩层晚了一步。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "resonance_gain": 4
+    },
+    "flavor_add": "这次你先贴的额头。岩层愣了一下。"
+   }
+  },
+  {
+   "id": "trem_0003",
+   "name": "震语：压息",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 7,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "呼吸放到最慢。外面那个东西找不到你换气的点。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 10
+    },
+    "flavor_add": "你把呼吸放到没有。外面那东西以为你走了。"
+   }
+  },
+  {
+   "id": "trem_0004",
+   "name": "震语：回响",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 11,
+    "hits": 1,
+    "target": "single",
+    "resonance_gain": 2
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "你用旧语气还它一句。它回头找了很久。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "你把二十年前的语气学全了。它听哭了。"
+   }
+  },
+  {
+   "id": "trem_0005",
+   "name": "震语：双声",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 4,
+    "hits": 2,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "两句一起出去。回来的时候是三句。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 6
+    },
+    "flavor_add": "回来的不止三句。你没数，怕数出更多。"
+   }
+  },
+  {
+   "id": "trem_0006",
+   "name": "震台石碑（拓片）",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "resonance_gain": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "拓片上的字比石头新。补刻的人笔画很急。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "补刻的字认出来了。是你自己的笔迹。"
+   }
+  },
+  {
+   "id": "trem_0009",
+   "name": "震语：断脉",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 10,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "memory",
+   "cost_text": "你忘了母亲的声音。",
+   "flavor": "切断了。岩层安静下来。你的喉咙跟着哑了一瞬。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "这一次没切干净。母亲的声音留了下来。",
+    "cost_type": "none"
+   }
+  },
+  {
+   "id": "trem_0010",
+   "name": "震语：三震",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "special",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 9,
+    "hits": 3,
+    "target": "single",
+    "gaze_cost": 2
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "第一声你听。剩下两声，收件人不明。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 12
+    },
+    "flavor_add": "第四声给的是你。你收下了。"
+   }
+  },
+  {
+   "id": "trem_0011",
+   "name": "震台石碑",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 10,
+    "target": "self"
+   },
+   "cost_type": "lock",
+   "cost_text": "碑文每层只应验一次。",
+   "flavor": "碑文缺了一半。缺的那半是你来之前的事。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 14
+    },
+    "flavor_add": "另一半碑文找到了。刻在你站的地方。"
+   }
+  },
+  {
+   "id": "trem_0013",
+   "name": "震语：崩齿",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 3,
+   "effect": {
+    "damage": 10,
+    "hits": 3,
+    "target": "single",
+    "resonance_cost": 6,
+    "gaze_cost": 4
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "牙替你数拍子。第三下少了一颗，拍子没乱。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 13
+    },
+    "flavor_add": "牙又缺了一颗。数拍子的活分给了骨头。"
+   }
+  },
+  {
+   "id": "trem_0014",
+   "name": "听地神脉搏",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 3,
+   "effect": {
+    "resonance_gain": 4,
+    "target": "self",
+    "gaze_cost": 3,
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 5
+     }
+    ]
+   },
+   "cost_type": "lock",
+   "cost_text": "它听完这次就走了。",
+   "flavor": "它在数数。数到你的时候，停了一下。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "它数完了。又从头数了一遍。这次是给你。"
+   }
+  },
+  {
+   "id": "trem_0015",
+   "name": "触温",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 4,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "手心贴上去，是温的。这里不该有温的东西。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "block": 6
+    },
+    "flavor_add": "它先动了。你等到了。"
+   }
+  },
+  {
+   "id": "trem_0016",
+   "name": "喷息·热池边",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "池边的人不看你。你的倒影在看别处。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "池边的人看了你一眼。礼数破了，热更稳了。"
+   }
+  },
+  {
+   "id": "trem_0017",
+   "name": "震语：焚名",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 7,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "burn",
+      "value": 2,
+      "turns": 2
+     }
+    ]
+   },
+   "cost_type": "memory",
+   "cost_text": "名册上少了一个名字，是你的。",
+   "flavor": "火不是从底下上来的。它从名册那一页开始烧。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "damage": 10
+    },
+    "flavor_add": "名册补回了你的名字。火记得该还哪里。"
+   }
+  },
+  {
+   "id": "trem_0018",
+   "name": "静日",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "special",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 8,
+    "target": "self",
+    "special": [
+     {
+      "code": "retain"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "你不说话。岩层替你说完了剩下的半句。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 12
+    },
+    "flavor_add": "世界更清楚了。清楚得有点吵。"
+   }
+  },
+  {
+   "id": "trem_0019",
+   "name": "禁声日",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "target": "self",
+    "special": [
+     {
+      "code": "resonance_lock"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "连岩层都闭嘴。你的脚步声显得很响。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "你的脚步声也闭嘴了。岩层先受不了。"
+   }
+  },
+  {
+   "id": "trem_0020",
+   "name": "静日触杖",
+   "class": "tremor",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "杖尖点到哪里，热就在哪里停。像被点名的人站直了。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "special": [
+      {
+       "code": "dexterity",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "杖尖点过的地方，热开始排队。"
+   }
+  },
+  {
+   "id": "trem_0022",
+   "name": "回归墟骨",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 6,
+    "target": "self",
+    "special": [
+     {
+      "code": "delete_random"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "骨头归堆，不多不少。你带来的那件，堆里早有位置。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "骨堆收下了它。仪式的意思你念对了。"
+   }
+  },
+  {
+   "id": "trem_0023",
+   "name": "震语：沸息",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 12,
+    "hits": 1,
+    "target": "single",
+    "resonance_cost": 5,
+    "special": [
+     {
+      "code": "burn",
+      "value": 4,
+      "turns": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "一句烫话留在它体内。它走到哪里，烧到哪里。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 17
+    },
+    "flavor_add": "那句话更烫了。它走的路也更长。"
+   }
+  },
+  {
+   "id": "trem_0024",
+   "name": "震语：熔名",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 3,
+   "effect": {
+    "damage": 12,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "burn",
+      "value": 6,
+      "turns": 3
+     }
+    ]
+   },
+   "cost_type": "memory",
+   "cost_text": "你想不起被烧的是谁的名字了。",
+   "flavor": "名字烧完了。它做过的事一件不少地留了下来。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "damage": 17
+    },
+    "flavor_add": "名字想起来了。你把它重新烧了一遍。"
+   }
+  },
+  {
+   "id": "trem_0025",
+   "name": "观红",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 2,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "红光排着队进来。队伍里有一个不是光。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "你数到两个。剩下的不敢数。"
+   }
+  },
+  {
+   "id": "trem_0026",
+   "name": "光导石",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 3,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "它把光递过来，先擦了擦棱角。交接的礼数一步不少。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "block": 5
+    },
+    "flavor_add": "交接改成了托付。石头把手松开了。"
+   }
+  },
+  {
+   "id": "trem_0027",
+   "name": "震语：明目",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "target": "self",
+    "special": [
+     {
+      "code": "gaze_reduce",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "少看了一眼。那一眼还在排队。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "special": [
+      {
+       "code": "gaze_reduce",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "少看的不止一点。有些地方你绕着走。"
+   }
+  },
+  {
+   "id": "trem_0028",
+   "name": "涌喉·光池倒影",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "mark",
+   "cost_text": "池面记下了你的脸。",
+   "flavor": "池面记下你的脸。记的那张比你老。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "池面记下的脸换了。新的那张更旧。"
+   }
+  },
+  {
+   "id": "trem_0029",
+   "name": "观红（深相）",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 8,
+    "target": "self",
+    "special": [
+     {
+      "code": "gaze_reduce",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "红光退了半步。它认得你。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 12,
+     "special": [
+      {
+       "code": "gaze_reduce",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "它又退了一步。现在它记得你两遍。"
+   }
+  },
+  {
+   "id": "trem_0030",
+   "name": "震语：照骨",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 12,
+    "hits": 1,
+    "target": "single",
+    "gaze_cost": 4
+   },
+   "cost_type": "mark",
+   "cost_text": "光看清了你。你也就被看清了。",
+   "flavor": "光穿过它。岩壁上留下它的形状，也留下你的。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 17
+    },
+    "flavor_add": "拓片多了两张。岩壁开始收藏你。"
+   }
+  },
+  {
+   "id": "trem_0031",
+   "name": "尝水",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "苦味底下有一层甜。甜比水旧。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "那层旧甜化开了。上游的事你不再问。"
+   }
+  },
+  {
+   "id": "trem_0033",
+   "name": "涌喉·水契",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 4
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "契约写在水面之下。你的手一直是湿的，正好。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "契约续了一页。这次只有你一个人湿手。"
+   }
+  },
+  {
+   "id": "trem_0034",
+   "name": "震语：断流",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 14,
+    "hits": 1,
+    "target": "single",
+    "resonance_cost": 6,
+    "special": [
+     {
+      "code": "frail",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "水停了一瞬。你就在那一瞬里过去。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 19
+    },
+    "flavor_add": "水停了两瞬。都用上了。"
+   }
+  },
+  {
+   "id": "trem_0035",
+   "name": "尝水（深井）",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "water"
+   ],
+   "energy": 2,
+   "effect": {
+    "draw": 1,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 5
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "井底的样本没有编号。取样人那一栏也是。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "井底有回音了。它比你更早知道明天。"
+   }
+  },
+  {
+   "id": "trem_0037",
+   "name": "相石·初刻",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "resonance_gain": 3,
+    "target": "self"
+   },
+   "cost_type": "mark",
+   "cost_text": "它记下了你的掌心。",
+   "flavor": "它记你的掌心。你记它记你的事。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "resonance_gain": 5
+    },
+    "flavor_add": "掌心的纹路刻深了。它记熟了。"
+   }
+  },
+  {
+   "id": "trem_0038",
+   "name": "相石·满录",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "draw": 3,
+    "resonance_gain": 2,
+    "target": "self"
+   },
+   "cost_type": "memory",
+   "cost_text": "读满录的相石要押一段记忆，押金不退。",
+   "flavor": "押金是一段记忆。石头不找零。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 4
+    },
+    "flavor_add": "押金退了。石头说这段记忆还用得上。",
+    "cost_type": "none"
+   }
+  },
+  {
+   "id": "trem_0039",
+   "name": "埋骨布",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "target": "self",
+    "special": [
+     {
+      "code": "retain"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "布是空的。折痕都是新的。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "布用旧了。旧得很整齐。"
+   }
+  },
+  {
+   "id": "trem_0043",
+   "name": "静底·焚忆",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "memory",
+   "cost_text": "烧掉的是一页信，收信人是你。",
+   "flavor": "烧掉一页信。火只烧了字，纸还在。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "灰落进水里之前，你回头收了信。"
+   }
+  },
+  {
+   "id": "trem_0044",
+   "name": "相石·封忆",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "memory",
+   "cost_text": "石头收走一段，还你一寸硬。",
+   "flavor": "石头收走一段，还你一寸硬。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "石头多收了一段。还你的不止一寸。"
+   }
+  },
+  {
+   "id": "trem_0045",
+   "name": "埋骨礼（合葬）",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 18,
+    "target": "self"
+   },
+   "cost_type": "memory",
+   "cost_text": "你替别人记的那部分，也一起埋了。",
+   "flavor": "两块布叠在一起摆。下面的那块先动的。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 26
+    },
+    "flavor_add": "第三块布摊开了。压布的石头没变。"
+   }
+  },
+  {
+   "id": "trem_0046",
+   "name": "震语：舍字",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "lock",
+   "cost_text": "本层只舍这一次。",
+   "flavor": "先舍一个字。你选了很久，选了最轻的。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "又舍了一个字。剩下的都开始发光。"
+   }
+  },
+  {
+   "id": "trem_0047",
+   "name": "震台石碑（残诵）",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "resonance_gain": 4,
+    "target": "self"
+   },
+   "cost_type": "memory",
+   "cost_text": "碑文缺的那一段，原本在你的脑子里。",
+   "flavor": "你把缺的那段念了。碑没补上，你少了一段。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "resonance_gain": 6
+    },
+    "flavor_add": "你缺的那段开始漏。漏出来的都是震动。"
+   }
+  },
+  {
+   "id": "trem_0050",
+   "name": "震语：传温",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 0,
+   "effect": {
+    "damage": 3,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "手心贴着壳。那句话烫了很久才凉。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 4
+    },
+    "flavor_add": "手心的话换了一句。更烫的那句。"
+   }
+  },
+  {
+   "id": "trem_0052",
+   "name": "震语：合鸣",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single",
+    "draw": 1
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "两个声部碰头。石头先裂，谁也没道歉。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 13
+    },
+    "flavor_add": "石头裂成了两半。声部各占一半。"
+   }
+  },
+  {
+   "id": "trem_0055",
+   "name": "震语：直视",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "gaze_gain": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "你看回去了。它先移开，又移回来，停在你身后。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "这一眼久了。应答变成了对峙。"
+   }
+  },
+  {
+   "id": "trem_0056",
+   "name": "震语：回望",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 3,
+    "target": "self",
+    "gaze_cost": 5
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "从那边看过来的你，和你打了个照面。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 4,
+     "gaze_cost": 4
+    },
+    "flavor_add": "你看回来的次数够多了。那边给你留了位置。"
+   }
+  },
+  {
+   "id": "trem_0057",
+   "name": "相石·对视",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "resonance_gain": 5,
+    "target": "self",
+    "gaze_cost": 3
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "它没有眼，但它先眨了。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "resonance_gain": 7
+    },
+    "flavor_add": "它没再眨。你们开始轮流看着同一个方向。"
+   }
+  },
+  {
+   "id": "trem_0058",
+   "name": "静底·深阅",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "gaze_cost": 8,
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     },
+     {
+      "code": "dexterity",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "最里面那页没有页码。念完，屋里坐了两个人。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "两个人合得来了。至少在念这一页的时候。"
+   }
+  },
+  {
+   "id": "trem_0059",
+   "name": "震台石碑（注视）",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 9,
+    "target": "self",
+    "gaze_cost": 2
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "碑面里站着的那个不是你。你们各自退了半步。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "block": 13
+    },
+    "flavor_add": "碑面磨亮了。里面站的那个先让了一步。"
+   }
+  },
+  {
+   "id": "trem_0060",
+   "name": "五脉符（逆位）",
+   "class": "tremor",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [],
+   "energy": 2,
+   "effect": {
+    "damage": 12,
+    "hits": 1,
+    "target": "all",
+    "gaze_cost": 6
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "符倒过来贴。这一次，是它在读你。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 17
+    },
+    "flavor_add": "五个方向都看清了。它们也都没躲。"
+   }
+  },
+  {
+   "id": "trem_0061",
+   "name": "震语：数息",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 3,
+    "resonance_gain": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "你数自己的呼吸。数到第七下，岩层跟着数。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "block": 5,
+     "resonance_gain": 2
+    },
+    "flavor_add": "岩层先数完了。它在等你。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0066",
+   "name": "震语：回声定位",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "gaze_gain": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "光走不到的地方，你喊一声。回声替你把路照亮。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "路多看了一眼。你没躲。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0067",
+   "name": "五脉符（缺位）",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     },
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "mark",
+   "cost_text": "缺的那一位记住了你补的位置。",
+   "flavor": "第五个刻痕是空的。空得很有分量。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "缺位补上了。补上去的名字是你的。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0069",
+   "name": "震台石碑（新碑）",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 15,
+    "hits": 1,
+    "target": "single",
+    "resonance_gain": 3
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "新碑立起来的时候，旧碑挪了一寸。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 20
+    },
+    "flavor_add": "旧碑又挪了一寸。它在让位。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0070",
+   "name": "震语：低语",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "resonance_gain": 1,
+    "target": "self",
+    "special": [
+     {
+      "code": "exhaust"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "只说给离得最近的东西听。最近的是你自己的骨头。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "低语变多了。骨头开始插话。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0071",
+   "name": "震语：试井",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 0,
+   "effect": {
+    "resonance_gain": 2,
+    "target": "self",
+    "special": [
+     {
+      "code": "exhaust"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "往井里丢一句话，听回声有多深。井吞了话，没还。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "resonance_gain": 3
+    },
+    "flavor_add": "井把话还了。换了一种说法还的。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0075",
+   "name": "历法刻盘（倒页）",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 3,
+    "target": "self",
+    "resonance_cost": 6
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "倒着翻的页记载着没发生的事。字迹很新，日期很老。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 4,
+     "resonance_cost": 5
+    },
+    "flavor_add": "有一页记载着今天。你读过之后，今天照常发生了。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0076",
+   "name": "震语：双唱",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 6,
+    "hits": 2,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "你和自己合唱。差的那半拍，也打在人身上。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 8
+    },
+    "flavor_add": "第三个声部加进来了。不认识，但音准。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0078",
+   "name": "观红（对影）",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 2,
+    "draw": 2,
+    "target": "self",
+    "gaze_cost": 3
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "你看红的影。影里也有个人在翻牌，翻得比你慢半拍。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "影里那个人追上来了。你们同时出牌。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0080",
+   "name": "震语：长夜",
+   "type": "attack",
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "burn",
+      "value": 4,
+      "turns": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "这一句要烧一整个夜。夜在这里有多长，它就烧多久。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 12
+    },
+    "flavor_add": "夜里续了更长的一段。它陪着烧完。"
+   },
+   "class": "tremor"
+  },
+  {
+   "id": "trem_0082",
+   "name": "不许关闭",
+   "class": "tremor",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [],
+   "energy": 0,
+   "effect": {
+    "block": 2,
+    "target": "self",
+    "resonance_gain": 1,
+    "special": [
+     {
+      "code": "retain"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "钉子是新的。牌子留在手里，不许灭，也不许扔。"
+  }
+ ],
+ "anmin": [
+  {
+   "id": "anm_0001",
+   "name": "现场回收",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 4,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "击杀登记：料料入账。废墟不发工资，发零件。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 6
+    },
+    "flavor_add": "回收范围扩了半个身位。条款没改。"
+   }
+  },
+  {
+   "id": "anm_0002",
+   "name": "扳手规程",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "扳手有两种用法。规程只写了第一种。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "damage": 12
+    },
+    "flavor_add": "第二种用法传了下来。没有人承认。"
+   }
+  },
+  {
+   "id": "anm_0003",
+   "name": "备用照明电池",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "电量：够照三次呼吸。省着用。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "电池是满的。满得可疑。"
+   }
+  },
+  {
+   "id": "anm_0004",
+   "name": "例检条款",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 7,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "我逐项打钩。机械逐项通过。我们都很专业。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 10
+    },
+    "flavor_add": "新增第十一条：不许看它的眼。"
+   }
+  },
+  {
+   "id": "anm_0006",
+   "name": "库存盘点",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "resonance_gain": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "料：账实相符。人：没点。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "resonance_gain": 4
+    },
+    "flavor_add": "第二遍盘点。有一项在动。"
+   }
+  },
+  {
+   "id": "anm_0007",
+   "name": "调节螺栓",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 4,
+    "hits": 2,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "拧一圈，紧一圈。松的东西总要有人管。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 5
+    },
+    "flavor_add": "第三圈拧不动了。里面的东西在顶。"
+   }
+  },
+  {
+   "id": "anm_0008",
+   "name": "报废清单",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 4,
+    "resonance_drain": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "七个编号同时注销。墨水是最后一次配给的。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "block": 6,
+     "resonance_drain": 7
+    },
+    "flavor_add": "清单末尾多了一行。不是我的字。"
+   }
+  },
+  {
+   "id": "anm_0009",
+   "name": "料仓取件",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "料仓认工号。工号认我。我认不认它，没登记。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "料仓多给了两件。多给的不上账。"
+   }
+  },
+  {
+   "id": "anm_0010",
+   "name": "应急照明协议",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 9,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "按下按钮。走廊亮起。黑暗退到条款边缘。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 13
+    },
+    "flavor_add": "灯亮的时间超出了协议。没有人去关。"
+   }
+  },
+  {
+   "id": "anm_0011",
+   "name": "焊接臂·民用型",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 6,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "burn",
+      "value": 3,
+      "turns": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "民用型。焊不了装甲，焊得住皮肉。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 8
+    },
+    "flavor_add": "改装了。改装件来路未登记。"
+   }
+  },
+  {
+   "id": "anm_0012",
+   "name": "维修凝胶",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 7,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "凝胶不挑部位。哪里漏，哪里算伤口。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 10
+    },
+    "flavor_add": "过期了。过期之后更稠，更好用。"
+   }
+  },
+  {
+   "id": "anm_0013",
+   "name": "料径校准",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 5,
+    "hits": 1,
+    "target": "single",
+    "resonance_gain": 4
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "料径误差不许超过一丝。红光的误差不算误差。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 7,
+     "resonance_gain": 5
+    },
+    "flavor_add": "校准了红光本身。它准得让人不安。"
+   }
+  },
+  {
+   "id": "anm_0014",
+   "name": "巡逻体残骸",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 12,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "把它抬回避难所的路上，它一直在给别的巡逻体发位置。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "damage": 16
+    },
+    "flavor_add": "信号断了。是我们剪的。剪之前犹豫了一下。"
+   }
+  },
+  {
+   "id": "anm_0015",
+   "name": "主控授权·工程线",
+   "class": "anmin",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "授权下发。从今天起，你拧的每一颗螺栓都算数。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "授权延期。理由栏写着：还需要他。"
+   }
+  },
+  {
+   "id": "anm_0016",
+   "name": "主控授权·安全线",
+   "class": "anmin",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "安全线授权比工程线难拿。因为安全线管的是命。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "dexterity",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "授权延期。理由栏写着：他还活着。"
+   }
+  },
+  {
+   "id": "anm_0017",
+   "name": "回收协议·总则",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 8,
+    "resonance_drain": 8,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "协议一旦下达不可撤销。这一条写在标题里。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "block": 12
+    },
+    "flavor_add": "有人试着撤销过。条款仍在执行。"
+   }
+  },
+  {
+   "id": "anm_0018",
+   "name": "威胁等级·评估员",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 2,
+    "target": "self",
+    "gaze_cost": 3
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "评估员不需要勇气。评估员只需要看清等级，然后签字。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "签字笔换成了刻刀。等级刻进了手背。"
+   }
+  },
+  {
+   "id": "anm_0019",
+   "name": "例检手套",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "special",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "手套里还留着上一任的体温。条例规定不得清空。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "体温散了。条例没散。"
+   }
+  },
+  {
+   "id": "anm_0020",
+   "name": "协议：静默段",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "target": "self",
+    "special": [
+     {
+      "code": "resonance_lock"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "共振冻结。冻结不是和平，是账。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 10
+    },
+    "flavor_add": "第二次宣读。账本翻到了新的一页。"
+   }
+  },
+  {
+   "id": "anm_0021",
+   "name": "协议：优先级翻转",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "block": 4,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "先处理谁，后处理谁。协议说了算，证据不算。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "block": 6,
+     "draw": 1
+    },
+    "flavor_add": "优先级又翻了一次。协议没有疲惫。"
+   }
+  },
+  {
+   "id": "anm_0022",
+   "name": "协议：保运行",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 6,
+    "target": "self"
+   },
+   "cost_type": "vitality",
+   "cost_text": "运行优先于人。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "heal": 9
+    },
+    "flavor_add": "第九页撕掉了。撕掉之前有人读过。"
+   },
+   "flavor": "运行优先于人。人也是运行的一部分。"
+  },
+  {
+   "id": "anm_0023",
+   "name": "协议：信息隔离",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "走廊两侧互不通报。通报的都出事了。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "隔离升级。你不知道的事在保护你。"
+   }
+  },
+  {
+   "id": "anm_0024",
+   "name": "协议：库存封存",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 8,
+    "target": "self"
+   },
+   "cost_type": "lock",
+   "cost_text": "封存物资每层只启封一次。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 12
+    },
+    "flavor_add": "启封记录多了一行。是它自己写的。"
+   },
+   "flavor": "封存物资每层只启封一次。启封记录不公开。"
+  },
+  {
+   "id": "anm_0025",
+   "name": "协议：终端确认",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 10,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "请确认。再确认一次。第三次是给它的。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "终端还在等第四次确认。你按了。"
+   }
+  },
+  {
+   "id": "anm_0026",
+   "name": "协议：最小代价原则",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 5,
+    "block": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "在两个坏结果里，协议替你选了小的。谢谢它。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 8,
+     "block": 5
+    },
+    "flavor_add": "协议开始自己选。选得比你狠。"
+   }
+  },
+  {
+   "id": "anm_0027",
+   "name": "协议：静默段·延长",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "resonance_lock"
+     }
+    ],
+    "block": 3
+   },
+   "cost_type": "vitality",
+   "cost_text": "静默段有第 2000 年了。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 6
+    },
+    "flavor_add": "续期成功。成功这个词用在这里很怪，但流程上没错。"
+   },
+   "flavor": "静默段有第 2000 年了。你续的是第 2001 年。"
+  },
+  {
+   "id": "anm_0028",
+   "name": "协议：注销",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "special",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 14,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "memory",
+   "cost_text": "编号注销。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "damage": 18
+    },
+    "flavor_add": "注销申请被驳回了。驳回的人注销了自己。"
+   },
+   "flavor": "被注销的编号从此不属于任何人。"
+  },
+  {
+   "id": "anm_0029",
+   "name": "氧气核算",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "氧气存量：够。人数：对得上。这两件事很少同时成立。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 8
+    },
+    "flavor_add": "核算通过。通过的那一栏有人签了名，不是你。"
+   }
+  },
+  {
+   "id": "anm_0030",
+   "name": "运料车残骸",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 7,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "运料车停在半路。停了五百年，货还算齐的。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 10
+    },
+    "flavor_add": "你从残骸里多拖了一件。账上没有这件。"
+   }
+  },
+  {
+   "id": "anm_0031",
+   "name": "缓冲库存",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "把今天的伤记成明天的库存。库存不算伤。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "库存转正了。伤不算伤，也算库存。"
+   }
+  },
+  {
+   "id": "anm_0032",
+   "name": "闭环利用",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 0,
+   "effect": {
+    "heal": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "你呼出的，避难所会还给你。还的时候别问混了什么。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 5
+    },
+    "flavor_add": "闭环率提高了。闭环里多了一圈什么在游。"
+   }
+  },
+  {
+   "id": "anm_0033",
+   "name": "血统册摘录",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "册子上你的名字有三处批注。三处都是待修。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "第四处批注出现了。日期是昨天。"
+   }
+  },
+  {
+   "id": "anm_0035",
+   "name": "超频保养",
+   "class": "anmin",
+   "type": "power",
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "vitality",
+   "cost_text": "损耗计入下个核算期。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "核算期延长了。损耗不打算讨。"
+   },
+   "flavor": "超频的损耗计入下个核算期。核算期很长。"
+  },
+  {
+   "id": "anm_0036",
+   "name": "保运行批文",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 4,
+    "block": 4,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "批文核准：你再运行一个核算期。批复人栏是空的。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 6,
+     "block": 5
+    },
+    "flavor_add": "批复人栏出现了名字。名字被涂掉了。"
+   }
+  },
+  {
+   "id": "anm_0037",
+   "name": "动用储备",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 10,
+    "target": "self"
+   },
+   "cost_type": "vitality",
+   "cost_text": "动用储备需要授权。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 14
+    },
+    "flavor_add": "储备见了底。底下面还有一层，没人批准过。"
+   },
+   "flavor": "储备不是用来保命的。储备是用来撑到下一次例检的。"
+  },
+  {
+   "id": "anm_0039",
+   "name": "菌婪者组织样本",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 6,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "poison",
+      "v": 4
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "样本登记为：被改造生物，编号注销。它不同意注销。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 8
+    },
+    "flavor_add": "样本开始记账。记的是你欠它的。"
+   }
+  },
+  {
+   "id": "anm_0040",
+   "name": "协议：例外条款",
+   "class": "anmin",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "例外条款救不了所有人。它救的是签字的人。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "例外多了。例外开始互相援引。"
+   }
+  },
+  {
+   "id": "anm_0041",
+   "name": "保运行优先级",
+   "class": "anmin",
+   "type": "power",
+   "rarity": "rare",
+   "veins": [
+    "water"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     },
+     {
+      "code": "strength",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "vitality",
+   "cost_text": "系统将优先保运行。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "腿保住了。保运行的定义正在扩。"
+   },
+   "flavor": "主控将优先保运行。运行的定义不包括你的腿。"
+  },
+  {
+   "id": "anm_0042",
+   "name": "基因修复台",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 8,
+    "target": "self"
+   },
+   "cost_type": "memory",
+   "cost_text": "修复覆盖一段序列。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 12
+    },
+    "flavor_add": "覆盖完成。你确认过，你确认过吗。"
+   },
+   "flavor": "修复会覆盖一段序列。覆盖的那段不通知你。"
+  },
+  {
+   "id": "anm_0043",
+   "name": "静默段徵章",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "special",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 10,
+    "target": "self",
+    "special": [
+     {
+      "code": "retain"
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "徵章授给经历过最长静默段的人。他没说话，就是证明。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "block": 14
+    },
+    "flavor_add": "徵章传给了你。传的时候也没有仪式。"
+   }
+  },
+  {
+   "id": "anm_0044",
+   "name": "死者的工号牌",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "工号牌还在发信号。信号发给了两千年前。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "信号有回执了。你没敢看回执内容。"
+   }
+  },
+  {
+   "id": "anm_0045",
+   "name": "读图纸的人",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "我看得懂图纸。这件事我谁也没告诉。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "图纸看懂了一页。那一页让一切更难懂了。"
+   }
+  },
+  {
+   "id": "anm_0046",
+   "name": "例检清单（残）",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "清单缺了后半页。缺的后半页都是关键项。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "后半页找到了。找到了，但不想贴上。"
+   }
+  },
+  {
+   "id": "anm_0047",
+   "name": "通风守卫·代班",
+   "class": "anmin",
+   "type": "attack",
+   "rarity": "common",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 8,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "守卫还在通风口。通风早就停了。它没收到停工通知。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "damage": 11
+    },
+    "flavor_add": "通知找到了。它看完继续站岗。"
+   }
+  },
+  {
+   "id": "anm_0048",
+   "name": "运输井规程",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "uncommon",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "resonance_gain": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "下井前默哀十秒。规程上的时间，你们总是省着用。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 7,
+     "resonance_gain": 4
+    },
+    "flavor_add": "这次默哀了全程十秒。井底安静了很久。"
+   }
+  },
+  {
+   "id": "anm_0049",
+   "name": "撤销程序残片",
+   "class": "anmin",
+   "type": "skill",
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "resonance_drain": 6,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "残片教你撤销一样东西。残片没说哪样。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "resonance_drain": 8
+    },
+    "flavor_add": "残片拼上了。拼上的部分写着你不能学。"
+   }
+  },
+  {
+   "id": "anm_0050",
+   "name": "主控密钥（烧毁）",
+   "class": "anmin",
+   "type": "power",
+   "rarity": "special",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 1
+     },
+     {
+      "code": "dexterity",
+      "value": 1
+     }
+    ]
+   },
+   "cost_type": "mark",
+   "cost_text": "烧毁的密钥只剩一半权限。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "密钥重新烧了一遍。权限没变，温度变了。"
+   },
+   "flavor": "烧毁的密钥只剩一半权限。另一半在红光里。"
+  }
+ ],
+ "cangmin": [
+  {
+   "id": "cng_0001",
+   "name": "守夜",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 4,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "不睡，梦就不会破。不睡，明天也不会来。两件事我选了一夜。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 6
+    },
+    "flavor_add": "第二夜守完了。第三夜的借口还没想好。"
+   }
+  },
+  {
+   "id": "cng_0002",
+   "name": "王国账簿",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "王国的账记到一千三百年前。后面是空白，空白也算账。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "空白页有人续了一行。字迹是新的。"
+   }
+  },
+  {
+   "id": "cng_0003",
+   "name": "巨神的欠条",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "巨神拿走了火母，欠我们一个天亮。欠条没有落款日期。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 9
+    },
+    "flavor_add": "利息开始计了。巨神没有还钱的意思。"
+   }
+  },
+  {
+   "id": "cng_0004",
+   "name": "灰藻汤",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "灰藻是酸的。酸是好事，酸说明海还认得旧配方。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 8
+    },
+    "flavor_add": "汤里多了一块红的。没人敢问是哪来的。"
+   }
+  },
+  {
+   "id": "cng_0005",
+   "name": "巡夜灯",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "灯照三步。三步之外交给神。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "灯芯换成了双的。神多收到了一份。"
+   }
+  },
+  {
+   "id": "cng_0006",
+   "name": "守夜人的表",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "光父每五十天绕一圈。我的表每小时绕一圈。总得有一样是准的。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "表快了。快的那部分借给了梦。"
+   }
+  },
+  {
+   "id": "cng_0007",
+   "name": "星表检索",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "星表第一页画着火母。第一页翻得最烂。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "星表第二页开始没有火母。第二页很新。"
+   }
+  },
+  {
+   "id": "cng_0008",
+   "name": "历法之争",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "block": 4,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "两派为一息的长度打了十年。后来火母走了，架白吵了。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "第十一年，两派合写了一份新历。第一个单位是：失踪。"
+   }
+  },
+  {
+   "id": "cng_0009",
+   "name": "光父的准点",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 8,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "光父今夜准时。巨神今夜准时。只有该回来的那位，不准时。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 11
+    },
+    "flavor_add": "准时的两位被念了一整夜。不准时的欠了一整夜。"
+   }
+  },
+  {
+   "id": "cng_0010",
+   "name": "忆盐",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 0,
+   "effect": {
+    "heal": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "盐是灰的。梦是红的。嚼一口，账就记在火母那边。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "heal": 5
+    },
+    "flavor_add": "梦里出现了颜色。第一种是红，第二种没记住。"
+   }
+  },
+  {
+   "id": "cng_0011",
+   "name": "猎巫者的谎",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 7,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "猎巫人问我会不会飞。我说不会。他很高兴，多给了我半条鱼。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "block": 10
+    },
+    "flavor_add": "谎越撒越熟。半条鱼变成了整条。"
+   }
+  },
+  {
+   "id": "cng_0012",
+   "name": "母亲的祷文",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "rare",
+   "veins": [
+    "water"
+   ],
+   "energy": 0,
+   "effect": {
+    "heal": 6,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "她念到第三句就睡着。我抄下来，念到第三句，也睡着了。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "heal": 9
+    },
+    "flavor_add": "第三句之后还有第四句。母亲没念过第四句。"
+   }
+  },
+  {
+   "id": "cng_0013",
+   "name": "灰藻供品",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 4,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "供品摆在熄灭的方向。第二天供品还在，火母没吃，我自己吃了。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "heal": 7
+    },
+    "flavor_add": "供品第二天少了一半。这次不是我。"
+   }
+  },
+  {
+   "id": "cng_0014",
+   "name": "伊格的方向",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "block": 3,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "先找巨神的圆盘，再往左。火母的方向要用两步才能说清。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 5
+    },
+    "flavor_add": "现在只用一步。天上的东西也在挪。"
+   }
+  },
+  {
+   "id": "cng_0015",
+   "name": "守望席",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 9,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "这是全城最体面的位置。体面在石头上磨出了坑。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 12
+    },
+    "flavor_add": "坑又深了一点。体面是磨出来的。"
+   }
+  },
+  {
+   "id": "cng_0016",
+   "name": "火母历第一页",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "heal": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "历法第一个单位是一息。观测对象没了，单位还在值班。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "heal": 5
+    },
+    "flavor_add": "第一页末尾添了一笔小字：一息，约等于一次想念。"
+   }
+  },
+  {
+   "id": "cng_0017",
+   "name": "地下学院讲义",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "special",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "第一页是呼吸法。我们练了十三代人，练会了呼吸。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "第二页开始出现批注。批注人是十三代人里最疯的那个。"
+   }
+  },
+  {
+   "id": "cng_0018",
+   "name": "巨神的凝视",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 13,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "在梦里，圆盘占四分之一的天。它看你的时候不用转身。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 18
+    },
+    "flavor_add": "凝视聚焦了。梦里第一次有了影子。"
+   }
+  },
+  {
+   "id": "cng_0019",
+   "name": "王权梦",
+   "class": "cangmin",
+   "type": "power",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "strength",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "梦里我也是王。醒来王冠留在枕头上，是灰藻编的。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "strength",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "梦里加了冕。加冕词用的是祷文第三句。"
+   }
+  },
+  {
+   "id": "cng_0020",
+   "name": "城墙梦",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "block": 14,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "梦里我把城墙修完了。修了一半的那半也长齐了。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 19
+    },
+    "flavor_add": "城墙上加了塔。塔上有人，是我。"
+   }
+  },
+  {
+   "id": "cng_0021",
+   "name": "巨神的欠账",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "梦里我去讨债了。巨神的账房比醒着的城还大。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 13
+    },
+    "flavor_add": "讨回来一角。一角在天上，我举不动。"
+   }
+  },
+  {
+   "id": "cng_0023",
+   "name": "潮汐锁",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 12,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "潮汐锁住的是脸的方向。梦里我把它锁在了敌人身上。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "block": 16
+    },
+    "flavor_add": "它挣了一下。锁环上多了一道它的爪痕。"
+   }
+  },
+  {
+   "id": "cng_0024",
+   "name": "暗盘俯瞰",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "special",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 10,
+    "hits": 1,
+    "target": "all"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "我从圆盘的高度往下看。梦里的一切都小，小到可以一次收拾。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "俯瞰的角度练熟了。梦里也开始有重力和疼。"
+   }
+  },
+  {
+   "id": "cng_0025",
+   "name": "沉默权柄",
+   "class": "cangmin",
+   "type": "power",
+   "dream": true,
+   "rarity": "special",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "thorns",
+      "value": 4
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "巨神一万年不说话。不说话的东西最吓人，也最硬。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "thorns",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "巨神在梦里开了口。只对我，只说了一个字。"
+   }
+  },
+  {
+   "id": "cng_0026",
+   "name": "光父的钟摆",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 7,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "钟摆左右摆。左边是昨天，右边是明天，中间是它砸下来的地方。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "damage": 10
+    },
+    "flavor_add": "摆幅加大了。昨天和明天都被砸中了。"
+   }
+  },
+  {
+   "id": "cng_0027",
+   "name": "红矮星风",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 8,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "光父吹过来的风是暗红的。风里全是别处的火。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "damage": 11
+    },
+    "flavor_add": "风里多了一缕熟悉的红。我追了两步。"
+   }
+  },
+  {
+   "id": "cng_0028",
+   "name": "五十日",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 10,
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "五十天一个周期。我在梦里把五十天过成五十个夜。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "block": 13
+    },
+    "flavor_add": "第五十夜，钟摆停了。停摆的那晚最安全。"
+   }
+  },
+  {
+   "id": "cng_0030",
+   "name": "星光残照",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "common",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 9,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "星光很淡。淡光照见的东西，白天看不见。",
+   "upgrade": {
+    "name_suffix": "·旧",
+    "effect": {
+     "block": 12
+    },
+    "flavor_add": "残照里走过来一个人影。走得很熟。"
+   }
+  },
+  {
+   "id": "cng_0032",
+   "name": "准时的心跳",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 7,
+    "heal": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "梦里我的心跳和光父同步。第一次同步的时候我哭了，梦里不知道。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 5
+    },
+    "flavor_add": "同步稳定了。心跳和我，总有一个是假的。"
+   }
+  },
+  {
+   "id": "cng_0033",
+   "name": "昴宿低语",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 0,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "光父说话很轻。它说：你母亲那颗星，我认识。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "它认识的不止一颗。它认识整个走散的家。"
+   }
+  },
+  {
+   "id": "cng_0034",
+   "name": "火母的怀抱",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "uncommon",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 10,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "burn",
+      "value": 3,
+      "turns": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "抱住它的时候要忍住不哭。眼泪在梦里是助燃的。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 14
+    },
+    "flavor_add": "这次没忍住。烧得更旺了，怪我。"
+   }
+  },
+  {
+   "id": "cng_0035",
+   "name": "伊格的痛苦",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 7,
+    "hits": 1,
+    "target": "all"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "她在梦里喊疼。我醒了，枕头是湿的，是红的。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 10
+    },
+    "flavor_add": "疼痛分了级。最重的那级，她替我承受。"
+   }
+  },
+  {
+   "id": "cng_0036",
+   "name": "归乡",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 10,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "梦里往回走。走到一半想起，老家已经是别人的星球了。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "heal": 14
+    },
+    "flavor_add": "老家到了。门口坐着的影子站起来让我进。"
+   }
+  },
+  {
+   "id": "cng_0037",
+   "name": "影语",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "special",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single",
+    "special": [
+     {
+      "code": "weak",
+      "turns": 2
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "穹顶之影的话要倒着听。它说欢迎，意思是别走。",
+   "upgrade": {
+    "name_suffix": "·残",
+    "effect": {
+     "damage": 12
+    },
+    "flavor_add": "这次我正着回了话。它沉默的方式变了。"
+   }
+  },
+  {
+   "id": "cng_0038",
+   "name": "震喉",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "special",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 6,
+    "hits": 3,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "震喉的话不用听，站在声里就算读过。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 8
+    },
+    "flavor_add": "三声之后还有第四声。第四声是我的回音。"
+   }
+  },
+  {
+   "id": "cng_0039",
+   "name": "光导",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "special",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 8,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "光蛭母把光分给你，也多要一点。利率面议。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 11
+    },
+    "flavor_add": "这次它多给了。多给的部分开始计息。"
+   }
+  },
+  {
+   "id": "cng_0040",
+   "name": "墟语",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "tremor"
+   ],
+   "energy": 2,
+   "effect": {
+    "damage": 18,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "墟蛹的遗言很长。我在梦里只抄了伤害的部分。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 24
+    },
+    "flavor_add": "遗言抄完了。最后一句是给我所在的时代。"
+   }
+  },
+  {
+   "id": "cng_0041",
+   "name": "红藻花园",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": true,
+   "rarity": "uncommon",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "heal": 8,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "梦里红藻是活的。一千三百年了，它们在梦里没死过。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "heal": 12
+    },
+    "flavor_add": "花园扩建了。扩建的种子是我醒来后咳出来的。"
+   }
+  },
+  {
+   "id": "cng_0042",
+   "name": "火母的回应",
+   "class": "cangmin",
+   "type": "power",
+   "dream": true,
+   "rarity": "rare",
+   "veins": [
+    "heat"
+   ],
+   "energy": 2,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "regenerate",
+      "value": 3
+     }
+    ]
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "我喊了火母一声。回应迟到了一千三百年，但押着韵。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "regenerate",
+       "value": 2
+      }
+     ]
+    },
+    "flavor_add": "回应开始带下文。下文是火母的字迹。"
+   }
+  },
+  {
+   "id": "cng_0043",
+   "name": "猎巫者的绳",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 7,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "绳打的是活结。猎巫人讲究效率，活结能重复用。",
+   "upgrade": {
+    "name_suffix": "·改",
+    "effect": {
+     "block": 10
+    },
+    "flavor_add": "绳换了粗的。被捆的人开始反抗了。"
+   }
+  },
+  {
+   "id": "cng_0044",
+   "name": "三体历残卷",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "uncommon",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "残卷记着三个天体的位置。有两个还准，一个在等。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "draw": 2
+    },
+    "flavor_add": "第三个位置有了新坐标。是有人后来补的。"
+   }
+  },
+  {
+   "id": "cng_0045",
+   "name": "晨昏带地图",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 5,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "晨昏带是唯一不冷不热的地方。地图上它细得像一根线。",
+   "upgrade": {
+    "name_suffix": "·固",
+    "effect": {
+     "block": 7
+    },
+    "flavor_add": "线上多了一个点。点是我今晚的落脚处。"
+   }
+  },
+  {
+   "id": "cng_0046",
+   "name": "火母的小像",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "heat"
+   ],
+   "energy": 0,
+   "effect": {
+    "heal": 3,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "小像拿红藻灰捏的。捏得不像。她走的时候我们也没看清。",
+   "upgrade": {
+    "name_suffix": "·新",
+    "effect": {
+     "heal": 5
+    },
+    "flavor_add": "像重捏了一遍。捏得更不像了，但更像她。"
+   }
+  },
+  {
+   "id": "cng_0047",
+   "name": "不醒者的名单",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "rare",
+   "veins": [
+    "light"
+   ],
+   "energy": 1,
+   "effect": {
+    "draw": 2,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "名单上的人都在梦里没回来。名字之间画着线，像亲缘图。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "draw": 3
+    },
+    "flavor_add": "名单末尾空了一行。空行的墨迹是湿的。"
+   }
+  },
+  {
+   "id": "cng_0048",
+   "name": "猎巫巡逻·换防",
+   "class": "cangmin",
+   "type": "attack",
+   "dream": false,
+   "rarity": "uncommon",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "damage": 9,
+    "hits": 1,
+    "target": "single"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "巡逻队换防要查火把。火把照不了梦，他们不信。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "damage": 12
+    },
+    "flavor_add": "查完火把查了梦。我的梦很干净，干净得可疑。"
+   }
+  },
+  {
+   "id": "cng_0049",
+   "name": "岩洞集会",
+   "class": "cangmin",
+   "type": "skill",
+   "dream": false,
+   "rarity": "common",
+   "veins": [
+    "mineral"
+   ],
+   "energy": 1,
+   "effect": {
+    "block": 6,
+    "draw": 1,
+    "target": "self"
+   },
+   "cost_type": "none",
+   "cost_text": "",
+   "flavor": "集会议题：今晚谁守夜。全票通过：不是我。",
+   "upgrade": {
+    "name_suffix": "·Ⅱ",
+    "effect": {
+     "block": 8
+    },
+    "flavor_add": "议题改了：今晚谁先睡。还是全票通过。"
+   }
+  },
+  {
+   "id": "cng_0050",
+   "name": "疯先知的笔记",
+   "class": "cangmin",
+   "type": "power",
+   "dream": false,
+   "rarity": "special",
+   "veins": [
+    "water"
+   ],
+   "energy": 1,
+   "effect": {
+    "target": "self",
+    "special": [
+     {
+      "code": "dexterity",
+      "value": 2
+     }
+    ]
+   },
+   "cost_type": "mark",
+   "cost_text": "笔记传抄时会顺手抄走读者的一段睡眠。",
+   "upgrade": {
+    "name_suffix": "·刻",
+    "effect": {
+     "special": [
+      {
+       "code": "dexterity",
+       "value": 1
+      }
+     ]
+    },
+    "flavor_add": "笔记传到我手里时多了个封套。封套里是一小撮灰，红的。"
+   },
+   "flavor": "笔记传到我手里时多了个封套。封套里是一小撮灰，红的。"
+  }
+ ]
+}

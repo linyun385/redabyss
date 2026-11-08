@@ -1,0 +1,1376 @@
+[
+  {
+    "id": "anm_0001",
+    "name": "现场回收",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 4,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "击杀登记：料料入账。废墟不发工资，发零件。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 6
+      },
+      "flavor_add": "回收范围扩了半个身位。条款没改。"
+    }
+  },
+  {
+    "id": "anm_0002",
+    "name": "扳手规程",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 9,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "扳手有两种用法。规程只写了第一种。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "damage": 12
+      },
+      "flavor_add": "第二种用法传了下来。没有人承认。"
+    }
+  },
+  {
+    "id": "anm_0003",
+    "name": "备用照明电池",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 0,
+    "effect": {
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "电量：够照三次呼吸。省着用。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "draw": 2
+      },
+      "flavor_add": "电池是满的。满得可疑。"
+    }
+  },
+  {
+    "id": "anm_0004",
+    "name": "例检条款",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 7,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "我逐项打钩。机械逐项通过。我们都很专业。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 10
+      },
+      "flavor_add": "新增第十一条：不许看它的眼。"
+    }
+  },
+  {
+    "id": "anm_0005",
+    "name": "焊缝补强",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "heat"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 5,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "焊枪走过的地方，墙忘了自己是墙。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "block": 8
+      },
+      "flavor_add": "补丁比墙年轻。比墙听话。"
+    }
+  },
+  {
+    "id": "anm_0006",
+    "name": "库存盘点",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 0,
+    "effect": {
+      "draw": 1,
+      "resonance_gain": 2,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "料：账实相符。人：没点。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "resonance_gain": 4
+      },
+      "flavor_add": "第二遍盘点。有一项在动。"
+    }
+  },
+  {
+    "id": "anm_0007",
+    "name": "调节螺栓",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 4,
+      "hits": 2,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "拧一圈，紧一圈。松的东西总要有人管。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "damage": 5
+      },
+      "flavor_add": "第三圈拧不动了。里面的东西在顶。"
+    }
+  },
+  {
+    "id": "anm_0008",
+    "name": "报废清单",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 4,
+      "resonance_drain": 5,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "七个编号同时注销。墨水是最后一次配给的。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "block": 6,
+        "resonance_drain": 7
+      },
+      "flavor_add": "清单末尾多了一行。不是我的字。"
+    }
+  },
+  {
+    "id": "anm_0009",
+    "name": "料仓取件",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 0,
+    "effect": {
+      "draw": 2,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "料仓认工号。工号认我。我认不认它，没登记。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "draw": 3
+      },
+      "flavor_add": "料仓多给了两件。多给的不上账。"
+    }
+  },
+  {
+    "id": "anm_0010",
+    "name": "应急照明协议",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 9,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "按下按钮。走廊亮起。黑暗退到条款边缘。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 13
+      },
+      "flavor_add": "灯亮的时间超出了协议。没有人去关。"
+    }
+  },
+  {
+    "id": "anm_0011",
+    "name": "焊接臂·民用型",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+      "heat"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 6,
+      "hits": 1,
+      "target": "single",
+      "special": [
+        {
+          "code": "burn",
+          "value": 3,
+          "turns": 2
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "民用型。焊不了装甲，焊得住皮肉。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "damage": 8
+      },
+      "flavor_add": "改装了。改装件来路未登记。"
+    }
+  },
+  {
+    "id": "anm_0012",
+    "name": "维修凝胶",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 7,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "凝胶不挑部位。哪里漏，哪里算伤口。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 10
+      },
+      "flavor_add": "过期了。过期之后更稠，更好用。"
+    }
+  },
+  {
+    "id": "anm_0013",
+    "name": "料径校准",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 5,
+      "hits": 1,
+      "target": "single",
+      "resonance_gain": 4
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "料径误差不许超过一丝。红光的误差不算误差。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 7,
+        "resonance_gain": 5
+      },
+      "flavor_add": "校准了红光本身。它准得让人不安。"
+    }
+  },
+  {
+    "id": "anm_0014",
+    "name": "巡逻体残骸",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 12,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "把它抬回避难所的路上，它一直在给别的巡逻体发位置。",
+    "upgrade": {
+      "name_suffix": "·残",
+      "effect": {
+        "damage": 16
+      },
+      "flavor_add": "信号断了。是我们剪的。剪之前犹豫了一下。"
+    }
+  },
+  {
+    "id": "anm_0015",
+    "name": "主控授权·工程线",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "strength",
+          "value": 2
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "授权下发。从今天起，你拧的每一颗螺栓都算数。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "strength",
+            "value": 1
+          }
+        ]
+      },
+      "flavor_add": "授权延期。理由栏写着：还需要他。"
+    }
+  },
+  {
+    "id": "anm_0016",
+    "name": "主控授权·安全线",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "dexterity",
+          "value": 2
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "安全线授权比工程线难拿。因为安全线管的是命。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "dexterity",
+            "value": 1
+          }
+        ]
+      },
+      "flavor_add": "授权延期。理由栏写着：他还活着。"
+    }
+  },
+  {
+    "id": "anm_0017",
+    "name": "回收协议·总则",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 8,
+      "resonance_drain": 8,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "协议一旦下达不可撤销。这一条写在标题里。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "block": 12
+      },
+      "flavor_add": "有人试着撤销过。条款仍在执行。"
+    }
+  },
+  {
+    "id": "anm_0018",
+    "name": "威胁等级·评估员",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 0,
+    "effect": {
+      "draw": 2,
+      "target": "self",
+      "gaze_cost": 3
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "评估员不需要勇气。评估员只需要看清等级，然后签字。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "draw": 3
+      },
+      "flavor_add": "签字笔换成了刻刀。等级刻进了手背。"
+    }
+  },
+  {
+    "id": "anm_0019",
+    "name": "例检手套",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "special",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 6,
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "手套里还留着上一任的体温。条例规定不得清空。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "block": 9
+      },
+      "flavor_add": "体温散了。条例没散。"
+    }
+  },
+  {
+    "id": "anm_0020",
+    "name": "协议：静默段",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 6,
+      "target": "self",
+      "special": [
+        {
+          "code": "resonance_lock"
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "共振冻结。冻结不是和平，是账。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 10
+      },
+      "flavor_add": "第二次宣读。账本翻到了新的一页。"
+    }
+  },
+  {
+    "id": "anm_0021",
+    "name": "协议：优先级翻转",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 1,
+      "block": 4,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "先处理谁，后处理谁。协议说了算，证据不算。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "block": 6,
+        "draw": 1
+      },
+      "flavor_add": "优先级又翻了一次。协议没有疲惫。"
+    }
+  },
+  {
+    "id": "anm_0022",
+    "name": "协议：保运行",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 6,
+      "target": "self"
+    },
+    "cost_type": "vitality",
+    "cost_text": "运行优先于人。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "heal": 9
+      },
+      "flavor_add": "第九页撕掉了。撕掉之前有人读过。"
+    },
+    "flavor": "运行优先于人。人也是运行的一部分。"
+  },
+  {
+    "id": "anm_0023",
+    "name": "协议：信息隔离",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 2,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "走廊两侧互不通报。通报的都出事了。",
+    "upgrade": {
+      "name_suffix": "·改",
+      "effect": {
+        "draw": 3
+      },
+      "flavor_add": "隔离升级。你不知道的事在保护你。"
+    }
+  },
+  {
+    "id": "anm_0024",
+    "name": "协议：库存封存",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 8,
+      "target": "self"
+    },
+    "cost_type": "lock",
+    "cost_text": "封存物资每层只启封一次。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 12
+      },
+      "flavor_add": "启封记录多了一行。是它自己写的。"
+    },
+    "flavor": "封存物资每层只启封一次。启封记录不公开。"
+  },
+  {
+    "id": "anm_0025",
+    "name": "协议：终端确认",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 10,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "请确认。再确认一次。第三次是给它的。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "damage": 14
+      },
+      "flavor_add": "终端还在等第四次确认。你按了。"
+    }
+  },
+  {
+    "id": "anm_0026",
+    "name": "协议：最小代价原则",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 5,
+      "block": 5,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "在两个坏结果里，协议替你选了小的。谢谢它。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 8,
+        "block": 5
+      },
+      "flavor_add": "协议开始自己选。选得比你狠。"
+    }
+  },
+  {
+    "id": "anm_0027",
+    "name": "协议：静默段·延长",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 0,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "resonance_lock"
+        }
+      ],
+      "block": 3
+    },
+    "cost_type": "vitality",
+    "cost_text": "静默段有第 2000 年了。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 6
+      },
+      "flavor_add": "续期成功。成功这个词用在这里很怪，但流程上没错。"
+    },
+    "flavor": "静默段有第 2000 年了。你续的是第 2001 年。"
+  },
+  {
+    "id": "anm_0028",
+    "name": "协议：注销",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "special",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 14,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "memory",
+    "cost_text": "编号注销。",
+    "upgrade": {
+      "name_suffix": "·残",
+      "effect": {
+        "damage": 18
+      },
+      "flavor_add": "注销申请被驳回了。驳回的人注销了自己。"
+    },
+    "flavor": "被注销的编号从此不属于任何人。"
+  },
+  {
+    "id": "anm_0029",
+    "name": "氧气核算",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 5,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "氧气存量：够。人数：对得上。这两件事很少同时成立。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 8
+      },
+      "flavor_add": "核算通过。通过的那一栏有人签了名，不是你。"
+    }
+  },
+  {
+    "id": "anm_0030",
+    "name": "运料车残骸",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 7,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "运料车停在半路。停了五百年，货还算齐的。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 10
+      },
+      "flavor_add": "你从残骸里多拖了一件。账上没有这件。"
+    }
+  },
+  {
+    "id": "anm_0031",
+    "name": "缓冲库存",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 6,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "把今天的伤记成明天的库存。库存不算伤。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 9
+      },
+      "flavor_add": "库存转正了。伤不算伤，也算库存。"
+    }
+  },
+  {
+    "id": "anm_0032",
+    "name": "闭环利用",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "water"
+    ],
+    "energy": 0,
+    "effect": {
+      "heal": 3,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "你呼出的，避难所会还给你。还的时候别问混了什么。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 5
+      },
+      "flavor_add": "闭环率提高了。闭环里多了一圈什么在游。"
+    }
+  },
+  {
+    "id": "anm_0033",
+    "name": "血统册摘录",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "册子上你的名字有三处批注。三处都是待修。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "draw": 2
+      },
+      "flavor_add": "第四处批注出现了。日期是昨天。"
+    }
+  },
+  {
+    "id": "anm_0034",
+    "name": "辐射防护衬层",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 8,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "衬层穿了两千年。它比你更懂这颗卫星。",
+    "upgrade": {
+      "name_suffix": "·固",
+      "effect": {
+        "block": 12
+      },
+      "flavor_add": "衬层换新了。旧的那件叠在新件里面。"
+    }
+  },
+  {
+    "id": "anm_0035",
+    "name": "超频保养",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "uncommon",
+    "veins": [
+      "heat"
+    ],
+    "energy": 1,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "strength",
+          "value": 2
+        }
+      ]
+    },
+    "cost_type": "vitality",
+    "cost_text": "损耗计入下个核算期。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "special": [
+          {
+            "code": "strength",
+            "value": 1
+          }
+        ]
+      },
+      "flavor_add": "核算期延长了。损耗不打算讨。"
+    },
+    "flavor": "超频的损耗计入下个核算期。核算期很长。"
+  },
+  {
+    "id": "anm_0036",
+    "name": "保运行批文",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 4,
+      "block": 4,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "批文核准：你再运行一个核算期。批复人栏是空的。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 6,
+        "block": 5
+      },
+      "flavor_add": "批复人栏出现了名字。名字被涂掉了。"
+    }
+  },
+  {
+    "id": "anm_0037",
+    "name": "动用储备",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 0,
+    "effect": {
+      "block": 10,
+      "target": "self"
+    },
+    "cost_type": "vitality",
+    "cost_text": "动用储备需要授权。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 14
+      },
+      "flavor_add": "储备见了底。底下面还有一层，没人批准过。"
+    },
+    "flavor": "储备不是用来保命的。储备是用来撑到下一次例检的。"
+  },
+  {
+    "id": "anm_0038",
+    "name": "运料井下坠",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 11,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "运输井没有电梯，只有方向。方向是下。",
+    "upgrade": {
+      "name_suffix": "·残",
+      "effect": {
+        "damage": 15
+      },
+      "flavor_add": "井底传来回声。回声比你先到，先停。"
+    }
+  },
+  {
+    "id": "anm_0039",
+    "name": "菌婪者组织样本",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "uncommon",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 6,
+      "hits": 1,
+      "target": "single",
+      "special": [
+        {
+          "code": "poison",
+          "v": 4
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "样本登记为：被改造生物，编号注销。它不同意注销。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "damage": 8
+      },
+      "flavor_add": "样本开始记账。记的是你欠它的。"
+    }
+  },
+  {
+    "id": "anm_0040",
+    "name": "协议：例外条款",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "rare",
+    "veins": [
+      "water"
+    ],
+    "energy": 1,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "regenerate",
+          "value": 3
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "例外条款救不了所有人。它救的是签字的人。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "special": [
+          {
+            "code": "regenerate",
+            "value": 2
+          }
+        ]
+      },
+      "flavor_add": "例外多了。例外开始互相援引。"
+    }
+  },
+  {
+    "id": "anm_0041",
+    "name": "保运行优先级",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "rare",
+    "veins": [
+      "water"
+    ],
+    "energy": 2,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "regenerate",
+          "value": 2
+        },
+        {
+          "code": "strength",
+          "value": 1
+        }
+      ]
+    },
+    "cost_type": "vitality",
+    "cost_text": "系统将优先保运行。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "regenerate",
+            "value": 1
+          }
+        ]
+      },
+      "flavor_add": "腿保住了。保运行的定义正在扩。"
+    },
+    "flavor": "主控将优先保运行。运行的定义不包括你的腿。"
+  },
+  {
+    "id": "anm_0042",
+    "name": "基因修复台",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "heal": 8,
+      "target": "self"
+    },
+    "cost_type": "memory",
+    "cost_text": "修复覆盖一段序列。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "heal": 12
+      },
+      "flavor_add": "覆盖完成。你确认过，你确认过吗。"
+    },
+    "flavor": "修复会覆盖一段序列。覆盖的那段不通知你。"
+  },
+  {
+    "id": "anm_0043",
+    "name": "静默段徵章",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "special",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 10,
+      "target": "self",
+      "special": [
+        {
+          "code": "retain"
+        }
+      ]
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "徵章授给经历过最长静默段的人。他没说话，就是证明。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "block": 14
+      },
+      "flavor_add": "徵章传给了你。传的时候也没有仪式。"
+    }
+  },
+  {
+    "id": "anm_0044",
+    "name": "死者的工号牌",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 0,
+    "effect": {
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "工号牌还在发信号。信号发给了两千年前。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "draw": 2
+      },
+      "flavor_add": "信号有回执了。你没敢看回执内容。"
+    }
+  },
+  {
+    "id": "anm_0045",
+    "name": "读图纸的人",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 1,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "我看得懂图纸。这件事我谁也没告诉。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "draw": 2
+      },
+      "flavor_add": "图纸看懂了一页。那一页让一切更难懂了。"
+    }
+  },
+  {
+    "id": "anm_0046",
+    "name": "例检清单（残）",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "common",
+    "veins": [
+      "mineral"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 6,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "清单缺了后半页。缺的后半页都是关键项。",
+    "upgrade": {
+      "name_suffix": "·旧",
+      "effect": {
+        "block": 9
+      },
+      "flavor_add": "后半页找到了。找到了，但不想贴上。"
+    }
+  },
+  {
+    "id": "anm_0047",
+    "name": "通风守卫·代班",
+    "class": "anmin",
+    "type": "attack",
+    "rarity": "common",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 1,
+    "effect": {
+      "damage": 8,
+      "hits": 1,
+      "target": "single"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "守卫还在通风口。通风早就停了。它没收到停工通知。",
+    "upgrade": {
+      "name_suffix": "·残",
+      "effect": {
+        "damage": 11
+      },
+      "flavor_add": "通知找到了。它看完继续站岗。"
+    }
+  },
+  {
+    "id": "anm_0048",
+    "name": "运输井规程",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "uncommon",
+    "veins": [
+      "tremor"
+    ],
+    "energy": 1,
+    "effect": {
+      "block": 5,
+      "resonance_gain": 3,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "下井前默哀十秒。规程上的时间，你们总是省着用。",
+    "upgrade": {
+      "name_suffix": "·Ⅱ",
+      "effect": {
+        "block": 7,
+        "resonance_gain": 4
+      },
+      "flavor_add": "这次默哀了全程十秒。井底安静了很久。"
+    }
+  },
+  {
+    "id": "anm_0049",
+    "name": "撤销程序残片",
+    "class": "anmin",
+    "type": "skill",
+    "rarity": "rare",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "draw": 2,
+      "resonance_drain": 6,
+      "target": "self"
+    },
+    "cost_type": "none",
+    "cost_text": "",
+    "flavor": "残片教你撤销一样东西。残片没说哪样。",
+    "upgrade": {
+      "name_suffix": "·新",
+      "effect": {
+        "resonance_drain": 8
+      },
+      "flavor_add": "残片拼上了。拼上的部分写着你不能学。"
+    }
+  },
+  {
+    "id": "anm_0050",
+    "name": "主控密钥（烧毁）",
+    "class": "anmin",
+    "type": "power",
+    "rarity": "special",
+    "veins": [
+      "light"
+    ],
+    "energy": 1,
+    "effect": {
+      "target": "self",
+      "special": [
+        {
+          "code": "strength",
+          "value": 1
+        },
+        {
+          "code": "dexterity",
+          "value": 1
+        }
+      ]
+    },
+    "cost_type": "mark",
+    "cost_text": "烧毁的密钥只剩一半权限。",
+    "upgrade": {
+      "name_suffix": "·刻",
+      "effect": {
+        "special": [
+          {
+            "code": "strength",
+            "value": 1
+          }
+        ]
+      },
+      "flavor_add": "密钥重新烧了一遍。权限没变，温度变了。"
+    },
+    "flavor": "烧毁的密钥只剩一半权限。另一半在红光里。"
+  }
+]

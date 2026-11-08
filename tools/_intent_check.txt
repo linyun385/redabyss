@@ -1,0 +1,14 @@
+ 5599 | C.discardPile.push(c);
+ 5761 | else C.discardPile.push(card);
+ 6034 | enemyAct(C, e);
+ 6100 | function enemyAct(C, e) {
+ 6105 | if (it.type === 'attack') {
+ 6140 | } else if (it.type === 'defend') {
+ 6143 | } else if (it.type === 'buff') {
+ 6148 | } else if (it.type === 'debuff') {
+ 6153 | C.discardPile.push(taken);
+ 7574 | function intentKey(it) { return it ? it.type + ':' + (it.value || 0) + 'x' + (it.times || 1) : ''; }
+ 7577 | if (it.type === 'attack') {
+ 7581 | if (it.type === 'defend') return '<span class="i-def">🛡 ' + (it.value || 0) + '</span>';
+ 7582 | if (it.type === 'buff') return '▲';
+ 7583 | if (it.type === 'debuff') return '▼';

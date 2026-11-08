@@ -1,0 +1,1258 @@
+{
+  "meta": {
+    "task": "T60",
+    "generatedBy": "tools/content_gap.js",
+    "sources": {
+      "enemies": "enemies/all.json（80：normal 43 / elite 25 / boss 12，layer 字段归属）",
+      "events": "events/all.json（72，layer 字段归属）",
+      "relics": "relics/all.json（76，无 layer，按 veins 主脉亲和归属，无脉归素品）",
+      "cards": "cards/{diver,tremor,anmin,cangmin}.json（260，按 veins 主脉亲和归属，多脉共享计数）",
+      "ecoDefs": "tools/mapgen_spec.json v1.3（8 生态，homeBand 与 veinAffinity）"
+    },
+    "quotaB": {
+      "enemyNormal": 8,
+      "enemyElite": 4,
+      "enemyBoss": 2,
+      "event": 8,
+      "relic": 9,
+      "card": 12
+    },
+    "quotaA": {
+      "enemyNormal": 2,
+      "enemyElite": 1,
+      "enemyBoss": 1,
+      "event": 1,
+      "relic": 1,
+      "card": 2
+    },
+    "charsPerItem": {
+      "enemy": 100,
+      "event": 150,
+      "relic": 80,
+      "card": 80
+    },
+    "notes": [
+      "现有内容在口径 B 下全额复用为本生态唯一批次；深度带差异由绑定表的数值/词缀/精英化字段承载（T58），不计新条目。",
+      "口径 A 数字按「每（生态×带）最小可玩密度」计（2 普通/1 精英/1 boss/1 事件/1 遗物/2 卡 × 64 格）；现有内容只抵母本带格。",
+      "共享计数：一张多脉卡/遗物向每个含其主脉的生态重复计入「可用」，缺口 = max(0, 配额 − 可用)。",
+      "无主脉生态（eco_surface/eco_nexus）按素品口径（veins 为空的条目）计数。"
+    ]
+  },
+  "currentPerEco": {
+    "eco_surface": {
+      "homeBand": 1,
+      "veinAffinity": null,
+      "enemy": {
+        "normal": 5,
+        "elite": 2,
+        "boss": 1,
+        "total": 8
+      },
+      "event": 3,
+      "relic": 12,
+      "card": 9
+    },
+    "eco_cold": {
+      "homeBand": 2,
+      "veinAffinity": "tremor",
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 1,
+        "total": 10
+      },
+      "event": 11,
+      "relic": 10,
+      "card": 56
+    },
+    "eco_arid": {
+      "homeBand": 3,
+      "veinAffinity": "water",
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 1,
+        "total": 10
+      },
+      "event": 11,
+      "relic": 8,
+      "card": 31
+    },
+    "eco_sea": {
+      "homeBand": 4,
+      "veinAffinity": "light",
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 2,
+        "total": 11
+      },
+      "event": 11,
+      "relic": 17,
+      "card": 64
+    },
+    "eco_vent": {
+      "homeBand": 5,
+      "veinAffinity": "heat",
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 2,
+        "total": 11
+      },
+      "event": 11,
+      "relic": 13,
+      "card": 34
+    },
+    "eco_rad": {
+      "homeBand": 6,
+      "veinAffinity": "mineral",
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 1,
+        "total": 10
+      },
+      "event": 11,
+      "relic": 16,
+      "card": 66
+    },
+    "eco_core": {
+      "homeBand": 7,
+      "veinAffinity": "heat",
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 2,
+        "total": 11
+      },
+      "event": 11,
+      "relic": 13,
+      "card": 34
+    },
+    "eco_nexus": {
+      "homeBand": 8,
+      "veinAffinity": null,
+      "enemy": {
+        "normal": 2,
+        "elite": 5,
+        "boss": 2,
+        "total": 9
+      },
+      "event": 3,
+      "relic": 12,
+      "card": 9
+    }
+  },
+  "matrix": [
+    {
+      "eco": "eco_surface",
+      "band": 1,
+      "isHome": true,
+      "enemy": {
+        "normal": 5,
+        "elite": 2,
+        "boss": 1,
+        "total": 8
+      },
+      "event": 3,
+      "relic": 12,
+      "card": 9,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    },
+    {
+      "eco": "eco_surface",
+      "band": 2,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_surface",
+      "band": 3,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_surface",
+      "band": 4,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_surface",
+      "band": 5,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_surface",
+      "band": 6,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_surface",
+      "band": 7,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_surface",
+      "band": 8,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 1,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 2,
+      "isHome": true,
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 1,
+        "total": 10
+      },
+      "event": 11,
+      "relic": 10,
+      "card": 56,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 3,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 4,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 5,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 6,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 7,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_cold",
+      "band": 8,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 1,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 2,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 3,
+      "isHome": true,
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 1,
+        "total": 10
+      },
+      "event": 11,
+      "relic": 8,
+      "card": 31,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 4,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 5,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 6,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 7,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_arid",
+      "band": 8,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 1,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 2,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 3,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 4,
+      "isHome": true,
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 2,
+        "total": 11
+      },
+      "event": 11,
+      "relic": 17,
+      "card": 64,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 5,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 6,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 7,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_sea",
+      "band": 8,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 1,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 2,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 3,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 4,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 5,
+      "isHome": true,
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 2,
+        "total": 11
+      },
+      "event": 11,
+      "relic": 13,
+      "card": 34,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 6,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 7,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_vent",
+      "band": 8,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 1,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 2,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 3,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 4,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 5,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 6,
+      "isHome": true,
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 1,
+        "total": 10
+      },
+      "event": 11,
+      "relic": 16,
+      "card": 66,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 7,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_rad",
+      "band": 8,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_core",
+      "band": 1,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_core",
+      "band": 2,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_core",
+      "band": 3,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_core",
+      "band": 4,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_core",
+      "band": 5,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_core",
+      "band": 6,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_core",
+      "band": 7,
+      "isHome": true,
+      "enemy": {
+        "normal": 6,
+        "elite": 3,
+        "boss": 2,
+        "total": 11
+      },
+      "event": 11,
+      "relic": 13,
+      "card": 34,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    },
+    {
+      "eco": "eco_core",
+      "band": 8,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 1,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 2,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 3,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 4,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 5,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 6,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 7,
+      "isHome": false,
+      "enemy": {
+        "normal": 0,
+        "elite": 0,
+        "boss": 0,
+        "total": 0
+      },
+      "event": 0,
+      "relic": 0,
+      "card": 0,
+      "note": "口径 B 下不独有内容：由带修饰（数值/词缀/精英化）覆盖"
+    },
+    {
+      "eco": "eco_nexus",
+      "band": 8,
+      "isHome": true,
+      "enemy": {
+        "normal": 2,
+        "elite": 5,
+        "boss": 2,
+        "total": 9
+      },
+      "event": 3,
+      "relic": 12,
+      "card": 9,
+      "note": "母本带：现有内容按口径 B 全额复用"
+    }
+  ],
+  "planB": {
+    "gaps": {
+      "eco_surface": {
+        "enemyNormal": 3,
+        "enemyElite": 2,
+        "enemyBoss": 1,
+        "event": 5,
+        "relic": 0,
+        "card": 3,
+        "enemyTotal": 6,
+        "chars": 1590
+      },
+      "eco_cold": {
+        "enemyNormal": 2,
+        "enemyElite": 1,
+        "enemyBoss": 1,
+        "event": 0,
+        "relic": 0,
+        "card": 0,
+        "enemyTotal": 4,
+        "chars": 400
+      },
+      "eco_arid": {
+        "enemyNormal": 2,
+        "enemyElite": 1,
+        "enemyBoss": 1,
+        "event": 0,
+        "relic": 1,
+        "card": 0,
+        "enemyTotal": 4,
+        "chars": 480
+      },
+      "eco_sea": {
+        "enemyNormal": 2,
+        "enemyElite": 1,
+        "enemyBoss": 0,
+        "event": 0,
+        "relic": 0,
+        "card": 0,
+        "enemyTotal": 3,
+        "chars": 300
+      },
+      "eco_vent": {
+        "enemyNormal": 2,
+        "enemyElite": 1,
+        "enemyBoss": 0,
+        "event": 0,
+        "relic": 0,
+        "card": 0,
+        "enemyTotal": 3,
+        "chars": 300
+      },
+      "eco_rad": {
+        "enemyNormal": 2,
+        "enemyElite": 1,
+        "enemyBoss": 1,
+        "event": 0,
+        "relic": 0,
+        "card": 0,
+        "enemyTotal": 4,
+        "chars": 400
+      },
+      "eco_core": {
+        "enemyNormal": 2,
+        "enemyElite": 1,
+        "enemyBoss": 0,
+        "event": 0,
+        "relic": 0,
+        "card": 0,
+        "enemyTotal": 3,
+        "chars": 300
+      },
+      "eco_nexus": {
+        "enemyNormal": 6,
+        "enemyElite": 0,
+        "enemyBoss": 0,
+        "event": 5,
+        "relic": 0,
+        "card": 3,
+        "enemyTotal": 6,
+        "chars": 1590
+      }
+    },
+    "newTotals": {
+      "enemyNormal": 21,
+      "enemyElite": 8,
+      "enemyBoss": 4,
+      "event": 10,
+      "relic": 1,
+      "card": 6,
+      "chars": 5360,
+      "enemyTotal": 33
+    }
+  },
+  "planA": {
+    "total": {
+      "enemyNormal": 128,
+      "enemyElite": 64,
+      "enemyBoss": 64,
+      "event": 64,
+      "relic": 64,
+      "card": 128,
+      "enemyTotal": 256
+    },
+    "reuse": {
+      "enemyNormal": 16,
+      "enemyElite": 8,
+      "enemyBoss": 8,
+      "event": 8,
+      "relic": 8,
+      "card": 16
+    },
+    "newTotals": {
+      "enemyNormal": 112,
+      "enemyElite": 56,
+      "enemyBoss": 56,
+      "event": 56,
+      "relic": 56,
+      "card": 112,
+      "enemyTotal": 224,
+      "chars": 44240
+    }
+  },
+  "comparison": {
+    "enemy": {
+      "totalA": 256,
+      "existing": 80,
+      "newB": 33,
+      "newA": 224
+    },
+    "event": {
+      "totalA": 64,
+      "existing": 72,
+      "newB": 10,
+      "newA": 56
+    },
+    "relic": {
+      "totalA": 64,
+      "existing": 76,
+      "newB": 1,
+      "newA": 56
+    },
+    "card": {
+      "totalA": 128,
+      "existing": 260,
+      "newB": 6,
+      "newA": 112
+    }
+  }
+}

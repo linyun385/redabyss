@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "tool": "tools/_save_stress.js",
+  "cycles": 200
+ },
+ "guards": [
+  {
+   "name": "cleared 读取",
+   "guarded": true
+  },
+  {
+   "name": "cleared 二周目",
+   "guarded": true
+  },
+  {
+   "name": "death 提示记账",
+   "guarded": true
+  },
+  {
+   "name": "markCleared endings",
+   "guarded": true
+  },
+  {
+   "name": "onceHint 记账",
+   "guarded": true
+  }
+ ],
+ "stress": [
+  {
+   "name": "连存/读 200 次（4 条路径轮转）",
+   "ok": true,
+   "detail": "200 轮完成；cleared false→true 转换正确；endings 去重正确；hint/death 各自只记一次"
+  },
+  {
+   "name": "空存档读",
+   "ok": true,
+   "detail": "全部按空档语义工作"
+  },
+  {
+   "name": "损坏 JSON（endings 被塞脏数据）",
+   "ok": true,
+   "detail": "损坏 JSON 不崩（markCleared 静默跳过本轮记账）"
+  },
+  {
+   "name": "空串/超长值",
+   "ok": true,
+   "detail": "超长数组读入+去重不崩"
+  },
+  {
+   "name": "配额满（getItem/setItem 抛错）",
+   "ok": true,
+   "detail": "全部异常被 try/catch 吞掉，不逃逸"
+  }
+ ],
+ "fail": [],
+ "pass": true
+}

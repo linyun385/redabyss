@@ -1,0 +1,1205 @@
+{
+ "start": 81,
+ "end": 283,
+ "count": 203,
+ "note": "2026-11-02 夜班批次，按顺序做；做完一个在 TASK_DONE.md 追加一节",
+ "queue": [
+  {
+   "t": 81,
+   "title": "图质检 第 1 组（10 张）",
+   "deliver": "`data/qa/QA_001.md`"
+  },
+  {
+   "t": 82,
+   "title": "图质检 第 2 组（10 张）",
+   "deliver": "`data/qa/QA_002.md`"
+  },
+  {
+   "t": 83,
+   "title": "图质检 第 3 组（10 张）",
+   "deliver": "`data/qa/QA_003.md`"
+  },
+  {
+   "t": 84,
+   "title": "图质检 第 4 组（10 张）",
+   "deliver": "`data/qa/QA_004.md`"
+  },
+  {
+   "t": 85,
+   "title": "图质检 第 5 组（10 张）",
+   "deliver": "`data/qa/QA_005.md`"
+  },
+  {
+   "t": 86,
+   "title": "图质检 第 6 组（10 张）",
+   "deliver": "`data/qa/QA_006.md`"
+  },
+  {
+   "t": 87,
+   "title": "图质检 第 7 组（10 张）",
+   "deliver": "`data/qa/QA_007.md`"
+  },
+  {
+   "t": 88,
+   "title": "图质检 第 8 组（10 张）",
+   "deliver": "`data/qa/QA_008.md`"
+  },
+  {
+   "t": 89,
+   "title": "图质检 第 9 组（10 张）",
+   "deliver": "`data/qa/QA_009.md`"
+  },
+  {
+   "t": 90,
+   "title": "图质检 第 10 组（10 张）",
+   "deliver": "`data/qa/QA_010.md`"
+  },
+  {
+   "t": 91,
+   "title": "图质检 第 11 组（10 张）",
+   "deliver": "`data/qa/QA_011.md`"
+  },
+  {
+   "t": 92,
+   "title": "图质检 第 12 组（10 张）",
+   "deliver": "`data/qa/QA_012.md`"
+  },
+  {
+   "t": 93,
+   "title": "图质检 第 13 组（10 张）",
+   "deliver": "`data/qa/QA_013.md`"
+  },
+  {
+   "t": 94,
+   "title": "图质检 第 14 组（10 张）",
+   "deliver": "`data/qa/QA_014.md`"
+  },
+  {
+   "t": 95,
+   "title": "图质检 第 15 组（10 张）",
+   "deliver": "`data/qa/QA_015.md`"
+  },
+  {
+   "t": 96,
+   "title": "图质检 第 16 组（10 张）",
+   "deliver": "`data/qa/QA_016.md`"
+  },
+  {
+   "t": 97,
+   "title": "图质检 第 17 组（10 张）",
+   "deliver": "`data/qa/QA_017.md`"
+  },
+  {
+   "t": 98,
+   "title": "图质检 第 18 组（10 张）",
+   "deliver": "`data/qa/QA_018.md`"
+  },
+  {
+   "t": 99,
+   "title": "图质检 第 19 组（10 张）",
+   "deliver": "`data/qa/QA_019.md`"
+  },
+  {
+   "t": 100,
+   "title": "图质检 第 20 组（10 张）",
+   "deliver": "`data/qa/QA_020.md`"
+  },
+  {
+   "t": 101,
+   "title": "图质检 第 21 组（10 张）",
+   "deliver": "`data/qa/QA_021.md`"
+  },
+  {
+   "t": 102,
+   "title": "图质检 第 22 组（10 张）",
+   "deliver": "`data/qa/QA_022.md`"
+  },
+  {
+   "t": 103,
+   "title": "图质检 第 23 组（10 张）",
+   "deliver": "`data/qa/QA_023.md`"
+  },
+  {
+   "t": 104,
+   "title": "图质检 第 24 组（10 张）",
+   "deliver": "`data/qa/QA_024.md`"
+  },
+  {
+   "t": 105,
+   "title": "图质检 第 25 组（10 张）",
+   "deliver": "`data/qa/QA_025.md`"
+  },
+  {
+   "t": 106,
+   "title": "图质检 第 26 组（10 张）",
+   "deliver": "`data/qa/QA_026.md`"
+  },
+  {
+   "t": 107,
+   "title": "图质检 第 27 组（10 张）",
+   "deliver": "`data/qa/QA_027.md`"
+  },
+  {
+   "t": 108,
+   "title": "图质检 第 28 组（10 张）",
+   "deliver": "`data/qa/QA_028.md`"
+  },
+  {
+   "t": 109,
+   "title": "图质检 第 29 组（10 张）",
+   "deliver": "`data/qa/QA_029.md`"
+  },
+  {
+   "t": 110,
+   "title": "图质检 第 30 组（10 张）",
+   "deliver": "`data/qa/QA_030.md`"
+  },
+  {
+   "t": 111,
+   "title": "图质检 第 31 组（10 张）",
+   "deliver": "`data/qa/QA_031.md`"
+  },
+  {
+   "t": 112,
+   "title": "图质检 第 32 组（10 张）",
+   "deliver": "`data/qa/QA_032.md`"
+  },
+  {
+   "t": 113,
+   "title": "图质检 第 33 组（10 张）",
+   "deliver": "`data/qa/QA_033.md`"
+  },
+  {
+   "t": 114,
+   "title": "图质检 第 34 组（10 张）",
+   "deliver": "`data/qa/QA_034.md`"
+  },
+  {
+   "t": 115,
+   "title": "图质检 第 35 组（10 张）",
+   "deliver": "`data/qa/QA_035.md`"
+  },
+  {
+   "t": 116,
+   "title": "图质检 第 36 组（10 张）",
+   "deliver": "`data/qa/QA_036.md`"
+  },
+  {
+   "t": 117,
+   "title": "图质检 第 37 组（10 张）",
+   "deliver": "`data/qa/QA_037.md`"
+  },
+  {
+   "t": 118,
+   "title": "图质检 第 38 组（10 张）",
+   "deliver": "`data/qa/QA_038.md`"
+  },
+  {
+   "t": 119,
+   "title": "图质检 第 39 组（10 张）",
+   "deliver": "`data/qa/QA_039.md`"
+  },
+  {
+   "t": 120,
+   "title": "图质检 第 40 组（10 张）",
+   "deliver": "`data/qa/QA_040.md`"
+  },
+  {
+   "t": 121,
+   "title": "图质检 第 41 组（10 张）",
+   "deliver": "`data/qa/QA_041.md`"
+  },
+  {
+   "t": 122,
+   "title": "图质检 第 42 组（10 张）",
+   "deliver": "`data/qa/QA_042.md`"
+  },
+  {
+   "t": 123,
+   "title": "图质检 第 43 组（10 张）",
+   "deliver": "`data/qa/QA_043.md`"
+  },
+  {
+   "t": 124,
+   "title": "图质检 第 44 组（10 张）",
+   "deliver": "`data/qa/QA_044.md`"
+  },
+  {
+   "t": 125,
+   "title": "图质检 第 45 组（10 张）",
+   "deliver": "`data/qa/QA_045.md`"
+  },
+  {
+   "t": 126,
+   "title": "图质检 第 46 组（10 张）",
+   "deliver": "`data/qa/QA_046.md`"
+  },
+  {
+   "t": 127,
+   "title": "图质检 第 47 组（1 张）",
+   "deliver": "`data/qa/QA_047.md`"
+  },
+  {
+   "t": 128,
+   "title": "提示词重写 第 1 组（5 条）",
+   "deliver": "`data/rewrite/RW_001.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 129,
+   "title": "提示词重写 第 2 组（5 条）",
+   "deliver": "`data/rewrite/RW_002.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 130,
+   "title": "提示词重写 第 3 组（5 条）",
+   "deliver": "`data/rewrite/RW_003.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 131,
+   "title": "提示词重写 第 4 组（5 条）",
+   "deliver": "`data/rewrite/RW_004.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 132,
+   "title": "提示词重写 第 5 组（5 条）",
+   "deliver": "`data/rewrite/RW_005.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 133,
+   "title": "提示词重写 第 6 组（5 条）",
+   "deliver": "`data/rewrite/RW_006.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 134,
+   "title": "提示词重写 第 7 组（5 条）",
+   "deliver": "`data/rewrite/RW_007.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 135,
+   "title": "提示词重写 第 8 组（5 条）",
+   "deliver": "`data/rewrite/RW_008.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 136,
+   "title": "提示词重写 第 9 组（5 条）",
+   "deliver": "`data/rewrite/RW_009.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 137,
+   "title": "提示词重写 第 10 组（5 条）",
+   "deliver": "`data/rewrite/RW_010.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 138,
+   "title": "提示词重写 第 11 组（5 条）",
+   "deliver": "`data/rewrite/RW_011.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 139,
+   "title": "提示词重写 第 12 组（5 条）",
+   "deliver": "`data/rewrite/RW_012.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 140,
+   "title": "提示词重写 第 13 组（5 条）",
+   "deliver": "`data/rewrite/RW_013.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 141,
+   "title": "提示词重写 第 14 组（5 条）",
+   "deliver": "`data/rewrite/RW_014.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 142,
+   "title": "提示词重写 第 15 组（5 条）",
+   "deliver": "`data/rewrite/RW_015.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 143,
+   "title": "提示词重写 第 16 组（5 条）",
+   "deliver": "`data/rewrite/RW_016.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 144,
+   "title": "提示词重写 第 17 组（5 条）",
+   "deliver": "`data/rewrite/RW_017.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 145,
+   "title": "提示词重写 第 18 组（5 条）",
+   "deliver": "`data/rewrite/RW_018.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 146,
+   "title": "提示词重写 第 19 组（5 条）",
+   "deliver": "`data/rewrite/RW_019.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 147,
+   "title": "提示词重写 第 20 组（5 条）",
+   "deliver": "`data/rewrite/RW_020.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 148,
+   "title": "提示词重写 第 21 组（5 条）",
+   "deliver": "`data/rewrite/RW_021.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 149,
+   "title": "提示词重写 第 22 组（5 条）",
+   "deliver": "`data/rewrite/RW_022.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 150,
+   "title": "提示词重写 第 23 组（5 条）",
+   "deliver": "`data/rewrite/RW_023.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 151,
+   "title": "提示词重写 第 24 组（5 条）",
+   "deliver": "`data/rewrite/RW_024.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 152,
+   "title": "提示词重写 第 25 组（5 条）",
+   "deliver": "`data/rewrite/RW_025.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 153,
+   "title": "提示词重写 第 26 组（5 条）",
+   "deliver": "`data/rewrite/RW_026.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 154,
+   "title": "提示词重写 第 27 组（5 条）",
+   "deliver": "`data/rewrite/RW_027.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 155,
+   "title": "提示词重写 第 28 组（5 条）",
+   "deliver": "`data/rewrite/RW_028.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 156,
+   "title": "提示词重写 第 29 组（5 条）",
+   "deliver": "`data/rewrite/RW_029.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 157,
+   "title": "提示词重写 第 30 组（5 条）",
+   "deliver": "`data/rewrite/RW_030.json`（格式 `[{\"id\":\"...\",\"prompt\":\"<主体段>\"}]`）"
+  },
+  {
+   "t": 158,
+   "title": "图鉴文案 第 1 组（10 条）",
+   "deliver": "`data/lore/LORE_001.md`"
+  },
+  {
+   "t": 159,
+   "title": "图鉴文案 第 2 组（10 条）",
+   "deliver": "`data/lore/LORE_002.md`"
+  },
+  {
+   "t": 160,
+   "title": "图鉴文案 第 3 组（10 条）",
+   "deliver": "`data/lore/LORE_003.md`"
+  },
+  {
+   "t": 161,
+   "title": "图鉴文案 第 4 组（10 条）",
+   "deliver": "`data/lore/LORE_004.md`"
+  },
+  {
+   "t": 162,
+   "title": "图鉴文案 第 5 组（10 条）",
+   "deliver": "`data/lore/LORE_005.md`"
+  },
+  {
+   "t": 163,
+   "title": "图鉴文案 第 6 组（10 条）",
+   "deliver": "`data/lore/LORE_006.md`"
+  },
+  {
+   "t": 164,
+   "title": "图鉴文案 第 7 组（10 条）",
+   "deliver": "`data/lore/LORE_007.md`"
+  },
+  {
+   "t": 165,
+   "title": "图鉴文案 第 8 组（10 条）",
+   "deliver": "`data/lore/LORE_008.md`"
+  },
+  {
+   "t": 166,
+   "title": "图鉴文案 第 9 组（10 条）",
+   "deliver": "`data/lore/LORE_009.md`"
+  },
+  {
+   "t": 167,
+   "title": "图鉴文案 第 10 组（10 条）",
+   "deliver": "`data/lore/LORE_010.md`"
+  },
+  {
+   "t": 168,
+   "title": "图鉴文案 第 11 组（10 条）",
+   "deliver": "`data/lore/LORE_011.md`"
+  },
+  {
+   "t": 169,
+   "title": "图鉴文案 第 12 组（10 条）",
+   "deliver": "`data/lore/LORE_012.md`"
+  },
+  {
+   "t": 170,
+   "title": "图鉴文案 第 13 组（10 条）",
+   "deliver": "`data/lore/LORE_013.md`"
+  },
+  {
+   "t": 171,
+   "title": "图鉴文案 第 14 组（10 条）",
+   "deliver": "`data/lore/LORE_014.md`"
+  },
+  {
+   "t": 172,
+   "title": "图鉴文案 第 15 组（10 条）",
+   "deliver": "`data/lore/LORE_015.md`"
+  },
+  {
+   "t": 173,
+   "title": "图鉴文案 第 16 组（10 条）",
+   "deliver": "`data/lore/LORE_016.md`"
+  },
+  {
+   "t": 174,
+   "title": "图鉴文案 第 17 组（10 条）",
+   "deliver": "`data/lore/LORE_017.md`"
+  },
+  {
+   "t": 175,
+   "title": "图鉴文案 第 18 组（10 条）",
+   "deliver": "`data/lore/LORE_018.md`"
+  },
+  {
+   "t": 176,
+   "title": "图鉴文案 第 19 组（10 条）",
+   "deliver": "`data/lore/LORE_019.md`"
+  },
+  {
+   "t": 177,
+   "title": "图鉴文案 第 20 组（10 条）",
+   "deliver": "`data/lore/LORE_020.md`"
+  },
+  {
+   "t": 178,
+   "title": "图鉴文案 第 21 组（10 条）",
+   "deliver": "`data/lore/LORE_021.md`"
+  },
+  {
+   "t": 179,
+   "title": "图鉴文案 第 22 组（10 条）",
+   "deliver": "`data/lore/LORE_022.md`"
+  },
+  {
+   "t": 180,
+   "title": "图鉴文案 第 23 组（10 条）",
+   "deliver": "`data/lore/LORE_023.md`"
+  },
+  {
+   "t": 181,
+   "title": "图鉴文案 第 24 组（10 条）",
+   "deliver": "`data/lore/LORE_024.md`"
+  },
+  {
+   "t": 182,
+   "title": "图鉴文案 第 25 组（10 条）",
+   "deliver": "`data/lore/LORE_025.md`"
+  },
+  {
+   "t": 183,
+   "title": "图鉴文案 第 26 组（10 条）",
+   "deliver": "`data/lore/LORE_026.md`"
+  },
+  {
+   "t": 184,
+   "title": "图鉴文案 第 27 组（10 条）",
+   "deliver": "`data/lore/LORE_027.md`"
+  },
+  {
+   "t": 185,
+   "title": "图鉴文案 第 28 组（10 条）",
+   "deliver": "`data/lore/LORE_028.md`"
+  },
+  {
+   "t": 186,
+   "title": "图鉴文案 第 29 组（10 条）",
+   "deliver": "`data/lore/LORE_029.md`"
+  },
+  {
+   "t": 187,
+   "title": "图鉴文案 第 30 组（10 条）",
+   "deliver": "`data/lore/LORE_030.md`"
+  },
+  {
+   "t": 188,
+   "title": "图鉴文案 第 31 组（10 条）",
+   "deliver": "`data/lore/LORE_031.md`"
+  },
+  {
+   "t": 189,
+   "title": "图鉴文案 第 32 组（10 条）",
+   "deliver": "`data/lore/LORE_032.md`"
+  },
+  {
+   "t": 190,
+   "title": "图鉴文案 第 33 组（10 条）",
+   "deliver": "`data/lore/LORE_033.md`"
+  },
+  {
+   "t": 191,
+   "title": "图鉴文案 第 34 组（10 条）",
+   "deliver": "`data/lore/LORE_034.md`"
+  },
+  {
+   "t": 192,
+   "title": "图鉴文案 第 35 组（10 条）",
+   "deliver": "`data/lore/LORE_035.md`"
+  },
+  {
+   "t": 193,
+   "title": "图鉴文案 第 36 组（10 条）",
+   "deliver": "`data/lore/LORE_036.md`"
+  },
+  {
+   "t": 194,
+   "title": "图鉴文案 第 37 组（10 条）",
+   "deliver": "`data/lore/LORE_037.md`"
+  },
+  {
+   "t": 195,
+   "title": "图鉴文案 第 38 组（10 条）",
+   "deliver": "`data/lore/LORE_038.md`"
+  },
+  {
+   "t": 196,
+   "title": "图鉴文案 第 39 组（10 条）",
+   "deliver": "`data/lore/LORE_039.md`"
+  },
+  {
+   "t": 197,
+   "title": "图鉴文案 第 40 组（10 条）",
+   "deliver": "`data/lore/LORE_040.md`"
+  },
+  {
+   "t": 198,
+   "title": "图鉴文案 第 41 组（10 条）",
+   "deliver": "`data/lore/LORE_041.md`"
+  },
+  {
+   "t": 199,
+   "title": "图鉴文案 第 42 组（10 条）",
+   "deliver": "`data/lore/LORE_042.md`"
+  },
+  {
+   "t": 200,
+   "title": "图鉴文案 第 43 组（10 条）",
+   "deliver": "`data/lore/LORE_043.md`"
+  },
+  {
+   "t": 201,
+   "title": "图鉴文案 第 44 组（10 条）",
+   "deliver": "`data/lore/LORE_044.md`"
+  },
+  {
+   "t": 202,
+   "title": "图鉴文案 第 45 组（10 条）",
+   "deliver": "`data/lore/LORE_045.md`"
+  },
+  {
+   "t": 203,
+   "title": "图鉴文案 第 46 组（10 条）",
+   "deliver": "`data/lore/LORE_046.md`"
+  },
+  {
+   "t": 204,
+   "title": "图鉴文案 第 47 组（1 条）",
+   "deliver": "`data/lore/LORE_047.md`"
+  },
+  {
+   "t": 205,
+   "title": "第二轮复检 第 1 组（10 张）",
+   "deliver": "`data/qa2/QA2_001.md`"
+  },
+  {
+   "t": 206,
+   "title": "第二轮复检 第 2 组（10 张）",
+   "deliver": "`data/qa2/QA2_002.md`"
+  },
+  {
+   "t": 207,
+   "title": "第二轮复检 第 3 组（10 张）",
+   "deliver": "`data/qa2/QA2_003.md`"
+  },
+  {
+   "t": 208,
+   "title": "第二轮复检 第 4 组（10 张）",
+   "deliver": "`data/qa2/QA2_004.md`"
+  },
+  {
+   "t": 209,
+   "title": "第二轮复检 第 5 组（10 张）",
+   "deliver": "`data/qa2/QA2_005.md`"
+  },
+  {
+   "t": 210,
+   "title": "第二轮复检 第 6 组（10 张）",
+   "deliver": "`data/qa2/QA2_006.md`"
+  },
+  {
+   "t": 211,
+   "title": "第二轮复检 第 7 组（10 张）",
+   "deliver": "`data/qa2/QA2_007.md`"
+  },
+  {
+   "t": 212,
+   "title": "第二轮复检 第 8 组（10 张）",
+   "deliver": "`data/qa2/QA2_008.md`"
+  },
+  {
+   "t": 213,
+   "title": "第二轮复检 第 9 组（10 张）",
+   "deliver": "`data/qa2/QA2_009.md`"
+  },
+  {
+   "t": 214,
+   "title": "第二轮复检 第 10 组（10 张）",
+   "deliver": "`data/qa2/QA2_010.md`"
+  },
+  {
+   "t": 215,
+   "title": "第二轮复检 第 11 组（10 张）",
+   "deliver": "`data/qa2/QA2_011.md`"
+  },
+  {
+   "t": 216,
+   "title": "第二轮复检 第 12 组（10 张）",
+   "deliver": "`data/qa2/QA2_012.md`"
+  },
+  {
+   "t": 217,
+   "title": "卡面副标题 第 1 组（20 条）",
+   "deliver": "`data/copy/card_001.md`"
+  },
+  {
+   "t": 218,
+   "title": "卡面副标题 第 2 组（20 条）",
+   "deliver": "`data/copy/card_002.md`"
+  },
+  {
+   "t": 219,
+   "title": "卡面副标题 第 3 组（20 条）",
+   "deliver": "`data/copy/card_003.md`"
+  },
+  {
+   "t": 220,
+   "title": "卡面副标题 第 4 组（20 条）",
+   "deliver": "`data/copy/card_004.md`"
+  },
+  {
+   "t": 221,
+   "title": "卡面副标题 第 5 组（20 条）",
+   "deliver": "`data/copy/card_005.md`"
+  },
+  {
+   "t": 222,
+   "title": "卡面副标题 第 6 组（20 条）",
+   "deliver": "`data/copy/card_006.md`"
+  },
+  {
+   "t": 223,
+   "title": "卡面副标题 第 7 组（20 条）",
+   "deliver": "`data/copy/card_007.md`"
+  },
+  {
+   "t": 224,
+   "title": "卡面副标题 第 8 组（20 条）",
+   "deliver": "`data/copy/card_008.md`"
+  },
+  {
+   "t": 225,
+   "title": "卡面副标题 第 9 组（20 条）",
+   "deliver": "`data/copy/card_009.md`"
+  },
+  {
+   "t": 226,
+   "title": "卡面副标题 第 10 组（20 条）",
+   "deliver": "`data/copy/card_010.md`"
+  },
+  {
+   "t": 227,
+   "title": "卡面副标题 第 11 组（20 条）",
+   "deliver": "`data/copy/card_011.md`"
+  },
+  {
+   "t": 228,
+   "title": "卡面副标题 第 12 组（20 条）",
+   "deliver": "`data/copy/card_012.md`"
+  },
+  {
+   "t": 229,
+   "title": "卡面副标题 第 13 组（20 条）",
+   "deliver": "`data/copy/card_013.md`"
+  },
+  {
+   "t": 230,
+   "title": "卡面副标题 第 14 组（6 条）",
+   "deliver": "`data/copy/card_014.md`"
+  },
+  {
+   "t": 231,
+   "title": "敌人战斗台词 第 1 组（20 条）",
+   "deliver": "`data/copy/foe_001.md`"
+  },
+  {
+   "t": 232,
+   "title": "敌人战斗台词 第 2 组（20 条）",
+   "deliver": "`data/copy/foe_002.md`"
+  },
+  {
+   "t": 233,
+   "title": "敌人战斗台词 第 3 组（20 条）",
+   "deliver": "`data/copy/foe_003.md`"
+  },
+  {
+   "t": 234,
+   "title": "敌人战斗台词 第 4 组（20 条）",
+   "deliver": "`data/copy/foe_004.md`"
+  },
+  {
+   "t": 235,
+   "title": "敌人战斗台词 第 5 组（20 条）",
+   "deliver": "`data/copy/foe_005.md`"
+  },
+  {
+   "t": 236,
+   "title": "敌人战斗台词 第 6 组（13 条）",
+   "deliver": "`data/copy/foe_006.md`"
+  },
+  {
+   "t": 237,
+   "title": "事件开场句 第 1 组（20 条）",
+   "deliver": "`data/copy/evt_001.md`"
+  },
+  {
+   "t": 238,
+   "title": "事件开场句 第 2 组（20 条）",
+   "deliver": "`data/copy/evt_002.md`"
+  },
+  {
+   "t": 239,
+   "title": "事件开场句 第 3 组（20 条）",
+   "deliver": "`data/copy/evt_003.md`"
+  },
+  {
+   "t": 240,
+   "title": "事件开场句 第 4 组（20 条）",
+   "deliver": "`data/copy/evt_004.md`"
+  },
+  {
+   "t": 241,
+   "title": "事件开场句 第 5 组（2 条）",
+   "deliver": "`data/copy/evt_005.md`"
+  },
+  {
+   "t": 242,
+   "title": "写 art_qa.py",
+   "deliver": "`tools/art_qa.py`"
+  },
+  {
+   "t": 243,
+   "title": "写 prompt_lint.py",
+   "deliver": "`tools/prompt_lint.py`"
+  },
+  {
+   "t": 244,
+   "title": "写 job_builder.py",
+   "deliver": "`tools/job_builder.py`"
+  },
+  {
+   "t": 245,
+   "title": "写 artctl.py",
+   "deliver": "`tools/artctl.py`"
+  },
+  {
+   "t": 246,
+   "title": "写 qa_report.py",
+   "deliver": "`tools/qa_report.py`"
+  },
+  {
+   "t": 247,
+   "title": "写 lore_index.py",
+   "deliver": "`tools/lore_index.py`"
+  },
+  {
+   "t": 248,
+   "title": "写 dup_finder.py",
+   "deliver": "`tools/dup_finder.py`"
+  },
+  {
+   "t": 249,
+   "title": "写 ART_PIPELINE.md",
+   "deliver": "`docs/ART_PIPELINE.md`"
+  },
+  {
+   "t": 250,
+   "title": "补做 T27（任务书已有）",
+   "deliver": "见 `tasks/T27.md`"
+  },
+  {
+   "t": 251,
+   "title": "补做 T28（任务书已有）",
+   "deliver": "见 `tasks/T28.md`"
+  },
+  {
+   "t": 252,
+   "title": "补做 T29（任务书已有）",
+   "deliver": "见 `tasks/T29.md`"
+  },
+  {
+   "t": 253,
+   "title": "补做 T30（任务书已有）",
+   "deliver": "见 `tasks/T30.md`"
+  },
+  {
+   "t": 254,
+   "title": "补做 T31（任务书已有）",
+   "deliver": "见 `tasks/T31.md`"
+  },
+  {
+   "t": 255,
+   "title": "补做 T32（任务书已有）",
+   "deliver": "见 `tasks/T32.md`"
+  },
+  {
+   "t": 256,
+   "title": "补做 T33（任务书已有）",
+   "deliver": "见 `tasks/T33.md`"
+  },
+  {
+   "t": 257,
+   "title": "补做 T34（任务书已有）",
+   "deliver": "见 `tasks/T34.md`"
+  },
+  {
+   "t": 258,
+   "title": "T68（缺任务书，先补写）",
+   "deliver": "`tasks/T68.md` + 对应产出"
+  },
+  {
+   "t": 259,
+   "title": "补做 T79（任务书已有）",
+   "deliver": "见 `tasks/T79.md`"
+  },
+  {
+   "t": 260,
+   "title": "补做 T81（任务书已有）",
+   "deliver": "见 `tasks/T81.md`"
+  },
+  {
+   "t": 261,
+   "title": "全量回归",
+   "deliver": "`data/regress/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 262,
+   "title": "存档压力",
+   "deliver": "`data/regress/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 263,
+   "title": "小分辨率适配",
+   "deliver": "`data/regress/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 264,
+   "title": "首屏体积",
+   "deliver": "`data/regress/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 265,
+   "title": "异常路径",
+   "deliver": "`data/regress/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 266,
+   "title": "色调分布",
+   "deliver": "`data/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 267,
+   "title": "雷同分组",
+   "deliver": "`data/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 268,
+   "title": "母题标签",
+   "deliver": "`data/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 269,
+   "title": "可辨识度",
+   "deliver": "`data/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 270,
+   "title": "规则覆盖率",
+   "deliver": "`data/` 或 `docs/` 下对应文件"
+  },
+  {
+   "t": 271,
+   "title": "滚动检查 ①",
+   "deliver": "见做法里的路径"
+  },
+  {
+   "t": 272,
+   "title": "滚动检查 ②",
+   "deliver": "见做法里的路径"
+  },
+  {
+   "t": 273,
+   "title": "自我扩写",
+   "deliver": "见做法里的路径"
+  },
+  {
+   "t": 274,
+   "title": "写夜班日志",
+   "deliver": "见做法里的路径"
+  },
+  {
+   "t": 275,
+   "title": "修自己造的坑",
+   "deliver": "见做法里的路径"
+  },
+  {
+   "t": 276,
+   "title": "卡牌规则文本与引擎实现对账",
+   "deliver": "`docs/CARD_RULE_AUDIT.md`"
+  },
+  {
+   "t": 277,
+   "title": "敌人数值分布审计",
+   "deliver": "`docs/ENEMY_STAT_AUDIT.md` + `tools/_enemy_stat.py`"
+  },
+  {
+   "t": 278,
+   "title": "遗物钩子对账",
+   "deliver": "`docs/RELIC_HOOK_AUDIT.md`"
+  },
+  {
+   "t": 279,
+   "title": "事件与节点表对账",
+   "deliver": "`docs/EVENT_NODE_AUDIT.md`"
+  },
+  {
+   "t": 280,
+   "title": "素材三方对账",
+   "deliver": "`docs/ART_RECONCILE.md` + `tools/_art_reconcile.py`"
+  },
+  {
+   "t": 281,
+   "title": "术语表与数据对账",
+   "deliver": "`docs/GLOSSARY_AUDIT.md`"
+  },
+  {
+   "t": 282,
+   "title": "全 docs 漂移扫描",
+   "deliver": "`docs/DOC_DRIFT.md` + `tools/_doc_drift.py`"
+  },
+  {
+   "t": 283,
+   "title": "写夜班交接",
+   "deliver": "`docs/HANDOFF_NIGHT_20261103.md`"
+  }
+ ],
+ "prev": [
+  {
+   "task_id": "T35",
+   "message": "[T35] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/docs/HANDOFF_D2.md（白天人工改动记录）和 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T35.md，先做回归验证，再修三个已知问题。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T36",
+   "message": "[T36] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T36.md 并严格照做。这是本轮核心：HUD 图标化（♥⬢✦∿◉◈）+ 卡牌改长方形带图案区 + 职业/敌人立绘占位。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T37",
+   "message": "[T37] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T37.md 并严格照做。战斗动画时序、动作队列、可点元素发光。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T38",
+   "message": "[T38] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T38.md 并严格照做。范围刻意缩小：只修明显废卡和超模卡，不做深度平衡。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T39",
+   "message": "[T39] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T39.md 并严格照做。三条 build + 8 个彩蛋 + 死亡结算记忆点。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T40",
+   "message": "[T40] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T40.md 并严格照做。6 条一次性提示 + 机制速查，不做模态框。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T41",
+   "message": "[T41] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T41.md 并严格照做。只留音效钩子和清单，绝对不许生成任何音频。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T42",
+   "message": "[T42] 先读 docs/STYLE_ART.md（密教模拟器风：木刻版画、棕褐+暗红、老化纸面，prompt 必须用它给的通用前缀/后缀/固定负面词），再读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T42.md 并严格照做。本环境 ComfyUI 尚未就绪，第 0 步视觉自检照做、第一步探测照跑，探测不过就停下写 TASK_DONE，不许自己重装。做完追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T43",
+   "message": "[T43] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T43.md 并严格照做。README、DELIVERY、清理、最终验收。 做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T44",
+   "message": "[T44] 最后一棒：读 docs/STYLE_ART.md 和 docs/HANDOFF_D2.md（第5条层深度色），再读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T44.md 并严格照做。要点：密教风材质与层深度换色要组合适配，做 3 个候选方案 + 12 张对比截图 + 可切换开关，默认 off=现状，不许自己拍板当成品。做完跑三检查器并重跑打包，追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。"
+  },
+  {
+   "task_id": "T45",
+   "message": "[T45] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T45.md 并严格照做。卡牌 roguelike 借鉴调研：Slay the Spire / Monster Train / 密教模拟器 / Balatro 的机制拆解，≥15 条条目、≥5 条明确不采纳。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T46",
+   "message": "[T46] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T46.md 并严格照做。八层档案 + 24 个新事件 + 16 个新遗物（世界观扩展，引 ../红渊.md 为依据）。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T47",
+   "message": "[T47] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T47.md 并严格照做。卡池结构诊断：写 card_audit.js，出卡数矩阵、空洞/过载、重复与超模嫌疑。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T48",
+   "message": "[T48] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T48.md 并严格照做。敌人深化：每层 +2 精英 +1 Boss 变体（24 个）+ 意图循环文档。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T49",
+   "message": "[T49] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T49.md 并严格照做。经济与进度曲线：econ_sim.js 跑 500 局×4 职业，找断点。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T50",
+   "message": "[T50] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T50.md 并严格照做。素材降级方案：纯 CSS/SVG 做卡面/敌人/遗物质感，绕开 ComfyUI。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T51",
+   "message": "[T51] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T51.md 并严格照做。结局与多周目：三结局 + 解锁 + 死后记忆点。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T52",
+   "message": "[T52] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T52.md 并严格照做。无障碍与性能体检：对比度/色盲/字号/帧时间，数字落盘。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。本任务不依赖 ComfyUI，不要因为生图环境不可用而停下。"
+  },
+  {
+   "task_id": "T54",
+   "message": "[T54] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T54.md 并严格照做。地图生成框架设计：数据模型、五步流程、不变量、参数表、伪代码（只写设计不写代码）。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+  },
+  {
+   "task_id": "T55",
+   "message": "[T55] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T55.md 并严格照做。地图生成器原型：tools/mapgen.js 纯算法 + 200 seed 断言 + 可视化调试图。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+  },
+  {
+   "task_id": "T56",
+   "message": "[T56] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T56.md 并严格照做。小图与总图 UI：常驻小图 + 可开总图，可见性在数据层裁剪。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+  },
+  {
+   "task_id": "T57",
+   "message": "[T57] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T57.md 并严格照做。死路救援 + 路线推进：迷雾、另寻一路、代价二选一、最终 BOSS 结算。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+  },
+  {
+   "task_id": "T60",
+   "message": "[T60] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T60.md 并严格照做。内容缺口盘点与配额方案：算清「生态×深度带×类型」要多少条，给口径A/B两种总量与推荐。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+  },
+  {
+   "task_id": "T58",
+   "message": "[T58] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T58.md 并严格照做。生态 × 深度内容绑定表：data/mapgen_bindings.json + 校验脚本 + 接线。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+  },
+  {
+   "task_id": "T59",
+   "message": "[T59] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T59.md 并严格照做。地图生成回归：500 局模拟，可通关率/死路率/配额校准/性能。按顺序做，做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步、不许自行改需求（需求原文在 docs/MAPGEN_BRIEF.md）。"
+  },
+  {
+   "task_id": "T61",
+   "message": "[T61] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T61.md 并严格照做。生态敌人设计与落地：每生态普通/精英/BOSS 候选按配额生产，意图循环去重。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+  },
+  {
+   "task_id": "T62",
+   "message": "[T62] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T62.md 并严格照做。生态事件设计与落地：每生态母题不同，选项带代价陷阱，效果走引擎已有动作。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+  },
+  {
+   "task_id": "T63",
+   "message": "[T63] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T63.md 并严格照做。生态遗物 + 专属卡牌：每生态按配额生产，含 3 组 combo 与超模比值自检。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+  },
+  {
+   "task_id": "T64",
+   "message": "[T64] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T64.md 并严格照做。文风统一与去重：text_lint 脚本 + GLOSSARY 术语规范 + 修一轮说明书腔。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+  },
+  {
+   "task_id": "T65",
+   "message": "[T65] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T65.md 并严格照做。内容接入与全量回归：绑定表补全 + 500 局地图模拟 + 四职业胜率对比 + 问题清单。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；需求原文见 docs/MAPGEN_BRIEF.md，文风见 docs/STYLE_SAMPLES.md。"
+  },
+  {
+   "task_id": "T66",
+   "message": "[T66] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T66.md 并严格照做。素材生产管线与样张：art_manifest 清单 + diffusers 批量 + 相似度闸门 + 10 张样张送审（不接游戏）。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。注意：T66 只出样张送审，用户点头后才做 T67。"
+  },
+  {
+   "task_id": "T67",
+   "message": "[T67] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T67.md 并严格照做。素材全量接入 + 体积与回归：ART 常量表、check_web 允许 data URI（仍拦外链）、1.6MB 增量预算、三主题截图。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；不许为过关放宽检查器。"
+  },
+  {
+   "task_id": "T69",
+   "message": "[T69] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T69.md 并严格照做。批量补齐剩余 68 条素材：640×936、单张≤30KB、失败清单、闸门 0 命中。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；不许为过关放宽检查器。"
+  },
+  {
+   "task_id": "T70",
+   "message": "[T70] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T70.md 并严格照做。终局回归：三检查器 + 200seed/500局地图 + 四职业胜率 + 10张手牌压测 + 三主题截图 + 新地图默认验证。做完跑对应自检，通过后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。不许跳步；不许为过关放宽检查器。"
+  },
+  {
+   "task_id": "T72",
+   "message": "[T72] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T72.md 并严格照做（含里面列的验收断言，逐条给数字/截图）。做完跑自检，全绿后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。素材已外置到 web/assets/art，不要内联；check_web 已允许站内相对路径但禁外链。不给过关放宽检查器。"
+  },
+  {
+   "task_id": "T73",
+   "message": "[T73] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T73.md 并严格照做（含里面列的验收断言，逐条给数字/截图）。做完跑自检，全绿后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。素材已外置到 web/assets/art，不要内联；check_web 已允许站内相对路径但禁外链。不给过关放宽检查器。"
+  },
+  {
+   "task_id": "T71",
+   "message": "[T71] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T71.md 并严格照做（含里面列的验收断言，逐条给数字/截图）。做完跑自检，全绿后追加写 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/TASK_DONE.md。素材已外置到 web/assets/art，不要内联；check_web 已允许站内相对路径但禁外链。不给过关放宽检查器。"
+  },
+  {
+   "task_id": "T74",
+   "message": "[T74] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T74.md 并严格照做。修复三件：生成性能（100图<2s）、深度节奏（步数≥36）、小图不挡标题。验收断言逐条给数字/截图；素材走 web/assets 相对路径不许内联；不许为过关放宽检查器；做完追加写 TASK_DONE.md。"
+  },
+  {
+   "task_id": "T75",
+   "message": "[T75] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T75.md 并严格照做。可见节点显示真实类型 + 允许回返（有代价：坏事件/战斗/精英/8% BOSS）。验收断言逐条给数字/截图；素材走 web/assets 相对路径不许内联；不许为过关放宽检查器；做完追加写 TASK_DONE.md。"
+  },
+  {
+   "task_id": "T77",
+   "message": "[T77] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T77.md 并严格照做。开局牌库审计：太强太无脑的牌移出初始牌库，进奖励池。验收断言逐条给数字/截图；素材走 web/assets 相对路径不许内联；不许为过关放宽检查器；做完追加写 TASK_DONE.md。"
+  },
+  {
+   "task_id": "T76",
+   "message": "[T76] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T76.md 并严格照做。选项与背景视觉区分：对比度硬指标 + 类型色条。验收断言逐条给数字/截图；素材走 web/assets 相对路径不许内联；不许为过关放宽检查器；做完追加写 TASK_DONE.md。"
+  },
+  {
+   "task_id": "T78",
+   "message": "[T78] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T78.md 并严格照做。开始界面重构：只给卡面 → 点开详情（左卡面右详情）→ 确认才开局。验收断言逐条给数字/截图；素材走 web/assets 相对路径不许内联；不许为过关放宽检查器；做完追加写 TASK_DONE.md。"
+  },
+  {
+   "task_id": "T80",
+   "message": "[T80] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T80.md 并严格照做。生图提速：640×936 单张从 422 秒压到 ≤60 秒（VAE fp16/force_upcast、缓存 embeds）。先读 docs/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
+  },
+  {
+   "task_id": "T79",
+   "message": "[T79] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T79.md 并严格照做。形态族划分与逐族提示词：三类不混用、族内成员≤3、覆盖 145怪/266卡/102事件。先读 docs/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
+  },
+  {
+   "task_id": "T81",
+   "message": "[T81] 读 C:/Users/Administrator/Desktop/杂七杂八/红渊/game/tasks/T81.md 并严格照做。按族批量生成 + 接入：id→族→图 映射改造、闸门、抽样、三检查器。先读 docs/ART_DIRECTION_V2.md（三档抽象度 + 复用规则 R1–R6）。验收逐条给数字；不许为过关放宽验收；素材走 web/assets 相对路径；做完追加 TASK_DONE.md。"
+  }
+ ]
+}

@@ -1,0 +1,3248 @@
+{
+ "enemy_d3_05": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:03:51",
+  "confirmed": true
+ },
+ "enemy_d3_04": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:48:17",
+  "confirmed": true
+ },
+ "enemy_d4_01": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "太写实，像人类世界的生物"
+   },
+   {
+    "v": 1,
+    "reason": "太写实了"
+   }
+  ],
+  "updated": "2026-11-03T15:55:56",
+  "confirmed": true
+ },
+ "enemy_d2_05": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:48:20",
+  "confirmed": true
+ },
+ "enemy_d3_03": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:03:49",
+  "confirmed": true
+ },
+ "enemy_d5_01": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:30",
+  "confirmed": true
+ },
+ "enemy_d4_06": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:26",
+  "confirmed": true
+ },
+ "enemy_d4_05": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:28",
+  "confirmed": true
+ },
+ "enemy_d5_02": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:00",
+  "confirmed": true
+ },
+ "enemy_d5_04": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:02",
+  "confirmed": true
+ },
+ "enemy_d5_06": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:04",
+  "confirmed": true
+ },
+ "enemy_d6_03": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:39",
+  "confirmed": true
+ },
+ "enemy_d6_02": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:37",
+  "confirmed": true
+ },
+ "enemy_d6_05": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:42",
+  "confirmed": true
+ },
+ "enemy_d7_02": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:35:29",
+  "confirmed": true
+ },
+ "enemy_d7_03": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:45",
+  "confirmed": true
+ },
+ "enemy_d7_04": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:15",
+  "confirmed": true
+ },
+ "enemy_d4_07": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:48:48",
+  "confirmed": true
+ },
+ "enemy_d3_07": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:48:46",
+  "confirmed": true
+ },
+ "enemy_d2_06": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "像现实"
+   }
+  ],
+  "updated": "2026-11-03T15:48:42",
+  "confirmed": true
+ },
+ "enemy_d3_06": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "像现实"
+   }
+  ],
+  "updated": "2026-11-03T15:48:44",
+  "confirmed": true
+ },
+ "enemy_d5_07": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:09",
+  "confirmed": true
+ },
+ "enemy_d6_06": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:12",
+  "confirmed": true
+ },
+ "enemy_d7_08": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:15",
+  "confirmed": true
+ },
+ "enemy_d4_08": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:48:47",
+  "confirmed": true
+ },
+ "enemy_d8_04": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:19",
+  "confirmed": true
+ },
+ "enemy_d7_07": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:17",
+  "confirmed": true
+ },
+ "enemy_d2_e1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:30",
+  "confirmed": true
+ },
+ "enemy_d1_e2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:54:26",
+  "confirmed": true
+ },
+ "enemy_d1_e1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:26",
+  "confirmed": true
+ },
+ "enemy_d2_e2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:32",
+  "confirmed": true
+ },
+ "enemy_d2_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:31",
+  "confirmed": true
+ },
+ "enemy_d3_e1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:38",
+  "confirmed": true
+ },
+ "enemy_d3_e2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:39",
+  "confirmed": true
+ },
+ "enemy_d3_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:41",
+  "confirmed": true
+ },
+ "enemy_d4_e2": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "太写实"
+   },
+   {
+    "v": 0,
+    "reason": "太写实了"
+   }
+  ],
+  "updated": "2026-11-03T16:04:43",
+  "confirmed": true
+ },
+ "enemy_d4_e1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:42",
+  "confirmed": true
+ },
+ "enemy_d4_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:45",
+  "confirmed": true
+ },
+ "enemy_d5_e1": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "太写实"
+   }
+  ],
+  "updated": "2026-11-03T15:57:51",
+  "confirmed": true
+ },
+ "enemy_d5_e2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:47",
+  "confirmed": true
+ },
+ "enemy_d7_e1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:59",
+  "confirmed": true
+ },
+ "enemy_d6_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:57",
+  "confirmed": true
+ },
+ "enemy_d6_e2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:56",
+  "confirmed": true
+ },
+ "enemy_d6_e1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:55",
+  "confirmed": true
+ },
+ "enemy_d5_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:53",
+  "confirmed": true
+ },
+ "enemy_d7_e2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:58",
+  "confirmed": true
+ },
+ "enemy_d7_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:00",
+  "confirmed": true
+ },
+ "enemy_d8_e1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:01",
+  "confirmed": true
+ },
+ "enemy_d8_e2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:04",
+  "confirmed": true
+ },
+ "enemy_d8_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:04",
+  "confirmed": true
+ },
+ "enemy_d1_e4": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "这张不搭"
+   }
+  ],
+  "updated": "2026-11-03T15:58:16",
+  "confirmed": true
+ },
+ "enemy_d1_07": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:06",
+  "confirmed": true
+ },
+ "enemy_d1_06": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:07",
+  "confirmed": true
+ },
+ "enemy_d2_e3": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:49:09",
+  "confirmed": true
+ },
+ "enemy_d2_09": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:19",
+  "confirmed": true
+ },
+ "enemy_d2_b2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:21",
+  "confirmed": true
+ },
+ "enemy_d3_09": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:24",
+  "confirmed": true
+ },
+ "enemy_d3_08": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:23",
+  "confirmed": true
+ },
+ "enemy_d3_e3": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:34",
+  "confirmed": true
+ },
+ "enemy_d3_b2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:31",
+  "confirmed": true
+ },
+ "enemy_d4_09": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:37",
+  "confirmed": true
+ },
+ "enemy_d5_e3": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:52",
+  "confirmed": true
+ },
+ "enemy_d5_09": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:42",
+  "confirmed": true
+ },
+ "enemy_d4_e3": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:02",
+  "confirmed": true
+ },
+ "enemy_d5_10": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:05:01",
+  "confirmed": true
+ },
+ "enemy_d1_01": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:31:08",
+  "confirmed": true
+ },
+ "enemy_d4_04": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "太写实了"
+   }
+  ],
+  "updated": "2026-11-03T16:03:55",
+  "confirmed": true
+ },
+ "enemy_d4_10": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:36",
+  "confirmed": true
+ },
+ "enemy_d7_09": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:57",
+  "confirmed": true
+ },
+ "enemy_d6_b2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:00",
+  "confirmed": true
+ },
+ "event_d3_1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:23",
+  "confirmed": true
+ },
+ "event_d3_3": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:05:47",
+  "confirmed": true
+ },
+ "event_d2_3": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:14",
+  "confirmed": true
+ },
+ "event_d4_3": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:19",
+  "confirmed": true
+ },
+ "event_d4_4": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:56",
+  "confirmed": true
+ },
+ "event_d5_3": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:58",
+  "confirmed": true
+ },
+ "event_d3_4": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:57",
+  "confirmed": true
+ },
+ "event_d6_10": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:01:12",
+  "confirmed": true
+ },
+ "event_d6_9": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:01:02",
+  "confirmed": true
+ },
+ "event_d5_12": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:01:01",
+  "confirmed": true
+ },
+ "event_d7_11": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:47",
+  "confirmed": true
+ },
+ "event_d8_1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:49",
+  "confirmed": true
+ },
+ "event_d8_3": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:51",
+  "confirmed": true
+ },
+ "dive_0017": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:44",
+  "confirmed": true
+ },
+ "dive_0061": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:47",
+  "confirmed": true
+ },
+ "trem_0079": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:30:11",
+  "confirmed": true
+ },
+ "trem_0057": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:30",
+  "confirmed": true
+ },
+ "trem_0053": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:34",
+  "confirmed": true
+ },
+ "trem_0055": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对，像现实"
+   }
+  ],
+  "updated": "2026-11-03T16:29:25",
+  "confirmed": true
+ },
+ "dive_0040": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:17",
+  "confirmed": true
+ },
+ "cng_0041": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:24:36",
+  "confirmed": true
+ },
+ "cng_0034": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:24:30",
+  "confirmed": true
+ },
+ "anm_0016": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 2,
+    "reason": "三张质感都不对"
+   }
+  ],
+  "updated": "2026-11-03T16:20:49",
+  "confirmed": true
+ },
+ "event_d1_5": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "像是在晾衣服，防护服太干净了"
+   }
+  ],
+  "updated": "2026-11-03T16:06:31",
+  "confirmed": true
+ },
+ "event_d1_2": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:43",
+  "confirmed": true
+ },
+ "event_d1_3": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:45",
+  "confirmed": true
+ },
+ "event_d2_9": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:46",
+  "confirmed": true
+ },
+ "event_d2_10": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:49",
+  "confirmed": true
+ },
+ "event_d5_9": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:39",
+  "confirmed": true
+ },
+ "event_d4_8": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:00:40",
+  "confirmed": true
+ },
+ "enemy_d2_02": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "颜色不搭"
+   }
+  ],
+  "updated": "2026-11-03T16:31:15",
+  "confirmed": true
+ },
+ "enemy_d2_03": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "像现实生物"
+   }
+  ],
+  "updated": "2026-11-03T15:48:23",
+  "confirmed": true
+ },
+ "enemy_d1_02": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "画面单调"
+   }
+  ],
+  "updated": "2026-11-03T16:31:11",
+  "confirmed": true
+ },
+ "enemy_d8_03": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:31:37",
+  "confirmed": true
+ },
+ "enemy_d2_07": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "太现实了"
+   }
+  ],
+  "updated": "2026-11-03T15:48:41",
+  "confirmed": true
+ },
+ "enemy_d6_07": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:33",
+  "confirmed": true
+ },
+ "enemy_d8_05": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:20",
+  "confirmed": true
+ },
+ "enemy_d1_b1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:29",
+  "confirmed": true
+ },
+ "enemy_d6_08": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:50",
+  "confirmed": true
+ },
+ "enemy_d8_10": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:12",
+  "confirmed": true
+ },
+ "enemy_d8_12": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:17",
+  "confirmed": true
+ },
+ "event_d2_1": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T15:59:20",
+  "confirmed": true
+ },
+ "event_d6_1": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T15:59:31",
+  "confirmed": true
+ },
+ "event_d6_4": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:02",
+  "confirmed": true
+ },
+ "event_d7_4": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:04",
+  "confirmed": true
+ },
+ "event_d5_7": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:00:15",
+  "confirmed": true
+ },
+ "event_d7_5": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:25",
+  "confirmed": true
+ },
+ "event_d1_1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:44",
+  "confirmed": true
+ },
+ "event_d4_10": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:55",
+  "confirmed": true
+ },
+ "event_d5_11": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:58",
+  "confirmed": true
+ },
+ "event_d7_10": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:48",
+  "confirmed": true
+ },
+ "event_d8_5": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:06:40",
+  "confirmed": true
+ },
+ "anm_0001": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:06:45",
+  "confirmed": true
+ },
+ "anm_0011": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:00",
+  "confirmed": true
+ },
+ "anm_0019": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:20:51",
+  "confirmed": true
+ },
+ "anm_0018": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:07:10",
+  "confirmed": true
+ },
+ "anm_0020": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:20:52",
+  "confirmed": true
+ },
+ "anm_0021": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:07:18",
+  "confirmed": true
+ },
+ "anm_0025": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:53",
+  "confirmed": true
+ },
+ "anm_0024": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:07:22",
+  "confirmed": true
+ },
+ "anm_0028": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:07:56",
+  "confirmed": true
+ },
+ "anm_0030": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:04",
+  "confirmed": true
+ },
+ "anm_0031": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:06",
+  "confirmed": true
+ },
+ "anm_0035": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:10",
+  "confirmed": true
+ },
+ "anm_0036": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:11",
+  "confirmed": true
+ },
+ "anm_0037": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 1,
+    "reason": "全都质感不对"
+   },
+   {
+    "v": 2,
+    "reason": "全都质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:21:03",
+  "confirmed": true
+ },
+ "anm_0044": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 2,
+    "reason": "全都质感不对"
+   },
+   {
+    "v": 1,
+    "reason": "全都质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:33:04",
+  "confirmed": true
+ },
+ "anm_0048": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:08:24",
+  "confirmed": true
+ },
+ "anm_0047": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:08:23",
+  "confirmed": true
+ },
+ "anm_0049": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:08:26",
+  "confirmed": true
+ },
+ "anm_0050": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:26",
+  "confirmed": true
+ },
+ "cng_0001": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:08:28",
+  "confirmed": true
+ },
+ "cng_0007": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:08:43",
+  "confirmed": true
+ },
+ "cng_0023": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:03",
+  "confirmed": true
+ },
+ "cng_0025": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:05",
+  "confirmed": true
+ },
+ "cng_0031": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:09:15",
+  "confirmed": true
+ },
+ "cng_0037": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:09:29",
+  "confirmed": true
+ },
+ "cng_0040": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:42",
+  "confirmed": true
+ },
+ "cng_0042": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:40",
+  "confirmed": true
+ },
+ "cng_0049": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:24:43",
+  "confirmed": true
+ },
+ "dive_0005": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:14",
+  "confirmed": true
+ },
+ "dive_0008": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:24:51",
+  "confirmed": true
+ },
+ "dive_0018": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:45",
+  "confirmed": true
+ },
+ "dive_0020": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:47",
+  "confirmed": true
+ },
+ "dive_0019": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:46",
+  "confirmed": true
+ },
+ "dive_0021": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:48",
+  "confirmed": true
+ },
+ "dive_0022": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:49",
+  "confirmed": true
+ },
+ "dive_0023": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:10:51",
+  "confirmed": true
+ },
+ "dive_0024": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:51",
+  "confirmed": true
+ },
+ "dive_0025": {
+  "chosen": 7,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:00",
+  "confirmed": true
+ },
+ "dive_0026": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:03",
+  "confirmed": true
+ },
+ "dive_0027": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:11:03",
+  "confirmed": true
+ },
+ "dive_0029": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:11:05",
+  "confirmed": true
+ },
+ "dive_0028": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:11:04",
+  "confirmed": true
+ },
+ "dive_0032": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T15:50:30",
+  "confirmed": true
+ },
+ "dive_0033": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 2,
+    "reason": "都不行，这不是武器要改提示词"
+   },
+   {
+    "v": 1,
+    "reason": "都不行，这不是武器要改提示"
+   }
+  ],
+  "updated": "2026-11-03T16:11:11",
+  "confirmed": true
+ },
+ "dive_0034": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:11",
+  "confirmed": true
+ },
+ "dive_0035": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:09",
+  "confirmed": true
+ },
+ "dive_0037": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:13",
+  "confirmed": true
+ },
+ "dive_0038": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:15",
+  "confirmed": true
+ },
+ "dive_0039": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:15",
+  "confirmed": true
+ },
+ "dive_0042": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:22",
+  "confirmed": true
+ },
+ "dive_0049": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:31",
+  "confirmed": true
+ },
+ "dive_0055": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 2,
+    "reason": "都不行，这就不是武器"
+   },
+   {
+    "v": 1,
+    "reason": "都不行，这就不是武器"
+   }
+  ],
+  "updated": "2026-11-03T16:25:39",
+  "confirmed": true
+ },
+ "dive_0056": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:41",
+  "confirmed": true
+ },
+ "dive_0058": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:50:45",
+  "confirmed": true
+ },
+ "dive_0060": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:46",
+  "confirmed": true
+ },
+ "dive_0062": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:49",
+  "confirmed": true
+ },
+ "dive_0064": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:50",
+  "confirmed": true
+ },
+ "dive_0063": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:48",
+  "confirmed": true
+ },
+ "dive_0065": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:51",
+  "confirmed": true
+ },
+ "dive_0066": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:53",
+  "confirmed": true
+ },
+ "dive_0067": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:25:53",
+  "confirmed": true
+ },
+ "dive_0068": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:55",
+  "confirmed": true
+ },
+ "dive_0069": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "现实感"
+   }
+  ],
+  "updated": "2026-11-03T16:25:57",
+  "confirmed": true
+ },
+ "dive_0070": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:00",
+  "confirmed": true
+ },
+ "dive_0071": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:59",
+  "confirmed": true
+ },
+ "dive_0072": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:02",
+  "confirmed": true
+ },
+ "dive_0075": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:05",
+  "confirmed": true
+ },
+ "dive_0076": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:08",
+  "confirmed": true
+ },
+ "dive_0077": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:09",
+  "confirmed": true
+ },
+ "dive_0079": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:12",
+  "confirmed": true
+ },
+ "dive_0083": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:17",
+  "confirmed": true
+ },
+ "trem_0001": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T15:51:01",
+  "confirmed": true
+ },
+ "trem_0002": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:21",
+  "confirmed": true
+ },
+ "trem_0003": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:24",
+  "confirmed": true
+ },
+ "trem_0004": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:22",
+  "confirmed": true
+ },
+ "trem_0005": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:25",
+  "confirmed": true
+ },
+ "trem_0006": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:26",
+  "confirmed": true
+ },
+ "trem_0007": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:33:33",
+  "confirmed": true
+ },
+ "trem_0008": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:33:31",
+  "confirmed": true
+ },
+ "trem_0009": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:37",
+  "confirmed": true
+ },
+ "trem_0011": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:42",
+  "confirmed": true
+ },
+ "trem_0013": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:51:06",
+  "confirmed": true
+ },
+ "trem_0012": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T15:51:09",
+  "confirmed": true
+ },
+ "trem_0014": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:48",
+  "confirmed": true
+ },
+ "trem_0016": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:49",
+  "confirmed": true
+ },
+ "trem_0015": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:26:47",
+  "confirmed": true
+ },
+ "trem_0018": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:51:14",
+  "confirmed": true
+ },
+ "trem_0017": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:50",
+  "confirmed": true
+ },
+ "trem_0019": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:53",
+  "confirmed": true
+ },
+ "trem_0021": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:56",
+  "confirmed": true
+ },
+ "trem_0022": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:57",
+  "confirmed": true
+ },
+ "trem_0024": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:59",
+  "confirmed": true
+ },
+ "trem_0025": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:00",
+  "confirmed": true
+ },
+ "trem_0027": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:01",
+  "confirmed": true
+ },
+ "trem_0028": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:03",
+  "confirmed": true
+ },
+ "trem_0032": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:07",
+  "confirmed": true
+ },
+ "trem_0031": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:05",
+  "confirmed": true
+ },
+ "trem_0033": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:08",
+  "confirmed": true
+ },
+ "trem_0034": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:10",
+  "confirmed": true
+ },
+ "trem_0035": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:11",
+  "confirmed": true
+ },
+ "trem_0037": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:13",
+  "confirmed": true
+ },
+ "trem_0038": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:15",
+  "confirmed": true
+ },
+ "trem_0039": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:51:20",
+  "confirmed": true
+ },
+ "trem_0040": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T15:51:22",
+  "confirmed": true
+ },
+ "trem_0041": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:17",
+  "confirmed": true
+ },
+ "trem_0042": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:51:25",
+  "confirmed": true
+ },
+ "trem_0043": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:19",
+  "confirmed": true
+ },
+ "trem_0044": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:51:25",
+  "confirmed": true
+ },
+ "trem_0045": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:22",
+  "confirmed": true
+ },
+ "trem_0046": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:24",
+  "confirmed": true
+ },
+ "trem_0047": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:25",
+  "confirmed": true
+ },
+ "trem_0048": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:26",
+  "confirmed": true
+ },
+ "trem_0049": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:27",
+  "confirmed": true
+ },
+ "trem_0050": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:33:42",
+  "confirmed": true
+ },
+ "trem_0051": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:30",
+  "confirmed": true
+ },
+ "trem_0052": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:27:33",
+  "confirmed": true
+ },
+ "trem_0058": {
+  "chosen": 2,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:29:33",
+  "confirmed": true
+ },
+ "trem_0060": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:36",
+  "confirmed": true
+ },
+ "trem_0066": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 2,
+    "reason": "全都质感不对"
+   },
+   {
+    "v": 1,
+    "reason": "全都质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:29:48",
+  "confirmed": true
+ },
+ "trem_0072": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:30:00",
+  "confirmed": true
+ },
+ "trem_0073": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:30:01",
+  "confirmed": true
+ },
+ "trem_0070": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:55",
+  "confirmed": true
+ },
+ "trem_0069": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:29:51",
+  "confirmed": true
+ },
+ "trem_0075": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:30:03",
+  "confirmed": true
+ },
+ "trem_0077": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:30:07",
+  "confirmed": true
+ },
+ "trem_0080": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:30:12",
+  "confirmed": true
+ },
+ "trem_0082": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:30:16",
+  "confirmed": true
+ },
+ "trem_0081": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   },
+   {
+    "v": 2,
+    "reason": "全都质感不对"
+   },
+   {
+    "v": 1,
+    "reason": "全都质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:30:14",
+  "confirmed": true
+ },
+ "trem_0083": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:30:17",
+  "confirmed": true
+ },
+ "trem_0063": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:40",
+  "confirmed": true
+ },
+ "trem_0064": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:44",
+  "confirmed": true
+ },
+ "trem_0065": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:45",
+  "confirmed": true
+ },
+ "trem_0067": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:49",
+  "confirmed": true
+ },
+ "trem_0068": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:29:53",
+  "confirmed": true
+ },
+ "enemy_d2_01": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:31:13",
+  "confirmed": true
+ },
+ "enemy_d4_03": {
+  "chosen": 1,
+  "rejected": [
+   {
+    "v": 2,
+    "reason": "颜色不搭"
+   }
+  ],
+  "updated": "2026-11-03T16:03:56",
+  "confirmed": true
+ },
+ "enemy_d5_03": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:31",
+  "confirmed": true
+ },
+ "event_d4_9": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:53",
+  "confirmed": true
+ },
+ "event_d5_8": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:30",
+  "confirmed": true
+ },
+ "event_d8_2": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 2,
+    "reason": "质感不对"
+   },
+   {
+    "v": 1,
+    "reason": "质感不对"
+   },
+   {
+    "v": 0,
+    "reason": "质感不对"
+   }
+  ],
+  "updated": "2026-11-03T16:20:32",
+  "confirmed": true
+ },
+ "event_d1_8": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:36",
+  "confirmed": true
+ },
+ "anm_0012": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:02",
+  "confirmed": true
+ },
+ "anm_0026": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:54",
+  "confirmed": true
+ },
+ "enemy_d3_01": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:03:47",
+  "confirmed": true
+ },
+ "enemy_d4_02": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:03:53",
+  "confirmed": true
+ },
+ "enemy_d5_05": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:33",
+  "confirmed": true
+ },
+ "enemy_d6_04": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:09",
+  "confirmed": true
+ },
+ "enemy_d1_04": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:39:11",
+  "confirmed": true
+ },
+ "enemy_d5_08": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:30",
+  "confirmed": true
+ },
+ "event_d4_2": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:28",
+  "confirmed": true
+ },
+ "event_d5_2": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:29",
+  "confirmed": true
+ },
+ "event_d7_1": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:45",
+  "confirmed": true
+ },
+ "event_d2_6": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:08",
+  "confirmed": true
+ },
+ "event_d3_6": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:09",
+  "confirmed": true
+ },
+ "event_d4_6": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:13",
+  "confirmed": true
+ },
+ "event_d7_8": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:42",
+  "confirmed": true
+ },
+ "event_d1_6": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:20:35",
+  "confirmed": true
+ },
+ "anm_0007": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:54",
+  "confirmed": true
+ },
+ "anm_0023": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:20",
+  "confirmed": true
+ },
+ "event_d3_7": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:28",
+  "confirmed": true
+ },
+ "event_d6_7": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:33",
+  "confirmed": true
+ },
+ "event_d2_8": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:35",
+  "confirmed": true
+ },
+ "event_d2_11": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:48",
+  "confirmed": true
+ },
+ "event_d4_11": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:56",
+  "confirmed": true
+ },
+ "event_d8_7": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:42",
+  "confirmed": true
+ },
+ "event_d8_8": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:44",
+  "confirmed": true
+ },
+ "cng_0005": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:33",
+  "confirmed": true
+ },
+ "cng_0013": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:51",
+  "confirmed": true
+ },
+ "cng_0015": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:53",
+  "confirmed": true
+ },
+ "cng_0018": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:56",
+  "confirmed": true
+ },
+ "cng_0032": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:50:03",
+  "confirmed": true
+ },
+ "cng_0035": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:24:29",
+  "confirmed": true
+ },
+ "cng_0043": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:46",
+  "confirmed": true
+ },
+ "dive_0003": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:24:45",
+  "confirmed": true
+ },
+ "dive_0006": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:16",
+  "confirmed": true
+ },
+ "dive_0007": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:17",
+  "confirmed": true
+ },
+ "dive_0010": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:28",
+  "confirmed": true
+ },
+ "dive_0011": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:36",
+  "confirmed": true
+ },
+ "dive_0012": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:34",
+  "confirmed": true
+ },
+ "dive_0015": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:42",
+  "confirmed": true
+ },
+ "dive_0016": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:43",
+  "confirmed": true
+ },
+ "dive_0030": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:11:07",
+  "confirmed": true
+ },
+ "dive_0031": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:11:08",
+  "confirmed": true
+ },
+ "dive_0044": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:24",
+  "confirmed": true
+ },
+ "enemy_d8_01": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:50",
+  "confirmed": true
+ },
+ "event_d2_2": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:21",
+  "confirmed": true
+ },
+ "event_d3_2": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:25",
+  "confirmed": true
+ },
+ "event_d5_6": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:19",
+  "confirmed": true
+ },
+ "dive_0045": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:25",
+  "confirmed": true
+ },
+ "trem_0078": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:30:10",
+  "confirmed": true
+ },
+ "trem_0074": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:30:05",
+  "confirmed": true
+ },
+ "dive_0074": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:06",
+  "confirmed": true
+ },
+ "enemy_d2_04": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:31:17",
+  "confirmed": true
+ },
+ "enemy_d3_02": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:31:22",
+  "confirmed": true
+ },
+ "enemy_d7_01": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:31:32",
+  "confirmed": true
+ },
+ "enemy_d6_01": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:06",
+  "confirmed": true
+ },
+ "anm_0014": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:06",
+  "confirmed": true
+ },
+ "anm_0029": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:03",
+  "confirmed": true
+ },
+ "anm_0033": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:09",
+  "confirmed": true
+ },
+ "anm_0040": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:16",
+  "confirmed": true
+ },
+ "anm_0043": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:19",
+  "confirmed": true
+ },
+ "cng_0003": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:31",
+  "confirmed": true
+ },
+ "cng_0006": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:40",
+  "confirmed": true
+ },
+ "cng_0004": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:31",
+  "confirmed": true
+ },
+ "cng_0012": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:49",
+  "confirmed": true
+ },
+ "cng_0016": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:54",
+  "confirmed": true
+ },
+ "cng_0020": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:58",
+  "confirmed": true
+ },
+ "dive_0002": {
+  "chosen": 3,
+  "rejected": [],
+  "updated": "2026-11-03T15:50:10",
+  "confirmed": true
+ },
+ "dive_0009": {
+  "chosen": 3,
+  "rejected": [
+   {
+    "v": 2,
+    "reason": "都不是武器"
+   },
+   {
+    "v": 1,
+    "reason": "都不是武器"
+   },
+   {
+    "v": 0,
+    "reason": "都不是武器"
+   }
+  ],
+  "updated": "2026-11-03T16:10:25",
+  "confirmed": true
+ },
+ "dive_0013": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:38",
+  "confirmed": true
+ },
+ "dive_0050": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:33",
+  "confirmed": true
+ },
+ "dive_0054": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:38",
+  "confirmed": true
+ },
+ "dive_0059": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:43",
+  "confirmed": true
+ },
+ "dive_0057": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:42",
+  "confirmed": true
+ },
+ "trem_0076": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:30:06",
+  "confirmed": true
+ },
+ "dive_0078": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:11",
+  "confirmed": true
+ },
+ "dive_0036": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:13",
+  "confirmed": true
+ },
+ "cng_0044": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:48",
+  "confirmed": true
+ },
+ "cng_0033": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:25",
+  "confirmed": true
+ },
+ "cng_0030": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:12",
+  "confirmed": true
+ },
+ "cng_0028": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:08",
+  "confirmed": true
+ },
+ "cng_0026": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:49:59",
+  "confirmed": true
+ },
+ "cng_0022": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:01",
+  "confirmed": true
+ },
+ "cng_0017": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:55",
+  "confirmed": true
+ },
+ "cng_0011": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:48",
+  "confirmed": true
+ },
+ "cng_0010": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:46",
+  "confirmed": true
+ },
+ "cng_0002": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:29",
+  "confirmed": true
+ },
+ "cng_0008": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:44",
+  "confirmed": true
+ },
+ "anm_0046": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:21",
+  "confirmed": true
+ },
+ "anm_0039": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:15",
+  "confirmed": true
+ },
+ "enemy_d7_05": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:13",
+  "confirmed": true
+ },
+ "enemy_d7_06": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:20",
+  "confirmed": true
+ },
+ "enemy_d1_03": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:56:55",
+  "confirmed": true
+ },
+ "enemy_d8_02": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:04:24",
+  "confirmed": true
+ },
+ "enemy_d8_06": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:23",
+  "confirmed": true
+ },
+ "enemy_d1_05": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:57:23",
+  "confirmed": true
+ },
+ "enemy_d1_e3": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:10",
+  "confirmed": true
+ },
+ "enemy_d1_08": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:31:53",
+  "confirmed": true
+ },
+ "enemy_d1_b2": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:13",
+  "confirmed": true
+ },
+ "enemy_d2_08": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:17",
+  "confirmed": true
+ },
+ "enemy_d6_09": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:54",
+  "confirmed": true
+ },
+ "enemy_d7_10": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:02",
+  "confirmed": true
+ },
+ "enemy_d6_e3": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:58:55",
+  "confirmed": true
+ },
+ "enemy_d8_09": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:14",
+  "confirmed": true
+ },
+ "event_d5_1": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:05:38",
+  "confirmed": true
+ },
+ "event_d4_1": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:09",
+  "confirmed": true
+ },
+ "event_d6_2": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:05:42",
+  "confirmed": true
+ },
+ "event_d7_2": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:15",
+  "confirmed": true
+ },
+ "event_d5_4": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:21",
+  "confirmed": true
+ },
+ "event_d6_3": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:01",
+  "confirmed": true
+ },
+ "event_d7_3": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:04",
+  "confirmed": true
+ },
+ "event_d3_5": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:10",
+  "confirmed": true
+ },
+ "event_d2_5": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:06",
+  "confirmed": true
+ },
+ "event_d6_6": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:22",
+  "confirmed": true
+ },
+ "event_d4_7": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:29",
+  "confirmed": true
+ },
+ "event_d2_7": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:27",
+  "confirmed": true
+ },
+ "event_d7_7": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:36:19",
+  "confirmed": true
+ },
+ "event_d3_8": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:37",
+  "confirmed": true
+ },
+ "event_d3_9": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:50",
+  "confirmed": true
+ },
+ "event_d6_8": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:42",
+  "confirmed": true
+ },
+ "event_d3_10": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:51",
+  "confirmed": true
+ },
+ "event_d1_4": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:39:19",
+  "confirmed": true
+ },
+ "event_d7_9": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:36:36",
+  "confirmed": true
+ },
+ "event_d1_7": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:35",
+  "confirmed": true
+ },
+ "anm_0005": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:52",
+  "confirmed": true
+ },
+ "anm_0008": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:57",
+  "confirmed": true
+ },
+ "anm_0006": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:55",
+  "confirmed": true
+ },
+ "anm_0015": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:05",
+  "confirmed": true
+ },
+ "anm_0027": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:59",
+  "confirmed": true
+ },
+ "anm_0032": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:07",
+  "confirmed": true
+ },
+ "anm_0038": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:14",
+  "confirmed": true
+ },
+ "anm_0041": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:17",
+  "confirmed": true
+ },
+ "cng_0029": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:11",
+  "confirmed": true
+ },
+ "enemy_d7_e3": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:03",
+  "confirmed": true
+ },
+ "enemy_d8_08": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:04",
+  "confirmed": true
+ },
+ "event_d2_4": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:32:17",
+  "confirmed": true
+ },
+ "event_d6_5": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:21",
+  "confirmed": true
+ },
+ "event_d7_6": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:24",
+  "confirmed": true
+ },
+ "event_d5_10": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:59",
+  "confirmed": true
+ },
+ "event_d6_11": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:01:05",
+  "confirmed": true
+ },
+ "event_d4_5": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:12",
+  "confirmed": true
+ },
+ "enemy_d8_11": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:16",
+  "confirmed": true
+ },
+ "enemy_d8_07": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T15:59:05",
+  "confirmed": true
+ },
+ "anm_0022": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:19",
+  "confirmed": true
+ },
+ "cng_0021": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:00",
+  "confirmed": true
+ },
+ "cng_0027": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:07",
+  "confirmed": true
+ },
+ "cng_0024": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:04",
+  "confirmed": true
+ },
+ "cng_0036": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:28",
+  "confirmed": true
+ },
+ "cng_0046": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:50",
+  "confirmed": true
+ },
+ "cng_0045": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:49",
+  "confirmed": true
+ },
+ "cng_0047": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:55",
+  "confirmed": true
+ },
+ "cng_0050": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:03",
+  "confirmed": true
+ },
+ "dive_0014": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:40",
+  "confirmed": true
+ },
+ "dive_0041": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:19",
+  "confirmed": true
+ },
+ "dive_0046": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:28",
+  "confirmed": true
+ },
+ "dive_0082": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:19",
+  "confirmed": true
+ },
+ "trem_0010": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:39",
+  "confirmed": true
+ },
+ "trem_0020": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:55",
+  "confirmed": true
+ },
+ "trem_0023": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:58",
+  "confirmed": true
+ },
+ "trem_0030": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:06",
+  "confirmed": true
+ },
+ "trem_0054": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:24",
+  "confirmed": true
+ },
+ "trem_0056": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:29",
+  "confirmed": true
+ },
+ "trem_0071": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:56",
+  "confirmed": true
+ },
+ "trem_0062": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:39",
+  "confirmed": true
+ },
+ "trem_0061": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:37",
+  "confirmed": true
+ },
+ "trem_0059": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:29:32",
+  "confirmed": true
+ },
+ "dive_0081": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:15",
+  "confirmed": true
+ },
+ "dive_0080": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:14",
+  "confirmed": true
+ },
+ "dive_0073": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:26:03",
+  "confirmed": true
+ },
+ "dive_0043": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:23",
+  "confirmed": true
+ },
+ "dive_0001": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:06",
+  "confirmed": true
+ },
+ "cng_0038": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:31",
+  "confirmed": true
+ },
+ "cng_0009": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:45",
+  "confirmed": true
+ },
+ "anm_0045": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:21",
+  "confirmed": true
+ },
+ "anm_0017": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:09",
+  "confirmed": true
+ },
+ "anm_0013": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:03",
+  "confirmed": true
+ },
+ "anm_0004": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:51",
+  "confirmed": true
+ },
+ "anm_0003": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:50",
+  "confirmed": true
+ },
+ "anm_0002": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:49",
+  "confirmed": true
+ },
+ "event_d3_11": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:00:54",
+  "confirmed": true
+ },
+ "event_d8_4": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:38",
+  "confirmed": true
+ },
+ "trem_0036": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:13",
+  "confirmed": true
+ },
+ "trem_0029": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:04",
+  "confirmed": true
+ },
+ "trem_0026": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:27:02",
+  "confirmed": true
+ },
+ "dive_0053": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:35",
+  "confirmed": true
+ },
+ "dive_0052": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:34",
+  "confirmed": true
+ },
+ "dive_0051": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:32",
+  "confirmed": true
+ },
+ "dive_0048": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:30",
+  "confirmed": true
+ },
+ "dive_0047": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:25:27",
+  "confirmed": true
+ },
+ "cng_0048": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:54",
+  "confirmed": true
+ },
+ "dive_0004": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:10:13",
+  "confirmed": true
+ },
+ "cng_0039": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:09:32",
+  "confirmed": true
+ },
+ "cng_0019": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:58",
+  "confirmed": true
+ },
+ "cng_0014": {
+  "chosen": 0,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:52",
+  "confirmed": true
+ },
+ "anm_0010": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:07:01",
+  "confirmed": true
+ },
+ "anm_0034": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:08",
+  "confirmed": true
+ },
+ "event_d8_6": {
+  "chosen": 2,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:43",
+  "confirmed": true
+ },
+ "anm_0009": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:06:58",
+  "confirmed": true
+ },
+ "anm_0042": {
+  "chosen": 1,
+  "rejected": [],
+  "updated": "2026-11-03T16:08:20",
+  "confirmed": true
+ }
+}

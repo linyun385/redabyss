@@ -1,0 +1,13 @@
+  892 | <span id="pile-exhaust"></span>
+ 5521 | exhaustPile: [],
+ 5649 | C.exhaustPile.push(burned);
+ 5717 | if (card._locked) return { ok: false, msg: '这张牌已锁死' };
+ 5757 | if (card.effect && card.effect.exhaust) C.exhaustPile.push(card);
+ 5867 | case 'exhaust': break; // 由 playCard 处理
+ 5909 | card._locked = true;
+ 6104 | C.exhaustPile.push(eaten);
+ 6411 | } else if (s.code === 'exhaust') { e.exhaust = true;
+ 7587 | if (card._locked) return '锁死：这张牌本层无法再打出';
+ 7919 | $('#pile-exhaust').textContent = C.exhaustPile.length ? '已消耗 ' + C.exhaustPile.length : '';
+ 8129 | if (e.exhaust) parts.push('消耗');
+ 8195 | $('#pile-exhaust').addEventListener('click', () => C && showPile('已消耗', C.exhaustPile));

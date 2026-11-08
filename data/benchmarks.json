@@ -1,0 +1,33 @@
+{
+  "_说明": [
+    "对标数据。conf 是把握度：high=有把握 / medium=社区共识但非官方 / low=约数 / unknown=我不知道，请自己填。",
+    "★ 我没有可靠数据的一律填 null 并标 unknown —— 宁可空着，也不编。",
+    "★ 你要修正任何一个数字，直接改这里的 v 值、把 conf 改成 high，重跑 completion_audit.py --vs 即可。",
+    "★ 官方没有开放的数据接口；这些数字来自游戏内统计与社区共识，不是抓取来的。"
+  ],
+  "slay_the_spire": {
+    "name": "杀戮尖塔",
+    "metrics": {
+      "classes":   {"v": 4,   "conf": "high",   "note": "铁甲战士 / 静默猎手 / 故障机器人 / 观者"},
+      "cards":     {"v": 320, "conf": "medium", "note": "4 职业 × 75 + 无色约 20"},
+      "relics":    {"v": 178, "conf": "medium", "note": "含普通/商店/Boss/事件遗物"},
+      "enemies":   {"v": 60,  "conf": "low",    "note": "普通+精英+Boss 合计约数"},
+      "events":    {"v": 50,  "conf": "low",    "note": "约数"},
+      "acts":      {"v": 3,   "conf": "high",   "note": "3 幕 + 心脏隐藏段"},
+      "nodes":     {"v": 45,  "conf": "medium", "note": "3 幕 × 每幕约 15 个地图层。这是跟红渊「层×7节点」唯一可比的分母"},
+      "endings":   {"v": 1,   "conf": "medium", "note": "通关主线结局；心脏另算隐藏"}
+    }
+  },
+  "moonlit_night": {
+    "name": "月圆之夜",
+    "metrics": {
+      "classes":   {"v": null, "conf": "unknown", "note": "待填"},
+      "cards":     {"v": null, "conf": "unknown", "note": "待填"},
+      "relics":    {"v": null, "conf": "unknown", "note": "待填"},
+      "enemies":   {"v": null, "conf": "unknown", "note": "待填"},
+      "events":    {"v": null, "conf": "unknown", "note": "待填"},
+      "acts":      {"v": null, "conf": "unknown", "note": "待填"},
+      "endings":   {"v": null, "conf": "unknown", "note": "待填"}
+    }
+  }
+}
